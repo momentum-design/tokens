@@ -1,0 +1,6 @@
+{
+  "gradiation": {
+    "primary" : ["#F4EBFF", "#FFFFFF"],
+    "secondary" : ["#FBF7FF", "#FFFFFF"]
+  }
+}

@@ -1,2 +1,10 @@
- {
- }
+{
+  "text": {
+    "hyperlink": {
+      "#normal": "@color-blue-40",
+      "#hover": "@color-blue-20",
+      "#pressed": "@color-blue-20",
+      "#focus": "@color-blue-40"
+    }
+  }
+}

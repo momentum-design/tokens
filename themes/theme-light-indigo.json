@@ -1,0 +1,8 @@
+{
+  "name": "Light Indigo",
+  "files": [
+    "theme-data/common/",
+    "theme-data/light/core/",
+    "theme-data/light/light-indigo.json"
+  ]
+}

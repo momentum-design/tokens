@@ -1,0 +1,8 @@
+{
+  "name": "Light Bronze",
+  "files": [
+    "theme-data/common/",
+    "theme-data/light/core/",
+    "theme-data/light/light-bronze.json"
+  ]
+}

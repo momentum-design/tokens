@@ -1,0 +1,8 @@
+{
+  "name": "Light Lavender",
+  "files": [
+    "theme-data/common/",
+    "theme-data/light/core/",
+    "theme-data/light/light-lavender.json"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "button": {
+    "primary": {
+      "background": {
+        "#normal": "@color-white-alpha-95",
+        "#hover": "@color-white-alpha-80",
+        "#pressed": "@color-white-alpha-70"
+      },
+      "text": "@color-white-alpha-95"
+    },
+    "secondary": {
+      "background": {
+        "#normal": "@color-white-alpha-00",
+        "#hover": "@color-white-alpha-11",
+        "#pressed": "@color-white-alpha-07"
+      },
+      "border-color": "@color-white-alpha-90",
+      "text": "@color-white-alpha-95"
+    },
+    "outline-join": {
+      "background": "@color-white-alpha-00",
+      "border-color": "@color-green-40",
+      "text": "@color-green-40"
+    },
+    "outline-cancel": {
+      "background": "@color-white-alpha-00",
+      "border-color": "@color-red-40",
+      "text": "@color-red-40"
+    },
+    "ghost": {
+      "background": {
+        "#normal": "@color-white-alpha-00",
+        "#hover": "@color-white-alpha-11",
+        "#pressed": "@color-white-alpha-20"
+      },
+      "text": "@color-white-alpha-95"
+    },
+    "focusRing": "@color-blue-40",
+    "disabled": {
+      "background": "@color-white-alpha-20",
+      "text": "@color-white-alpha-40"
+    }
+  }
+}

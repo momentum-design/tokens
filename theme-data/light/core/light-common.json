@@ -1,0 +1,10 @@
+{
+  "text": {
+    "hyperlink": {
+      "#normal": "@color-blue-70",
+      "#hover": "@color-blue-90",
+      "#pressed": "@color-blue-90",
+      "#focus": "@color-blue-60"
+    }
+  }
+} 
