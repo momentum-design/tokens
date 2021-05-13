@@ -1,0 +1,24 @@
+{
+  "buttonPill": {
+    "large": {
+      "height": "40px",
+      "radius": "22px",
+      "font-size": "@fontSize-mediumSmall"
+    },
+    "medium": {
+      "height": "32px",
+      "radius": "16px",
+      "font-size": "@fontSize-mediumSmall"
+    },
+    "small": {
+      "height": "28px",
+      "radius": "16px",
+      "font-size": "@fontSize-extraSmall"
+    },
+    "tiny": {
+      "height": "24px",
+      "radius": "24px",
+      "font-size": "@fontSize-extraSmall"
+    }
+  }
+}

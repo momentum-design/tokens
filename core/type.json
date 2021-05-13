@@ -1,0 +1,15 @@
+{
+  "fontSize": {
+    "extraLarge": 26,
+    "large": 20,
+    "medium": 18,
+    "mediumSmall": 16,
+    "small": 14,
+    "extraSmall": 12
+  },
+  "fontWeight": {
+    "regular": 50,
+    "semibold": 63,
+    "bold": 75
+  }
+}

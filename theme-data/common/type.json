@@ -1,0 +1,76 @@
+{
+  "title": {
+    "extraLargeHeader": {
+      "size": "@fontSize-extraLarge",
+      "weight": "@fontWeight-bold"
+    },
+    "largeHeader": {
+      "size": "@fontSize-extraLarge",
+      "weight": "@fontWeight-semibold"
+    },
+    "large": {
+      "size": "@fontSize-extraLarge",
+      "weight": "@fontWeight-regular"
+    },
+    "medium": {
+      "size": "@fontSize-large",
+      "weight": "@fontWeight-semibold"
+    },
+    "small": {
+      "size": "@fontSize-medium",
+      "weight": "@fontWeight-regular"
+    }
+  },
+  "header": {
+    "size": "@fontSize-mediumSmall",
+    "weight": "@fontWeight-bold"
+  },
+  "higlightPrimary": {
+    "size": "@fontSize-mediumSmall",
+    "weight": "@fontWeight-bold"
+  },
+  "subheaderPrimary": {
+    "size": "@fontSize-mediumSmall",
+    "weight": "@fontWeight-semibold"
+  },
+  "bodyPrimary": {
+    "size": "@fontSize-mediumSmall",
+    "weight": "@fontWeight-regular"
+  },
+  "hyperlinkPrimary": {
+    "size": "@fontSize-mediumSmall",
+    "weight": "@fontWeight-regular"
+  },
+  "higlightSecondary": {
+    "size": "@fontSize-small",
+    "weight": "@fontWeight-bold"
+  },
+  "subheaderSecondary": {
+    "size": "@fontSize-small",
+    "weight": "@fontWeight-semibold"
+  },
+  "bodySecondary": {
+    "size": "@fontSize-small",
+    "weight": "@fontWeight-regular"
+  },
+  "hyperlinkSecondary": {
+    "size": "@fontSize-small",
+    "weight": "@fontWeight-regular"
+  },
+  "tagLabelPrimary": {
+    "size": "@fontSize-small",
+    "weight": "@fontWeight-semibold"
+  },
+  "highlightTertiary": {
+    "size": "@fontSize-extraSmall",
+    "weight": "@fontWeight-bold"
+  },
+  "bodyTertiary": {
+    "size": "@fontSize-extraSmall",
+    "weight": "@fontWeight-semibold"
+  },
+  "tagLabelSecondary": {
+    "size": "@fontSize-extraSmall",
+    "weight": "@fontWeight-semibold"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "buttonIcon": {
+    "huge": {
+      "radius": "32px",
+      "icon-size": "@fontSize-extraLarge"
+    },
+    "large": {
+      "radius": "26px",
+      "icon-size": "@fontSize-large"
+    },
+    "medium": {
+      "radius": "20px",
+      "icon-size": "@fontSize-medium"
+    },
+    "small": {
+      "radius": "16px",
+      "icon-size": "@fontSize-small"
+    },
+    "tiny": {
+      "radius": "14px",
+      "icon-size": "@fontSize-extraSmall"
+    }
+  }
+}
