@@ -1,5 +1,5 @@
 const fs = require('fs');
-
+var parseColour = require('color-parse');
 
 function loadFile(fileName, isDirectory) {
   if (isDirectory) {
@@ -84,6 +84,13 @@ themeFile.files.forEach((fileName) => {
 // Then flatten all the tokens
 const flattenedCoreTokens = {};
 flattenObject('', coreData, flattenedCoreTokens);
+// normalise colours
+Object.entries(flattenedCoreTokens).forEach(([key, value]) => {
+  if ((typeof value === 'string') && (value.startsWith('#') || value.startsWith('rgb'))) {
+    const c = parseColour(value);
+    flattenedCoreTokens[key] = `rgba(${c.values[0]}, ${c.values[1]}, ${c.values[2]}, ${c.alpha})`;
+  }
+});
 const flattenedTokens = {};
 flattenObject('', tokenData, flattenedTokens);
 //console.log(flattenedCoreTokens);
