@@ -4,6 +4,7 @@ const merge = require('lodash.merge');
 const args = require('args-parser')(process.argv);
 const camelCase = require('camelcase');
 
+// Loads a JSON file or directory of files and returns an object with the contents of all the files merged together
 function loadFile(fileName, isDirectory) {
   if (isDirectory) {
     console.log('Loading directory ' + fileName);
@@ -25,8 +26,7 @@ function loadFile(fileName, isDirectory) {
   }
 }
 
-
-
+// Takes a hierarchy and converts a { b { c:d } } to a-b-c: d
 function flattenObject(objectPath, childObject, flattenedTokens) {
   Object.entries(childObject).forEach(([key, value]) => {
     const childPath = (objectPath) ? objectPath+'-'+key : key;
@@ -38,28 +38,44 @@ function flattenObject(objectPath, childObject, flattenedTokens) {
   });
 }
 
-
-
-function resolveValue(key, value, tokens, coretokens, breadcrumbs) {
-  if ((typeof value === 'string') && (value.startsWith('@'))) {
-    const tokenName = value.slice(1);
-    if (breadcrumbs.includes(tokenName)) {
-      console.log('Found loop when resolving ' + key);
-      process.exit(1);
+// Finds a flattened key in the non-flattened hierarchy
+function findKey(keyParts, tokens) {
+  // Complication: token names might have a hyphen in them, so we try combining the parts to see if we can find a match
+  for (let i=1; i<=keyParts.length; i++) {
+    const joinedKey = keyParts.slice(0,i).join('-');
+    if (keyParts.length == i) {
+      return tokens[joinedKey];
+    } else if (joinedKey in tokens) {
+      return findKey(keyParts.slice(i), tokens[joinedKey]);
     }
-    breadcrumbs.push(tokenName);
-    if (tokenName in coretokens) {
-      return coretokens[tokenName];
-    }
-    if (!(tokenName in tokens)) {
-      console.log('Unknown token: ' + tokenName + ' when resolving ' + key);
-      process.exit(1);
-    }
-    return resolveValue(key, tokens[tokenName], tokens, coretokens, breadcrumbs);
   }
-  else
-  {
-    return value;
+  return null;
+}
+
+// Finds references, and returns an object with all references resolved
+// You can probably break this with recursive references, can't be bothered to check
+function resolveValue(currentToken, allTokens, coretokens) {
+  if (typeof currentToken === 'object') { // If this is an object, return a version with all children resolved
+    Object.entries(currentToken).forEach(([key, value]) => {
+      currentToken[key] = resolveValue(value, allTokens, coretokens);
+    });
+    return currentToken;
+  } else if ((typeof currentToken === 'string') && (currentToken.startsWith('@'))) { // If it's a reference, return the resolved object
+    const tokenName = currentToken.slice(1);
+    if (tokenName in coretokens) { // easy case - it refers to something in the core
+      return coretokens[tokenName];
+    } else { // Otherwise we've got to find the token
+      const keyParts = tokenName.split('-');
+      const value = findKey(keyParts, allTokens);
+      if (value) {
+        return resolveValue(value, allTokens, coretokens);
+      } else {
+        console.log('Uanble to find ' + currentToken + ' in ' + JSON.stringify(allTokens, null, 2));
+        process.exit(1);
+      }
+    }
+  } else { // Otherwise, we don't need to do any resolution
+    return currentToken;
   }
 }
 
@@ -124,6 +140,8 @@ console.log('=== Core files loaded ====================');
 
 Object.keys(args).forEach(themeFileName => {
   console.log('=== Processing theme =====================');
+  
+  // Load all the files to build one big object
   let themeFileData = fs.readFileSync(themeFileName);
   let themeFile = JSON.parse(themeFileData);
   console.log(`Loading theme ${themeFile.name} for platform ${platform} using color format ${colorFormat}`);
@@ -135,24 +153,19 @@ Object.keys(args).forEach(themeFileName => {
       merge(tokenData, loadFile(fileName, false));
     }
   });
-  //console.log(tokenData);
+  /*console.log('=== After load theme data =====================');
+  console.log(JSON.stringify(tokenData, null, 2));*/
+  
+  // Resolve all the references
+  tokenData = resolveValue(tokenData, tokenData, flattenedCoreTokens);
+  /*console.log('=== After resolve references ==================');
+  console.log(JSON.stringify(tokenData, null, 2));*/
 
-
-
+  // Flatten the token names
   const flattenedTokens = {};
   flattenObject('', tokenData, flattenedTokens);
-  //console.log(flattenedCoreTokens);
-  //console.log(flattenedTokens);
-
-
-
-  // Then resolve all the tokens
-  Object.entries(flattenedTokens).forEach(([key, value]) => {
-    flattenedTokens[key] = resolveValue(key, value, flattenedTokens, flattenedCoreTokens, []);
-  });
-  //console.log(flattenedTokens);
-
-
+  /*console.log('=== After flattening tokens ===================');
+  console.log(JSON.stringify(flattenedTokens, null, 2));*/
 
   // And then expand every token into UI states
   const stateTokens = {};
@@ -175,6 +188,8 @@ Object.keys(args).forEach(themeFileName => {
     }
     stateTokens[baseKeyName][uiState] = value;
   });
+  
+  // Output the flattened file
   if (toStdOut) {
     console.log(stateTokens);
   } else {

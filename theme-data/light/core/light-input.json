@@ -1,30 +1,32 @@
 {
-  "input": {
-    "background": {
-      "#normal": "@color-white-alpha-100",
-      "#hovered": "@color-black-alpha-04",
-      "#pressed": "@color-black-alpha-11",
-      "#active": "@color-black-alpha-11",
-      "#disabled": "@color-black-alpha-11"
-    },
-    "border-color": {
-      "#normal": "@color-black-alpha-50",
-      "#active": "@color-black-alpha-90"
-    },
-    "text-color": {
-      "#normal": "@color-black-alpha-95",
-      "#disabled": "@color-black-alpha-40"
-    },
-    "focusRing": "@color-blue-60",
-    "error": {
-      "background": "@color-red-05",
-      "border-color": "@color-red-50",
-      "text-color": "@color-red-70"
-    },
-    "warning": {
-      "background": "@color-yellow-05",
-      "border-color": "@color-yellow-40",
-      "text-color": "@color-yellow-70"
+  "theme": {
+    "input": {
+      "background": {
+        "#normal": "@color-white-alpha-100",
+        "#hovered": "@color-black-alpha-04",
+        "#pressed": "@color-black-alpha-11",
+        "#active": "@color-black-alpha-11",
+        "#disabled": "@color-black-alpha-11"
+      },
+      "border-color": {
+        "#normal": "@color-black-alpha-50",
+        "#active": "@color-black-alpha-90"
+      },
+      "text-color": {
+        "#normal": "@color-black-alpha-95",
+        "#disabled": "@color-black-alpha-40"
+      },
+      "focusRing": "@color-blue-60",
+      "error": {
+        "background": "@color-red-05",
+        "border-color": "@color-red-50",
+        "text-color": "@color-red-70"
+      },
+      "warning": {
+        "background": "@color-yellow-05",
+        "border-color": "@color-yellow-40",
+        "text-color": "@color-yellow-70"
+      }
     }
   }
 }
