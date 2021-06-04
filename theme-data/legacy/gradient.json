@@ -1,0 +1,89 @@
+{
+  "legacy": {
+    "background-gradient-start": {
+      "#normal": "@color-blue-90"
+    },
+    "background-gradient-end": {
+      "#normal": "@plum-90"
+    },
+    "content-gradient-start": {
+      "#normal": "@color-blue-80"
+    },
+    "content-gradient-end": {
+      "#normal": "@plum-80"
+    },
+    "listItem-primary": {
+      "#normal": "@color-transparent",
+      "#hovered": "@color-black-alpha-07",
+      "#pressed": "@color-black-alpha-20",
+      "#checked": "@color-black-alpha-20"
+    },
+    "listItem-secondary": {
+      "#normal": "@color-transparent",
+      "#hovered": "@color-black-alpha-07",
+      "#pressed": "@color-black-alpha-20"
+    },
+    "separator-primary": {
+      "#normal": "@color-transparent"
+    },
+    "separator-secondary": {
+      "#normal": "@color-transparent"
+    },
+    "footer-background": {
+      "#normal": "@color-transparent"
+    },
+    "appHeader": {
+      "#normal": "@color-transparent"
+    },
+    "appHeader-buttonStatus": {
+      "#normal": "@color-transparent",
+      "#hovered": "@color-black-alpha-07",
+      "#pressed": "@color-black-alpha-20",
+      "#checked": "@color-black-alpha-20"
+    },
+    "appHeader-buttonDevice": {
+      "#normal": "@color-transparent",
+      "#hovered": "@color-black-alpha-07",
+      "#pressed": "@color-black-alpha-20",
+      "#checked": "@color-black-alpha-20"
+    },
+    "appHeader-searchBar": {
+      "#normal": "@color-white-alpha-20",
+      "#hovered": "@color-white-alpha-40",
+      "#pressed": "@color-white-alpha-40"
+    },
+    "appHeader-buttonPlus": {
+      "#normal": "@color-transparent",
+      "#hovered": "@color-black-alpha-07",
+      "#pressed": "@color-black-alpha-20"
+    },
+    "appNav-background": {
+      "#normal": "@color-transparent",
+      "#hovered": "@color-black-alpha-07",
+      "#pressed": "@color-black-alpha-20",
+      "#checked": "@color-black-alpha-20",
+      "#disabled": "@color-black-alpha-60"
+    },
+    "mainList": {
+      "#normal": "@color-transparent",
+      "#hovered": "@color-black-alpha-07",
+      "#pressed": "@color-black-alpha-20"
+    },
+    "mainList-item": {
+      "#normal": "@color-transparent",
+      "#hovered": "@color-black-alpha-07",
+      "#pressed": "@color-black-alpha-20"
+    },
+    "wx-externalParticipants-background": {
+      "#normal": "@color-yellow-10-alpha-25"
+    },
+    "wx-transparent-button": {
+      "#normal": "@color-transparent",
+      "#hovered": "@color-black-alpha-07",
+      "#pressed": "@color-black-alpha-20",
+      "#disabled": "@color-transparent",
+      "focused": "@color-black-alpha-07",
+      "#checked": "@color-transparent"
+    }
+  }
+}

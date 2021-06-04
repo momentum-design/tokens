@@ -1,5 +1,6 @@
 const fs = require('fs');
 var parseColour = require('color-parse');
+var merge = require('lodash.merge');
 
 function loadFile(fileName, isDirectory) {
   if (isDirectory) {
@@ -7,7 +8,7 @@ function loadFile(fileName, isDirectory) {
     let fileList = fs.readdirSync(fileName, {withFileTypes: true});
     let tokenData = {};
     fileList.forEach((childFile) => {
-      tokenData = {...tokenData, ...loadFile(fileName+"/"+childFile.name, childFile.isDirectory())};
+      merge(tokenData, loadFile(fileName+"/"+childFile.name, childFile.isDirectory()));
     });
     return tokenData;
   }
@@ -72,9 +73,9 @@ console.log('Loading theme ' + themeFile.name);
 let tokenData = {};
 themeFile.files.forEach((fileName) => {
   if (fileName.endsWith('/')) {
-    tokenData = {...tokenData, ...loadFile(fileName.slice(0, -1), true)};
+    merge(tokenData, loadFile(fileName.slice(0, -1), true));
   } else {
-    tokenData = {...tokenData, ...loadFile(fileName, false)};
+    merge(tokenData, loadFile(fileName, false));
   }
 });
 //console.log(tokenData);

@@ -3,6 +3,7 @@
   "files": [
     "theme-data/common/",
     "theme-data/light/core/",
-    "theme-data/light/light-webex.json"
+    "theme-data/light/light-webex.json",
+    "theme-data/legacy/default.json"
   ]
 }
