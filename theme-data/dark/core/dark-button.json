@@ -3,7 +3,7 @@
     "primary": {
       "background": {
         "#normal": "@color-white-alpha-95",
-        "#hover": "@color-white-alpha-80",
+        "#hovered": "@color-white-alpha-80",
         "#pressed": "@color-white-alpha-70"
       },
       "text": "@color-white-alpha-95"
@@ -11,7 +11,7 @@
     "secondary": {
       "background": {
         "#normal": "@color-white-alpha-00",
-        "#hover": "@color-white-alpha-11",
+        "#hovered": "@color-white-alpha-11",
         "#pressed": "@color-white-alpha-07"
       },
       "border-color": "@color-white-alpha-90",
@@ -30,7 +30,7 @@
     "ghost": {
       "background": {
         "#normal": "@color-white-alpha-00",
-        "#hover": "@color-white-alpha-11",
+        "#hovered": "@color-white-alpha-11",
         "#pressed": "@color-white-alpha-20"
       },
       "text": "@color-white-alpha-95"

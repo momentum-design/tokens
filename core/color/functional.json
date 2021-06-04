@@ -1,6 +1,6 @@
 {
     "color":{
-        "transparent": "@white-alpha-0",
+        "transparent": "rgba(255, 255, 255, 0)",
         "gray":{
             "05": "#F7F7F7",
             "10": "#EDEDED",

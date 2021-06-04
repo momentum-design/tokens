@@ -3,7 +3,7 @@
     "join": {
       "background": {
         "#normal": "@color-green-60",
-        "#hover": "@color-green-70",
+        "#hovered": "@color-green-70",
         "#pressed": "@color-green-80"
       },
       "text": "@color-white-alpha-95"
@@ -11,7 +11,7 @@
     "joinOutline": {
       "background": {
         "#normal": "@color-green-60",
-        "#hover": "@color-green-70",
+        "#hovered": "@color-green-70",
         "#pressed": "@color-green-80"
       },
       "text": "@color-white-alpha-95"
@@ -19,7 +19,7 @@
     "cancel": {
       "background": {
         "#normal": "@color-red-60",
-        "#hover": "@color-red-70",
+        "#hovered": "@color-red-70",
         "#pressed": "@color-red-80"
       },
       "text": "@color-white-alpha-95"
@@ -27,7 +27,7 @@
     "message": {
       "background": {
         "#normal": "@color-blue-60",
-        "#hover": "@color-blue-70",
+        "#hovered": "@color-blue-70",
         "#pressed": "@color-blue-80"
       },
       "text": "@color-white-alpha-95"
@@ -35,7 +35,7 @@
     "screenShare": {
       "background": {
         "#normal": "@color-green-60",
-        "#hover": "@color-green-70",
+        "#hovered": "@color-green-70",
         "#pressed": "@color-green-80"
       },
       "text": "@color-white-alpha-95"

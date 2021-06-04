@@ -2,7 +2,7 @@
   "input": {
     "background": {
       "#normal": "@color-black-alpha-100",
-      "#hover": "@color-white-alpha-05",
+      "#hovered": "@color-white-alpha-05",
       "#pressed": "@color-white-alpha-11",
       "#active": "@color-white-alpha-11",
       "#disabled": "@color-white-alpha-11"
