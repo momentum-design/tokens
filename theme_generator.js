@@ -43,7 +43,7 @@ function findKey(keyParts, tokens) {
   // Complication: token names might have a hyphen in them, so we try combining the parts to see if we can find a match
   for (let i=1; i<=keyParts.length; i++) {
     const joinedKey = keyParts.slice(0,i).join('-');
-    if (keyParts.length == i) {
+    if (keyParts.length === i) {
       return tokens[joinedKey];
     } else if (joinedKey in tokens) {
       return findKey(keyParts.slice(i), tokens[joinedKey]);
@@ -87,9 +87,9 @@ if (args.platform) {
 
 let colorFormat='rgba';
 if (args.colorFormat) {
-  if (args.colorFormat == 'hex') {
+  if (args.colorFormat === 'hex') {
     colorFormat = 'hex';
-  } else if (args.colorFormat == 'rgba') {
+  } else if (args.colorFormat === 'rgba') {
     colorFormat = 'rgba';
   } else {
     console.log('Unknown color format: ' + args.colorFormat);
@@ -98,18 +98,37 @@ if (args.colorFormat) {
   delete args.colorFormat;
 }
 
+let sizeUnit='px';
+if (args.sizeUnit) {
+  if (args.sizeUnit === 'px') {
+    sizeUnit = 'px';
+  } else if (args.sizeUnit === 'pt') {
+    sizeUnit = 'pt';
+  } else if (args.sizeUnit === 'rem') {
+    sizeUnit = 'rem';
+  } else {
+    console.log('Unknown size unit: ' + args.sizeUnit);
+    process.exit(1);
+  }
+  delete args.sizeUnit;
+}
+
 let toStdOut=false;
 if (args.toStdOut) {
   toStdOut = args.toStdOut;
   delete args.toStdOut;
 }
 
-if (Object.keys(args).length == 0) {
+if (Object.keys(args).length === 0) {
   console.log(`Usage: ${process.argv[1]} [OPTION]... [THEME FILE]...`);
   console.log('Options');
   console.log('  --colorFormat=[hex|rgba]    What color format to use in the output.');
   console.log('       rgba -> rgba(244,233,20,0.8)');
   console.log('       hex  -> #RRGGBBAA (or would be if someone fixes it)');
+  console.log('  --sizeUnit=[px|pt|rem]      What unit to use for sizes in the output.');
+  console.log('       px   -> pixels (matching that on Figma)');
+  console.log('       pt   -> points (pixels * 0.75)');
+  console.log('       rem  -> root em, used on web to create sizes relative to user font size');
   console.log('  --platform=PLATFORM         Which platform to generate for.');
   process.exit(1);
 }
@@ -125,13 +144,26 @@ Object.entries(flattenedCoreTokens).forEach(([key, value]) => {
   if ((typeof value === 'string') && (value.startsWith('#') || value.startsWith('rgb'))) {
     const c = parseColour(value);
     if (!c) {
-      console.log('Unable to parse colour' + value);
+      console.log('Unable to parse colour: ' + value);
       process.exit(1);
     }
-    if (colorFormat == 'rgba') {
+    if (colorFormat === 'rgba') {
       flattenedCoreTokens[key] = `rgba(${c.values[0]}, ${c.values[1]}, ${c.values[2]}, ${c.alpha})`;
-    } else if (colorFormat == 'hex') {
+    } else if (colorFormat === 'hex') {
       flattenedCoreTokens[key] = ((c.values[0] << 24) | (c.values[1] << 16) | (c.values[2] << 8) | c.alpha).toString(16);
+    }
+  } else if ((typeof value === 'string') && (value.endsWith('px'))) {
+    const pxSize = parseInt(value.slice(0,-2));
+    if (isNaN(pxSize)) {
+      console.log('Unable to parse size: ' + value);
+      process.exit(1);
+    }
+    if (sizeUnit === 'px') {
+      flattenedCoreTokens[key] = pxSize + 'px';
+    } else if (sizeUnit === 'pt') {
+      flattenedCoreTokens[key] = (pxSize * 0.75) + 'pt';
+    } else if (sizeUnit === 'rem') {
+      flattenedCoreTokens[key] = (pxSize/16) + 'rem';
     }
   }
 });
