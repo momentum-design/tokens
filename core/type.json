@@ -8,8 +8,8 @@
     "extraSmall": "12px"
   },
   "fontWeight": {
-    "regular": 50,
-    "semibold": 63,
-    "bold": 75
+    "regular": "50",
+    "semibold": "63",
+    "bold": "75"
   }
 }
