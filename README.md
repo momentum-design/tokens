@@ -17,5 +17,12 @@ Options
   --colorFormat=[hex|rgba]    What color format to use in the output.
        rgba -> rgba(244,233,20,0.8)
        hex  -> #RRGGBBAA (or would be if someone fixes it)
+  --sizeUnit=[px|pt|rem]      What unit to use for sizes in the output.
+       px   -> pixels (matching that on Figma)
+       pt   -> points (pixels * 0.75)
+       rem  -> root em, used on web to create sizes relative to user font size
   --platform=PLATFORM         Which platform to generate for.
+       web
+       desktop
+
 ```
