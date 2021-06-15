@@ -52,6 +52,36 @@ function findKey(keyParts, tokens) {
   return null;
 }
 
+// Parses a value and normalises the unit if required
+function normaliseUnit(value) {
+  if ((typeof value === 'string') && (value.startsWith('#') || value.startsWith('rgb'))) {
+    const c = parseColour(value);
+    if (!c) {
+      console.log('Unable to parse colour: ' + value);
+      process.exit(1);
+    }
+    if (colorFormat === 'rgba') {
+      return `rgba(${c.values[0]}, ${c.values[1]}, ${c.values[2]}, ${c.alpha})`;
+    } else if (colorFormat === 'hex') {
+      return ((c.values[0] << 24) | (c.values[1] << 16) | (c.values[2] << 8) | c.alpha).toString(16);
+    }
+  } else if ((typeof value === 'string') && (value.endsWith('px'))) {
+    const pxSize = parseInt(value.slice(0,-2));
+    if (isNaN(pxSize)) {
+      console.log('Unable to parse size: ' + value);
+      process.exit(1);
+    }
+    if (sizeUnit === 'px') {
+      return pxSize + 'px';
+    } else if (sizeUnit === 'pt') {
+      return (pxSize * 0.75) + 'pt';
+    } else if (sizeUnit === 'rem') {
+      return (pxSize/16) + 'rem';
+    }
+  }
+  return value;
+}
+
 // Finds references, and returns an object with all references resolved
 // You can probably break this with recursive references, can't be bothered to check
 function resolveValue(currentToken, allTokens, coretokens) {
@@ -75,7 +105,7 @@ function resolveValue(currentToken, allTokens, coretokens) {
       }
     }
   } else { // Otherwise, we don't need to do any resolution
-    return currentToken;
+    return normaliseUnit(currentToken);
   }
 }
 
@@ -143,31 +173,7 @@ const flattenedCoreTokens = {};
 flattenObject('', coreData, flattenedCoreTokens);
 // normalise colours
 Object.entries(flattenedCoreTokens).forEach(([key, value]) => {
-  if ((typeof value === 'string') && (value.startsWith('#') || value.startsWith('rgb'))) {
-    const c = parseColour(value);
-    if (!c) {
-      console.log('Unable to parse colour: ' + value);
-      process.exit(1);
-    }
-    if (colorFormat === 'rgba') {
-      flattenedCoreTokens[key] = `rgba(${c.values[0]}, ${c.values[1]}, ${c.values[2]}, ${c.alpha})`;
-    } else if (colorFormat === 'hex') {
-      flattenedCoreTokens[key] = ((c.values[0] << 24) | (c.values[1] << 16) | (c.values[2] << 8) | c.alpha).toString(16);
-    }
-  } else if ((typeof value === 'string') && (value.endsWith('px'))) {
-    const pxSize = parseInt(value.slice(0,-2));
-    if (isNaN(pxSize)) {
-      console.log('Unable to parse size: ' + value);
-      process.exit(1);
-    }
-    if (sizeUnit === 'px') {
-      flattenedCoreTokens[key] = pxSize + 'px';
-    } else if (sizeUnit === 'pt') {
-      flattenedCoreTokens[key] = (pxSize * 0.75) + 'pt';
-    } else if (sizeUnit === 'rem') {
-      flattenedCoreTokens[key] = (pxSize/16) + 'rem';
-    }
-  }
+  flattenedCoreTokens[key] = normaliseUnit(value);
 });
 
 console.log('=== Core files loaded ====================');
