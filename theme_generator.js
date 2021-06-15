@@ -130,6 +130,8 @@ if (Object.keys(args).length === 0) {
   console.log('       pt   -> points (pixels * 0.75)');
   console.log('       rem  -> root em, used on web to create sizes relative to user font size');
   console.log('  --platform=PLATFORM         Which platform to generate for.');
+  console.log('       web');
+  console.log('       desktop');
   process.exit(1);
 }
 
@@ -203,22 +205,32 @@ Object.keys(args).forEach(themeFileName => {
   const stateTokens = {};
   Object.entries(flattenedTokens).forEach(([key, value]) => {
     const keyParts = key.split('-');
-    let uiState = 'normal';
+    const validUiStates = ['normal', 'hovered', 'pressed', 'disabled', 'focused', 'active', 'checked'];
+    let uiState = validUiStates[0];
     if (keyParts[keyParts.length-1].startsWith('#')) 
     {
       //This is a state, so sanity check it falls into allowed values
       uiState = keyParts.pop().slice(1);
-      const validUiStates = ['normal', 'hovered', 'pressed', 'disabled', 'focused', 'active', 'checked'];
       if (!validUiStates.includes(uiState)) {
         console.log(`Unknown ui state: ${uiState} when resolving ${key}`);
         process.exit(1);
       }
     }
     const baseKeyName = keyParts.join('-');
-    if (!(baseKeyName in stateTokens)) {
-      stateTokens[baseKeyName] = {};
+    if (platform === 'desktop') {
+      if (!(baseKeyName in stateTokens)) {
+        stateTokens[baseKeyName] = {};
+      }
+      stateTokens[baseKeyName][uiState] = value;
     }
-    stateTokens[baseKeyName][uiState] = value;
+    else {
+      if (uiState === validUiStates[0]) {
+        stateTokens[baseKeyName] = value;
+      }
+      else {
+        stateTokens[baseKeyName+'-'+uiState] = value;
+      }
+    }
   });
   
   // Output the flattened file
