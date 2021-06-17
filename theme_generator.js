@@ -3,6 +3,7 @@ const parseColour = require('color-parse');
 const merge = require('lodash.merge');
 const args = require('args-parser')(process.argv);
 const camelCase = require('camelcase');
+const path = require('path');
 
 // Loads a JSON file or directory of files and returns an object with the contents of all the files merged together
 function loadFile(fileName, isDirectory) {
@@ -243,7 +244,8 @@ Object.keys(args).forEach(themeFileName => {
   if (toStdOut) {
     console.log(stateTokens);
   } else {
-    const outputFileName = camelCase(themeFile.name) + '.json';
+    fs.mkdir('out', (err) => {});
+    const outputFileName = path.join('out', camelCase(themeFile.name) + '.json');
     fs.writeFile(outputFileName, JSON.stringify(stateTokens, null, 2), 'utf8', function (err) {
       if (err) 
       {
