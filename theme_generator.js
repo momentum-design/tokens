@@ -110,7 +110,7 @@ function resolveValue(currentToken, allTokens, coretokens) {
   }
 }
 
-let platform='Web';
+let platform='web';
 if (args.platform) {
   platform = args.platform;
   delete args.platform;
@@ -241,18 +241,44 @@ Object.keys(args).forEach(themeFileName => {
   });
   
   // Output the flattened file
-  if (toStdOut) {
-    console.log(stateTokens);
-  } else {
-    fs.mkdir('out', (err) => {});
-    const outputFileName = path.join('out', camelCase(themeFile.name) + '.json');
-    fs.writeFile(outputFileName, JSON.stringify(stateTokens, null, 2), 'utf8', function (err) {
-      if (err) 
-      {
-        console.log("Error when writing JSON file: " + err);
-        process.exit(1);
+
+  fs.mkdir('out', (err) => {});
+  let outputFileName = '';
+  if (platform === 'web') {
+    outputFileName = path.join('out', camelCase(themeFile.name) + '.css');
+    let fileHandle = undefined;
+    if (!toStdOut) {
+      fileHandle = fs.openSync(outputFileName, 'w');
+      console.log('Opened file handle ' + fileHandle);
+    }
+    function outputLine(line) {
+      if (toStdOut) {
+        console.log(line);
+      } else {
+        fs.writeSync(fileHandle, line+'\n');
       }
+    }
+    outputLine('.md-theme-' + camelCase(themeFile.name) + ' {');
+    Object.entries(stateTokens).forEach(([key, value]) => {
+      outputLine('  --'+key+': '+value+';');
     });
+    outputLine('}');
+  }
+  else {
+    outputFileName = path.join('out', camelCase(themeFile.name) + '.json');
+    if (toStdOut) {
+      console.log(stateTokens);
+    } else {
+      fs.writeFile(outputFileName, JSON.stringify(stateTokens, null, 2), 'utf8', function (err) {
+        if (err) 
+        {
+          console.log("Error when writing JSON file: " + err);
+          process.exit(1);
+        }
+      });
+    }
+  }
+  if (!toStdOut) {
     console.log(`Written to ${outputFileName}`);
   }
   console.log('=== Theme processed ======================');
