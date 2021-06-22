@@ -179,6 +179,8 @@ Object.entries(flattenedCoreTokens).forEach(([key, value]) => {
 
 console.log('=== Core files loaded ====================');
 
+const indexFileData = [];
+
 Object.keys(args).forEach(themeFileName => {
   console.log('=== Processing theme =====================');
   
@@ -245,6 +247,7 @@ Object.keys(args).forEach(themeFileName => {
   fs.mkdir('out', (err) => {});
   let outputFileName = '';
   if (platform === 'web') {
+    indexFileData.push(`@import '${camelCase(themeFile.name)}.css';`);
     outputFileName = path.join('out', camelCase(themeFile.name) + '.css');
     let fileHandle = undefined;
     if (!toStdOut) {
@@ -283,3 +286,10 @@ Object.keys(args).forEach(themeFileName => {
   }
   console.log('=== Theme processed ======================');
 });
+
+if (platform === 'web') {
+  const indexFileContent = indexFileData.join('\n');
+  const indexFileName = path.join('out', 'index.css');
+
+  fs.writeFileSync(indexFileName, indexFileContent, 'utf8');
+}
