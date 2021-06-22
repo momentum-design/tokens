@@ -1,6 +1,6 @@
 {
   "dependencies": {},
-  "name": "momentum-tokens",
+  "name": "@momentumreact/tokens",
   "description": "See [documentation on Confluence](https://confluence-eng-gpk2.cisco.com/conf/display/~pauwitty/Token+proposal)",
   "version": "0.0.0",
   "main": "./dist/index.css",
@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/paulwitty/token-proposal/issues"
   },
-  "homepage": "https://github.com/paulwitty/token-proposal#readme"
+  "homepage": "https://github.com/paulwitty/token-proposal#readme",
+  "publishConfig": {
+    "registry": "https://engci-maven-master.cisco.com/artifactory/api/npm/webex-web-app-npm/"
+  }
 }
