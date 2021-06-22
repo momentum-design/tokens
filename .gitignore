@@ -4,7 +4,7 @@ node_modules
 npm-debug.log*
 .bower-cache
 .bower-registry
-package-lock.json
+# package-lock.json # Should be added
 .npmrc
 .env
 
@@ -96,4 +96,4 @@ packages
 
 # Library Specific files #
 ##########################
-/out/
+# /out/ # Enabled for module exports/imports.
