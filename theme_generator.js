@@ -244,11 +244,11 @@ Object.keys(args).forEach(themeFileName => {
   
   // Output the flattened file
 
-  fs.mkdir('out', (err) => {});
+  fs.mkdir('dist', (err) => {});
   let outputFileName = '';
   if (platform === 'web') {
     indexFileData.push(`@import '${camelCase(themeFile.name)}.css';`);
-    outputFileName = path.join('out', camelCase(themeFile.name) + '.css');
+    outputFileName = path.join('dist', camelCase(themeFile.name) + '.css');
     let fileHandle = undefined;
     if (!toStdOut) {
       fileHandle = fs.openSync(outputFileName, 'w');
@@ -268,7 +268,7 @@ Object.keys(args).forEach(themeFileName => {
     outputLine('}');
   }
   else {
-    outputFileName = path.join('out', camelCase(themeFile.name) + '.json');
+    outputFileName = path.join('dist', camelCase(themeFile.name) + '.json');
     if (toStdOut) {
       console.log(stateTokens);
     } else {
@@ -289,7 +289,7 @@ Object.keys(args).forEach(themeFileName => {
 
 if (platform === 'web') {
   const indexFileContent = indexFileData.join('\n');
-  const indexFileName = path.join('out', 'index.css');
+  const indexFileName = path.join('dist', 'index.css');
 
   fs.writeFileSync(indexFileName, indexFileContent, 'utf8');
 }

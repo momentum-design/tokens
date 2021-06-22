@@ -3,7 +3,7 @@
   "name": "momentum-tokens",
   "description": "See [documentation on Confluence](https://confluence-eng-gpk2.cisco.com/conf/display/~pauwitty/Token+proposal)",
   "version": "0.0.0",
-  "main": "./out/index.css",
+  "main": "./dist/index.css",
   "devDependencies": {
     "args-parser": "^1.2.0",
     "camelcase": "^6.2.0",
@@ -12,7 +12,7 @@
     "rimraf": "^3.0.2"
   },
   "scripts": {
-    "build:clean": "rimraf ./out",
+    "build:clean": "rimraf ./dist",
     "build:css": "npm run build:clean && node theme_generator.js --platform=web themes/* --sizeUnit=rem",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
