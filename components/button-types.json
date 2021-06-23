@@ -1,0 +1,29 @@
+{
+  "button": {
+    "primary": {
+      "background": "@theme-button-primary",
+      "text": "@theme-text-button"
+    },
+    "secondary": {
+      "background": "@theme-button-secondary",
+      "text": "@theme-text-button"
+    },
+    "join": {
+      "background": "@theme-button-join",
+      "text": "@theme-text-button"
+    },
+    "cancel": {
+      "background": "@theme-button-cancel",
+      "text": "@theme-text-button"
+    },
+    "accent": {
+      "background": "@theme-button-accent",
+      "text": "@theme-text-button"
+    },
+    "ghost": {
+      "background": "@theme-button-ghost",
+      "text": "@theme-text-button"
+    },
+    "focusRing": "@theme-border-focus"
+  }
+}

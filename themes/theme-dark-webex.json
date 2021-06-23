@@ -2,9 +2,8 @@
   "name": "Dark Webex",
   "files": [
     "theme-data/common/",
-    "theme-data/dark/core/",
+    "theme-data/dark/dark-common.json",
     "theme-data/dark/dark-webex.json",
-    "theme-data/legacy/default.json",
-    "theme-data/legacy/dark.json"
+    "legacy/dark.json"
   ]
 }
