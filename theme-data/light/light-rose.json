@@ -1,6 +1,8 @@
 {
-  "gradiation": {
-    "primary" : ["#FCEBF5", "#FFFFFF"],
-    "secondary" : ["#FFF9FD", "#FFFFFF"]
+  "theme": {
+    "gradation": {
+      "primary" : ["#FCEBF5", "#FFFFFF"],
+      "secondary" : ["#FFF9FD", "#FFFFFF"]
+    }
   }
 }

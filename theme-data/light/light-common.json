@@ -1,0 +1,93 @@
+{
+  "theme": {
+    "text": {
+      "primary": "@color-black-alpha-95",
+      "secondary": "@color-black-alpha-60",
+      "disabled": "@color-black-alpha-40",
+      "highlight": "@color-blue-20",
+      "accent": {
+        "#normal": "@color-blue-70",
+        "#hovered": "@color-blue-90",
+        "#pressed": "@color-blue-90",
+        "#focused": "@color-blue-60"
+      },
+      "error": "@color-red-70",
+      "button": "@color-white-alpha-95",
+      "success": "@color-green-70",
+      "warning": "@color-yellow-70"
+    },
+    "button": {
+      "ghost": {
+        "#normal": "@color-white-alpha-00",
+        "#hovered": "@color-black-alpha-11",
+        "#pressed": "@color-black-alpha-20"
+      },
+      "primary": {
+        "#normal": "@color-black-alpha-95",
+        "#hovered": "@color-black-alpha-80",
+        "#pressed": "@color-black-alpha-70"
+      },
+      "secondary": {
+        "#normal": "@color-black-alpha-00",
+        "#hovered": "@color-black-alpha-07",
+        "#pressed": "@color-black-alpha-20"
+      },
+      "disabled": "@color-black-alpha-20"
+    },
+    "background": {
+      "solid": {
+        "primary": "@color-white-alpha-100",
+        "secondary": "@color-gray-05",
+        "tertiary": "@color-gray-10"
+      },
+      "warning": "@color-yellow-10",
+      "error": "@color-red-10",
+      "theme": "@color-blue-10",
+      "success": "@color-green-10",
+      "item": {
+        "#normal": "@color-white-alpha-100",
+        "#hovered": "@color-black-alpha-04",
+        "#active": "@color-black-alpha-11"
+      }
+    },
+    "overlay": {
+      "primary": "@color-black-alpha-90",
+      "secondary": "@color-black-alpha-40"
+    },
+    "border": {
+      "primary": "@color-black-alpha-40",
+      "secondary": "@color-black-alpha-20",
+      "focus": "@color-blue-60",
+      "input": {
+        "#normal": "@color-black-alpha-50",
+        "#active": "@color-black-alpha-90"
+      }
+    },
+    "pageControl": {
+      "#normal": "@color-black-alpha-20",
+      "#active": "@color-black-alpha-40"
+    },
+    "control": {
+      "#normal": "@color-blue-60",
+      "#hovered": "@color-blue-70",
+      "#pressed": "@color-blue-80",
+      "#active": "@color-blue-80",
+      "#disabled": "@color-blue-05"
+    },
+    "presence": {
+      "busy": "@color-yellow-60",
+      "doNotDisturb": "@color-red-60",
+      "active": "@color-green-60",
+      "away": "@color-gray-60"
+    },
+    "whiteboard": {
+      "stickyNote": {
+        "yellow": "@color-yellow-30",
+        "red": "@color-red-40",
+        "purple": "@color-purple-40",
+        "cyan": "@color-cyan-40",
+        "mint": "@color-mint-40"
+      }
+    }
+  }
+} 

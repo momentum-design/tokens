@@ -188,7 +188,7 @@ Object.keys(args).forEach(themeFileName => {
   let themeFileData = fs.readFileSync(themeFileName);
   let themeFile = JSON.parse(themeFileData);
   console.log(`Loading theme ${themeFile.name} for platform ${platform} using color format ${colorFormat}`);
-  let tokenData = {};
+  let tokenData = loadFile("components", true);
   themeFile.files.forEach((fileName) => {
     if (fileName.endsWith('/')) {
       merge(tokenData, loadFile(fileName.slice(0, -1), true));
@@ -252,7 +252,6 @@ Object.keys(args).forEach(themeFileName => {
     let fileHandle = undefined;
     if (!toStdOut) {
       fileHandle = fs.openSync(outputFileName, 'w');
-      console.log('Opened file handle ' + fileHandle);
     }
     function outputLine(line) {
       if (toStdOut) {
@@ -266,8 +265,7 @@ Object.keys(args).forEach(themeFileName => {
       outputLine('  --'+key+': '+value+';');
     });
     outputLine('}');
-  }
-  else {
+  }   else {
     outputFileName = path.join('dist', camelCase(themeFile.name) + '.json');
     if (toStdOut) {
       console.log(stateTokens);

@@ -2,7 +2,7 @@
   "name": "Dark Indigo",
   "files": [
     "theme-data/common/",
-    "theme-data/dark/core/",
+    "theme-data/dark/dark-common.json",
     "theme-data/dark/dark-indigo.json"
   ]
 }
