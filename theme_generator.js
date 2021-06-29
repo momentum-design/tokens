@@ -64,7 +64,11 @@ function normaliseUnit(value) {
     if (colorFormat === 'rgba') {
       return `rgba(${c.values[0]}, ${c.values[1]}, ${c.values[2]}, ${c.alpha})`;
     } else if (colorFormat === 'hex') {
-      return ((c.values[0] << 24) | (c.values[1] << 16) | (c.values[2] << 8) | c.alpha).toString(16);
+      r = c.values[0].toString(16).padStart(2,'0');
+      g = c.values[1].toString(16).padStart(2,'0');
+      b = c.values[2].toString(16).padStart(2,'0');
+      a = (c.alpha === 1) ? '' : Math.round(c.alpha * 255).toString(16).padStart(2,'0');
+      return "#" + r + g + b + a;
     }
   } else if ((typeof value === 'string') && (value.endsWith('px'))) {
     const pxSize = parseInt(value.slice(0,-2));
@@ -155,7 +159,7 @@ if (Object.keys(args).length === 0) {
   console.log('Options');
   console.log('  --colorFormat=[hex|rgba]    What color format to use in the output.');
   console.log('       rgba -> rgba(244,233,20,0.8)');
-  console.log('       hex  -> #RRGGBBAA (or would be if someone fixes it)');
+  console.log('       hex  -> #RRGGBBAA');
   console.log('  --sizeUnit=[px|pt|rem]      What unit to use for sizes in the output.');
   console.log('       px   -> pixels (matching that on Figma)');
   console.log('       pt   -> points (pixels * 0.75)');
