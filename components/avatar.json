@@ -11,7 +11,7 @@
       "ooo": "@theme-presence-away"
     },
     "color-avatar": {
-      "text": "@theme-text-primary",
+      "text": "@theme-text-primary-normal",
       "background": {
         "default": "@theme-avatar-default",
         "gold": "@theme-avatar-gold",
@@ -41,20 +41,20 @@
       },
       "bot-temp": {
         "background": "@theme-avatar-default",
-        "icon": "@theme-text-primary"
+        "icon": "@theme-text-primary-normal"
       },
       "device": {
         "background": "@theme-avatar-default",
-        "icon": "@theme-text-primary"
+        "icon": "@theme-text-primary-normal"
       },
       "alert":{
         "background": "@theme-avatar-default",
-        "icon": "@theme-text-primary"
+        "icon": "@theme-text-primary-normal"
       },
       "bot-image-avatar": {
         "badge": {
           "background": "@theme-background-accent-normal",
-          "text": "@theme-text-primary"
+          "text": "@theme-text-primary-normal"
         }
       }
     }

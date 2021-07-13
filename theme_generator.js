@@ -303,6 +303,9 @@ Object.keys(args).forEach(themeFileName => {
     }
   });
   
+  /*console.log('=== After state tokens ===================');
+  console.log(JSON.stringify(stateTokens, null, 2));*/
+  
   // Output the flattened file
 
   fs.mkdir('dist', (err) => {});
