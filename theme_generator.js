@@ -5,6 +5,20 @@ const args = require('args-parser')(process.argv);
 const camelCase = require('camelcase');
 const path = require('path');
 
+function useColourNames(tokens, path) {
+  Object.entries(tokens).forEach(([key, value]) => {
+    const colourName = (path) ? (path + '-' + key) : key;
+    if (typeof value === 'object') {
+      useColourNames(value, colourName);
+    } else if (typeof value === 'string') {
+      tokens[key] = colourName;
+    } else {
+      console.error('Unexpected type of colour ' + typeof value);
+      process.exit(1);
+    }
+  });
+}
+
 /* Takes a hierarchy and converts a { b { c:d } } to a-b-c: d
  * This also drags UI states (those starting with #) to the end of the token names
  */
@@ -236,6 +250,10 @@ if (Object.keys(args).length === 0) {
 // Start by loading all the token files
 console.log('=== Loading core files ===================');
 let coreTokens = loadFile("core", true);
+if (colorFormat === 'names') {
+  console.log(coreTokens);
+  useColourNames(coreTokens['color']);
+}
 // Then flatten all the tokens
 const flattenedCoreTokens = {};
 flattenObject('', coreTokens, flattenedCoreTokens);
