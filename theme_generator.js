@@ -251,7 +251,6 @@ if (Object.keys(args).length === 0) {
 console.log('=== Loading core files ===================');
 let coreTokens = loadFile("core", true);
 if (colorFormat === 'names') {
-  console.log(coreTokens);
   useColourNames(coreTokens['color']);
 }
 // Then flatten all the tokens
