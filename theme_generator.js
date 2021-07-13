@@ -192,6 +192,21 @@ if (args.platform) {
 }
 
 let colorFormat='rgba';
+let sizeUnit='px';
+
+console.log('Setting up for platform: ' + platform);
+if (platform === 'web') {
+  colorFormat = 'rgba';
+  sizeUnit='rem';
+} else if (platform === 'desktop') {
+  colorFormat = 'object';
+  sizeUnit='px';
+} else if (platform === 'android') {
+  colorFormat = 'names';
+} else if (platform === 'ios') {
+  colorFormat = 'names';
+}
+
 if (args.colorFormat) {
   if (args.colorFormat === 'hex') {
     colorFormat = 'hex';
@@ -208,7 +223,6 @@ if (args.colorFormat) {
   delete args.colorFormat;
 }
 
-let sizeUnit='px';
 if (args.sizeUnit) {
   if (args.sizeUnit === 'px') {
     sizeUnit = 'px';
@@ -222,6 +236,9 @@ if (args.sizeUnit) {
   }
   delete args.sizeUnit;
 }
+
+console.log('Using colorFormat ' + colorFormat);
+console.log('Using sizeUnit ' + sizeUnit);
 
 let toStdOut=false;
 if (args.toStdOut) {
