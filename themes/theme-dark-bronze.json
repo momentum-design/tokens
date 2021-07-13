@@ -1,7 +1,6 @@
 {
   "name": "Dark Bronze",
   "files": [
-    "theme-data/common/",
     "theme-data/dark/dark-common.json",
     "theme-data/dark/dark-bronze.json"
   ]

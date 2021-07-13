@@ -1,9 +1,12 @@
 {
   "theme": {
+    "color": "@color-blue",
     "text": {
-      "normal": "@color-white-alpha-95",
-      "inverted": "@color-black-alpha-95",
-      "disabled": "@color-white-alpha-40",
+      "primary": {
+        "normal": "@color-white-alpha-95",
+        "inverted": "@color-black-alpha-95",
+        "disabled": "@color-white-alpha-40"
+      },
       "secondary": {
         "normal": "@color-white-alpha-70"
       },
@@ -22,17 +25,19 @@
         "hover":"@color-yellow-20",
         "active":"@color-yellow-20"
       },
-      "highlight": "@theme-80",
+      "highlight": "@theme-color-80",
       "accent": {
-        "normal": "@theme-40",
-        "hovered": "@theme-20",
-        "active": "@theme-20"
+        "normal": "@theme-color-40",
+        "hover": "@theme-color-20",
+        "active": "@theme-color-20"
       }
     },
     "background": {
-      "ghost": "@color-white-alpha-00",
-      "hover": "@color-white-alpha-05",
-      "active": "@color-white-alpha-11",
+      "primary": {
+        "normal": "@color-white-alpha-00",
+        "hover": "@color-white-alpha-05",
+        "active": "@color-white-alpha-11"
+      },
       "disabled": "@color-white-alpha-11",
       "solid":{
         "normal": "@color-gray-100",
@@ -49,30 +54,28 @@
         "active":"@color-white-alpha-30"
       },
       "accent":{
-        "normal":"@theme-60"
+        "normal":"@theme-color-60"
       },
-      "gradient":{
-        "normal": "@theme-gradation-primary",
-        "secondary":{
-          "normal": "@theme-gradation-secondary"
-        }
+      "gradient": {
+        "primary": "@theme-gradation-primary",
+        "secondary": "@theme-gradation-secondary"
       },
       "warning": "@color-yellow-80",
       "error": "@color-red-80",
-      "theme": "@theme-90",
+      "theme": "@theme-color-90",
       "success": "@color-green-80"
     },
     "overlay": {
-      "normal": "@color-black-alpha-90",
-      "secondary":{
-        "normal": "@color-black-alpha-40"
-      }
+      "primary": "@color-black-alpha-90",
+      "secondary": "@color-black-alpha-40"
     },
     "button": {
-      "normal":"@color-white-alpha-95",
-      "hover": "@color-white-alpha-80",
-      "pressed": "@color-white-alpha-70",
-      "disabled": "@color-white-alpha-20",
+      "primary": {
+        "normal":"@color-white-alpha-95",
+        "hover": "@color-white-alpha-80",
+        "pressed": "@color-white-alpha-70",
+        "disabled": "@color-white-alpha-20"
+      },
       "secondary":{
         "normal":"@color-white-alpha-00",
         "hover": "@color-white-alpha-07",
@@ -94,42 +97,46 @@
         "pressed": "@color-red-80"
       },
       "accent":{
-        "normal":"@theme-60",
-        "hover": "@theme-70",
-        "pressed": "@theme-80"
+        "normal":"@theme-color-60",
+        "hover": "@theme-color-70",
+        "pressed": "@theme-color-80"
       }
     },
-    "border": {
-      "normal": "@color-white-alpha-40",
-      "focus": "@theme-40",
+    "outline": {
+      "primary": {
+        "normal": "@color-white-alpha-40"
+      },
+      "focus": "@theme-color-40",
       "secondary":{
         "normal": "@color-white-alpha-20"
+      },
+      "button": {
+        "normal": "@color-white-alpha-30"
       },
       "input":{
         "normal": "@color-white-alpha-50",
         "active": "@color-white-alpha-90"
       },
-      "outline":{
-        "normal":"@color-white-alpha-30",
-        "join":"@color-green-40",
-        "cancel":"@color-red-40",
-        "disabled":"@color-white-alpha-20"
-      },
+      "join": "@color-green-40",
+      "cancel": "@color-red-50",
+      "disabled": "@color-white-alpha-20",
       "gradient":{
         "active": ["@color-cobalt-70", "@color-cyan-40", "@color-green-50"]
       }
     },
     "control": {
-      "normal": "@theme-40",
-      "hover": "@theme-50",
-      "pressed": "@theme-60",
-      "active": "@theme-60",
-      "disabled":"@theme-90",
-      "inactive":{
-        "normal":"@color-white-alpha-50",
-        "hover":"@color-white-alpha-11",
-        "pressed":"@color-white-alpha-20",
-        "disabled":"@color-white-alpha-05"
+      "active": {
+        "normal": "@theme-color-40",
+        "hover": "@theme-color-50",
+        "pressed": "@theme-color-60",
+        "active": "@theme-color-60",
+        "disabled":"@theme-color-90"
+      },
+      "inactive": {
+        "normal": "@color-white-alpha-50",
+        "hover": "@color-white-alpha-11",
+        "pressed": "@color-white-alpha-20",
+        "disabled": "@color-white-alpha-05"
       }
     },
     "presence": {
@@ -161,15 +168,17 @@
       "violet":"@color-violet-70"
     },
     "scrollbar": {
-      "button":{
-        "normal":"@color-white-alpha-20",
-        "hover":"@color-white-alpha-30",
-        "pressed":"@color-white-alpha-40"
+      "button": {
+        "normal": "@color-white-alpha-20",
+        "hovered": "@color-white-alpha-30",
+        "pressed": "@color-white-alpha-40"
       },
-      "arrow":{
-        "normal":"@color-white-alpha-70",
-        "hover":"@color-white-alpha-11",
-        "pressed":"@color-white-alpha-20"
+      "arrow": {
+        "background": {
+          "normal": "@color-white-alpha-00",
+          "hovered":"@color-white-alpha-11",
+          "pressed":"@color-white-alpha-20"
+        }
       },
       "background":{
         "secondary":{

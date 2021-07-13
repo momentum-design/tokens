@@ -5,12 +5,51 @@ const args = require('args-parser')(process.argv);
 const camelCase = require('camelcase');
 const path = require('path');
 
+/* Takes a hierarchy and converts a { b { c:d } } to a-b-c: d
+ * This also drags UI states (those starting with #) to the end of the token names
+ */
+function flattenObject(objectPath, childObject, flattenedTokens, uiState) {
+  Object.entries(childObject).forEach(([key, value]) => {
+    if ((key.startsWith('#')) && (typeof value === 'object')) {
+      if (uiState) {
+        console.error('Picked up uiState ' + key + ' at ' + objectPath + ' while already carrying ' + uiState);
+        process.exit(1);
+      } else {
+        flattenObject(objectPath, value, flattenedTokens, key);
+      }
+    } else {  
+      const childPath = (objectPath) ? objectPath+'-'+key : key;
+      if (typeof value === 'object') {
+        flattenObject(childPath, value, flattenedTokens);
+      } else {
+        flattenedTokens[(uiState) ? (childPath+'-'+uiState) : childPath] = value;
+      }
+    }
+  });
+}
+
+function unflattenObject(flattenedTokens) {
+  const output = {};
+  Object.entries(flattenedTokens).forEach(([key, value]) => {
+    const tokenParts = key.split('-');
+    let currentObject = output;
+    while (tokenParts.length > 1) {
+      if (!(tokenParts[0] in currentObject)) {
+        currentObject[tokenParts[0]] = {};
+      }
+      currentObject = currentObject[tokenParts.shift()];
+    }
+    currentObject[tokenParts[0]] = value;
+  });
+  return output;
+}
+
 // Loads a JSON file or directory of files and returns an object with the contents of all the files merged together
 function loadFile(fileName, isDirectory) {
   if (isDirectory) {
     console.log('Loading directory ' + fileName);
-    let fileList = fs.readdirSync(fileName, {withFileTypes: true});
-    let tokenData = {};
+    const fileList = fs.readdirSync(fileName, {withFileTypes: true});
+    const tokenData = {};
     fileList.forEach((childFile) => {
       merge(tokenData, loadFile(fileName+"/"+childFile.name, childFile.isDirectory()));
     });
@@ -18,25 +57,19 @@ function loadFile(fileName, isDirectory) {
   }
   else if (fileName.endsWith('.json')) {
     console.log('Loading file ' + fileName);
-    let tokenFileData = fs.readFileSync(fileName);
-    return JSON.parse(tokenFileData);
+    const tokenFileData = fs.readFileSync(fileName);
+    /* We don't return the JSON directly - instead we fiddle with the structure of the files to ensure that UI states are always the last part of a token name
+     * by flattening it, reordering the keys, and then unflattening it
+     */
+    const parsedTokenFile = JSON.parse(tokenFileData);
+    const flattenedTokenFile = {};
+    flattenObject('', parsedTokenFile, flattenedTokenFile);
+    return unflattenObject(flattenedTokenFile);
   }
   else {
     console.log('Unknown type of file ' + fileName);
     return {};
   }
-}
-
-// Takes a hierarchy and converts a { b { c:d } } to a-b-c: d
-function flattenObject(objectPath, childObject, flattenedTokens) {
-  Object.entries(childObject).forEach(([key, value]) => {
-    const childPath = (objectPath) ? objectPath+'-'+key : key;
-    if (typeof value === 'object') {
-      flattenObject(childPath, value, flattenedTokens);
-    } else {
-      flattenedTokens[childPath] = value;
-    }
-  });
 }
 
 // Finds a flattened key in the non-flattened hierarchy
@@ -55,6 +88,7 @@ function findKey(keyParts, tokens) {
 
 // Parses a value and normalises the unit if required
 function normaliseUnit(value) {
+  //console.log('Normalising unit type ' + typeof value + ' value ' + value);
   if ((typeof value === 'string') && (value.startsWith('#') || value.startsWith('rgb'))) {
     const c = parseColour(value);
     if (!c) {
@@ -63,6 +97,8 @@ function normaliseUnit(value) {
     }
     if (colorFormat === 'rgba') {
       return `rgba(${c.values[0]}, ${c.values[1]}, ${c.values[2]}, ${c.alpha})`;
+    } else if (colorFormat === 'object') {
+      return { r: c.values[0], g: c.values[1], b: c.values[2], a: c.alpha };
     } else if (colorFormat === 'hex') {
       r = c.values[0].toString(16).padStart(2,'0');
       g = c.values[1].toString(16).padStart(2,'0');
@@ -89,28 +125,49 @@ function normaliseUnit(value) {
 
 // Finds references, and returns an object with all references resolved
 // You can probably break this with recursive references, can't be bothered to check
-function resolveValue(currentToken, allTokens, coretokens) {
+function resolveValue(currentToken, allTokens, coreTokens, flattenedCoreTokens) {
   if (typeof currentToken === 'object') { // If this is an object, return a version with all children resolved
     Object.entries(currentToken).forEach(([key, value]) => {
-      currentToken[key] = resolveValue(value, allTokens, coretokens);
+      currentToken[key] = resolveValue(value, allTokens, coreTokens, flattenedCoreTokens);
     });
     return currentToken;
   } else if ((typeof currentToken === 'string') && (currentToken.startsWith('@'))) { // If it's a reference, return the resolved object
     const tokenName = currentToken.slice(1);
-    if (tokenName in coretokens) { // easy case - it refers to something in the core
-      return coretokens[tokenName];
+    if (tokenName in flattenedCoreTokens) { // easy case - it refers to something in the core
+      return flattenedCoreTokens[tokenName];
     } else { // Otherwise we've got to find the token
       const keyParts = tokenName.split('-');
-      const value = findKey(keyParts, allTokens);
-      if (value) {
-        return resolveValue(value, allTokens, coretokens);
-      } else {
-        console.log('Uanble to find ' + currentToken + ' in ' + JSON.stringify(allTokens, null, 2));
+      let value = findKey(keyParts, allTokens); // First of all try to find it as a reference to another token which actually exists
+      if (!value) { // Maybe it's a reference to a complete core token group, in which case we should substitute in the whole group
+        value = findKey(keyParts, coreTokens);
+      }
+      if (!value) { // If we can't find it, it might be going indirectly through a reference to another group
+        for (i=1; i<keyParts.length; i++) {
+          const groupParts = keyParts.slice(0, -i);
+          const groupValue = findKey(groupParts, allTokens);
+          if (groupValue) {
+            if (groupValue[0] != '@') {
+              console.error(currentToken + ' refers to ' + groupValue + ' which is not a reference');
+              process.exit(1);
+            }
+            const substituteParts = groupValue.slice(1).split('-').concat(keyParts.slice(-i));
+            const substituteName = substituteParts.join('-');
+            if (substituteName in flattenedCoreTokens) {
+              return flattenedCoreTokens[substituteName];
+            }
+            value = findKey(substituteParts, allTokens);
+            if (value) break;
+          }
+        }
+      }
+      if (!value) { // If we still can't find it, it's probably broken
+        console.log('Unable to find ' + currentToken + ' in ' + JSON.stringify(allTokens, null, 2));
         process.exit(1);
       }
+      return resolveValue(value, allTokens, coreTokens, flattenedCoreTokens);
     }
   } else { // Otherwise, we don't need to do any resolution
-    return normaliseUnit(currentToken);
+    return currentToken;
   }
 }
 
@@ -126,6 +183,10 @@ if (args.colorFormat) {
     colorFormat = 'hex';
   } else if (args.colorFormat === 'rgba') {
     colorFormat = 'rgba';
+  } else if (args.colorFormat === 'object') {
+    colorFormat = 'object';
+  } else if (args.colorFormat === 'names') {
+    colorFormat = 'names';
   } else {
     console.log('Unknown color format: ' + args.colorFormat);
     process.exit(1);
@@ -158,12 +219,14 @@ if (Object.keys(args).length === 0) {
   console.log(`Usage: ${process.argv[1]} [OPTION]... [THEME FILE]...`);
   console.log('Options');
   console.log('  --colorFormat=[hex|rgba]    What color format to use in the output.');
-  console.log('       rgba -> rgba(244,233,20,0.8)');
-  console.log('       hex  -> #RRGGBBAA');
+  console.log('       rgba   -> rgba(244,233,20,0.8)');
+  console.log('       object -> { "r": 244, "g": 233, "b": 20, "a": 0.8 }');
+  console.log('       hex    -> #RRGGBBAA');
+  console.log('       names  -> red-05');
   console.log('  --sizeUnit=[px|pt|rem]      What unit to use for sizes in the output.');
-  console.log('       px   -> pixels (matching that on Figma)');
-  console.log('       pt   -> points (pixels * 0.75)');
-  console.log('       rem  -> root em, used on web to create sizes relative to user font size');
+  console.log('       px    -> pixels (matching that on Figma)');
+  console.log('       pt    -> points (pixels * 0.75)');
+  console.log('       rem   -> root em, used on web to create sizes relative to user font size');
   console.log('  --platform=PLATFORM         Which platform to generate for.');
   console.log('       web');
   console.log('       desktop');
@@ -172,15 +235,10 @@ if (Object.keys(args).length === 0) {
 
 // Start by loading all the token files
 console.log('=== Loading core files ===================');
-let coreData = loadFile("core", true);
+let coreTokens = loadFile("core", true);
 // Then flatten all the tokens
 const flattenedCoreTokens = {};
-flattenObject('', coreData, flattenedCoreTokens);
-// normalise colours
-Object.entries(flattenedCoreTokens).forEach(([key, value]) => {
-  flattenedCoreTokens[key] = normaliseUnit(value);
-});
-
+flattenObject('', coreTokens, flattenedCoreTokens);
 console.log('=== Core files loaded ====================');
 
 const indexFileData = [];
@@ -204,7 +262,7 @@ Object.keys(args).forEach(themeFileName => {
   console.log(JSON.stringify(tokenData, null, 2));*/
   
   // Resolve all the references
-  tokenData = resolveValue(tokenData, tokenData, flattenedCoreTokens);
+  tokenData = resolveValue(tokenData, tokenData, coreTokens, flattenedCoreTokens);
   /*console.log('=== After resolve references ==================');
   console.log(JSON.stringify(tokenData, null, 2));*/
 
@@ -234,14 +292,13 @@ Object.keys(args).forEach(themeFileName => {
       if (!(baseKeyName in stateTokens)) {
         stateTokens[baseKeyName] = {};
       }
-      stateTokens[baseKeyName][uiState] = value;
+      stateTokens[baseKeyName][uiState] = normaliseUnit(value);
     }
     else {
       if (uiState === validUiStates[0]) {
-        stateTokens[baseKeyName] = value;
-      }
-      else {
-        stateTokens[baseKeyName+'-'+uiState] = value;
+        stateTokens[baseKeyName] = normaliseUnit(value);
+      } else {
+        stateTokens[baseKeyName+'-'+uiState] = normaliseUnit(value);
       }
     }
   });
