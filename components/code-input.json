@@ -1,0 +1,24 @@
+{
+  "code-input": {
+    "#normal": {
+      "background": "@theme-background-solid-primary-normal",
+      "text-color": "@theme-text-primary-normal",
+      "border": "@theme-outline-input-normal"
+    },
+    "#hovered": {
+      "background": "@theme-background-primary-hover",
+      "text-color": "@theme-text-primary-normal",
+      "border": "@theme-outline-input-normal"
+    },
+    "#active": {
+      "background": "@theme-background-primary-active",
+      "text-color": "@theme-text-primary-normal",
+      "border": "@theme-outline-input-active"
+    },
+    "#focused": {
+      "background": "@theme-background-solid-primary-normal",
+      "text-color": "@theme-text-primary-normal",
+      "border": "@theme-outline-focus"
+    }
+  }
+}
