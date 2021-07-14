@@ -1,0 +1,8 @@
+{
+  "name": "Dark Legacy",
+  "files": [
+    "theme-data/dark/dark-common.json",
+    "theme-data/dark/dark-webex.json",
+    "legacy/dark.json"
+  ]
+}

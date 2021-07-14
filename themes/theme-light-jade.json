@@ -1,7 +1,6 @@
 {
   "name": "Light Jade",
   "files": [
-    "theme-data/common/",
     "theme-data/light/light-common.json",
     "theme-data/light/light-jade.json"
   ]
