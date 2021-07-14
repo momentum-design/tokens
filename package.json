@@ -2,7 +2,7 @@
   "dependencies": {},
   "name": "@momentum-ui/design-tokens",
   "description": "See [documentation on Confluence](https://confluence-eng-gpk2.cisco.com/conf/display/~pauwitty/Token+proposal)",
-  "version": "0.0.0",
+  "version": "0.0.3",
   "main": "./dist/index.css",
   "devDependencies": {
     "args-parser": "^1.2.0",
@@ -18,15 +18,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/paulwitty/token-proposal.git"
+    "url": "git+ssh://git@github.com/momentum-design/tokens.git"
   },
   "author": "Cisco's Webex",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/paulwitty/token-proposal/issues"
+    "url": "https://github.com/momentum-design/tokens/issues"
   },
-  "homepage": "https://github.com/paulwitty/token-proposal#readme",
+  "homepage": "https://github.com/momentum-design/tokens#readme",
   "publishConfig": {
-    "registry": "https://engci-maven-master.cisco.com/artifactory/api/npm/webex-web-app-npm/"
-  }
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": ["dist/**"]
 }
