@@ -40,7 +40,9 @@
       },
       "disabled": "@color-white-alpha-11",
       "solid":{
-        "normal": "@color-gray-100",
+        "primary": {
+          "normal": "@color-gray-100"
+        },
         "secondary":{
           "normal":"@color-gray-95"
         },
