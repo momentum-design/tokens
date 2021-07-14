@@ -1,6 +1,6 @@
 {
   "dependencies": {},
-  "name": "@momentumreact/tokens",
+  "name": "@momentum-ui/design-tokens",
   "description": "See [documentation on Confluence](https://confluence-eng-gpk2.cisco.com/conf/display/~pauwitty/Token+proposal)",
   "version": "0.0.0",
   "main": "./dist/index.css",
