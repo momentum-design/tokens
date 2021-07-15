@@ -2,6 +2,9 @@
   "theme": {
     "color": "@color-blue",
     "text": {
+      "button": {
+        "normal": "@color-white-alpha-100"
+      },
       "primary": {
         "normal": "@color-white-alpha-95",
         "inverted": "@color-black-alpha-95",
@@ -30,11 +33,57 @@
         "normal": "@theme-color-40",
         "hover": "@theme-color-20",
         "active": "@theme-color-20"
+      },
+      "team": {
+        "default": {
+          "normal": "@theme-text-secondary-normal",
+          "active": "@theme-text-primary-normal"
+        },
+        "cobalt": {
+          "normal": "@color-cobalt-40",
+          "active": "@color-cobalt-20"
+        },
+        "cyan": {
+          "normal": "@color-cyan-40",
+          "active": "@color-cyan-20"
+        },
+        "mint": {
+          "normal": "@color-mint-40",
+          "active": "@color-mint-20"
+        },
+        "lime": {
+          "normal": "@color-lime-40",
+          "active": "@color-lime-20"
+        },
+        "gold": {
+          "normal": "@color-gold-40",
+          "active": "@color-gold-20"
+        },
+        "orange": {
+          "normal": "@color-orange-40",
+          "active": "@color-orange-20"
+        },
+        "pink": {
+          "normal": "@color-pink-40",
+          "active": "@color-pink-20"
+        },
+        "purple": {
+          "normal": "@color-purple-40",
+          "active": "@color-purple-20"
+        },
+        "violet": {
+          "normal": "@color-violet-40",
+          "active": "@color-violet-20"
+        },
+        "slate": {
+          "normal": "@color-slate-40",
+          "active": "@color-slate-20"
+        }
       }
     },
     "background": {
+      "ghost": "@color-white-alpha-00",
       "primary": {
-        "normal": "@color-white-alpha-00",
         "hover": "@color-white-alpha-05",
         "active": "@color-white-alpha-11"
       },
@@ -62,10 +111,73 @@
         "primary": "@theme-gradation-primary",
         "secondary": "@theme-gradation-secondary"
       },
-      "warning": "@color-yellow-80",
-      "error": "@color-red-80",
-      "theme": "@theme-color-90",
-      "success": "@color-green-80"
+      "alert": {
+        "default": {
+          "normal": "@theme-background-solid-tertiary-normal",
+          "active": "@color-gray-80"
+        },
+        "success": {
+          "normal": "@color-green-90",
+          "active": "@color-green-80"
+        },
+        "warning": {
+          "normal": "@color-yellow-90",
+          "active": "@color-yellow-80"
+        },
+        "error": {
+          "normal": "@color-red-90",
+          "active": "@color-red-80"
+        },
+        "theme": {
+          "normal": "@theme-color-90",
+          "active": "@theme-color-80"
+        }
+      },
+      "label": {
+        "cobalt": {
+          "normal": "@color-cobalt-90",
+          "hover": "@color-cobalt-80",
+          "active": "@color-cobalt-70"
+        },
+        "lime": {
+          "normal": "@color-lime-90",
+          "hover": "@color-lime-80",
+          "active": "@color-lime-70"
+        },
+        "mint": {
+          "normal": "@color-mint-90",
+          "hover": "@color-mint-80",
+          "active": "@color-mint-70"
+        },
+        "slate": {
+          "normal": "@color-slate-90",
+          "hover": "@color-slate-80",
+          "active": "@color-slate-70"
+        },
+        "violet": {
+          "normal": "@color-violet-90",
+          "hover": "@color-violet-80",
+          "active": "@color-violet-70"
+        },
+        "purple": {
+          "normal": "@color-purple-90",
+          "hover": "@color-purple-80",
+          "active": "@color-purple-70"
+        },
+        "orange": {
+          "normal": "@color-orange-90",
+          "hover": "@color-orange-80",
+          "active": "@color-orange-70"
+        },
+        "gold": {
+          "normal": "@color-gold-90",
+          "hover": "@color-gold-80",
+          "active": "@color-gold-70"
+        }
+      },
+      "common": {
+        "normal": "@color-white-alpha-100"
+      }
     },
     "overlay": {
       "primary": "@color-black-alpha-90",
@@ -81,7 +193,12 @@
       "secondary":{
         "normal":"@color-white-alpha-00",
         "hover": "@color-white-alpha-07",
-        "pressed": "@color-white-alpha-20"
+        "pressed": "@color-white-alpha-20",
+        "active": {
+          "normal":"@theme-button-secondary-pressed",
+          "hover": "@color-white-alpha-30",
+          "pressed": "@color-white-alpha-40"
+        }
       },
       "inverted": {
         "normal":"@color-gray-100",
@@ -108,22 +225,39 @@
       "primary": {
         "normal": "@color-white-alpha-40"
       },
-      "focus": "@theme-color-40",
+      "focus": {
+        "normal": "@theme-color-40"
+      },
       "secondary":{
         "normal": "@color-white-alpha-20"
-      },
-      "button": {
-        "normal": "@color-white-alpha-30"
       },
       "input":{
         "normal": "@color-white-alpha-50",
         "active": "@color-white-alpha-90"
+      },
+      "button": {
+        "normal": "@color-white-alpha-30"
       },
       "join": "@color-green-40",
       "cancel": "@color-red-50",
       "disabled": "@color-white-alpha-20",
       "gradient":{
         "active": ["@color-cobalt-70", "@color-cyan-40", "@color-green-50"]
+      },
+      "share": {
+        "selected": "@color-green-50",
+        "active": "@color-orange-50",
+        "inactive": "@color-gray-50"
+      },
+      "label": {
+        "cobalt": "@color-cobalt-40",
+        "lime": "@color-lime-40",
+        "mint": "@color-mint-40",
+        "slate": "@color-slate-40",
+        "violet": "@color-violet-40",
+        "purple": "@color-purple-40",
+        "orange": "@color-orange-40",
+        "gold": "@color-gold-40"
       }
     },
     "control": {
@@ -139,6 +273,10 @@
         "hover": "@color-white-alpha-11",
         "pressed": "@color-white-alpha-20",
         "disabled": "@color-white-alpha-05"
+      },
+      "shareContent": {
+        "active": "@color-orange-50",
+        "inactive": "@color-gray-50"
       }
     },
     "presence": {
@@ -202,7 +340,8 @@
         "quinary":["@color-cobalt-50","@color-violet-60"]
       },
       "success":["@color-green-40","@color-lime-40"],
-      "error":["@color-pink-50","@color-red-60"]
+      "error":["@color-pink-50","@color-red-60"],
+      "default":"@color-white-alpha-100"
     }
   }
 } 

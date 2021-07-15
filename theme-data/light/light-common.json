@@ -2,6 +2,9 @@
   "theme": {
     "color": "@color-blue",
     "text": {
+      "button": {
+        "normal": "@color-white-alpha-100"
+      },
       "primary": {
         "normal": "@color-black-alpha-95",
         "inverted": "@color-white-alpha-95",
@@ -30,11 +33,57 @@
         "normal": "@theme-color-70",
         "hover": "@theme-color-90",
         "active": "@theme-color-90"
+      },
+      "team": {
+        "default": {
+          "normal": "@theme-text-secondary-normal",
+          "active": "@theme-text-primary-normal"
+        },
+        "cobalt": {
+          "normal": "@color-cobalt-70",
+          "active": "@color-cobalt-90"
+        },
+        "cyan": {
+          "normal": "@color-cyan-70",
+          "active": "@color-cyan-90"
+        },
+        "mint": {
+          "normal": "@color-mint-70",
+          "active": "@color-mint-90"
+        },
+        "lime": {
+          "normal": "@color-lime-70",
+          "active": "@color-lime-90"
+        },
+        "gold": {
+          "normal": "@color-gold-70",
+          "active": "@color-gold-90"
+        },
+        "orange": {
+          "normal": "@color-orange-70",
+          "active": "@color-orange-90"
+        },
+        "pink": {
+          "normal": "@color-pink-70",
+          "active": "@color-pink-90"
+        },
+        "purple": {
+          "normal": "@color-purple-70",
+          "active": "@color-purple-90"
+        },
+        "violet": {
+          "normal": "@color-violet-70",
+          "active": "@color-violet-90"
+        },
+        "slate": {
+          "normal": "@color-slate-70",
+          "active": "@color-slate-90"
+        }
       }
     },
     "background": {
+      "ghost": "@color-white-alpha-00",
       "primary": {
-        "normal": "@color-white-alpha-00",
         "hover": "@color-black-alpha-04",
         "active": "@color-black-alpha-11"
       },
@@ -58,17 +107,80 @@
       "accent":{
         "normal":"@theme-color-60"
       },
-      "gradient":{
+      "gradient": {
         "primary": "@theme-gradation-primary",
         "secondary": "@theme-gradation-secondary"
       },
-      "warning": "@color-yellow-10",
-      "error": "@color-red-10",
-      "theme": "@theme-color-10",
-      "success": "@color-green-10"
+      "alert": {
+        "default": {
+          "normal": "@theme-background-solid-tertiary-normal",
+          "active": "@color-gray-20"
+        },
+        "success": {
+          "normal": "@color-green-10",
+          "active": "@color-green-20"
+        },
+        "warning": {
+          "normal": "@color-yellow-10",
+          "active": "@color-yellow-20"
+        },
+        "error": {
+          "normal": "@color-red-10",
+          "active": "@color-red-20"
+        },
+        "theme": {
+          "normal": "@theme-color-10",
+          "active": "@theme-color-20"
+        }
+      },
+      "label": {
+        "cobalt": {
+          "normal": "@color-cobalt-10",
+          "hover": "@color-cobalt-20",
+          "active": "@color-cobalt-30"
+        },
+        "lime": {
+          "normal": "@color-lime-10",
+          "hover": "@color-lime-20",
+          "active": "@color-lime-30"
+        },
+        "mint": {
+          "normal": "@color-mint-10",
+          "hover": "@color-mint-20",
+          "active": "@color-mint-30"
+        },
+        "slate": {
+          "normal": "@color-slate-10",
+          "hover": "@color-slate-20",
+          "active": "@color-slate-30"
+        },
+        "violet": {
+          "normal": "@color-violet-10",
+          "hover": "@color-violet-20",
+          "active": "@color-violet-30"
+        },
+        "purple": {
+          "normal": "@color-purple-10",
+          "hover": "@color-purple-20",
+          "active": "@color-purple-30"
+        },
+        "orange": {
+          "normal": "@color-orange-10",
+          "hover": "@color-orange-20",
+          "active": "@color-orange-30"
+        },
+        "gold": {
+          "normal": "@color-gold-10",
+          "hover": "@color-gold-20",
+          "active": "@color-gold-30"
+        }
+      },
+      "common": {
+        "normal": "@color-white-alpha-100"
+      }
     },
     "overlay": {
-      "normal": "@color-black-alpha-90",
+      "primary": "@color-black-alpha-90",
       "secondary": "@color-black-alpha-40"
     },
     "button": {
@@ -81,7 +193,12 @@
       "secondary":{
         "normal":"@color-black-alpha-00",
         "hover": "@color-black-alpha-07",
-        "pressed": "@color-black-alpha-20"
+        "pressed": "@color-black-alpha-20",
+        "active": {
+          "normal": "@theme-button-secondary-pressed",
+          "hover": "@color-black-alpha-30",
+          "pressed": "@color-black-alpha-40"
+        }
       },
       "inverted": {
         "normal":"@color-white-alpha-100",
@@ -108,22 +225,39 @@
       "primary": {
         "normal": "@color-black-alpha-40"
       },
-      "focus": "@theme-color-60",
+      "focus": {
+        "normal": "@theme-color-60"
+      },
       "secondary":{
         "normal": "@color-black-alpha-20"
-      },
-      "button": {
-        "normal": "@color-black-alpha-30"
       },
       "input":{
         "normal": "@color-black-alpha-50",
         "active": "@color-black-alpha-90"
+      },
+      "button": {
+        "normal": "@color-black-alpha-30"
       },
       "join":"@color-green-70",
       "cancel":"@color-red-70",
       "disabled":"@color-black-alpha-20",
       "gradient":{
         "active": ["@color-cobalt-70", "@color-cyan-40", "@color-green-50"]
+      },
+      "share": {
+        "selected": "@color-green-50",
+        "active": "@color-orange-50",
+        "inactive": "@color-gray-50"
+      },
+      "label": {
+        "cobalt": "@color-cobalt-40",
+        "lime": "@color-lime-40",
+        "mint": "@color-mint-40",
+        "slate": "@color-slate-40",
+        "violet": "@color-violet-40",
+        "purple": "@color-purple-40",
+        "orange": "@color-orange-40",
+        "gold": "@color-gold-40"
       }
     },
     "control": {
@@ -139,6 +273,10 @@
         "hover":"@color-black-alpha-11",
         "pressed":"@color-black-alpha-20",
         "disabled":"@color-black-alpha-04"
+      },
+      "shareContent": {
+        "active": "@color-orange-50",
+        "inactive": "@color-gray-50"
       }
     },
     "presence": {
@@ -202,7 +340,8 @@
         "quinary":["@color-cobalt-50","@color-violet-60"]
       },
       "success":["@color-green-40","@color-lime-40"],
-      "error":["@color-pink-50","@color-red-60"]
+      "error":["@color-pink-50","@color-red-60"],
+      "default":"@color-gray-100"
     }
   }
 } 
