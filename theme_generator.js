@@ -185,6 +185,40 @@ function resolveValue(currentToken, allTokens, coreTokens, flattenedCoreTokens) 
   }
 }
 
+// Sorts out UI states, and resolves units to the requested
+function finaliseTokens(tokens) {
+  const finalisedTokens = {};
+  Object.entries(tokens).forEach(([key, value]) => {
+    const keyParts = key.split('-');
+    const validUiStates = ['normal', 'hovered', 'pressed', 'disabled', 'focused', 'active', 'checked'];
+    let uiState = validUiStates[0];
+    if (keyParts[keyParts.length-1].startsWith('#')) 
+    {
+      //This is a state, so sanity check it falls into allowed values
+      uiState = keyParts.pop().slice(1);
+      if (!validUiStates.includes(uiState)) {
+        console.log(`Unknown ui state: ${uiState} when resolving ${key}`);
+        process.exit(1);
+      }
+    }
+    const baseKeyName = keyParts.join('-');
+    if (platform === 'desktop') {
+      if (!(baseKeyName in finalisedTokens)) {
+        finalisedTokens[baseKeyName] = {};
+      }
+      finalisedTokens[baseKeyName][uiState] = normaliseUnit(value);
+    }
+    else {
+      if (uiState === validUiStates[0]) {
+        finalisedTokens[baseKeyName] = normaliseUnit(value);
+      } else {
+        finalisedTokens[baseKeyName+'-'+uiState] = normaliseUnit(value);
+      }
+    }
+  });
+  return finalisedTokens;
+}
+
 let platform='web';
 if (args.platform) {
   platform = args.platform;
@@ -193,11 +227,14 @@ if (args.platform) {
 
 let colorFormat='rgba';
 let sizeUnit='px';
+let componentGroups=false;
+let fileFormat='json';
 
 console.log('Setting up for platform: ' + platform);
 if (platform === 'web') {
   colorFormat = 'rgba';
   sizeUnit='rem';
+  fileFormat='css';
 } else if (platform === 'desktop') {
   colorFormat = 'object';
   sizeUnit='px';
@@ -205,6 +242,8 @@ if (platform === 'web') {
   colorFormat = 'names';
 } else if (platform === 'ios') {
   colorFormat = 'names';
+  sizeUnit='pt';
+  componentGroups = true;
 }
 
 if (args.colorFormat) {
@@ -237,8 +276,27 @@ if (args.sizeUnit) {
   delete args.sizeUnit;
 }
 
+if (args.componentGroups) {
+  componentGroups = true;
+  delete args.componentGroups;
+}
+
+if (args.fileFormat) {
+  if (args.fileFormat === 'css') {
+    fileFormat = 'css';
+  } else if (args.fileFormat === 'json') {
+    fileFormat = 'json';
+  } else {
+    console.log('Unknown file format: ' + args.fileFormat);
+    process.exit(1);
+  }
+  delete args.fileFormat;
+}
+
 console.log('Using colorFormat ' + colorFormat);
 console.log('Using sizeUnit ' + sizeUnit);
+console.log('Using componentGroups ' + componentGroups);
+console.log('Using fileFormat ' + fileFormat);
 
 let toStdOut=false;
 if (args.toStdOut) {
@@ -258,9 +316,14 @@ if (Object.keys(args).length === 0) {
   console.log('       px    -> pixels (matching that on Figma)');
   console.log('       pt    -> points (pixels * 0.75)');
   console.log('       rem   -> root em, used on web to create sizes relative to user font size');
+  console.log('  --componentGroups           Group tokens by component');
+  console.log('  --fileFormat=[css|json]     What format to use for the output files');
   console.log('  --platform=PLATFORM         Which platform to generate for.');
   console.log('       web');
   console.log('       desktop');
+  console.log('       ios');
+  console.log('       android');
+  console.log('  --toStdOut                  Output to std out instead of writing to files');
   process.exit(1);
 }
 
@@ -300,51 +363,29 @@ Object.keys(args).forEach(themeFileName => {
   /*console.log('=== After resolve references ==================');
   console.log(JSON.stringify(tokenData, null, 2));*/
 
-  // Flatten the token names
-  const flattenedTokens = {};
-  flattenObject('', tokenData, flattenedTokens);
+  // Flatten the token names and then expand every token into UI states
+  let stateTokens = {};
+  if (componentGroups) {
+    const flattenedTokens = {};
+    Object.entries(tokenData).forEach(([key, value]) => {
+      const categoryFlattenedTokens = {};
+      flattenObject('', value, categoryFlattenedTokens);
+      stateTokens[key] = finaliseTokens(categoryFlattenedTokens);
+    });
+    
+  } else {
+    const flattenedTokens = {};
+    flattenObject('', tokenData, flattenedTokens);
+    stateTokens = finaliseTokens(flattenedTokens);
+  }
   /*console.log('=== After flattening tokens ===================');
   console.log(JSON.stringify(flattenedTokens, null, 2));*/
-
-  // And then expand every token into UI states
-  const stateTokens = {};
-  Object.entries(flattenedTokens).forEach(([key, value]) => {
-    const keyParts = key.split('-');
-    const validUiStates = ['normal', 'hovered', 'pressed', 'disabled', 'focused', 'active', 'checked'];
-    let uiState = validUiStates[0];
-    if (keyParts[keyParts.length-1].startsWith('#')) 
-    {
-      //This is a state, so sanity check it falls into allowed values
-      uiState = keyParts.pop().slice(1);
-      if (!validUiStates.includes(uiState)) {
-        console.log(`Unknown ui state: ${uiState} when resolving ${key}`);
-        process.exit(1);
-      }
-    }
-    const baseKeyName = keyParts.join('-');
-    if (platform === 'desktop') {
-      if (!(baseKeyName in stateTokens)) {
-        stateTokens[baseKeyName] = {};
-      }
-      stateTokens[baseKeyName][uiState] = normaliseUnit(value);
-    }
-    else {
-      if (uiState === validUiStates[0]) {
-        stateTokens[baseKeyName] = normaliseUnit(value);
-      } else {
-        stateTokens[baseKeyName+'-'+uiState] = normaliseUnit(value);
-      }
-    }
-  });
-  
-  /*console.log('=== After state tokens ===================');
-  console.log(JSON.stringify(stateTokens, null, 2));*/
   
   // Output the flattened file
 
   fs.mkdir('dist', (err) => {});
   let outputFileName = '';
-  if (platform === 'web') {
+  if (fileFormat === 'css') {
     indexFileData.push(`@import '${camelCase(themeFile.name)}.css';`);
     outputFileName = path.join('dist', camelCase(themeFile.name) + '.css');
     let fileHandle = undefined;
@@ -363,7 +404,7 @@ Object.keys(args).forEach(themeFileName => {
       outputLine('  --'+key+': '+value+';');
     });
     outputLine('}');
-  }   else {
+  } else if (fileFormat === 'json') {
     outputFileName = path.join('dist', camelCase(themeFile.name) + '.json');
     if (toStdOut) {
       console.log(stateTokens);
