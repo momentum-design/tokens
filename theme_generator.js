@@ -202,18 +202,18 @@ function finaliseTokens(tokens) {
       }
     }
     const baseKeyName = keyParts.join('-');
-    if (platform === 'desktop') {
-      if (!(baseKeyName in finalisedTokens)) {
-        finalisedTokens[baseKeyName] = {};
-      }
-      finalisedTokens[baseKeyName][uiState] = normaliseUnit(value);
-    }
-    else {
+    if (omitNormalUiState) {
       if (uiState === validUiStates[0]) {
         finalisedTokens[baseKeyName] = normaliseUnit(value);
       } else {
         finalisedTokens[baseKeyName+'-'+uiState] = normaliseUnit(value);
       }
+    }
+    else {
+      if (!(baseKeyName in finalisedTokens)) {
+        finalisedTokens[baseKeyName] = {};
+      }
+      finalisedTokens[baseKeyName][uiState] = normaliseUnit(value);
     }
   });
   return finalisedTokens;
@@ -229,21 +229,39 @@ let colorFormat='rgba';
 let sizeUnit='px';
 let componentGroups=false;
 let fileFormat='json';
+let includeMobileTokens=false;
+let includeDesktopTokens=false;
+let omitNormalUiState=false;
+let omitThemeTokens=false;
 
 console.log('Setting up for platform: ' + platform);
 if (platform === 'web') {
   colorFormat = 'rgba';
   sizeUnit='rem';
   fileFormat='css';
-} else if (platform === 'desktop') {
+} else if (platform === 'qt') {
   colorFormat = 'object';
   sizeUnit='px';
+  includeDesktopTokens = true;
+} else if (platform === 'macos') {
+  colorFormat = 'object';
+  sizeUnit='px';
+  includeDesktopTokens = true;
 } else if (platform === 'android') {
   colorFormat = 'names';
+  includeMobileTokens = true;
+  omitNormalUiState = true;
+  omitThemeTokens = true;
 } else if (platform === 'ios') {
   colorFormat = 'names';
   sizeUnit='pt';
   componentGroups = true;
+  includeMobileTokens = true;
+  omitNormalUiState = true;
+  omitThemeTokens = true;
+} else {
+  console.log('Unknown platform: ' + platform);
+  process.exit(1);
 }
 
 if (args.colorFormat) {
@@ -279,6 +297,11 @@ if (args.sizeUnit) {
 if (args.componentGroups) {
   componentGroups = true;
   delete args.componentGroups;
+}
+
+if (args.omitThemeTokens) {
+  omitThemeTokens = args.omitThemeTokens;
+  delete args.omitThemeTokens;
 }
 
 if (args.fileFormat) {
@@ -317,10 +340,12 @@ if (Object.keys(args).length === 0) {
   console.log('       pt    -> points (pixels * 0.75)');
   console.log('       rem   -> root em, used on web to create sizes relative to user font size');
   console.log('  --componentGroups           Group tokens by component');
+  console.log('  --omitThemeTokens           Removes theme tokens from the generated file');
   console.log('  --fileFormat=[css|json]     What format to use for the output files');
   console.log('  --platform=PLATFORM         Which platform to generate for.');
   console.log('       web');
-  console.log('       desktop');
+  console.log('       qt');
+  console.log('       macos');
   console.log('       ios');
   console.log('       android');
   console.log('  --toStdOut                  Output to std out instead of writing to files');
@@ -347,7 +372,27 @@ Object.keys(args).forEach(themeFileName => {
   let themeFileData = fs.readFileSync(themeFileName);
   let themeFile = JSON.parse(themeFileData);
   console.log(`Loading theme ${themeFile.name} for platform ${platform} using color format ${colorFormat}`);
-  let tokenData = loadFile("components", true);
+  let tokenData = loadFile('components', true);
+  try {
+    merge(tokenData, loadFile('platformcomponents/'+platform, true));
+  } catch (error) {
+    console.log('No platform component tokens for ' + platform);
+  }
+  if (includeMobileTokens) {
+    try {
+      merge(tokenData, loadFile('platformcomponents/mobile', true));
+    } catch (error) {
+      console.log('No platform component tokens for mobile');
+    }
+  }
+  if (includeDesktopTokens) {
+    try {
+      merge(tokenData, loadFile('platformcomponents/desktop', true));
+    } catch (error) {
+      console.log('No platform component tokens for desktop');
+    }
+  }
+
   themeFile.files.forEach((fileName) => {
     if (fileName.endsWith('/')) {
       merge(tokenData, loadFile(fileName.slice(0, -1), true));
@@ -362,6 +407,10 @@ Object.keys(args).forEach(themeFileName => {
   tokenData = resolveValue(tokenData, tokenData, coreTokens, flattenedCoreTokens);
   /*console.log('=== After resolve references ==================');
   console.log(JSON.stringify(tokenData, null, 2));*/
+  
+  if (omitThemeTokens) {
+    delete tokenData.theme;
+  }
 
   // Flatten the token names and then expand every token into UI states
   let stateTokens = {};
