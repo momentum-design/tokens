@@ -238,9 +238,15 @@
       "button": {
         "normal": "@color-white-alpha-30"
       },
-      "join": "@color-green-40",
-      "cancel": "@color-red-50",
-      "disabled": "@color-white-alpha-20",
+      "join": {
+        "normal": "@color-green-40"
+      },
+      "cancel": {
+        "normal": "@color-red-50"
+      },
+      "disabled": {
+        "normal": "@color-white-alpha-20"
+      },
       "gradient":{
         "active": ["@color-cobalt-70", "@color-cyan-40", "@color-green-50"]
       },
