@@ -92,8 +92,12 @@ function findKey(keyParts, tokens) {
   for (let i=1; i<=keyParts.length; i++) {
     const joinedKey = keyParts.slice(0,i).join('-');
     if (keyParts.length === i) {
-      return tokens[joinedKey];
-    } else if (joinedKey in tokens) {
+      if ((typeof tokens === 'object') && (joinedKey in tokens)) {
+        return tokens[joinedKey];
+      } else {
+        return null;
+      }
+    } else if ((joinedKey in tokens) && (typeof tokens[joinedKey] === 'object')) {
       return findKey(keyParts.slice(i), tokens[joinedKey]);
     }
   }
@@ -170,7 +174,7 @@ function resolveValue(currentToken, allTokens, coreTokens, flattenedCoreTokens) 
               return flattenedCoreTokens[substituteName];
             }
             value = findKey(substituteParts, allTokens);
-            if (value) break;
+            break;
           }
         }
       }
