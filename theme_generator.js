@@ -24,6 +24,10 @@ function useColourNames(tokens, path) {
  */
 function flattenObject(objectPath, childObject, flattenedTokens, uiState) {
   Object.entries(childObject).forEach(([key, value]) => {
+    if (key.includes('-')) {
+      console.error('Found an illegal hyphen in key ' + key + ' at ' + objectPath);
+      process.exit(1);
+    }
     if ((key.startsWith('#')) && (typeof value === 'object')) {
       if (uiState) {
         console.error('Picked up uiState ' + key + ' at ' + objectPath + ' while already carrying ' + uiState);
