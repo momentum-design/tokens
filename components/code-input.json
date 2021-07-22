@@ -1,5 +1,5 @@
 {
-  "codeInput": {
+  "codeinput": {
     "#normal": {
       "background": "@theme-background-solid-primary-normal",
       "text": "@theme-text-primary-normal",
@@ -18,7 +18,29 @@
     "#focused": {
       "background": "@theme-background-solid-primary-normal",
       "text": "@theme-text-primary-normal",
-      "border": "@theme-outline-focus"
+      "border": "@theme-outline-focus-normal"
+    },
+    "#disabled": {
+      "background": "@theme-background-disabled",
+      "text": "@theme-text-primary-normal",
+      "border": "@theme-background-ghost"
+    },
+    "error": {
+      "#normal": {
+        "background": "@theme-background-alert-error-normal",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-cancel-normal"
+      },
+      "#hovered": {
+        "background": "@theme-background-primary-hover",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-cancel-normal"
+      },
+      "#active": {
+        "background": "@theme-background-primary-hover",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-cancel-normal"
+      }
     }
   }
 }
