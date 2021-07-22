@@ -202,18 +202,18 @@ function finaliseTokens(tokens) {
       }
     }
     const baseKeyName = keyParts.join('-');
-    if (omitNormalUiState) {
+    if (uiStatesAsObject) {
+      if (!(baseKeyName in finalisedTokens)) {
+        finalisedTokens[baseKeyName] = {};
+      }
+      finalisedTokens[baseKeyName][uiState] = normaliseUnit(value);
+    }
+    else {
       if (uiState === validUiStates[0]) {
         finalisedTokens[baseKeyName] = normaliseUnit(value);
       } else {
         finalisedTokens[baseKeyName+'-'+uiState] = normaliseUnit(value);
       }
-    }
-    else {
-      if (!(baseKeyName in finalisedTokens)) {
-        finalisedTokens[baseKeyName] = {};
-      }
-      finalisedTokens[baseKeyName][uiState] = normaliseUnit(value);
     }
   });
   return finalisedTokens;
@@ -231,7 +231,7 @@ let componentGroups=false;
 let fileFormat='json';
 let includeMobileTokens=false;
 let includeDesktopTokens=false;
-let omitNormalUiState=false;
+let uiStatesAsObject=true;
 let omitThemeTokens=false;
 
 console.log('Setting up for platform: ' + platform);
@@ -250,14 +250,14 @@ if (platform === 'web') {
 } else if (platform === 'android') {
   colorFormat = 'names';
   includeMobileTokens = true;
-  omitNormalUiState = true;
+  uiStatesAsObject = false;
   omitThemeTokens = true;
 } else if (platform === 'ios') {
   colorFormat = 'names';
   sizeUnit='pt';
   componentGroups = true;
   includeMobileTokens = true;
-  omitNormalUiState = true;
+  uiStatesAsObject = false;
   omitThemeTokens = true;
 } else {
   console.log('Unknown platform: ' + platform);
@@ -314,6 +314,10 @@ if (args.fileFormat) {
     process.exit(1);
   }
   delete args.fileFormat;
+}
+
+if (fileFormat === 'css') {
+  uiStatesAsObject = false; // Can't have objects in CSS
 }
 
 console.log('Using colorFormat ' + colorFormat);
