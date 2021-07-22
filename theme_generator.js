@@ -165,7 +165,7 @@ function resolveValue(currentToken, allTokens, coreTokens, flattenedCoreTokens) 
           const groupValue = findKey(groupParts, allTokens);
           if (groupValue) {
             if (groupValue[0] != '@') {
-              console.error(currentToken + ' refers to ' + groupValue + ' which is not a reference');
+              console.error(currentToken + ' could not be found. Tried resolving via ' + groupParts.join('-') + ' but that was not a reference');
               process.exit(1);
             }
             const substituteParts = groupValue.slice(1).split('-').concat(keyParts.slice(-i));
