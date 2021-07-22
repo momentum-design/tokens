@@ -88,20 +88,15 @@ function loadFile(fileName, isDirectory) {
 
 // Finds a flattened key in the non-flattened hierarchy
 function findKey(keyParts, tokens) {
-  // Complication: token names might have a hyphen in them, so we try combining the parts to see if we can find a match
-  for (let i=1; i<=keyParts.length; i++) {
-    const joinedKey = keyParts.slice(0,i).join('-');
-    if (keyParts.length === i) {
-      if ((typeof tokens === 'object') && (joinedKey in tokens)) {
-        return tokens[joinedKey];
-      } else {
-        return null;
-      }
-    } else if ((joinedKey in tokens) && (typeof tokens[joinedKey] === 'object')) {
-      return findKey(keyParts.slice(i), tokens[joinedKey]);
-    }
+  if (!keyParts[0] in tokens) {
+    return null;
+  } else if (keyParts.length === 1) {
+    return tokens[keyParts[0]];
+  } else if (typeof tokens[keyParts[0]] === 'object') {
+    return findKey(keyParts.slice(1), tokens[keyParts[0]]);
+  } else {
+    return null;
   }
-  return null;
 }
 
 // Parses a value and normalises the unit if required
