@@ -92,8 +92,12 @@ function findKey(keyParts, tokens) {
   for (let i=1; i<=keyParts.length; i++) {
     const joinedKey = keyParts.slice(0,i).join('-');
     if (keyParts.length === i) {
-      return tokens[joinedKey];
-    } else if (joinedKey in tokens) {
+      if ((typeof tokens === 'object') && (joinedKey in tokens)) {
+        return tokens[joinedKey];
+      } else {
+        return null;
+      }
+    } else if ((joinedKey in tokens) && (typeof tokens[joinedKey] === 'object')) {
       return findKey(keyParts.slice(i), tokens[joinedKey]);
     }
   }
@@ -161,7 +165,7 @@ function resolveValue(currentToken, allTokens, coreTokens, flattenedCoreTokens) 
           const groupValue = findKey(groupParts, allTokens);
           if (groupValue) {
             if (groupValue[0] != '@') {
-              console.error(currentToken + ' refers to ' + groupValue + ' which is not a reference');
+              console.error(currentToken + ' could not be found. Tried resolving via ' + groupParts.join('-') + ' but that was not a reference');
               process.exit(1);
             }
             const substituteParts = groupValue.slice(1).split('-').concat(keyParts.slice(-i));
@@ -170,7 +174,7 @@ function resolveValue(currentToken, allTokens, coreTokens, flattenedCoreTokens) 
               return flattenedCoreTokens[substituteName];
             }
             value = findKey(substituteParts, allTokens);
-            if (value) break;
+            break;
           }
         }
       }
