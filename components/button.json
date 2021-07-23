@@ -57,15 +57,15 @@
     "join-fill":{
       "#normal":{
         "background":"@theme-button-join-normal",
-        "text": "@theme-text-primary-normal"
+        "text": "@theme-text-button-normal"
       },
       "#hovered":{
         "background":"@theme-button-join-hover",
-        "text": "@theme-text-primary-normal"
+        "text": "@theme-text-button-normal"
       },
       "#pressed":{
         "background":"@theme-button-join-pressed",
-        "text": "@theme-text-primary-normal"
+        "text": "@theme-text-button-normal"
       }
     },
     "join-outline":{
@@ -76,25 +76,25 @@
       },
       "#hovered":{
         "background":"@theme-button-join-hover",
-        "text": "@theme-text-primary-normal"
+        "text": "@theme-text-button-normal"
       },
       "#pressed":{
         "background":"@theme-button-join-pressed",
-        "text": "@theme-text-primary-normal"
+        "text": "@theme-text-button-normal"
       }
     },
     "cancel-fill":{
       "#normal":{
         "background":"@theme-button-cancel-normal",
-        "text": "@theme-text-primary-normal"
+        "text": "@theme-text-button-normal"
       },
       "#hovered":{
         "background":"@theme-button-cancel-hover",
-        "text": "@theme-text-primary-normal"
+        "text": "@theme-text-button-normal"
       },
       "#pressed":{
         "background":"@theme-button-cancel-pressed",
-        "text": "@theme-text-primary-normal"
+        "text": "@theme-text-button-normal"
       }
     },
     "cancel-outline":{
@@ -105,25 +105,25 @@
       },
       "#hovered":{
         "background":"@theme-button-cancel-hover",
-        "text": "@theme-text-primary-normal"
+        "text": "@theme-text-button-normal"
       },
       "#pressed":{
         "background":"@theme-button-cancel-pressed",
-        "text": "@theme-text-primary-normal"
+        "text": "@theme-text-button-normal"
       }
     },
     "message-fill":{
       "#normal":{
         "background":"@theme-button-accent-normal",
-        "text": "@theme-text-primary-normal"
+        "text": "@theme-text-button-normal"
       },
       "#hovered":{
         "background":"@theme-button-accent-hover",
-        "text": "@theme-text-primary-normal"
+        "text": "@theme-text-button-normal"
       },
       "#pressed":{
         "background":"@theme-button-accent-pressed",
-        "text": "@theme-text-primary-normal"
+        "text": "@theme-text-button-normal"
       }
     },
     "counter":{
