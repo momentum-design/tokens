@@ -86,7 +86,7 @@
     "cancel-fill":{
       "#normal":{
         "background":"@theme-button-cancel-normal",
-        "text": "@theme-text-primary-normal"
+        "text": "@theme-text-button-normal"
       },
       "#hovered":{
         "background":"@theme-button-cancel-hover",
