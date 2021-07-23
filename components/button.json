@@ -37,7 +37,7 @@
       "#disabled":{
         "background":"@theme-button-secondary-normal",
         "text": "@theme-text-primary-disabled",
-        "border": "@theme-outline-disabled"
+        "border": "@theme-outline-disabled-normal"
       }
     },
     "ghost":{
