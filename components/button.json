@@ -90,11 +90,11 @@
       },
       "#hovered":{
         "background":"@theme-button-cancel-hover",
-        "text": "@theme-text-primary-normal"
+        "text": "@theme-text-button-normal"
       },
       "#pressed":{
         "background":"@theme-button-cancel-pressed",
-        "text": "@theme-text-primary-normal"
+        "text": "@theme-text-button-normal"
       }
     },
     "cancel-outline":{
