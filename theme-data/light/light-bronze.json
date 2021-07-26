@@ -1,8 +1,8 @@
 {
   "theme": {
     "gradation": {
-      "primary" : ["#F5EFE4", "#FFFFFF"],
-      "secondary" : ["#FCFAF4", "#FFFFFF"]
+      "primary" : "@color-gradation-bronze-light-primary",
+      "secondary" : "@color-gradation-bronze-light-secondary"
     }
   }
 }

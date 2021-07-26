@@ -1,0 +1,66 @@
+{
+  "color": {
+    "gradation": {
+      "webex": {
+        "light": {
+          "primary": [ "#F0F0F0", "#FFFFFF" ],
+          "secondary": [ "#FAFAFA", "#FFFFFF" ]
+        },
+        "dark": {
+          "primary": [ "#1A1A1A", "#0F0F0F" ],
+          "secondary": [ "#262626", "#0F0F0F" ]
+        }
+      },
+      "jade": {
+        "light": {
+          "primary": [ "#E6F2F1", "#FFFFFF" ],
+          "secondary": [ "#F7FCFC", "#FFFFFF" ]
+        },
+        "dark": {
+          "primary": [ "#001C18", "#021412" ],
+          "secondary": [ "#122925", "#021412" ]
+        }
+      },
+      "rose": {
+        "light": {
+          "primary": [ "#FCEBF5", "#FFFFFF" ],
+          "secondary": [ "#FFF9FD", "#FFFFFF" ]
+        },
+        "dark": {
+          "primary": [ "#30041E", "#1F0615" ],
+          "secondary": [ "#40162E", "#1F0615" ]
+        }
+      },
+      "indigo": {
+        "light": {
+          "primary": [ "#EBEFFC", "#FFFFFF" ],
+          "secondary": [ "#F7F9FF", "#FFFFFF" ]
+        },
+        "dark": {
+          "primary": [ "#13182B", "#0E111A" ],
+          "secondary": [ "#212536", "#0E111A" ]
+        }
+      },
+      "bronze": {
+        "light": {
+          "primary": [ "#F5EFE4", "#FFFFFF" ],
+          "secondary": [ "#FCFAF4", "#FFFFFF" ]
+        },
+        "dark": {
+          "primary": [ "#1F1402", "#171002" ],
+          "secondary": [ "#2E2515", "#171002" ]
+        }
+      },
+      "lavender": {
+        "light": {
+          "primary": [ "#F4EBFF", "#FFFFFF" ],
+          "secondary": [ "#FBF7FF", "#FFFFFF" ]
+        },
+        "dark": {
+          "primary": [ "#231237", "#18082B" ],
+          "secondary": [ "#301A4A", "#18082B" ]
+        }
+      }
+    }
+  }
+}
