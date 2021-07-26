@@ -145,10 +145,11 @@ function normaliseUnit(value) {
 // You can probably break this with recursive references, can't be bothered to check
 function resolveValue(currentToken, allTokens, coreTokens, flattenedCoreTokens) {
   if (typeof currentToken === 'object') { // If this is an object, return a version with all children resolved
+    const resolvedToken = {};
     Object.entries(currentToken).forEach(([key, value]) => {
-      currentToken[key] = resolveValue(value, allTokens, coreTokens, flattenedCoreTokens);
+      resolvedToken[key] = resolveValue(value, allTokens, coreTokens, flattenedCoreTokens);
     });
-    return currentToken;
+    return resolvedToken;
   } else if ((typeof currentToken === 'string') && (currentToken.startsWith('@'))) { // If it's a reference, return the resolved object
     const tokenName = currentToken.slice(1);
     if (tokenName in flattenedCoreTokens) { // easy case - it refers to something in the core
@@ -210,17 +211,25 @@ function finaliseTokens(tokens) {
       if (!(baseKeyName in finalisedTokens)) {
         finalisedTokens[baseKeyName] = {};
       }
-      finalisedTokens[baseKeyName][uiState] = normaliseUnit(value);
+      finalisedTokens[baseKeyName][uiState] = value;
     }
     else {
       if (uiState === validUiStates[0]) {
-        finalisedTokens[baseKeyName] = normaliseUnit(value);
+        finalisedTokens[baseKeyName] = value;
       } else {
-        finalisedTokens[baseKeyName+'-'+uiState] = normaliseUnit(value);
+        finalisedTokens[baseKeyName+'-'+uiState] = value;
       }
     }
   });
   return finalisedTokens;
+}
+
+function normaliseUnits(tokens) {
+  const normalisedTokens = {};
+  Object.entries(tokens).forEach(([key, value]) => {
+    normalisedTokens[key] = normaliseUnit(value);
+  });
+  return normalisedTokens;
 }
 
 let platform='web';
@@ -255,14 +264,12 @@ if (platform === 'web') {
   colorFormat = 'names';
   includeMobileTokens = true;
   uiStatesAsObject = false;
-  omitThemeTokens = true;
 } else if (platform === 'ios') {
   colorFormat = 'names';
   sizeUnit='pt';
   componentGroups = true;
   includeMobileTokens = true;
   uiStatesAsObject = false;
-  omitThemeTokens = true;
 } else {
   console.log('Unknown platform: ' + platform);
   process.exit(1);
@@ -371,6 +378,33 @@ const flattenedCoreTokens = {};
 flattenObject('', coreTokens, flattenedCoreTokens);
 console.log('=== Core files loaded ====================');
 
+// Then load the component files
+console.log('=== Loading component files ==============');
+let componentData = loadFile('components', true);
+try {
+  merge(componentData, loadFile('platformcomponents/'+platform, true));
+} catch (error) {
+  console.log('No platform component tokens for ' + platform);
+}
+if (includeMobileTokens) {
+  try {
+    merge(componentData, loadFile('platformcomponents/mobile', true));
+  } catch (error) {
+    console.log('No platform component tokens for mobile');
+  }
+}
+if (includeDesktopTokens) {
+  try {
+    merge(componentData, loadFile('platformcomponents/desktop', true));
+  } catch (error) {
+    console.log('No platform component tokens for desktop');
+  }
+}
+
+const flattenedComponentTokens = {};
+flattenObject('', componentData, flattenedComponentTokens);
+console.log('=== Component files loaded =================');
+
 const indexFileData = [];
 
 Object.keys(args).forEach(themeFileName => {
@@ -380,60 +414,55 @@ Object.keys(args).forEach(themeFileName => {
   let themeFileData = fs.readFileSync(themeFileName);
   let themeFile = JSON.parse(themeFileData);
   console.log(`Loading theme ${themeFile.name} for platform ${platform} using color format ${colorFormat}`);
-  let tokenData = loadFile('components', true);
-  try {
-    merge(tokenData, loadFile('platformcomponents/'+platform, true));
-  } catch (error) {
-    console.log('No platform component tokens for ' + platform);
-  }
-  if (includeMobileTokens) {
-    try {
-      merge(tokenData, loadFile('platformcomponents/mobile', true));
-    } catch (error) {
-      console.log('No platform component tokens for mobile');
-    }
-  }
-  if (includeDesktopTokens) {
-    try {
-      merge(tokenData, loadFile('platformcomponents/desktop', true));
-    } catch (error) {
-      console.log('No platform component tokens for desktop');
-    }
-  }
 
+  const themeData = {};
   themeFile.files.forEach((fileName) => {
     if (fileName.endsWith('/')) {
-      merge(tokenData, loadFile(fileName.slice(0, -1), true));
+      merge(themeData, loadFile(fileName.slice(0, -1), true));
     } else {
-      merge(tokenData, loadFile(fileName, false));
+      merge(themeData, loadFile(fileName, false));
     }
   });
   /*console.log('=== After load theme data =====================');
   console.log(JSON.stringify(tokenData, null, 2));*/
   
   // Resolve all the references
-  tokenData = resolveValue(tokenData, tokenData, coreTokens, flattenedCoreTokens);
+  const resolvedThemeData = resolveValue(themeData, themeData, coreTokens, flattenedCoreTokens);
   /*console.log('=== After resolve references ==================');
   console.log(JSON.stringify(tokenData, null, 2));*/
   
-  if (omitThemeTokens) {
-    delete tokenData.theme;
-  }
+  const flattenedThemeTokens = {};
+  flattenObject('', resolvedThemeData, flattenedThemeTokens);
+  
+  resolvedComponentData = resolveValue(componentData, componentData, resolvedThemeData, flattenedThemeTokens);
 
   // Flatten the token names and then expand every token into UI states
   let stateTokens = {};
   if (componentGroups) {
     const flattenedTokens = {};
-    Object.entries(tokenData).forEach(([key, value]) => {
+    Object.entries(resolvedComponentData).forEach(([key, value]) => {
       const categoryFlattenedTokens = {};
       flattenObject('', value, categoryFlattenedTokens);
-      stateTokens[key] = finaliseTokens(categoryFlattenedTokens);
+      stateTokens[key] = finaliseTokens(normaliseUnits(categoryFlattenedTokens));
     });
     
   } else {
     const flattenedTokens = {};
-    flattenObject('', tokenData, flattenedTokens);
-    stateTokens = finaliseTokens(flattenedTokens);
+    flattenObject('', resolvedComponentData, flattenedTokens);
+    stateTokens = finaliseTokens(normaliseUnits(flattenedTokens));
+  }
+  
+  if (!omitThemeTokens) {
+    if (componentGroups) {
+      stateTokens['theme'] = {};
+      Object.entries(resolvedThemeData['theme']).forEach(([key, value]) => {
+        const categoryFlattenedTokens = {};
+        flattenObject('', value, categoryFlattenedTokens);
+        stateTokens['theme'][key] = finaliseTokens(normaliseUnits(categoryFlattenedTokens));
+      });
+    } else {
+      merge(stateTokens, normaliseUnits(flattenedThemeTokens));
+    }
   }
   /*console.log('=== After flattening tokens ===================');
   console.log(JSON.stringify(flattenedTokens, null, 2));*/
@@ -481,7 +510,7 @@ Object.keys(args).forEach(themeFileName => {
   console.log('=== Theme processed ======================');
 });
 
-if (platform === 'web') {
+if (fileFormat === 'css') {
   const indexFileContent = indexFileData.join('\n');
   const indexFileName = path.join('dist', 'index.css');
 
