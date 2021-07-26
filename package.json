@@ -14,7 +14,7 @@
   "scripts": {
     "build:clean": "rimraf ./dist",
     "build:css": "npm run build:clean && node theme_generator.js --platform=web themes/* --sizeUnit=rem",
-    "publishNpm": "yarn version --patch && git push --atomic git@github.com:momentum-design/tokens.git master `git describe --tags --abbrev=0`",
+    "publishNpm": "./publishNpm.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
