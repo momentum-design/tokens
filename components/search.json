@@ -1,0 +1,28 @@
+{
+  "search": {
+    "#rest": {
+      "background": "@theme-background-solid-primary-normal",
+      "text": "@theme-text-secondary-normal",
+      "border": "@theme-outline-input-normal"
+    },
+    "#active": {
+      "background": "@theme-background-solid-primary-normal",
+      "text": "@theme-text-secondary-normal",
+      "border": "@theme-outline-input-active"
+    },
+    "#disabled": {
+      "background": "@theme-background-disabled",
+      "text": "@theme-text-primary-disabled"
+    },
+    "#typing": {
+      "background": "@theme-background-solid-primary-normal",
+      "text": "@theme-text-primary-normal",
+      "border": "@theme-outline-input-active"
+    },
+    "#typed": {
+      "background": "@theme-background-solid-primary-normal",
+      "text": "@theme-text-primary-normal",
+      "border": "@theme-outline-input-normal"
+    }
+  }
+}
