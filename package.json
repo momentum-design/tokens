@@ -2,7 +2,7 @@
   "dependencies": {},
   "name": "@momentum-ui/design-tokens",
   "description": "See [documentation on Confluence](https://confluence-eng-gpk2.cisco.com/conf/display/~pauwitty/Token+proposal)",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "./dist/index.css",
   "devDependencies": {
     "args-parser": "^1.2.0",
@@ -30,5 +30,7 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
-  "files": ["dist/**"]
+  "files": [
+    "dist/**"
+  ]
 }
