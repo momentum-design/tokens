@@ -104,15 +104,40 @@ function findKey(keyParts, tokens) {
   return null;
 }
 
+function applyAlpha(tokenGroup, alpha) {
+  if (typeof tokenGroup === 'string') {
+    if (alpha == 1) {
+      return tokenGroup;
+    } else {
+      return tokenGroup + '*' + alpha;
+    }
+  } else if (typeof tokenGroup === 'object') {
+    const alphaModifiedObject = {};
+    Object.keys(tokenGroup).forEach((key) => {
+      alphaModifiedObject[key] = applyAlpha(tokenGroup[key], alpha);
+    });
+    return alphaModifiedObject;
+  } else {
+    console.error('Unable to apply alpha to object of type ' + typeof tokenGroup);
+    process.exit(1);
+  }
+}
+
 // Parses a value and normalises the unit if required
 function normaliseUnit(value) {
-  //console.log('Normalising unit type ' + typeof value + ' value ' + value);
   if ((typeof value === 'string') && (value.startsWith('#') || value.startsWith('rgb'))) {
+    const starPosition = value.indexOf('*');
+    let alpha = 1;
+    if (starPosition !== -1) {
+      alpha = value.slice(starPosition+1);
+      value = value.slice(0, starPosition);
+    }
     const c = parseColour(value);
     if (!c) {
-      console.log('Unable to parse colour: ' + value);
+      console.error('Unable to parse colour: ' + value);
       process.exit(1);
     }
+    c.alpha = c.alpha * alpha;
     if (colorFormat === 'rgba') {
       return `rgba(${c.values[0]}, ${c.values[1]}, ${c.values[2]}, ${c.alpha})`;
     } else if (colorFormat === 'object') {
@@ -124,10 +149,22 @@ function normaliseUnit(value) {
       a = (c.alpha === 1) ? '' : Math.round(c.alpha * 255).toString(16).padStart(2,'0');
       return "#" + r + g + b + a;
     }
+  } else if ((typeof value === 'string') && value.startsWith('color-')) {
+    const starPosition = value.indexOf('*');
+    let alpha = 1;
+    if (starPosition !== -1) {
+      alpha = value.slice(starPosition+1);
+      value = value.slice(0, starPosition);
+    }
+    if (alpha != 1) {
+      return value.slice(6)+'-alpha-'+alpha*100;
+    } else {
+      return value.slice(6);
+    }
   } else if ((typeof value === 'string') && (value.endsWith('px'))) {
     const pxSize = parseInt(value.slice(0,-2));
     if (isNaN(pxSize)) {
-      console.log('Unable to parse size: ' + value);
+      console.error('Unable to parse size: ' + value);
       process.exit(1);
     }
     if (sizeUnit === 'px') {
@@ -151,14 +188,23 @@ function resolveValue(currentToken, allTokens, coreTokens, flattenedCoreTokens) 
     });
     return resolvedToken;
   } else if ((typeof currentToken === 'string') && (currentToken.startsWith('@'))) { // If it's a reference, return the resolved object
-    const tokenName = currentToken.slice(1);
+    let tokenName = currentToken.slice(1);
+    const starPosition = tokenName.indexOf('*');
+    let alpha = 1;
+    if (starPosition !== -1) {
+      alpha = tokenName.slice(starPosition+1);
+      tokenName = tokenName.slice(0, starPosition);
+    }
     if (tokenName in flattenedCoreTokens) { // easy case - it refers to something in the core
-      return flattenedCoreTokens[tokenName];
+      return applyAlpha(flattenedCoreTokens[tokenName], alpha);
     } else { // Otherwise we've got to find the token
       const keyParts = tokenName.split('-');
       let value = findKey(keyParts, allTokens); // First of all try to find it as a reference to another token which actually exists
       if (!value) { // Maybe it's a reference to a complete core token group, in which case we should substitute in the whole group
-        value = findKey(keyParts, coreTokens);
+        value = findKey(keyParts, coreTokens), alpha;
+        if (value) {
+          value = applyAlpha(value, alpha);
+        }
       }
       if (!value) { // If we can't find it, it might be going indirectly through a reference to another group
         for (i=1; i<keyParts.length; i++) {
@@ -172,7 +218,7 @@ function resolveValue(currentToken, allTokens, coreTokens, flattenedCoreTokens) 
             const substituteParts = groupValue.slice(1).split('-').concat(keyParts.slice(-i));
             const substituteName = substituteParts.join('-');
             if (substituteName in flattenedCoreTokens) {
-              return flattenedCoreTokens[substituteName];
+              return applyAlpha(flattenedCoreTokens[substituteName], alpha);
             }
             value = findKey(substituteParts, allTokens);
             break;
@@ -180,7 +226,7 @@ function resolveValue(currentToken, allTokens, coreTokens, flattenedCoreTokens) 
         }
       }
       if (!value) { // If we still can't find it, it's probably broken
-        console.log('Unable to find ' + currentToken + ' in ' + JSON.stringify(allTokens, null, 2));
+        console.error('Unable to find ' + currentToken + ' in ' + JSON.stringify(allTokens, null, 2));
         process.exit(1);
       }
       return resolveValue(value, allTokens, coreTokens, flattenedCoreTokens);
@@ -190,7 +236,7 @@ function resolveValue(currentToken, allTokens, coreTokens, flattenedCoreTokens) 
   }
 }
 
-// Sorts out UI states, and resolves units to the requested
+// Sorts out UI states
 function finaliseTokens(tokens) {
   const finalisedTokens = {};
   Object.entries(tokens).forEach(([key, value]) => {
@@ -202,7 +248,7 @@ function finaliseTokens(tokens) {
       //This is a state, so sanity check it falls into allowed values
       uiState = keyParts.pop().slice(1);
       if (!validUiStates.includes(uiState)) {
-        console.log(`Unknown ui state: ${uiState} when resolving ${key}`);
+        console.error(`Unknown ui state: ${uiState} when resolving ${key}`);
         process.exit(1);
       }
     }
@@ -271,7 +317,7 @@ if (platform === 'web') {
   includeMobileTokens = true;
   uiStatesAsObject = false;
 } else {
-  console.log('Unknown platform: ' + platform);
+  console.error('Unknown platform: ' + platform);
   process.exit(1);
 }
 
@@ -285,7 +331,7 @@ if (args.colorFormat) {
   } else if (args.colorFormat === 'names') {
     colorFormat = 'names';
   } else {
-    console.log('Unknown color format: ' + args.colorFormat);
+    console.error('Unknown color format: ' + args.colorFormat);
     process.exit(1);
   }
   delete args.colorFormat;
@@ -299,7 +345,7 @@ if (args.sizeUnit) {
   } else if (args.sizeUnit === 'rem') {
     sizeUnit = 'rem';
   } else {
-    console.log('Unknown size unit: ' + args.sizeUnit);
+    console.error('Unknown size unit: ' + args.sizeUnit);
     process.exit(1);
   }
   delete args.sizeUnit;
@@ -321,7 +367,7 @@ if (args.fileFormat) {
   } else if (args.fileFormat === 'json') {
     fileFormat = 'json';
   } else {
-    console.log('Unknown file format: ' + args.fileFormat);
+    console.error('Unknown file format: ' + args.fileFormat);
     process.exit(1);
   }
   delete args.fileFormat;
@@ -371,7 +417,7 @@ if (Object.keys(args).length === 0) {
 console.log('=== Loading core files ===================');
 let coreTokens = loadFile("core", true);
 if (colorFormat === 'names') {
-  useColourNames(coreTokens['color']);
+  useColourNames(coreTokens);
 }
 // Then flatten all the tokens
 const flattenedCoreTokens = {};
@@ -404,6 +450,7 @@ if (includeDesktopTokens) {
 const flattenedComponentTokens = {};
 flattenObject('', componentData, flattenedComponentTokens);
 console.log('=== Component files loaded =================');
+//console.log(JSON.stringify(componentData, null, 2));
 
 const indexFileData = [];
 
@@ -428,13 +475,15 @@ Object.keys(args).forEach(themeFileName => {
   
   // Resolve all the references
   const resolvedThemeData = resolveValue(themeData, themeData, coreTokens, flattenedCoreTokens);
-  /*console.log('=== After resolve references ==================');
-  console.log(JSON.stringify(tokenData, null, 2));*/
+  /*console.log('=== Theme after resolve references ==============');
+  console.log(JSON.stringify(resolvedThemeData, null, 2));*/
   
   const flattenedThemeTokens = {};
   flattenObject('', resolvedThemeData, flattenedThemeTokens);
   
   resolvedComponentData = resolveValue(componentData, componentData, resolvedThemeData, flattenedThemeTokens);
+  /*console.log('=== Components after resolve references ==========');
+  console.log(JSON.stringify(resolvedComponentData, null, 2));*/
 
   // Flatten the token names and then expand every token into UI states
   let stateTokens = {};
@@ -498,7 +547,7 @@ Object.keys(args).forEach(themeFileName => {
       fs.writeFile(outputFileName, JSON.stringify(stateTokens, null, 2), 'utf8', function (err) {
         if (err) 
         {
-          console.log("Error when writing JSON file: " + err);
+          console.error("Error when writing JSON file: " + err);
           process.exit(1);
         }
       });

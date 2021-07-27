@@ -34,8 +34,7 @@
         "speaking": {
           "inner-ring": "@theme-outline-gradient-active",
           "outer-ring": {
-            "color": "@theme-outline-gradient-active",
-            "opacity": "32%"
+            "color": "@theme-outline-gradient-active*0.32"
           }
         }
       },
