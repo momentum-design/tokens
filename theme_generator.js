@@ -194,7 +194,7 @@ function finaliseTokens(tokens) {
   const finalisedTokens = {};
   Object.entries(tokens).forEach(([key, value]) => {
     const keyParts = key.split('-');
-    const validUiStates = ['normal', 'hovered', 'pressed', 'disabled', 'focused', 'active', 'checked', 'rest', 'typing', 'typed'];
+    const validUiStates = ['normal', 'hovered', 'pressed', 'disabled', 'focused', 'active', 'checked'];
     let uiState = validUiStates[0];
     if (keyParts[keyParts.length-1].startsWith('#')) 
     {
