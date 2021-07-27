@@ -320,6 +320,7 @@ let colorFormat='rgba';
 let sizeUnit='px';
 let componentGroups=false;
 let fileFormat='json';
+let includeJsonHeader=false;
 let includeMobileTokens=false;
 let includeDesktopTokens=false;
 let uiStatesAsObject=true;
@@ -338,10 +339,14 @@ if (platform === 'web') {
   colorFormat = 'object';
   sizeUnit='px';
   includeDesktopTokens = true;
+  fileFormat='json';
+  includeJsonHeader=true;
 } else if (platform === 'macos') {
   colorFormat = 'object';
   sizeUnit='px';
   includeDesktopTokens = true;
+  fileFormat='json';
+  includeJsonHeader=true;
 } else if (platform === 'android') {
   colorFormat = 'names';
   includeMobileTokens = true;
@@ -579,9 +584,12 @@ Object.keys(args).forEach(themeFileName => {
     });
     outputLine('}');
   } else if (fileFormat === 'json') {
+    if (includeJsonHeader) {
+      stateTokens = { name: themeFile.name, parent: themeFile.parent, tokens: stateTokens };
+    }
     outputFileName = path.join('dist', camelCase(themeFile.name) + '.json');
     if (toStdOut) {
-      console.log(stateTokens);
+      console.log(JSON.stringify(stateTokens, null, 2));
     } else {
       fs.writeFile(outputFileName, JSON.stringify(stateTokens, null, 2), 'utf8', function (err) {
         if (err) 

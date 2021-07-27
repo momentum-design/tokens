@@ -1,5 +1,6 @@
 {
   "name": "Light Indigo",
+  "parent": "Light",
   "files": [
     "theme-data/light/light-common.json",
     "theme-data/light/light-indigo.json"
