@@ -1,5 +1,6 @@
 {
   "name": "Light Bronze",
+  "parent": "Light",
   "files": [
     "theme-data/light/light-common.json",
     "theme-data/light/light-bronze.json"
