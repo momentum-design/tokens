@@ -1,0 +1,8 @@
+{ 
+  "dialog": {
+    "background":"@theme-background-solid-primary-normal",  
+    "header-text": "@theme-text-primary-normal", 
+    "message-text": "@theme-text-secondary-normal", 
+    "button-text": "@theme-text-accent-normal"
+  }
+}
