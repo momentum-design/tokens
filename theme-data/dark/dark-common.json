@@ -85,9 +85,9 @@
       "ghost": "@color-white-alpha-00",
       "primary": {
         "hover": "@color-white-alpha-05",
-        "active": "@color-white-alpha-11"
+        "active": "@color-white-alpha-11",
+        "disabled": "@color-white-alpha-11"
       },
-      "disabled": "@color-white-alpha-11",
       "solid":{
         "primary": {
           "normal": "@color-gray-100"

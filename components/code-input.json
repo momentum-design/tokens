@@ -21,7 +21,7 @@
       "border": "@theme-outline-focus-normal"
     },
     "#disabled": {
-      "background": "@theme-background-disabled",
+      "background": "@theme-background-primary-disabled",
       "text": "@theme-text-primary-normal",
       "border": "@theme-background-ghost"
     },
