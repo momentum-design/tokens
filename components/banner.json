@@ -1,0 +1,20 @@
+{
+  "banner": {
+    "announcement": {
+      "text": "@theme-text-accent-normal",
+      "background": "@theme-background-alert-theme-normal"
+    },
+    "success": {
+      "text": "@theme-text-success-normal",
+      "background": "@theme-background-alert-success-normal"
+    },
+    "error": {
+      "text": "@theme-text-error-normal",
+      "background": "@theme-background-alert-error-normal"
+    },
+    "issue": {
+      "text": "@theme-text-warning-normal",
+      "background": "@theme-background-alert-warning-normal"
+    }
+  }
+}
