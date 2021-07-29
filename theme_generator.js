@@ -327,7 +327,7 @@ let omitThemeTokens=false;
 /* if true we use the background colour as the value of the border if border=none
  * if false, we instead modify to a border-style and border-color variables
  */
-let noBorderIsBackgroundColour=false;
+let noBorderIsBackgroundColour=true;
 
 console.log('Setting up for platform: ' + platform);
 if (platform === 'web') {
@@ -352,7 +352,6 @@ if (platform === 'web') {
   componentGroups = true;
   includeMobileTokens = true;
   uiStatesAsObject = false;
-  noBorderIsBackgroundColour=true;
 } else {
   console.error('Unknown platform: ' + platform);
   process.exit(1);
