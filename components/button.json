@@ -253,6 +253,7 @@
     },
     "hyperlink": {
       "#normal": {
+        "background": "@theme-button-secondary-normal",
         "text": "@theme-text-accent-normal",
         "border": "none"
       },
