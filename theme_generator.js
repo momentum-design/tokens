@@ -236,6 +236,30 @@ function resolveValue(currentToken, allTokens, coreTokens, flattenedCoreTokens) 
   }
 }
 
+// Changes all borders from border: "color" to border-style: "solid|none", border-color: color
+function fixBorders(tokens) {
+  if (typeof tokens === 'object') {
+    Object.entries(tokens).forEach(([key, value]) => {
+      if (key === 'border') {
+        tokens['border-style'] = {};
+        tokens['border-color'] = {};
+        Object.entries(value).forEach(([borderKey, borderValue]) => {
+          if (borderValue === 'none') {
+            tokens['border-style'][borderKey] = 'none';
+          } else {
+            tokens['border-style'][borderKey] = 'solid';
+            tokens['border-color'][borderKey] = borderValue;
+          }
+        });
+        delete(tokens.border);
+      }
+      else {
+        fixBorders(value);
+      }
+    });
+  }
+}
+
 // Sorts out UI states
 function finaliseTokens(tokens) {
   const finalisedTokens = {};
@@ -484,6 +508,9 @@ Object.keys(args).forEach(themeFileName => {
   resolvedComponentData = resolveValue(componentData, componentData, resolvedThemeData, flattenedThemeTokens);
   /*console.log('=== Components after resolve references ==========');
   console.log(JSON.stringify(resolvedComponentData, null, 2));*/
+  
+  // Look for borders, and expand to border-style and border-color
+  fixBorders(resolvedComponentData);
 
   // Flatten the token names and then expand every token into UI states
   let stateTokens = {};
