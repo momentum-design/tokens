@@ -202,8 +202,7 @@
     },
     "hyperlink": {
       "#normal": {
-        "text": "@theme-text-accent-normal",
-        "border": "@theme-background-ghost"
+        "text": "@theme-text-accent-normal"
       },
       "#hovered": {
         "text": "@theme-text-accent-hover"

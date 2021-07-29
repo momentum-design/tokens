@@ -1,5 +1,5 @@
 { 
-  "textInput": {
+  "textinput": {
     "placeholder-text": "@theme-text-secondary-normal", 
     "#normal": {
       "background": "@theme-background-solid-primary-normal",
