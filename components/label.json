@@ -1,0 +1,35 @@
+{ 
+  "label": {
+    "primary" : {
+      "#normal": { 
+        "text": "@theme-text-primary-normal"   
+      },
+      "#disabled":{
+        "text": "@theme-text-primary-disabled"
+      }     
+    },
+    "secondary" : {
+      "#normal": { 
+        "text": "@theme-text-secondary-normal"   
+      },
+      "#disabled":{
+        "text": "@theme-text-primary-disabled"
+      }
+    },
+    "success" : {
+      "#normal": { 
+        "text": "@theme-text-success-normal"
+      }    
+    },
+    "warning" : {
+      "#normal": { 
+        "text": "@theme-text-warning-normal"
+      }    
+    },
+    "error" : {
+      "#normal": { 
+        "text": "@theme-text-error-normal"
+      }    
+    }
+  }
+}
