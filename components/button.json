@@ -203,7 +203,7 @@
     "hyperlink": {
       "#normal": {
         "text": "@theme-text-accent-normal",
-        "border": ""
+        "border": "@theme-background-ghost"
       },
       "#hovered": {
         "text": "@theme-text-accent-hover"
