@@ -1,0 +1,42 @@
+{ 
+  "textinput": {
+    "placeholder-text": "@theme-text-secondary-normal", 
+    "#normal": {
+      "background": "@theme-background-solid-primary-normal",
+      "text": "@theme-text-primary-normal",
+      "border": "@theme-outline-input-normal"
+    },
+    "#hovered": {
+      "background": "@theme-background-primary-hover",
+      "text": "@theme-text-primary-normal",
+      "border": "@theme-outline-input-normal"
+    },    
+    "#focused": {
+      "background": "@theme-background-solid-primary-normal",
+      "text": "@theme-text-primary-normal",
+      "border": "@theme-outline-focus-normal"
+    },
+    "#disabled": {
+      "background": "@theme-background-primary-disabled",
+      "text": "@theme-text-primary-normal",
+      "border": "@theme-background-ghost"
+    },
+    "error": {
+      "#normal": {
+        "background": "@theme-background-alert-error-normal",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-cancel-normal"
+      },
+      "#hovered": {
+        "background": "@theme-background-primary-hover",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-cancel-normal"
+      },
+      "#focused": {
+        "background": "@theme-background-primary-hover",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-cancel-normal"
+      }
+    }
+  }
+}
