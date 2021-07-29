@@ -52,6 +52,46 @@
       "#pressed":{
         "background":"@theme-button-secondary-pressed",
         "text": "@theme-text-primary-normal"
+      },
+      "#disabled":{
+        "background":"@theme-button-primary-disabled",
+        "text": "@theme-text-primary-disabled"
+      }
+    },
+    "cancel-ghost":{
+      "#normal":{
+        "background":"@theme-button-secondary-normal",
+        "text": "@theme-text-error-normal"
+      },
+      "#hovered":{
+        "background":"@theme-button-secondary-hover",
+        "text": "@theme-text-error-normal"
+      },
+      "#pressed":{
+        "background":"@theme-button-secondary-pressed",
+        "text": "@theme-text-error-normal"
+      },
+      "#disabled":{
+        "background":"@theme-button-primary-disabled",
+        "text": "@theme-text-primary-disabled"
+      }
+    },
+    "message-ghost":{
+      "#normal":{
+        "background":"@theme-button-secondary-normal",
+        "text": "@theme-text-accent-normal"
+      },
+      "#hovered":{
+        "background":"@theme-button-secondary-hover",
+        "text": "@theme-text-accent-normal"
+      },
+      "#pressed":{
+        "background":"@theme-button-secondary-pressed",
+        "text": "@theme-text-accent-normal"
+      },
+      "#disabled":{
+        "background":"@theme-button-primary-disabled",
+        "text": "@theme-text-primary-disabled"
       }
     },
     "join-fill":{
