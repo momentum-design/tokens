@@ -1,0 +1,19 @@
+{ 
+  "modal": {
+    "primary" : {
+      "#normal": { 
+        "background": "@theme-background-solid-primary-normal"
+      }
+    },
+    "secondary" : {
+      "#normal": { 
+        "background": "@theme-background-solid-secondary-normal"
+      }
+    },
+    "tertiary" : {
+      "#normal": { 
+        "background": "@theme-background-solid-tertiary-normal"
+      }
+    }
+  }
+}
