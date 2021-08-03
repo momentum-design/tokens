@@ -1,0 +1,9 @@
+{ 
+  "popover": {
+    "primary" : {
+      "#normal": { 
+        "background": "@theme-background-solid-primary-normal"
+      }
+    }    
+  }
+}
