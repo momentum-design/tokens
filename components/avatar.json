@@ -11,7 +11,7 @@
       "ooo": "@theme-presence-away"
     },
     "color-avatar": {
-      "text": "@theme-text-primary-normal",
+      "text": "@theme-text-button-normal",
       "background": {
         "default": "@theme-avatar-default",
         "gold": "@theme-avatar-gold",
