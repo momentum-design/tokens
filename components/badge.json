@@ -1,0 +1,6 @@
+{
+    "badge":{
+        "background":"@theme-background-accent-normal",
+        "text":"@theme-text-button-normal"
+    }
+}

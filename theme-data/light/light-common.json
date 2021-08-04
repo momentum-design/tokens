@@ -97,6 +97,9 @@
         },
         "tertiary":{
           "normal":"@color-gray-10"
+        },
+        "quaternary":{
+          "normal":"@color-white-alpha=100"
         }
       },
       "secondary":{
@@ -320,6 +323,7 @@
         "pressed":"@color-black-alpha-40"
       },
       "arrow": {
+        "normal":"@color-black-alpha-60",
         "background": {
           "normal":"@color-black-alpha-60",
           "hover":"@color-black-alpha-11",
