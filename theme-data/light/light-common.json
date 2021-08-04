@@ -98,7 +98,7 @@
         "tertiary":{
           "normal":"@color-gray-10"
         },
-        "quatrinary":{
+        "quaternary":{
           "normal":"@color-white-alpha=100"
         }
       },
