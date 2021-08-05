@@ -1,5 +1,6 @@
 {
-  "name": "Light Jade",
+  "accent": "Jade",
+  "theme": "Light",
   "files": [
     "theme-data/light/light-common.json",
     "theme-data/light/light-jade.json"

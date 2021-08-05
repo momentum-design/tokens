@@ -1,5 +1,6 @@
 {
-  "name": "Light Webex",
+  "accent": "Webex",
+  "theme": "Light",
   "files": [
     "theme-data/light/light-common.json",
     "theme-data/light/light-webex.json"

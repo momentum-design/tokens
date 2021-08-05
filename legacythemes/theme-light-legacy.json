@@ -1,0 +1,9 @@
+{
+  "accent": "Webex",
+  "theme": "Light-legacy",
+  "files": [
+    "theme-data/light/light-common.json",
+    "theme-data/light/light-webex.json",
+    "legacy/default.json"
+  ]
+}

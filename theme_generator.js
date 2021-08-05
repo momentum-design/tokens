@@ -320,6 +320,7 @@ let colorFormat='rgba';
 let sizeUnit='px';
 let componentGroups=false;
 let fileFormat='json';
+let includeJsonHeader=false;
 let includeMobileTokens=false;
 let includeDesktopTokens=false;
 let uiStatesAsObject=true;
@@ -338,10 +339,14 @@ if (platform === 'web') {
   colorFormat = 'object';
   sizeUnit='px';
   includeDesktopTokens = true;
+  fileFormat='json';
+  includeJsonHeader=true;
 } else if (platform === 'macos') {
   colorFormat = 'object';
   sizeUnit='px';
   includeDesktopTokens = true;
+  fileFormat='json';
+  includeJsonHeader=true;
 } else if (platform === 'android') {
   colorFormat = 'names';
   includeMobileTokens = true;
@@ -560,8 +565,9 @@ Object.keys(args).forEach(themeFileName => {
   fs.mkdir('dist', (err) => {});
   let outputFileName = '';
   if (fileFormat === 'css') {
-    indexFileData.push(`@import '${camelCase(themeFile.name)}.css';`);
-    outputFileName = path.join('dist', camelCase(themeFile.name) + '.css');
+    const outputName = camelCase(themeFile.theme+themeFile.accent);
+    indexFileData.push(`@import '${outputName}.css';`);
+    outputFileName = path.join('dist', outputName + '.css');
     let fileHandle = undefined;
     if (!toStdOut) {
       fileHandle = fs.openSync(outputFileName, 'w');
@@ -573,15 +579,22 @@ Object.keys(args).forEach(themeFileName => {
         fs.writeSync(fileHandle, line+'\n');
       }
     }
-    outputLine('.md-theme-' + camelCase(themeFile.name) + ' {');
+    outputLine('.md-theme-' + outputName + ' {');
     Object.entries(stateTokens).forEach(([key, value]) => {
       outputLine('  --'+key+': '+value+';');
     });
     outputLine('}');
   } else if (fileFormat === 'json') {
-    outputFileName = path.join('dist', camelCase(themeFile.name) + '.json');
+    if (includeJsonHeader) {
+      stateTokens = { name: "Momentum"+themeFile.accent+themeFile.theme, parent: themeFile.accent+themeFile.theme, tokens: stateTokens };
+    }
+    if (platform === 'macos' || platform === 'qt') {
+      outputFileName = path.join('dist', camelCase("momentum"+themeFile.accent+themeFile.theme) + '.json');
+    } else {
+      outputFileName = path.join('dist', camelCase(themeFile.accent+themeFile.theme) + '.json');
+    }
     if (toStdOut) {
-      console.log(stateTokens);
+      console.log(JSON.stringify(stateTokens, null, 2));
     } else {
       fs.writeFile(outputFileName, JSON.stringify(stateTokens, null, 2), 'utf8', function (err) {
         if (err) 
