@@ -99,7 +99,7 @@
           "normal":"@color-gray-10"
         },
         "quaternary":{
-          "normal":"@color-white-alpha=100"
+          "normal":"@color-white-alpha-100"
         }
       },
       "secondary":{
