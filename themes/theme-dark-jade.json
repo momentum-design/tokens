@@ -1,6 +1,6 @@
 {
-  "name": "Dark Jade",
-  "parent": "Dark",
+  "accent": "Jade",
+  "theme": "Dark",
   "files": [
     "theme-data/dark/dark-common.json",
     "theme-data/dark/dark-jade.json"

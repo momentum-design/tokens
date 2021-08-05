@@ -1,6 +1,6 @@
 {
-  "name": "Light Lavender",
-  "parent": "Light",
+  "accent": "Lavender",
+  "theme": "Light",
   "files": [
     "theme-data/light/light-common.json",
     "theme-data/light/light-lavender.json"

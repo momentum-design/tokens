@@ -1,6 +1,6 @@
 {
-  "name": "Dark Bronze",
-  "parent": "Dark",
+  "accent": "Bronze",
+  "theme": "Dark",
   "files": [
     "theme-data/dark/dark-common.json",
     "theme-data/dark/dark-bronze.json"

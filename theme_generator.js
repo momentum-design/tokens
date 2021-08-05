@@ -565,8 +565,9 @@ Object.keys(args).forEach(themeFileName => {
   fs.mkdir('dist', (err) => {});
   let outputFileName = '';
   if (fileFormat === 'css') {
-    indexFileData.push(`@import '${camelCase(themeFile.name)}.css';`);
-    outputFileName = path.join('dist', camelCase(themeFile.name) + '.css');
+    const outputName = camelCase(themeFile.theme+themeFile.accent);
+    indexFileData.push(`@import '${outputName}.css';`);
+    outputFileName = path.join('dist', outputName + '.css');
     let fileHandle = undefined;
     if (!toStdOut) {
       fileHandle = fs.openSync(outputFileName, 'w');
@@ -578,16 +579,20 @@ Object.keys(args).forEach(themeFileName => {
         fs.writeSync(fileHandle, line+'\n');
       }
     }
-    outputLine('.md-theme-' + camelCase(themeFile.name) + ' {');
+    outputLine('.md-theme-' + outputName + ' {');
     Object.entries(stateTokens).forEach(([key, value]) => {
       outputLine('  --'+key+': '+value+';');
     });
     outputLine('}');
   } else if (fileFormat === 'json') {
     if (includeJsonHeader) {
-      stateTokens = { name: themeFile.name, parent: themeFile.parent, tokens: stateTokens };
+      stateTokens = { name: "Momentum"+themeFile.accent+themeFile.theme, parent: themeFile.accent+themeFile.theme, tokens: stateTokens };
     }
-    outputFileName = path.join('dist', camelCase(themeFile.name) + '.json');
+    if (platform === 'macos' || platform === 'qt') {
+      outputFileName = path.join('dist', camelCase("momentum"+themeFile.accent+themeFile.theme) + '.json');
+    } else {
+      outputFileName = path.join('dist', camelCase(themeFile.accent+themeFile.theme) + '.json');
+    }
     if (toStdOut) {
       console.log(JSON.stringify(stateTokens, null, 2));
     } else {

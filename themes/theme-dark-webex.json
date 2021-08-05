@@ -1,6 +1,6 @@
 {
-  "name": "Dark Webex",
-  "parent": "Dark",
+  "accent": "Webex",
+  "theme": "Dark",
   "files": [
     "theme-data/dark/dark-common.json",
     "theme-data/dark/dark-webex.json"
