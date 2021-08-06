@@ -1,0 +1,14 @@
+{
+    "navigationtab":{
+        "background":{
+            "#normal":"@theme-button-secondary-normal",
+            "#hovered":"@theme-button-secondary-hover",
+            "#active":"@theme-button-secondary-pressed"
+        },
+        "text":{
+            "#normal":"@theme-text-secondary-normal",
+            "#hovered":"@theme-text-secondary-normal",
+            "#active":"@theme-text-primary-normal"
+        }
+    }
+}
