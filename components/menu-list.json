@@ -1,0 +1,32 @@
+{
+    "menu-list":{
+        "background":"@theme-background-solid-primary-normal",
+        "border":"@theme-outline-secondary-normal",
+        "item":{
+            "#normal":{
+                "background":"@theme-background-primary-ghost",
+                "text":"@theme-text-primary-normal",
+                "tick":"@theme-control-active-normal",
+                "icon":"@theme-text-primary-normal"
+            },
+            "#hover":{
+                "background":"@theme-background-primary-hover",
+                "text":"@theme-text-primary-normal",
+                "tick":"@theme-control-active-normal",
+                "icon":"@theme-text-primary-normal"
+            },
+            "#press":{
+                "background":"@theme-background-primary-active",
+                "text":"@theme-text-primary-normal",
+                "tick":"@theme-control-active-normal",
+                "icon":"@theme-text-primary-normal"
+            },
+            "#disabled":{
+                "background":"@theme-background-primary-ghost",
+                "text":"@theme-text-primary-normal",
+                "tick":"@theme-text-primary-disabled",
+                "icon":"@theme-text-primary-disabled"
+            }
+        }
+    }
+}
