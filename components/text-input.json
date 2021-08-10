@@ -1,5 +1,7 @@
 { 
   "textinput": {
+    "comment":"Used for all text inputs and their states",
+    "figma":"https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4429%3A871",
     "placeholder-text": "@theme-text-secondary-normal", 
     "#normal": {
       "background": "@theme-background-solid-primary-normal",

@@ -1,0 +1,38 @@
+{
+    "listitem":{
+        "comment":"Applied to individual items in Lists (one line), Lists (two line), Search result lists, Lists (three+ lines), Avatar Lists, Menu lists",
+        "figma":"https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4441%3A1011",
+        "#normal":{
+            "background":"@theme-background-primary-ghost",
+            "textprimary":"@theme-text-primary-normal",
+            "textsecondary":"@theme-text-secondary-normal",
+            "tick":"@theme-control-active-normal",
+            "icon":"@theme-text-primary-normal",
+            "dotdivider":"@theme-outline-primary-normal"
+        },
+        "#hovered":{
+            "background":"@theme-background-primary-hover",
+            "textprimary":"@theme-text-primary-normal",
+            "textsecondary":"@theme-text-secondary-normal",
+            "tick":"@theme-control-active-normal",
+            "icon":"@theme-text-primary-normal",
+            "dotdivider":"@theme-outline-primary-normal"
+        },
+        "#pressed":{
+            "background":"@theme-background-primary-active",
+            "textprimary":"@theme-text-primary-normal",
+            "textsecondary":"@theme-text-secondary-normal",
+            "tick":"@theme-control-active-normal",
+            "icon":"@theme-text-primary-normal",
+            "dotdivider":"@theme-outline-primary-normal"
+        },
+        "#disabled":{
+            "background":"@theme-background-primary-ghost",
+            "textprimary":"@theme-text-primary-disabled",
+            "textsecondary":"@theme-text-primary-disabled",
+            "tick":"@theme-text-primary-disabled",
+            "icon":"@theme-text-primary-disabled",
+            "dotdivider":"@theme-outline-primary-normal"
+        }
+    }
+}
