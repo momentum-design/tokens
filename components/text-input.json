@@ -1,5 +1,6 @@
 { 
   "textinput": {
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4347%3A919",
     "placeholder-text": "@theme-text-secondary-normal", 
     "#normal": {
       "background": "@theme-background-solid-primary-normal",

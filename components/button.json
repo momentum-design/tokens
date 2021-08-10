@@ -1,5 +1,6 @@
 {
   "button": {
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4341%3A6826",
     "primary":{
       "#normal":{
         "background":"@theme-button-primary-normal",

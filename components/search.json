@@ -1,5 +1,6 @@
 { 
   "search": {
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4347%3A231",
     "placeholder-text": "@theme-text-secondary-normal", 
     "#normal": { 
       "text": "@theme-text-primary-normal", 
