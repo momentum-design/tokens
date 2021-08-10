@@ -1,5 +1,6 @@
 {
     "badge":{
+        "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4522%3A8881",
         "background":"@theme-background-accent-normal",
         "text":"@theme-text-button-normal"
     }

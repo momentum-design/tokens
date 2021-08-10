@@ -1,5 +1,6 @@
 {
   "avatar": {
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4594%3A8792",
     "presence-icon": {
       "active": "@theme-presence-active",
       "meeting": "@theme-presence-busy",

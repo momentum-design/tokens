@@ -1,5 +1,6 @@
 {
   "codeinput": {
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=15403%3A28176",
     "#normal": {
       "background": "@theme-background-solid-primary-normal",
       "text": "@theme-text-primary-normal",
