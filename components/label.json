@@ -1,7 +1,6 @@
 { 
   "label": {
-    "comment":"Applied to input labels",
-    "figma":"https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4931%3A2083",
+    "comment":"Applied to non editable pieces of text",
     "primary" : {
       "#normal": { 
         "text": "@theme-text-primary-normal"   
