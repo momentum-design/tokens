@@ -19,7 +19,7 @@
       "border": "@theme-outline-focus-normal"
     },
     "#active": {
-      "background": "@theme-background-solid-primary-active",
+      "background": "@theme-background-primary-active",
       "text": "@theme-text-primary-normal",
       "border": "@theme-outline-input-active"
     },
