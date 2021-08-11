@@ -1,6 +1,6 @@
 { 
   "label": {
-    "comment":"Applied to non editable pieces of text",
+    "comment":"Applied to non editable pieces of text.",
     "primary" : {
       "#normal": { 
         "text": "@theme-text-primary-normal"   
