@@ -1,0 +1,8 @@
+{
+    "separator":{
+        "comment":"",
+        "figma":"",
+        "primary":"@theme-outline-primary-normal",
+        "secondary":"@theme-outline-secondary-normal"
+    }
+}

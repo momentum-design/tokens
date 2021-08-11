@@ -1,6 +1,7 @@
 { 
   "search": {
-    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4347%3A231",
+    "comment":"Applied to search input box",
+    "figma":"https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4429%3A871",
     "placeholder-text": "@theme-text-secondary-normal", 
     "#normal": { 
       "text": "@theme-text-primary-normal", 

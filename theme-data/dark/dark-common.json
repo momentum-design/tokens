@@ -82,8 +82,8 @@
       }
     },
     "background": {
-      "ghost": "@color-white-alpha-00",
       "primary": {
+        "ghost": "@color-white-alpha-00",
         "hover": "@color-white-alpha-05",
         "active": "@color-white-alpha-11",
         "disabled": "@color-white-alpha-11"

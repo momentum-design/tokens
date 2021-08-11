@@ -1,6 +1,7 @@
 { 
   "textinput": {
-    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4347%3A919",
+    "comment":"Used for all text inputs and their states",
+    "figma":"https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4429%3A871",
     "placeholder-text": "@theme-text-secondary-normal", 
     "#normal": {
       "background": "@theme-background-solid-primary-normal",
@@ -17,10 +18,15 @@
       "text": "@theme-text-primary-normal",
       "border": "@theme-outline-focus-normal"
     },
+    "#active": {
+      "background": "@theme-background-solid-primary-active",
+      "text": "@theme-text-primary-normal",
+      "border": "@theme-outline-input-active"
+    },
     "#disabled": {
       "background": "@theme-background-primary-disabled",
       "text": "@theme-text-primary-normal",
-      "border": "@theme-background-ghost"
+      "border": "@theme-background-primary-ghost"
     },
     "error": {
       "#normal": {
