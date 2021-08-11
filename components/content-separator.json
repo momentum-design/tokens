@@ -1,0 +1,12 @@
+{
+  "contentseparator": {
+    "comment": "Applied to separator separated by text or other content",
+    "figma": "https://www.figma.com/file/OHiwqwdmH9kWDIPJJU5pNV/SOCIAL-SIGN-IN?node-id=1061%3A939",
+    "primary": {
+      "#normal": {
+        "text": "@theme-text-secondary-normal",
+        "line": "@theme-outline-primary-normal"
+      }
+    }
+  }
+}
