@@ -10,7 +10,7 @@ defaults: &defaults
     - image: circleci/node:14.15.1
 
 jobs:
-  deploy:
+  test:
     <<: *defaults
     steps:
       - checkout
@@ -21,6 +21,9 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
       - run: npm install
+      - run:
+          name: Build the tokens
+          command: npm run build:css
       - save_cache:
           paths:
             - node_modules
@@ -28,6 +31,11 @@ jobs:
       - persist_to_workspace:
           root: ~/repo
           paths: .
+  deploy:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/repo
       - run:
           name: Build the tokens
           command: npm run build:css
@@ -42,7 +50,11 @@ workflows:
   version: 2
   test-deploy:
     jobs:
+      - test:
+
       - deploy:
+          requires:
+            - test
           filters:
             tags:
               only: /^v.*/
