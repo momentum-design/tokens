@@ -10,7 +10,8 @@
       "presenting": "@theme-presence-doNotDisturb",
       "quiet-hours": "@theme-presence-away",
       "away": "@theme-presence-away",
-      "ooo": "@theme-presence-away"
+      "ooo": "@theme-presence-away",
+      "background": "@theme-background-solid-primary-normal"
     },
     "color-avatar": {
       "text": "@theme-text-button-normal",
