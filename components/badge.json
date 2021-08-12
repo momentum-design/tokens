@@ -1,6 +1,8 @@
 {
-    "badge":{
-        "background":"@theme-background-accent-normal",
-        "text":"@theme-text-button-normal"
-    }
+  "badge": {
+    "comment": "applied to blue badges",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4486%3A786",
+    "background": "@theme-background-accent-normal",
+    "text": "@theme-text-button-normal"
+  }
 }

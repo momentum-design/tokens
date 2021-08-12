@@ -1,8 +1,8 @@
 {
   "theme": {
     "gradation": {
-      "primary" : "@color-gradation-webex-light-primary",
-      "secondary" : "@color-gradation-webex-light-secondary"
+      "primary": "@color-gradation-webex-light-primary",
+      "secondary": "@color-gradation-webex-light-secondary"
     }
   }
 }

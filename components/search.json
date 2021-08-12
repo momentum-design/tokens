@@ -1,18 +1,20 @@
-{ 
+{
   "search": {
-    "placeholder-text": "@theme-text-secondary-normal", 
-    "#normal": { 
-      "text": "@theme-text-primary-normal", 
-      "background": "@theme-background-solid-primary-normal", 
-      "border": "@theme-outline-input-normal" 
-    }, 
-    "#active": { 
-      "text": "@theme-text-primary-normal", 
-      "background": "@theme-background-solid-primary-normal", 
-      "border": "@theme-outline-input-active" 
-    }, 
-    "#disabled": { 
-      "text": "@theme-text-primary-disabled", 
+    "comment": "Applied to search input box",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4429%3A871",
+    "placeholder-text": "@theme-text-secondary-normal",
+    "#normal": {
+      "text": "@theme-text-primary-normal",
+      "background": "@theme-background-solid-primary-normal",
+      "border": "@theme-outline-input-normal"
+    },
+    "#active": {
+      "text": "@theme-text-primary-normal",
+      "background": "@theme-background-solid-primary-normal",
+      "border": "@theme-outline-input-active"
+    },
+    "#disabled": {
+      "text": "@theme-text-primary-disabled",
       "background": "@theme-background-primary-disabled"
     }
   }
