@@ -6,6 +6,11 @@
       "text": "@theme-text-primary-normal",
       "border": "@theme-outline-input-normal"
     },
+    "#pressed": {
+      "background": "@theme-background-secondary-active",
+      "text": "@theme-text-secondary-normal",
+      "border": "@theme-outline-input-normal"
+    },
     "#hovered": {
       "background": "@theme-background-primary-hover",
       "text": "@theme-text-primary-normal",
@@ -24,6 +29,11 @@
     "error": {
       "#normal": {
         "background": "@theme-background-alert-error-normal",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-cancel-normal"
+      },
+      "#pressed": {
+        "background": "@theme-background-primary-active",
         "text": "@theme-text-primary-normal",
         "border": "@theme-outline-cancel-normal"
       },
