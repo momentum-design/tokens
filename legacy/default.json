@@ -73,17 +73,17 @@
       "#normal": "@color-white-alpha-100"
     },
     "popover-background-coachmark": {
-        "#normal": "@color-cobalt-70"
+      "#normal": "@color-cobalt-70"
     },
     "popover-coachmark-text": {
-        "#normal": "@color-gray-05",
-        "#pressed": "@color-cobalt-70",
-        "#hovered": "@color-cobalt-70"
+      "#normal": "@color-gray-05",
+      "#pressed": "@color-cobalt-70",
+      "#hovered": "@color-cobalt-70"
     },
     "popover-coachmark-button": {
-        "#normal": "@color-cobalt-70",
-        "#pressed": "@color-gray-20",
-        "#hovered": "@color-gray-05"
+      "#normal": "@color-cobalt-70",
+      "#pressed": "@color-gray-20",
+      "#hovered": "@color-gray-05"
     },
     "button-primary": {
       "#normal": "@color-blue-60",
@@ -187,7 +187,7 @@
       "#pressed": "@color-gray-40",
       "#disabled": "@color-gray-20"
     },
-	"button-ghost-transparent": {
+    "button-ghost-transparent": {
       "#normal": "@color-transparent",
       "#hovered": "@color-gray-30",
       "#pressed": "@color-gray-40"
@@ -245,7 +245,7 @@
       "#disabled": "@color-gray-10"
     },
     "signIn-inputBackground": {
-      "#normal" : "white",
+      "#normal": "white",
       "#hovered": "@color-gray-20",
       "#pressed": "@color-gray-30",
       "focused": "@color-white-alpha-100",
@@ -259,19 +259,19 @@
       "#disabled": "@color-gray-10"
     },
     "inputBackground-error": {
-        "#normal": "@color-red-05"
+      "#normal": "@color-red-05"
     },
     "inputOutline-error": {
-        "#normal": "@color-red-50"
+      "#normal": "@color-red-50"
     },
     "inputBackground-warning": {
-        "#normal": "@color-yellow-05"
+      "#normal": "@color-yellow-05"
     },
     "inputOutline-warning": {
-        "#normal": "@color-yellow-40"
+      "#normal": "@color-yellow-40"
     },
     "inputText-warning": {
-        "#normal": "@color-yellow-70"
+      "#normal": "@color-yellow-70"
     },
     "background-gradient-start": {
       "#normal": "@color-white-alpha-100"
@@ -923,7 +923,7 @@
       "#normal": "@color-gray-70"
     },
     "wx-mentionsHighlight-text": {
-      "#normal":  "mint-70"
+      "#normal": "mint-70"
     },
     "mainList-indicator": {
       "#normal": "@color-blue-60"

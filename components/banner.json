@@ -1,7 +1,7 @@
 {
   "banner": {
-    "comment":"Applied to Alert Banners",
-    "figma":"https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4655%3A8433",
+    "comment": "Applied to Alert Banners",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4655%3A8433",
     "announcement": {
       "text": "@theme-text-accent-normal",
       "background": "@theme-background-alert-theme-normal"
