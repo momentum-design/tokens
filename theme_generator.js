@@ -77,17 +77,17 @@ function loadFile(fileName, isDirectory) {
      */
     const parsedTokenFile = JSON.parse(tokenFileData);
     Object.values(parsedTokenFile).forEach(component => {
-      if (component.comment) {
+      if ('comment' in component) {
         delete(component.comment);
       }
-      if (component.figma) {
+      if ('figma' in component) {
         delete(component.figma);
       }
     });
-    if (parsedTokenFile.comment) {
+    if ('comment' in parsedTokenFile) {
       delete(parsedTokenFile.comment);
     }
-    if (parsedTokenFile.figma) {
+    if ('figma' in parsedTokenFile) {
       delete(parsedTokenFile.figma);
     }
     const flattenedTokenFile = {};
