@@ -26,14 +26,7 @@ function flattenObject(objectPath, childObject, flattenedTokens, uiState) {
   Object.entries(childObject).forEach(([key, value]) => {
     if (key.startsWith("#") && typeof value === "object") {
       if (uiState) {
-        console.error(
-          "Picked up uiState " +
-            key +
-            " at " +
-            objectPath +
-            " while already carrying " +
-            uiState
-        );
+        console.error("Picked up uiState " + key + " at " + objectPath + " while already carrying " + uiState);
         process.exit(1);
       } else {
         flattenObject(objectPath, value, flattenedTokens, key);
@@ -43,8 +36,7 @@ function flattenObject(objectPath, childObject, flattenedTokens, uiState) {
       if (typeof value === "object") {
         flattenObject(childPath, value, flattenedTokens);
       } else {
-        flattenedTokens[uiState ? childPath + "-" + uiState : childPath] =
-          value;
+        flattenedTokens[uiState ? childPath + "-" + uiState : childPath] = value;
       }
     }
   });
@@ -73,10 +65,7 @@ function loadFile(fileName, isDirectory) {
     const fileList = fs.readdirSync(fileName, { withFileTypes: true });
     const tokenData = {};
     fileList.forEach((childFile) => {
-      merge(
-        tokenData,
-        loadFile(fileName + "/" + childFile.name, childFile.isDirectory())
-      );
+      merge(tokenData, loadFile(fileName + "/" + childFile.name, childFile.isDirectory()));
     });
     return tokenData;
   } else if (fileName.endsWith(".json")) {
@@ -141,19 +130,14 @@ function applyAlpha(tokenGroup, alpha) {
     });
     return alphaModifiedObject;
   } else {
-    console.error(
-      "Unable to apply alpha to object of type " + typeof tokenGroup
-    );
+    console.error("Unable to apply alpha to object of type " + typeof tokenGroup);
     process.exit(1);
   }
 }
 
 // Parses a value and normalises the unit if required
 function normaliseUnit(value) {
-  if (
-    typeof value === "string" &&
-    (value.startsWith("#") || value.startsWith("rgb"))
-  ) {
+  if (typeof value === "string" && (value.startsWith("#") || value.startsWith("rgb"))) {
     const starPosition = value.indexOf("*");
     let alpha = 1;
     if (starPosition !== -1) {
@@ -213,22 +197,12 @@ function normaliseUnit(value) {
 
 // Finds references, and returns an object with all references resolved
 // You can probably break this with recursive references, can't be bothered to check
-function resolveValue(
-  currentToken,
-  allTokens,
-  coreTokens,
-  flattenedCoreTokens
-) {
+function resolveValue(currentToken, allTokens, coreTokens, flattenedCoreTokens) {
   if (typeof currentToken === "object") {
     // If this is an object, return a version with all children resolved
     const resolvedToken = {};
     Object.entries(currentToken).forEach(([key, value]) => {
-      resolvedToken[key] = resolveValue(
-        value,
-        allTokens,
-        coreTokens,
-        flattenedCoreTokens
-      );
+      resolvedToken[key] = resolveValue(value, allTokens, coreTokens, flattenedCoreTokens);
     });
     return resolvedToken;
   } else if (typeof currentToken === "string" && currentToken.startsWith("@")) {
@@ -261,18 +235,10 @@ function resolveValue(
           const groupValue = findKey(groupParts, allTokens);
           if (groupValue) {
             if (groupValue[0] != "@") {
-              console.error(
-                currentToken +
-                  " could not be found. Tried resolving via " +
-                  groupParts.join("-") +
-                  " but that was not a reference"
-              );
+              console.error(currentToken + " could not be found. Tried resolving via " + groupParts.join("-") + " but that was not a reference");
               process.exit(1);
             }
-            const substituteParts = groupValue
-              .slice(1)
-              .split("-")
-              .concat(keyParts.slice(-i));
+            const substituteParts = groupValue.slice(1).split("-").concat(keyParts.slice(-i));
             const substituteName = substituteParts.join("-");
             if (substituteName in flattenedCoreTokens) {
               return applyAlpha(flattenedCoreTokens[substituteName], alpha);
@@ -284,12 +250,7 @@ function resolveValue(
       }
       if (!value) {
         // If we still can't find it, it's probably broken
-        console.error(
-          "Unable to find " +
-            currentToken +
-            " in " +
-            JSON.stringify(allTokens, null, 2)
-        );
+        console.error("Unable to find " + currentToken + " in " + JSON.stringify(allTokens, null, 2));
         process.exit(1);
       }
       return resolveValue(value, allTokens, coreTokens, flattenedCoreTokens);
@@ -336,15 +297,7 @@ function finaliseTokens(tokens) {
   const finalisedTokens = {};
   Object.entries(tokens).forEach(([key, value]) => {
     const keyParts = key.split("-");
-    const validUiStates = [
-      "normal",
-      "hovered",
-      "pressed",
-      "disabled",
-      "focused",
-      "active",
-      "checked",
-    ];
+    const validUiStates = ["normal", "hovered", "pressed", "disabled", "focused", "active", "checked"];
     let uiState = validUiStates[0];
     if (keyParts[keyParts.length - 1].startsWith("#")) {
       //This is a state, so sanity check it falls into allowed values
@@ -501,37 +454,25 @@ if (args.toStdOut) {
 if (Object.keys(args).length === 0) {
   console.log(`Usage: ${process.argv[1]} [OPTION]... [THEME FILE]...`);
   console.log("Options");
-  console.log(
-    "  --colorFormat=[hex|rgba]    What color format to use in the output."
-  );
+  console.log("  --colorFormat=[hex|rgba]    What color format to use in the output.");
   console.log("       rgba   -> rgba(244,233,20,0.8)");
   console.log('       object -> { "r": 244, "g": 233, "b": 20, "a": 0.8 }');
   console.log("       hex    -> #RRGGBBAA");
   console.log("       names  -> red-05");
-  console.log(
-    "  --sizeUnit=[px|pt|rem]      What unit to use for sizes in the output."
-  );
+  console.log("  --sizeUnit=[px|pt|rem]      What unit to use for sizes in the output.");
   console.log("       px    -> pixels (matching that on Figma)");
   console.log("       pt    -> points (pixels * 0.75)");
-  console.log(
-    "       rem   -> root em, used on web to create sizes relative to user font size"
-  );
+  console.log("       rem   -> root em, used on web to create sizes relative to user font size");
   console.log("  --componentGroups           Group tokens by component");
-  console.log(
-    "  --omitThemeTokens           Removes theme tokens from the generated file"
-  );
-  console.log(
-    "  --fileFormat=[css|json]     What format to use for the output files"
-  );
+  console.log("  --omitThemeTokens           Removes theme tokens from the generated file");
+  console.log("  --fileFormat=[css|json]     What format to use for the output files");
   console.log("  --platform=PLATFORM         Which platform to generate for.");
   console.log("       web");
   console.log("       qt");
   console.log("       macos");
   console.log("       ios");
   console.log("       android");
-  console.log(
-    "  --toStdOut                  Output to std out instead of writing to files"
-  );
+  console.log("  --toStdOut                  Output to std out instead of writing to files");
   process.exit(1);
 }
 
@@ -582,9 +523,7 @@ Object.keys(args).forEach((themeFileName) => {
   // Load all the files to build one big object
   let themeFileData = fs.readFileSync(themeFileName);
   let themeFile = JSON.parse(themeFileData);
-  console.log(
-    `Loading theme ${themeFile.name} for platform ${platform} using color format ${colorFormat}`
-  );
+  console.log(`Loading theme ${themeFile.name} for platform ${platform} using color format ${colorFormat}`);
 
   const themeData = {};
   themeFile.files.forEach((fileName) => {
@@ -598,24 +537,14 @@ Object.keys(args).forEach((themeFileName) => {
   console.log(JSON.stringify(tokenData, null, 2));*/
 
   // Resolve all the references
-  const resolvedThemeData = resolveValue(
-    themeData,
-    themeData,
-    coreTokens,
-    flattenedCoreTokens
-  );
+  const resolvedThemeData = resolveValue(themeData, themeData, coreTokens, flattenedCoreTokens);
   /*console.log('=== Theme after resolve references ==============');
   console.log(JSON.stringify(resolvedThemeData, null, 2));*/
 
   const flattenedThemeTokens = {};
   flattenObject("", resolvedThemeData, flattenedThemeTokens);
 
-  resolvedComponentData = resolveValue(
-    componentData,
-    componentData,
-    resolvedThemeData,
-    flattenedThemeTokens
-  );
+  resolvedComponentData = resolveValue(componentData, componentData, resolvedThemeData, flattenedThemeTokens);
   /*console.log('=== Components after resolve references ==========');
   console.log(JSON.stringify(resolvedComponentData, null, 2));*/
 
@@ -629,9 +558,7 @@ Object.keys(args).forEach((themeFileName) => {
     Object.entries(resolvedComponentData).forEach(([key, value]) => {
       const categoryFlattenedTokens = {};
       flattenObject("", value, categoryFlattenedTokens);
-      stateTokens[key] = finaliseTokens(
-        normaliseUnits(categoryFlattenedTokens)
-      );
+      stateTokens[key] = finaliseTokens(normaliseUnits(categoryFlattenedTokens));
     });
   } else {
     const flattenedTokens = {};
@@ -645,9 +572,7 @@ Object.keys(args).forEach((themeFileName) => {
       Object.entries(resolvedThemeData["theme"]).forEach(([key, value]) => {
         const categoryFlattenedTokens = {};
         flattenObject("", value, categoryFlattenedTokens);
-        stateTokens["theme"][key] = finaliseTokens(
-          normaliseUnits(categoryFlattenedTokens)
-        );
+        stateTokens["theme"][key] = finaliseTokens(normaliseUnits(categoryFlattenedTokens));
       });
     } else {
       merge(stateTokens, normaliseUnits(flattenedThemeTokens));
@@ -682,37 +607,22 @@ Object.keys(args).forEach((themeFileName) => {
     outputLine("}");
   } else if (fileFormat === "json") {
     if (includeJsonHeader) {
-      stateTokens = {
-        name: "Momentum" + themeFile.accent + themeFile.theme,
-        parent: themeFile.accent + themeFile.theme,
-        tokens: stateTokens,
-      };
+      stateTokens = { name: "Momentum" + themeFile.accent + themeFile.theme, parent: themeFile.accent + themeFile.theme, tokens: stateTokens };
     }
     if (platform === "macos" || platform === "qt") {
-      outputFileName = path.join(
-        "dist",
-        camelCase("momentum" + themeFile.accent + themeFile.theme) + ".json"
-      );
+      outputFileName = path.join("dist", camelCase("momentum" + themeFile.accent + themeFile.theme) + ".json");
     } else {
-      outputFileName = path.join(
-        "dist",
-        camelCase(themeFile.accent + themeFile.theme) + ".json"
-      );
+      outputFileName = path.join("dist", camelCase(themeFile.accent + themeFile.theme) + ".json");
     }
     if (toStdOut) {
       console.log(JSON.stringify(stateTokens, null, 2));
     } else {
-      fs.writeFile(
-        outputFileName,
-        JSON.stringify(stateTokens, null, 2),
-        "utf8",
-        function (err) {
-          if (err) {
-            console.error("Error when writing JSON file: " + err);
-            process.exit(1);
-          }
+      fs.writeFile(outputFileName, JSON.stringify(stateTokens, null, 2), "utf8", function (err) {
+        if (err) {
+          console.error("Error when writing JSON file: " + err);
+          process.exit(1);
         }
-      );
+      });
     }
   }
   if (!toStdOut) {
