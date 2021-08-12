@@ -1,9 +1,9 @@
 {
   "button-group": {
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4341%3A6826",
-    "separator":{
-      "#normal":{
-        "background":"@theme-outline-primary-normal"
+    "separator": {
+      "#normal": {
+        "background": "@theme-outline-primary-normal"
       }
     }
   }

@@ -1,7 +1,7 @@
 {
   "codeinput": {
-    "comment":"Applied to code or 'pin' input",
-    "figma":"https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4341%3A6827",
+    "comment": "Applied to code or 'pin' input",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4341%3A6827",
     "#normal": {
       "background": "@theme-background-solid-primary-normal",
       "text": "@theme-text-primary-normal",

@@ -1,7 +1,7 @@
 {
   "avatar": {
-    "comment":"applied to avatars and all its elements",
-    "figma":"https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4389%3A1647",
+    "comment": "applied to avatars and all its elements",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4389%3A1647",
     "presence-icon": {
       "active": "@theme-presence-active",
       "meeting": "@theme-presence-busy",
@@ -46,7 +46,7 @@
         "background": "@theme-avatar-default",
         "icon": "@theme-text-primary-normal"
       },
-      "alert":{
+      "alert": {
         "background": "@theme-avatar-default",
         "icon": "@theme-text-primary-normal"
       },

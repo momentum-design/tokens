@@ -147,7 +147,7 @@
       "#pressed": "@color-gray-80",
       "#disabled": "@color-gray-90"
     },
-	  "button-ghost-transparent": {
+    "button-ghost-transparent": {
       "#normal": "@color-transparent",
       "#hovered": "@color-gray-70",
       "#pressed": "@color-gray-80"
@@ -236,7 +236,7 @@
       "#disabled": "@color-gray-90"
     },
     "signIn-inputBackground": {
-      "#normal" : "gray-90",
+      "#normal": "gray-90",
       "#hovered": "@color-gray-80",
       "#pressed": "@color-gray-70",
       "focused": "@color-gray-90",
@@ -250,19 +250,19 @@
       "#disabled": "@color-gray-10"
     },
     "inputBackground-error": {
-        "#normal": "@color-red-90"
+      "#normal": "@color-red-90"
     },
     "inputOutline-error": {
-        "#normal": "@color-red-50"
-    },    
+      "#normal": "@color-red-50"
+    },
     "inputBackground-warning": {
-        "#normal": "@color-yellow-90"
+      "#normal": "@color-yellow-90"
     },
     "inputOutline-warning": {
-        "#normal": "@color-yellow-40"
+      "#normal": "@color-yellow-40"
     },
     "inputText-warning": {
-        "#normal": "@color-yellow-40"
+      "#normal": "@color-yellow-40"
     },
     "background-gradient-start": {
       "#normal": "@color-gray-100"
