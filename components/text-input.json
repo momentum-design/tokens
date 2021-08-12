@@ -23,7 +23,7 @@
     },
     "#disabled": {
       "background": "@theme-background-primary-disabled",
-      "text": "@theme-text-primary-normal",
+      "text": "@theme-text-primary-disabled",
       "border": "@theme-background-ghost"
     },
     "error": {
