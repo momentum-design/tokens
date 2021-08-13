@@ -1,0 +1,37 @@
+{
+  "tab": {
+    "comment":"Tabs",
+    "figma":"https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4459%3A13574",
+    "active": {
+      "#normal": {
+        "background": "@theme-button-secondary-active-normal",
+        "text": "@theme-text-primary-normal"
+      },
+      "#hovered": {
+        "background": "@theme-button-secondary-active-hover",
+        "text": "@theme-text-primary-normal"
+      },
+      "#pressed": {
+        "background": "@theme-button-secondary-pressed",
+        "text": "@theme-text-primary-normal"
+      }
+    },
+    "inactive": {
+      "#normal": {
+        "background": "@theme-button-secondary-normal",
+        "text": "@theme-text-secondary-normal"
+      },
+      "#hovered": {
+        "background": "@theme-button-secondary-hover",
+        "text": "@theme-text-primary-normal"
+      },
+      "#pressed": {
+        "background": "@theme-button-secondary-pressed",
+        "text": "@theme-text-primary-normal"
+      },
+      "#disabled": {
+        "text": "@theme-text-primary-disabled"
+      }
+    }
+  }
+}
