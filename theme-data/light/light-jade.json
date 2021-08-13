@@ -1,7 +1,8 @@
 {
   "theme": {
     "gradation": {
-      "primary" : "@color-gradation-jade-light-primary",
-      "secondary" : "@color-gradation-jade-light-secondary" }
+      "primary": "@color-gradation-jade-light-primary",
+      "secondary": "@color-gradation-jade-light-secondary"
+    }
   }
 }

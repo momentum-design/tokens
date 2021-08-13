@@ -1,9 +1,11 @@
-{ 
+{
   "popover": {
-    "primary" : {
-      "#normal": { 
+    "comment": "Applied to popovers",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=5282%3A497",
+    "primary": {
+      "#normal": {
         "background": "@theme-background-solid-primary-normal"
       }
-    }    
+    }
   }
 }
