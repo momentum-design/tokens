@@ -284,8 +284,8 @@
         "disabled": "@color-white-alpha-05"
       },
       "shareContent": {
-        "active": "@color-orange-50",
-        "inactive": "@color-gray-50"
+        "active": "@color-orange-60",
+        "inactive": "@color-gray-0"
       }
     },
     "presence": {
