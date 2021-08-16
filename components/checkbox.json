@@ -1,5 +1,6 @@
 {
   "checkbox": {
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4371%3A10197",
     "checked":{
       "#normal":{
         "background": "@theme-control-active-normal",
