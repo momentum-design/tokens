@@ -3,14 +3,19 @@
 See [documentation on Confluence](https://confluence-eng-gpk2.cisco.com/conf/display/~pauwitty/Token+proposal)
 
 To generate a flat token file for a particular theme, run:
+
 ```
 node theme_generator.js <theme file>
 ```
+
 e.g.
+
 ```
 node theme_generator.js ./themes/theme-light-webex.json
 ```
+
 It supports some options
+
 ```
 Usage: /home/paul/token-proposal/theme_generator.js [OPTION]... [THEME FILE]...
 Options
@@ -35,4 +40,5 @@ Options
   --toStdOut                  Output to std out instead of writing to files
 
 ```
+
 Tokens for individual components go in the components folder. If components are needed on only one platform, they should go in e.g. platformcomponents/ios/component_name.json. It's also possible to add platformcomponents/mobile/component_name.json which applies on both ios and android, or platformcomponents/desktop/component_name.json, for both macos and qt.
