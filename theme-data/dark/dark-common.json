@@ -285,7 +285,7 @@
       },
       "shareContent": {
         "active": "@color-orange-60",
-        "inactive": "@color-gray-0"
+        "inactive": "@color-gray-60"
       }
     },
     "presence": {
