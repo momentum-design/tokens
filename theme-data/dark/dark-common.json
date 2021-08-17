@@ -319,14 +319,14 @@
     "scrollbar": {
       "button": {
         "normal": "@color-white-alpha-20",
-        "hovered": "@color-white-alpha-30",
+        "hover": "@color-white-alpha-30",
         "pressed": "@color-white-alpha-40"
       },
       "arrow": {
         "normal": "@color-white-alpha-70",
         "background": {
           "normal": "@color-white-alpha-00",
-          "hovered": "@color-white-alpha-11",
+          "hover": "@color-white-alpha-11",
           "pressed": "@color-white-alpha-20"
         }
       },
