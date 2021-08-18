@@ -1,0 +1,37 @@
+{
+  "combobox": {
+    "comment": "Used for basic comboboxes",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4931%3A2083",
+    "placeholder-text": "@theme-text-secondary-normal",
+    "#normal": {
+      "background": "@theme-background-solid-primary-normal",
+      "text": "@theme-text-secondary-normal",
+      "border": "@theme-outline-input-normal"
+    },
+    "#hovered": {
+      "background": "@theme-background-primary-hover",
+      "text": "@theme-text-secondary-normal",
+      "border": "@theme-outline-input-normal"
+    },
+    "#pressed": {
+      "background": "@theme-background-primary-active",
+      "text": "@theme-text-secondary-normal",
+      "border": "@theme-outline-input-normal"
+    },
+    "#active": {
+      "background": "@theme-background-primary-active",
+      "text": "@theme-text-primary-normal",
+      "border": "@theme-outline-input-active"
+    },
+    "#focused": {
+      "background": "@theme-background-solid-primary-normal",
+      "text": "@theme-text-primary-normal",
+      "border": "@theme-outline-focus-normal"
+    },
+    "#disabled": {
+      "background": "@theme-background-primary-disabled",
+      "text": "@theme-text-primary-disabled",
+      "border": "none"
+    }
+  }
+}
