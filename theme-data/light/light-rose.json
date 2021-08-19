@@ -3,6 +3,14 @@
     "gradation": {
       "primary": "@color-gradation-rose-light-primary",
       "secondary": "@color-gradation-rose-light-secondary"
+    },
+    "groupedbackground": {
+      "primary": {
+        "normal": "@color-solid-rose-light-primary"
+      },
+      "secondary": {
+        "normal": "@color-solid-rose-light-secondary"
+      }
     }
   }
 }

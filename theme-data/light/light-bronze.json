@@ -3,6 +3,14 @@
     "gradation": {
       "primary": "@color-gradation-bronze-light-primary",
       "secondary": "@color-gradation-bronze-light-secondary"
+    },
+    "groupedbackground": {
+      "primary": {
+        "normal": "@color-solid-bronze-light-primary"
+      },
+      "secondary": {
+        "normal": "@color-solid-bronze-light-secondary"
+      }
     }
   }
 }

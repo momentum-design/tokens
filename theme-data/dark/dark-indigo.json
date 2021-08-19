@@ -3,6 +3,14 @@
     "gradation": {
       "primary": "@color-gradation-indigo-dark-primary",
       "secondary": "@color-gradation-indigo-dark-secondary"
+    },
+    "groupedbackground": {
+      "primary": {
+        "normal": "@color-solid-indigo-dark-primary"
+      },
+      "secondary": {
+        "normal": "@color-solid-indigo-dark-secondary"
+      }
     }
   }
 }

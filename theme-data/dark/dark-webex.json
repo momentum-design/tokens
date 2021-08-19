@@ -3,6 +3,14 @@
     "gradation": {
       "primary": "@color-gradation-webex-dark-primary",
       "secondary": "@color-gradation-webex-dark-secondary"
+    },
+    "groupedbackground": {
+      "primary": {
+        "normal": "@color-black-alpha-100"
+      },
+      "secondary": {
+        "normal": "@color-gray-95"
+      }
     }
   }
 }
