@@ -19,6 +19,20 @@ function useColourNames(tokens, path) {
   });
 }
 
+function removeComments(token) {
+  if ("comment" in token) {
+    delete token.comment;
+  }
+  if ("figma" in token) {
+    delete token.figma;
+  }
+  Object.values(token).forEach((value) => {
+    if (typeof(value) === "object") {
+      removeComments(value);
+    }
+  });
+}
+
 /* Takes a hierarchy and converts a { b { c:d } } to a-b-c: d
  * This also drags UI states (those starting with #) to the end of the token names
  */
@@ -75,20 +89,7 @@ function loadFile(fileName, isDirectory) {
      * by flattening it, reordering the keys, and then unflattening it
      */
     const parsedTokenFile = JSON.parse(tokenFileData);
-    Object.values(parsedTokenFile).forEach((component) => {
-      if ("comment" in component) {
-        delete component.comment;
-      }
-      if ("figma" in component) {
-        delete component.figma;
-      }
-    });
-    if ("comment" in parsedTokenFile) {
-      delete parsedTokenFile.comment;
-    }
-    if ("figma" in parsedTokenFile) {
-      delete parsedTokenFile.figma;
-    }
+    removeComments(parsedTokenFile);
     const flattenedTokenFile = {};
     flattenObject("", parsedTokenFile, flattenedTokenFile);
     return unflattenObject(flattenedTokenFile);

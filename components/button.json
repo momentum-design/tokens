@@ -273,6 +273,7 @@
       }
     },
     "layout": {
+      "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=3153%3A216",
       "#normal": {
         "background": "@theme-button-inverted-normal",
         "text": "@theme-text-primary-normal",
