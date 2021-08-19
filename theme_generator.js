@@ -48,7 +48,7 @@ function flattenObject(objectPath, childObject, flattenedTokens, uiState) {
     } else {
       const childPath = objectPath ? objectPath + "-" + key : key;
       if (typeof value === "object") {
-        flattenObject(childPath, value, flattenedTokens);
+        flattenObject(childPath, value, flattenedTokens, uiState);
       } else {
         flattenedTokens[uiState ? childPath + "-" + uiState : childPath] = value;
       }
