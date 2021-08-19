@@ -3,6 +3,14 @@
     "gradation": {
       "primary": "@color-gradation-jade-dark-primary",
       "secondary": "@color-gradation-jade-dark-secondary"
+    },
+    "groupedbackground": {
+      "primary": {
+        "normal": "@color-solid-jade-dark-primary"
+      },
+      "secondary": {
+        "normal": "@color-solid-jade-dark-secondary"
+      }
     }
   }
 }

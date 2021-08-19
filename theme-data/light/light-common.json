@@ -352,6 +352,18 @@
       "success": ["@color-green-40", "@color-lime-40"],
       "error": ["@color-pink-50", "@color-red-60"],
       "default": "@color-gray-100"
+    },
+    "globaltint": {
+      "normal": "@color-blue-60",
+      "selected": "@color-blue-60"
+    },
+    "groupedbackground": {
+      "tertiary": {
+        "normal": "@color-gray-05"
+      },
+      "quaternary": {
+        "normal": "@color-white-alpha-100"
+      }
     }
   }
 }
