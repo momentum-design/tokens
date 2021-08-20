@@ -3,12 +3,12 @@
     "placeholder-text": "@theme-text-secondary-normal", 
     "#normal": { 
       "text": "@theme-text-primary-normal", 
-      "background": "@theme-background-solid-primary-normal", 
+      "background": "@theme-background-secondary-normal", 
       "border": "@theme-outline-input-normal" 
     }, 
     "#active": { 
       "text": "@theme-text-primary-normal", 
-      "background": "@theme-background-solid-primary-normal", 
+      "background": "@theme-background-secondary-active", 
       "border": "@theme-outline-input-active" 
     }, 
     "#disabled": { 
