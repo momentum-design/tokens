@@ -353,11 +353,11 @@
       "error": ["@color-pink-50", "@color-red-60"],
       "default": "@color-gray-100"
     },
-    "globaltint": {
+    "global-tint": {
       "normal": "@color-blue-60",
       "selected": "@color-blue-60"
     },
-    "groupedbackground": {
+    "grouped-background": {
       "tertiary": {
         "normal": "@color-gray-05"
       },

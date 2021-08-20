@@ -4,7 +4,7 @@
       "primary": "@color-gradation-indigo-dark-primary",
       "secondary": "@color-gradation-indigo-dark-secondary"
     },
-    "groupedbackground": {
+    "grouped-background": {
       "primary": {
         "normal": "@color-solid-indigo-dark-primary"
       },

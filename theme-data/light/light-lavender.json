@@ -4,7 +4,7 @@
       "primary": "@color-gradation-lavender-light-primary",
       "secondary": "@color-gradation-lavender-light-secondary"
     },
-    "groupedbackground": {
+    "grouped-background": {
       "primary": {
         "normal": "@color-solid-lavender-light-primary"
       },
