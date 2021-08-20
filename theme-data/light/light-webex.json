@@ -4,7 +4,7 @@
       "primary": "@color-gradation-webex-light-primary",
       "secondary": "@color-gradation-webex-light-secondary"
     },
-    "grouped-background": {
+    "groupedbackground": {
       "primary": {
         "normal": "@color-gray-05"
       },

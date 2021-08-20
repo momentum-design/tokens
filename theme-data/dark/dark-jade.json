@@ -4,7 +4,7 @@
       "primary": "@color-gradation-jade-dark-primary",
       "secondary": "@color-gradation-jade-dark-secondary"
     },
-    "grouped-background": {
+    "groupedbackground": {
       "primary": {
         "normal": "@color-solid-jade-dark-primary"
       },

@@ -4,7 +4,7 @@
       "primary": "@color-gradation-bronze-light-primary",
       "secondary": "@color-gradation-bronze-light-secondary"
     },
-    "grouped-background": {
+    "groupedbackground": {
       "primary": {
         "normal": "@color-solid-bronze-light-primary"
       },

@@ -4,7 +4,7 @@
       "primary": "@color-gradation-rose-light-primary",
       "secondary": "@color-gradation-rose-light-secondary"
     },
-    "grouped-background": {
+    "groupedbackground": {
       "primary": {
         "normal": "@color-solid-rose-light-primary"
       },
