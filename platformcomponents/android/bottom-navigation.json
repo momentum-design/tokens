@@ -2,12 +2,12 @@
     "bottom-navigation": {
       "comment":"Bottom Nagivation",
       "figma":"https://www.figma.com/file/z6oi9Ku3X7rM1Wj2451B9u/Components---Android?node-id=1528%3A683",
-      "active": {
-        "tint": "@theme-text-primary-normal",
+      "selected": {
+        "icon": "@theme-text-primary-normal",
         "text": "@theme-text-primary-normal"
       },
-      "inactive": {
-        "tint": "@theme-text-secondary-normal",
+      "unselected": {
+        "icon": "@theme-text-secondary-normal",
         "text": "@theme-text-secondary-normal"
       }
     }
