@@ -186,23 +186,6 @@
       "primary": "@color-black-alpha-90",
       "secondary": "@color-black-alpha-40"
     },
-    "reaction": {
-      "primary": {
-        "normal": "@color-gray-05",
-        "hover": "@color-black-alpha-11",
-        "pressed": "@color-black-alpha-11",
-        "active": {
-          "normal": "@color-black-alpha-11",
-          "hover": "@color-black-alpha-11",
-          "pressed": "@color-black-alpha-11"
-        }
-      },
-      "secondary": {
-        "normal": "@color-black-alpha-11",
-        "hover": "@color-black-alpha-20",
-        "pressed": "@color-black-alpha-30"
-      }
-    },
     "button": {
       "primary": {
         "normal": "@color-black-alpha-95",
