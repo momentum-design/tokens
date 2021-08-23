@@ -1,0 +1,12 @@
+{
+  "search": {
+    "comment": "All other properties in components/search.json",
+    "figma": "https://www.figma.com/file/z6oi9Ku3X7rM1Wj2451B9u/Components---Android?node-id=2314%3A7937",
+    "#normal": {
+      "background": "@theme-background-secondary-normal"
+    },
+    "#active": {
+      "background": "@theme-background-secondary-active"
+    }
+  }
+}
