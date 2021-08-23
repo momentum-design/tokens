@@ -5,29 +5,15 @@
     "primary": {
       "#normal": {
         "background": "@theme-background-secondary-normal",
-        "text": "@theme-text-primary-normal",
+        "unreacted-text": "@theme-text-primary-normal",
+        "reacted-text": "@theme-text-accent-normal",
         "border": "@theme-outline-secondary-normal"
       },
       "#hovered": {
-        "background": "@theme-background-secondary-hover",
-        "text": "@theme-text-primary-normal",
-        "border": "@theme-outline-secondary-normal"
+        "background": "@theme-background-secondary-hover"
       },
       "#pressed": {
-        "background": "@theme-background-secondary-active",
-        "text": "@theme-text-primary-normal",
-        "border": "@theme-outline-secondary-normal"
-      },
-      "reacted": {
-        "#normal": {
-          "text": "@theme-text-accent-normal"
-        },
-        "#hovered": {
-          "text": "@theme-text-accent-normal"
-        },
-        "#active": {
-          "text": "@theme-text-accent-normal"
-        }
+        "background": "@theme-background-secondary-active"
       }
     }
   }
