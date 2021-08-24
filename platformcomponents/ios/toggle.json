@@ -1,0 +1,30 @@
+{
+    "toggle": {
+      "figma": "https://www.figma.com/file/L67wWWZaXcvVOLEpn77adE/Components---iOS?node-id=2923%3A11776&viewport=972%2C446%2C1.2656322717666626",
+      "toggled":{
+        "#normal":{
+          "background": "@theme-control-active-normal",
+          "thumb-tint": "@theme-text-button-normal",
+          "border": "none"
+        },
+        "#disabled":{
+          "background": "@theme-control-active-disabled",
+          "thumb-tint": "@theme-button-secondary-active-pressed",
+          "border": "none"
+        }
+      },
+      "untoggled":{
+        "#normal":{
+          "background": "@theme-background-primary-ghost",
+          "thumb-tint": "@theme-text-button-normal",
+          "border": "@theme-outline-primary-normal"
+        },
+        "#disabled":{
+          "background": "@theme-background-primary-ghost",
+          "thumb-tint": "@theme-outline-primary-normal",
+          "border": "@theme-outline-disabled-normal"
+        }
+      }
+    }
+  }
+  

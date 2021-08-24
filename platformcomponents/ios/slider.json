@@ -1,0 +1,17 @@
+{
+    "slider": {
+      "figma": "https://www.figma.com/file/L67wWWZaXcvVOLEpn77adE/Components---iOS?node-id=2923%3A11776&viewport=972%2C446%2C1.2656322717666626",
+        "#normal":{
+          "thumb-tint": "@theme-text-button-normal",
+          "minimum-track-tint": "@theme-control-active-normal",
+          "maximum-track-tint": "@theme-control-inactive-normal",
+          "slider-text": "@theme-text-secondary-normal"
+        },
+        "#disabled":{
+          "thumb-tint": "@theme-control-shareContent-inactive",
+          "minimum-track-tint": "@theme-control-inactive-disabled",
+          "maximum-track-tint": "@theme-control-active-disabled",
+          "slider-text": "none"
+        }
+    }
+}
