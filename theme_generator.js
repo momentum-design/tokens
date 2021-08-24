@@ -358,6 +358,7 @@ if (platform === "web") {
   colorFormat = "rgba";
   sizeUnit = "rem";
   fileFormat = "css";
+  includeDesktopTokens = true;
 } else if (platform === "qt") {
   colorFormat = "object";
   sizeUnit = "px";
