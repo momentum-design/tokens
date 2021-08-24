@@ -1,0 +1,92 @@
+{
+  "interactiveicon": {
+    "comment": "Applied to icons that are clickable",
+    "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=6192%3A28111",
+    "favorite": {
+      "#normal": {
+        "background": "@theme-button-secondary-normal",
+        "text": "@theme-text-primary-normal"        
+      },
+      "#hovered": {
+        "background": "@theme-button-secondary-hover",
+        "text": "@theme-text-primary-normal"
+      },
+      "#pressed": {
+        "background": "@theme-button-secondary-pressed",
+        "text": "@theme-text-primary-normal"
+      },
+      "#disabled": {
+        "background": "@theme-button-secondary-normal",
+        "text": "@theme-text-primary-disabled"
+      }
+    },
+    "favorite-active": {
+      "#normal": {
+        "background": "@theme-button-secondary-normal",
+        "text": "@theme-text-warning-normal"        
+      },
+      "#hovered": {
+        "background": "@theme-button-secondary-hover",
+        "text": "@theme-text-warning-hover"
+      },
+      "#pressed": {
+        "background": "@theme-button-secondary-pressed",
+        "text": "@theme-text-warning-active"
+      },
+      "#disabled": {        
+        "text": "@theme-text-primary-disabled"
+      }
+    },
+    "settings": {
+      "#normal": {
+        "background": "@theme-button-secondary-normal",
+        "text": "@theme-text-primary-normal"        
+      },
+      "#hovered": {
+        "background": "@theme-button-secondary-hover",
+        "text": "@theme-text-primary-normal"
+      },
+      "#pressed": {
+        "background": "@theme-button-secondary-pressed",
+        "text": "@theme-text-primary-normal"
+      },
+      "#disabled": {        
+        "text": "@theme-text-primary-disabled"
+      }      
+    },
+    "attatchment": {
+      "#normal": {
+        "background": "@theme-button-secondary-normal",
+        "text": "@theme-text-primary-normal"        
+      },
+      "#hovered": {
+        "background": "@theme-button-secondary-hover",
+        "text": "@theme-text-primary-normal"
+      },
+      "#pressed": {
+        "background": "@theme-button-secondary-pressed",
+        "text": "@theme-text-primary-normal"
+      },
+      "#disabled": {        
+        "text": "@theme-text-primary-disabled"
+      }
+    },
+    "attatchment-active": {
+      "#normal": {
+        "background": "@theme-button-secondary-normal",
+        "text": "@theme-text-accent-normal"
+      },
+      "#hovered": {
+        "background": "@theme-button-secondary-hover",
+        "text": "@theme-text-accent-hover"
+      },
+      "#pressed": {
+        "background": "@theme-button-secondary-pressed",
+        "text": "@theme-text-accent-active"
+      },
+      "#disabled": {        
+        "text": "@theme-text-primary-disabled"
+      }
+    }
+  }  
+}
