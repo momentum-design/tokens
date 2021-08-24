@@ -1,5 +1,7 @@
 {
     "navigationtab":{
+        "comment": "Applied to the left nav tabs",
+        "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4342%3A14155",
         "background":{
             "#normal":"@theme-button-secondary-normal",
             "#hovered":"@theme-button-secondary-hover",
