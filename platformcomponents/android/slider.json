@@ -12,21 +12,21 @@
       }
     },
     "active": {
-      "track": {
-        "#normal": "@theme-control-active-normal",
-        "#disabled": "@theme-control-inactive-normal"
+      "#normal": {
+        "track": "@theme-control-active-normal",
+        "tick": "@theme-text-primary-inverted"
       },
-      "tick": {
-        "#normal": "@theme-text-primary-inverted"
+      "#disabled": {
+        "track": "@theme-control-inactive-normal"
       }
     },
     "inactive": {
-      "track": {
-        "#normal": "@theme-control-inactive-normal",
-        "#disabled": "@theme-control-inactive-hover"
+      "#normal": {
+        "track": "@theme-control-inactive-normal",
+        "tick": "@theme-text-primary-normal"
       },
-      "tick": {
-        "#normal": "@theme-text-primary-normal"
+      "#disabled": {
+        "track": "@theme-control-inactive-hover"
       }
     }
   }
