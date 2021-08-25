@@ -1,0 +1,33 @@
+{
+  "slider": {
+    "comment": "slider + progress bar",
+    "figma": "https://www.figma.com/file/z6oi9Ku3X7rM1Wj2451B9u/Components---Android?node-id=591%3A93",
+    "thumb": {
+      "#normal": {
+        "background": "@theme-control-active-normal",
+        "text": "@theme-text-primary-normal"
+      },
+      "#disabled": {
+        "background": "@theme-control-inactive-hover"
+      }
+    },
+    "active": {
+      "#normal": {
+        "track": "@theme-control-active-normal",
+        "tick": "@theme-text-primary-inverted"
+      },
+      "#disabled": {
+        "track": "@theme-control-inactive-normal"
+      }
+    },
+    "inactive": {
+      "#normal": {
+        "track": "@theme-control-inactive-normal",
+        "tick": "@theme-text-primary-normal"
+      },
+      "#disabled": {
+        "track": "@theme-control-inactive-hover"
+      }
+    }
+  }
+}

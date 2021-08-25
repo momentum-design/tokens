@@ -373,6 +373,7 @@ if (platform === "web") {
   includeJsonHeader = true;
 } else if (platform === "android") {
   colorFormat = "names";
+  componentGroups = true;
   includeMobileTokens = true;
   uiStatesAsObject = false;
 } else if (platform === "ios") {

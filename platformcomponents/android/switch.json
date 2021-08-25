@@ -1,0 +1,25 @@
+{
+  "switch": {
+    "figma": "https://www.figma.com/file/z6oi9Ku3X7rM1Wj2451B9u/Components---Android?node-id=591%3A93",
+    "active": {
+      "#normal": {
+        "thumb": "@theme-control-active-normal",
+        "background": "@theme-control-active-hover"
+      },
+      "#disabled": {
+        "thumb": "@theme-control-inactive-normal",
+        "background": "@theme-control-inactive-hover"
+      }
+    },
+    "inactive": {
+      "#normal": {
+        "thumb": "@theme-control-active-disabled",
+        "background": "@theme-control-inactive-disabled"
+      },
+      "#disabled": {
+        "thumb": "@theme-control-inactive-pressed",
+        "background": "@theme-control-inactive-disabled"
+      }
+    }
+  }
+}

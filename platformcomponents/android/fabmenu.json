@@ -1,0 +1,12 @@
+{
+    "fabmenu": {
+      "comment":"Floating Action Button Menu",
+      "figma":"https://www.figma.com/file/z6oi9Ku3X7rM1Wj2451B9u/Components---Android?node-id=1528%3A683",
+      "button": {
+        "background": "@theme-button-primary-normal",
+        "text": "@theme-text-primary-inverted"
+      },
+      "label": "@theme-text-primary-normal"
+    }
+  }
+  
