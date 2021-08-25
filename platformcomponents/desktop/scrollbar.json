@@ -4,7 +4,7 @@
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4469%3A8858",
     "track": {
       "#normal": {
-        "background": "@theme-scrollbar-background"
+        "background": "@theme-scrollbar-background-secondary-normal"
       },
       "#disabled": {
         "background": "@theme-background-primary-disabled"
@@ -12,7 +12,7 @@
     },
     "thumb": {
       "#normal": {
-        "background": "@theme-scrollbar-button"
+        "background": "@theme-scrollbar-button-normal"
       },
       "#hovered": {
         "background": "@theme-scrollbar-button-hover"
@@ -26,8 +26,8 @@
     },
     "arrow-button": {
       "#normal": {
-        "text": "@theme-scrollbar-arrow",
-        "background": "@theme-scrollbar-button"
+        "text": "@theme-scrollbar-arrow-normal",
+        "background": "@theme-scrollbar-background-secondary-normal"
       },
       "#hovered": {
         "text": "@theme-scrollbar-button-hover",
