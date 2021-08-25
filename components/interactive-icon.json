@@ -1,0 +1,65 @@
+{
+  "interactiveicon": {
+    "comment": "Applied to icons that are clickable",
+    "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=6192%3A28111",
+    "favorite": {
+      "#normal": {
+        "background": "@theme-button-secondary-normal",
+        "icon-inactive": "@theme-text-primary-normal",
+        "icon-active": "@theme-text-warning-normal"
+      },
+      "#hovered": {
+        "background": "@theme-button-secondary-hover",
+        "icon-inactive": "@theme-text-primary-normal",
+        "icon-active": "@theme-text-warning-hover"
+      },
+      "#pressed": {
+        "background": "@theme-button-secondary-pressed",
+        "icon-inactive": "@theme-text-primary-normal",
+        "icon-active": "@theme-text-warning-active"
+      },
+      "#disabled": {        
+        "icon-inactive": "@theme-text-primary-disabled",
+        "icon-active": "@theme-text-primary-disabled"
+      }
+    },    
+    "settings": {
+      "#normal": {
+        "background": "@theme-button-secondary-normal",
+        "icon": "@theme-text-primary-normal"        
+      },
+      "#hovered": {
+        "background": "@theme-button-secondary-hover",
+        "icon": "@theme-text-primary-normal"
+      },
+      "#pressed": {
+        "background": "@theme-button-secondary-pressed",
+        "icon": "@theme-text-primary-normal"
+      },
+      "#disabled": {        
+        "icon": "@theme-text-primary-disabled"
+      }      
+    },
+    "attachment": {
+      "#normal": {
+        "background": "@theme-button-secondary-normal",
+        "icon-inactive": "@theme-text-primary-normal",
+        "icon-active": "@theme-text-accent-normal"
+      },
+      "#hovered": {
+        "background": "@theme-button-secondary-hover",
+        "icon-inactive": "@theme-text-primary-normal",
+        "icon-active": "@theme-text-accent-hover"
+      },
+      "#pressed": {
+        "background": "@theme-button-secondary-pressed",
+        "icon-inactive": "@theme-text-primary-normal",
+        "icon-active": "@theme-text-accent-active"
+      },
+      "#disabled": {        
+        "icon-inactive": "@theme-text-primary-disabled",
+        "icon-active": "@theme-text-primary-disabled"
+      }
+    }
+  }  
+}
