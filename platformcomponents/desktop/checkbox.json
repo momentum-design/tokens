@@ -8,6 +8,18 @@
         "border": "none",
         "icon": "@theme-background-solid-primary-normal"
       },
+      "#hovered":{
+        "background": "@theme-control-active-hover",
+        "text": "@theme-text-primary-normal",
+        "border": "none",
+        "icon": "@theme-background-solid-primary-normal"
+      },
+      "#pressed":{
+        "background": "@theme-control-active-pressed",
+        "text": "@theme-text-primary-normal",
+        "border": "none",
+        "icon": "@theme-background-solid-primary-normal"
+      },
       "#disabled":{
         "background": "@theme-control-active-disabled",
         "text": "@theme-text-primary-disabled",
