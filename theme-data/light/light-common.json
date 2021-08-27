@@ -105,7 +105,7 @@
       "secondary": {
         "normal": "@color-white-alpha-11",
         "hover": "@color-white-alpha-20",
-        "active": "@color-white-alpha-30"
+        "active": "@color-black-alpha-30"
       },
       "accent": {
         "normal": "@theme-color-60"
