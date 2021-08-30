@@ -11,7 +11,7 @@
           "thumb-tint": "@theme-control-shareContent-inactive",
           "minimum-track-tint": "@theme-control-active-disabled",
           "maximum-track-tint": "@theme-background-secondary-hover",
-          "slider-text": "none"
+          "slider-text": "@theme-text-primary-disabled"
         }
     }
 }
