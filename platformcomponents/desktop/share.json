@@ -15,6 +15,76 @@
         "active": "@theme-outline-share-active",
         "inactive": "@theme-outline-share-inactive"
       }
+    },
+    "control": {
+      "text": {
+        "primary": "@dark-text-primary-normal"
+      },
+      "button": {
+        "primary": {
+          "#normal": {
+            "background": "@dark-button-primary-normal",
+            "text": "@dark-text-primary-inverted",
+            "border": "none"
+          },
+          "#hovered": {
+            "background": "@dark-button-primary-hovered",
+            "text": "@dark-text-primary-inverted"
+          },
+          "#pressed": {
+            "background": "@dark-button-primary-pressed",
+            "text": "@dark-text-primary-inverted"
+          },
+          "#disabled": {
+            "background": "@dark-button-primary-disabled",
+            "text": "@dark-text-primary-disabled"
+          }
+        },
+        "secondary": {
+          "#normal": {
+            "background": "@dark-button-secondary-normal",
+            "text": "@dark-text-primary-normal",
+            "border": "@dark-outline-button-normal"
+          },
+          "#hovered": {
+            "background": "@dark-button-secondary-hovered",
+            "text": "@dark-text-primary-normal",
+            "border": "@dark-outline-button-normal"
+          },
+          "#pressed": {
+            "background": "@dark-button-secondary-pressed",
+            "text": "@dark-text-primary-normal",
+            "border": "@dark-outline-button-normal"
+          },
+          "#disabled": {
+            "background": "@dark-button-secondary-pressed",
+            "text": "@dark-text-primary-disabled",
+            "border": "@dark-outline-button-disabled"
+          },
+          "active": {
+            "#normal": {
+              "background": "@dark-button-secondary-active-normal",
+              "text": "@dark-text-primary-normal",
+              "border": "@dark-outline-button-normal"
+            },
+            "#hovered": {
+              "background": "@dark-button-secondary-active-hovered",
+              "text": "@dark-text-primary-normal",
+              "border": "@dark-outline-button-normal"
+            },
+            "#pressed": {
+              "background": "@dark-button-secondary-active-pressed",
+              "text": "@dark-text-primary-normal",
+              "border": "@dark-outline-button-normal"
+            },
+            "#disabled": {
+              "background": "@dark-button-secondary-pressed",
+              "text": "@dark-text-primary-disabled",
+              "border": "@dark-outline-button-disabled"
+            }
+          }
+        }
+      }
     }
   }
 }
