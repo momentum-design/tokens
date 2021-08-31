@@ -1,0 +1,30 @@
+{
+  "checkbox": {
+    "figma": "https://www.figma.com/file/L67wWWZaXcvVOLEpn77adE/Components---iOS?node-id=2923%3A11776",
+    "checked":{
+      "#normal":{
+        "background": "@theme-control-active-normal",
+        "text": "@theme-text-primary-normal",
+        "border": "none",
+        "icon": "@theme-text-primary-inverted"
+      },
+      "#disabled":{
+        "background": "@theme-control-active-disabled",
+        "text": "@theme-text-primary-disabled",
+        "border": "none",
+        "icon": "@theme-text-primary-disabled"
+      }
+    },
+    "unchecked":{
+      "#normal":{
+        "background": "@theme-background-tertiary-normal",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-primary-normal"
+      },
+      "#disabled":{
+        "background": "@theme-control-active-disabled",
+        "text": "@theme-text-primary-disabled"
+      }
+    }
+  }
+}

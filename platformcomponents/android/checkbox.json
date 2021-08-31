@@ -1,0 +1,27 @@
+{
+  "checkbox": {
+    "figma": "https://www.figma.com/file/z6oi9Ku3X7rM1Wj2451B9u/Components---Android?node-id=591%3A93",
+    "checked":{
+      "#normal":{
+        "background": "@theme-control-active-normal",
+        "text": "@theme-text-primary-normal",
+        "icon": "@theme-text-primary-inverted"
+      },
+      "#disabled":{
+        "background": "@theme-control-active-disabled",
+        "text": "@theme-text-primary-disabled",
+        "icon": "@theme-text-primary-inverted"
+      }
+    },
+    "unchecked":{
+      "#normal":{
+        "border":"@theme-page-control-normal",
+        "text": "@theme-text-primary-normal"
+      },
+      "#disabled":{
+        "background":"@theme-control-inactive-disabled",
+        "text": "@theme-text-primary-disabled"
+      }
+    }
+  }
+}
