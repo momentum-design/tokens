@@ -9,9 +9,9 @@
         },
         "#disabled":{
           "thumb-tint": "@theme-control-shareContent-inactive",
-          "minimum-track-tint": "@theme-control-inactive-disabled",
-          "maximum-track-tint": "@theme-control-active-disabled",
-          "slider-text": "none"
+          "minimum-track-tint": "@theme-control-active-disabled",
+          "maximum-track-tint": "@theme-background-secondary-hover",
+          "slider-text": "@theme-text-primary-disabled"
         }
     }
 }
