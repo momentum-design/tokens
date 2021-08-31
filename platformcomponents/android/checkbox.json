@@ -15,11 +15,11 @@
     },
     "unchecked":{
       "#normal":{
-        "border":"@theme-page-control-normal",
+        "background":"@theme-page-control-normal",
         "text": "@theme-text-primary-normal"
       },
       "#disabled":{
-        "border":"@theme-control-inactive-disabled",
+        "background":"@theme-control-inactive-disabled",
         "text": "@theme-text-primary-disabled"
       }
     }
