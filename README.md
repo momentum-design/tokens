@@ -1,44 +1,35 @@
-# token-proposal
+# Momentum Design Tokens
 
-See [documentation on Confluence](https://confluence-eng-gpk2.cisco.com/conf/display/~pauwitty/Token+proposal)
+[![license](https://img.shields.io/badge/license-MIT-blueviolet)](https://github.com/momentum-design/tokens/blob/master/LICENSE) ![state](https://img.shields.io/badge/state-alpha-blue)
 
-To generate a flat token file for a particular theme, run:
+**Momentum Design Tokens** is a design token project to provide standardization of themes and colors to downstream [Momentum Design](https://momentum.design/) projects.
 
-```
-node theme_generator.js <theme file>
-```
+See [documentation on Confluence](https://confluence-eng-gpk2.cisco.com/conf/display/~pauwitty/Token+proposal).
 
-e.g.
+## Overview
 
-```
-node theme_generator.js ./themes/theme-light-webex.json
-```
+This project is built with the following goals:
 
-It supports some options
+* **Simplicity** - Tokens should be easily built and consumed
+* **Themed** - Tokens should be designed with theming in mind
+* **Extensible** - Usage of multiple tokens should work seemlessly
 
-```
-Usage: /home/paul/token-proposal/theme_generator.js [OPTION]... [THEME FILE]...
-Options
-  --colorFormat=[hex|rgba]    What color format to use in the output.
-       rgba   -> rgba(244,233,20,0.8)
-       object -> { "r": 244, "g": 233, "b": 20, "a": 0.8 }
-       hex    -> #RRGGBBAA
-       names  -> red-05
-  --sizeUnit=[px|pt|rem]      What unit to use for sizes in the output.
-       px    -> pixels (matching that on Figma)
-       pt    -> points (pixels * 0.75)
-       rem   -> root em, used on web to create sizes relative to user font size
-  --componentGroups           Group tokens by component
-  --omitThemeTokens           Removes theme tokens from the generated file
-  --fileFormat=[css|json]     What format to use for the output files
-  --platform=PLATFORM         Which platform to generate for.
-       web
-       qt
-       macos
-       ios
-       android
-  --toStdOut                  Output to std out instead of writing to files
+## Getting Started
 
-```
+Please review our [getting started guide](./GETTING_STARTED.md) for details on how to prepare this project for downstream consumption.
 
-Tokens for individual components go in the components folder. If components are needed on only one platform, they should go in e.g. platformcomponents/ios/component_name.json. It's also possible to add platformcomponents/mobile/component_name.json which applies on both ios and android, or platformcomponents/desktop/component_name.json, for both macos and qt.
+## Contribution
+
+Want to contribute? Be sure to review the [contribution guide](./CONTRIBUTING.md).
+
+## Change Log
+
+See [the commit history](https://github.com/momentum-design/tokens/commits/master) for the most up-to-date changes.
+
+## Tooling
+
+* [NPM](https://www.npmjs.com/) - Package Manager
+
+## Copyright
+
+Copyright (c) 2021 Cisco Systems
