@@ -19,7 +19,7 @@
       "#normal":{
         "background": "@theme-background-tertiary-normal",
         "text": "@theme-text-primary-normal",
-        "border": "@theme-text-primary-normal"
+        "border": "@theme-outline-primary-normal"
       },
       "#disabled":{
         "background": "@theme-control-active-disabled",
