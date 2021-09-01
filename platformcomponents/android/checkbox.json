@@ -15,7 +15,7 @@
     },
     "unchecked":{
       "#normal":{
-        "border":"@theme-page-control-normal",
+        "border":"@theme-control-inactive-normal",
         "text": "@theme-text-primary-normal"
       },
       "#disabled":{
