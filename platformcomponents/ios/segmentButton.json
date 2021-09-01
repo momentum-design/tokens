@@ -1,20 +1,20 @@
 {
     "segmentButton": {
       "figma": "https://www.figma.com/file/L67wWWZaXcvVOLEpn77adE/Components---iOS?node-id=2923%3A11776&viewport=972%2C446%2C1.2656322717666626",
-      "#normal":{
-        "background": "@theme-button-secondary-normal",
-        "text": "@theme-text-secondary-normal",
-        "icon-color": "@theme-globaltint-normal"
-      },
-      "#hovered":{
-        "background": "@theme-button-secondary-hover",
-        "text": "@theme-text-primary-inverted",
-        "icon-color": "@theme-globaltint-normal"
-      },
-      "#pressed":{
-        "background": "@theme-globaltint-selected",
-        "text": "@theme-text-button-normal"
-        "icon-color": "@theme-text-button-normal"
-      }
+        "#normal":{
+          "background": "@theme-button-secondary-normal",
+          "text": "@theme-text-secondary-normal",
+          "icon-color": "@theme-globaltint-normal"
+        },
+        "#hovered":{
+          "background": "@theme-button-secondary-hover",
+          "text": "@theme-text-primary-inverted",
+          "icon-color": "@theme-globaltint-normal"
+        },
+        "#pressed":{
+          "background": "@theme-globaltint-selected",
+          "text": "@theme-text-button-normal",
+          "icon-color": "@theme-text-button-normal"
+        }
     }
 }
