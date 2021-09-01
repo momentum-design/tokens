@@ -582,7 +582,7 @@ Object.keys(args).forEach((themeFileName) => {
   console.log(JSON.stringify(themeData, null, 2));*/
 
   // Resolve all the references
-  let resolvedThemeData = resolveValue(themeData, themeData, coreTokens, flattenedCoreTokens);
+  const resolvedThemeData = resolveValue(themeData, themeData, coreTokens, flattenedCoreTokens);
   /*console.log('=== Theme after resolve references ==============');
   console.log(JSON.stringify(resolvedThemeData, null, 2));*/
 
