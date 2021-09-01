@@ -17,7 +17,7 @@
     },
     "unchecked":{
       "#normal":{
-        "background": "@theme-background-tertiary-normal",
+        "background": "@theme-background-solid-tertiary-normal",
         "text": "@theme-text-primary-normal",
         "border": "@theme-outline-primary-normal"
       },

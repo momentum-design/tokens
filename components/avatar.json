@@ -28,35 +28,6 @@
         "purple": "@theme-avatar-purple",
         "pink": "@theme-avatar-pink"
       }
-    },
-    "personas": {
-      "speaker": {
-        "static": {
-          "inner-ring": "@theme-outline-gradient-active"
-        },
-        "speaking": {
-          "inner-ring": "@theme-outline-gradient-active",
-          "outer-ring": "@theme-outline-gradient-active"
-        }
-      },
-      "bot-temp": {
-        "background": "@theme-avatar-default",
-        "icon": "@theme-text-primary-normal"
-      },
-      "device": {
-        "background": "@theme-avatar-default",
-        "icon": "@theme-text-primary-normal"
-      },
-      "alert": {
-        "background": "@theme-avatar-default",
-        "icon": "@theme-text-primary-normal"
-      },
-      "bot-image-avatar": {
-        "badge": {
-          "background": "@theme-background-accent-normal",
-          "text": "@theme-text-primary-normal"
-        }
-      }
     }
   }
 }

@@ -258,7 +258,7 @@
         "normal": "@color-green-40"
       },
       "cancel": {
-        "normal": "@color-red-50"
+        "normal": "@color-red-40"
       },
       "disabled": {
         "normal": "@color-white-alpha-20"
