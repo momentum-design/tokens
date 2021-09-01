@@ -381,38 +381,5 @@
         "normal": "@color-white-alpha-100"
       }
     }
-  },
-  "dark": {
-    "text": {
-      "primary": {
-        "normal": "@color-white-alpha-95",
-        "inverted": "@color-black-alpha-95",
-        "disabled": "@color-white-alpha-40"
-      }
-    },
-    "button": {
-      "primary": {
-        "normal": "@color-white-alpha-95",
-        "hovered": "@color-white-alpha-80",
-        "pressed": "@color-white-alpha-70",
-        "disabled": "@color-white-alpha-20"
-      },
-      "secondary": {
-        "normal": "@color-white-alpha-00",
-        "hovered": "@color-white-alpha-07",
-        "pressed": "@color-white-alpha-20",
-        "active": {
-          "normal": "@dark-button-secondary-pressed",
-          "hovered": "@color-white-alpha-30",
-          "pressed": "@color-white-alpha-40"
-        }
-      }
-    },
-    "outline": {
-      "button": {
-        "normal": "@color-white-alpha-30",
-        "disabled": "@color-white-alpha-00"
-      }
-    }
   }
 }
