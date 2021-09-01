@@ -1,5 +1,5 @@
 {
-  "share-window": {
+  "sharewindow": {
     "comment": "Applied to share window",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=9532%3A17790",
 
@@ -18,70 +18,49 @@
     },
     "control": {
       "text": {
-        "primary": "@dark-text-primary-normal"
+        "primary": "theme-text-button-normal"
       },
       "button": {
-        "primary": {
-          "#normal": {
-            "background": "@dark-button-primary-normal",
-            "text": "@dark-text-primary-inverted",
-            "border": "none"
-          },
-          "#hovered": {
-            "background": "@dark-button-primary-hovered",
-            "text": "@dark-text-primary-inverted"
-          },
-          "#pressed": {
-            "background": "@dark-button-primary-pressed",
-            "text": "@dark-text-primary-inverted"
-          },
-          "#disabled": {
-            "background": "@dark-button-primary-disabled",
-            "text": "@dark-text-primary-disabled"
-          }
+        "#normal": {
+          "background": "@theme-button-share-normal",
+          "text": "@theme-text-button-normal",
+          "border": "@theme-outline-buttonshare-normal"
         },
-        "secondary": {
+        "#hovered": {
+          "background": "@theme-button-share-hover",
+          "text": "@theme-text-button-normal",
+          "border": "@theme-outline-buttonshare-normal"
+        },
+        "#pressed": {
+          "background": "@theme-button-share-pressed",
+          "text": "@theme-text-button-normal",
+          "border": "@theme-outline-buttonshare-normal"
+        },
+        "#disabled": {
+          "background": "@theme-button-share-pressed",
+          "text": "@theme-text-primary-disabled",
+          "border": "@theme-outline-buttonshare-normal"
+        },
+        "active": {
           "#normal": {
-            "background": "@dark-button-secondary-normal",
-            "text": "@dark-text-primary-normal",
-            "border": "@dark-outline-button-normal"
+            "background": "@theme-button-share-active-normal",
+            "text": "@theme-text-button-normal",
+            "border": "@theme-outline-buttonshare-normal"
           },
           "#hovered": {
-            "background": "@dark-button-secondary-hovered",
-            "text": "@dark-text-primary-normal",
-            "border": "@dark-outline-button-normal"
+            "background": "@theme-button-share-active-hover",
+            "text": "@theme-text-button-normal",
+            "border": "@theme-outline-buttonshare-normal"
           },
           "#pressed": {
-            "background": "@dark-button-secondary-pressed",
-            "text": "@dark-text-primary-normal",
-            "border": "@dark-outline-button-normal"
+            "background": "@theme-button-share-active-pressed",
+            "text": "@theme-text-button-normal",
+            "border": "@theme-outline-buttonshare-normal"
           },
           "#disabled": {
-            "background": "@dark-button-secondary-pressed",
-            "text": "@dark-text-primary-disabled",
-            "border": "@dark-outline-button-disabled"
-          },
-          "active": {
-            "#normal": {
-              "background": "@dark-button-secondary-active-normal",
-              "text": "@dark-text-primary-normal",
-              "border": "@dark-outline-button-normal"
-            },
-            "#hovered": {
-              "background": "@dark-button-secondary-active-hovered",
-              "text": "@dark-text-primary-normal",
-              "border": "@dark-outline-button-normal"
-            },
-            "#pressed": {
-              "background": "@dark-button-secondary-active-pressed",
-              "text": "@dark-text-primary-normal",
-              "border": "@dark-outline-button-normal"
-            },
-            "#disabled": {
-              "background": "@dark-button-secondary-pressed",
-              "text": "@dark-text-primary-disabled",
-              "border": "@dark-outline-button-disabled"
-            }
+            "background": "@theme-button-share-pressed",
+            "text": "@theme-text-primary-disabled",
+            "border": "@theme-outline-buttonshare-normal"
           }
         }
       }

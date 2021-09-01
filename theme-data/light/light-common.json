@@ -2,9 +2,6 @@
   "theme": {
     "color": "@color-blue",
     "text": {
-      "button": {
-        "normal": "@color-white-alpha-100"
-      },
       "primary": {
         "normal": "@color-black-alpha-95",
         "inverted": "@color-white-alpha-95",
@@ -298,10 +295,6 @@
         "hover": "@color-black-alpha-11",
         "pressed": "@color-black-alpha-20",
         "disabled": "@color-black-alpha-04"
-      },
-      "shareContent": {
-        "active": "@color-orange-60",
-        "inactive": "@color-gray-60"
       }
     },
     "presence": {
