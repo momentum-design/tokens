@@ -36,7 +36,7 @@
         },
         "speaking": {
           "inner-ring": "@theme-outline-gradient-active",
-          "outer-ring": "@theme-outline-gradient-active*0.32"
+          "outer-ring": "@theme-outline-gradient-active"
         }
       },
       "bot-temp": {

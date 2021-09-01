@@ -258,7 +258,7 @@ function resolveValue(currentToken, allTokens, coreTokens, flattenedCoreTokens) 
     }
   } else {
     // Otherwise, we don't need to do any resolution
-    return currentToken;
+    return winSystemHighContrast ? normalizeWinHCToken(currentToken) : currentToken;
   }
 }
 
@@ -333,6 +333,34 @@ function normaliseUnits(tokens) {
   return normalisedTokens;
 }
 
+function normalizeWinHCToken(token) {
+  const allowedTokens = new Set([
+    "SystemColorWindowTextColor",
+    "SystemColorHotlightColor",
+    "SystemColorGrayTextColor",
+    "SystemColorHighlightTextColor",
+    "SystemColorHighlightColor",
+    "SystemColorButtonTextColor",
+    "SystemColorButtonFaceColor",
+    "SystemColorWindowColor",
+    "WindowTextColor",
+    "HotlightColor",
+    "GrayTextColor",
+    "HighlightTextColor",
+    "HighlightColor",
+    "ButtonTextColor",
+    "ButtonFaceColor",
+    "WindowColor",
+    "PlaceholderColor"]);
+
+  if (!allowedTokens.has(token)) {
+    console.error("Unable to find " + token + " in the set of allowed tokens for Windows high-contrast");
+    process.exit(1);
+  }
+
+  return token.replace(/^(SystemColor)/,"");
+}
+
 let platform = "web";
 if (args.platform) {
   platform = args.platform;
@@ -348,6 +376,8 @@ let includeMobileTokens = false;
 let includeDesktopTokens = false;
 let uiStatesAsObject = true;
 let omitThemeTokens = false;
+let winSystemHighContrast = false;
+
 /* if true we use the background colour as the value of the border if border=none
  * if false, we instead modify to a border-style and border-color variables
  */
@@ -427,6 +457,11 @@ if (args.omitThemeTokens) {
   delete args.omitThemeTokens;
 }
 
+if (args.winSystemHighContrast) {
+  winSystemHighContrast = args.winSystemHighContrast;
+  delete args.winSystemHighContrast;
+}
+
 if (args.fileFormat) {
   if (args.fileFormat === "css") {
     fileFormat = "css";
@@ -468,6 +503,7 @@ if (Object.keys(args).length === 0) {
   console.log("       rem   -> root em, used on web to create sizes relative to user font size");
   console.log("  --componentGroups           Group tokens by component");
   console.log("  --omitThemeTokens           Removes theme tokens from the generated file");
+  console.log("  --winSystemHighContrast     Generate a Windows system high-contrast theme, will only be resolved to actual colors at app runtime");
   console.log("  --fileFormat=[css|json]     What format to use for the output files");
   console.log("  --platform=PLATFORM         Which platform to generate for.");
   console.log("       web");
@@ -480,11 +516,17 @@ if (Object.keys(args).length === 0) {
 }
 
 // Start by loading all the token files
-console.log("=== Loading core files ===================");
-let coreTokens = loadFile("core", true);
-if (colorFormat === "names") {
-  useColourNames(coreTokens);
+let coreTokens = []
+if (!winSystemHighContrast) {
+  console.log("=== Loading core files ===================");
+  coreTokens = loadFile("core", true);
+  if (colorFormat === "names") {
+    useColourNames(coreTokens);
+  }
+} else {
+  console.log("=== Skipping loading of core files, system high-contrast theme selected")
 }
+
 // Then flatten all the tokens
 const flattenedCoreTokens = {};
 flattenObject("", coreTokens, flattenedCoreTokens);
@@ -537,10 +579,10 @@ Object.keys(args).forEach((themeFileName) => {
     }
   });
   /*console.log('=== After load theme data =====================');
-  console.log(JSON.stringify(tokenData, null, 2));*/
+  console.log(JSON.stringify(themeData, null, 2));*/
 
   // Resolve all the references
-  const resolvedThemeData = resolveValue(themeData, themeData, coreTokens, flattenedCoreTokens);
+  let resolvedThemeData = resolveValue(themeData, themeData, coreTokens, flattenedCoreTokens);
   /*console.log('=== Theme after resolve references ==============');
   console.log(JSON.stringify(resolvedThemeData, null, 2));*/
 
@@ -582,7 +624,7 @@ Object.keys(args).forEach((themeFileName) => {
     }
   }
   /*console.log('=== After flattening tokens ===================');
-  console.log(JSON.stringify(flattenedTokens, null, 2));*/
+  console.log(JSON.stringify(flattenedThemeTokens, null, 2));*/
 
   // Output the flattened file
 
