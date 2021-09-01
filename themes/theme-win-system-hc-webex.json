@@ -1,0 +1,7 @@
+{
+  "accent": "Webex",
+  "theme": "WinSystemHighContrast",
+  "files": [
+    "theme-data/win-system-hc/win-system-hc-common.json"
+  ]
+}
