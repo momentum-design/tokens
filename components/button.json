@@ -298,7 +298,7 @@
         "border": "@theme-outline-secondary-normal"
       },
       "#hovered": {
-        "background": "@theme-button-inverted-hovered",
+        "background": "@theme-button-inverted-hover",
         "text": "@theme-text-primary-normal",
         "border": "@theme-outline-secondary-normal"
       },
