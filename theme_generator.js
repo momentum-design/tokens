@@ -4,6 +4,7 @@ const merge = require("lodash.merge");
 const args = require("args-parser")(process.argv);
 const camelCase = require("camelcase");
 const path = require("path");
+const { exit } = require("process");
 
 function useColourNames(tokens, path) {
   Object.entries(tokens).forEach(([key, value]) => {
@@ -27,7 +28,7 @@ function removeComments(token) {
     delete token.figma;
   }
   Object.values(token).forEach((value) => {
-    if (typeof(value) === "object") {
+    if (typeof value === "object") {
       removeComments(value);
     }
   });
@@ -494,20 +495,38 @@ let componentData = loadFile("components", true);
 try {
   merge(componentData, loadFile("platformcomponents/" + platform, true));
 } catch (error) {
-  console.log("No platform component tokens for " + platform);
+  if (error instanceof SyntaxError) {
+    console.log(error);
+    console.log("Parsing issue with JSON format, please check the JSON format in the above file ");
+    exit();
+  } else {
+    console.log("No platform component tokens for " + platform);
+  }
 }
 if (includeMobileTokens) {
   try {
     merge(componentData, loadFile("platformcomponents/mobile", true));
   } catch (error) {
-    console.log("No platform component tokens for mobile");
+    if (error instanceof SyntaxError) {
+      console.log(error);
+      console.log("Parsing issue with JSON format, please check the JSON format in the above file ");
+      exit();
+    } else {
+      console.log("No platform component tokens for " + platform);
+    }
   }
 }
 if (includeDesktopTokens) {
   try {
     merge(componentData, loadFile("platformcomponents/desktop", true));
   } catch (error) {
-    console.log("No platform component tokens for desktop");
+    if (error instanceof SyntaxError) {
+      console.log(error);
+      console.log("Parsing issue with JSON format, please check the JSON format in the above file ");
+      exit();
+    } else {
+      console.log("No platform component tokens for " + platform);
+    }
   }
 }
 
