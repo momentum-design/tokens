@@ -46,15 +46,15 @@
     "ghost": {
       "#normal": {
         "background": "@theme-button-secondary-normal",
-        "text": "@theme-text-primary-normal",
+        "text": "@theme-globaltint-normal",
         "border": "none"
       },
       "#hovered": {
         "background": "@theme-button-secondary-hover",
-        "text": "@theme-text-primary-normal"
+        "text": "@theme-globaltint-normal"
       },
       "#pressed": {
-        "background": "@theme-button-secondary-pressed",
+        "background": "@theme-globaltint-selected",
         "text": "@theme-text-primary-normal"
       },
       "#disabled": {
@@ -287,6 +287,28 @@
       },
       "#disabled": {
         "background": "@theme-button-inverted-normal",
+        "text": "@theme-text-primary-disabled",
+        "border": "@theme-outline-disabled-normal"
+      }
+    },
+    "overlay": {
+      "#normal": {
+        "background": "@theme-button-inverted-normal",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-secondary-normal"
+      },
+      "#hovered": {
+        "background": "@theme-button-inverted-hovered",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-secondary-normal"
+      },
+      "#pressed": {
+        "background": "@theme-button-inverted-pressed",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-secondary-normal"
+      },
+      "#disabled": {
+        "background": "@theme-button-secondary-normal",
         "text": "@theme-text-primary-disabled",
         "border": "@theme-outline-disabled-normal"
       }
