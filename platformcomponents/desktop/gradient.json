@@ -1,0 +1,26 @@
+{
+  "theme-gradient": {
+    "comment": "Used for graident backgrounds on Desktop (parsing logic requires at least 1 normal UI state)",
+    "figma": "https://www.figma.com/file/6Wrt4B7fn41nqSTgFpgwpc/UI-Color-Themes?node-id=8946%3A41934",
+    "primary-0": {
+      "#normal": {
+        "background": "@theme-background-gradient-primary-0"
+      }
+    },
+    "primary-1": {
+      "#normal": {
+        "background": "@theme-background-gradient-primary-1"
+      }
+    },
+    "secondary-0": {
+      "#normal": {
+        "background": "@theme-background-gradient-secondary-0"
+      }
+    },
+    "secondary-1": {
+      "#normal": {
+        "background": "@theme-background-gradient-secondary-1"
+      }
+    }
+  }
+}
