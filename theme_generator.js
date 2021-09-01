@@ -4,7 +4,6 @@ const merge = require("lodash.merge");
 const args = require("args-parser")(process.argv);
 const camelCase = require("camelcase");
 const path = require("path");
-const { exit } = require("process");
 
 function useColourNames(tokens, path) {
   Object.entries(tokens).forEach(([key, value]) => {
