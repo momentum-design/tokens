@@ -13,8 +13,8 @@
       },
       "#pressed":{
         "background": "@theme-globaltint-selected",
-        "text": "@theme-text-primary-normal",
-        "icon-color": "@theme-text-primary-inverted"
+        "text": "@theme-text-button-normal"
+        "icon-color": "@theme-text-button-normal"
       }
     }
 }
