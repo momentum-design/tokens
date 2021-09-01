@@ -27,7 +27,7 @@ function removeComments(token) {
     delete token.figma;
   }
   Object.values(token).forEach((value) => {
-    if (typeof(value) === "object") {
+    if (typeof value === "object") {
       removeComments(value);
     }
   });
@@ -84,11 +84,17 @@ function loadFile(fileName, isDirectory) {
     return tokenData;
   } else if (fileName.endsWith(".json")) {
     console.log("Loading file " + fileName);
-    const tokenFileData = fs.readFileSync(fileName);
-    /* We don't return the JSON directly - instead we fiddle with the structure of the files to ensure that UI states are always the last part of a token name
-     * by flattening it, reordering the keys, and then unflattening it
-     */
-    const parsedTokenFile = JSON.parse(tokenFileData);
+    let parsedTokenFile;
+    try {
+      const tokenFileData = fs.readFileSync(fileName);
+      /* We don't return the JSON directly - instead we fiddle with the structure of the files to ensure that UI states are always the last part of a token name
+      * by flattening it, reordering the keys, and then unflattening it
+      */
+      parsedTokenFile = JSON.parse(tokenFileData);
+    } catch (error) {
+      console.error(error);
+      process.exit(1);
+    }
     removeComments(parsedTokenFile);
     const flattenedTokenFile = {};
     flattenObject("", parsedTokenFile, flattenedTokenFile);
