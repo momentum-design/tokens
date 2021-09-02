@@ -1,0 +1,28 @@
+{
+  "button": {
+    "comment": "Mobile specific button styles",
+    "figma": "https://www.figma.com/file/L67wWWZaXcvVOLEpn77adE/Components---iOS?node-id=2741%3A6797",
+    "overlay": {
+      "#normal": {
+        "background": "@theme-button-inverted-normal",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-secondary-normal"
+      },
+      "#hovered": {
+        "background": "@theme-button-inverted-hover",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-secondary-normal"
+      },
+      "#pressed": {
+        "background": "@theme-button-inverted-pressed",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-secondary-normal"
+      },
+      "#disabled": {
+        "background": "@theme-button-secondary-normal",
+        "text": "@theme-text-primary-disabled",
+        "border": "@theme-outline-disabled-normal"
+      }
+    }
+  }
+}

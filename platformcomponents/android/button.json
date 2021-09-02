@@ -1,0 +1,21 @@
+{
+  "button": {
+    "comment": "Android specific button styles",
+    "figma": "",
+    "ghost": {
+      "#normal": {
+        "background": "@theme-button-secondary-normal",
+        "text": "@theme-text-primary-normal",
+        "border": "none"
+      },
+      "#hovered": {
+        "background": "@theme-button-secondary-hover",
+        "text": "@theme-text-primary-normal"
+      },
+      "#pressed": {
+        "background": "@theme-button-secondary-pressed",
+        "text": "@theme-text-primary-normal"
+      }
+    }
+  }
+}
