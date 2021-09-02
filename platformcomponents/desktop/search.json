@@ -3,10 +3,27 @@
     "comment": "All other properties in components/search.json",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4429%3A871",
     "#normal": {
-      "background": "@theme-background-solid-primary-normal"
+      "background": "@theme-background-secondary-normal",
+      "placeholder-text": "@theme-text-primary-normal"
+    },
+    "#hovered": {
+      "background": "@theme-background-secondary-hover",
+      "placeholder-text": "@theme-text-primary-normal"
+    },
+    "#pressed": {
+      "background": "@theme-background-secondary-active",
+      "placeholder-text": "@theme-text-primary-normal"
+    },
+    "#focused": {
+      "background": "@theme-background-secondary-normal",
+      "placeholder-text": "@theme-text-secondary-normal",
+      "text": "@theme-text-secondary-normal",
+      "border": "@theme-outline-primary-normal"
     },
     "#active": {
-      "background": "@theme-background-solid-primary-normal"
+      "background": "@theme-background-secondary-normal",
+      "text": "@theme-text-primary-normal",
+      "border": "@theme-outline-input-active"
     }
   }
 }
