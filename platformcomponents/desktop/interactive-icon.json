@@ -60,6 +60,37 @@
         "icon-inactive": "@theme-text-primary-disabled",
         "icon-active": "@theme-text-primary-disabled"
       }
+    },
+    "cancel":{
+      "#normal": {        
+        "icon": "@theme-text-secondary-normal"        
+      },
+      "#hovered": {        
+        "icon": "@theme-text-primary-normal"
+      },
+      "#pressed": {        
+        "icon": "@theme-text-primary-normal"
+      },
+      "#disabled": {        
+        "icon": "@theme-text-primary-disabled"
+      }
+    },
+    "flag":{
+      "#normal": {
+        "background": "@theme-button-secondary-normal",
+        "icon": "@theme-text-primary-normal"        
+      },
+      "#hovered": {
+        "background": "@theme-button-secondary-hover",
+        "icon": "@theme-text-primary-normal"
+      },
+      "#pressed": {
+        "background": "@theme-button-secondary-pressed",
+        "icon": "@theme-text-primary-normal"
+      },
+      "#disabled": {        
+        "icon": "@theme-text-primary-disabled"
+      }
     }
   }  
 }
