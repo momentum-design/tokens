@@ -354,7 +354,6 @@ let includeMobileTokens = false;
 let includeDesktopTokens = false;
 let uiStatesAsObject = true;
 let omitThemeTokens = false;
-
 /* if true we use the background colour as the value of the border if border=none
  * if false, we instead modify to a border-style and border-color variables
  */
@@ -487,9 +486,8 @@ if (Object.keys(args).length === 0) {
 }
 
 // Start by loading all the token files
-let coreTokens = []
 console.log("=== Loading core files ===================");
-coreTokens = loadFile("core", true);
+let coreTokens = loadFile("core", true);
 if (colorFormat === "names") {
   useColourNames(coreTokens);
 }
