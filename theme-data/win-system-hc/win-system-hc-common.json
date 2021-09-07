@@ -111,8 +111,8 @@
         "normal": "@color-hc-PlaceholderColor"
       },
       "gradient": {
-        "primary": ["PlaceholderColor","PlaceholderColor"],
-        "secondary": ["PlaceholderColor","PlaceholderColor"]
+        "primary": ["@color-hc-PlaceholderColor","@color-hc-PlaceholderColor"],
+        "secondary": ["@color-hc-PlaceholderColor","@color-hc-PlaceholderColor"]
       },
       "alert": {
         "default": {
@@ -264,7 +264,7 @@
         "normal": "@color-hc-PlaceholderColor"
       },
       "gradient": {
-        "active": ["PlaceholderColor", "PlaceholderColor", "PlaceholderColor"]
+        "active": ["@color-hc-PlaceholderColor", "@color-hc-PlaceholderColor", "@color-hc-PlaceholderColor"]
       },
       "share": {
         "selected": "@color-hc-PlaceholderColor",
@@ -352,18 +352,18 @@
     },
     "illustrations": {
       "empty": {
-        "primary": ["PlaceholderColor", "PlaceholderColor"],
-        "secondary": ["PlaceholderColor", "PlaceholderColor"]
+        "primary": ["@color-hc-PlaceholderColor", "@color-hc-PlaceholderColor"],
+        "secondary": ["@color-hc-PlaceholderColor", "@color-hc-PlaceholderColor"]
       },
       "onboarding": {
-        "primary": ["PlaceholderColor", "PlaceholderColor"],
-        "secondary": ["PlaceholderColor", "PlaceholderColor"],
-        "tertiary": ["PlaceholderColor", "PlaceholderColor"],
-        "quartenary": ["PlaceholderColor", "PlaceholderColor"],
-        "quinary": ["PlaceholderColor", "PlaceholderColor"]
+        "primary": ["@color-hc-PlaceholderColor", "@color-hc-PlaceholderColor"],
+        "secondary": ["@color-hc-PlaceholderColor", "@color-hc-PlaceholderColor"],
+        "tertiary": ["@color-hc-PlaceholderColor", "@color-hc-PlaceholderColor"],
+        "quartenary": ["@color-hc-PlaceholderColor", "@color-hc-PlaceholderColor"],
+        "quinary": ["@color-hc-PlaceholderColor", "@color-hc-PlaceholderColor"]
       },
-      "success": ["PlaceholderColor", "PlaceholderColor"],
-      "error": ["PlaceholderColor", "PlaceholderColor"],
+      "success": ["@color-hc-PlaceholderColor", "@color-hc-PlaceholderColor"],
+      "error": ["@color-hc-PlaceholderColor", "@color-hc-PlaceholderColor"],
       "default": "@color-hc-PlaceholderColor"
     },
     "globaltint": {
