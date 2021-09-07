@@ -443,13 +443,13 @@ if (args.toStdOut) {
 }
 
 if (Object.keys(args).length !== 0) {
-  target.themes = args;
+  target.themes = Object.keys(args);
 }
 
 if (target.themes.length === 0) {
   console.log(`Usage: ${process.argv[1]} [OPTION]... [THEME FILE]...`);
   console.log("Options");
-  console.log("  --target=TARGET FILE        file defining all properties of the build.");
+  console.log("  --target=TARGETFILE        file defining all properties of the build.");
   console.log("  --colorFormat=[hex|rgba]    What color format to use in the output.");
   console.log("       rgba   -> rgba(244,233,20,0.8)");
   console.log('       object -> { "r": 244, "g": 233, "b": 20, "a": 0.8 }');
