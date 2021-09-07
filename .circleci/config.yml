@@ -22,8 +22,8 @@ jobs:
             - v1-dependencies-
       - run: npm install
       - run:
-          name: Build the tokens
-          command: npm run build:css
+          name: Build all the platform tokens
+          command: npm run test
       - save_cache:
           paths:
             - node_modules
@@ -38,7 +38,7 @@ jobs:
           at: ~/repo
       - run:
           name: Build the tokens
-          command: npm run build:css
+          command: npm run build:web
       - run:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/repo/.npmrc
