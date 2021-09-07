@@ -157,11 +157,11 @@ function normaliseUnit(value) {
       process.exit(1);
     }
     c.alpha = c.alpha * alpha;
-    if (colorFormat === "rgba") {
+    if (target.colorFormat === "rgba") {
       return `rgba(${c.values[0]}, ${c.values[1]}, ${c.values[2]}, ${c.alpha})`;
-    } else if (colorFormat === "object") {
+    } else if (target.colorFormat === "object") {
       return { r: c.values[0], g: c.values[1], b: c.values[2], a: c.alpha };
-    } else if (colorFormat === "hex") {
+    } else if (target.colorFormat === "hex") {
       r = c.values[0].toString(16).padStart(2, "0");
       g = c.values[1].toString(16).padStart(2, "0");
       b = c.values[2].toString(16).padStart(2, "0");
@@ -191,11 +191,11 @@ function normaliseUnit(value) {
       console.error("Unable to parse size: " + value);
       process.exit(1);
     }
-    if (sizeUnit === "px") {
+    if (target.sizeUnit === "px") {
       return pxSize + "px";
-    } else if (sizeUnit === "pt") {
+    } else if (target.sizeUnit === "pt") {
       return pxSize * 0.75 + "pt";
-    } else if (sizeUnit === "rem") {
+    } else if (target.sizeUnit === "rem") {
       return pxSize / 16 + "rem";
     }
   }
@@ -273,7 +273,7 @@ function fixBorders(tokens) {
   if (typeof tokens === "object") {
     Object.entries(tokens).forEach(([key, value]) => {
       if (key === "border") {
-        if (noBorderIsBackgroundColour) {
+        if (target.noBorderIsBackgroundColour) {
           Object.entries(value).forEach(([borderKey, borderValue]) => {
             if (borderValue === "none") {
               tokens["border"][borderKey] = tokens["background"][borderKey];
@@ -315,7 +315,7 @@ function finaliseTokens(tokens) {
       }
     }
     const baseKeyName = keyParts.join("-");
-    if (uiStatesAsObject) {
+    if (target.uiStatesAsObject) {
       if (!(baseKeyName in finalisedTokens)) {
         finalisedTokens[baseKeyName] = {};
       }
@@ -339,69 +339,50 @@ function normaliseUnits(tokens) {
   return normalisedTokens;
 }
 
-let platform = "web";
-if (args.platform) {
-  platform = args.platform;
-  delete args.platform;
+let target = {
+  platform: "web",
+  colorFormat: "rgba",
+  sizeUnit: "px",
+  componentGroups: false,
+  fileFormat: "json",
+  includeJsonHeader: false,
+  includeMobileTokens: false,
+  includeDesktopTokens:false,
+  uiStatesAsObject: true,
+  omitThemeTokens: false,
+  /* if true we use the background colour as the value of the border if border=none
+  * if false, we instead modify to a border-style and border-color variables
+  */
+  noBorderIsBackgroundColour: true,
+  themes:[]
+};
+
+if (args.target) {
+  console.log("Loading target " + args.target);
+  let targetFile;
+  try {
+    target = JSON.parse(fs.readFileSync(args.target));
+  } catch (error) {
+    console.error(error);
+    process.exit(1);
+  }
+  delete args.target;
 }
 
-let colorFormat = "rgba";
-let sizeUnit = "px";
-let componentGroups = false;
-let fileFormat = "json";
-let includeJsonHeader = false;
-let includeMobileTokens = false;
-let includeDesktopTokens = false;
-let uiStatesAsObject = true;
-let omitThemeTokens = false;
-/* if true we use the background colour as the value of the border if border=none
- * if false, we instead modify to a border-style and border-color variables
- */
-let noBorderIsBackgroundColour = true;
-
-console.log("Setting up for platform: " + platform);
-if (platform === "web") {
-  colorFormat = "rgba";
-  sizeUnit = "rem";
-  fileFormat = "css";
-  includeDesktopTokens = true;
-} else if (platform === "qt") {
-  colorFormat = "object";
-  sizeUnit = "px";
-  includeDesktopTokens = true;
-  fileFormat = "json";
-  includeJsonHeader = true;
-} else if (platform === "macos") {
-  colorFormat = "object";
-  sizeUnit = "px";
-  includeDesktopTokens = true;
-  fileFormat = "json";
-  includeJsonHeader = true;
-} else if (platform === "android") {
-  colorFormat = "names";
-  componentGroups = true;
-  includeMobileTokens = true;
-  uiStatesAsObject = false;
-} else if (platform === "ios") {
-  colorFormat = "names";
-  sizeUnit = "pt";
-  componentGroups = true;
-  includeMobileTokens = true;
-  uiStatesAsObject = false;
-} else {
-  console.error("Unknown platform: " + platform);
-  process.exit(1);
+if (args.platform) {
+  target.platform = args.platform;
+  delete args.platform;
 }
 
 if (args.colorFormat) {
   if (args.colorFormat === "hex") {
-    colorFormat = "hex";
+    target.colorFormat = "hex";
   } else if (args.colorFormat === "rgba") {
-    colorFormat = "rgba";
+    target.colorFormat = "rgba";
   } else if (args.colorFormat === "object") {
-    colorFormat = "object";
+    target.colorFormat = "object";
   } else if (args.colorFormat === "names") {
-    colorFormat = "names";
+    target.colorFormat = "names";
   } else {
     console.error("Unknown color format: " + args.colorFormat);
     process.exit(1);
@@ -411,11 +392,11 @@ if (args.colorFormat) {
 
 if (args.sizeUnit) {
   if (args.sizeUnit === "px") {
-    sizeUnit = "px";
+    target.sizeUnit = "px";
   } else if (args.sizeUnit === "pt") {
-    sizeUnit = "pt";
+    target.sizeUnit = "pt";
   } else if (args.sizeUnit === "rem") {
-    sizeUnit = "rem";
+    target.sizeUnit = "rem";
   } else {
     console.error("Unknown size unit: " + args.sizeUnit);
     process.exit(1);
@@ -424,20 +405,20 @@ if (args.sizeUnit) {
 }
 
 if (args.componentGroups) {
-  componentGroups = true;
+  target.componentGroups = true;
   delete args.componentGroups;
 }
 
 if (args.omitThemeTokens) {
-  omitThemeTokens = args.omitThemeTokens;
+  target.omitThemeTokens = args.omitThemeTokens;
   delete args.omitThemeTokens;
 }
 
 if (args.fileFormat) {
   if (args.fileFormat === "css") {
-    fileFormat = "css";
+    target.fileFormat = "css";
   } else if (args.fileFormat === "json") {
-    fileFormat = "json";
+    target.fileFormat = "json";
   } else {
     console.error("Unknown file format: " + args.fileFormat);
     process.exit(1);
@@ -445,14 +426,15 @@ if (args.fileFormat) {
   delete args.fileFormat;
 }
 
-if (fileFormat === "css") {
-  uiStatesAsObject = false; // Can't have objects in CSS
+if (target.fileFormat === "css") {
+  target.uiStatesAsObject = false; // Can't have objects in CSS
 }
 
-console.log("Using colorFormat " + colorFormat);
-console.log("Using sizeUnit " + sizeUnit);
-console.log("Using componentGroups " + componentGroups);
-console.log("Using fileFormat " + fileFormat);
+console.log("Using platform " + target.platform);
+console.log("Using colorFormat " + target.colorFormat);
+console.log("Using sizeUnit " + target.sizeUnit);
+console.log("Using componentGroups " + target.componentGroups);
+console.log("Using fileFormat " + target.fileFormat);
 
 let toStdOut = false;
 if (args.toStdOut) {
@@ -460,9 +442,14 @@ if (args.toStdOut) {
   delete args.toStdOut;
 }
 
-if (Object.keys(args).length === 0) {
+if (Object.keys(args).length !== 0) {
+  target.themes = args;
+}
+
+if (target.themes.length === 0) {
   console.log(`Usage: ${process.argv[1]} [OPTION]... [THEME FILE]...`);
   console.log("Options");
+  console.log("  --target=TARGET FILE        file defining all properties of the build.");
   console.log("  --colorFormat=[hex|rgba]    What color format to use in the output.");
   console.log("       rgba   -> rgba(244,233,20,0.8)");
   console.log('       object -> { "r": 244, "g": 233, "b": 20, "a": 0.8 }');
@@ -488,7 +475,7 @@ if (Object.keys(args).length === 0) {
 // Start by loading all the token files
 console.log("=== Loading core files ===================");
 let coreTokens = loadFile("core", true);
-if (colorFormat === "names") {
+if (target.colorFormat === "names") {
   useColourNames(coreTokens);
 }
 
@@ -501,18 +488,18 @@ console.log("=== Core files loaded ====================");
 console.log("=== Loading component files ==============");
 let componentData = loadFile("components", true);
 try {
-  merge(componentData, loadFile("platformcomponents/" + platform, true));
+  merge(componentData, loadFile("platformcomponents/" + target.platform, true));
 } catch (error) {
-  console.log("No platform component tokens for " + platform);
+  console.log("No platform component tokens for " + target.platform);
 }
-if (includeMobileTokens) {
+if (target.includeMobileTokens) {
   try {
     merge(componentData, loadFile("platformcomponents/mobile", true));
   } catch (error) {
     console.log("No platform component tokens for mobile");
   }
 }
-if (includeDesktopTokens) {
+if (target.includeDesktopTokens) {
   try {
     merge(componentData, loadFile("platformcomponents/desktop", true));
   } catch (error) {
@@ -527,13 +514,13 @@ console.log("=== Component files loaded =================");
 
 const indexFileData = [];
 
-Object.keys(args).forEach((themeFileName) => {
+target.themes.forEach((themeFileName) => {
   console.log("=== Processing theme =====================");
 
   // Load all the files to build one big object
   let themeFileData = fs.readFileSync(themeFileName);
   let themeFile = JSON.parse(themeFileData);
-  console.log(`Loading theme ${themeFile.accent} ${themeFile.theme} for platform ${platform} using color format ${colorFormat}`);
+  console.log(`Loading theme ${themeFile.accent} ${themeFile.theme} for platform ${target.platform} using color format ${target.colorFormat}`);
 
   const themeData = {};
   themeFile.files.forEach((fileName) => {
@@ -563,7 +550,7 @@ Object.keys(args).forEach((themeFileName) => {
 
   // Flatten the token names and then expand every token into UI states
   let stateTokens = {};
-  if (componentGroups) {
+  if (target.componentGroups) {
     const flattenedTokens = {};
     Object.entries(resolvedComponentData).forEach(([key, value]) => {
       const categoryFlattenedTokens = {};
@@ -576,8 +563,8 @@ Object.keys(args).forEach((themeFileName) => {
     stateTokens = finaliseTokens(normaliseUnits(flattenedTokens));
   }
 
-  if (!omitThemeTokens) {
-    if (componentGroups) {
+  if (!target.omitThemeTokens) {
+    if (target.componentGroups) {
       stateTokens["theme"] = {};
       Object.entries(resolvedThemeData["theme"]).forEach(([key, value]) => {
         const categoryFlattenedTokens = {};
@@ -595,7 +582,7 @@ Object.keys(args).forEach((themeFileName) => {
 
   fs.mkdir("dist", (err) => {});
   let outputFileName = "";
-  if (fileFormat === "css") {
+  if (target.fileFormat === "css") {
     const outputName = camelCase(themeFile.theme + themeFile.accent);
     indexFileData.push(`@import '${outputName}.css';`);
     outputFileName = path.join("dist", outputName + ".css");
@@ -615,11 +602,11 @@ Object.keys(args).forEach((themeFileName) => {
       outputLine("  --" + key + ": " + value + ";");
     });
     outputLine("}");
-  } else if (fileFormat === "json") {
-    if (includeJsonHeader) {
+  } else if (target.fileFormat === "json") {
+    if (target.includeJsonHeader) {
       stateTokens = { name: "Momentum" + themeFile.accent + themeFile.theme, parent: themeFile.accent + themeFile.theme, tokens: stateTokens };
     }
-    if (platform === "macos" || platform === "qt") {
+    if (target.platform === "macos" || target.platform === "qt") {
       outputFileName = path.join("dist", camelCase("momentum" + themeFile.accent + themeFile.theme) + ".json");
     } else {
       outputFileName = path.join("dist", camelCase(themeFile.accent + themeFile.theme) + ".json");
@@ -641,7 +628,7 @@ Object.keys(args).forEach((themeFileName) => {
   console.log("=== Theme processed ======================");
 });
 
-if (fileFormat === "css") {
+if (target.fileFormat === "css") {
   const indexFileContent = indexFileData.join("\n");
   const indexFileName = path.join("dist", "index.css");
 
