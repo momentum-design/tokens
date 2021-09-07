@@ -8,7 +8,7 @@
             "badge": "@theme-presence-doNotDisturb"
         },
         "#pressed": {
-            "background": "@theme-globaltint-pressed"",
+            "background": "@theme-globaltint-pressed",
             "text": "@theme-text-button-normal",
             "border": "none",
             "badge": "@theme-presence-doNotDisturb"
