@@ -303,9 +303,9 @@
     },
     "presence": {
       "busy": "@color-yellow-40",
-      "doNotDisturb": "@color-red-60",
-      "active": "@color-green-50",
-      "away": "@color-gray-30"
+      "doNotDisturb": "@color-red-40",
+      "active": "@color-green-40",
+      "away": "@color-gray-40"
     },
     "whiteboard": {
       "stickyNote": {
