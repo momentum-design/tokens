@@ -1,0 +1,25 @@
+{
+  "button": {
+    "comment": "iOS specific button styles",
+    "figma": "https://www.figma.com/file/L67wWWZaXcvVOLEpn77adE/Components---iOS?node-id=2741%3A6797",
+    "ghost": {
+      "#normal": {
+        "background": "@theme-button-secondary-normal",
+        "text": "@theme-globaltint-normal",
+        "border": "none"
+      },
+      "#hovered": {
+        "background": "@theme-button-secondary-hover",
+        "text": "@theme-globaltint-normal"
+      },
+      "#pressed": {
+        "background": "@theme-globaltint-selected",
+        "text": "@theme-text-primary-normal"
+      },
+      "#disabled": {
+        "background": "@theme-button-primary-disabled",
+        "text": "@theme-text-primary-disabled"
+      }
+    }
+  }
+}

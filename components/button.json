@@ -43,25 +43,6 @@
         "border": "@theme-outline-disabled-normal"
       }
     },
-    "ghost": {
-      "#normal": {
-        "background": "@theme-button-secondary-normal",
-        "text": "@theme-text-primary-normal",
-        "border": "@theme-button-border-normal"
-      },
-      "#hovered": {
-        "background": "@theme-button-secondary-hover",
-        "text": "@theme-text-primary-normal"
-      },
-      "#pressed": {
-        "background": "@theme-button-secondary-pressed",
-        "text": "@theme-text-primary-normal"
-      },
-      "#disabled": {
-        "background": "@theme-button-primary-disabled",
-        "text": "@theme-text-primary-disabled"
-      }
-    },
     "cancel-ghost": {
       "#normal": {
         "background": "@theme-button-secondary-normal",
