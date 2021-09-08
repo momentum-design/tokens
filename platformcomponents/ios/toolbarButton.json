@@ -4,11 +4,11 @@
         "#normal": {
             "background": "@theme-button-secondary-normal",
             "text": "@theme-globaltint-normal",
-            "border": "@theme-global-tint-normal",
+            "border": "@theme-globaltint-normal",
             "badge": "@theme-presence-doNotDisturb"
         },
         "#pressed": {
-            "background": "@theme-globaltint-pressed",
+            "background": "@theme-globaltint-selected",
             "text": "@theme-text-button-normal",
             "border": "none",
             "badge": "@theme-presence-doNotDisturb"

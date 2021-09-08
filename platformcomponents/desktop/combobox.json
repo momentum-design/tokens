@@ -31,7 +31,7 @@
     "#disabled": {
       "background": "@theme-background-primary-disabled",
       "text": "@theme-text-primary-disabled",
-      "border": "none"
+      "border": "@theme-button-border-normal"
     }
   }
 }

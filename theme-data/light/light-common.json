@@ -197,6 +197,9 @@
       "secondary": "@color-black-alpha-40"
     },
     "button": {
+      "border": {
+        "normal": "none"
+      },
       "primary": {
         "normal": "@color-black-alpha-95",
         "hover": "@color-black-alpha-80",
@@ -235,6 +238,9 @@
       }
     },
     "outline": {
+      "border": {
+        "normal": "none"
+      },
       "primary": {
         "normal": "@color-black-alpha-40"
       },
