@@ -2,6 +2,7 @@
   "accent": "Lavender",
   "theme": "Dark",
   "files": [
+    "theme-data/common/common.json",
     "theme-data/dark/dark-common.json",
     "theme-data/dark/dark-lavender.json"
   ]

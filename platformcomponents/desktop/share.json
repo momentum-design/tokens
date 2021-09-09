@@ -1,5 +1,5 @@
 {
-  "share-window": {
+  "sharewindow": {
     "comment": "Applied to share window",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=9532%3A17790",
 
@@ -14,6 +14,79 @@
         "selected": "@theme-outline-share-selected",
         "active": "@theme-outline-share-active",
         "inactive": "@theme-outline-share-inactive"
+      }
+    },
+    "control": {
+      "text": {
+        "primary": "@theme-text-share-primary-normal"
+      },
+      "button": {
+        "primary": {
+          "#normal": {
+            "background": "@theme-button-share-primary-normal",
+            "text": "@theme-text-share-inverted-normal",
+            "border": "@theme-button-border-normal"
+          },
+          "#hovered": {
+            "background": "@theme-button-share-primary-hover",
+            "text": "@theme-text-share-inverted-normal",
+            "border": "@theme-button-border-normal"
+          },
+          "#pressed": {
+            "background": "@theme-button-share-primary-pressed",
+            "text": "@theme-text-share-inverted-normal",
+            "border": "@theme-button-border-normal"
+          },
+          "#disabled": {
+            "background": "@theme-button-share-primary-pressed",
+            "text": "@theme-text-share-inverted-disabled",
+            "border": "@theme-button-border-normal"
+          }
+        },
+        "secondary": {
+          "#normal": {
+            "background": "@theme-button-share-secondary-normal",
+            "text": "@theme-text-share-primary-normal",
+            "border": "@theme-outline-buttonshare-normal"
+          },
+          "#hovered": {
+            "background": "@theme-button-share-secondary-hover",
+            "text": "@theme-text-share-primary-normal",
+            "border": "@theme-outline-buttonshare-normal"
+          },
+          "#pressed": {
+            "background": "@theme-button-share-secondary-pressed",
+            "text": "@theme-text-share-primary-normal",
+            "border": "@theme-outline-buttonshare-normal"
+          },
+          "#disabled": {
+            "background": "@theme-button-share-secondary-pressed",
+            "text": "@theme-text-share-primary-disabled",
+            "border": "@theme-outline-buttonshare-normal"
+          }
+        },
+        "active": {
+          "#normal": {
+            "background": "@theme-button-share-active-normal",
+            "text": "@theme-text-share-primary-normal",
+            "border": "@theme-outline-buttonshare-normal"
+          },
+          "#hovered": {
+            "background": "@theme-button-share-active-hover",
+            "text": "@theme-text-share-primary-normal",
+            "border": "@theme-outline-buttonshare-normal"
+          },
+          "#pressed": {
+            "background": "@theme-button-share-active-pressed",
+            "text": "@theme-text-share-primary-normal",
+            "border": "@theme-outline-buttonshare-normal"
+          },
+          "#disabled": {
+            "background": "@theme-button-share-active-pressed",
+            "text": "@theme-text-share-primary-disabled",
+            "border": "@theme-outline-buttonshare-normal"
+          }
+        }
       }
     }
   }

@@ -1,0 +1,49 @@
+{
+  "theme": {
+    "text": {
+      "button": {
+        "normal": "@color-white-alpha-100"
+      },
+      "share": {
+        "primary": {
+          "normal": "@color-white-alpha-100",
+          "disabled": "@color-white-alpha-40"
+        },
+        "inverted": {
+          "normal": "@color-black-alpha-100",
+          "disabled": "@color-black-alpha-40"
+        }
+      }
+    },
+    "control": {
+      "shareContent": {
+        "active": "@color-orange-60",
+        "inactive": "@color-gray-60"
+      }
+    },
+    "button": {
+      "share": {
+        "primary": {
+          "normal": "@color-white-alpha-95",
+          "hover": "@color-white-alpha-80",
+          "pressed": "@color-white-alpha-70"
+        },
+        "secondary": {
+          "normal": "@color-white-alpha-00",
+          "hover": "@color-white-alpha-07",
+          "pressed": "@color-white-alpha-20"
+        },
+        "active": {
+          "normal": "@color-white-alpha-20",
+          "hover": "@color-white-alpha-30",
+          "pressed": "@color-white-alpha-40"
+        }
+      }
+    },
+    "outline": {
+      "buttonshare": {
+        "normal": "@color-white-alpha-30"
+      }
+    }
+  }
+}

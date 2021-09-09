@@ -34,6 +34,16 @@
         "hover": "@color-hc-PlaceholderColor",
         "active": "@color-hc-PlaceholderColor"
       },
+      "share": {
+        "primary": {
+          "normal": "@color-hc-SystemColorWindowTextColor",
+          "disabled": "@color-hc-SystemColorGrayTextColor"
+        },
+        "inverted": {
+          "normal": "@color-hc-SystemColorWindowTextColor",
+          "disabled": "@color-hc-SystemColorGrayTextColor"
+        }
+      },
       "team": {
         "default": {
           "normal": "@color-hc-SystemColorWindowTextColor",
@@ -235,6 +245,23 @@
         "normal": "@color-hc-SystemColorButtonFaceColor",
         "hover": "@color-hc-SystemColorHighlightColor",
         "pressed": "@color-hc-SystemColorHighlightColor"
+      },
+      "share": {
+        "primary": {
+          "normal": "@color-hc-SystemColorButtonFaceColor",
+          "hover": "@color-hc-SystemColorHighlightColor",
+          "pressed": "@color-hc-SystemColorHighlightColor"
+        },
+        "secondary": {
+          "normal": "@color-hc-SystemColorButtonFaceColor",
+          "hover": "@color-hc-SystemColorHighlightColor",
+          "pressed": "@color-hc-SystemColorHighlightColor"
+        },
+        "active": {
+          "normal": "@color-hc-SystemColorButtonFaceColor",
+          "hover": "@color-hc-SystemColorHighlightColor",
+          "pressed": "@color-hc-SystemColorHighlightColor"
+        }
       }
     },
     "outline": {
@@ -270,6 +297,9 @@
         "selected": "@color-hc-PlaceholderColor",
         "active": "@color-hc-PlaceholderColor",
         "inactive": "@color-hc-PlaceholderColor"
+      },
+      "buttonshare": {
+        "normal": "@color-hc-PlaceholderColor"
       },
       "label": {
         "cobalt": "@color-hc-PlaceholderColor",
