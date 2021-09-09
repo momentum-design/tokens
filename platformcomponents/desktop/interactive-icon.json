@@ -22,16 +22,20 @@
     },    
     "settings": {
       "#normal": {        
-        "icon": "@theme-text-primary-normal"        
+        "icon-inactive": "@theme-text-primary-normal",
+        "icon-active": "@theme-text-primary-normal"
       },
       "#hovered": {        
-        "icon": "@theme-text-primary-normal"
+        "icon-inactive": "@theme-text-primary-normal",
+        "icon-active": "@theme-text-primary-normal"
       },
       "#pressed": {        
-        "icon": "@theme-text-primary-normal"
+        "icon-inactive": "@theme-text-primary-normal",
+        "icon-active": "@theme-text-primary-normal"
       },
       "#disabled": {        
-        "icon": "@theme-text-primary-disabled"
+        "icon-inactive": "@theme-text-primary-disabled",
+        "icon-active": "@theme-text-primary-disabled"
       }      
     },
     "attachment": {
@@ -54,16 +58,20 @@
     },    
     "flag":{
       "#normal": {        
-        "icon": "@theme-text-primary-normal"        
+        "icon-inactive": "@theme-text-primary-normal",
+        "icon-active": "@theme-text-primary-normal"
       },
       "#hovered": {        
-        "icon": "@theme-text-primary-normal"
+        "icon-inactive": "@theme-text-primary-normal",
+        "icon-active": "@theme-text-primary-normal"
       },
       "#pressed": {        
-        "icon": "@theme-text-primary-normal"
+        "icon-inactive": "@theme-text-primary-normal",
+        "icon-active": "@theme-text-primary-normal"
       },
       "#disabled": {        
-        "icon": "@theme-text-primary-disabled"
+        "icon-inactive": "@theme-text-primary-disabled",
+        "icon-active": "@theme-text-primary-normal"
       }
     },
     "container": {
