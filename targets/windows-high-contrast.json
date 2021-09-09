@@ -9,5 +9,6 @@
   "includeDesktopTokens": true,
   "uiStatesAsObject": true,
   "omitThemeTokens": false,
+  "noBorderIsBackgroundColour": true,
   "themes": ["themes/theme-win-system-hc-webex.json"]
 }

@@ -9,6 +9,7 @@
   "includeDesktopTokens": true,
   "uiStatesAsObject": true,
   "omitThemeTokens": false,
+  "noBorderIsBackgroundColour": true,
   "themes": ["themes/theme-dark-bronze.json",
              "themes/theme-dark-jade.json",
              "themes/theme-dark-rose.json",
