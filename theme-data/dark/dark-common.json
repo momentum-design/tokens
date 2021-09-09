@@ -197,6 +197,9 @@
       "secondary": "@color-black-alpha-40"
     },
     "button": {
+      "border": {
+        "normal": "none"
+      },
       "primary": {
         "normal": "@color-white-alpha-95",
         "hover": "@color-white-alpha-80",

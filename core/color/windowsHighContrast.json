@@ -1,0 +1,23 @@
+{
+  "color": {
+    "hc": {
+      "SystemColorWindowTextColor": "#FFFFFF",
+      "SystemColorHotlightColor": "rgba(255, 255, 255, 0)",
+      "SystemColorGrayTextColor": "#3FF23F",
+      "SystemColorHighlightTextColor": "#000000",
+      "SystemColorHighlightColor": "#1AEBFF",
+      "SystemColorButtonTextColor": "#FFFFFF",
+      "SystemColorButtonFaceColor": "#000000",
+      "SystemColorWindowColor": "'#000000",
+      "WindowTextColor": "#FFFFFF",
+      "HotlightColor": "rgba(255, 255, 255, 0)",
+      "GrayTextColor": "#3FF23F",
+      "HighlightTextColor": "#000000",
+      "HighlightColor": "#1AEBFF",
+      "ButtonTextColor": "#FFFFFF",
+      "ButtonFaceColor": "#000000",
+      "WindowColor": "#000000",
+      "PlaceholderColor": "rgba(255, 255, 255, 0)"
+    }
+  }
+}
