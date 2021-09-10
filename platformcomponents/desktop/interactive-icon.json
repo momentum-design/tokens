@@ -84,7 +84,7 @@
       "#pressed": {
         "background": "@theme-button-secondary-pressed"
       },
-      "disabled":{
+      "#disabled":{
         "background": "@theme-button-secondary-normal"
       }
     }
