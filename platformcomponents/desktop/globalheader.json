@@ -45,8 +45,8 @@
           "#active":"@theme-button-secondary-pressed"
         },
         "text":{
-          "#normal":"@theme-text-secondary-normal",            
-          "#active":"@theme-text-primary-normal"
+          "#normal":"@theme-text-primary-normal",            
+          "#active":"@theme-text-accent-normal"
         }
     },
     "buttonIcon":{
