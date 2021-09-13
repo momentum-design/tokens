@@ -87,6 +87,10 @@
     },
     "container": {
       "background": "@theme-background-primary-ghost"
+    },
+    "modifierChip":{      
+      "background": "@theme-button-primary-normal",
+      "text": "@theme-text-primary-inverted"
     }
   }
 }
