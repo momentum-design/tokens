@@ -3,16 +3,22 @@
     "comment": "Applied to Menu List Background",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4518%3A11772",
     "primary": {
-      "background": "@theme-background-solid-primary-normal",
-      "border": "@theme-outline-secondary-normal"
+      "#normal": {
+        "background": "@theme-background-solid-primary-normal",
+        "border": "@theme-outline-secondary-normal"
+      }
     },
     "secondary": {
-      "background": "@theme-background-solid-secondary-normal",
-      "border": "@theme-outline-secondary-normal"
+      "#normal": {
+        "background": "@theme-background-solid-secondary-normal",
+        "border": "@theme-outline-secondary-normal"
+      }
     },
     "tertiary": {
-      "background": "@theme-background-solid-tertiary-normal",
-      "border": "@theme-outline-secondary-normal"
+      "#normal": {
+        "background": "@theme-background-solid-tertiary-normal",
+        "border": "@theme-outline-secondary-normal"
+      }
     }
   }
 }
