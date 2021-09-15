@@ -8,7 +8,7 @@
         },
         "#hovered":{
           "background": "@theme-button-secondary-hover",
-          "text": "@theme-text-primary-inverted",
+          "text": "@theme-text-primary-normal",
           "icon-color": "@theme-globaltint-normal"
         },
         "#pressed":{
