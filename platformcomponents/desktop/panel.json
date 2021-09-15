@@ -1,6 +1,6 @@
 {
   "panel": {
-    "comment": "Used for graident backgrounds on Desktop (parsing logic requires at least 1 normal UI state)",
+    "comment": "Panels with different bg colors",
     "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=7813%3A33099",
     "primary": {
       "#normal": {
