@@ -20,6 +20,20 @@
         "background": "@theme-button-primary-disabled",
         "text": "@theme-text-primary-disabled"
       }
+    },
+    "toolbar": {
+      "#normal": {
+        "background": "@theme-button-secondary-normal",
+        "text": "@theme-globaltint-normal",
+        "border": "@theme-globaltint-normal",
+        "badge": "@theme-presence-doNotDisturb"
+      },
+      "#pressed": {
+        "background": "@theme-globaltint-selected",
+        "text": "@theme-text-button-normal",
+        "border": "none",
+        "badge": "@theme-presence-doNotDisturb"
+      }
     }
   }
 }
