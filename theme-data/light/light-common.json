@@ -38,42 +38,52 @@
         },
         "cobalt": {
           "normal": "@color-cobalt-70",
+          "hover": "@color-cobalt-70",
           "active": "@color-cobalt-90"
         },
         "cyan": {
           "normal": "@color-cyan-70",
+          "hover": "@color-cyan-70",
           "active": "@color-cyan-90"
         },
         "mint": {
           "normal": "@color-mint-70",
+          "hover": "@color-mint-70",
           "active": "@color-mint-90"
         },
         "lime": {
           "normal": "@color-lime-70",
+          "hover": "@color-lime-70",
           "active": "@color-lime-90"
         },
         "gold": {
           "normal": "@color-gold-70",
+          "hover": "@color-gold-70",
           "active": "@color-gold-90"
         },
         "orange": {
           "normal": "@color-orange-70",
+          "hover": "@color-orange-70",
           "active": "@color-orange-90"
         },
         "pink": {
           "normal": "@color-pink-70",
+          "hover": "@color-pink-70",
           "active": "@color-pink-90"
         },
         "purple": {
           "normal": "@color-purple-70",
+          "hover": "@color-purple-70",
           "active": "@color-purple-90"
         },
         "violet": {
           "normal": "@color-violet-70",
+          "hover": "@color-violet-70",
           "active": "@color-violet-90"
         },
         "slate": {
           "normal": "@color-slate-70",
+          "hover": "@color-slate-70",
           "active": "@color-slate-90"
         }
       }
