@@ -39,59 +39,54 @@
       "#pressed": "@theme-text-success-active"
     },
     "orange": {
-      "#normal": "@theme-background-tab-orange-normal",
-      "#hovered": "@theme-background-tab-orange-active",
-      "#pressed": "@theme-background-tab-orange-active"
+      "#normal": "@theme-text-team-orange-normal",
+      "#hovered": "@theme-text-team-orange-hover",
+      "#pressed": "@theme-text-team-orange-active"
     },
     "gold": {
-      "#normal": "@theme-background-tab-gold-normal",
-      "#hovered": "@theme-background-tab-gold-active",
-      "#pressed": "@theme-background-tab-gold-active"
-    },
-    "olive": {
-      "#normal": "@theme-background-tab-olive-normal",
-      "#hovered": "@theme-background-tab-olive-active",
-      "#pressed": "@theme-background-tab-olive-active"
+      "#normal": "@theme-text-team-gold-normal",
+      "#hovered": "@theme-text-team-gold-hover",
+      "#pressed": "@theme-text-team-gold-active"
     },
     "lime": {
-      "#normal": "@theme-background-tab-lime-normal",
-      "#hovered": "@theme-background-tab-lime-active",
-      "#pressed": "@theme-background-tab-lime-active"
+      "#normal": "@theme-text-team-lime-normal",
+      "#hovered": "@theme-text-team-lime-hover",
+      "#pressed": "@theme-text-team-lime-active"
     },
     "mint": {
-      "#normal": "@theme-background-tab-mint-normal",
-      "#hovered": "@theme-background-tab-mint-active",
-      "#pressed": "@theme-background-tab-mint-active"
+      "#normal": "@theme-text-team-mint-normal",
+      "#hovered": "@theme-text-team-mint-hover",
+      "#pressed": "@theme-text-team-mint-active"
     },
     "cyan": {
-      "#normal": "@theme-background-tab-cyan-normal",
-      "#hovered": "@theme-background-tab-cyan-active",
-      "#pressed": "@theme-background-tab-cyan-active"
+      "#normal": "@theme-text-team-cyan-normal",
+      "#hovered": "@theme-text-team-cyan-hover",
+      "#pressed": "@theme-text-team-cyan-active"
     },
     "pink": {
-      "#normal": "@theme-background-tab-pink-normal",
-      "#hovered": "@theme-background-tab-pink-active",
-      "#pressed": "@theme-background-tab-pink-active"
+      "#normal": "@theme-text-team-pink-normal",
+      "#hovered": "@theme-text-team-pink-hover",
+      "#pressed": "@theme-text-team-pink-active"
     },
     "slate": {
-      "#normal": "@theme-background-tab-slate-normal",
-      "#hovered": "@theme-background-tab-slate-active",
-      "#pressed": "@theme-background-tab-slate-active"
+      "#normal": "@theme-text-team-slate-normal",
+      "#hovered": "@theme-text-team-slate-hover",
+      "#pressed": "@theme-text-team-slate-active"
     },
     "violet": {
-      "#normal": "@theme-background-tab-violet-normal",
-      "#hovered": "@theme-background-tab-violet-active",
-      "#pressed": "@theme-background-tab-violet-active"
+      "#normal": "@theme-text-team-violet-normal",
+      "#hovered": "@theme-text-team-violet-hover",
+      "#pressed": "@theme-text-team-violet-active"
     },
     "cobalt": {
-      "#normal": "@theme-background-tab-cobalt-normal",
-      "#hovered": "@theme-background-tab-cobalt-active",
-      "#pressed": "@theme-background-tab-cobalt-active"
+      "#normal": "@theme-text-team-cobalt-normal",
+      "#hovered": "@theme-text-team-cobalt-hover",
+      "#pressed": "@theme-text-team-cobalt-active"
     },
     "purple": {
-      "#normal": "@theme-background-tab-purple-normal",
-      "#hovered": "@theme-background-tab-purple-active",
-      "#pressed": "@theme-background-tab-purple-active"
+      "#normal": "@theme-text-team-purple-normal",
+      "#hovered": "@theme-text-team-purple-hover",
+      "#pressed": "@theme-text-team-purple-active"
     }
   }
 }
