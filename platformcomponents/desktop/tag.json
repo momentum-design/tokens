@@ -1,7 +1,7 @@
 {
   "tag": {
-    "comment": "Applied to multiline modifier chips",
-    "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=2970%3A31",
+    "comment": "Applied to Tags",
+    "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=2925%3A17509",
     "static": {
       "background": "@theme-background-solid-primary-normal",
       "text":"@theme-text-primary-normal",
