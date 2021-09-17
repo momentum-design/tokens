@@ -3,7 +3,9 @@
     "color": "@color-hc-PlaceholderColor",
     "text": {
       "button": {
-        "normal": "@color-hc-SystemColorButtonTextColor"
+        "normal": "@color-hc-SystemColorButtonTextColor",
+        "black": "@color-hc-SystemColorWindowTextColor",
+        "white": "@color-hc-SystemColorWindowTextColor"
       },
       "primary": {
         "normal": "@color-hc-SystemColorWindowTextColor",

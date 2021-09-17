@@ -2,7 +2,9 @@
   "theme": {
     "text": {
       "button": {
-        "normal": "@color-white-alpha-100"
+        "normal": "@color-white-alpha-100",
+        "black": "@color-black-alpha-95",
+        "white": "@color-black-alpha-95"
       },
       "share": {
         "primary": {
