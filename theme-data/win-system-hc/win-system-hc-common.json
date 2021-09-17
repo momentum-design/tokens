@@ -51,42 +51,52 @@
         },
         "cobalt": {
           "normal": "@color-hc-SystemColorWindowTextColor",
+          "hover": "@color-hc-SystemColorWindowTextColor",
           "active": "@color-hc-SystemColorWindowTextColor"
         },
         "cyan": {
           "normal": "@color-hc-SystemColorWindowTextColor",
+          "hover": "@color-hc-SystemColorWindowTextColor",
           "active": "@color-hc-SystemColorWindowTextColor"
         },
         "mint": {
           "normal": "@color-hc-SystemColorWindowTextColor",
+          "hover": "@color-hc-SystemColorWindowTextColor",
           "active": "@color-hc-SystemColorWindowTextColor"
         },
         "lime": {
           "normal": "@color-hc-SystemColorWindowTextColor",
+          "hover": "@color-hc-SystemColorWindowTextColor",
           "active": "@color-hc-SystemColorWindowTextColor"
         },
         "gold": {
           "normal": "@color-hc-SystemColorWindowTextColor",
+          "hover": "@color-hc-SystemColorWindowTextColor",
           "active": "@color-hc-SystemColorWindowTextColor"
         },
         "orange": {
           "normal": "@color-hc-SystemColorWindowTextColor",
+          "hover": "@color-hc-SystemColorWindowTextColor",
           "active": "@color-hc-SystemColorWindowTextColor"
         },
         "pink": {
           "normal": "@color-hc-SystemColorWindowTextColor",
+          "hover": "@color-hc-SystemColorWindowTextColor",
           "active": "@color-hc-SystemColorWindowTextColor"
         },
         "purple": {
           "normal": "@color-hc-SystemColorWindowTextColor",
+          "hover": "@color-hc-SystemColorWindowTextColor",
           "active": "@color-hc-SystemColorWindowTextColor"
         },
         "violet": {
           "normal": "@color-hc-SystemColorWindowTextColor",
+          "hover": "@color-hc-SystemColorWindowTextColor",
           "active": "@color-hc-SystemColorWindowTextColor"
         },
         "slate": {
           "normal": "@color-hc-SystemColorWindowTextColor",
+          "hover": "@color-hc-SystemColorWindowTextColor",
           "active": "@color-hc-SystemColorWindowTextColor"
         }
       }

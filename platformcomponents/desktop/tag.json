@@ -1,0 +1,169 @@
+{
+  "tag": {
+    "comment": "Applied to Tags",
+    "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=2925%3A17509",
+    "static": {
+      "background": "@theme-background-solid-primary-normal",
+      "text":"@theme-text-primary-normal",
+      "border": "@theme-outline-primary-normal"
+    },
+    "overlay":{
+      "background": "@theme-background-common-normal",
+      "text": "@theme-text-primary-inverted",
+      "border": "@theme-outline-share-inactive"
+    },
+    "primary":{
+      "#normal": {
+        "background": "@theme-background-solid-tertiary-normal",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-primary-normal"
+      },
+      "#hovered": {
+        "background": "@theme-background-solid-secondary-normal",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-primary-normal"
+      },
+      "#pressed": {
+        "background": "@theme-background-solid-primary-normal",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-primary-normal"
+      }
+    }, 
+    "cobalt": {
+      "#normal": {
+        "background": "@theme-background-label-cobalt-normal",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-label-cobalt"
+      },
+      "#hovered": {
+        "background": "@theme-background-label-cobalt-hover",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-label-cobalt"
+      },
+      "#pressed": {
+        "background": "@theme-background-label-cobalt-active",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-label-cobalt"
+      }
+    },
+    "lime": {
+      "#normal": {
+        "background": "@theme-background-label-lime-normal",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-label-lime"
+      },
+      "#hovered": {
+        "background": "@theme-background-label-lime-hover",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-label-lime"
+      },
+      "#pressed": {
+        "background": "@theme-background-label-lime-active",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-label-lime"
+      }
+    },
+    "mint": {
+      "#normal": {
+        "background": "@theme-background-label-mint-normal",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-label-mint"
+      },
+      "#hovered": {
+        "background": "@theme-background-label-mint-hover",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-label-mint"
+      },
+      "#pressed": {
+        "background": "@theme-background-label-mint-active",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-label-mint"
+      }
+    },
+    "slate": {
+      "#normal": {
+        "background": "@theme-background-label-slate-normal",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-label-slate"
+      },
+      "#hovered": {
+        "background": "@theme-background-label-slate-hover",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-label-slate"
+      },
+      "#pressed": {
+        "background": "@theme-background-label-slate-active",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-label-slate"
+      }
+    },
+    "violet": {
+      "#normal": {
+        "background": "@theme-background-label-violet-normal",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-label-violet"
+      },
+      "#hovered": {
+        "background": "@theme-background-label-violet-hover",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-label-violet"
+      },
+      "#pressed": {
+        "background": "@theme-background-label-violet-active",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-label-violet"
+      }
+    },
+    "purple": {
+      "#normal": {
+        "background": "@theme-background-label-purple-normal",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-label-purple"
+      },
+      "#hovered": {
+        "background": "@theme-background-label-purple-hover",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-label-purple"
+      },
+      "#pressed": {
+        "background": "@theme-background-label-purple-active",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-label-purple"
+      }
+    },
+    "orange": {
+      "#normal": {
+        "background": "@theme-background-label-orange-normal",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-label-orange"
+      },
+      "#hovered": {
+        "background": "@theme-background-label-orange-hover",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-label-orange"
+      },
+      "#pressed": {
+        "background": "@theme-background-label-orange-active",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-label-orange"
+      }
+    },
+    "gold": {
+      "#normal": {
+        "background": "@theme-background-label-gold-normal",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-label-gold"
+      },
+      "#hovered": {
+        "background": "@theme-background-label-gold-hover",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-label-gold"
+      },
+      "#pressed": {
+        "background": "@theme-background-label-gold-active",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-label-gold"
+      }
+    }
+  }
+}
