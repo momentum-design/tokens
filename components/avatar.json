@@ -28,6 +28,10 @@
         "purple": "@theme-avatar-purple",
         "pink": "@theme-avatar-pink"
       }
+    }, 
+    "chat-bubble": {
+      "icon":"@theme-controlActive",
+      "border": "@theme-outline-primary"
     }
   }
 }
