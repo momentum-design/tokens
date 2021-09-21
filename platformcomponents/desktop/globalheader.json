@@ -38,15 +38,16 @@
       }
     },
     "buttonDevice":{
-      "background":{
-          "#normal":"@theme-button-secondary-normal",
-          "#hovered":"@theme-button-secondary-hover",
-          "#pressed":"@theme-button-secondary-hover",
-          "#active":"@theme-button-secondary-pressed"
+        "#normal":{
+          "background":"@theme-button-secondary-normal",
+          "text-inactive": "@theme-text-primary-normal",
+          "text-active": "@theme-text-accent-normal"
         },
-        "text":{
-          "#normal":"@theme-text-primary-normal",            
-          "#active":"@theme-text-accent-normal"
+        "#hovered":{
+          "background":"@theme-button-secondary-hover"
+        },
+        "#pressed":{
+          "background":"@theme-button-secondary-pressed"
         }
     },
     "buttonIcon":{
