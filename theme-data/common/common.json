@@ -2,17 +2,17 @@
   "theme": {
     "text": {
       "button": {
-        "normal": "@color-white-alpha-100",
+        "normal": "@color-white-alpha-95",
         "black": "@color-black-alpha-95",
         "white": "@color-black-alpha-95"
       },
       "share": {
         "primary": {
-          "normal": "@color-white-alpha-100",
+          "normal": "@color-white-alpha-95",
           "disabled": "@color-white-alpha-40"
         },
         "inverted": {
-          "normal": "@color-black-alpha-100",
+          "normal": "@color-black-alpha-95",
           "disabled": "@color-black-alpha-40"
         }
       }

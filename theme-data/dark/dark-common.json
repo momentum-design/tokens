@@ -274,9 +274,9 @@
         "active": ["@color-cobalt-70", "@color-cyan-40", "@color-green-50"]
       },
       "share": {
-        "selected": "@color-green-50",
-        "active": "@color-orange-50",
-        "inactive": "@color-gray-50"
+        "selected": "@color-green-40",
+        "active": "@color-orange-60",
+        "inactive": "@color-gray-60"
       },
       "label": {
         "cobalt": "@color-cobalt-40",
@@ -333,7 +333,7 @@
       "violet": "@color-violet-70"
     },
     "controlActive": {
-      "normal":"@color-blue-40"
+      "normal": "@color-blue-40"
     },
     "scrollbar": {
       "button": {

@@ -88,6 +88,13 @@
           }
         }
       }
+    },
+    "viewwindow": {
+      "#normal": {
+        "active": "@theme-outline-share-active",
+        "hovered": "@theme-outline-secondary-normal",
+        "selected": "@theme-outline-focus-normal"
+      }
     }
   }
 }
