@@ -86,6 +86,10 @@
           "hover": "@color-slate-40",
           "active": "@color-slate-20"
         }
+      },
+      "common": {
+        "white": "@color-white-alpha-95",
+        "black": "@color-black-alpha-95"
       }
     },
     "background": {
@@ -201,7 +205,15 @@
     },
     "overlay": {
       "primary": "@color-black-alpha-90",
-      "secondary": "@color-black-alpha-40"
+      "secondary": "@color-black-alpha-40",
+      "common": {
+        "primary": {
+          "normal": "@color-black-alpha-90"
+        },
+        "secondary": {
+          "normal": "@color-black-alpha-40"
+        }
+      }
     },
     "button": {
       "border": {
@@ -242,6 +254,16 @@
         "normal": "@theme-color-60",
         "hover": "@theme-color-70",
         "pressed": "@theme-color-80"
+      },
+      "common": {
+        "primary": {
+          "normal": "@color-white-alpha-95"
+        },
+        "secondary": {
+          "normal": "@color-white-alpha-00",
+          "hover": "@color-white-alpha-07",
+          "pressed": "@color-white-alpha-20"
+        }
       }
     },
     "outline": {
@@ -287,6 +309,11 @@
         "purple": "@color-purple-40",
         "orange": "@color-orange-40",
         "gold": "@color-gold-40"
+      },
+      "common": {
+        "button": {
+          "normal": "@color-white-alpha-30"
+        }
       }
     },
     "control": {
@@ -302,6 +329,13 @@
         "hover": "@color-white-alpha-11",
         "pressed": "@color-white-alpha-20",
         "disabled": "@color-white-alpha-05"
+      },
+      "common": {
+        "share-content": {
+          "active": "@color-orange-60",
+          "inactive": "@color-gray-60",
+          "selected": "@color-green-40"
+        }
       }
     },
     "presence": {
@@ -382,6 +416,18 @@
       },
       "quaternary": {
         "normal": "@color-gray-80"
+      }
+    },
+    "common": {
+      "common": {
+        "primary": {
+          "normal": "@color-white-alpha-95"
+        },
+        "secondary": {
+          "normal": "@color-white-alpha-00",
+          "hover": "@color-white-alpha-07",
+          "pressed": "@color-white-alpha-20"
+        }
       }
     }
   }
