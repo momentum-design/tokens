@@ -264,7 +264,7 @@
         "background": "@theme-button-inverted-hover"
       },
       "#pressed": {
-        "background": "@theme-background-secondary-active"
+        "background": "@theme-button-inverted-pressed"
       },
       "#disabled": {
         "background": "@theme-button-inverted-normal",
