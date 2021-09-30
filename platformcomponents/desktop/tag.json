@@ -4,15 +4,15 @@
     "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=2925%3A17509",
     "static": {
       "background": "@theme-background-solid-primary-normal",
-      "text":"@theme-text-primary-normal",
+      "text": "@theme-text-primary-normal",
       "border": "@theme-outline-primary-normal"
     },
-    "overlay":{
+    "overlay": {
       "background": "@theme-background-common-normal",
-      "text": "@theme-text-button-black",
+      "text": "@theme-common-text-black-normal",
       "border": "@theme-outline-share-inactive"
     },
-    "primary":{
+    "primary": {
       "#normal": {
         "background": "@theme-background-solid-tertiary-normal",
         "text": "@theme-text-primary-normal",
@@ -28,7 +28,7 @@
         "text": "@theme-text-primary-normal",
         "border": "@theme-outline-primary-normal"
       }
-    }, 
+    },
     "cobalt": {
       "#normal": {
         "background": "@theme-background-label-cobalt-normal",

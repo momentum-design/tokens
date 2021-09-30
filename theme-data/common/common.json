@@ -1,30 +1,25 @@
 {
   "theme": {
-    "text": {
-      "button": {
-        "normal": "@color-white-alpha-95",
-        "black": "@color-black-alpha-95",
-        "white": "@color-black-alpha-95"
-      },
-      "share": {
-        "primary": {
+    "common": {
+      "text": {
+        "white": {
           "normal": "@color-white-alpha-95",
           "disabled": "@color-white-alpha-40"
         },
-        "inverted": {
+        "black": {
           "normal": "@color-black-alpha-95",
           "disabled": "@color-black-alpha-40"
         }
-      }
-    },
-    "control": {
-      "shareContent": {
-        "active": "@color-orange-60",
-        "inactive": "@color-gray-60"
-      }
-    },
-    "button": {
-      "share": {
+      },
+      "overlay": {
+        "primary": {
+          "normal": "@color-black-alpha-90"
+        },
+        "secondary": {
+          "normal": "@color-black-alpha-40"
+        }
+      },
+      "button": {
         "primary": {
           "normal": "@color-white-alpha-95",
           "hover": "@color-white-alpha-80",
@@ -40,11 +35,18 @@
           "hover": "@color-white-alpha-30",
           "pressed": "@color-white-alpha-40"
         }
-      }
-    },
-    "outline": {
-      "buttonshare": {
-        "normal": "@color-white-alpha-30"
+      },
+      "outline": {
+        "button": {
+          "normal": "@color-white-alpha-30"
+        }
+      },
+      "control": {
+        "shareContent": {
+          "active": "@color-orange-60",
+          "inactive": "@color-gray-60",
+          "selected": "@color-green-40"
+        }
       }
     }
   }

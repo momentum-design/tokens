@@ -14,7 +14,7 @@
       "background": "@theme-background-solid-primary-normal"
     },
     "color-avatar": {
-      "text": "@theme-text-button-normal",
+      "text": "@theme-common-text-white-normal",
       "background": {
         "default": "@theme-avatar-default",
         "gold": "@theme-avatar-gold",
@@ -28,9 +28,9 @@
         "purple": "@theme-avatar-purple",
         "pink": "@theme-avatar-pink"
       }
-    }, 
+    },
     "chat-bubble": {
-      "icon":"@theme-controlActive",
+      "icon": "@theme-controlActive",
       "border": "@theme-outline-primary"
     }
   }
