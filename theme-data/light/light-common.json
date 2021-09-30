@@ -276,11 +276,6 @@
       "gradient": {
         "active": ["@color-cobalt-70", "@color-cyan-40", "@color-green-50"]
       },
-      "share": {
-        "selected": "@color-green-40",
-        "active": "@color-orange-60",
-        "inactive": "@color-gray-60"
-      },
       "label": {
         "cobalt": "@color-cobalt-40",
         "lime": "@color-lime-40",

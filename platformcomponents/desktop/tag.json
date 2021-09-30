@@ -10,7 +10,7 @@
     "overlay": {
       "background": "@theme-background-common-normal",
       "text": "@theme-common-text-black-normal",
-      "border": "@theme-outline-share-inactive"
+      "border": "@theme-common-control-shareContent-inactive"
     },
     "primary": {
       "#normal": {
