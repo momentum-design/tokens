@@ -305,7 +305,7 @@
       }
     },
     "presence": {
-      "busy": "@color-yellow-50",
+      "busy": "@color-orange-50",
       "doNotDisturb": "@color-red-50",
       "active": "@color-green-50",
       "away": "@color-gray-50"
