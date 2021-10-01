@@ -2,78 +2,6 @@
   "interactiveicon": {
     "comment": "Applied to icons that are clickable",
     "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=6192%3A28111",
-    "favorite": {
-      "#normal": {        
-        "icon-inactive": "@theme-text-primary-normal",
-        "icon-active": "@theme-text-warning-normal"
-      },
-      "#hovered": {        
-        "icon-inactive": "@theme-text-primary-normal",
-        "icon-active": "@theme-text-warning-hover"
-      },
-      "#pressed": {        
-        "icon-inactive": "@theme-text-primary-normal",
-        "icon-active": "@theme-text-warning-active"
-      },
-      "#disabled": {        
-        "icon-inactive": "@theme-text-primary-disabled",
-        "icon-active": "@theme-text-primary-disabled"
-      }
-    },    
-    "settings": {
-      "#normal": {        
-        "icon-inactive": "@theme-text-primary-normal",
-        "icon-active": "@theme-text-primary-normal"
-      },
-      "#hovered": {        
-        "icon-inactive": "@theme-text-primary-normal",
-        "icon-active": "@theme-text-primary-normal"
-      },
-      "#pressed": {        
-        "icon-inactive": "@theme-text-primary-normal",
-        "icon-active": "@theme-text-primary-normal"
-      },
-      "#disabled": {        
-        "icon-inactive": "@theme-text-primary-disabled",
-        "icon-active": "@theme-text-primary-disabled"
-      }      
-    },
-    "attachment": {
-      "#normal": {        
-        "icon-inactive": "@theme-text-primary-normal",
-        "icon-active": "@theme-text-accent-normal"
-      },
-      "#hovered": {        
-        "icon-inactive": "@theme-text-primary-normal",
-        "icon-active": "@theme-text-accent-hover"
-      },
-      "#pressed": {        
-        "icon-inactive": "@theme-text-primary-normal",
-        "icon-active": "@theme-text-accent-active"
-      },
-      "#disabled": {        
-        "icon-inactive": "@theme-text-primary-disabled",
-        "icon-active": "@theme-text-primary-disabled"
-      }
-    },    
-    "flag":{
-      "#normal": {        
-        "icon-inactive": "@theme-text-primary-normal",
-        "icon-active": "@theme-text-primary-normal"
-      },
-      "#hovered": {        
-        "icon-inactive": "@theme-text-primary-normal",
-        "icon-active": "@theme-text-primary-normal"
-      },
-      "#pressed": {        
-        "icon-inactive": "@theme-text-primary-normal",
-        "icon-active": "@theme-text-primary-normal"
-      },
-      "#disabled": {        
-        "icon-inactive": "@theme-text-primary-disabled",
-        "icon-active": "@theme-text-primary-normal"
-      }
-    },
     "container": {
       "#normal": {
         "background": "@theme-button-secondary-normal"        
@@ -86,6 +14,97 @@
       },
       "#disabled":{
         "background": "@theme-button-secondary-normal"
+      }
+    },
+    "primary": {
+      "filled":{
+        "#normal": {        
+          "icon-inactive": "@theme-text-primary-normal",
+          "icon-active": "@theme-text-primary-normal"
+        },
+        "#hovered": {        
+          "icon-inactive": "@theme-text-primary-normal",
+          "icon-active": "@theme-text-secondary-normal"
+        },
+        "#pressed": {        
+          "icon-inactive": "@theme-text-primary-normal",
+          "icon-active": "@theme-text-secondary-normal"
+        },
+        "#disabled": {        
+          "icon-inactive": "@theme-text-primary-disabled",
+          "icon-active": "@theme-text-primary-disabled"
+        }
+      },
+      "outline":{
+        "#normal": {        
+          "icon-inactive": "@theme-text-secondary-normal",
+          "icon-active": "@theme-text-accent-normal"
+        },
+        "#hovered": {        
+          "icon-inactive": "@theme-text-primary-normal",
+          "icon-active": "@theme-text-accent-hover"
+        },
+        "#pressed": {        
+          "icon-inactive": "@theme-text-primary-normal",
+          "icon-active": "@theme-text-accent-active"
+        },
+        "#disabled": {        
+          "icon-inactive": "@theme-text-primary-disabled",
+          "icon-active": "@theme-text-primary-disabled"
+        }
+      } 
+    },
+    "secondary":{
+      "filled":{
+        "#normal": {        
+          "icon-inactive": "@theme-text-secondary-normal",
+          "icon-active": "@theme-text-primary-normal"
+        },
+        "#hovered": {        
+          "icon-inactive": "@theme-text-primary-normal",
+          "icon-active": "@theme-text-secondary-normal"
+        },
+        "#pressed": {        
+          "icon-inactive": "@theme-text-primary-normal",
+          "icon-active": "@theme-text-secondary-normal"
+        },
+        "#disabled": {        
+          "icon-inactive": "@theme-text-primary-disabled",
+          "icon-active": "@theme-text-primary-disabled"
+        }
+      }
+    },
+    "tertiary": {
+      "filled":{
+        "#normal": {        
+          "icon-inactive": "@theme-text-primary-normal",
+          "favorite-icon-active": "@theme-text-warning-normal"
+        },
+        "#hovered": {        
+          "icon-inactive": "@theme-text-primary-normal",
+          "favorite-icon-active": "@theme-text-warning-hover"
+        },
+        "#pressed": {        
+          "icon-inactive": "@theme-text-primary-normal",
+          "favorite-icon-active": "@theme-text-warning-active"
+        },
+        "#disabled": {        
+          "icon-inactive": "@theme-text-primary-disabled",
+          "icon-active": "@theme-text-primary-disabled"
+        }
+      }
+    },   
+    "quaternary":{
+      "filled":{
+        "#normal": {        
+          "icon-active": "@theme-text-primary-normal"
+        },
+        "#hovered": {
+          "icon-active": "@theme-text-secondary-normal"
+        },
+        "#pressed": {        
+          "icon-active": "@theme-text-primary-normal"
+        }
       }
     }
   }  
