@@ -308,10 +308,10 @@
       }
     },
     "presence": {
-      "busy": "@color-yellow-70",
-      "doNotDisturb": "@color-red-70",
-      "active": "@color-green-70",
-      "away": "@color-gray-70"
+      "busy": "@color-orange-60",
+      "doNotDisturb": "@color-red-60",
+      "active": "@color-green-60",
+      "away": "@color-gray-60"
     },
     "whiteboard": {
       "stickyNote": {
