@@ -2510,6 +2510,43 @@
     },
     "wx-uc-account-information-alert-background": {
       "#normal": "@color-yellow-80"
+    },
+    "teaching-background": {
+      "#normal": "@color-white-alpha-100"
+    },
+    "teaching-button-primary": {
+      "#normal": "@color-black-alpha-95",
+      "#hovered": "@color-black-alpha-80",
+      "#pressed": "@color-black-alpha-70",
+      "#disabled": "@color-black-alpha-20"
+    },
+    "teaching-button-secondary": {
+      "#normal": "@color-black-alpha-00",
+      "#hovered": "@color-black-alpha-07",
+      "#pressed": "@color-black-alpha-20"
+    },
+    "teaching-outline-button": {
+      "#normal": "@color-black-alpha-30"
+    },
+    "teaching-outline": {
+      "#normal": "@color-black-alpha-20"
+    },
+    "teaching-outline-disabled": {
+      "#normal": "@color-black-alpha-20"
+    },
+    "teaching-outline-theme": {
+      "#normal": "@color-blue-60"
+    },
+    "teaching-text-accent": {
+      "#normal": "@color-blue-70",
+      "#hovered": "@color-blue-90",
+      "#disabled": "@color-black-alpha-40"
+    },
+    "teaching-text-primary": {
+      "#disabled": "@color-black-alpha-40"
+    },
+    "teaching-text-inverted": {
+      "#normal": "@color-black-alpha-95"
     }
   }
 }
