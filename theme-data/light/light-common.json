@@ -386,6 +386,42 @@
       "quaternary": {
         "normal": "@color-white-alpha-100"
       }
+    },
+    "teaching": {
+      "background": {
+        "normal": "@color-black-alpha-100"
+      },
+      "button": {
+        "primary": {
+          "normal": "@color-white-alpha-95",
+          "hover": "@color-white-alpha-80",
+          "pressed": "@color-white-alpha-70",
+          "disabled": "@color-white-alpha-20"
+        },
+        "secondary": {
+          "normal": "@color-white-alpha-00",
+          "hover": "@color-white-alpha-07",
+          "pressed": "@color-white-alpha-20"
+        }
+      },
+      "outline": {
+        "theme": "@theme-color-60",
+        "normal": "@color-white-alpha-20",
+        "disabled": "@color-white-alpha-20",
+        "button": {
+          "normal": "@color-white-alpha-30"
+        }
+      },
+      "text": {
+        "accent": {
+          "normal": "@theme-color-70",
+          "hover": "@theme-color-90",
+          "disabled": "@color-white-alpha-40"
+        },
+        "primary": {
+          "disabled": "@color-white-alpha-40"
+        }
+      }
     }
   }
 }
