@@ -278,26 +278,26 @@
     },
     "outline": {
       "primary": {
-        "normal": "@color-hc-Outline"
+        "normal": "@color-hc-PlaceholderColor"
       },
       "focus": {
         "normal": "@color-hc-PlaceholderColor"
       },
       "secondary": {
-        "normal": "@color-hc-Outline"
+        "normal": "@color-hc-PlaceholderColor"
       },
       "input": {
-        "normal": "@color-hc-Outline",
+        "normal": "@color-hc-PlaceholderColor",
         "active": "@color-hc-SystemColorHighlightColor"
       },
       "button": {
-        "normal": "@color-hc-Outline"
+        "normal": "@color-hc-PlaceholderColor"
       },
       "join": {
-        "normal": "@color-hc-Outline"
+        "normal": "@color-hc-PlaceholderColor"
       },
       "cancel": {
-        "normal": "@color-hc-Outline"
+        "normal": "@color-hc-PlaceholderColor"
       },
       "disabled": {
         "normal": "@color-hc-SystemColorGrayTextColor"
@@ -306,9 +306,9 @@
         "active": ["@color-hc-PlaceholderColor", "@color-hc-PlaceholderColor", "@color-hc-PlaceholderColor"]
       },
       "share": {
-        "selected": "@theme-outline-share-selected",
-        "active": "@theme-outline-share-active",
-        "inactive": "@theme-outline-share-inactive"
+        "selected": "@color-hc-PlaceholderColor",
+        "active": "@color-hc-PlaceholderColor",
+        "inactive": "@color-hc-PlaceholderColor"
       },
       "buttonshare": {
         "normal": "@color-hc-PlaceholderColor"
@@ -339,8 +339,8 @@
         "disabled": "@color-hc-PlaceholderColor"
       },
       "shareContent": {
-        "active": "@theme-control-shareContent-active",
-        "inactive": "@theme-control-shareContent-inactive"
+        "active": "@color-hc-PlaceholderColor",
+        "inactive": "@color-hc-PlaceholderColor"
       }
     },
     "presence": {
