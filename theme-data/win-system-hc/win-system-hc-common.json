@@ -1,12 +1,56 @@
 {
   "theme": {
     "color": "@color-hc-PlaceholderColor",
-    "text": {
-      "button": {
-        "normal": "@color-hc-SystemColorButtonTextColor",
-        "black": "@color-hc-SystemColorWindowTextColor",
-        "white": "@color-hc-SystemColorWindowTextColor"
+    "common": {
+      "text": {
+        "white": {
+          "normal": "@color-hc-SystemColorWindowTextColor",
+          "disabled": "@color-hc-SystemColorGrayTextColor"
+        },
+        "black": {
+          "normal": "@color-hc-SystemColorWindowTextColor",
+          "disabled": "@color-hc-SystemColorGrayTextColor"
+        }
       },
+      "overlay": {
+        "primary": {
+          "normal": "@color-hc-SystemColorWindowColor"
+        },
+        "secondary": {
+          "normal": "@color-hc-SystemColorWindowColor"
+        }
+      },
+      "button": {
+        "primary": {
+          "normal": "@color-hc-SystemColorButtonFaceColor",
+          "hover": "@color-hc-SystemColorHighlightColor",
+          "pressed": "@color-hc-SystemColorHighlightColor"
+        },
+        "secondary": {
+          "normal": "@color-hc-SystemColorButtonFaceColor",
+          "hover": "@color-hc-SystemColorHighlightColor",
+          "pressed": "@color-hc-SystemColorHighlightColor"
+        },
+        "active": {
+          "normal": "@color-hc-PlaceholderColor",
+          "hover": "@color-hc-PlaceholderColor",
+          "pressed": "@color-hc-PlaceholderColor"
+        }
+      },
+      "outline": {
+        "button": {
+          "normal": "@color-hc-PlaceholderColor"
+        }
+      },
+      "control": {
+        "shareContent": {
+          "active": "@color-hc-PlaceholderColor",
+          "inactive": "@color-hc-PlaceholderColor",
+          "selected": "@color-hc-PlaceholderColor"
+        }
+      }
+    },
+    "text": {
       "primary": {
         "normal": "@color-hc-SystemColorWindowTextColor",
         "inverted": "@color-hc-PlaceholderColor",
@@ -35,16 +79,6 @@
         "normal": "@color-hc-PlaceholderColor",
         "hover": "@color-hc-PlaceholderColor",
         "active": "@color-hc-PlaceholderColor"
-      },
-      "share": {
-        "primary": {
-          "normal": "@color-hc-SystemColorWindowTextColor",
-          "disabled": "@color-hc-SystemColorGrayTextColor"
-        },
-        "inverted": {
-          "normal": "@color-hc-SystemColorWindowTextColor",
-          "disabled": "@color-hc-SystemColorGrayTextColor"
-        }
       },
       "team": {
         "default": {
@@ -133,8 +167,8 @@
         "normal": "@color-hc-PlaceholderColor"
       },
       "gradient": {
-        "primary": ["@color-hc-PlaceholderColor","@color-hc-PlaceholderColor"],
-        "secondary": ["@color-hc-PlaceholderColor","@color-hc-PlaceholderColor"]
+        "primary": ["@color-hc-PlaceholderColor", "@color-hc-PlaceholderColor"],
+        "secondary": ["@color-hc-PlaceholderColor", "@color-hc-PlaceholderColor"]
       },
       "alert": {
         "default": {
@@ -310,9 +344,6 @@
         "active": "@color-hc-PlaceholderColor",
         "inactive": "@color-hc-PlaceholderColor"
       },
-      "buttonshare": {
-        "normal": "@color-hc-PlaceholderColor"
-      },
       "label": {
         "cobalt": "@color-hc-PlaceholderColor",
         "lime": "@color-hc-PlaceholderColor",
@@ -337,10 +368,6 @@
         "hover": "@color-hc-PlaceholderColor",
         "pressed": "@color-hc-PlaceholderColor",
         "disabled": "@color-hc-PlaceholderColor"
-      },
-      "shareContent": {
-        "active": "@color-hc-PlaceholderColor",
-        "inactive": "@color-hc-PlaceholderColor"
       }
     },
     "presence": {
@@ -372,7 +399,7 @@
       "violet": "@color-hc-SystemColorWindowTextColor"
     },
     "controlActive": {
-      "normal":"@color-hc-SystemColorHighlightColor"
+      "normal": "@color-hc-SystemColorHighlightColor"
     },
     "scrollbar": {
       "button": {

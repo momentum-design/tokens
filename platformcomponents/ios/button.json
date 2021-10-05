@@ -30,7 +30,7 @@
       },
       "#pressed": {
         "background": "@theme-globaltint-selected",
-        "text": "@theme-text-button-normal",
+        "text": "@theme-common-text-white-normal",
         "border": "none",
         "badge": "@theme-presence-doNotDisturb"
       }

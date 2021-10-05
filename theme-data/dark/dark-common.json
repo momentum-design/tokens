@@ -273,11 +273,6 @@
       "gradient": {
         "active": ["@color-cobalt-70", "@color-cyan-40", "@color-green-50"]
       },
-      "share": {
-        "selected": "@color-green-50",
-        "active": "@color-orange-50",
-        "inactive": "@color-gray-50"
-      },
       "label": {
         "cobalt": "@color-cobalt-40",
         "lime": "@color-lime-40",
@@ -333,7 +328,7 @@
       "violet": "@color-violet-70"
     },
     "controlActive": {
-      "normal":"@color-blue-40"
+      "normal": "@color-blue-40"
     },
     "scrollbar": {
       "button": {
