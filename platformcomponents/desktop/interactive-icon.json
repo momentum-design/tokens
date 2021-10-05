@@ -76,24 +76,24 @@
     },
     "tertiary": {
       "filled":{
-        "#normal": {        
+        "#normal": {
           "icon-inactive": "@theme-text-primary-normal",
           "favorite-icon-active": "@theme-text-warning-normal"
         },
-        "#hovered": {        
+        "#hovered": {
           "icon-inactive": "@theme-text-primary-normal",
           "favorite-icon-active": "@theme-text-warning-hover"
         },
-        "#pressed": {        
+        "#pressed": {
           "icon-inactive": "@theme-text-primary-normal",
           "favorite-icon-active": "@theme-text-warning-active"
         },
-        "#disabled": {        
+        "#disabled": {
           "icon-inactive": "@theme-text-primary-disabled",
-          "icon-active": "@theme-text-primary-disabled"
+          "favorite-icon-active": "@theme-text-primary-disabled"
         }
       }
-    },   
+    },
     "quaternary":{
       "filled":{
         "#normal": {        
