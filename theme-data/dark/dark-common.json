@@ -333,7 +333,7 @@
       "violet": "@color-violet-70"
     },
     "controlActive": {
-      "normal":"@color-blue-40"
+      "normal": "@color-blue-40"
     },
     "scrollbar": {
       "button": {
@@ -404,7 +404,9 @@
       "outline": {
         "theme": "@theme-color-60",
         "normal": "@color-black-alpha-20",
-        "disabled": "@color-black-alpha-20",
+        "disabled": {
+          "normal": "@color-black-alpha-20"
+        },
         "button": {
           "normal": "@color-black-alpha-30"
         }
