@@ -4,7 +4,7 @@
     "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=8654%3A34583",
     "background": "@theme-teaching-background-normal",
     "button": {
-      "primary-teaching": {
+      "primary": {
         "#normal": {
           "background": "@theme-teaching-button-primary-normal",
           "text": "@theme-text-primary-normal",
@@ -22,7 +22,7 @@
           "border": "@theme-teaching-outline-disabled-normal"
         }
       },
-      "secondary-teaching": {
+      "secondary": {
         "#normal": {
           "background": "@theme-teaching-button-secondary-normal",
           "text": "@theme-text-primary-inverted",
@@ -40,7 +40,7 @@
           "border": "@theme-outline-disabled-normal"
         }
       },
-      "teaching": {
+      "hyperlink": {
         "#normal": {
           "background": "@theme-teaching-button-secondary-normal",
           "text": "@theme-teaching-text-accent-normal",
