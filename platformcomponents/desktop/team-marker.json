@@ -1,0 +1,21 @@
+{
+  "teamMarker": {
+    "comment": "applied to team markers",
+    "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=8906%3A32769",
+    
+    "background": {
+      "default": "@theme-text-team-default-normal",
+      "gold": "@theme-text-team-gold-normal",
+      "orange": "@theme-text-team-orange-normal",
+      "lime": "@theme-text-team-lime-normal",
+      "mint": "@theme-text-team-mint-normal",
+      "cyan": "@theme-text-team-cyan-normal",
+      "cobalt": "@theme-text-team-cobalt-normal",
+      "slate": "@theme-text-team-slate-normal",
+      "violet": "@theme-text-team-violet-normal",
+      "purple": "@theme-text-team-purple-normal",
+      "pink": "@theme-text-team-pink-normal"
+    }
+    
+  }
+}
