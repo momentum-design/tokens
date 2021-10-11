@@ -449,6 +449,44 @@
       "quaternary": {
         "normal": "@color-hc-PlaceholderColor"
       }
+    },
+    "teaching": {
+      "background": {
+        "normal": "@color-hc-PlaceholderColor"
+      },
+      "button": {
+        "primary": {
+          "normal": "@color-hc-PlaceholderColor",
+          "hover": "@color-hc-PlaceholderColor",
+          "pressed": "@color-hc-PlaceholderColor",
+          "disabled": "@color-hc-PlaceholderColor"
+        },
+        "secondary": {
+          "normal": "@color-hc-PlaceholderColor",
+          "hover": "@color-hc-PlaceholderColor",
+          "pressed": "@color-hc-PlaceholderColor"
+        }
+      },
+      "outline": {
+        "theme": "@color-hc-PlaceholderColor",
+        "normal": "@color-hc-PlaceholderColor",
+        "disabled": {
+          "normal": "@color-hc-PlaceholderColor"
+        },
+        "button": {
+          "normal": "@color-hc-PlaceholderColor"
+        }
+      },
+      "text": {
+        "accent": {
+          "normal": "@color-hc-PlaceholderColor",
+          "hover": "@color-hc-PlaceholderColor",
+          "disabled": "@color-hc-PlaceholderColor"
+        },
+        "primary": {
+          "disabled": "@color-hc-PlaceholderColor"
+        }
+      }
     }
   }
 }

@@ -378,6 +378,44 @@
       "quaternary": {
         "normal": "@color-gray-80"
       }
+    },
+    "teaching": {
+      "background": {
+        "normal": "@color-white-alpha-100"
+      },
+      "button": {
+        "primary": {
+          "normal": "@color-black-alpha-95",
+          "hover": "@color-black-alpha-80",
+          "pressed": "@color-black-alpha-70",
+          "disabled": "@color-black-alpha-20"
+        },
+        "secondary": {
+          "normal": "@color-black-alpha-00",
+          "hover": "@color-black-alpha-07",
+          "pressed": "@color-black-alpha-20"
+        }
+      },
+      "outline": {
+        "theme": "@theme-color-60",
+        "normal": "@color-black-alpha-20",
+        "disabled": {
+          "normal": "@color-black-alpha-20"
+        },
+        "button": {
+          "normal": "@color-black-alpha-30"
+        }
+      },
+      "text": {
+        "accent": {
+          "normal": "@theme-color-70",
+          "hover": "@theme-color-90",
+          "disabled": "@color-black-alpha-40"
+        },
+        "primary": {
+          "disabled": "@color-black-alpha-40"
+        }
+      }
     }
   }
 }
