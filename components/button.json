@@ -61,7 +61,7 @@
         "text": "@theme-text-primary-disabled"
       }
     },
-    "message-ghost": {
+    "accent-ghost": {
       "#normal": {
         "background": "@theme-button-secondary-normal",
         "text": "@theme-text-accent-normal"
@@ -79,6 +79,7 @@
         "text": "@theme-text-primary-disabled"
       }
     },
+    "message-ghost": "@button-accent-ghost",
     "join-fill": {
       "#normal": {
         "background": "@theme-button-join-normal",
@@ -161,7 +162,7 @@
         "border": "@theme-outline-disabled-normal"
       }
     },
-    "message-fill": {
+    "accent-fill": {
       "#normal": {
         "background": "@theme-button-accent-normal",
         "text": "@theme-common-text-white-normal",
@@ -180,6 +181,7 @@
         "text": "@theme-text-primary-disabled"
       }
     },
+    "message-fill": "@button-accent-fill",
     "counter": {
       "#normal": {
         "background": "@theme-button-primary-normal",
