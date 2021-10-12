@@ -290,7 +290,7 @@
     "control": {
       "active": {
         "normal": "@theme-color-60",
-        "hover": "@theme-color-50",
+        "hover": "@theme-color-70",
         "pressed": "@theme-color-80",
         "active": "@theme-color-80",
         "disabled": "@theme-color-20"
