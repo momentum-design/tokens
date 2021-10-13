@@ -29,6 +29,23 @@
         "border": "@theme-background-primary-ghost"
       }
     },
+    "textfieldWin": {
+      "#normal": {
+        "background": "@theme-background-secondary-normal"
+      },
+      "#hovered": {
+        "background": "@theme-background-secondary-normal"
+      },
+      "#active": {
+        "background": "@theme-background-secondary-normal"
+      },
+      "#focused": {
+        "background": "@theme-background-secondary-normal"
+      },
+      "#disabled": {
+        "background": "@theme-background-secondary-normal"
+      }
+    },
     "textfieldPlaceholderText": {
       "#normal": {
         "text": "@theme-text-secondary-normal"
@@ -37,23 +54,23 @@
         "text": "@theme-text-primary-disabled"
       }
     },
-    "buttonDevice":{
-        "#normal":{
-          "background":"@theme-button-secondary-normal",
-          "text-inactive": "@theme-text-primary-normal",
-          "text-active": "@theme-text-accent-normal"
-        },
-        "#hovered":{
-          "background":"@theme-button-secondary-hover"
-        },
-        "#pressed":{
-          "background":"@theme-button-secondary-pressed"
-        }
-    },
-    "buttonIcon":{
+    "buttonDevice": {
       "#normal": {
         "background": "@theme-button-secondary-normal",
-        "icon": "@theme-text-primary-normal"        
+        "text-inactive": "@theme-text-primary-normal",
+        "text-active": "@theme-text-accent-normal"
+      },
+      "#hovered": {
+        "background": "@theme-button-secondary-hover"
+      },
+      "#pressed": {
+        "background": "@theme-button-secondary-pressed"
+      }
+    },
+    "buttonIcon": {
+      "#normal": {
+        "background": "@theme-button-secondary-normal",
+        "icon": "@theme-text-primary-normal"
       },
       "#hovered": {
         "background": "@theme-button-secondary-hover",
@@ -65,13 +82,13 @@
       },
       "#disabled": {
         "background": "@theme-button-secondary-normal",
-        "icon": "@theme-text-primary-disabled"     
+        "icon": "@theme-text-primary-disabled"
       }
     },
     "buttonStatus": {
-        "#normal": {
+      "#normal": {
         "background": "@theme-button-secondary-normal",
-        "text": "@theme-text-primary-normal"        
+        "text": "@theme-text-primary-normal"
       },
       "#hovered": {
         "background": "@theme-button-secondary-hover",
@@ -89,9 +106,37 @@
     "container": {
       "background": "@theme-background-primary-ghost"
     },
-    "modifierChip":{      
+    "modifierChip": {
       "background": "@theme-button-primary-normal",
       "text": "@theme-text-primary-inverted"
+    },
+    "maxMinButton": {
+      "#normal": {
+        "background": "@theme-button-secondary-normal",
+        "text": "@theme-text-primary-normal"
+      },
+      "#hovered": {
+        "background": "@theme-button-secondary-hover",
+        "text": "@theme-text-primary-normal"
+      },
+      "#pressed": {
+        "background": "@theme-button-secondary-pressed",
+        "text": "@theme-text-primary-normal"
+      }
+    },
+    "closeButton": {
+      "#normal": {
+        "background": "@theme-button-secondary-normal",
+        "text": "@theme-text-primary-normal"
+      },
+      "#hovered": {
+        "background": "@theme-button-cancel-hover",
+        "text": "@theme-common-text-white-normal"
+      },
+      "#pressed": {
+        "background": "@theme-button-cancel-pressed",
+        "text": "@theme-common-text-white-normal"
+      }
     }
   }
 }
