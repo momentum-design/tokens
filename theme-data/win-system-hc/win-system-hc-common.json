@@ -4,7 +4,7 @@
     "common": {
       "text": {
         "white": {
-          "normal": "@color-hc-SystemColorHighlightTextColor",
+          "normal": "@color-hc-SystemColorButtonTextColor",
           "disabled": "@color-hc-SystemColorGrayTextColor"
         },
         "black": {
@@ -52,15 +52,15 @@
     },
     "text": {
       "primary": {
-        "normal": "@color-hc-SystemColorWindowTextColor",
-        "inverted": "@color-hc-SystemColorHighlightTextColor",
+        "normal": "@color-hc-SystemColorButtonTextColor",
+        "inverted": "@color-hc-SystemColorHighlightColor",
         "disabled": "@color-hc-SystemColorGrayTextColor"
       },
       "secondary": {
         "normal": "@color-hc-SystemColorWindowTextColor"
       },
       "error": {
-        "normal": "@color-hc-SystemColorHighlightTextColor",
+        "normal": "@color-hc-SystemColorButtonTextColor",
         "hover": "@color-hc-PlaceholderColor",
         "active": "@color-hc-PlaceholderColor"
       },
@@ -76,7 +76,7 @@
       },
       "highlight": "@color-hc-PlaceholderColor",
       "accent": {
-        "normal": "@color-hc-SystemColorHighlightTextColor",
+        "normal": "@color-hc-SystemColorButtonTextColor",
         "hover": "@color-hc-PlaceholderColor",
         "active": "@color-hc-PlaceholderColor"
       },
@@ -264,8 +264,8 @@
       },
       "secondary": {
         "normal": "@color-hc-SystemColorButtonFaceColor",
-        "hover": "@color-hc-SystemColorButtonFaceColor",
-        "pressed": "@color-hc-SystemColorButtonFaceColor",
+        "hover": "@color-hc-SystemColorHighlightColor",
+        "pressed": "@color-hc-SystemColorHighlightColor",
         "active": {
           "normal": "@color-hc-SystemColorHighlightColor",
           "hover": "@color-hc-SystemColorButtonFaceColor",
