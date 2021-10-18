@@ -2,13 +2,13 @@
   "platform": "win-hc",
   "colorFormat": "names",
   "sizeUnit": "px",
-  "componentGroups": true,
+  "componentGroups": false,
   "fileFormat": "json",
   "includeJsonHeader": true,
   "includeMobileTokens": false,
   "includeDesktopTokens": true,
   "uiStatesAsObject": true,
-  "omitThemeTokens": false,
+  "omitThemeTokens": true,
   "noBorderIsBackgroundColour": true,
   "themes": ["themes/theme-win-system-hc-webex.json"]
 }
