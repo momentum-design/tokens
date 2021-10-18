@@ -4,6 +4,6 @@
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4486%3A786",
     "background": "@theme-background-accent-normal",
     "text": "@theme-common-text-white-normal",
-    "notificationIndicator": "@theme-text-accent-normal"
+    "notification-indicator": "@theme-text-accent-normal"
   }
 }

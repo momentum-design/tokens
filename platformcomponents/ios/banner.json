@@ -1,0 +1,10 @@
+{
+  "banner": {
+    "comment": "iOS specific banner styles",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4655%3A8433",
+    "toast": {
+      "text": "@theme-text-primary-normal",
+      "background": "@theme-groupedbackground-tertiary-normal"
+    }
+  }
+}
