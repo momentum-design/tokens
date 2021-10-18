@@ -14,7 +14,8 @@
       "slate": "@theme-text-team-slate-normal",
       "violet": "@theme-text-team-violet-normal",
       "purple": "@theme-text-team-purple-normal",
-      "pink": "@theme-text-team-pink-normal"
+      "pink": "@theme-text-team-pink-normal",
+      "archived": "@theme-outline-secondary-normal"
     }
     
   }

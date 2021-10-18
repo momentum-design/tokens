@@ -6,27 +6,32 @@
       "#normal": {
         "background": "@theme-background-secondary-normal",
         "text": "@theme-text-primary-normal",
-        "border": "@theme-outline-input-normal"
+        "border": "@theme-background-primary-ghost",
+        "borderModifier": "@theme-background-primary-ghost"
       },
       "#hovered": {
         "background": "@theme-background-secondary-hover",
         "text": "@theme-text-primary-normal",
-        "border": "@theme-outline-input-normal"
+        "border": "@theme-background-primary-ghost",
+        "borderModifier": "@theme-background-primary-ghost"
       },
       "#active": {
         "background": "@theme-background-secondary-active",
         "text": "@theme-text-primary-normal",
-        "border": "@theme-outline-input-active"
+        "border": "@theme-outline-input-active",
+        "borderModifier": "@theme-outline-input-active"
       },
       "#focused": {
         "background": "@theme-background-secondary-normal",
         "text": "@theme-text-primary-normal",
-        "border": "@theme-outline-focus-normal"
+        "border": "@theme-outline-focus-normal",
+        "borderModifier": "@theme-outline-input-active"
       },
       "#disabled": {
         "background": "@theme-background-secondary-normal",
         "text": "@theme-text-primary-disabled",
-        "border": "@theme-background-primary-ghost"
+        "border": "@theme-background-primary-ghost",
+        "borderModifier": "@theme-background-primary-ghost"
       }
     },
     "textfieldWin": {

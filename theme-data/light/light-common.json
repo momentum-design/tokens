@@ -100,10 +100,10 @@
           "normal": "@color-white-alpha-100"
         },
         "secondary": {
-          "normal": "@color-gray-05"
+          "normal": "@color-gray-10"
         },
         "tertiary": {
-          "normal": "@color-gray-10"
+          "normal": "@color-gray-05"
         },
         "quaternary": {
           "normal": "@color-white-alpha-100"
