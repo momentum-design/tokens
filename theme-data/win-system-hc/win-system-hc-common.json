@@ -4,7 +4,7 @@
     "common": {
       "text": {
         "white": {
-          "normal": "@color-hc-SystemColorWindowTextColor",
+          "normal": "@color-hc-SystemColorButtonTextColor",
           "disabled": "@color-hc-SystemColorGrayTextColor"
         },
         "black": {
@@ -52,20 +52,20 @@
     },
     "text": {
       "primary": {
-        "normal": "@color-hc-SystemColorWindowTextColor",
-        "inverted": "@color-hc-SystemColorButtonTextColor",
+        "normal": "@color-hc-SystemColorButtonTextColor",
+        "inverted": "@color-hc-SystemColorHighlightColor",
         "disabled": "@color-hc-SystemColorGrayTextColor"
       },
       "secondary": {
         "normal": "@color-hc-SystemColorWindowTextColor"
       },
       "error": {
-        "normal": "@color-hc-SystemColorWindowColor",
+        "normal": "@color-hc-SystemColorButtonTextColor",
         "hover": "@color-hc-PlaceholderColor",
         "active": "@color-hc-PlaceholderColor"
       },
       "success": {
-        "normal": "@color-hc-SystemColorWindowColor",
+        "normal": "@color-hc-SystemColorButtonTextColor",
         "hover": "@color-hc-PlaceholderColor",
         "active": "@color-hc-PlaceholderColor"
       },
@@ -76,7 +76,7 @@
       },
       "highlight": "@color-hc-PlaceholderColor",
       "accent": {
-        "normal": "@color-hc-PlaceholderColor",
+        "normal": "@color-hc-SystemColorButtonTextColor",
         "hover": "@color-hc-PlaceholderColor",
         "active": "@color-hc-PlaceholderColor"
       },
@@ -139,9 +139,9 @@
     },
     "background": {
       "primary": {
-        "ghost": "@color-hc-SystemColorGrayTextColor",
+        "ghost": "@color-hc-SystemColorButtonFaceColor",
         "hover": "@color-hc-SystemColorHighlightColor",
-        "active": "@color-hc-SystemColorButtonFaceColor",
+        "active": "@color-hc-SystemColorHighlightColor",
         "disabled": "@color-hc-SystemColorButtonFaceColor"
       },
       "solid": {
@@ -312,26 +312,26 @@
     },
     "outline": {
       "primary": {
-        "normal": "@color-hc-PlaceholderColor"
+        "normal": "@color-hc-SystemColorButtonTextColor"
       },
       "focus": {
-        "normal": "@color-hc-PlaceholderColor"
+        "normal": "@color-hc-SystemColorHighlightColor"
       },
       "secondary": {
-        "normal": "@color-hc-PlaceholderColor"
+        "normal": "@color-hc-SystemColorWindowTextColor"
       },
       "input": {
-        "normal": "@color-hc-PlaceholderColor",
+        "normal": "@color-hc-SystemColorButtonTextColor",
         "active": "@color-hc-SystemColorHighlightColor"
       },
       "button": {
-        "normal": "@color-hc-PlaceholderColor"
+        "normal": "@color-hc-SystemColorButtonTextColor"
       },
       "join": {
-        "normal": "@color-hc-PlaceholderColor"
+        "normal": "@color-hc-SystemColorButtonTextColor"
       },
       "cancel": {
-        "normal": "@color-hc-PlaceholderColor"
+        "normal": "@color-hc-SystemColorButtonTextColor"
       },
       "disabled": {
         "normal": "@color-hc-SystemColorGrayTextColor"
@@ -439,8 +439,8 @@
       "default": "@color-hc-PlaceholderColor"
     },
     "globaltint": {
-      "normal": "@color-hc-PlaceholderColor",
-      "selected": "@color-hc-PlaceholderColor"
+      "normal": "@color-hc-SystemColorHighlightTextColor",
+      "selected": "@color-hc-SystemColorHighlightTextColor"
     },
     "groupedbackground": {
       "tertiary": {
