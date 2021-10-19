@@ -4,35 +4,35 @@
     "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=2970%3A31",
     "one": {
       "text": "@theme-text-team-mint-normal",
-      "border": "@theme-text-team-mint-normal"
+      "outline": "@theme-text-team-mint-normal"
     },
     "two": {
       "text": "@theme-text-team-cobalt-normal",
-      "border": "@theme-text-team-cobalt-normal"
+      "outline": "@theme-text-team-cobalt-normal"
     },
     "three": {
       "text": "@theme-text-team-orange-normal",
-      "border": "@theme-text-team-orange-normal"
+      "outline": "@theme-text-team-orange-normal"
     },
     "four": {
       "text": "@theme-text-team-pink-normal",
-      "border": "@theme-text-team-pink-normal"
+      "outline": "@theme-text-team-pink-normal"
     },
     "five": {
       "text": "@theme-text-team-lime-normal",
-      "border": "@theme-text-team-lime-normal"
+      "outline": "@theme-text-team-lime-normal"
     },
     "six": {
       "text": "@theme-text-team-cyan-normal",
-      "border": "@theme-text-team-cyan-normal"
+      "outline": "@theme-text-team-cyan-normal"
     },
     "seven": {
       "text": "@theme-text-team-purple-normal",
-      "border": "@theme-text-team-purple-normal"
+      "outline": "@theme-text-team-purple-normal"
     },
     "eight": {
       "text": "@theme-text-team-violet-normal",
-      "border": "@theme-text-team-violet-normal"
+      "outline": "@theme-text-team-violet-normal"
     }
   }
 }
