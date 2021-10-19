@@ -1,0 +1,10 @@
+{
+  "banner": {
+    "comment": "iOS specific banner styles",
+    "figma": "https://www.figma.com/file/L67wWWZaXcvVOLEpn77adE/Components---iOS?node-id=8671%3A78026",
+    "toast": {
+      "text": "@theme-text-primary-normal",
+      "background": "@theme-groupedbackground-tertiary-normal"
+    }
+  }
+}
