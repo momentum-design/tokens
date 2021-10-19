@@ -97,6 +97,51 @@
     "modifierChip": {
       "background": "@theme-button-primary-normal",
       "text": "@theme-text-primary-inverted"
+    },
+    "textfieldWin": {
+      "#normal": {
+        "background": "@theme-background-secondary-normal"
+      },
+      "#hovered": {
+        "background": "@theme-background-secondary-normal"
+      },
+      "#active": {
+        "background": "@theme-background-secondary-normal"
+      },
+      "#focused": {
+        "background": "@theme-background-secondary-normal"
+      },
+      "#disabled": {
+        "background": "@theme-background-secondary-normal"
+      }
+    },
+    "maxMinButton": {
+      "#normal": {
+        "background": "@theme-button-secondary-normal",
+        "text": "@theme-text-primary-normal"
+      },
+      "#hovered": {
+        "background": "@theme-button-secondary-hover",
+        "text": "@theme-text-primary-normal"
+      },
+      "#pressed": {
+        "background": "@theme-button-secondary-pressed",
+        "text": "@theme-text-primary-normal"
+      }
+    },
+    "closeButton": {
+      "#normal": {
+        "background": "@theme-button-secondary-normal",
+        "text": "@theme-text-primary-normal"
+      },
+      "#hovered": {
+        "background": "@theme-button-cancel-hover",
+        "text": "@theme-common-text-white-normal"
+      },
+      "#pressed": {
+        "background": "@theme-button-cancel-pressed",
+        "text": "@theme-common-text-white-normal"
+      }
     }
   }
 }
