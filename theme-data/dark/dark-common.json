@@ -327,9 +327,6 @@
       "slate": "@color-slate-70",
       "violet": "@color-violet-70"
     },
-    "controlActive": {
-      "normal": "@color-blue-40"
-    },
     "scrollbar": {
       "button": {
         "normal": "@color-white-alpha-20",
