@@ -34,6 +34,19 @@
         "border": "none",
         "badge": "@theme-presence-doNotDisturb"
       }
+    },
+    "global-plus": {
+      "#normal": {
+        "icon-color": "@theme-globaltint-normal"
+      },
+      "#hovered": {
+        "background": "@theme-button-secondary-hover",
+        "icon-color": "@theme-globaltint-normal"
+      },
+      "#pressed": {
+        "background": "@theme-globaltint-normal",
+        "icon-color": "@theme-common-text-white-normal"
+      }
     }
   }
 }
