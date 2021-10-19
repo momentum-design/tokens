@@ -1,0 +1,51 @@
+{
+  "globalHeader": {
+    "comment": "Applied to modal and menu list backgrounds",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=5282%3A497",
+    "textfieldWin": {
+      "#normal": {
+        "background": "@theme-background-secondary-normal"
+      },
+      "#hovered": {
+        "background": "@theme-background-secondary-normal"
+      },
+      "#active": {
+        "background": "@theme-background-secondary-normal"
+      },
+      "#focused": {
+        "background": "@theme-background-secondary-normal"
+      },
+      "#disabled": {
+        "background": "@theme-background-secondary-normal"
+      }
+    },
+    "maxMinButton": {
+      "#normal": {
+        "background": "@theme-button-secondary-normal",
+        "text": "@theme-text-primary-normal"
+      },
+      "#hovered": {
+        "background": "@theme-button-secondary-hover",
+        "text": "@theme-text-primary-normal"
+      },
+      "#pressed": {
+        "background": "@theme-button-secondary-pressed",
+        "text": "@theme-text-primary-normal"
+      }
+    },
+    "closeButton": {
+      "#normal": {
+        "background": "@theme-button-secondary-normal",
+        "text": "@theme-text-primary-normal"
+      },
+      "#hovered": {
+        "background": "@theme-button-cancel-hover",
+        "text": "@theme-common-text-white-normal"
+      },
+      "#pressed": {
+        "background": "@theme-button-cancel-pressed",
+        "text": "@theme-common-text-white-normal"
+      }
+    }
+  }
+}
