@@ -489,6 +489,7 @@ console.log("=== Core files loaded ====================");
 
 // Then load the component files
 console.log("=== Loading component files ==============");
+let componentData = loadFile("components", true);
 if (target.includeMobileTokens) {
   try {
     merge(componentData, loadFile("platformcomponents/mobile", true));
@@ -503,7 +504,6 @@ if (target.includeDesktopTokens) {
     console.log("No platform component tokens for desktop");
   }
 }
-let componentData = loadFile("components", true);
 try {
   merge(componentData, loadFile("platformcomponents/" + target.platform, true));
 } catch (error) {
