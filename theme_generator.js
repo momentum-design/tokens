@@ -11,7 +11,7 @@ function useColourNames(tokens, path) {
     if (typeof value === "object") {
       useColourNames(value, colourName);
     } else if (typeof value === "string") {
-      tokens[key] = colourName.replace("SystemColor","").replace("hc-",""); // We modify colour names for high contrast;
+      tokens[key] = colourName.replace("SystemColor", "").replace("hc-", ""); // We modify colour names for high contrast;
     } else {
       console.error("Unexpected type of colour " + typeof value);
       process.exit(1);
@@ -88,8 +88,8 @@ function loadFile(fileName, isDirectory) {
     try {
       const tokenFileData = fs.readFileSync(fileName);
       /* We don't return the JSON directly - instead we fiddle with the structure of the files to ensure that UI states are always the last part of a token name
-      * by flattening it, reordering the keys, and then unflattening it
-      */
+       * by flattening it, reordering the keys, and then unflattening it
+       */
       parsedTokenFile = JSON.parse(tokenFileData);
     } catch (error) {
       console.error(error);
@@ -347,14 +347,14 @@ let target = {
   fileFormat: "json",
   includeJsonHeader: false,
   includeMobileTokens: false,
-  includeDesktopTokens:false,
+  includeDesktopTokens: false,
   uiStatesAsObject: true,
   omitThemeTokens: false,
   /* if true we use the background colour as the value of the border if border=none
-  * if false, we instead modify to a border-style and border-color variables
-  */
+   * if false, we instead modify to a border-style and border-color variables
+   */
   noBorderIsBackgroundColour: true,
-  themes:[]
+  themes: [],
 };
 
 if (args.target) {
@@ -486,12 +486,6 @@ console.log("=== Core files loaded ====================");
 
 // Then load the component files
 console.log("=== Loading component files ==============");
-let componentData = loadFile("components", true);
-try {
-  merge(componentData, loadFile("platformcomponents/" + target.platform, true));
-} catch (error) {
-  console.log("No platform component tokens for " + target.platform);
-}
 if (target.includeMobileTokens) {
   try {
     merge(componentData, loadFile("platformcomponents/mobile", true));
@@ -505,6 +499,12 @@ if (target.includeDesktopTokens) {
   } catch (error) {
     console.log("No platform component tokens for desktop");
   }
+}
+let componentData = loadFile("components", true);
+try {
+  merge(componentData, loadFile("platformcomponents/" + target.platform, true));
+} catch (error) {
+  console.log("No platform component tokens for " + target.platform);
 }
 
 const flattenedComponentTokens = {};
