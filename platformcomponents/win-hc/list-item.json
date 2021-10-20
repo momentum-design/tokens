@@ -1,0 +1,16 @@
+{
+  "listitem": {
+    "#hovered": {
+      "textprimary": "@theme-text-primary-inverted",
+      "textsecondary": "@theme-text-primary-inverted",
+      "tick": "@theme-control-active-hover",
+      "icon": "@theme-text-primary-inverted"
+    },
+    "#pressed": {
+      "textprimary": "@theme-text-primary-inverted",
+      "textsecondary": "@theme-text-primary-inverted",
+      "tick": "@theme-control-active-hover",
+      "icon": "@theme-text-primary-inverted"
+    }
+  }
+}

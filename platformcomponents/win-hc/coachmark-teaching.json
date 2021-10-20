@@ -1,0 +1,22 @@
+{
+  "coachmarkteaching": {
+    "button": {
+      "primary": {
+        "#hovered": {
+          "text": "@theme-text-primary-inverted"
+        },
+        "#pressed": {
+          "text": "@theme-text-primary-inverted"
+        }
+      },
+      "secondary": {
+        "#hovered": {
+          "text": "@theme-text-primary-normal"
+        },
+        "#pressed": {
+          "text": "@theme-text-primary-normal"
+        }
+      }
+    }
+  }
+}

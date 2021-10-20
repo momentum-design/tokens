@@ -1,0 +1,51 @@
+{
+  "globalHeader": {
+    "comment": "Applied to modal and menu list backgrounds",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=5282%3A497",
+    "textfield": {
+      "#hovered": {
+        "text": "@theme-text-primary-inverted"
+      }
+    },
+    "buttonDevice": {
+      "#hovered": {
+        "text-inactive": "@theme-text-primary-inverted"
+      },
+      "#pressed": {
+        "text-inactive": "@theme-text-primary-inverted"
+      }
+    },
+    "buttonIcon": {
+      "#hovered": {
+        "icon": "@theme-text-primary-inverted"
+      },
+      "#pressed": {
+        "icon": "@theme-text-primary-inverted"
+      }
+    },
+    "buttonStatus": {
+      "#hovered": {
+        "text": "@theme-text-primary-inverted"
+      },
+      "#pressed": {
+        "text": "@theme-text-primary-inverted"
+      }
+    },
+    "maxMinButton": {
+      "#hovered": {
+        "text": "@theme-text-primary-inverted"
+      },
+      "#pressed": {
+        "text": "@theme-text-primary-inverted"
+      }
+    },
+    "closeButton": {
+      "#hovered": {
+        "text": "@theme-text-primary-normal"
+      },
+      "#pressed": {
+        "text": "@theme-text-primary-normal"
+      }
+    }
+  }
+}
