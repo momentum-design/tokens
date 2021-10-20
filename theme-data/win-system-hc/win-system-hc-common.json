@@ -398,9 +398,6 @@
       "slate": "@color-hc-SystemColorWindowTextColor",
       "violet": "@color-hc-SystemColorWindowTextColor"
     },
-    "controlActive": {
-      "normal": "@color-hc-SystemColorHighlightColor"
-    },
     "scrollbar": {
       "button": {
         "normal": "@color-hc-SystemColorButtonFaceColor",

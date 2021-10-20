@@ -30,7 +30,7 @@
       }
     },
     "chat-bubble": {
-      "icon": "@theme-controlActive",
+      "icon": "@theme-control-active",
       "border": "@theme-outline-primary"
     }
   }
