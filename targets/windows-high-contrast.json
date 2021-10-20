@@ -10,5 +10,6 @@
   "uiStatesAsObject": true,
   "omitThemeTokens": true,
   "noBorderIsBackgroundColour": true,
+  "ignoreAlpha": true,
   "themes": ["themes/theme-win-system-hc-webex.json"]
 }
