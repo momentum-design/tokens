@@ -156,7 +156,9 @@ function normaliseUnit(value) {
       console.error("Unable to parse colour: " + value);
       process.exit(1);
     }
-    c.alpha = c.alpha * alpha;
+    if (!target.ignoreAlpha) {
+      c.alpha = c.alpha * alpha;
+    }
     if (target.colorFormat === "rgba") {
       return `rgba(${c.values[0]}, ${c.values[1]}, ${c.values[2]}, ${c.alpha})`;
     } else if (target.colorFormat === "object") {
@@ -354,6 +356,7 @@ let target = {
    * if false, we instead modify to a border-style and border-color variables
    */
   noBorderIsBackgroundColour: true,
+  ignoreAlpha: false,
   themes: [],
 };
 
