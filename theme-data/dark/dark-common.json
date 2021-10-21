@@ -413,6 +413,14 @@
           "disabled": "@color-black-alpha-40"
         }
       }
+    },
+    "indicators": {
+      "unstable": "@color-orange-50",
+      "attention": "@color-red-50",
+      "stable": "@color-green-50",
+      "private": "@color-gray-50",
+      "caution": "@color-yellow-50",
+      "secure": "@color-blue-50"
     }
   }
 }
