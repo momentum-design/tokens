@@ -1,0 +1,97 @@
+{
+  "button": {
+    "primary": {
+      "#normal": {
+        "text": "@theme-text-primary-normal"
+      },
+      "#hovered": {
+        "text": "@theme-text-primary-inverted"
+      },
+      "#pressed": {
+        "text": "@theme-text-primary-inverted"
+      }
+    },
+    "secondary": {
+      "#hovered": {
+        "text": "@theme-text-primary-inverted"
+      },
+      "#pressed": {
+        "text": "@theme-text-primary-inverted"
+      }
+    },
+    "cancel-ghost": {
+      "#hovered": {
+        "text": "@theme-text-primary-inverted"
+      },
+      "#pressed": {
+        "text": "@theme-text-primary-inverted"
+      }
+    },
+    "accent-ghost": {
+      "#hovered": {
+        "text": "@theme-text-primary-inverted"
+      },
+      "#pressed": {
+        "text": "@theme-text-primary-inverted"
+      }
+    },
+    "message-ghost": "@button-accent-ghost",
+    "join-fill": {
+      "#hovered": {
+        "text": "@theme-text-primary-inverted"
+      },
+      "#pressed": {
+        "text": "@theme-text-primary-inverted"
+      }
+    },
+    "join-outline": {
+      "#hovered": {
+        "text": "@theme-text-primary-inverted"
+      },
+      "#pressed": {
+        "text": "@theme-text-primary-inverted"
+      }
+    },
+    "cancel-fill": {
+      "#hovered": {
+        "text": "@theme-text-primary-inverted"
+      },
+      "#pressed": {
+        "text": "@theme-text-primary-inverted"
+      }
+    },
+    "cancel-outline": {
+      "#hovered": {
+        "text": "@theme-text-primary-inverted"
+      },
+      "#pressed": {
+        "text": "@theme-text-primary-inverted"
+      }
+    },
+    "accent-fill": {
+      "#hovered": {
+        "text": "@theme-text-primary-inverted"
+      },
+      "#pressed": {
+        "text": "@theme-text-primary-inverted"
+      }
+    },
+    "message-fill": "@button-accent-fill",
+    "counter": {
+      "#hovered": {
+        "text": "@theme-text-primary-inverted"
+      },
+      "#pressed": {
+        "text": "@theme-text-primary-inverted"
+      }
+    },
+    "ghost": {
+      "#hovered": {
+        "text": "@theme-text-primary-inverted"
+      },
+      "#pressed": {
+        "text": "@theme-text-primary-inverted"
+      }
+    }
+  }
+}

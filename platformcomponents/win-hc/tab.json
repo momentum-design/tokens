@@ -1,0 +1,28 @@
+{
+  "tab": {
+    "active": {
+      "#normal": {
+        "text": "@theme-text-primary-inverted"
+      },
+      "#hovered": {
+        "text": "@theme-text-primary-inverted"
+      },
+      "#pressed": {
+        "text": "@theme-text-primary-inverted"
+      }
+    },
+    "inactive": {
+      "#hovered": {
+        "text": "@theme-text-primary-inverted"
+      },
+      "#pressed": {
+        "text": "@theme-text-primary-inverted"
+      },
+      "#disabled": {
+        "text": "@theme-text-primary-disabled"
+      }
+
+
+    }
+  }
+}

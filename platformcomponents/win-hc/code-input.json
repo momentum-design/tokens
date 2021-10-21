@@ -1,0 +1,24 @@
+{
+  "codeinput": {
+    "#hovered": {
+      "text": "@theme-text-primary-inverted"
+    },
+    "#active": {
+      "text": "@theme-text-primary-inverted"
+    },
+    "#focused": {
+      "text": "@theme-text-primary-inverted"
+    },
+    "#disabled": {
+      "text": "@theme-text-primary-disabled"
+    },
+    "error": {
+      "#hovered": {
+        "text": "@theme-text-primary-inverted"
+      },
+      "#active": {
+        "text": "@theme-text-primary-inverted"
+      }
+    }
+  }
+}

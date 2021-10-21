@@ -53,7 +53,7 @@
     "text": {
       "primary": {
         "normal": "@color-hc-SystemColorButtonTextColor",
-        "inverted": "@color-hc-SystemColorHighlightColor",
+        "inverted": "@color-hc-SystemColorHighlightTextColor",
         "disabled": "@color-hc-SystemColorGrayTextColor"
       },
       "secondary": {
@@ -61,23 +61,23 @@
       },
       "error": {
         "normal": "@color-hc-SystemColorButtonTextColor",
-        "hover": "@color-hc-PlaceholderColor",
+        "hover": "@color-hc-SystemColorHighlightTextColor",
         "active": "@color-hc-PlaceholderColor"
       },
       "success": {
         "normal": "@color-hc-SystemColorButtonTextColor",
-        "hover": "@color-hc-PlaceholderColor",
+        "hover": "@color-hc-SystemColorHighlightTextColor",
         "active": "@color-hc-PlaceholderColor"
       },
       "warning": {
         "normal": "@color-hc-SystemColorWindowColor",
-        "hover": "@color-hc-PlaceholderColor",
+        "hover": "@color-hc-SystemColorHighlightTextColor",
         "active": "@color-hc-PlaceholderColor"
       },
       "highlight": "@color-hc-PlaceholderColor",
       "accent": {
         "normal": "@color-hc-SystemColorButtonTextColor",
-        "hover": "@color-hc-PlaceholderColor",
+        "hover": "@color-hc-SystemColorHotlightColor",
         "active": "@color-hc-PlaceholderColor"
       },
       "team": {
@@ -268,7 +268,7 @@
         "pressed": "@color-hc-SystemColorHighlightColor",
         "active": {
           "normal": "@color-hc-SystemColorHighlightColor",
-          "hover": "@color-hc-SystemColorButtonFaceColor",
+          "hover": "@color-hc-SystemColorHighlightColor",
           "pressed": "@color-hc-SystemColorButtonFaceColor"
         }
       },
@@ -400,7 +400,7 @@
     },
     "scrollbar": {
       "button": {
-        "normal": "@color-hc-SystemColorButtonFaceColor",
+        "normal": "@color-hc-SystemColorHotlightColor",
         "hover": "@color-hc-SystemColorHighlightColor",
         "pressed": "@color-hc-SystemColorHighlightColor"
       },

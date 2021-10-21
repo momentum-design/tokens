@@ -1,0 +1,34 @@
+{
+  "scrollbar": {
+    "track": {
+      "#normal": {
+        "background": "@theme-scrollbar-background-secondary-normal"
+      },
+      "#disabled": {
+        "background": "@theme-background-primary-disabled"
+      }
+    },
+    "thumb": {
+      "#normal": {
+        "background": "@theme-scrollbar-button-hover"
+      }
+    },
+    "arrow-button": {
+      "#normal": {
+        "text": "@theme-text-primary-normal",
+        "background": "@theme-scrollbar-background-secondary-normal"
+      },
+      "#hovered": {
+        "text": "@theme-scrollbar-button-hover",
+        "background": "@theme-scrollbar-arrow-background-hover"
+      },
+      "#pressed": {
+        "text": "@theme-scrollbar-arrow-background-pressed"
+      },
+      "#disabled": {
+        "text": "@theme-text-primary-disabled",
+        "background": "@theme-background-primary-disabled"
+      }
+    }
+  }
+}
