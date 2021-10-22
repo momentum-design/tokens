@@ -142,6 +142,28 @@
         "background": "@theme-button-cancel-pressed",
         "text": "@theme-common-text-white-normal"
       }
+    },
+    "searchCancelButton": {
+      "#normal": {
+        "background": "@theme-button-secondary-normal",
+        "border": "@theme-text-primary-normal",
+        "text": "@theme-text-primary-normal"
+      },
+      "#hovered": {
+        "background": "@theme-button-secondary-hover",
+        "border": "@theme-text-primary-normal",
+        "text": "@theme-text-primary-normal"
+      },
+      "#pressed": {
+        "background": "@theme-button-secondary-pressed",
+        "border": "@theme-text-primary-normal",
+        "text": "@theme-text-primary-normal"
+      },
+      "#disabled": {
+        "background": "@theme-button-secondary-normal",
+        "border": "@theme-text-primary-normal",
+        "text": "@theme-text-primary-normal"
+      }
     }
   }
 }
