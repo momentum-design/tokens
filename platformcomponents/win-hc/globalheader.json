@@ -50,7 +50,6 @@
     "searchCancelButton": {
       "#hovered": {
         "text": "@theme-text-primary-inverted"
-
       },
       "#pressed": {
         "text": "@theme-text-primary-inverted"
