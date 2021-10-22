@@ -162,7 +162,7 @@
       "#disabled": {
         "background": "@theme-button-secondary-normal",
         "border": "@theme-text-primary-normal",
-        "text": "@theme-text-primary-normal"
+        "text": "@theme-text-primary-disabled"
       }
     }
   }
