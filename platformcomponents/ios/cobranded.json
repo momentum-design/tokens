@@ -1,0 +1,10 @@
+{
+  "cobranded": {
+    "comment": "iOS cobranded",
+    "figma": "https://www.figma.com/file/fbO8f7g2SzOjuAJl5rGzsF/Advanced-Branding---Partner-Hub-%2F-Control-Hub?node-id=1895%3A31935",
+    "app-nav": {
+      "active": "@theme-globaltint-normal",
+      "badge": "@theme-indicators-attention"
+    }
+  }
+}
