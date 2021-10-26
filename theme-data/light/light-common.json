@@ -424,6 +424,13 @@
       "locked": "@color-gray-60",
       "caution": "@color-yellow-60",
       "secure": "@color-blue-60"
+    },
+    "materials": {
+      "systemMaterial": "system-Material-Light",
+      "systemThinMaterial": "system-Thin-Material-Light",
+      "systemUltraThinMaterial": "system-Ultra-Thin-Material-Light",
+      "systemThickMaterial": "system-Thick-Material-Light",
+      "systemChromeMaterial": "system-Chrome-Material-Light"
     }
   }
 }

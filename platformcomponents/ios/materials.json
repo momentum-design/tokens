@@ -1,0 +1,10 @@
+{
+  "materials": {
+    "figma": "https://www.figma.com/file/L67wWWZaXcvVOLEpn77adE/Components---iOS?node-id=2923%3A11776&viewport=972%2C446%2C1.2656322717666626",
+    "system-Material": "@theme-materials-systemMaterial",
+    "system-Thin-Material": "@theme-materials-systemThinMaterial",
+    "system-Ultra-Thin-Material": "@theme-materials-systemUltraThinMaterial",
+    "system-Thick-Material": "@theme-materials-systemThickMaterial",
+    "system-Chrome-Material": "@theme-materials-systemChromeMaterial"
+  }
+}
