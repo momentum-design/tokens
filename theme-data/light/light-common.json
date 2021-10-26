@@ -408,8 +408,8 @@
       },
       "text": {
         "accent": {
-          "normal": "@theme-color-70",
-          "hover": "@theme-color-90",
+          "normal": "@theme-color-40",
+          "hover": "@theme-color-20",
           "disabled": "@color-white-alpha-40"
         },
         "primary": {
