@@ -301,6 +301,16 @@ function fixBorders(tokens) {
   }
 }
 
+function removeNoneTokens(tokens) {
+  Object.entries(tokens).forEach(([key, value]) => {
+    if (typeof value === "object") {
+      removeNoneTokens(tokens[key]);
+    } else if (value === "none") {
+      delete tokens[key];
+    }
+  });
+}
+
 // Sorts out UI states
 function finaliseTokens(tokens) {
   const finalisedTokens = {};
@@ -550,6 +560,8 @@ target.themes.forEach((themeFileName) => {
 
   // Look for borders, and expand to border-style and border-color
   fixBorders(resolvedComponentData);
+  removeNoneTokens(flattenedThemeTokens);
+  removeNoneTokens(resolvedThemeData);
 
   // Flatten the token names and then expand every token into UI states
   let stateTokens = {};
