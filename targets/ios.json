@@ -10,16 +10,18 @@
   "uiStatesAsObject": false,
   "omitThemeTokens": false,
   "noBorderIsBackgroundColour": true,
-  "themes": ["themes/theme-dark-bronze.json",
-             "themes/theme-dark-jade.json",
-             "themes/theme-dark-rose.json",
-             "themes/theme-light-bronze.json",
-             "themes/theme-light-jade.json",
-             "themes/theme-light-rose.json",
-             "themes/theme-dark-indigo.json",
-             "themes/theme-dark-lavender.json",
-             "themes/theme-dark-webex.json",
-             "themes/theme-light-indigo.json",
-             "themes/theme-light-lavender.json",
-             "themes/theme-light-webex.json"]
+  "themes": [
+    "themes/ios/theme-dark-bronze.json",
+    "themes/ios/theme-dark-jade.json",
+    "themes/ios/theme-dark-rose.json",
+    "themes/ios/theme-light-bronze.json",
+    "themes/ios/theme-light-jade.json",
+    "themes/ios/theme-light-rose.json",
+    "themes/ios/theme-dark-indigo.json",
+    "themes/ios/theme-dark-lavender.json",
+    "themes/ios/theme-dark-webex.json",
+    "themes/ios/theme-light-indigo.json",
+    "themes/ios/theme-light-lavender.json",
+    "themes/ios/theme-light-webex.json"
+  ]
 }

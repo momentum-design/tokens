@@ -523,6 +523,14 @@ target.themes.forEach((themeFileName) => {
   // Load all the files to build one big object
   let themeFileData = fs.readFileSync(themeFileName);
   let themeFile = JSON.parse(themeFileData);
+  if (themeFile.parent !== undefined) {
+    // Would like to just do a merge, but it doesn't merge arrays the way I want, so doing it manually...
+    //merge(themeFile, JSON.parse(parentData));
+    parentData = fs.readFileSync(themeFile.parent);
+    parent = JSON.parse(parentData);
+    parent.files = parent.files.concat(themeFile.files);
+    themeFile = parent;
+  }
   console.log(`Loading theme ${themeFile.accent} ${themeFile.theme} for platform ${target.platform} using color format ${target.colorFormat}`);
 
   const themeData = {};

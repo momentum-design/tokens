@@ -1,0 +1,11 @@
+{
+  "theme": {
+    "materials": {
+      "systemMaterial": "system-Material-Light",
+      "systemThinMaterial": "system-Thin-Material-Light",
+      "systemUltraThinMaterial": "system-Ultra-Thin-Material-Light",
+      "systemThickMaterial": "system-Thick-Material-Light",
+      "systemChromeMaterial": "system-Chrome-Material-Light"
+    }
+  }
+}
