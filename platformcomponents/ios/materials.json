@@ -1,10 +1,10 @@
 {
   "materials": {
     "figma": "https://www.figma.com/file/L67wWWZaXcvVOLEpn77adE/Components---iOS?node-id=2923%3A11776&viewport=972%2C446%2C1.2656322717666626",
-    "system-Material": "@theme-materials-systemMaterial",
-    "system-Thin-Material": "@theme-materials-systemThinMaterial",
-    "system-Ultra-Thin-Material": "@theme-materials-systemUltraThinMaterial",
-    "system-Thick-Material": "@theme-materials-systemThickMaterial",
-    "system-Chrome-Material": "@theme-materials-systemChromeMaterial"
+    "system-material": "@theme-materials-system-material",
+    "system-thin-material": "@theme-materials-system-thin-material",
+    "system-ultra-thin-material": "@theme-materials-system-ultra-thin-material",
+    "system-thick-material": "@theme-materials-system-thick-material",
+    "system-chrome-material": "@theme-materials-system-chrome-material"
   }
 }
