@@ -1,0 +1,4 @@
+{
+  "parent": "themes/theme-dark-rose.json",
+  "files": ["theme-data/dark/dark-ios.json"]
+}
