@@ -15,6 +15,7 @@
       "background": "@theme-background-primary-hover",
       "textprimary": "@theme-text-primary-normal",
       "textsecondary": "@theme-text-secondary-normal",
+      "textmissed": "@theme-text-error-normal",
       "tick": "@theme-control-active-normal",
       "icon": "@theme-text-primary-normal",
       "dotdivider": "@theme-outline-primary-normal"
@@ -23,6 +24,7 @@
       "background": "@theme-background-primary-active",
       "textprimary": "@theme-text-primary-normal",
       "textsecondary": "@theme-text-secondary-normal",
+      "textmissed": "@theme-text-error-normal",
       "tick": "@theme-control-active-normal",
       "icon": "@theme-text-primary-normal",
       "dotdivider": "@theme-outline-primary-normal"
@@ -31,6 +33,7 @@
       "background": "@theme-background-primary-ghost",
       "textprimary": "@theme-text-primary-disabled",
       "textsecondary": "@theme-text-primary-disabled",
+      "textmissed": "@theme-text-primary-disabled",
       "tick": "@theme-text-primary-disabled",
       "icon": "@theme-text-primary-disabled",
       "dotdivider": "@theme-outline-primary-normal"
