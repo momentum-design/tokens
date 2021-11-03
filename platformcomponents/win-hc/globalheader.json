@@ -31,6 +31,10 @@
         "text": "@theme-text-primary-inverted"
       }
     },
+    "modifierChip": {
+      "background": "@theme-background-primary-active",
+      "text": "@theme-text-primary-inverted"
+    },
     "maxMinButton": {
       "#hovered": {
         "text": "@theme-text-primary-inverted"

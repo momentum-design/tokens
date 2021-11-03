@@ -92,6 +92,20 @@
       "#pressed": {
         "text": "@theme-text-primary-inverted"
       }
+    },
+    "dialpad": {
+      "#hovered": {
+        "text": {
+          "number": "@theme-text-primary-inverted",
+          "characters": "@theme-text-primary-inverted"
+        }
+      },
+      "#pressed": {
+        "text": {
+          "number": "@theme-text-primary-inverted",
+          "characters": "@theme-text-primary-inverted"
+        }
+      }
     }
   }
 }

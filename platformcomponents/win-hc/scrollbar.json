@@ -10,13 +10,13 @@
     },
     "thumb": {
       "#normal": {
-        "background": "@theme-scrollbar-button-hover"
+        "background": "@theme-scrollbar-button-normal"
       }
     },
     "arrow-button": {
       "#normal": {
-        "text": "@theme-text-primary-normal",
-        "background": "@theme-scrollbar-background-secondary-normal"
+        "text": "@theme-scrollbar-button-hover",
+        "background": "@theme-scrollbar-arrow-background-normal"
       },
       "#hovered": {
         "text": "@theme-scrollbar-button-hover",

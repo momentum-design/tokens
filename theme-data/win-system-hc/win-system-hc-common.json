@@ -60,7 +60,7 @@
         "normal": "@color-hc-SystemColorWindowTextColor"
       },
       "error": {
-        "normal": "@color-hc-SystemColorButtonTextColor",
+        "normal": "@color-hc-SystemColorHotlightColor",
         "hover": "@color-hc-SystemColorHighlightTextColor",
         "active": "@color-hc-PlaceholderColor"
       },
@@ -400,14 +400,14 @@
     },
     "scrollbar": {
       "button": {
-        "normal": "@color-hc-SystemColorHotlightColor",
+        "normal": "@color-hc-SystemColorButtonTextColor",
         "hover": "@color-hc-SystemColorHighlightColor",
         "pressed": "@color-hc-SystemColorHighlightColor"
       },
       "arrow": {
         "normal": "@color-hc-SystemColorHotlightColor",
         "background": {
-          "normal": "@color-hc-PlaceholderColor",
+          "normal": "@color-hc-SystemColorButtonTextColor",
           "hover": "@color-hc-SystemColorHighlightColor",
           "pressed": "@color-hc-SystemColorHighlightColor"
         }
