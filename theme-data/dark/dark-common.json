@@ -91,13 +91,13 @@
     "background": {
       "primary": {
         "ghost": "@color-white-alpha-00",
-        "hover": "@color-white-alpha-05",
+        "hover": "@color-white-alpha-07",
         "active": "@color-white-alpha-11",
         "disabled": "@color-white-alpha-11"
       },
       "solid": {
         "primary": {
-          "normal": "@color-gray-100"
+          "normal": "@color-black-alpha-100"
         },
         "secondary": {
           "normal": "@color-gray-95"
@@ -112,7 +112,8 @@
       "secondary": {
         "normal": "@color-white-alpha-11",
         "hover": "@color-white-alpha-20",
-        "active": "@color-white-alpha-30"
+        "active": "@color-white-alpha-30",
+        "disabled": "@color-white-alpha-00"
       },
       "accent": {
         "normal": "@theme-color-60"
