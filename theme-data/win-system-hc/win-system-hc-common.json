@@ -142,6 +142,7 @@
         "ghost": "@color-hc-SystemColorButtonFaceColor",
         "hover": "@color-hc-SystemColorHighlightColor",
         "active": "@color-hc-SystemColorHighlightColor",
+        "focus": "@color-hc-SystemColorHotlightColor",
         "disabled": "@color-hc-SystemColorButtonFaceColor"
       },
       "solid": {
