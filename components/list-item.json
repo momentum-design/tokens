@@ -20,6 +20,14 @@
       "icon": "@theme-text-primary-normal",
       "dotdivider": "@theme-outline-primary-normal"
     },
+    "#focused": {
+      "background": "@theme-background-primary-hover",
+      "textprimary": "@theme-text-primary-normal",
+      "textsecondary": "@theme-text-secondary-normal",
+      "tick": "@theme-control-active-normal",
+      "icon": "@theme-text-primary-normal",
+      "dotdivider": "@theme-outline-primary-normal"
+    },
     "#pressed": {
       "background": "@theme-background-primary-active",
       "textprimary": "@theme-text-primary-normal",

@@ -7,6 +7,9 @@
       "tick": "@theme-control-active-hover",
       "icon": "@theme-text-primary-inverted"
     },
+    "#focused": {
+      "background": "@theme-background-primary-focus"
+    },
     "#pressed": {
       "textprimary": "@theme-text-primary-inverted",
       "textsecondary": "@theme-text-primary-inverted",
