@@ -9,6 +9,12 @@
         "black": {
           "normal": "@color-black-alpha-95",
           "disabled": "@color-black-alpha-40"
+        },
+        "success": {
+          "normal": "@color-green-40"
+        },
+        "error": {
+          "normal": "@color-red-40"
         }
       },
       "overlay": {
