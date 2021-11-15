@@ -356,6 +356,14 @@
         "gold": "@color-hc-SystemColorHighlightColor"
       }
     },
+    "gradient": {
+      "divider": {
+        "normal": "@color-hc-PlaceholderColor",
+        "error": "@color-hc-PlaceholderColor",
+        "warning": "@color-hc-PlaceholderColor",
+        "announce": "@color-hc-PlaceholderColor"
+      }
+    },
     "control": {
       "active": {
         "normal": "@color-hc-SystemColorHighlightColor",

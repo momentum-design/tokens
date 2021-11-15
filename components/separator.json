@@ -1,8 +1,12 @@
 {
   "separator": {
     "comment": "",
-    "figma": "",
+    "figma": "https://www.figma.com/file/NhiWBKypDml4kDCTnLUygT/Component-Explorations?node-id=1242%3A166850",
     "primary": "@theme-outline-primary-normal",
-    "secondary": "@theme-outline-secondary-normal"
+    "secondary": "@theme-outline-secondary-normal",
+    "gradient-normal": ["@theme-gradient-divider-normal", "@theme-gradient-divider-normal*0"],
+    "gradient-announce": ["@theme-gradient-divider-announce", "@theme-gradient-divider-announce*0.6"],
+    "gradient-warn": ["@theme-gradient-divider-warning", "@theme-gradient-divider-warning*0.6"],
+    "gradient-error": ["@theme-gradient-divider-error", "@theme-gradient-divider-error*0.6"]
   }
 }
