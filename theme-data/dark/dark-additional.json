@@ -1,0 +1,143 @@
+{
+  "theme": {
+    "text": {
+      "team": {
+        "default": {
+          "normal": "@theme-text-secondary-normal",
+          "active": "@theme-text-primary-normal"
+        },
+        "cobalt": {
+          "normal": "@color-cobalt-40",
+          "hover": "@color-cobalt-40",
+          "active": "@color-cobalt-20"
+        },
+        "cyan": {
+          "normal": "@color-cyan-40",
+          "hover": "@color-cyan-40",
+          "active": "@color-cyan-20"
+        },
+        "mint": {
+          "normal": "@color-mint-40",
+          "hover": "@color-mint-40",
+          "active": "@color-mint-20"
+        },
+        "lime": {
+          "normal": "@color-lime-40",
+          "hover": "@color-lime-40",
+          "active": "@color-lime-20"
+        },
+        "gold": {
+          "normal": "@color-gold-40",
+          "hover": "@color-gold-40",
+          "active": "@color-gold-20"
+        },
+        "orange": {
+          "normal": "@color-orange-40",
+          "hover": "@color-orange-40",
+          "active": "@color-orange-20"
+        },
+        "pink": {
+          "normal": "@color-pink-40",
+          "hover": "@color-pink-40",
+          "active": "@color-pink-20"
+        },
+        "purple": {
+          "normal": "@color-purple-40",
+          "hover": "@color-purple-40",
+          "active": "@color-purple-20"
+        },
+        "violet": {
+          "normal": "@color-violet-40",
+          "hover": "@color-violet-40",
+          "active": "@color-violet-20"
+        },
+        "slate": {
+          "normal": "@color-slate-40",
+          "hover": "@color-slate-40",
+          "active": "@color-slate-20"
+        }
+      }
+    },
+    "background": {
+      "label": {
+        "cobalt": {
+          "normal": "@color-cobalt-90",
+          "hover": "@color-cobalt-80",
+          "active": "@color-cobalt-70"
+        },
+        "gold": {
+          "normal": "@color-gold-90",
+          "hover": "@color-gold-80",
+          "active": "@color-gold-70"
+        },
+        "lime": {
+          "normal": "@color-lime-90",
+          "hover": "@color-lime-80",
+          "active": "@color-lime-70"
+        },
+        "mint": {
+          "normal": "@color-mint-90",
+          "hover": "@color-mint-80",
+          "active": "@color-mint-70"
+        },
+        "orange": {
+          "normal": "@color-orange-90",
+          "hover": "@color-orange-80",
+          "active": "@color-orange-70"
+        },
+        "pink": {
+          "normal": "@color-pink-90",
+          "hover": "@color-pink-80",
+          "active": "@color-pink-70"
+        },
+        "purple": {
+          "normal": "@color-purple-90",
+          "hover": "@color-purple-80",
+          "active": "@color-purple-70"
+        },
+        "slate": {
+          "normal": "@color-slate-90",
+          "hover": "@color-slate-80",
+          "active": "@color-slate-70"
+        },
+        "violet": {
+          "normal": "@color-violet-90",
+          "hover": "@color-violet-80",
+          "active": "@color-violet-70"
+        }
+      },
+      "common": {
+        "normal": "@color-white-alpha-100"
+      },
+      "namelabel": {
+        "normal": "@color-black-alpha-55"
+      }
+    },
+    "outline": {
+      "label": {
+        "cobalt": "@color-cobalt-40",
+        "gold": "@color-gold-40",
+        "lime": "@color-lime-40",
+        "mint": "@color-mint-40",
+        "orange": "@color-orange-40",
+        "pink": "@color-pink-40",
+        "purple": "@color-purple-40",
+        "slate": "@color-slate-40",
+        "violet": "@color-violet-40"
+      }
+    },
+    "avatar": {
+      "default": "@color-white-alpha-30",
+      "cobalt": "@color-cobalt-70",
+      "cyan": "@color-cyan-70",
+      "gold": "@color-gold-70",
+      "lime": "@color-lime-70",
+      "mint": "@color-mint-70",
+      "orange": "@color-orange-70",
+      "pink": "@color-pink-70",
+      "purple": "@color-purple-70",
+      "slate": "@color-slate-70",
+      "violet": "@color-violet-70"
+    }
+  }
+}

@@ -1,9 +1,5 @@
 {
   "accent": "Lavender",
   "theme": "Light",
-  "files": [
-    "theme-data/common/common.json",
-    "theme-data/light/light-common.json",
-    "theme-data/light/light-lavender.json"
-  ]
+  "files": ["theme-data/common/common.json", "theme-data/light/light-common.json", "theme-data/light/light-additional.json", "theme-data/light/light-lavender.json"]
 }
