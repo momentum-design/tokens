@@ -191,14 +191,6 @@
         "disabled": "@color-black-alpha-11"
       }
     },
-    "gradient": {
-      "divider": {
-        "normal": "@color-white-alpha-20",
-        "error": "@color-red-70",
-        "warning": "@color-yellow-70",
-        "announce": "@color-blue-70"
-      }
-    },
     "presence": {
       "busy": "@color-orange-60",
       "doNotDisturb": "@color-red-60",

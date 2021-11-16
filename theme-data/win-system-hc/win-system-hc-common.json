@@ -356,12 +356,20 @@
         "gold": "@color-hc-SystemColorHighlightColor"
       }
     },
-    "gradient": {
-      "divider": {
+    "gradientdivider": {
+      "normal": "@color-hc-PlaceholderColor",
+      "hover": "@color-hc-PlaceholderColor",
+      "error": {
         "normal": "@color-hc-PlaceholderColor",
-        "error": "@color-hc-PlaceholderColor",
-        "warning": "@color-hc-PlaceholderColor",
-        "announce": "@color-hc-PlaceholderColor"
+        "hover": "@color-hc-PlaceholderColor"
+      },
+      "warning": {
+        "normal": "@color-hc-PlaceholderColor",
+        "hover": "@color-hc-PlaceholderColor"
+      },
+      "announce": {
+        "normal": "@color-hc-PlaceholderColor",
+        "hover": "@color-hc-PlaceholderColor"
       }
     },
     "control": {
