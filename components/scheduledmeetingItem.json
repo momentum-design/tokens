@@ -1,5 +1,5 @@
 {
-  "listitemMeeting": {
+  "scheduledmeetingItem": {
     "comment": "Applied to individual items in meetings list",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=5180%3A1690",
     "#normal": {
