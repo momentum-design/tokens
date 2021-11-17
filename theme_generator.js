@@ -642,7 +642,13 @@ target.themes.forEach((themeFileName) => {
       }
     }
     if (target.platform === "macos" || target.platform === "qt") {
-      outputFileName = path.join("dist", camelCase("momentum" + themeFile.accent + themeFile.theme) + ".json");
+      var accent = themeFile.accent;
+      var theme = themeFile.theme;
+      if (accent === "Webex") {
+        accent = "";
+        theme = theme === "Light" ? "Default" : theme;
+      }
+      outputFileName = path.join("dist", camelCase("momentum" + accent + theme) + ".json");
     } else {
       outputFileName = path.join("dist", camelCase(themeFile.accent + themeFile.theme) + ".json");
     }
