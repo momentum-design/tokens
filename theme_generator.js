@@ -627,7 +627,7 @@ target.themes.forEach((themeFileName) => {
     outputLine("}");
   } else if (target.fileFormat === "json") {
     if (target.includeJsonHeader) {
-      if (target.platform === "macos" || target.platform === "qt") {
+      if (target.platform === "macos" || target.platform === "qt" || target.platform === "win-hc") {
         var name = themeFile.accent + themeFile.theme;
         var parent = themeFile.accent + themeFile.theme;
         if (themeFile.accent === "Webex" || themeFile.accent === "Indigo" || themeFile.accent === "Rose") {
@@ -641,7 +641,7 @@ target.themes.forEach((themeFileName) => {
         stateTokens = { name: "Momentum" + themeFile.accent + themeFile.theme, parent: themeFile.accent + themeFile.theme, tokens: stateTokens };
       }
     }
-    if (target.platform === "macos" || target.platform === "qt") {
+    if (target.platform === "macos" || target.platform === "qt" || target.platform === "win-hc") {
       var accent = themeFile.accent;
       var theme = themeFile.theme;
       if (accent === "Webex") {
