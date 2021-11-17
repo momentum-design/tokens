@@ -365,7 +365,7 @@
       },
       "warning": {
         "normal": ["@color-hc-PlaceholderColor", "@color-hc-PlaceholderColor"],
-        "hover": "@color-hc-PlaceholderColor"
+        "hover": ["@color-hc-PlaceholderColor", "@color-hc-PlaceholderColor"]
       },
       "announce": {
         "normal": ["@color-hc-PlaceholderColor", "@color-hc-PlaceholderColor"],
