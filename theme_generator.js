@@ -627,7 +627,19 @@ target.themes.forEach((themeFileName) => {
     outputLine("}");
   } else if (target.fileFormat === "json") {
     if (target.includeJsonHeader) {
-      stateTokens = { name: "Momentum" + themeFile.accent + themeFile.theme, parent: themeFile.accent + themeFile.theme, tokens: stateTokens };
+      if (target.platform === "macos" || target.platform === "qt") {
+        var name = themeFile.accent + themeFile.theme;
+        var parent = themeFile.accent + themeFile.theme;
+        if (themeFile.accent === "Webex" || themeFile.accent === "Indigo" || themeFile.accent === "Rose") {
+          parent = themeFile.theme === "Light" ? "Default" : themeFile.theme;
+          if (themeFile.accent === "Webex") {
+            name = parent;
+          }
+        }
+        stateTokens = { name: "Momentum" + name, parent: parent, tokens: stateTokens };
+      } else {
+        stateTokens = { name: "Momentum" + themeFile.accent + themeFile.theme, parent: themeFile.accent + themeFile.theme, tokens: stateTokens };
+      }
     }
     if (target.platform === "macos" || target.platform === "qt") {
       outputFileName = path.join("dist", camelCase("momentum" + themeFile.accent + themeFile.theme) + ".json");
