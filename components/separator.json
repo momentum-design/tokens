@@ -1,40 +1,8 @@
 {
   "separator": {
     "comment": "",
-    "figma": "https://www.figma.com/file/NhiWBKypDml4kDCTnLUygT/Component-Explorations?node-id=1242%3A166850",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/branch/WG6O99kWm33upbqMdnnIQA/Components---Windows%2BWeb?node-id=12652%3A3113",
     "primary": "@theme-outline-primary-normal",
-    "secondary": "@theme-outline-secondary-normal",
-    "gradient-normal": {
-      "#normal": {
-        "background": ["@theme-gradientdivider-normal-0", "@theme-gradientdivider-normal-1"]
-      },
-      "#hovered": {
-        "background": ["@theme-gradientdivider-hover-0", "@theme-gradientdivider-hover-1"]
-      }
-    },
-    "gradient-announce": {
-      "#normal": {
-        "background": ["@theme-gradientdivider-announce-normal-0", "@theme-gradientdivider-announce-normal-1"]
-      },
-      "#hovered": {
-        "background": ["@theme-gradientdivider-announce-hover-0", "@theme-gradientdivider-announce-hover-1"]
-      }
-    },
-    "gradient-warn": {
-      "#normal": {
-        "background": ["@theme-gradientdivider-warning-normal-0", "@theme-gradientdivider-warning-normal-1"]
-      },
-      "#hovered": {
-        "background": ["@theme-gradientdivider-warning-hover-0", "@theme-gradientdivider-warning-hover-1"]
-      }
-    },
-    "gradient-error": {
-      "#normal": {
-        "background": ["@theme-gradientdivider-error-normal-0", "@theme-gradientdivider-error-normal-1"]
-      },
-      "#hovered": {
-        "background": ["@theme-gradientdivider-error-hover-0", "@theme-gradientdivider-error-hover-1"]
-      }
-    }
+    "secondary": "@theme-outline-secondary-normal"
   }
 }
