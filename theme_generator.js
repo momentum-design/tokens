@@ -645,8 +645,8 @@ target.themes.forEach((themeFileName) => {
       var accent = themeFile.accent;
       var theme = themeFile.theme;
       if (accent === "Webex") {
-        theme = theme === "Light" ? "Default" : theme;
         accent = "";
+        theme = theme === "Light" ? "Default" : theme;
       }
       outputFileName = path.join("dist", camelCase("momentum" + accent + theme) + ".json");
     } else {
