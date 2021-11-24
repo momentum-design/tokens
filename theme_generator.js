@@ -326,6 +326,12 @@ function finaliseTokens(tokens) {
         process.exit(1);
       }
     }
+    // desktop clients don't support 'active' state, replace with 'checked'
+    if (target.platform === "macos" || target.platform === "qt" || target.platform === "win-hc") {
+      if (uiState === "active") {
+        uiState = "checked";
+      }
+    }
     const baseKeyName = keyParts.join("-");
     if (target.uiStatesAsObject) {
       if (!(baseKeyName in finalisedTokens)) {
