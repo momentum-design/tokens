@@ -1,10 +1,7 @@
 {
   "navigation-bar": {
     "comment": "This is applied to the first column navigation bar.",
-    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/branch/WG6O99kWm33upbqMdnnIQA/Components---Windows%2BWeb?node-id=29743%3A57187",
-    "divider": {
-      "#normal": ["@theme-gradientdivider-normal-0", "@theme-gradientdivider-normal-1"],
-      "#hovered": ["@theme-gradientdivider-hover-0", "@theme-gradientdivider-hover-1"]
-    }
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=5250%3A957",
+    "divider": ["@theme-gradientdivider-normal-0", "@theme-gradientdivider-normal-1"]
   }
 }
