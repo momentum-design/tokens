@@ -113,6 +113,22 @@
         "normal": "@color-black-alpha-55"
       }
     },
+    "gradientdivider": {
+      "normal": ["@color-white-alpha-00", "@color-white-alpha-20"],
+      "hover": ["@color-white-alpha-00", "@color-white-alpha-60"],
+      "error": {
+        "normal": ["@color-red-40*0", "@color-red-40*0.6"],
+        "hover": ["@color-red-40*0", "@color-red-40*0.9"]
+      },
+      "warning": {
+        "normal": ["@color-yellow-40*0", "@color-yellow-40*0.6"],
+        "hover": ["@color-yellow-40*0", "@color-yellow-40*0.9"]
+      },
+      "announce": {
+        "normal": ["@color-blue-40*0", "@color-blue-40*0.6"],
+        "hover": ["@color-blue-40*0", "@color-blue-40*0.9"]
+      }
+    },
     "outline": {
       "label": {
         "cobalt": "@color-cobalt-40",

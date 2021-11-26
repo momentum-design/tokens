@@ -356,6 +356,22 @@
         "gold": "@color-hc-SystemColorHighlightColor"
       }
     },
+    "gradientdivider": {
+      "normal": ["@color-hc-PlaceholderColor", "@color-hc-PlaceholderColor"],
+      "hover": ["@color-hc-PlaceholderColor", "@color-hc-PlaceholderColor"],
+      "error": {
+        "normal": ["@color-hc-PlaceholderColor", "@color-hc-PlaceholderColor"],
+        "hover": ["@color-hc-PlaceholderColor", "@color-hc-PlaceholderColor"]
+      },
+      "warning": {
+        "normal": ["@color-hc-PlaceholderColor", "@color-hc-PlaceholderColor"],
+        "hover": ["@color-hc-PlaceholderColor", "@color-hc-PlaceholderColor"]
+      },
+      "announce": {
+        "normal": ["@color-hc-PlaceholderColor", "@color-hc-PlaceholderColor"],
+        "hover": ["@color-hc-PlaceholderColor", "@color-hc-PlaceholderColor"]
+      }
+    },
     "control": {
       "active": {
         "normal": "@color-hc-SystemColorHighlightColor",
