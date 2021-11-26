@@ -64,28 +64,6 @@
             "text": "@theme-common-text-white-disabled",
             "border": "@theme-common-outline-button-normal"
           }
-        },
-        "active": {
-          "#normal": {
-            "background": "@theme-common-button-active-normal",
-            "text": "@theme-common-text-white-normal",
-            "border": "@theme-common-outline-button-normal"
-          },
-          "#hovered": {
-            "background": "@theme-common-button-active-hover",
-            "text": "@theme-common-text-white-normal",
-            "border": "@theme-common-outline-button-normal"
-          },
-          "#pressed": {
-            "background": "@theme-common-button-active-pressed",
-            "text": "@theme-common-text-white-normal",
-            "border": "@theme-common-outline-button-normal"
-          },
-          "#disabled": {
-            "background": "@theme-common-button-active-pressed",
-            "text": "@theme-common-text-white-disabled",
-            "border": "@theme-common-outline-button-normal"
-          }
         }
       }
     },
@@ -93,7 +71,7 @@
       "#normal": {
         "active": "@theme-common-control-shareContent-active",
         "hovered": "@theme-outline-secondary-normal",
-        "selected": "@theme-outline-focus-normal"
+        "selected": "@theme-outline-theme-normal"
       }
     }
   }

@@ -2,9 +2,9 @@
   "teamMarker": {
     "comment": "applied to team markers",
     "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=8906%3A32769",
-    
+
     "background": {
-      "default": "@theme-text-team-default-normal",
+      "default": "@theme-outline-secondary-normal",
       "gold": "@theme-text-team-gold-normal",
       "orange": "@theme-text-team-orange-normal",
       "lime": "@theme-text-team-lime-normal",
@@ -17,6 +17,5 @@
       "pink": "@theme-text-team-pink-normal",
       "archived": "@theme-outline-secondary-normal"
     }
-    
   }
 }

@@ -26,13 +26,13 @@
         "background": "@theme-button-secondary-normal",
         "text": "@theme-globaltint-normal",
         "border": "@theme-globaltint-normal",
-        "badge": "@theme-presence-doNotDisturb"
+        "badge": "@theme-indicator-attention"
       },
       "#pressed": {
         "background": "@theme-globaltint-selected",
         "text": "@theme-common-text-white-normal",
         "border": "none",
-        "badge": "@theme-presence-doNotDisturb"
+        "badge": "@theme-indicator-attention"
       }
     },
     "global-plus": {

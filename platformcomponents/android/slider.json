@@ -14,7 +14,7 @@
     "active": {
       "#normal": {
         "track": "@theme-control-active-normal",
-        "tick": "@theme-text-primary-inverted"
+        "tick": "@theme-text-inverted-normal"
       },
       "#disabled": {
         "track": "@theme-control-inactive-normal"

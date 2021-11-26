@@ -5,105 +5,105 @@
         "text": "@theme-text-primary-normal"
       },
       "#hovered": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       },
       "#pressed": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       }
     },
     "secondary": {
       "#hovered": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       },
       "#pressed": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       }
     },
     "cancel-ghost": {
       "#hovered": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       },
       "#pressed": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       }
     },
     "accent-ghost": {
       "#hovered": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       },
       "#pressed": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       }
     },
     "message-ghost": "@button-accent-ghost",
     "join-fill": {
       "#hovered": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       },
       "#pressed": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       }
     },
     "join-outline": {
       "#hovered": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       },
       "#pressed": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       }
     },
     "cancel-fill": {
       "#hovered": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       },
       "#pressed": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       }
     },
     "cancel-outline": {
       "#hovered": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       },
       "#pressed": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       }
     },
     "accent-fill": {
       "#hovered": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       },
       "#pressed": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       }
     },
     "message-fill": "@button-accent-fill",
     "counter": {
       "#hovered": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       },
       "#pressed": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       }
     },
     "ghost": {
       "#hovered": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       },
       "#pressed": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       }
     },
     "dialpad": {
       "#hovered": {
         "text": {
-          "number": "@theme-text-primary-inverted",
-          "characters": "@theme-text-primary-inverted"
+          "number": "@theme-text-inverted-normal",
+          "characters": "@theme-text-inverted-normal"
         }
       },
       "#pressed": {
         "text": {
-          "number": "@theme-text-primary-inverted",
-          "characters": "@theme-text-primary-inverted"
+          "number": "@theme-text-inverted-normal",
+          "characters": "@theme-text-inverted-normal"
         }
       }
     }

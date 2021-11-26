@@ -30,11 +30,6 @@
           "normal": "@color-hc-SystemColorButtonFaceColor",
           "hover": "@color-hc-SystemColorHighlightColor",
           "pressed": "@color-hc-SystemColorHighlightColor"
-        },
-        "active": {
-          "normal": "@color-hc-PlaceholderColor",
-          "hover": "@color-hc-PlaceholderColor",
-          "pressed": "@color-hc-PlaceholderColor"
         }
       },
       "outline": {
@@ -53,8 +48,11 @@
     "text": {
       "primary": {
         "normal": "@color-hc-SystemColorButtonTextColor",
-        "inverted": "@color-hc-SystemColorHighlightTextColor",
         "disabled": "@color-hc-SystemColorGrayTextColor"
+      },
+      "inverted": {
+        "normal": "@color-hc-SystemColorHighlightTextColor",
+        "disabled": "@color-hc-SystemColorHighlightTextColor"
       },
       "secondary": {
         "normal": "@color-hc-SystemColorWindowTextColor"
@@ -315,7 +313,7 @@
       "primary": {
         "normal": "@color-hc-SystemColorButtonTextColor"
       },
-      "focus": {
+      "theme": {
         "normal": "@color-hc-SystemColorHighlightColor"
       },
       "secondary": {
@@ -387,11 +385,13 @@
         "disabled": "@color-hc-PlaceholderColor"
       }
     },
-    "presence": {
-      "busy": "@color-hc-SystemColorWindowTextColor",
-      "doNotDisturb": "@color-hc-SystemColorWindowTextColor",
-      "active": "@color-hc-SystemColorWindowTextColor",
-      "away": "@color-hc-SystemColorWindowTextColor"
+    "indicator": {
+      "unstable": "@color-hc-SystemColorWindowTextColor",
+      "attention": "@color-hc-SystemColorWindowTextColor",
+      "stable": "@color-hc-SystemColorWindowTextColor",
+      "locked": "@color-hc-SystemColorWindowTextColor",
+      "caution": "@color-hc-SystemColorWindowTextColor",
+      "secure": "@color-hc-SystemColorWindowTextColor"
     },
     "whiteboard": {
       "stickyNote": {

@@ -3,10 +3,10 @@
     "button": {
       "primary": {
         "#hovered": {
-          "text": "@theme-text-primary-inverted"
+          "text": "@theme-text-inverted-normal"
         },
         "#pressed": {
-          "text": "@theme-text-primary-inverted"
+          "text": "@theme-text-inverted-normal"
         }
       },
       "secondary": {

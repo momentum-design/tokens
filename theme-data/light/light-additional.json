@@ -2,10 +2,6 @@
   "theme": {
     "text": {
       "team": {
-        "default": {
-          "normal": "@theme-text-secondary-normal",
-          "active": "@theme-text-primary-normal"
-        },
         "cobalt": {
           "normal": "@color-cobalt-70",
           "hover": "@color-cobalt-70",

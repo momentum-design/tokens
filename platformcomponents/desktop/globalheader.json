@@ -24,7 +24,7 @@
       "#focused": {
         "background": "@theme-background-secondary-normal",
         "text": "@theme-text-primary-normal",
-        "border": "@theme-outline-focus-normal",
+        "border": "@theme-outline-theme-normal",
         "borderModifier": "@theme-outline-input-active"
       },
       "#disabled": {
@@ -96,7 +96,7 @@
     },
     "modifierChip": {
       "background": "@theme-button-primary-normal",
-      "text": "@theme-text-primary-inverted"
+      "text": "@theme-text-inverted-normal"
     },
     "textfieldWin": {
       "#normal": {

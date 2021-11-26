@@ -28,7 +28,7 @@
       "#pressed": {
         "background": "@theme-background-alert-theme-active",
         "text": "@theme-text-accent-active"
-      }      
+      }
     },
     "warning": {
       "#normal": {
@@ -56,20 +56,6 @@
       "#pressed": {
         "background": "@theme-background-alert-error-active",
         "text": "@theme-text-error-active"
-      }
-    },
-    "general": {
-      "#normal": {
-        "background": "@theme-background-alert-general-normal",
-        "text": "@theme-text-warning-normal"
-      },
-      "#hovered": {
-        "background": "@theme-background-alert-general-hover",
-        "text": "@theme-text-warning-hover"
-      },
-      "#pressed": {
-        "background": "@theme-background-alert-general-active",
-        "text": "@theme-text-warning-active"
       }
     }
   }

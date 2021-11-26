@@ -26,7 +26,7 @@
     "#focused": {
       "background": "@theme-background-solid-primary-normal",
       "text": "@theme-text-primary-normal",
-      "border": "@theme-outline-focus-normal"
+      "border": "@theme-outline-theme-normal"
     },
     "#disabled": {
       "background": "@theme-background-primary-disabled",

@@ -35,11 +35,6 @@
           "normal": "@color-white-alpha-00",
           "hover": "@color-white-alpha-07",
           "pressed": "@color-white-alpha-20"
-        },
-        "active": {
-          "normal": "@color-white-alpha-20",
-          "hover": "@color-white-alpha-30",
-          "pressed": "@color-white-alpha-40"
         }
       },
       "outline": {

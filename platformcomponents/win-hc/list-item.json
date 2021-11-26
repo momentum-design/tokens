@@ -1,21 +1,21 @@
 {
   "listitem": {
     "#hovered": {
-      "textprimary": "@theme-text-primary-inverted",
-      "textsecondary": "@theme-text-primary-inverted",
-      "textmissed": "@theme-text-primary-inverted",
+      "textprimary": "@theme-text-inverted-normal",
+      "textsecondary": "@theme-text-inverted-normal",
+      "textmissed": "@theme-text-inverted-normal",
       "tick": "@theme-control-active-hover",
-      "icon": "@theme-text-primary-inverted"
+      "icon": "@theme-text-inverted-normal"
     },
     "#focused": {
       "background": "@theme-background-primary-focus"
     },
     "#pressed": {
-      "textprimary": "@theme-text-primary-inverted",
-      "textsecondary": "@theme-text-primary-inverted",
-      "textmissed": "@theme-text-primary-inverted",
+      "textprimary": "@theme-text-inverted-normal",
+      "textsecondary": "@theme-text-inverted-normal",
+      "textmissed": "@theme-text-inverted-normal",
       "tick": "@theme-control-active-hover",
-      "icon": "@theme-text-primary-inverted"
+      "icon": "@theme-text-inverted-normal"
     }
   }
 }
