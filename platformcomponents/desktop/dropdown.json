@@ -1,0 +1,22 @@
+{
+  "dropdown": {
+    "comment": "Used for dropdown button",
+    "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=2870%3A13350",
+    "#normal": {
+      "background": "@theme-background-solid-primary-normal",
+      "border": "@theme-outline-input-normal"
+    },
+    "#hovered": {
+      "background": "@theme-button-secondary-hover",
+      "border": "@theme-outline-input-normal"
+    },
+    "#pressed": {
+      "background": "@theme-background-primary-active",
+      "border": "@theme-outline-input-normal"
+    },
+    "#disabled": {
+      "background": "@theme-background-primary-active",
+      "border": "@theme-button-secondary-normal"
+    }
+  }
+}
