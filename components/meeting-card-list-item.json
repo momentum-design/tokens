@@ -1,0 +1,26 @@
+{
+  "meetingCardListItem": {
+    "comment": "Applied to calendar cards displayed in a list",
+    "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=9238%3A40084",
+    "#normal": {
+      "background": "@theme-background-secondary-normal",
+      "border": "none"
+    },
+    "#hovered": {
+      "background": "@theme-background-secondary-hover",
+      "border": "none"
+    },
+    "#pressed": {
+      "background": "@theme-background-secondary-active",
+      "border": "none"
+    },
+    "#focused": {
+      "background": "@theme-background-secondary-active",
+      "border": "@theme-control-active-normal"
+    },    
+    "#disabled": {
+      "background": "@theme-background-primary-ghost",
+      "border": "@theme-outline-disabled-normal"
+    }
+  }
+}
