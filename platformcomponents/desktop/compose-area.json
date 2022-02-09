@@ -1,7 +1,7 @@
 {
   "compose-area": {
     "comment": "This is applied to the compose area component inside messaging tab.",
-    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/branch/WG6O99kWm33upbqMdnnIQA/Components---Windows%2BWeb?node-id=29743%3A57187",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=41139%3A50175",
     "divider": {
       "default": {
         "#normal": ["@theme-gradientdivider-normal-0", "@theme-gradientdivider-normal-1"],

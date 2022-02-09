@@ -136,11 +136,11 @@
       },
       "#hovered": {
         "background": "@theme-button-cancel-hover",
-        "text": "@theme-common-text-white-normal"
+        "text": "@theme-common-text-white"
       },
       "#pressed": {
         "background": "@theme-button-cancel-pressed",
-        "text": "@theme-common-text-white-normal"
+        "text": "@theme-common-text-white"
       }
     },
     "searchCancelButton": {

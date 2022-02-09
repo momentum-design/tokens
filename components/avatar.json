@@ -15,7 +15,7 @@
       "background": "@theme-background-solid-primary-normal"
     },
     "color-avatar": {
-      "text": "@theme-common-text-white-normal",
+      "text": "@theme-common-text-white",
       "background": {
         "default": "@theme-avatar-default",
         "gold": "@theme-avatar-gold",

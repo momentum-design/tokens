@@ -2,20 +2,10 @@
   "theme": {
     "common": {
       "text": {
-        "white": {
-          "normal": "@color-white-alpha-95",
-          "disabled": "@color-white-alpha-40"
-        },
-        "black": {
-          "normal": "@color-black-alpha-95",
-          "disabled": "@color-black-alpha-40"
-        },
-        "success": {
-          "normal": "@color-green-40"
-        },
-        "error": {
-          "normal": "@color-red-40"
-        }
+        "white": "@color-white-alpha-95",
+        "black": "@color-black-alpha-95",
+        "success": "@color-green-40",
+        "error": "@color-red-40"
       },
       "overlay": {
         "primary": {
@@ -29,7 +19,7 @@
         "primary": {
           "normal": "@color-white-alpha-95",
           "hover": "@color-white-alpha-80",
-          "pressed": "@color-white-alpha-70"
+          "pressed": "@color-white-alpha-20"
         },
         "secondary": {
           "normal": "@color-white-alpha-00",
@@ -40,6 +30,9 @@
       "outline": {
         "button": {
           "normal": "@color-white-alpha-30"
+        },
+        "outilne": {
+          "normal": "@color-white-alpha-50"
         }
       },
       "control": {
