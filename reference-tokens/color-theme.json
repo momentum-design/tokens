@@ -1,0 +1,1657 @@
+{
+  "theme": {
+    "DUI": {
+      "Text": {
+        "TextPrimary-normal": {
+          "value": "#fffffff2",
+          "type": "color",
+          "description": "Theme Token: TextPrimary-normal\nCore Token: white-alpha-95"
+        },
+        "TextPrimary-disabled": {
+          "value": "#ffffff66",
+          "type": "color",
+          "description": "Theme Token: TextPrimary-disabled\nCore Token: white-alpha-40"
+        },
+        "TextInverted-normal": {
+          "value": "#000000f2",
+          "type": "color",
+          "description": "Theme Token: TextInverted-normal\nCore Token: black-alpha-95"
+        },
+        "TextInverted-disabled": {
+          "value": "#00000080",
+          "type": "color",
+          "description": "Theme Token: TextInverted-disabled\nCore Token: black-alpha-50"
+        },
+        "TextSecondary-normal": {
+          "value": "#ffffffb3",
+          "type": "color",
+          "description": "Theme Token: TextSecondary-normal\nCore Token: white-alpha-70"
+        },
+        "TextSecondaryInverted-normal": {
+          "value": "#00000099",
+          "type": "color"
+        },
+        "TextError-normal": {
+          "value": "#fc8b98",
+          "type": "color",
+          "description": "Theme Token: Text-error\nCore Token: red-40"
+        },
+        "TextError-hover": {
+          "value": "#ffd4da",
+          "type": "color",
+          "description": "Theme Token: TextError-hover\nCore Token: red-20"
+        },
+        "TextError-active": {
+          "value": "#ffd4da",
+          "type": "color",
+          "description": "Theme Token: TextError-active\nCore Token: red-20"
+        },
+        "TextSuccess-normal": {
+          "value": "#3cc29a",
+          "type": "color",
+          "description": "Theme Token: TextSuccess-normal\nCore Token: green-40"
+        },
+        "TextSuccess-hover": {
+          "value": "#9fedd8",
+          "type": "color",
+          "description": "Theme Token: TextSuccess-hover\nCore Token: green-20"
+        },
+        "TextSuccess-active": {
+          "value": "#9fedd8",
+          "type": "color",
+          "description": "Theme Token: TextSuccess-active\nCore Token: green-20"
+        },
+        "Textwarning-normal": {
+          "value": "#f2990a",
+          "type": "color",
+          "description": "Theme Token: TextWarning-normal\nCore Token: yellow-70"
+        },
+        "TextWarning-hover": {
+          "value": "#ffda94",
+          "type": "color",
+          "description": "Theme Token: TextWarning-hover\nCore Token: yellow-20"
+        },
+        "TextWarning-active": {
+          "value": "#ffda94",
+          "type": "color",
+          "description": "Theme Token: TextWarning-active\nCore Token: yellow-20"
+        },
+        "Text-highlight": {
+          "value": "#063a75",
+          "type": "color",
+          "description": "Theme Token: Text-highlight\nCore Token: theme-80"
+        },
+        "TextAccent-normal": {
+          "value": "#64b4fa",
+          "type": "color",
+          "description": "Theme Token: TextAccent-normal\nCore Token: theme-40"
+        },
+        "TextAccent-hover": {
+          "value": "#bfe3ff",
+          "type": "color",
+          "description": "Theme Token: TextAccent-hover\nCore Token: theme-20"
+        },
+        "TextAccent-active": {
+          "value": "#bfe3ff",
+          "type": "color",
+          "description": "Theme Token: TextAccent-active\nCore Token: theme-20"
+        },
+        "TextTeamDefault-normal": {
+          "value": "#ffffffb3",
+          "type": "color",
+          "description": "Theme Token: TextTeamDefault-normal\nCore Token: TextSecondary-normal [white-alpha-70]"
+        },
+        "TextTeamDefault-hover": {
+          "value": "#ffffffb3",
+          "type": "color",
+          "description": "Theme Token: TextTeamDefault-hover\nCore Token: TextSecondary-normal [white-alpha-70]"
+        },
+        "TextTeamDefault-active": {
+          "value": "#fffffff2",
+          "type": "color",
+          "description": "Theme Token: TextTeamDefault-active\nCore Token: TextPrimary-normal [white-alpha-95]"
+        }
+      },
+      "Backgrounds": {
+        "BackgroundPrimary-ghost": {
+          "value": "#ffffff00",
+          "type": "color",
+          "description": "Theme Token: BackgroundPrimary-ghost\nCore Token: white-alpha-00"
+        },
+        "BackgroundPrimary-hover": {
+          "value": "#ffffff12",
+          "type": "color",
+          "description": "Theme Token: Background-hover\nCore Token: white-alpha-07"
+        },
+        "BackgroundPrimary-active": {
+          "value": "#ffffff1c",
+          "type": "color",
+          "description": "Theme Token: Background-active\nCore Token: white-alpha-11"
+        },
+        "BackgroundPrimary-disabled": {
+          "value": "#ffffff1c",
+          "type": "color",
+          "description": "Theme Token: Background-disabled\nCore Token: white-alpha-11"
+        },
+        "BackgroundSolidPrimary-normal": {
+          "value": "#000000",
+          "type": "color",
+          "description": "Theme Token: BackgroundSolidPrimary-normal\nCore Token: black-alpha-100\n\nSee Guidelines for use"
+        },
+        "BackgroundSolidSecondary-normal": {
+          "value": "#1a1a1a",
+          "type": "color",
+          "description": "Theme Token: BackgroundSolidSecondary-normal\nCore Token: gray-95\n\nSee Guidelines for use"
+        },
+        "BackgroundSolidTertiary-normal": {
+          "value": "#262626",
+          "type": "color",
+          "description": "Theme Token: Background-normal\nCore Token: gray-90\n\nSee Guidelines for use"
+        },
+        "BackgroundSolidQuaternary-normal": {
+          "value": "#3b3b3b",
+          "type": "color",
+          "description": "Theme Token: BackgroundSolidQuaternary-normal\nCore Token: gray-80\n\nSee Guidelines for use"
+        },
+        "BackgroundSecondary-normal": {
+          "value": "#ffffff1c",
+          "type": "color",
+          "description": "Theme Token: BackgroundSecondary-normal\nCore Token: white-alpha-11"
+        },
+        "BackgroundSecondary-hover": {
+          "value": "#ffffff33",
+          "type": "color",
+          "description": "Theme Token: BackgroundSecondary-hover\nCore Token: white-alpha-20"
+        },
+        "BackgroundSecondary-active": {
+          "value": "#ffffff4d",
+          "type": "color",
+          "description": "Theme Token: BackgroundSecondary-active\nCore Token: white-alpha-30"
+        },
+        "BackgroundSecondary-disabled": {
+          "value": "#ffffff00",
+          "type": "color"
+        },
+        "BackgroundAccent-normal": {
+          "value": "#1170cf",
+          "type": "color",
+          "description": "Theme Token:\nBackgroundAccent-normal\nCore Token: theme-60"
+        },
+        "BackgroundGradientPrimary-normal": {
+          "value": "linear-gradient(180deg, #1a1a1a 0%, #0f0f0f 100%)",
+          "type": "color",
+          "description": "Theme Token: \nBackgroundGradientPrimary-normal\nCore Token: gradation-webex-dark-primary"
+        },
+        "BackgroundGradientSecondary-normal": {
+          "value": "linear-gradient(180deg, #262626 0%, #0f0f0f 100%)",
+          "type": "color",
+          "description": "Theme Token: \nBackgroundGradientSecondary-normal\nCore Token: gradation-webex-dark-secondary"
+        },
+        "BackgroundAlertDefault-normal": {
+          "value": "#262626",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertDefault-normal\nCore Token: BackgroundSolidTertiary-normal [gray-90]"
+        },
+        "BackgroundAlertDefault-hover": {
+          "value": "#262626",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertDefault-hover\nCore Token: BackgroundSolidTertiary-normal [gray-90]"
+        },
+        "BackgroundAlertDefault-active": {
+          "value": "#3b3b3b",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertDefault-active\nCore Token: gray-80"
+        },
+        "BackgroundAlertSuccess-normal": {
+          "value": "#0e2b20",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertSuccess-normal\nCore Token: green-90"
+        },
+        "BackgroundAlertSuccess-hover": {
+          "value": "#0e2b20",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertSuccess-hover\nCore Token: green-90"
+        },
+        "BackgroundAlertSuccess-active": {
+          "value": "#134231",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertSuccess-active\nCore Token: green-80"
+        },
+        "BackgroundAlertWarning-normal": {
+          "value": "#36220c",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertWarning-normal\nCore Token: yellow-90"
+        },
+        "BackgroundAlertWarning-hover": {
+          "value": "#36220c",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertWarning-hover\nCore Token: yellow-90"
+        },
+        "BackgroundAlertWarning-active": {
+          "value": "#57330a",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertWarning-active\nCore Token: yellow-80"
+        },
+        "BackgroundAlertError-normal": {
+          "value": "#4f0e10",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertError-normal\nColor Token: red-90"
+        },
+        "BackgroundAlertError-hover": {
+          "value": "#4f0e10",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertError-hover\nCore Token: red-90"
+        },
+        "BackgroundAlertError-active": {
+          "value": "#780d13",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertError-active\nCore Token: red-80"
+        },
+        "BackgroundAlertTheme-normal": {
+          "value": "#0a274a",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertTheme-normal\nCore Token: theme-90"
+        },
+        "BackgroundAlertTheme-hover": {
+          "value": "#0a274a",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertTheme-hover\nCore Token: theme-90"
+        },
+        "BackgroundAlertTheme-active": {
+          "value": "#063a75",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertTheme-active\nCore Token: theme-80"
+        }
+      },
+      "Buttons": {
+        "ButtonPrimary-normal": {
+          "value": "#fffffff2",
+          "type": "color",
+          "description": "Theme Token: ButtonPrimary-normal\nCore Token: white-alpha-95"
+        },
+        "ButtonPrimary-hover": {
+          "value": "#ffffffcc",
+          "type": "color",
+          "description": "Theme Token:ButtonPrimary-hover\nCore Token: white-alpha-80"
+        },
+        "ButtonPrimary-pressed": {
+          "value": "#ffffffb3",
+          "type": "color",
+          "description": "Theme Token: ButtonPrimary-pressed\nCore Token: white-alpha-70"
+        },
+        "ButtonPrimary-disabled": {
+          "value": "#ffffff33",
+          "type": "color",
+          "description": "Theme Token: Button-disabled\nCore Token: white-alpha-20"
+        },
+        "ButtonSecondary-normal": {
+          "value": "#ffffff00",
+          "type": "color",
+          "description": "Theme Token: \nButtonSecondary-normal\nCore Token: white-alpha-00"
+        },
+        "ButtonSecondary-hover": {
+          "value": "#ffffff12",
+          "type": "color",
+          "description": "Theme Token:\nButtonSecondary-hover\nCore Token: white-alpha-07"
+        },
+        "ButtonSecondary-pressed": {
+          "value": "#ffffff33",
+          "type": "color",
+          "description": "Theme Token: ButtonSecondary-pressed\nCore Token: white-alpha-20"
+        },
+        "ButtonSecondary-disabled": {
+          "value": "#ffffff00",
+          "type": "color",
+          "description": "Theme Token: ButtonSecondary-disabled\nCore Token: white-alpha-00"
+        },
+        "ButtonSecondaryActive-normal": {
+          "value": "#ffffff33",
+          "type": "color",
+          "description": "Theme Token: ButtonSecondaryActive-normal\nCore Token: ButtonSecondary-pressed [white-alpha-20]"
+        },
+        "ButtonSecondaryActive-hover": {
+          "value": "#ffffff4d",
+          "type": "color",
+          "description": "Theme Token: ButtonSecondaryActive-hover\nCore Token: white-alpha-30"
+        },
+        "ButtonSecondaryActive-pressed": {
+          "value": "#ffffff66",
+          "type": "color",
+          "description": "Theme Token: ButtonSecondaryActive-pressed\nCore Token: white-alpha-40"
+        },
+        "ButtonInverted-normal": {
+          "value": "#0f0f0f",
+          "type": "color",
+          "description": "Theme Token: ButtonInverted-normal\nCore Token: gray-100"
+        },
+        "ButtonInverted-hover": {
+          "value": "#262626",
+          "type": "color",
+          "description": "Theme Token: ButtonInverted-hover\nCore Token: gray-90"
+        },
+        "ButtonInverted-pressed": {
+          "value": "#3b3b3b",
+          "type": "color",
+          "description": "Theme Token: ButtonInverted-pressed\nCore Token: gray-80"
+        },
+        "ButtonJoin-normal": {
+          "value": "#1d805f",
+          "type": "color",
+          "description": "Theme Token: ButtonJoin-normal\nCore Token: green-60"
+        },
+        "ButtonJoin-hover": {
+          "value": "#185e46",
+          "type": "color",
+          "description": "Theme Token: ButtonJoin-hover\nCore Token: green-70"
+        },
+        "ButtonJoin-pressed": {
+          "value": "#134231",
+          "type": "color",
+          "description": "Theme Token: ButtonJoin-pressed\nCore Token: green-80"
+        },
+        "ButtonCancel-normal": {
+          "value": "#db1f2e",
+          "type": "color",
+          "description": "Theme Token: \nButtonCancel-normal\nCore Token: red-60"
+        },
+        "ButtonCancel-hover": {
+          "value": "#ab0a15",
+          "type": "color",
+          "description": "Theme Token: \nButtonCancel-hover\nCore Token: red-70"
+        },
+        "ButtonCancel-pressed": {
+          "value": "#780d13",
+          "type": "color",
+          "description": "Theme Token: \nButtonCancel-pressed\nCore Token: red-80"
+        },
+        "ButtonAccent-normal": {
+          "value": "#1170cf",
+          "type": "color",
+          "description": "Theme Token: \nButtonAccent-normal\nCore Token: theme-60"
+        },
+        "ButtonAccent-hover": {
+          "value": "#0352a6",
+          "type": "color",
+          "description": "Theme Token: \nButtonAccent-hover\nCore Token: theme-70"
+        },
+        "ButtonAccent-pressed": {
+          "value": "#063a75",
+          "type": "color",
+          "description": "Theme Token: \nButtonAccent-pressed\nCore Token: theme-80"
+        }
+      },
+      "Outlines": {
+        "OutlinePrimary-normal": {
+          "value": "#ffffff66",
+          "type": "color",
+          "description": "Theme Token: OutlinePrimary-normal\nCore Token: white-alpha-40"
+        },
+        "OutlineTheme-normal": {
+          "value": "#64b4fa",
+          "type": "color",
+          "description": "Theme Token: OutlineTheme-normal\nCore Token: theme-40"
+        },
+        "OutlineSecondary-normal": {
+          "value": "#ffffff33",
+          "type": "color",
+          "description": "Theme Token: OutlineSecondary-normal\nCore Token: white-alpha-20"
+        },
+        "OutlineDisabled-normal": {
+          "value": "#ffffff33",
+          "type": "color",
+          "description": "Theme Token: OutlineDisabled-normal\nCore Token: white-alpha-20"
+        },
+        "OutlineInput-normal": {
+          "value": "#ffffff80",
+          "type": "color",
+          "description": "Theme Token: OutlineInput-normal\nCore Token: white-alpha-50"
+        },
+        "OutlineInput-active": {
+          "value": "#ffffffe6",
+          "type": "color",
+          "description": "Theme Token: OutlineInput-active\nCore Token: black-alpha-90"
+        },
+        "OutlineButton-normal": {
+          "value": "#ffffff4d",
+          "type": "color",
+          "description": "Theme Token: OutlineButton-normal\nCore Token: white-alpha-30"
+        },
+        "OutlineJoin-normal": {
+          "value": "#3cc29a",
+          "type": "color",
+          "description": "Theme Token: OutlineJoin-normal\nCore Token: green-40"
+        },
+        "OutlineCancel-normal": {
+          "value": "#fc8b98",
+          "type": "color",
+          "description": "Theme Token: OutlineCancel-normal\nCore Token: red-40"
+        },
+        "OutlineGradient-active": {
+          "value": "linear-gradient(44deg, #08599c 0%, #22c7d6 51.56%, #27a17a 100%)",
+          "type": "color",
+          "description": "Theme Token: OutlineGradient-active\nCore Token: cobalt-70, cyan-40, green-50"
+        },
+        "OutlineShare-selected": {
+          "value": "#27a17a",
+          "type": "color",
+          "description": "Theme Token: OutlineShare-selected\nCore Token: green-50"
+        },
+        "OutlineShare-active": {
+          "value": "#f26b1d",
+          "type": "color",
+          "description": "Theme Token: OutlineShare-active\nCore Token: orange-50"
+        },
+        "OutlineShare-inactive": {
+          "value": "#8f8f8f",
+          "type": "color",
+          "description": "Theme Token: OutlineShare-inactive\nCore Token: gray-50"
+        },
+        "OutlineOverlay-normal": {
+          "value": "#adadad",
+          "type": "color",
+          "description": "Theme Token: OutlineOverlay-normal\nCore Token: gray-40"
+        }
+      },
+      "Controls": {
+        "ControlActive-normal": {
+          "value": "#64b4fa",
+          "type": "color",
+          "description": "Theme Token: ControlActive-normal\nCore Token: theme-40"
+        },
+        "ControlActive-hover": {
+          "value": "#3492eb",
+          "type": "color",
+          "description": "Theme Token: ControlActive-hover\nCore Token: theme-50"
+        },
+        "ControlActive-pressed": {
+          "value": "#1170cf",
+          "type": "color",
+          "description": "Theme Token: ControlActive-pressed\nCore Token: theme-60"
+        },
+        "ControlActive-active": {
+          "value": "#1170cf",
+          "type": "color",
+          "description": "Theme Token: ControlActive-active\nCore Token: theme-60"
+        },
+        "ControlActive-disabled": {
+          "value": "#063a75",
+          "type": "color",
+          "description": "Theme Token: ControlActive-disabled\nCore Token: theme-80"
+        },
+        "ControlInactive-normal": {
+          "value": "#ffffff33",
+          "type": "color",
+          "description": "Theme Token: ControlInactive-normal\nCore Token: white-alpha-20"
+        },
+        "ControlInactive-hover": {
+          "value": "#ffffff4d",
+          "type": "color",
+          "description": "Theme Token: ControlInactive-hover\nCore Token: white-alpha-30"
+        },
+        "ControlInactive-pressed": {
+          "value": "#ffffff66",
+          "type": "color",
+          "description": "Theme Token: ControlInactive-pressed\nCore Token: white-alpha-40"
+        },
+        "ControlInactive-disabled": {
+          "value": "#ffffff1c",
+          "type": "color",
+          "description": "Theme Token: ControlInactive-disabled\nCore Token: white-alpha-11"
+        }
+      },
+      "Scrollbars": {
+        "ScrollbarButton": {
+          "value": "#ffffff33",
+          "type": "color",
+          "description": "Theme Token: ScrollbarButton\nCoreToken: white-alpha-20"
+        },
+        "ScrollbarButton-hover": {
+          "value": "#ffffff4d",
+          "type": "color",
+          "description": "Theme Token: ScrollbarButton-hover\nCoreToken: white-alpha-30"
+        },
+        "ScrollbarButton-press": {
+          "value": "#ffffff66",
+          "type": "color",
+          "description": "Theme Token: ScrollbarButton-press\nCoreToken: white-alpha-40"
+        },
+        "ScrollbarArrow-normal": {
+          "value": "#ffffffb3",
+          "type": "color",
+          "description": "Theme Token: ScrollbarArrow-normal\nCoreToken: white-alpha-70"
+        },
+        "ScrollbarArrowBackground-normal": {
+          "value": "#ffffff00",
+          "type": "color",
+          "description": "Theme Token: ScrollbarArrowBackground-normal\nCore Token: white-alpha-00"
+        },
+        "ScrollbarArrowBackground-hover": {
+          "value": "#ffffff1c",
+          "type": "color",
+          "description": "Theme Token: ScrollbarArrowBackground-hover\nCoreToken: white-alpha-11"
+        },
+        "ScrollbarArrowBackground-press": {
+          "value": "#ffffff33",
+          "type": "color",
+          "description": "Theme Token: ScrollbarArrowBackground-press\nCoreToken: white-alpha-20"
+        },
+        "ScrollbarBackgroundSecondary-ghost": {
+          "value": "#ffffff00",
+          "type": "color",
+          "description": "Theme Token: ScrollbarBackgroundSecondary-ghost\nCore Token: white-alpha-00"
+        },
+        "ScrollbarBackgorundSecondary-normal": {
+          "value": "#ffffff1c",
+          "type": "color",
+          "description": "Theme Token: ScrollbarBackgroundSecondary-normal\nCore Token: white-alpha-11"
+        }
+      },
+      "Indicators": {
+        "Indicator-unstable": {
+          "value": "#f26b1d",
+          "type": "color",
+          "description": "Theme Token: Indicator-unstable\nCore Token: orange-50\n-\nUsed for Presence (Busy)"
+        },
+        "Indicator-attention": {
+          "value": "#f55868",
+          "type": "color",
+          "description": "Theme Token: Indicator-attention\nCore Token: red-50\n-\nUsed for Presence(DoNotDisturb) and Meeting Indicators (Audio-video-off, Record-on, Poor-media-quality,Live)"
+        },
+        "Indicator-stable": {
+          "value": "#27a17a",
+          "type": "color",
+          "description": "Theme Token: Indicator-stable\nCore Token: green-50\n_\nUsed for Presence(Active) and Meeting Indicators (Audio-video-on, Media-quality-good)"
+        },
+        "Indicator-locked": {
+          "value": "#8f8f8f",
+          "type": "color",
+          "description": "Theme Token: Indicator-locked\nCore Token: gray-50\n_\nUsed for Presence (Away) and Meeting Indicators (Meeting-locked)"
+        },
+        "Indicator-caution": {
+          "value": "#cf7900",
+          "type": "color",
+          "description": "Theme Token: Indicator-caution\nCore Token: yellow-50\n-\nUsed for Meeting Indicators (Audio-error, Video-error)"
+        },
+        "Indicator-secure": {
+          "value": "#3492eb",
+          "type": "color",
+          "description": "Theme Token: Indicator-secure\nCore Token: blue-50\n-\nUsed for Meeting Indicator (Encryption)"
+        }
+      },
+      "Whiteboard": {
+        "WhiteboardStickyNote-yellow": {
+          "value": "#ffc14f",
+          "type": "color",
+          "description": "Theme Token: WhiteboardStickyNote-yellow\nCore Token: yellow-30"
+        },
+        "WhiteboardStickyNote-red": {
+          "value": "#ff9580",
+          "type": "color",
+          "description": "Theme Token: WhiteboardStickyNote-red\nCore Token: red-40"
+        },
+        "WhiteboardStickyNote-purple": {
+          "value": "#f294f1",
+          "type": "color",
+          "description": "Theme Token: WhiteboardStickyNote-purple\nCore Token: purple-40"
+        },
+        "WhiteboardStickyNote-cyan": {
+          "value": "#22c7d6",
+          "type": "color",
+          "description": "Theme Token: WhiteboardStickyNote-cyan\nCore Token: cyan-40"
+        },
+        "WhiteboardStickyNote-mint": {
+          "value": "#30c9b0",
+          "type": "color",
+          "description": "Theme Token: WhiteboardStickyNote-mint\nCore Token: mint-40"
+        }
+      },
+      "Illustrations": {
+        "IllustrationEmptyPrimary": {
+          "value": "linear-gradient(180deg, #93c437 0%, #279be8 100%)",
+          "type": "color",
+          "description": "Theme Token: IllustrationEmptyPrimary\nCore Token: lime-40, cobalt-50"
+        },
+        "IllustrationEmptySecondary": {
+          "value": "linear-gradient(180deg, #279be8 0%, #875ae0 100%)",
+          "type": "color",
+          "description": "Theme Token: IllustrationEmptySecondary\nCore Token: cobalt-50, violet-60"
+        },
+        "IllustrationOnboardingPrimary": {
+          "value": "linear-gradient(180deg, #ffbe4f 0%, #93c437 100%)",
+          "type": "color",
+          "description": "Theme Token: IllustrationOnboardingPrimary\nCoreToken: yellow-30, lime-40"
+        },
+        "IllustrationOnboardingSecondary": {
+          "value": "linear-gradient(180deg, #f55868 0%, #875ae0 100%)",
+          "type": "color",
+          "description": "Theme Token: IllustrationOnboardingSecondary\nCore Token: red-50, violet-60"
+        },
+        "IllustrationOnboardingTertiary": {
+          "value": "linear-gradient(180deg, #ffbe4f 0%, #f26b1d 100%)",
+          "type": "color",
+          "description": "Theme Token: IllustrationOnboardingTertiary\nCore Token: yellow-30, orange-50"
+        },
+        "IllustrationOnboardingQuaternary": {
+          "value": "linear-gradient(180deg, #93c437 0%, #279be8 100%)",
+          "type": "color",
+          "description": "Theme Token: IllustrationOnboardingQuaternary\nCore Token: lime-40, cobalt-50"
+        },
+        "IllustrationOnboardingQuinary": {
+          "value": "linear-gradient(180deg, #279be8 0%, #875ae0 100%)",
+          "type": "color",
+          "description": "Theme Token: IllustrationOnboardingOnboardingQuinary\nCore Token: cobalt-50, violet-60"
+        },
+        "IllustrationSuccess": {
+          "value": "linear-gradient(180deg, #3cc29a 0%, #93c437 100%)",
+          "type": "color",
+          "description": "Theme Token: IllustrationSuccess\nCore Token: green-40, lime-40"
+        },
+        "IllustrationError": {
+          "value": "linear-gradient(180deg, #f0677e 0%, #db1f2e 100%)",
+          "type": "color",
+          "description": "Theme Token: IllustrationError\nCore Token: pink-50, red-60"
+        },
+        "IllustrationDefault": {
+          "value": "#ffffff",
+          "type": "color",
+          "description": "Theme Token: IllustrationDefault\nCore Token: white-alpha-100"
+        }
+      },
+      "iOS": {
+        "GlobalTint-normal": {
+          "value": "#3492eb",
+          "type": "color",
+          "description": "Theme Token: GlobalTint-normal\nCore Token: blue-50"
+        },
+        "GlobalTint-selected": {
+          "value": "#1170cf",
+          "type": "color",
+          "description": "Theme Token: GlobalTint-selected\nCore Token: blue-60"
+        }
+      },
+      "Mobile-SolidBackgroundDefault": {
+        "GroupedBackgroundPrimary-normal": {
+          "value": "#000000",
+          "type": "color",
+          "description": "Theme Token: GroupedBackgroundPrimary-normal\nCore Token: black-alpha-100\n\nSee Guidelines for use"
+        },
+        "GroupedBackgroundSecondary-normal": {
+          "value": "#1a1a1a",
+          "type": "color",
+          "description": "Theme Token: GroupedBackgroundSecondary-normal\nCore Token: gray-95\n\nSee Guidelines for use"
+        },
+        "GroupedBackgroundTertiary-normal": {
+          "value": "#262626",
+          "type": "color",
+          "description": "Theme Token: GroupedBackgroundTertiary-normal\nCore Token: gray-90\n\nSee Guidelines for use"
+        },
+        "GroupedBackgroundQuaternary-normal": {
+          "value": "#3b3b3b",
+          "type": "color",
+          "description": "Theme Token: GroupedBackgroundQuaternary-normal\nCore Token: gray-80\n\nSee Guidelines for use"
+        }
+      },
+      "Teaching": {
+        "TeachingBackground-normal": {
+          "value": "#ffffff",
+          "type": "color",
+          "description": "Theme Token: Background-normal\nCore Token: white-alpha-100"
+        },
+        "TeachingButtonPrimary-normal": {
+          "value": "#000000f2",
+          "type": "color",
+          "description": "Theme Token: ButtonPrimary-normal\nCore Token: black-alpha-95"
+        },
+        "TeachingButtonPrimary-hover": {
+          "value": "#000000cc",
+          "type": "color",
+          "description": "Theme Token: ButtonPrimary-hover\nCore Token: black-alpha-80"
+        },
+        "TeachingButtonPrimary-pressed": {
+          "value": "#000000b3",
+          "type": "color",
+          "description": "Theme Token: ButtonPrimary-pressed\nCore Token: black-alpha-70"
+        },
+        "TeachingButtonPrimary-disabled": {
+          "value": "#00000033",
+          "type": "color",
+          "description": "Theme Token: ButtonPrimary-disabled\nCore Token: black-alpha-20"
+        },
+        "TeachingButtonSecondary-normal": {
+          "value": "#00000000",
+          "type": "color",
+          "description": "Theme Token: ButtonSecondary-normal\nCore Token: black-alpha-00"
+        },
+        "TeachingButtonSecondary-hover": {
+          "value": "#00000012",
+          "type": "color",
+          "description": "Theme Token: ButtonSecondary-hover\nCore Token: black-alpha-07"
+        },
+        "TeachingButtonSecondary-pressed": {
+          "value": "#00000033",
+          "type": "color",
+          "description": "Theme Token: ButtonSecondary-pressed\nCore Token: black-alpha-20"
+        },
+        "TeachingOutline-normal": {
+          "value": "#00000033",
+          "type": "color",
+          "description": "Theme Token: Outline-normal\nCore Token: black-alpha-20"
+        },
+        "TeachingOutlineButton-normal": {
+          "value": "#0000004d",
+          "type": "color",
+          "description": "Theme Token: OutlineButton-normal\nCore Token: black-alpha-30"
+        },
+        "TeachingTextAccent-normal": {
+          "value": "#0353a8",
+          "type": "color",
+          "description": "Theme Token: TextAccent-normal\nCore Token: theme-70"
+        },
+        "TeachingTextAccent-hover": {
+          "value": "#0a274a",
+          "type": "color",
+          "description": "Theme Token: TextAccent-hover\nCore Token: theme-90"
+        },
+        "TeachingTextAccent-disabled": {
+          "value": "#00000066",
+          "type": "color",
+          "description": "Theme Token: TextAccent-disabled\nCore Token: black-alpha-40"
+        },
+        "TeachingOutlineTheme-normal": {
+          "value": "#1170cf",
+          "type": "color",
+          "description": "Theme Token: TeachingOutlineTheme-normal\nCore Token: theme-60"
+        },
+        "TeachingTextPrimary-disabled": {
+          "value": "#00000066",
+          "type": "color",
+          "description": "Theme Token: TeachingTextPrimary-disabled\nCore Token: black-alpha-40"
+        },
+        "TeachingOutlineDisabled-normal": {
+          "value": "#00000033",
+          "type": "color",
+          "description": "Theme Token: TeachingOutlineDisabled-normal\nCore Token: black-alpha-20"
+        }
+      },
+      "Overlays": {
+        "OverlayPrimary-normal": {
+          "value": "#000000b3",
+          "type": "color"
+        }
+      }
+    },
+    "LUI": {
+      "Text": {
+        "TextPrimary-normal": {
+          "value": "#000000f2",
+          "type": "color",
+          "description": "Theme Token: TextPrimary-normal\nCore Token: black-alpha-95"
+        },
+        "TextPrimary-disabled": {
+          "value": "#00000066",
+          "type": "color",
+          "description": "Theme Token: TextPrimary-disabled\nCore Token: black-alpha-40"
+        },
+        "TextInverted-normal": {
+          "value": "#fffffff2",
+          "type": "color",
+          "description": "Theme Token: TextInverted-normal\nCore Token: white-alpha-95"
+        },
+        "TextInverted-disabled": {
+          "value": "#ffffffcc",
+          "type": "color",
+          "description": "Theme Token: TextInverted-disabled\nCore Token: white-alpha-80"
+        },
+        "TextSecondary-normal": {
+          "value": "#00000099",
+          "type": "color",
+          "description": "Theme Token: TextSecondary-normal\nCore Token: black-alpha-60"
+        },
+        "TextSecondaryInverted-normal": {
+          "value": "#ffffffb3",
+          "type": "color"
+        },
+        "TextError-normal": {
+          "value": "#ab0a15",
+          "type": "color",
+          "description": "Theme Token: TextError-normal\nCore Token: red-70"
+        },
+        "TextError-hover": {
+          "value": "#4f0e10",
+          "type": "color",
+          "description": "Theme Token: TextError-hover\nCore Token: red-90"
+        },
+        "TextError-active": {
+          "value": "#4f0e10",
+          "type": "color",
+          "description": "Theme Token: TextError-active\nCore Token: red-90"
+        },
+        "TextSuccess-normal": {
+          "value": "#185e46",
+          "type": "color",
+          "description": "Theme Token: TextSuccess-normal\nCore Token: green-70"
+        },
+        "TextSuccess-hover": {
+          "value": "#0e2b20",
+          "type": "color",
+          "description": "Theme Token: TextSuccess-hover\nCore Token: green-90"
+        },
+        "TextSuccess-active": {
+          "value": "#0e2b20",
+          "type": "color",
+          "description": "Theme Token: TextSuccess-active\nCore Token: green-90"
+        },
+        "TextWarning-normal": {
+          "value": "#7d4705",
+          "type": "color",
+          "description": "Theme Token: TextWarning-normal\nCore Token: yellow-70"
+        },
+        "TextWarning-hover": {
+          "value": "#36220c",
+          "type": "color",
+          "description": "Theme Token: TextWarning-hover\nCore Token: yellow-90"
+        },
+        "TextWarning-active": {
+          "value": "#36220c",
+          "type": "color",
+          "description": "Theme Token: TextWarning-hover\nCore Token: yellow-90"
+        },
+        "Text-highlight": {
+          "value": "#bfe3ff",
+          "type": "color",
+          "description": "Theme Token: Text-highlight\nCore Token: theme-20"
+        },
+        "TextAccent-normal": {
+          "value": "#0352a6",
+          "type": "color",
+          "description": "Theme Token: TextAccent-normal\nCore Token: theme-70"
+        },
+        "TextAccent-hover": {
+          "value": "#0a274a",
+          "type": "color",
+          "description": "Theme Token: TextAccent-hover\nCore Token: theme-90"
+        },
+        "TextAccent-active": {
+          "value": "#0a274a",
+          "type": "color",
+          "description": "Theme Token: TextAccent-hover\nCore Token: theme-90"
+        },
+        "TextTeamDefault-normal": {
+          "value": "#00000099",
+          "type": "color",
+          "description": "Theme Token: TextTeamDefault-normal\nCore Token: TextSecondary-normal [black-alpha-60]"
+        },
+        "TextTeamDefault-hover": {
+          "value": "#00000099",
+          "type": "color",
+          "description": "Theme Token: TextTeamDefault-hover\nCore Token: TextSecondary-normal [black-alpha-60]"
+        },
+        "TextTeamDefault-active": {
+          "value": "#000000f2",
+          "type": "color",
+          "description": "Theme Token: TextTeamDefault-active\nCore Token: TextPrimary-normal [black-alpha-95]"
+        }
+      },
+      "Backgrounds": {
+        "BackgroundPrimary-ghost": {
+          "value": "#00000000",
+          "type": "color",
+          "description": "Theme Token: BackgroundPrimary-ghost\nCore Token: black-alpha-00"
+        },
+        "BackgroundPrimary-hover": {
+          "value": "#00000012",
+          "type": "color",
+          "description": "Theme Token: BackgroundPrimary-hover\nCore Token: black-alpha-07"
+        },
+        "BackgroundPrimary-active": {
+          "value": "#0000001c",
+          "type": "color",
+          "description": "Theme Token: BackgroundPrimary-active\nCore Token: black-alpha-11"
+        },
+        "BackgroundPrimary-disabled": {
+          "value": "#0000001c",
+          "type": "color",
+          "description": "Theme Token: BackgroundPrimary-disabled\nCore Token: black-alpha-11"
+        },
+        "BackgroundSolidPrimary-normal": {
+          "value": "#ffffff",
+          "type": "color",
+          "description": "Theme Token: BackgroundSolidPrimary-normal\nCore Token: white-alpha-100\n\nSee Guidelines for use"
+        },
+        "BackgroundSolidSecondary-normal": {
+          "value": "#ededed",
+          "type": "color",
+          "description": "Theme Token: BackgroundSolidSecondary-normal\nCore Token: gray-10\n\nSee Guidelines for use"
+        },
+        "BackgroundSolidTertiary-normal": {
+          "value": "#f7f7f7",
+          "type": "color",
+          "description": "Theme Token: BackgroundSolidTertiary-normal\nCore Token: gray-05\n\nSee Guidelines for use"
+        },
+        "BackgroundSolidQuatranary-normal": {
+          "value": "#ffffff",
+          "type": "color",
+          "description": "Theme Token: BackgroundSolidQuatranary-normal\nCore Token: white-alpha-100\n\nSee Guidelines for use"
+        },
+        "BackgroundSecondary-normal": {
+          "value": "#0000001c",
+          "type": "color",
+          "description": "Theme Token: BackgroundSecondary-normal\nCore Token: black-alpha-11"
+        },
+        "BackgroundSecondary-hover": {
+          "value": "#00000033",
+          "type": "color",
+          "description": "Theme Token: BackgroundSecondary-hover\nCore Token: black-alpha-20"
+        },
+        "BackgroundSecondary-active": {
+          "value": "#0000004d",
+          "type": "color",
+          "description": "Theme Token: BackgroundSecondary-active\nCore Token: black-alpha-30"
+        },
+        "BackgroundSecondary-disabled": {
+          "value": "#00000000",
+          "type": "color",
+          "description": "Theme Token: BackgroundSecondary-disabled\nCore Token: black-alpha-00"
+        },
+        "BackgroundAccent-normal": {
+          "value": "#1170cf",
+          "type": "color",
+          "description": "Theme Token: BackgroundAccent-normal\nCore Token: theme-60"
+        },
+        "BackgroundGradientPrimary-normal": {
+          "value": "linear-gradient(180deg, #f0f0f0 0%, #ffffff 100%)",
+          "type": "color",
+          "description": "Theme Token: BackgroundGradientPrimary-normal\nCore Token: gradation-webex-light-primary"
+        },
+        "BackgroundGradientSecondary-normal": {
+          "value": "linear-gradient(180deg, #fafafa 0%, #ffffff 100%)",
+          "type": "color",
+          "description": "Theme Token: BackgroundGradientSecondary-normal\nCore Token: gradation-webex-light-secondary"
+        },
+        "BackgroundAlertDefault-normal": {
+          "value": "#ededed",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertDefault-hover\nCore Token: BackgroundSolidTertiary-normal [gray-20]"
+        },
+        "BackgroundAlertDefault-hover": {
+          "value": "#ededed",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertDefault-hover\nCore Token: BackgroundSolidTertiary-normal [gray-20]"
+        },
+        "BackgroundAlertDefault-active": {
+          "value": "#dedede",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertDefault-active\nCore Token: gray-20"
+        },
+        "BackgroundAlertSuccess-normal": {
+          "value": "#cef5eb",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertSuccess-normal\nCore Token: green-10"
+        },
+        "BackgroundAlertSuccess-hover": {
+          "value": "#cef5eb",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertSuccess-hover\nCore Token: green-10"
+        },
+        "BackgroundAlertSuccess-active": {
+          "value": "#9fedd8",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertSuccess-active\nCore Token: green-20"
+        },
+        "BackgroundAlertWarning-normal": {
+          "value": "#ffebc2",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertWarning-normal\nCore Token: yellow-10"
+        },
+        "BackgroundAlertWarning-hover": {
+          "value": "#ffebc2",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertWarning-hover\nCore Token: yellow-10"
+        },
+        "BackgroundAlertWarning-active": {
+          "value": "#ffda94",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertWarning-active\nCore Token: yellow-20"
+        },
+        "BackgroundAlertError-normal": {
+          "value": "#ffe8ea",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertError-normal\nCore Token: red-10"
+        },
+        "BackgroundAlertError-hover": {
+          "value": "#ffe8ea",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertError-hover\nCore Token: red-10"
+        },
+        "BackgroundAlertError-active": {
+          "value": "#ffd4da",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertError-active\nCore Token: red-20"
+        },
+        "BackgroundAlertTheme-normal": {
+          "value": "#dbf0ff",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertTheme-normal\nCore Token: theme-10"
+        },
+        "BackgroundAlertTheme-hover": {
+          "value": "#dbf0ff",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertTheme-hover\nCore Token: theme-10"
+        },
+        "BackgroundAlertTheme-active": {
+          "value": "#bfe3ff",
+          "type": "color",
+          "description": "Theme Token: BackgroundAlertTheme-active\nCore Token: theme-20"
+        }
+      },
+      "Buttons": {
+        "ButtonPrimary-normal": {
+          "value": "#000000f2",
+          "type": "color",
+          "description": "Theme Token: ButtonPrimary-normal\nCore Token: black-alpha-95"
+        },
+        "ButtonPrimary-hover": {
+          "value": "#000000cc",
+          "type": "color",
+          "description": "Theme Token: ButtonPrimary-hover\nCore Token: black-alpha-80"
+        },
+        "ButtonPrimary-pressed": {
+          "value": "#000000b3",
+          "type": "color",
+          "description": "Theme Token: ButtonPrimary-pressed\nCore Token: black-alpha-70"
+        },
+        "ButtonPrimary-disabled": {
+          "value": "#00000033",
+          "type": "color",
+          "description": "Theme Token: ButtonPrimary-disabled\nCore Token: black-alpha-20"
+        },
+        "ButtonSecondary-normal": {
+          "value": "#00000000",
+          "type": "color",
+          "description": "Theme Token: ButtonSecondary-normal\nCore Token: black-alpha-00"
+        },
+        "ButtonSecondary-hover": {
+          "value": "#00000012",
+          "type": "color",
+          "description": "Theme Token: ButtonSecondary-hover\nCore Token: black-alpha-07"
+        },
+        "ButtonSecondary-pressed": {
+          "value": "#00000033",
+          "type": "color",
+          "description": "Theme Token: ButtonSecondary-pressed\nCore Token: black-alpha-20"
+        },
+        "ButtonSecondary-disabled": {
+          "value": "#00000000",
+          "type": "color",
+          "description": "Theme Token: ButtonSecondary-disabled\nCore Token: black-alpha-00"
+        },
+        "ButtonSecondaryActive-normal": {
+          "value": "#00000033",
+          "type": "color",
+          "description": "Theme Token: ButtonSecondaryActive-normal\nCore Token: black-alpha-20"
+        },
+        "ButtonSecondaryActive-hover": {
+          "value": "#0000004d",
+          "type": "color",
+          "description": "Theme Token: ButtonSecondaryActive-hover\nCore Token: black-alpha-30"
+        },
+        "ButtonSecondaryActive-pressed": {
+          "value": "#00000066",
+          "type": "color",
+          "description": "Theme Token: ButtonSecondaryActive-pressed\nCore Token: black-alpha-40"
+        },
+        "ButtonInverted-normal": {
+          "value": "#ffffff",
+          "type": "color",
+          "description": "Theme Token: ButtonInverted-normal\nCore Token: white-alpha-100"
+        },
+        "ButtonInverted-hover": {
+          "value": "#ededed",
+          "type": "color",
+          "description": "Theme Token: ButtonInverted-normal\nCore Token: gray-10"
+        },
+        "ButtonInverted-pressed": {
+          "value": "#dedede",
+          "type": "color",
+          "description": "Theme Token: ButtonInverted-pressed\nCore Token: gray-20"
+        },
+        "ButtonJoin-normal": {
+          "value": "#1d805f",
+          "type": "color",
+          "description": "Theme Token: ButtonJoin-normal\nCore Token: green-60"
+        },
+        "ButtonJoin-hover": {
+          "value": "#185e46",
+          "type": "color",
+          "description": "Theme Token: ButtonJoin-hover\nCore Token: green-70"
+        },
+        "ButtonJoin-pressed": {
+          "value": "#134231",
+          "type": "color",
+          "description": "Theme Token: ButtonJoin-pressed\nCore Token: green-80"
+        },
+        "ButtonCancel-normal": {
+          "value": "#db1f2e",
+          "type": "color",
+          "description": "Theme Token: ButtonCancel-normal\nCore Token: red-60"
+        },
+        "ButtonCancel-hover": {
+          "value": "#ab0a15",
+          "type": "color",
+          "description": "Theme Token: ButtonCancel-hover\nCore Token: red-70"
+        },
+        "ButtonCancel-pressed": {
+          "value": "#780d13",
+          "type": "color",
+          "description": "Theme Token: ButtonCancel-pressed\nCore Token: red-80"
+        },
+        "ButtonAccent-normal": {
+          "value": "#1170cf",
+          "type": "color",
+          "description": "Theme Token: ButtonAccent-normal\nCore Token: theme-60"
+        },
+        "ButtonAccent-hover": {
+          "value": "#0352a6",
+          "type": "color",
+          "description": "Theme Token: ButtonAccent-hover\nCore Token: theme-70"
+        },
+        "ButtonAccent-pressed": {
+          "value": "#063a75",
+          "type": "color",
+          "description": "Theme Token: ButtonAccent-pressed\nCore Token: theme-80"
+        }
+      },
+      "Outlines": {
+        "OutlinePrimary-normal": {
+          "value": "#00000066",
+          "type": "color",
+          "description": "Theme Token: OutlinePrimary-normal\nCore Token: black-alpha-40"
+        },
+        "OutlineTheme-normal": {
+          "value": "#1170cf",
+          "type": "color",
+          "description": "Theme Token: OutlineTheme-normal\nCore Token: theme-60"
+        },
+        "OutlineSecondary-normal": {
+          "value": "#00000033",
+          "type": "color",
+          "description": "Theme Token: OutlineSecondary-normal\nCore Token: black-alpha-20"
+        },
+        "OutlineDisabled-normal": {
+          "value": "#00000033",
+          "type": "color",
+          "description": "Theme Token: OutlineDisabled-normal\nCore Token: black-alpha-20"
+        },
+        "OutlineInput-normal": {
+          "value": "#00000080",
+          "type": "color",
+          "description": "Theme Token: OutlineInput-normal\nCore Token: black-alpha-50"
+        },
+        "OutlineInput-active": {
+          "value": "#000000e6",
+          "type": "color",
+          "description": "Theme Token: OutlineInput-active\nCore Token: black-alpha-90"
+        },
+        "OutlineButton-normal": {
+          "value": "#0000004d",
+          "type": "color",
+          "description": "Theme Token: OutlineButton-normal\nCore Token: black-alpha-30"
+        },
+        "OutlineJoin-normal": {
+          "value": "#185e46",
+          "type": "color",
+          "description": "Theme Token: OutlineJoin-normal\nCore Token: green-70"
+        },
+        "OutlineCancel-normal": {
+          "value": "#ab0a15",
+          "type": "color",
+          "description": "Theme Token: OutlineCancel-normal\nCore Token: red-70"
+        },
+        "OutlineGradient-active": {
+          "value": "linear-gradient(44deg, #08599c 0%, #22c7d6 51.56%, #27a17a 100%)",
+          "type": "color",
+          "description": "Theme Token: OutlineGradient-active\nCore Token: cobalt-70, cyan-40, green-50"
+        },
+        "OutlineShare-selected": {
+          "value": "#27a17a",
+          "type": "color",
+          "description": "Theme Token: OutlineShare-selected\nCore Token: green-50"
+        },
+        "OutlineShare-active": {
+          "value": "#f26b1d",
+          "type": "color",
+          "description": "Theme Token: OutlineShare-active\nCore Token: orange-50"
+        },
+        "OutlineShare-inactive": {
+          "value": "#8f8f8f",
+          "type": "color",
+          "description": "Theme Token: OutlineShare-inactive\nCore Token: gray-50"
+        },
+        "OutlineOverlay-normal": {
+          "value": "#707070",
+          "type": "color",
+          "description": "Theme Token: OutlineOverlay-normal\nCore Token: gray-60"
+        }
+      },
+      "Controls": {
+        "ControlActive-normal": {
+          "value": "#1170cf",
+          "type": "color",
+          "description": "Theme Token: ControlActive-normal\nCore Token: theme-60"
+        },
+        "ControlActive-hover": {
+          "value": "#0353a8",
+          "type": "color",
+          "description": "Theme Token: ControlActive-hover\nCore Token: theme-70"
+        },
+        "ControlActive-pressed": {
+          "value": "#063a75",
+          "type": "color",
+          "description": "Theme Token: ControlActive-pressed\nCore Token: theme-80"
+        },
+        "ControlActive-active": {
+          "value": "#063a75",
+          "type": "color",
+          "description": "Theme Token: ControlActive-active\nCore Token: theme-80"
+        },
+        "ControlActive-disabled": {
+          "value": "#bfe3ff",
+          "type": "color",
+          "description": "Theme Token: ControlActive-disabled\nCore Token: theme-20"
+        },
+        "ControlInactive-normal": {
+          "value": "#00000033",
+          "type": "color",
+          "description": "Theme Token: ControlInactive-normal\nCore Token: black-alpha-20"
+        },
+        "ControlInactive-hover": {
+          "value": "#0000004d",
+          "type": "color",
+          "description": "Theme Token: ControlInactive-hover\nCore Token: black-alpha-30"
+        },
+        "ControlInactive-pressed": {
+          "value": "#00000066",
+          "type": "color",
+          "description": "Theme Token: ControlInactive-pressed\nCore Token: black-alpha-40"
+        },
+        "ControlInactive-disabled": {
+          "value": "#0000001c",
+          "type": "color",
+          "description": "Theme Token: ControlInactive-disabled\nCore Token: black-alpha-11"
+        }
+      },
+      "Scrollbars": {
+        "ScrollbarButton-normal": {
+          "value": "#00000033",
+          "type": "color",
+          "description": "Theme Token:ScrollbarButton-normal\nCore Token: black-alpha-20"
+        },
+        "ScrollbarButton-hover": {
+          "value": "#0000004d",
+          "type": "color",
+          "description": "Theme Token: ScrollbarButton-hover\nCore Token: black-alpha-30"
+        },
+        "ScrollbarButton-pressed": {
+          "value": "#00000066",
+          "type": "color",
+          "description": "Theme Token: ScrollbarButton-pressed\nCore Token: black-alpha-40"
+        },
+        "ScrollbarArrow-normal": {
+          "value": "#00000099",
+          "type": "color",
+          "description": "Theme Token: ScrollbarArrow-normal\nCore Token: black-alpha-60"
+        },
+        "ScrollbarArrowBackground-normal": {
+          "value": "#00000000",
+          "type": "color",
+          "description": "Theme Token: ScrollbarArrowBackground-normal\nCore Token: black-alpha-00"
+        },
+        "ScrollbarArrowBackground-hover": {
+          "value": "#0000001c",
+          "type": "color",
+          "description": "Theme Token: ScrollbarArrowBackground-hover\nCore Token: black-alpha-11"
+        },
+        "ScrollbarArrowBackground-press": {
+          "value": "#00000033",
+          "type": "color",
+          "description": "Theme Token: ScrollbarArrowBackground-press\nCore Token: black-alpha-20"
+        },
+        "ScrollbarArrowBackgroundSecondary-ghost": {
+          "value": "#00000000",
+          "type": "color",
+          "description": "Theme Token: ScrollbarArrowBackgroundSecondary-ghost\nCore Token: black-alpha-00"
+        },
+        "ScrollbarBackgorundSecondary-normal": {
+          "value": "#0000001c",
+          "type": "color",
+          "description": "Theme Token: ScrollbarBackgorundSecondary-normal\nCore Token: black-alpha-11"
+        }
+      },
+      "Indicators": {
+        "Indicator-unstable": {
+          "value": "#c74f0e",
+          "type": "color",
+          "description": "Theme Token: Indicator-unstable\nCore Token: orange-60\n\nUsed for Presence (Busy)"
+        },
+        "Indicator-attention": {
+          "value": "#db1f2e",
+          "type": "color",
+          "description": "Theme Token: Indicator-attentionCore Token: red-60\n-\nUsed for Presence(DoNotDisturb) and Meeting Indicators (Audio-video-off, Record-on, Poor-media-quality,Live)\n"
+        },
+        "Indicator-stable": {
+          "value": "#1d805f",
+          "type": "color",
+          "description": "Theme Token: Indicator-stable\nCore Token: green-60\n-\nUsed for Presence(Active) and Meeting Indicators (Audio-video-on, Media-quality-good)"
+        },
+        "Indicator-locked": {
+          "value": "#707070",
+          "type": "color",
+          "description": "Theme Token: Indicator-locked\nCore Token: gray-60\n_\nUsed for Presence (Away) and Meeting Indicators (Meeting-locked)"
+        },
+        "Indicator-caution": {
+          "value": "#cf7900",
+          "type": "color",
+          "description": "Theme Token: Indicator-caution\nCore Token: yellow-50\n-\nUsed for Meeting Indicators (Audio-error, Video-error, Unstabled-media-quality)"
+        },
+        "Indicator-secure": {
+          "value": "#1170cf",
+          "type": "color",
+          "description": "Theme Token: Indicator-secure\nCore Token: blue-60\n-\nUsed for Meeting Indicator (Encryption)"
+        }
+      },
+      "Whiteboard": {
+        "WhiteboardStickyNote-yellow": {
+          "value": "#ffc14f",
+          "type": "color",
+          "description": "Theme Token: \nWhiteboardStickyNote-yellow\nCore Token: yellow-30"
+        },
+        "WhiteboardStickyNote-red": {
+          "value": "#ff9580",
+          "type": "color",
+          "description": "Theme Token: \nWhiteboardStickyNote-red\nCore Token: red-40"
+        },
+        "WhiteboardStickyNote-purple": {
+          "value": "#f294f1",
+          "type": "color",
+          "description": "Theme Token: \nWhiteboardStickyNote-purple\nCore Token: purple-40"
+        },
+        "WhiteboardStickyNote-cyan": {
+          "value": "#22c7d6",
+          "type": "color",
+          "description": "Theme Token: \nWhiteboardStickyNote-cyan\nCore Token: cyan-40"
+        },
+        "WhiteboardStickyNote-mint": {
+          "value": "#30c9b0",
+          "type": "color",
+          "description": "Theme Token: \nWhiteboardStickyNote-mint\nCore Token: mint-40"
+        }
+      },
+      "Illustrations": {
+        "IllustrationEmptyPrimary": {
+          "value": "linear-gradient(180deg, #93c437 0%, #279be8 100%)",
+          "type": "color",
+          "description": "Theme Token: IllustrationEmptyPrimary\nCoreToken: lime-40, cobalt-50"
+        },
+        "IllustrationEmptySecondary": {
+          "value": "linear-gradient(180deg, #279be8 0%, #875ae0 100%)",
+          "type": "color",
+          "description": "Theme Token: IllustrationEmptySecondary\nCore Token: cobalt-50, violet-60"
+        },
+        "IllustrationOnboardingPrimary": {
+          "value": "linear-gradient(180deg, #ffbe4f 0%, #93c437 100%)",
+          "type": "color",
+          "description": "Theme Token: IllustrationOnboardingPrimary\nCore Token: yellow-30, lime-40"
+        },
+        "IllustrationOnboardingSecondary": {
+          "value": "linear-gradient(180deg, #f55868 0%, #875ae0 100%)",
+          "type": "color",
+          "description": "Theme Token: IllustrationOnboardingPrimary\nCore Token: red-50, violet-60"
+        },
+        "IllustrationOnboardingTertiary": {
+          "value": "linear-gradient(180deg, #ffbe4f 0%, #f26b1d 100%)",
+          "type": "color",
+          "description": "Theme Token: IllustrationOnboardingTertiary\nCore Token: yellow-30, orange-50"
+        },
+        "IllustrationOnboardingQuarternary": {
+          "value": "linear-gradient(180deg, #93c437 0%, #279be8 100%)",
+          "type": "color",
+          "description": "Theme Token: IllustrationOnboardingQuarternary\nCoreToken: lime-40, cobalt-50"
+        },
+        "IllustrationOnboardingQuinary": {
+          "value": "linear-gradient(180deg, #279be8 0%, #875ae0 100%)",
+          "type": "color",
+          "description": "Theme Token: IllustrationOnboardingQuinary\nCoreToken: cobalt-50, violet-60"
+        },
+        "IllustrationSuccess": {
+          "value": "linear-gradient(180deg, #3cc29a 0%, #93c437 100%)",
+          "type": "color",
+          "description": "Theme Token: IllustrationSuccess\nCoreToken: green-40, lime-40"
+        },
+        "IllustrationError": {
+          "value": "linear-gradient(180deg, #f0677e 0%, #db1f2e 100%)",
+          "type": "color",
+          "description": "Theme Token: IllustrationError\nCoreToken: pink-50, red-60"
+        },
+        "IllustrationDefault": {
+          "value": "#121212",
+          "type": "color",
+          "description": "Theme Token: IllustrationDefault\nCore Token: gray-100"
+        }
+      },
+      "iOS": {
+        "GlobalTint-normal": {
+          "value": "#1170ce",
+          "type": "color",
+          "description": "Theme Token: GlobalTint-normal\nCore Token: blue-60"
+        },
+        "GlobalTint-selected": {
+          "value": "#1170ce",
+          "type": "color",
+          "description": "Theme Token: GlobalTint-selected\nCore Token: blue-60"
+        }
+      },
+      "Mobile-SolidBackgroundDefault": {
+        "GroupedBackgroundPrimary-normal": {
+          "value": "#f7f7f7",
+          "type": "color",
+          "description": "Theme Token: GroupedBackgroundPrimary-normal\nCore Token: gray-05\n\nSee Guidelines for use"
+        },
+        "GroupedBackgroundSecondary-normal": {
+          "value": "#ffffff",
+          "type": "color",
+          "description": "Theme Token: GroupedBackgroundSecondary-normal\nCore Token: white-alpha-100\n\nSee Guidelines for use"
+        },
+        "GroupedBackgroundTertiary-normal": {
+          "value": "#f7f7f7",
+          "type": "color",
+          "description": "Theme Token: GroupedBackgroundTertiary-normal\nCore Token: gray-05\n\nSee Guidelines for use"
+        },
+        "GroupedBackgroundQuaternary-normal": {
+          "value": "#ffffff",
+          "type": "color",
+          "description": "Theme Token: GroupedBackgroundQuaternary-normal\nCore Token: white-alpha-100\n\nSee Guidelines for use"
+        }
+      },
+      "Teaching": {
+        "TeachingBackground-normal": {
+          "value": "#000000",
+          "type": "color",
+          "description": "Theme Token: Background-normal\nCore Token: black-alpha-100"
+        },
+        "TeachingButtonPrimary-normal": {
+          "value": "#fffffff2",
+          "type": "color",
+          "description": "Theme Token: ButtonPrimary-normal\nCore Token: white-alpha-95"
+        },
+        "TeachingButtonPrimary-hover": {
+          "value": "#ffffffcc",
+          "type": "color",
+          "description": "Theme Token: ButtonPrimary-hover\nCore Token: white-alpha-80"
+        },
+        "TeachingButtonPrimary-pressed": {
+          "value": "#ffffffb3",
+          "type": "color",
+          "description": "Theme Token: ButtonPrimary-pressed\nCore Token: white-alpha-70"
+        },
+        "TeachingButtonSecondary-normal": {
+          "value": "#ffffff00",
+          "type": "color",
+          "description": "Theme Token: ButtonSecondary-normal\nCore Token: white-alpha-00"
+        },
+        "TeachingButtonSecondary-hover": {
+          "value": "#ffffff12",
+          "type": "color",
+          "description": "Theme Token: ButtonSecondary-hover\nCore Token: white-alpha-07"
+        },
+        "TeachingButtonSecondary-pressed": {
+          "value": "#ffffff33",
+          "type": "color",
+          "description": "Theme Token: ButtonSecondary-pressed\nCore Token: white-alpha-20"
+        },
+        "TeachingOutlineButton-normal": {
+          "value": "#ffffff4d",
+          "type": "color",
+          "description": "Theme Token: OutlineButton-normal\nCore Token: white-alpha-30"
+        },
+        "TeachingOutline-normal": {
+          "value": "#ffffff33",
+          "type": "color",
+          "description": "Theme Token: Outline-normal\nCore Token: white-alpha-20"
+        },
+        "TeachingTextAccent-normal": {
+          "value": "#64b4f4",
+          "type": "color",
+          "description": "Theme Token: TextAccent-normal\nCore Token: theme-40"
+        },
+        "TeachingTextAccent-hover": {
+          "value": "#bfe3ff",
+          "type": "color",
+          "description": "Theme Token: TextAccent-hover\nCore Token: theme-20"
+        },
+        "TeachingTextAccent-disabled": {
+          "value": "#ffffff66",
+          "type": "color",
+          "description": "Theme Token: TextAccent-disabled\nCore Token: white-alpha-40"
+        },
+        "TeachingOutlineTheme-normal": {
+          "value": "#64b4fa",
+          "type": "color",
+          "description": "Theme Token: TeachingOutlineTheme-normal\nCore Token: theme-60"
+        },
+        "TeachingButtonPrimary-disabled": {
+          "value": "#ffffff33",
+          "type": "color",
+          "description": "Theme Token: TeachingButtonPrimary-disabled\nCore Token: white-alpha-20"
+        },
+        "TeachingOutlineDisabled-normal": {
+          "value": "#ffffff33",
+          "type": "color",
+          "description": "Theme Token: TeachingOutlineDisabled-normal\nCore Token: white-alpha-20"
+        },
+        "TeachingTextPrimary-disabled": {
+          "value": "#ffffff66",
+          "type": "color",
+          "description": "Theme Token: TeachingTextPrimary-disabled\nCore Token: white-alpha-40"
+        }
+      },
+      "Overlays": {
+        "OverlayPrimary-normal": {
+          "value": "#ffffffb3",
+          "type": "color"
+        }
+      }
+    },
+    "Common": {
+      "Text": {
+        "Common-Text-white": {
+          "value": "#fffffff2",
+          "type": "color",
+          "description": "Theme Token: Common-Text-white\nCore Token: white-alpha-95"
+        },
+        "Common-Text-black": {
+          "value": "#000000f2",
+          "type": "color",
+          "description": "Theme Token: Common-Text-black\nCore Token: black-alpha-95"
+        },
+        "Common-TextSuccess": {
+          "value": "#3cc29a",
+          "type": "color",
+          "description": "Theme Token: Common-TextSuccess\nCore Token: green-40"
+        },
+        "Common-TextError": {
+          "value": "#fc8b98",
+          "type": "color",
+          "description": "Theme Token: Common-TextError\nCore Token: red-40"
+        }
+      },
+      "Overlays": {
+        "Common-OverlayPrimary-normal": {
+          "value": "#000000e6",
+          "type": "color",
+          "description": "Theme Token: Common-OverlayPrimary-normal\nCore Token: black-alpha-90"
+        },
+        "Common-OverlaySecondary-normal": {
+          "value": "#00000066",
+          "type": "color",
+          "description": "Theme Token: Common-OverlaySecondary-normal\nCore Token: black-alpha-40"
+        }
+      },
+      "Controls": {
+        "Common-ControlShareContent-active": {
+          "value": "#c74f0e",
+          "type": "color",
+          "description": "Theme Token: Common-ControlShareContent-active\nCore Token: orange-60"
+        },
+        "Common-ControlShareContent-inactive": {
+          "value": "#707070",
+          "type": "color",
+          "description": "Theme Token: Common-ControlShareContent-inactive\nCore Token: gray-60"
+        },
+        "Common-ControlShareContent-selected": {
+          "value": "#3cc29a",
+          "type": "color",
+          "description": "Theme Token: Common-ControlShareContent-selected\nCore Token: green-40"
+        }
+      },
+      "Buttons": {
+        "Common-ButtonPrimary-normal": {
+          "value": "#fffffff2",
+          "type": "color",
+          "description": "Theme Token: Common-ButtonPrimary-normal\nCore Token: white-alpha-95"
+        },
+        "Common-ButtonPrimary-hover": {
+          "value": "#ffffffcc",
+          "type": "color",
+          "description": "Theme Token: Common-ButtonPrimary-hover\nCore Token: white-alpha-80"
+        },
+        "Common-ButtonPrimary-pressed": {
+          "value": "#ffffff33",
+          "type": "color",
+          "description": "Theme Token: Common-ButtonPrimary-pressed\nCore Token: white-alpha-20"
+        },
+        "Common-ButtonSecondary-normal": {
+          "value": "#ffffff00",
+          "type": "color",
+          "description": "Theme Token: ButtonSecondary-normal\nCore Token: white-alpha-00"
+        },
+        "Common-ButtonSecondary-hover": {
+          "value": "#ffffff12",
+          "type": "color",
+          "description": "Theme Token: Common-ButtonSecondary-hover\nCore Token: white-alpha-07"
+        },
+        "Common-ButtonSecondary-pressed": {
+          "value": "#ffffff33",
+          "type": "color",
+          "description": "Theme Token: Common-ButtonSecondary-pressed\nCore Token: white-alpha-20"
+        }
+      },
+      "Outlines": {
+        "Common-OutlineButton-normal": {
+          "value": "#ffffff4d",
+          "type": "color",
+          "description": "Theme Token: Common-OutlineButton-normal\nCore Token: white-alpha-30"
+        }
+      }
+    }
+  }
+}
