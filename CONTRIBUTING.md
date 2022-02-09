@@ -32,6 +32,7 @@ The following definition provides an overview of commonly used files, when contr
 +-+ legacy/ # legacy theme core tokens
 +-+ legacyThemes/ # legacy theme directive tokens
 +-+ platformcomponents/ # web-exclusive, platform-explicit component tokens
++-+ reference-tokens/ # tokens exported from the figma article using the Figma Tokens plugin
 +-+ theme-data/ # theme-specific tokens, consumes ./core tokens
 +-+ themes/ # directive tokens, combines ./theme-data and ./themes
 ```
@@ -134,13 +135,20 @@ Most contributors will likely perform the following steps when implementing new 
 - `./components/{component-name}.json` - Determine if the component variables have been implemented at the top level by finding a file that contains the **components name**.
   - If so, add the neceesary token data here as references to `./theme-data/{dark | light}/{dark-common | light-common}.json`.
   - If not, proceed to the next item in this list.
-- `./theme-data/{dark | light}/{dark-common | light-common}.json` - Determine if the common component variables include the data needed.
+- `./theme-data/{dark | light}/{dark-common | light-common}.json` - Determine if the common theme variables include the data needed.
   - If so, map them to `./components/{component-name}.json` as references to these components.
-  - If not, implement the tokens at this level in both **light** and **dark** variations based on the [Figma Article](https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb). Then, return to the first major bullet in this list and repeat.
+  - If not, implement the tokens at this level in both **light** and **dark** variations based on the [Figma Article](https://www.figma.com/file/n9T5usku57ecvPArT9SpWO/Tokens---Core-Color?node-id=0%3A1). Then, return to the first major bullet in this list and repeat.
+
+To help validate which tokens have been changed by design, the items in the `./reference-tokens/` folder can be used. These tokens are exported using the [Figma Tokens](https://www.figma.com/community/plugin/843461159747178978/Figma-Tokens) Figma plugin, and are challenged via a GitHub Pull Request. The tokens are exported using the plugin from the following Figma articles:
+
+- `./reference-tokens/color-core.json` - https://www.figma.com/file/n9T5usku57ecvPArT9SpWO/Tokens---Core-Color?node-id=0%3A1
+- `./reference-tokens/color-theme.json` - https://www.figma.com/file/yYfvFEEr3UkW1yUKkW7zEH/Tokens---Theme-Color?node-id=0%3A1
+
+Challenging these files via a GitHub Pull Request allows for a clear Git Diff to be determined, making updating downstream tokens, such as component tokens, much more streamlined for maintainers.
 
 ### Web Platform
 
-Once the tokens have been implemented as JSON, run `npm run build:css` and navigate to the `./dist` folder. Validate that the `./theme-{dark | light}-webex.json` files contain the new token data as CSS. If they do, proceed to the [Submitting Changes](#submitting-changes) section.
+Once the tokens have been implemented as JSON, run `npm run build:web` and navigate to the `./dist` folder. Validate that the `./dist/{dark | light}{flavor}.css` files contain the new token data as CSS. If they do, proceed to the [Submitting Changes](#submitting-changes) section.
 
 ### Other Platforms
 

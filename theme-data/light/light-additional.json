@@ -139,7 +139,7 @@
       }
     },
     "avatar": {
-      "default": "@color-black-alpha-50",
+      "default": "@color-gray-70",
       "cobalt": "@color-cobalt-70",
       "cyan": "@color-cyan-70",
       "gold": "@color-gold-70",
