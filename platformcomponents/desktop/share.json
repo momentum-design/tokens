@@ -38,9 +38,9 @@
             "border": "@theme-button-border-normal"
           },
           "#disabled": {
-            "background": "@theme-common-button-primary-normal",
+            "background": "@theme-common-button-primary-pressed",
             "text": "@theme-common-text-black",
-            "border": "@theme-button-border-normal"
+            "border": "none"
           }
         },
         "secondary": {
@@ -62,7 +62,7 @@
           "#disabled": {
             "background": "@theme-common-button-secondary-pressed",
             "text": "@theme-common-text-white",
-            "border": "@theme-common-outline-button-normal"
+            "border": "@theme-outline-input-norml"
           }
         }
       }
