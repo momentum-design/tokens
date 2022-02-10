@@ -62,7 +62,7 @@
           "#disabled": {
             "background": "@theme-common-button-secondary-pressed",
             "text": "@theme-common-text-white",
-            "border": "@theme-outline-input-norml"
+            "border": "@theme-outline-input-normal"
           }
         }
       }
