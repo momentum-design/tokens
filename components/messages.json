@@ -1,0 +1,15 @@
+{
+  "message": {
+    "comment": "Color tokens for the space list",
+    "bodyText-read": {
+      "#normal": {
+        "text": "@theme-text-primary-normal"
+      }
+    },
+    "bodyText-unread": {
+      "#normal": {
+        "text": "@theme-text-secondary-normal"
+      }
+    }
+  }
+}
