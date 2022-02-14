@@ -1,12 +1,12 @@
 {
   "message": {
     "comment": "Color tokens for the space list",
-    "bodyText-read": {
+    "bodyText-primary": {
       "#normal": {
         "text": "@theme-text-primary-normal"
       }
     },
-    "bodyText-unread": {
+    "bodyText-secondary": {
       "#normal": {
         "text": "@theme-text-secondary-normal"
       }
