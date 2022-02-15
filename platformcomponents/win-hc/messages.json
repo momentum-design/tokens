@@ -1,0 +1,27 @@
+{
+  "message": {
+    "comment": "Color tokens for the space list",
+    "bodyText-primary": {
+      "#pressed": {
+        "text": "@theme-text-primary-inverted"
+      },
+      "#hovered": {
+        "text": "@theme-text-primary-inverted"
+      },
+      "#focused": {
+        "text": "@theme-text-primary-inverted"
+      }
+    },
+    "bodyText-secondary": {
+      "#pressed": {
+        "text": "@theme-text-primary-inverted"
+      },
+      "#hovered": {
+        "text": "@theme-text-primary-inverted"
+      },
+      "#focused": {
+        "text": "@theme-text-primary-inverted"
+      }
+    }
+  }
+}
