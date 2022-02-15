@@ -38,8 +38,8 @@
             "border": "@theme-button-border-normal"
           },
           "#disabled": {
-            "background": "@theme-common-button-primary-pressed",
-            "text": "@theme-common-text-black",
+            "background": "@theme-common-button-primary-disabled",
+            "text": "@theme-common-text-disabled",
             "border": "none"
           }
         },
@@ -60,9 +60,9 @@
             "border": "@theme-common-outline-button-normal"
           },
           "#disabled": {
-            "background": "@theme-common-button-secondary-pressed",
-            "text": "@theme-common-text-white",
-            "border": "@theme-outline-input-normal"
+            "background": "@theme-common-button-secondary-disabled",
+            "text": "@theme-common-text-disabled",
+            "border": "@theme-common-outline-disabled-normal"
           }
         }
       }

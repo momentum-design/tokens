@@ -4,6 +4,7 @@
       "text": {
         "white": "@color-white-alpha-95",
         "black": "@color-black-alpha-95",
+        "disabled": "@color-white-alpha-40",
         "success": "@color-green-40",
         "error": "@color-red-40"
       },
@@ -19,20 +20,25 @@
         "primary": {
           "normal": "@color-white-alpha-95",
           "hover": "@color-white-alpha-80",
-          "pressed": "@color-white-alpha-20"
+          "pressed": "@color-white-alpha-20",
+          "disabled": "@color-white-alpha-20"
         },
         "secondary": {
           "normal": "@color-white-alpha-00",
           "hover": "@color-white-alpha-07",
-          "pressed": "@color-white-alpha-20"
+          "pressed": "@color-white-alpha-20",
+          "disabled": "@color-white-alpha-00"
         }
       },
       "outline": {
         "button": {
           "normal": "@color-white-alpha-30"
         },
-        "outilne": {
+        "input": {
           "normal": "@color-white-alpha-50"
+        },
+        "disabled": {
+          "normal": "@color-white-alpha-20"
         }
       },
       "control": {
