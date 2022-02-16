@@ -8,7 +8,7 @@
       "icon": "@theme-text-inverted-normal"
     },
     "#focused": {
-      "background": "@theme-background-primary-focus"
+      "background": "@theme-background-primary-ghost"
     },
     "#pressed": {
       "textprimary": "@theme-text-inverted-normal",

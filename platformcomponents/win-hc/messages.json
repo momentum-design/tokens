@@ -3,24 +3,24 @@
     "comment": "Color tokens for the space list",
     "bodyText-primary": {
       "#pressed": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       },
       "#hovered": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       },
       "#focused": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       }
     },
     "bodyText-secondary": {
       "#pressed": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       },
       "#hovered": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       },
       "#focused": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       }
     }
   }
