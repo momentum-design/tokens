@@ -3,18 +3,19 @@
     "comment": "applied to avatars and all its elements",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4389%3A1647",
     "presence-icon": {
-      "active": "@theme-presence-active",
-      "meeting": "@theme-presence-busy",
-      "schedule": "@theme-presence-busy",
-      "dnd": "@theme-presence-doNotDisturb",
-      "presenting": "@theme-presence-doNotDisturb",
-      "quiet-hours": "@theme-presence-away",
-      "away": "@theme-presence-away",
-      "ooo": "@theme-presence-away",
+      "active": "@theme-indicator-stable",
+      "meeting": "@theme-indicator-unstable",
+      "schedule": "@theme-indicator-unstable",
+      "call": "@theme-indicator-unstable",
+      "dnd": "@theme-indicator-attention",
+      "presenting": "@theme-indicator-attention",
+      "quiet-hours": "@theme-indicator-locked",
+      "away": "@theme-indicator-locked",
+      "ooo": "@theme-indicator-locked",
       "background": "@theme-background-solid-primary-normal"
     },
     "color-avatar": {
-      "text": "@theme-common-text-white-normal",
+      "text": "@theme-common-text-white",
       "background": {
         "default": "@theme-avatar-default",
         "gold": "@theme-avatar-gold",

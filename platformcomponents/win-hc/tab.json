@@ -2,27 +2,25 @@
   "tab": {
     "active": {
       "#normal": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       },
       "#hovered": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       },
       "#pressed": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       }
     },
     "inactive": {
       "#hovered": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       },
       "#pressed": {
-        "text": "@theme-text-primary-inverted"
+        "text": "@theme-text-inverted-normal"
       },
       "#disabled": {
         "text": "@theme-text-primary-disabled"
       }
-
-
     }
   }
 }

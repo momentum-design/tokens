@@ -25,7 +25,7 @@
       "secondary": {
         "#normal": {
           "background": "@theme-teaching-button-secondary-normal",
-          "text": "@theme-text-primary-inverted",
+          "text": "@theme-text-inverted-normal",
           "border": "@theme-outline-button-normal"
         },
         "#hovered": {

@@ -50,6 +50,16 @@
           "primary": "#171002",
           "secondary": "#231807"
         }
+      },
+      "default": {
+        "light": {
+          "primary": "#F7F7F7",
+          "secondary": "#FFFFFF"
+        },
+        "dark": {
+          "primary": "#000000",
+          "secondary": "#1A1A1A"
+        }
       }
     }
   }

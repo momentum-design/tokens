@@ -3,42 +3,42 @@
     "color": "@color-hc-PlaceholderColor",
     "common": {
       "text": {
-        "white": {
-          "normal": "@color-hc-SystemColorButtonTextColor",
-          "disabled": "@color-hc-SystemColorGrayTextColor"
-        },
-        "black": {
-          "normal": "@color-hc-SystemColorWindowTextColor",
-          "disabled": "@color-hc-SystemColorGrayTextColor"
-        }
+        "white": "@color-hc-SystemColorButtonTextColor",
+        "black": "@color-hc-SystemColorHighlightTextColor",
+        "disabled": "@color-hc-SystemColorGrayTextColor",
+        "success": "@color-hc-PlaceholderColor",
+        "error": "@color-hc-PlaceholderColor"
       },
       "overlay": {
         "primary": {
-          "normal": "@color-hc-SystemColorWindowColor"
+          "normal": "@color-hc-PlaceholderColor"
         },
         "secondary": {
-          "normal": "@color-hc-SystemColorWindowColor"
+          "normal": "@color-hc-PlaceholderColor"
         }
       },
       "button": {
         "primary": {
           "normal": "@color-hc-SystemColorButtonFaceColor",
           "hover": "@color-hc-SystemColorHighlightColor",
-          "pressed": "@color-hc-SystemColorHighlightColor"
+          "pressed": "@color-hc-SystemColorHighlightColor",
+          "disabled": "@color-hc-SystemColorGrayTextColor"
         },
         "secondary": {
           "normal": "@color-hc-SystemColorButtonFaceColor",
           "hover": "@color-hc-SystemColorHighlightColor",
-          "pressed": "@color-hc-SystemColorHighlightColor"
-        },
-        "active": {
-          "normal": "@color-hc-PlaceholderColor",
-          "hover": "@color-hc-PlaceholderColor",
-          "pressed": "@color-hc-PlaceholderColor"
+          "pressed": "@color-hc-SystemColorHighlightColor",
+          "disabled": "@color-hc-SystemColorGrayTextColor"
         }
       },
       "outline": {
         "button": {
+          "normal": "@color-hc-PlaceholderColor"
+        },
+        "input": {
+          "normal": "@color-hc-PlaceholderColor"
+        },
+        "disabled": {
           "normal": "@color-hc-PlaceholderColor"
         }
       },
@@ -53,11 +53,17 @@
     "text": {
       "primary": {
         "normal": "@color-hc-SystemColorButtonTextColor",
-        "inverted": "@color-hc-SystemColorHighlightTextColor",
+        "disabled": "@color-hc-SystemColorGrayTextColor"
+      },
+      "inverted": {
+        "normal": "@color-hc-SystemColorHighlightTextColor",
         "disabled": "@color-hc-SystemColorGrayTextColor"
       },
       "secondary": {
-        "normal": "@color-hc-SystemColorWindowTextColor"
+        "normal": "@color-hc-SystemColorButtonTextColor",
+        "inverted": {
+          "normal": "@color-hc-SystemColorHighlightTextColor"
+        }
       },
       "error": {
         "normal": "@color-hc-SystemColorHotlightColor",
@@ -80,11 +86,12 @@
         "hover": "@color-hc-SystemColorHotlightColor",
         "active": "@color-hc-PlaceholderColor"
       },
+      "teamdefault": {
+        "normal": "@color-hc-SystemColorWindowTextColor",
+        "hover": "@color-hc-SystemColorWindowTextColor",
+        "active": "@color-hc-SystemColorWindowTextColor"
+      },
       "team": {
-        "default": {
-          "normal": "@color-hc-SystemColorWindowTextColor",
-          "active": "@color-hc-SystemColorWindowTextColor"
-        },
         "cobalt": {
           "normal": "@color-hc-SystemColorWindowTextColor",
           "hover": "@color-hc-SystemColorWindowTextColor",
@@ -142,7 +149,6 @@
         "ghost": "@color-hc-SystemColorButtonFaceColor",
         "hover": "@color-hc-SystemColorHighlightColor",
         "active": "@color-hc-SystemColorHighlightColor",
-        "focus": "@color-hc-SystemColorHotlightColor",
         "disabled": "@color-hc-SystemColorButtonFaceColor"
       },
       "solid": {
@@ -162,7 +168,8 @@
       "secondary": {
         "normal": "@color-hc-SystemColorButtonFaceColor",
         "hover": "@color-hc-SystemColorHighlightColor",
-        "active": "@color-hc-SystemColorHighlightColor"
+        "active": "@color-hc-SystemColorHighlightColor",
+        "disabled": "@color-hc-SystemColorButtonFaceColor"
       },
       "accent": {
         "normal": "@color-hc-SystemColorWindowTextColor"
@@ -193,11 +200,6 @@
           "active": "@color-hc-SystemColorHighlightColor"
         },
         "theme": {
-          "normal": "@color-hc-SystemColorHighlightColor",
-          "hover": "@color-hc-SystemColorHighlightColor",
-          "active": "@color-hc-SystemColorHighlightColor"
-        },
-        "general": {
           "normal": "@color-hc-SystemColorHighlightColor",
           "hover": "@color-hc-SystemColorHighlightColor",
           "active": "@color-hc-SystemColorHighlightColor"
@@ -247,11 +249,15 @@
       },
       "common": {
         "normal": "@color-hc-SystemColorWindowColor"
+      },
+      "namelabel": {
+        "normal": "@color-hc-SystemColorWindowColor"
       }
     },
     "overlay": {
-      "primary": "@color-hc-PlaceholderColor",
-      "secondary": "@color-hc-PlaceholderColor"
+      "meetings": {
+        "normal": "@color-hc-PlaceholderColor"
+      }
     },
     "button": {
       "border": {
@@ -267,6 +273,7 @@
         "normal": "@color-hc-SystemColorButtonFaceColor",
         "hover": "@color-hc-SystemColorHighlightColor",
         "pressed": "@color-hc-SystemColorHighlightColor",
+        "disabled": "@color-hc-SystemColorButtonFaceColor",
         "active": {
           "normal": "@color-hc-SystemColorHighlightColor",
           "hover": "@color-hc-SystemColorHighlightColor",
@@ -292,30 +299,13 @@
         "normal": "@color-hc-SystemColorButtonFaceColor",
         "hover": "@color-hc-SystemColorHighlightColor",
         "pressed": "@color-hc-SystemColorHighlightColor"
-      },
-      "share": {
-        "primary": {
-          "normal": "@color-hc-SystemColorButtonFaceColor",
-          "hover": "@color-hc-SystemColorHighlightColor",
-          "pressed": "@color-hc-SystemColorHighlightColor"
-        },
-        "secondary": {
-          "normal": "@color-hc-SystemColorButtonFaceColor",
-          "hover": "@color-hc-SystemColorHighlightColor",
-          "pressed": "@color-hc-SystemColorHighlightColor"
-        },
-        "active": {
-          "normal": "@color-hc-SystemColorButtonFaceColor",
-          "hover": "@color-hc-SystemColorHighlightColor",
-          "pressed": "@color-hc-SystemColorHighlightColor"
-        }
       }
     },
     "outline": {
       "primary": {
         "normal": "@color-hc-SystemColorButtonTextColor"
       },
-      "focus": {
+      "theme": {
         "normal": "@color-hc-SystemColorHighlightColor"
       },
       "secondary": {
@@ -344,6 +334,9 @@
         "selected": "@color-hc-PlaceholderColor",
         "active": "@color-hc-PlaceholderColor",
         "inactive": "@color-hc-PlaceholderColor"
+      },
+      "overlay": {
+        "normal": "@color-hc-PlaceholderColor"
       },
       "label": {
         "cobalt": "@color-hc-SystemColorHighlightColor",
@@ -387,11 +380,13 @@
         "disabled": "@color-hc-PlaceholderColor"
       }
     },
-    "presence": {
-      "busy": "@color-hc-SystemColorWindowTextColor",
-      "doNotDisturb": "@color-hc-SystemColorWindowTextColor",
-      "active": "@color-hc-SystemColorWindowTextColor",
-      "away": "@color-hc-SystemColorWindowTextColor"
+    "indicator": {
+      "unstable": "@color-hc-SystemColorWindowTextColor",
+      "attention": "@color-hc-SystemColorWindowTextColor",
+      "stable": "@color-hc-SystemColorWindowTextColor",
+      "locked": "@color-hc-SystemColorWindowTextColor",
+      "caution": "@color-hc-SystemColorWindowTextColor",
+      "secure": "@color-hc-SystemColorWindowTextColor"
     },
     "whiteboard": {
       "stickyNote": {
@@ -482,14 +477,14 @@
         }
       },
       "outline": {
-        "theme": "@color-hc-PlaceholderColor",
+        "button": {
+          "normal": "@color-hc-PlaceholderColor"
+        },
         "normal": "@color-hc-PlaceholderColor",
         "disabled": {
           "normal": "@color-hc-PlaceholderColor"
         },
-        "button": {
-          "normal": "@color-hc-PlaceholderColor"
-        }
+        "theme": "@color-hc-PlaceholderColor"
       },
       "text": {
         "accent": {

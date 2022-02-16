@@ -4,7 +4,7 @@
     "toggled": {
       "#normal": {
         "background": "@theme-control-active-normal",
-        "thumb-tint": "@theme-common-text-white-normal",
+        "thumb-tint": "@theme-common-text-white",
         "border": "none"
       },
       "#disabled": {
@@ -16,7 +16,7 @@
     "untoggled": {
       "#normal": {
         "background": "@theme-background-primary-ghost",
-        "thumb-tint": "@theme-common-text-white-normal",
+        "thumb-tint": "@theme-common-text-white",
         "border": "@theme-outline-primary-normal"
       },
       "#disabled": {

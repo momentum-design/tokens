@@ -6,7 +6,7 @@
 - [Scripts](#scripts)
   - [Simple Execution](#simple-execution)
   - [CLI Options](#cli-options)
-- [Making Changes](#making-changes) *General How-To*
+- [Making Changes](#making-changes) _General How-To_
   - [Web Platform](#web-platform)
   - [Other Platforms](#other-platforms)
 - [Submitting Changes](#submitting-changes)
@@ -47,16 +47,21 @@ Example token:
 
 ```json
 {
-  "theme": { // component scope
-    "text": { // component section scope
-      "primary": { // component variant scope
+  "theme": {
+    // component scope
+    "text": {
+      // component section scope
+      "primary": {
+        // component variant scope
         "normal": "@color-white-alpha-95", // component state
         "inverted": "@color-black-alpha-95", // component state
         "disabled": "@color-white-alpha-40" // component state
       }
     },
-    "background": { // component section scope
-      "primary": { // component variant scope
+    "background": {
+      // component section scope
+      "primary": {
+        // component variant scope
         "ghost": "@color-white-alpha-00", // component state
         "hover": "@color-black-alpha-04", // component state
         "active": "@color-black-alpha-11", // component state
@@ -126,7 +131,7 @@ Options
        ios
        android
   --toStdOut                  Output to std out instead of writing to files
-  ```
+```
 
 ## Making Changes
 

@@ -26,13 +26,13 @@
         "background": "@theme-button-secondary-normal",
         "text": "@theme-globaltint-normal",
         "border": "@theme-globaltint-normal",
-        "badge": "@theme-presence-doNotDisturb"
+        "badge": "@theme-indicator-attention"
       },
       "#pressed": {
         "background": "@theme-globaltint-selected",
-        "text": "@theme-common-text-white-normal",
+        "text": "@theme-common-text-white",
         "border": "none",
-        "badge": "@theme-presence-doNotDisturb"
+        "badge": "@theme-indicator-attention"
       }
     },
     "global-plus": {
@@ -45,7 +45,7 @@
       },
       "#pressed": {
         "background": "@theme-globaltint-normal",
-        "icon-color": "@theme-common-text-white-normal"
+        "icon-color": "@theme-common-text-white"
       }
     },
     "call-control": {
