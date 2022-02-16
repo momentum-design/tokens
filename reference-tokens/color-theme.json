@@ -1536,7 +1536,7 @@
         "TeachingOutlineTheme-normal": {
           "value": "#64b4fa",
           "type": "color",
-          "description": "Theme Token: TeachingOutlineTheme-normal\nCore Token: theme-60"
+          "description": "Theme Token: TeachingOutlineTheme-normal\nCore Token: theme-40"
         },
         "TeachingButtonPrimary-disabled": {
           "value": "#ffffff33",
@@ -1572,6 +1572,11 @@
           "value": "#000000f2",
           "type": "color",
           "description": "Theme Token: Common-Text-black\nCore Token: black-alpha-95"
+        },
+        "Common-Text-disabled": {
+          "value": "#ffffff66",
+          "type": "color",
+          "description": "Theme Token: Common-Text-disabled\nCore Token: white-alpha-40"
         },
         "Common-TextSuccess": {
           "value": "#3cc29a",
@@ -1625,9 +1630,14 @@
           "description": "Theme Token: Common-ButtonPrimary-hover\nCore Token: white-alpha-80"
         },
         "Common-ButtonPrimary-pressed": {
+          "value": "#ffffffb3",
+          "type": "color",
+          "description": "Theme Token: Common-ButtonPrimary-pressed\nCore Token: white-alpha-70"
+        },
+        "Common-ButtonPrimary-disabled": {
           "value": "#ffffff33",
           "type": "color",
-          "description": "Theme Token: Common-ButtonPrimary-pressed\nCore Token: white-alpha-20"
+          "description": "Theme Token: Common-ButtonPrimary-disabled\nCore Token: white-alpha-20"
         },
         "Common-ButtonSecondary-normal": {
           "value": "#ffffff00",
@@ -1643,6 +1653,11 @@
           "value": "#ffffff33",
           "type": "color",
           "description": "Theme Token: Common-ButtonSecondary-pressed\nCore Token: white-alpha-20"
+        },
+        "Common-ButtonSecondary-disabled": {
+          "value": "#ffffff00",
+          "type": "color",
+          "description": "Theme Token: Common-ButtonSecondary-disabled\n\nCore Token: white-alpha-00"
         }
       },
       "Outlines": {
@@ -1650,6 +1665,16 @@
           "value": "#ffffff4d",
           "type": "color",
           "description": "Theme Token: Common-OutlineButton-normal\nCore Token: white-alpha-30"
+        },
+        "Common-OutlineInput-normal": {
+          "value": "#ffffff80",
+          "type": "color",
+          "description": "Theme Token: Common-OutlineInput-normal\nCore Token: white-alpha-50\n"
+        },
+        "Common-OutlineDisabled-normal": {
+          "value": "#ffffff33",
+          "type": "color",
+          "description": "Theme Token: Common-OutlineDisabled-normal\nCore Token: white-alpha-20\n"
         }
       }
     }
