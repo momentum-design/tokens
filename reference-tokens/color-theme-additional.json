@@ -1,0 +1,898 @@
+{
+  "additional": {
+    "DUI": {
+      "Text": {
+        "TextTeamCobalt-normal": {
+          "value": "#5ebff7",
+          "type": "color",
+          "description": "Theme Token: TextTeamCobalt-normal\nCore Token: cobalt-40"
+        },
+        "TextTeamCobalt-hover": {
+          "value": "#5ebff7",
+          "type": "color",
+          "description": "Theme Token: TextTeamCobalt-hover\nCore Token: cobalt-40"
+        },
+        "TextTeamCobalt-active": {
+          "value": "#c7eeff",
+          "type": "color",
+          "description": "Theme Token: TextTeamCobalt-active\nCore Token: cobalt-20"
+        },
+        "TextTeamCyan-normal": {
+          "value": "#22c7d6",
+          "type": "color",
+          "description": "Theme Token: TextTeamCyan-normal\nCore Token: cyan-40"
+        },
+        "TextTeamCyan-hover": {
+          "value": "#22c7d6",
+          "type": "color",
+          "description": "Theme Token: TextTeamCyan-hover\nCore Token: cyan-40"
+        },
+        "TextTeamCyan-active": {
+          "value": "#b2f4f7",
+          "type": "color",
+          "description": "Theme Token: TextTeamCyan-active\nCore Token: cyan-20"
+        },
+        "TextTeamMint-normal": {
+          "value": "#30c9b0",
+          "type": "color",
+          "description": "Theme Token: TextTeamMint-normal\nCore Token: mint-40"
+        },
+        "TextTeamMint-hover": {
+          "value": "#30c9b0",
+          "type": "color",
+          "description": "Theme Token: TextTeamMint-hover\nCore Token: mint-40"
+        },
+        "TextTeamMint-active": {
+          "value": "#baf5e7",
+          "type": "color",
+          "description": "Theme Token: TextTeamMint-active\nCore Token: mint-20"
+        },
+        "TextTeamLime-normal": {
+          "value": "#93c437",
+          "type": "color",
+          "description": "Theme Token: TextTeamLime-normal\nCore Token: lime-40"
+        },
+        "TextTeamLime-hover": {
+          "value": "#93c437",
+          "type": "color",
+          "description": "Theme Token: TextTeamLime-hover\nCore Token: lime-40"
+        },
+        "TextTeamLime-active": {
+          "value": "#ddf2ae",
+          "type": "color",
+          "description": "Theme Token: TextTeamLime-active\nCore Token: lime-20"
+        },
+        "TextTeamGold-normal": {
+          "value": "#d6b220",
+          "type": "color",
+          "description": "Theme Token: TextTeamGold-normal\nCore Token: gold-40"
+        },
+        "TextTeamGold-hover": {
+          "value": "#d6b220",
+          "type": "color",
+          "description": "Theme Token: TextTeamGold-hover\nCore Token: gold-40"
+        },
+        "TextTeamGold-active": {
+          "value": "#f5eaa2",
+          "type": "color",
+          "description": "Theme Token: TextTeamGold-active\nCore Token: gold-20"
+        },
+        "TextTeamOrange-normal": {
+          "value": "#ff9d52",
+          "type": "color",
+          "description": "Theme Token: TextTeamOrange-normal\nCore Token: orange-40"
+        },
+        "TextTeamOrange-hover": {
+          "value": "#ff9d52",
+          "type": "color",
+          "description": "Theme Token: TextTeamOrange-hover\nCore Token: orange-40"
+        },
+        "TextTeamOrange-active": {
+          "value": "#fce4c7",
+          "type": "color",
+          "description": "Theme Token: TextTeamOrange-active\nCore Token: orange-20"
+        },
+        "TextTeamPink-normal": {
+          "value": "#fc97aa",
+          "type": "color",
+          "description": "Theme Token: TextTeamPink-normal\nCore Token: pink-40"
+        },
+        "TextTeamPink-hover": {
+          "value": "#fc97aa",
+          "type": "color",
+          "description": "Theme Token: TextTeamPink-hover\nCore Token: pink-40"
+        },
+        "TextTeamPink-active": {
+          "value": "#ffe0e7",
+          "type": "color",
+          "description": "Theme Token: TextTeamPink-active\nCore Token: pink-20"
+        },
+        "TextTeamPurple-normal": {
+          "value": "#f294f1",
+          "type": "color",
+          "description": "Theme Token: TextTeamPurple-normal\nCore Token: purple-40"
+        },
+        "TextTeamPurple-hover": {
+          "value": "#f294f1",
+          "type": "color",
+          "description": "Theme Token: TextTeamPurple-hover\nCore Token: purple-40"
+        },
+        "TextTeamPurple-active": {
+          "value": "#fce1fc",
+          "type": "color",
+          "description": "Theme Token: TextTeamPurple-active\nCore Token: purple-20"
+        },
+        "TextTeamViolet-normal": {
+          "value": "#c7a5fa",
+          "type": "color",
+          "description": "Theme Token: TextTeamViolet-normal\nCore Token: violet-40"
+        },
+        "TextTeamViolet-hover": {
+          "value": "#c7a5fa",
+          "type": "color",
+          "description": "Theme Token: TextTeamViolet-hover\nCore Token: violet-40"
+        },
+        "TextTeamViolet-active": {
+          "value": "#f0e3fc",
+          "type": "color",
+          "description": "Theme Token: TextTeamViolet-active\nCore Token: violet-20"
+        },
+        "TextTeamSlate-normal": {
+          "value": "#b0b4d9",
+          "type": "color",
+          "description": "Theme Token: TextTeamSlate-normal\nCore Token: slate-40"
+        },
+        "TextTeamSlate-hover": {
+          "value": "#b0b4d9",
+          "type": "color",
+          "description": "Theme Token: TextTeamSlate-hover\nCore Token: slate-40"
+        },
+        "TextTeamSlate-active": {
+          "value": "#e3e7fa",
+          "type": "color",
+          "description": "Theme Token: TextTeamSlate-active\nCore Token: slate-20"
+        }
+      },
+      "Backgrounds": {
+        "BackgroundLabelCobalt-normal": {
+          "value": "#12283d",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelCobalt-normal\nCore Token: cobalt-90"
+        },
+        "BackgroundLabelCobalt-hover": {
+          "value": "#103c63",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelCobalt-hover\nCore Token: cobalt-80"
+        },
+        "BackgroundLabelCobalt-active": {
+          "value": "#08599c",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelCobalt-active\nCore Token: cobalt-70"
+        },
+        "BackgroundLabelLime-normal": {
+          "value": "#1e2b10",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelLime-normal\nCore Token: lime-90"
+        },
+        "BackgroundLabelLime-hover": {
+          "value": "#2d4214",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelLime-hover\nCore Token: lime-80"
+        },
+        "BackgroundLabelLime-active": {
+          "value": "#416116",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelLime-active\nCore Token: lime-70"
+        },
+        "BackgroundLabelMint-normal": {
+          "value": "#102b2a",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelMint-normal\nCore Token: mint-90"
+        },
+        "BackgroundLabelMint-hover": {
+          "value": "#12423f",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelMint-hover\nCore Token: mint-80"
+        },
+        "BackgroundLabelMint-active": {
+          "value": "#12615a",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelMint-active\nCore Token: mint-70"
+        },
+        "BackgroundLabelSlate-normal": {
+          "value": "#26262b",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelSlate-normal\nCore Token: slate-90"
+        },
+        "BackgroundLabelSlate-hover": {
+          "value": "#393a47",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelSlate-hover\nCore Token: slate-80"
+        },
+        "BackgroundLabelSlate-active": {
+          "value": "#535573",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelSlate-active\nCore Token: slate-70"
+        },
+        "BackgroundLabelViolet-normal": {
+          "value": "#29223d",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelViolet-normal\nCore Token: violet-90"
+        },
+        "BackgroundLabelViolet-hover": {
+          "value": "#432c78",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelViolet-hover\nCore Token: violet-80"
+        },
+        "BackgroundLabelViolet-active": {
+          "value": "#643abd",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelViolet-active\nCore Token: violet-70"
+        },
+        "BackgroundLabelPurple-normal": {
+          "value": "#3b1840",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelPurple-normal\nCore Token: purple-90"
+        },
+        "BackgroundLabelPurple-hover": {
+          "value": "#601e66",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelPurple-hover\nCore Token: purple-80"
+        },
+        "BackgroundLabelPurple-active": {
+          "value": "#932099",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelPurple-active\nCore Token: purple-70"
+        },
+        "BackgroundLabelOrange-normal": {
+          "value": "#33221b",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelOrange-normal\nCore Token: orange-90"
+        },
+        "BackgroundLabelOrange-hover": {
+          "value": "#59311e",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelOrange-normal\nCore Token: orange-80"
+        },
+        "BackgroundLabelOrange-active": {
+          "value": "#914017",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelOrange-normal\nCore Token: orange-70"
+        },
+        "BackgroundLabelGold-normal": {
+          "value": "#30240d",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelGold-normal\nCore Token: gold-90"
+        },
+        "BackgroundLabelGold-hover": {
+          "value": "#4d370c",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelGold-hover\nCore Token: gold-80"
+        },
+        "BackgroundLabelGold-active": {
+          "value": "#735107",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelGold-active\nCore Token: gold-70"
+        },
+        "BackgroundCommon-normal": {
+          "value": "#ffffff",
+          "type": "color",
+          "description": "Theme Token: BackgroundCommon-normal\nCore Token: white-alpha-100"
+        },
+        "BackgroundNameLabel-normal": {
+          "value": "#00000080",
+          "type": "color",
+          "description": "Theme Token: BackgroundNameLabel-normal\nCore Token: black-alpha-50"
+        },
+        "BackgroundLabelPink-hover": {
+          "value": "#66262d",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelPink-hover\nCore Token: pink-80"
+        },
+        "BackgroundLabelPink-normal": {
+          "value": "#3b1e21",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelPink-normal\nCore Token: pink-90"
+        },
+        "BackgroundLabelPink-active": {
+          "value": "#a12a3a",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelPink-active\nCore Token: pink-70"
+        }
+      },
+      "Outlines": {
+        "OutlineLabel-cobalt": {
+          "value": "#5ebff7",
+          "type": "color",
+          "description": "Theme Token: OutlineLabel-cobalt\nCore Token: cobalt-40"
+        },
+        "OutlineLabel-lime": {
+          "value": "#93c437",
+          "type": "color",
+          "description": "Theme Token: OutlineLabel-lime\nCore Token: lime-40"
+        },
+        "OutlineLabel-mint": {
+          "value": "#30c9b0",
+          "type": "color",
+          "description": "Theme Token: OutlineLabel-mint\nCore Token: mint-40"
+        },
+        "OutlineLabel-slate": {
+          "value": "#b0b4d9",
+          "type": "color",
+          "description": "Theme Token: OutlineLabel-slate\nCore Token: slate-40"
+        },
+        "OutlineLabel-violet": {
+          "value": "#c7a5fa",
+          "type": "color",
+          "description": "Theme Token: OutlineLabel-violet\nCore Token: violet-40"
+        },
+        "OutlineLabel-purple": {
+          "value": "#f294f1",
+          "type": "color",
+          "description": "Theme Token: OutlineLabel-purple\nCore Token: purple-40"
+        },
+        "OutlineLabel-orange": {
+          "value": "#ff9d52",
+          "type": "color",
+          "description": "Theme Token: OutlineLabel-orange\nCore Token: orange-40"
+        },
+        "OutlineLabel-gold": {
+          "value": "#d6b220",
+          "type": "color",
+          "description": "Theme Token: OutlineLabel-gold\nCore Token: gold-40"
+        },
+        "OutlineLabel-pink": {
+          "value": "#fc97aa",
+          "type": "color",
+          "description": "Theme Token: OutlineLabel-pink\nCore Token: pink-40"
+        }
+      },
+      "Avatars": {
+        "Avatar-default": {
+          "value": "#545454",
+          "type": "color",
+          "description": "Theme Token: Avatar-default\nCore Token: gray-70"
+        },
+        "Avatar-cobalt": {
+          "value": "#08599c",
+          "type": "color",
+          "description": "Theme Token: Avatar-cobalt\nCore Token: cobalt-70"
+        },
+        "Avatar-cyan": {
+          "value": "#066070",
+          "type": "color",
+          "description": "Theme Token: Avatar-cyan\nCore Theme: cyan-70"
+        },
+        "Avatar-gold": {
+          "value": "#735107",
+          "type": "color",
+          "description": "Theme Token: Avatar-gold\nCore Theme: gold-70"
+        },
+        "Avatar-lime": {
+          "value": "#416116",
+          "type": "color",
+          "description": "Theme Token: Avatar-lime\nCore Token: lime-70"
+        },
+        "Avatar-mint": {
+          "value": "#12615a",
+          "type": "color",
+          "description": "Theme Token: Avatar-mint\nCore Token: mint-70"
+        },
+        "Avatar-orange": {
+          "value": "#914017",
+          "type": "color",
+          "description": "Theme Token: Avatar-orange\nCore Token: orange-70"
+        },
+        "Avatar-pink": {
+          "value": "#a12a3a",
+          "type": "color",
+          "description": "Theme Token: Avatar-pink\nCore Token: pink-70"
+        },
+        "Avatar-purple": {
+          "value": "#932099",
+          "type": "color",
+          "description": "Theme Token: Avatar-purple\nCore Token: purple-70"
+        },
+        "Avatar-slate": {
+          "value": "#535573",
+          "type": "color",
+          "description": "Theme Token: Avatar-slate\nCore Token: slate-70"
+        },
+        "Avatar-violet": {
+          "value": "#643abd",
+          "type": "color",
+          "description": "Theme Token: Avatar-violet\nCore Token: violet-70"
+        }
+      },
+      "GradientDividers": {
+        "GradientDivider-normal": {
+          "value": "linear-gradient(90deg, #ffffff00 0%, #ffffff33 22.4%, #ffffff33 72.4%, #ffffff00 100%)",
+          "type": "color",
+          "description": "white-alpha-0, white-alpha-20, white-alpha-20, white-alpha-0"
+        },
+        "GradientDivider-hover": {
+          "value": "linear-gradient(90deg, #ffffff00 0%, #ffffff99 22.4%, #ffffff99 72.4%, #ffffff00 100%)",
+          "type": "color",
+          "description": "white-alpha-0, white-alpha-60, white-alpha-60, white-alpha-0"
+        },
+        "GradientDividerError-normal": {
+          "value": "linear-gradient(90deg, #fc8b9800 0%, #fc8b9899 22.4%, #fc8b9899 76.04%, #fc8b9800 100%)",
+          "type": "color",
+          "description": "red-40 0%, red-40 60%, red-40 60%, red-40 0%"
+        },
+        "GradientDividerError-hover": {
+          "value": "linear-gradient(90deg, #fc8b9800 0%, #fc8b98e6 22.4%, #fc8b98e6 76.04%, #fc8b9800 100%)",
+          "type": "color",
+          "description": "red-40 0%, red-40 90%, red-40 90%, red-40 0%"
+        },
+        "GradientDividerWarning-normal": {
+          "value": "linear-gradient(90deg, #f2990a00 0%, #f2990a99 22.4%, #f2990a99 76.04%, #f2990a00 100%)",
+          "type": "color",
+          "description": "yellow-40 0%, yellow-40 60%, yellow-40 60%, yellow-40 0%"
+        },
+        "GradientDividerWarning-hover": {
+          "value": "linear-gradient(90deg, #f2990a00 0%, #f2990ae6 22.4%, #f2990ae6 76.04%, #f2990a00 100%)",
+          "type": "color",
+          "description": "yellow-40 0%, yellow-40 90%, yellow-40 90%, yellow-40 0%"
+        },
+        "GradientDividerAnnounce-normal": {
+          "value": "linear-gradient(90deg, #64b4fa00 0%, #64b4fa99 22.4%, #64b4fa99 76.04%, #64b4fa00 100%)",
+          "type": "color",
+          "description": "blue-40 0%, blue-40 60%, blue-40 60%, blue-40 0%"
+        },
+        "GradientDividerAnnounce-hover": {
+          "value": "linear-gradient(90deg, #64b4fa00 0%, #64b4fae6 22.4%, #64b4fae6 76.04%, #64b4fa00 100%)",
+          "type": "color",
+          "description": "blue-40 0%, blue-40 90%, blue-40 90%, blue-40 0%"
+        }
+      }
+    },
+    "LUI": {
+      "Text": {
+        "TextTeamCobalt-normal": {
+          "value": "#08599c",
+          "type": "color",
+          "description": "Theme Token: TextTeamCobalt-normal\nCore Token: cobalt-70"
+        },
+        "TextTeamCobalt-hover": {
+          "value": "#08599c",
+          "type": "color",
+          "description": "Theme Token: TextTeamCobalt-hover\nCore Token: cobalt-70"
+        },
+        "TextTeamCobalt-active": {
+          "value": "#12283d",
+          "type": "color",
+          "description": "Theme Token: TextTeamCobalt-active\nCore Token: cobalt-90"
+        },
+        "TextTeamCyan-normal": {
+          "value": "#066070",
+          "type": "color",
+          "description": "Theme Token: TextTeamCyan-normal\nCore Token: cyan-70"
+        },
+        "TextTeamCyan-hover": {
+          "value": "#066070",
+          "type": "color",
+          "description": "Theme Token: TextTeamCyan-hover\nCore Token: cyan-70"
+        },
+        "TextTeamCyan-active": {
+          "value": "#0b2a30",
+          "type": "color",
+          "description": "Theme Token: TextTeamCyan-active\nCore Token: cyan-90"
+        },
+        "TextTeamMint-normal": {
+          "value": "#12615a",
+          "type": "color",
+          "description": "Theme Token: TextTeamMint-normal\nCore Token: mint-70"
+        },
+        "TextTeamMint-hover": {
+          "value": "#12615a",
+          "type": "color",
+          "description": "Theme Token: TextTeamMint-hover\nCore Token: mint-70"
+        },
+        "TextTeamMint-active": {
+          "value": "#102b2a",
+          "type": "color",
+          "description": "Theme Token: TextTeamMint-active\nCore Token: mint-90"
+        },
+        "TextTeamLime-normal": {
+          "value": "#416116",
+          "type": "color",
+          "description": "Theme Token: TextTeamLime-normal\nCore Token: lime-70"
+        },
+        "TextTeamLime-hover": {
+          "value": "#416116",
+          "type": "color",
+          "description": "Theme Token: TextTeamLime-hover\nCore Token: lime-70"
+        },
+        "TextTeamLime-active": {
+          "value": "#1e2b10",
+          "type": "color",
+          "description": "Theme Token: TextTeamLime-active\nCore Token: lime-90"
+        },
+        "TextTeamGold-normal": {
+          "value": "#735107",
+          "type": "color",
+          "description": "Theme Token: TextTeamGold-normal\nCore Token: gold-70"
+        },
+        "TextTeamGold-hover": {
+          "value": "#735107",
+          "type": "color",
+          "description": "Theme Token: TextTeamGold-hover\nCore Token: gold-70"
+        },
+        "TextTeamGold-active": {
+          "value": "#30240d",
+          "type": "color",
+          "description": "Theme Token: TextTeamGold-active\nCore Token: gold-90"
+        },
+        "TextTeamOrange-normal": {
+          "value": "#914017",
+          "type": "color",
+          "description": "Theme Token: TextTeamOrange-normal\nCore Token: orange-70"
+        },
+        "TextTeamOrange-hover": {
+          "value": "#914017",
+          "type": "color",
+          "description": "Theme Token: TextTeamOrange-hover\nCore Token: orange-70"
+        },
+        "TextTeamOrange-active": {
+          "value": "#33221b",
+          "type": "color",
+          "description": "Theme Token: TextTeamOrange-active\nCore Token: orange-90"
+        },
+        "TextTeamPink-normal": {
+          "value": "#a12a3a",
+          "type": "color",
+          "description": "Theme Token: TextTeamPink-normal\nCore Token: pink-70"
+        },
+        "TextTeamPink-hover": {
+          "value": "#a12a3a",
+          "type": "color",
+          "description": "Theme Token: TextTeamPink-hover\nCore Token: pink-70"
+        },
+        "TextTeamPink-active": {
+          "value": "#3b1e21",
+          "type": "color",
+          "description": "Theme Token: TextTeamPink-active\nCore Token: pink-90"
+        },
+        "TextTeamPurple-normal": {
+          "value": "#932099",
+          "type": "color",
+          "description": "Theme Token: TextTeamPurple-normal\nCore Token: purple-70"
+        },
+        "TextTeamPurple-hover": {
+          "value": "#932099",
+          "type": "color",
+          "description": "Theme Token: TextTeamPurple-hover\nCore Token: purple-70"
+        },
+        "TextTeamPurple-active": {
+          "value": "#3b1840",
+          "type": "color",
+          "description": "Theme Token: TextTeamPurple-active\nCore Token: purple-90"
+        },
+        "TextTeamViolet-normal": {
+          "value": "#643abd",
+          "type": "color",
+          "description": "Theme Token: TextTeamViolet-normal\nCore Token: violet-70"
+        },
+        "TextTeamViolet-hover": {
+          "value": "#643abd",
+          "type": "color",
+          "description": "Theme Token: TextTeamViolet-hover\nCore Token: violet-70"
+        },
+        "TextTeamViolet-active": {
+          "value": "#29223d",
+          "type": "color",
+          "description": "Theme Token: TextTeamViolet-active\nCore Token: violet-90"
+        },
+        "TextTeamSlate-normal": {
+          "value": "#535573",
+          "type": "color",
+          "description": "Theme Token: TextTeamSlate-normal\nCore Token: slate-70"
+        },
+        "TextTeamSlate-hover": {
+          "value": "#535573",
+          "type": "color",
+          "description": "Theme Token: TextTeamSlate-hover\nCore Token: slate-70"
+        },
+        "TextTeamSlate-active": {
+          "value": "#26262b",
+          "type": "color",
+          "description": "Theme Token: TextTeamSlate-active\nCore Token: slate-90"
+        }
+      },
+      "Backgrounds": {
+        "BackgroundLabelCobalt-normal": {
+          "value": "#e5f8ff",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelCobalt-normal\nCore Token: cobalt-10"
+        },
+        "BackgroundLabelCobalt-hover": {
+          "value": "#c7eeff",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelCobalt-hover\nCore Token: cobalt-20"
+        },
+        "BackgroundLabelCobalt-active": {
+          "value": "#99ddff",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelCobalt-active\nCore Token: cobalt-30"
+        },
+        "BackgroundLabelLime-normal": {
+          "value": "#f3f7e9",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelLime-normal\nCore Token: lime-10"
+        },
+        "BackgroundLabelLime-hover": {
+          "value": "#ddf2ae",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelLime-hover\nCore Token: lime-20"
+        },
+        "BackgroundLabelLime-active": {
+          "value": "#bce36f",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelLime-active\nCore Token: lime-30"
+        },
+        "BackgroundLabelMint-normal": {
+          "value": "#e9f7f3",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelMint-normal\nCore Token: mint-10"
+        },
+        "BackgroundLabelMint-hover": {
+          "value": "#baf5e7",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelMint-hover\nCore Token: mint-20"
+        },
+        "BackgroundLabelMint-active": {
+          "value": "#74e8d1",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelMint-active\nCore Token: mint-30"
+        },
+        "BackgroundLabelSlate-normal": {
+          "value": "#f2f4ff",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelSlate-normal\nCore Token: slate-10"
+        },
+        "BackgroundLabelSlate-hover": {
+          "value": "#e3e7fa",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelSlate-hover\nCore Token: slate-20"
+        },
+        "BackgroundLabelSlate-active": {
+          "value": "#ced2ed",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelSlate-active\nCore Token: slate-30"
+        },
+        "BackgroundLabelViolet-normal": {
+          "value": "#f8f2fc",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelViolet-normal\nCore Token: violet-10"
+        },
+        "BackgroundLabelViolet-hover": {
+          "value": "#f0e3fc",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelViolet-hover\nCore Token: violet-20"
+        },
+        "BackgroundLabelViolet-active": {
+          "value": "#e2cafc",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelViolet-active\nCore Token: violet-30"
+        },
+        "BackgroundLabelPurple-normal": {
+          "value": "#fcf2fc",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelPurple-normal\nCore Token: purple-10"
+        },
+        "BackgroundLabelPurple-hover": {
+          "value": "#fce1fc",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelPurple-hover\nCore Token: purple-20"
+        },
+        "BackgroundLabelPurple-active": {
+          "value": "#fac3f8",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelPurple-active\nCore Token: purple-30"
+        },
+        "BackgroundLabelOrange-normal": {
+          "value": "#faf4eb",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelOrange-normal\nCore Token: orange-10"
+        },
+        "BackgroundLabelOrange-hover": {
+          "value": "#fce4c7",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelOrange-hover\nCore Token: orange-20"
+        },
+        "BackgroundLabelOrange-active": {
+          "value": "#ffca99",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelOrange-active\nCore Token: orange-30"
+        },
+        "BackgroundLabelGold-normal": {
+          "value": "#f7f6dc",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelGold-normal\nCore Token: gold-10"
+        },
+        "BackgroundLabelGold-hover": {
+          "value": "#f5eaa2",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelGold-hover\nCore Token: gold-20"
+        },
+        "BackgroundLabelGold-active": {
+          "value": "#ebd460",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelGold-active\nCore Token: gold-30"
+        },
+        "BackgroundCommon-normal": {
+          "value": "#ffffff",
+          "type": "color",
+          "description": "Theme Token: BackgroundCommon-normal\nCore Token: white-alpha-100"
+        },
+        "BackgroundNameLabel-normal": {
+          "value": "#00000080",
+          "type": "color",
+          "description": "Theme Token: BackgroundNameLabel-normal\nCore Token: black-alpha-50"
+        },
+        "BackgroundLabelPink-normal": {
+          "value": "#fff2f5",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelPink-normal\nCore Token: pink-10"
+        },
+        "BackgroundLabelPink-hover": {
+          "value": "#ffe0e7",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelPink-hover\nCore Token: pink-20"
+        },
+        "BackgroundLabelPink-active": {
+          "value": "#ffc7d2",
+          "type": "color",
+          "description": "Theme Token: BackgroundLabelPink-active\nCore Token: pink-30"
+        }
+      },
+      "Outlines": {
+        "OutlineLabel-cobalt": {
+          "value": "#5ebff7",
+          "type": "color",
+          "description": "Theme Token: OutlineLabel-cobalt\nCore Token: cobalt-40"
+        },
+        "OutlineLabel-lime": {
+          "value": "#93c437",
+          "type": "color",
+          "description": "Theme Token: OutlineLabel-lime\nCore Token: lime-40"
+        },
+        "OutlineLabel-mint": {
+          "value": "#30c9b0",
+          "type": "color",
+          "description": "Theme Token: OutlineLabel-mint\nCore Token: mint-40"
+        },
+        "OutlineLabel-slate": {
+          "value": "#b0b4d9",
+          "type": "color",
+          "description": "Theme Token: OutlineLabel-slate\nCore Token: slate-40"
+        },
+        "OutlineLabel-violet": {
+          "value": "#c7a5fa",
+          "type": "color",
+          "description": "Theme Token: OutlineLabel-violet\nCore Token: violet-40"
+        },
+        "OutlineLabel-purple": {
+          "value": "#f294f1",
+          "type": "color",
+          "description": "Theme Token: OutlineLabel-purple\nCore Token: purple-40"
+        },
+        "OutlineLabel-orange": {
+          "value": "#ff9d52",
+          "type": "color",
+          "description": "Theme Token: OutlineLabel-orange\nCore Token: orange-40"
+        },
+        "OutlineLabel-gold": {
+          "value": "#d6b220",
+          "type": "color",
+          "description": "Theme Token: OutlineLabel-gold\nCore Token: gold-40"
+        },
+        "OutlineLabel-pink": {
+          "value": "#fc97aa",
+          "type": "color",
+          "description": "Theme Token: OutlineLabel-pink\nCore Token: pink-40"
+        }
+      },
+      "Avatars": {
+        "Avatar-default": {
+          "value": "#545454",
+          "type": "color",
+          "description": "Theme Token: Avatar-default\nCore Token: gray-70"
+        },
+        "Avatar-cobalt": {
+          "value": "#08599c",
+          "type": "color",
+          "description": "Theme Token: Avatar-cobalt\nCore Token:cobalt-70"
+        },
+        "Avatar-cyan": {
+          "value": "#066070",
+          "type": "color",
+          "description": "Theme Token: Avatar-cyan\nCore Token: cyan-70"
+        },
+        "Avatar-gold": {
+          "value": "#735107",
+          "type": "color",
+          "description": "Theme Token: Avatar-gold\nCore Token: gold-70"
+        },
+        "Avatar-lime": {
+          "value": "#416116",
+          "type": "color",
+          "description": "Theme Token: Avatar-lime\nCore Token: lime-70"
+        },
+        "Avatar-mint": {
+          "value": "#12615a",
+          "type": "color",
+          "description": "Theme Token: Avatar-mint\nCore Token: mint-70"
+        },
+        "Avatar-orange": {
+          "value": "#914017",
+          "type": "color",
+          "description": "Theme Token: Avatar-orange\nCore Token: orange-70"
+        },
+        "Avatar-pink": {
+          "value": "#a12a3a",
+          "type": "color",
+          "description": "Theme Token: Avatar-pink\nCore Token: pink-70"
+        },
+        "Avatar-purple": {
+          "value": "#932099",
+          "type": "color",
+          "description": "Theme Token: Avatar-purple\nCore Token: purple-70"
+        },
+        "Avatar-slate": {
+          "value": "#535573",
+          "type": "color",
+          "description": "Theme Token: Avatar-slate\nCore Token: slate-70"
+        },
+        "Avatar-violet": {
+          "value": "#643abd",
+          "type": "color",
+          "description": "Theme Token: Avatar-violet\nCore Token: violet-70"
+        }
+      },
+      "GradientDividers": {
+        "GradientDivider-normal": {
+          "value": "linear-gradient(90deg, #00000000 0%, #00000033 22.4%, #00000033 72.4%, #00000000 100%)",
+          "type": "color",
+          "description": "black-alpha-0, black-alpha-20, black-alpha-20, black-alpha-0"
+        },
+        "GradientDivider-hover": {
+          "value": "linear-gradient(90deg, #00000000 0%, #00000099 22.4%, #00000099 72.4%, #00000000 100%)",
+          "type": "color",
+          "description": "black-alpha-0, black-alpha-60, black-alpha-60, black-alpha-0"
+        },
+        "GradientDividerError-normal": {
+          "value": "linear-gradient(90deg, #ab0a1500 0%, #ab0a1599 22.4%, #ab0a1599 76.04%, #ab0a1500 100%)",
+          "type": "color",
+          "description": "red-70 0%, red-70 60%, red-70 60%, red-70 0%"
+        },
+        "GradientDividerError-hover": {
+          "value": "linear-gradient(90deg, #ab0a1500 0%, #ab0a15e6 22.4%, #ab0a15e6 76.04%, #ab0a1500 100%)",
+          "type": "color",
+          "description": "red-70 0%, red-70 90%, red-70 90%, red-70 0%"
+        },
+        "GradientDividerWarning-normal": {
+          "value": "linear-gradient(90deg, #7d470500 0%, #7d470599 22.4%, #7d470599 76.04%, #7d470500 100%)",
+          "type": "color",
+          "description": "yellow-70 0%, yellow-70 60%, yellow-70 60%, yellow-70 0%"
+        },
+        "GradientDividerWarning-hover": {
+          "value": "linear-gradient(90deg, #7d470500 0%, #7d4705e6 22.4%, #7d4705e6 76.04%, #7d470500 100%)",
+          "type": "color",
+          "description": "yellow-70 0%, yellow-70 90%, yellow-70 90%, yellow-70 0%"
+        },
+        "GradientDividerAnnounce-normal": {
+          "value": "linear-gradient(90deg, #0352a600 0%, #0352a699 22.4%, #0352a699 76.04%, #0352a600 100%)",
+          "type": "color",
+          "description": "blue-70 0%, blue-70 60%, blue-70 60%, blue-70 0%"
+        },
+        "GradientDividerAnnounce-hover": {
+          "value": "linear-gradient(90deg, #0352a600 0%, #0352a6e6 22.4%, #0352a6e6 76.04%, #0352a600 100%)",
+          "type": "color",
+          "description": "blue-70 0%, blue-70 90%, blue-70 90%, blue-70 0%"
+        }
+      }
+    }
+  }
+}
