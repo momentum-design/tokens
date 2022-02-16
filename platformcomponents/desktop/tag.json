@@ -9,7 +9,7 @@
     },
     "overlay": {
       "background": "@theme-background-common-normal",
-      "text": "@theme-common-text-black-normal",
+      "text": "@theme-common-text-black",
       "border": "@theme-common-control-shareContent-inactive"
     },
     "primary": {

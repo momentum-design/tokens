@@ -83,16 +83,16 @@
     "join-fill": {
       "#normal": {
         "background": "@theme-button-join-normal",
-        "text": "@theme-common-text-white-normal",
+        "text": "@theme-common-text-white",
         "border": "@theme-button-border-normal"
       },
       "#hovered": {
         "background": "@theme-button-join-hover",
-        "text": "@theme-common-text-white-normal"
+        "text": "@theme-common-text-white"
       },
       "#pressed": {
         "background": "@theme-button-join-pressed",
-        "text": "@theme-common-text-white-normal"
+        "text": "@theme-common-text-white"
       },
       "#disabled": {
         "background": "@theme-button-primary-disabled",
@@ -107,12 +107,12 @@
       },
       "#hovered": {
         "background": "@theme-button-join-hover",
-        "text": "@theme-common-text-white-normal",
+        "text": "@theme-common-text-white",
         "border": "@theme-button-border-normal"
       },
       "#pressed": {
         "background": "@theme-button-join-pressed",
-        "text": "@theme-common-text-white-normal",
+        "text": "@theme-common-text-white",
         "border": "@theme-button-border-normal"
       },
       "#disabled": {
@@ -124,16 +124,16 @@
     "cancel-fill": {
       "#normal": {
         "background": "@theme-button-cancel-normal",
-        "text": "@theme-common-text-white-normal",
+        "text": "@theme-common-text-white",
         "border": "@theme-button-border-normal"
       },
       "#hovered": {
         "background": "@theme-button-cancel-hover",
-        "text": "@theme-common-text-white-normal"
+        "text": "@theme-common-text-white"
       },
       "#pressed": {
         "background": "@theme-button-cancel-pressed",
-        "text": "@theme-common-text-white-normal"
+        "text": "@theme-common-text-white"
       },
       "#disabled": {
         "background": "@theme-button-primary-disabled",
@@ -148,12 +148,12 @@
       },
       "#hovered": {
         "background": "@theme-button-cancel-hover",
-        "text": "@theme-common-text-white-normal",
+        "text": "@theme-common-text-white",
         "border": "@theme-button-border-normal"
       },
       "#pressed": {
         "background": "@theme-button-cancel-pressed",
-        "text": "@theme-common-text-white-normal",
+        "text": "@theme-common-text-white",
         "border": "@theme-button-border-normal"
       },
       "#disabled": {
@@ -165,16 +165,16 @@
     "accent-fill": {
       "#normal": {
         "background": "@theme-button-accent-normal",
-        "text": "@theme-common-text-white-normal",
+        "text": "@theme-common-text-white",
         "border": "@theme-button-border-normal"
       },
       "#hovered": {
         "background": "@theme-button-accent-hover",
-        "text": "@theme-common-text-white-normal"
+        "text": "@theme-common-text-white"
       },
       "#pressed": {
         "background": "@theme-button-accent-pressed",
-        "text": "@theme-common-text-white-normal"
+        "text": "@theme-common-text-white"
       },
       "#disabled": {
         "background": "@theme-button-primary-disabled",

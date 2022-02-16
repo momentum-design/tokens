@@ -57,6 +57,20 @@
         "background": "@theme-background-alert-error-active",
         "text": "@theme-text-error-active"
       }
+    },
+    "blocked": {
+      "#normal": {
+        "background": "@theme-background-alert-warning-normal",
+        "text": "@theme-text-warning-normal"
+      },
+      "#hovered": {
+        "background": "@theme-background-alert-warning-hover",
+        "text": "@theme-text-warning-hover"
+      },
+      "#pressed": {
+        "background": "@theme-background-alert-warning-active",
+        "text": "@theme-text-warning-active"
+      }
     }
   }
 }

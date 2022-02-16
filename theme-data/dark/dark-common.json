@@ -11,7 +11,10 @@
         "disabled": "@color-black-alpha-50"
       },
       "secondary": {
-        "normal": "@color-white-alpha-70"
+        "normal": "@color-white-alpha-70",
+        "inverted": {
+          "normal": "@color-black-alpha-60"
+        }
       },
       "error": {
         "normal": "@color-red-40",
@@ -116,6 +119,7 @@
         "normal": "@color-white-alpha-00",
         "hover": "@color-white-alpha-07",
         "pressed": "@color-white-alpha-20",
+        "disabled": "@color-white-alpha-00",
         "active": {
           "normal": "@theme-button-secondary-pressed",
           "hover": "@color-white-alpha-30",
@@ -285,14 +289,14 @@
         }
       },
       "outline": {
-        "theme": "@theme-color-60",
+        "button": {
+          "normal": "@color-black-alpha-30"
+        },
         "normal": "@color-black-alpha-20",
         "disabled": {
           "normal": "@color-black-alpha-20"
         },
-        "button": {
-          "normal": "@color-black-alpha-30"
-        }
+        "theme": "@theme-color-60"
       },
       "text": {
         "accent": {
