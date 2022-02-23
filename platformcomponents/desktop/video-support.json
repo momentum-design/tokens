@@ -41,7 +41,7 @@
         "background": "@theme-background-namelabel-normal",
         "name": "@theme-common-text-white",
         "icon": "@theme-common-text-white",
-        "role": "@theme-text-secodary-normal"
+        "role": "@theme-text-secondary-normal"
       }
     }
   }
