@@ -35,7 +35,7 @@
         "background": "none",
         "name": "@theme-text-primary-normal",
         "icon": "@theme-text-primary-normal",
-        "role": "@theme-text-secodary-normal"
+        "role": "@theme-text-secondary-normal"
       },
       "videoOn": {
         "background": "@theme-background-namelabel-normal",
