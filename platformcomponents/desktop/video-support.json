@@ -1,0 +1,48 @@
+{
+  "videoSupport": {
+    "comment": "Control buttons, video name labels, etc.",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=6361%3A14",
+    "controls": {
+      "button": {
+        "#normal": {
+          "background": "@theme-button-inverted-normal",
+          "text": "@theme-text-primary-normal",
+          "icon": "@theme-text-primary-normal",
+          "border": "@theme-outline-button-normal"
+        },
+        "#hovered": {
+          "background": "@theme-button-inverted-hover",
+          "text": "@theme-text-primary-normal",
+          "icon": "@theme-text-primary-normal",
+          "border": "@theme-outline-button-normal"
+        },
+        "#pressed": {
+          "background": "@theme-button-inverted-pressed",
+          "text": "@theme-text-primary-normal",
+          "icon": "@theme-text-primary-normal",
+          "border": "@theme-outline-button-normal"
+        },
+        "#disabled": {
+          "background": "@theme-button-inverted-normal",
+          "text": "@theme-text-primary-disabled",
+          "icon": "@theme-text-primary-disabled",
+          "border": "@theme-outline-disabled-normal"
+        }
+      }
+    },
+    "videoNameLabels": {
+      "videoOff": {
+        "background": "none",
+        "name": "@theme-text-primary-normal",
+        "icon": "@theme-text-primary-normal",
+        "role": "@theme-text-secodary-normal"
+      },
+      "videoOn": {
+        "background": "@theme-background-namelabel-normal",
+        "name": "@theme-common-text-white",
+        "icon": "@theme-common-text-white",
+        "role": "@theme-text-secodary-normal"
+      }
+    }
+  }
+}
