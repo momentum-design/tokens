@@ -4,6 +4,7 @@ const merge = require("lodash.merge");
 const args = require("args-parser")(process.argv);
 const camelCase = require("camelcase");
 const path = require("path");
+const generateDocs = require("./docs/generate_docs").default;
 
 function useColourNames(tokens, path) {
   Object.entries(tokens).forEach(([key, value]) => {
@@ -461,6 +462,12 @@ if (args.toStdOut) {
   delete args.toStdOut;
 }
 
+let writeDocs = false;
+if (args.writeDocs) {
+  writeDocs = args.writeDocs;
+  delete args.writeDocs;
+}
+
 if (Object.keys(args).length !== 0) {
   target.themes = Object.keys(args);
 }
@@ -667,6 +674,9 @@ target.themes.forEach((themeFileName) => {
           process.exit(1);
         }
       });
+    }
+    if (writeDocs) {
+      generateDocs(stateTokens, themeFile);
     }
   }
   if (!toStdOut) {
