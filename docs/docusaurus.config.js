@@ -8,14 +8,15 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Momentum Design Tokens",
   tagline: "Momentum Design System",
-  url: "https://momentum-design.github.io/tokens",
-  baseUrl: "/",
+  url: "https://momentum-design.github.io",
+  baseUrl: "/tokens/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "momentum-design",
   projectName: "tokens",
   deploymentBranch: "docs",
+  trailingSlash: false,
   presets: [
     [
       "classic",
