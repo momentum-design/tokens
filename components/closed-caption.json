@@ -1,0 +1,38 @@
+{
+  "closedcaption": {
+    "comment": "",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=40865%3A50204",
+    "background-light": "@theme-common-control-closedcaption-background-light",
+    "background-dark": "@theme-common-control-closedcaption-background-dark",
+    "speaker-light": "@theme-common-control-closedcaption-speaker-light",
+    "speaker-dark": "@theme-common-control-closedcaption-speaker-dark",
+    "text-light": "@theme-common-control-closedcaption-text-light",
+    "text-dark": "@theme-common-control-closedcaption-text-dark",
+    "button-light": {
+      "#normal": {
+        "background": "@theme-common-control-closedcaption-button-light-normal",
+        "text": "@theme-common-control-closedcaption-text-light",
+        "border": "@theme-common-control-closedcaption-button-light-border-normal"
+      },
+      "#hovered": {
+        "background": "@theme-common-control-closedcaption-button-light-hover"
+      },
+      "#pressed": {
+        "background": "@theme-common-control-closedcaption-button-light-pressed"
+      }
+    },
+    "button-dark": {
+      "#normal": {
+        "background": "@theme-common-control-closedcaption-button-dark-normal",
+        "text": "@theme-common-control-closedcaption-text-dark",
+        "border": "@theme-common-control-closedcaption-button-dark-border-normal"
+      },
+      "#hovered": {
+        "background": "@theme-common-control-closedcaption-button-dark-hover"
+      },
+      "#pressed": {
+        "background": "@theme-common-control-closedcaption-button-dark-pressed"
+      }
+    }
+  }
+}

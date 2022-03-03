@@ -46,6 +46,32 @@
           "active": "@color-orange-60",
           "inactive": "@color-gray-60",
           "selected": "@color-green-40"
+        },
+        "closedcaption": {
+          "background-light": "@color-white-alpha-100",
+          "background-dark": "@color-gray-95",
+          "speaker-light": "@color-gray-60",
+          "speaker-dark": "@color-gray-50",
+          "text-light": "@color-black-alpha-95",
+          "text-dark": "@color-white-alpha-95",
+          "button-light": {
+            "normal": "@color-black-alpha-00",
+            "hover": "@color-black-alpha-07",
+            "pressed": "@color-black-alpha-20",
+            "disabled": "@color-white-alpha-00",
+            "border": {
+              "normal": "@color-gray-20"
+            }
+          },
+          "button-dark": {
+            "normal": "@color-white-alpha-00",
+            "hover": "@color-white-alpha-07",
+            "pressed": "@color-white-alpha-20",
+            "disabled": "@color-white-alpha-00",
+            "border": {
+              "normal": "@color-gray-80"
+            }
+          }
         }
       }
     }
