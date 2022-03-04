@@ -47,6 +47,32 @@
           "active": "@color-hc-PlaceholderColor",
           "inactive": "@color-hc-PlaceholderColor",
           "selected": "@color-hc-PlaceholderColor"
+        },
+        "closedcaption": {
+          "background-light": "@color-hc-PlaceholderColor",
+          "background-dark": "@color-hc-PlaceholderColor",
+          "speaker-light": "@color-hc-PlaceholderColor",
+          "speaker-dark": "@color-hc-PlaceholderColor",
+          "text-light": "@color-hc-PlaceholderColor",
+          "text-dark": "@color-hc-PlaceholderColor",
+          "button-light": {
+            "normal": "@color-hc-PlaceholderColor",
+            "hover": "@color-hc-PlaceholderColor",
+            "pressed": "@color-hc-PlaceholderColor",
+            "disabled": "@color-hc-PlaceholderColor",
+            "border": {
+              "normal": "@color-hc-PlaceholderColor"
+            }
+          },
+          "button-dark": {
+            "normal": "@color-hc-PlaceholderColor",
+            "hover": "@color-hc-PlaceholderColor",
+            "pressed": "@color-hc-PlaceholderColor",
+            "disabled": "@color-hc-PlaceholderColor",
+            "border": {
+              "normal": "@color-hc-PlaceholderColor"
+            }
+          }
         }
       }
     },
