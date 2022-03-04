@@ -49,28 +49,28 @@
           "selected": "@color-hc-PlaceholderColor"
         },
         "closedcaption": {
-          "background-light": "@color-hc-PlaceholderColor",
-          "background-dark": "@color-hc-PlaceholderColor",
-          "speaker-light": "@color-hc-PlaceholderColor",
-          "speaker-dark": "@color-hc-PlaceholderColor",
-          "text-light": "@color-hc-PlaceholderColor",
-          "text-dark": "@color-hc-PlaceholderColor",
+          "background-light": "@color-hc-SystemColorWindowColor",
+          "background-dark": "@color-hc-SystemColorWindowColor",
+          "speaker-light": "@color-hc-SystemColorHighlightTextColor",
+          "speaker-dark": "@color-hc-SystemColorButtonTextColor",
+          "text-light": "@color-hc-SystemColorHighlightTextColor",
+          "text-dark": "@color-hc-SystemColorButtonTextColor",
           "button-light": {
-            "normal": "@color-hc-PlaceholderColor",
-            "hover": "@color-hc-PlaceholderColor",
-            "pressed": "@color-hc-PlaceholderColor",
-            "disabled": "@color-hc-PlaceholderColor",
+            "normal": "@color-hc-SystemColorButtonFaceColor",
+            "hover": "@color-hc-SystemColorHighlightColor",
+            "pressed": "@color-hc-SystemColorHighlightColor",
+            "disabled": "@color-hc-SystemColorGrayTextColor",
             "border": {
-              "normal": "@color-hc-PlaceholderColor"
+              "normal": "@color-hc-SystemColorButtonTextColor"
             }
           },
           "button-dark": {
-            "normal": "@color-hc-PlaceholderColor",
-            "hover": "@color-hc-PlaceholderColor",
-            "pressed": "@color-hc-PlaceholderColor",
-            "disabled": "@color-hc-PlaceholderColor",
+            "normal": "@color-hc-SystemColorButtonFaceColor",
+            "hover": "@color-hc-SystemColorHighlightColor",
+            "pressed": "@color-hc-SystemColorHighlightColor",
+            "disabled": "@color-hc-SystemColorGrayTextColor",
             "border": {
-              "normal": "@color-hc-PlaceholderColor"
+              "normal": "@color-hc-SystemColorButtonTextColor"
             }
           }
         }
