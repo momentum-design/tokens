@@ -29,6 +29,9 @@
           "hover": "@color-hc-SystemColorHighlightColor",
           "pressed": "@color-hc-SystemColorHighlightColor",
           "disabled": "@color-hc-SystemColorGrayTextColor"
+        },
+        "join-animated-gradient": {
+          "normal": ["@color-mint-40", "@color-blue-40"]
         }
       },
       "outline": {
