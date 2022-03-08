@@ -28,6 +28,9 @@
           "hover": "@color-white-alpha-07",
           "pressed": "@color-white-alpha-20",
           "disabled": "@color-white-alpha-00"
+        },
+        "join-animated-gradient": {
+          "normal": ["@color-mint-40", "@color-blue-40"]
         }
       },
       "outline": {
