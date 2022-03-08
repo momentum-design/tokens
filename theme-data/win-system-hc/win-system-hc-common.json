@@ -50,6 +50,32 @@
           "active": "@color-hc-PlaceholderColor",
           "inactive": "@color-hc-PlaceholderColor",
           "selected": "@color-hc-PlaceholderColor"
+        },
+        "closedcaption": {
+          "background-light": "@color-hc-SystemColorWindowColor",
+          "background-dark": "@color-hc-SystemColorWindowColor",
+          "speaker-light": "@color-hc-SystemColorHighlightTextColor",
+          "speaker-dark": "@color-hc-SystemColorButtonTextColor",
+          "text-light": "@color-hc-SystemColorHighlightTextColor",
+          "text-dark": "@color-hc-SystemColorButtonTextColor",
+          "button-light": {
+            "normal": "@color-hc-SystemColorButtonFaceColor",
+            "hover": "@color-hc-SystemColorHighlightColor",
+            "pressed": "@color-hc-SystemColorHighlightColor",
+            "disabled": "@color-hc-SystemColorGrayTextColor",
+            "border": {
+              "normal": "@color-hc-SystemColorButtonTextColor"
+            }
+          },
+          "button-dark": {
+            "normal": "@color-hc-SystemColorButtonFaceColor",
+            "hover": "@color-hc-SystemColorHighlightColor",
+            "pressed": "@color-hc-SystemColorHighlightColor",
+            "disabled": "@color-hc-SystemColorGrayTextColor",
+            "border": {
+              "normal": "@color-hc-SystemColorButtonTextColor"
+            }
+          }
         }
       }
     },
