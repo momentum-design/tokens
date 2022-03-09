@@ -7,7 +7,9 @@
         "black": "@color-hc-SystemColorHighlightTextColor",
         "disabled": "@color-hc-SystemColorGrayTextColor",
         "success": "@color-hc-PlaceholderColor",
-        "error": "@color-hc-PlaceholderColor"
+        "error": "@color-hc-PlaceholderColor",
+        "secondary-light": "@color-hc-SystemColorButtonTextColor",
+        "secondary-dark": "@color-hc-SystemColorHighlightTextColor"
       },
       "overlay": {
         "primary": {
@@ -30,6 +32,12 @@
           "pressed": "@color-hc-SystemColorHighlightColor",
           "disabled": "@color-hc-SystemColorGrayTextColor"
         },
+        "secondary-dark": {
+          "normal": "@color-hc-SystemColorButtonFaceColor",
+          "hover": "@color-hc-SystemColorHighlightColor",
+          "pressed": "@color-hc-SystemColorHighlightColor",
+          "disabled": "@color-hc-SystemColorGrayTextColor"
+        },
         "join-animated-gradient": {
           "normal": ["@color-mint-40", "@color-blue-40"]
         }
@@ -43,6 +51,12 @@
         },
         "disabled": {
           "normal": "@color-hc-PlaceholderColor"
+        },
+        "closed-caption": {
+          "secondary": {
+            "light": "@color-hc-SystemColorButtonTextColor",
+            "dark": "@color-hc-SystemColorButtonTextColor"
+          }
         }
       },
       "control": {
@@ -50,6 +64,12 @@
           "active": "@color-hc-PlaceholderColor",
           "inactive": "@color-hc-PlaceholderColor",
           "selected": "@color-hc-PlaceholderColor"
+        }
+      },
+      "background": {
+        "solid": {
+          "secondary-dark": "@color-hc-SystemColorWindowTextColor",
+          "primary-light": "@color-hc-SystemColorWindowTextColor"
         }
       }
     },
