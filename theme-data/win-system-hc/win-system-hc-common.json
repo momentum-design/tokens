@@ -39,7 +39,7 @@
           "disabled": "@color-hc-SystemColorGrayTextColor"
         },
         "join-animated-gradient": {
-          "normal": ["@color-mint-40", "@color-blue-40"]
+          "normal": ["@color-hc-SystemColorButtonFaceColor", "@color-hc-SystemColorButtonFaceColor"]
         }
       },
       "outline": {
