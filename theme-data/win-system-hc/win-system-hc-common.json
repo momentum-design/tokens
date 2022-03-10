@@ -278,9 +278,17 @@
       }
     },
     "overlay": {
-      "meetings": {
-        "normal": "@color-hc-PlaceholderColor"
-      }
+        "meetings": {
+            "normal": "@color-hc-PlaceholderColor"
+        },
+        "audiodump": {
+          "primary": {
+            "normal": "@color-hc-PlaceholderColor"
+          },
+          "secondary": {
+            "normal": "@color-hc-PlaceholderColor"
+          }
+        }
     },
     "button": {
       "border": {

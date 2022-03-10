@@ -203,6 +203,14 @@
     "overlay": {
       "meetings": {
         "normal": "@color-white-alpha-70"
+      },
+      "audiodump": {
+        "primary": {
+          "normal": "@color-gray-10"
+        },
+        "secondary": {
+          "normal": "@color-black-alpha-11"
+        }
       }
     },
     "indicator": {
