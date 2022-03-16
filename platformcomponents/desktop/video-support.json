@@ -32,7 +32,7 @@
     },
     "videoNameLabels": {
       "videoOff": {
-        "background": "none",
+        "background": "@theme-background-primary-ghost",
         "name": "@theme-text-primary-normal",
         "icon": "@theme-text-primary-normal",
         "role": "@theme-text-secondary-normal"

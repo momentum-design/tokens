@@ -7,14 +7,14 @@
         "background": "@theme-background-secondary-normal",
         "text": "@theme-text-primary-normal",
         "border": "none",
-        "borderModifier": "none",
+        "borderModifier": "@theme-background-primary-ghost",
         "searchIcon": "@theme-text-primary-normal"
       },
       "#hovered": {
         "background": "@theme-background-secondary-hover",
         "text": "@theme-text-primary-normal",
         "border": "none",
-        "borderModifier": "none",
+        "borderModifier": "@theme-background-primary-ghost",
         "searchIcon": "@theme-text-primary-normal"
       },
       "#active": {
@@ -35,7 +35,7 @@
         "background": "@theme-background-secondary-normal",
         "text": "@theme-text-primary-disabled",
         "border": "none",
-        "borderModifier": "none",
+        "borderModifier": "@theme-background-primary-ghost",
         "searchIcon": "@theme-text-primary-disabled"
       }
     },
