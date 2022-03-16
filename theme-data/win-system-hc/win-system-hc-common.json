@@ -30,7 +30,12 @@
           "normal": "@color-hc-SystemColorButtonFaceColor",
           "hover": "@color-hc-SystemColorHighlightColor",
           "pressed": "@color-hc-SystemColorHighlightColor",
-          "disabled": "@color-hc-SystemColorGrayTextColor"
+          "disabled": "@color-hc-SystemColorGrayTextColor",
+          "active": {
+            "normal": "@color-hc-SystemColorButtonFaceColor",
+            "hover": "@color-hc-SystemColorHighlightColor",
+            "pressed": "@color-hc-SystemColorHighlightColor"
+          }
         },
         "secondary-dark": {
           "normal": "@color-hc-SystemColorButtonFaceColor",
