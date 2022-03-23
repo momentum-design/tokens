@@ -9,3 +9,11 @@
   height: 200px;
   width: 200px;
 }
+
+.featureSvg *[stroke] {
+  stroke: var(--theme-text-primary-normal);
+}
+
+.featureSvg *[fill] {
+  fill: var(--theme-text-primary-normal);
+}

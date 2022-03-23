@@ -17,6 +17,7 @@ const config = {
   projectName: "tokens",
   deploymentBranch: "docs",
   trailingSlash: false,
+  plugins: ["docusaurus-plugin-sass"],
   presets: [
     [
       "classic",
@@ -41,7 +42,8 @@ const config = {
         title: "Momentum Design Tokens",
         logo: {
           alt: "Momentum Design Logo",
-          src: "img/logo.svg",
+          srcDark: "img/logo.svg",
+          src: "img/logo_light.svg",
         },
         items: [
           {
@@ -61,44 +63,32 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: "Resources",
             items: [
               {
-                label: "Docs",
-                to: "/docs/intro",
+                label: "Momentum Changelog",
+                href: "https://www.figma.com/file/aSsgM88pH7h2it9a9H4aVL/Momentum-Release-Radar?node-id=638%3A1912",
               },
             ],
           },
-          // {
-          //   title: 'Community',
-          //   items: [
-          //     {
-          //       label: 'Stack Overflow',
-          //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-          //     },
-          //     {
-          //       label: 'Discord',
-          //       href: 'https://discordapp.com/invite/docusaurus',
-          //     },
-          //     {
-          //       label: 'Twitter',
-          //       href: 'https://twitter.com/docusaurus',
-          //     },
-          //   ],
-          // },
-          // {
-          //   title: 'More',
-          //   items: [
-          //     {
-          //       label: 'Blog',
-          //       to: '/blog',
-          //     },
-          //     {
-          //       label: 'GitHub',
-          //       href: 'https://github.com/facebook/docusaurus',
-          //     },
-          //   ],
-          // },
+          {
+            title: "More",
+            items: [
+              {
+                label: "Tokens GitHub",
+                href: "https://github.com/momentum-design/tokens",
+              },
+            ],
+          },
+          {
+            title: "Design Systems",
+            items: [
+              {
+                label: "Momentum For Collaboration - Web",
+                href: "https://github.com/momentum-design/momentum-react-v2",
+              },
+            ],
+          },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Momentum Design. Built with Docusaurus.`,
       },

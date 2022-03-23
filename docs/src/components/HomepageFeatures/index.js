@@ -4,23 +4,19 @@ import styles from "./styles.module.css";
 
 const FeatureList = [
   {
-    title: "Easy to Use",
-    Svg: require("@momentum-ui/illustrations/svg/work-organize-320-orange-yellow.svg").default,
-    description: <>Docusaurus was designed from the ground up to be easily installed and used to get your website up and running quickly.</>,
+    title: "Cross-platform",
+    Svg: require("@momentum-ui/illustrations/svg/collaboration-anywhere-320.svg").default,
+    description: "The Momentum Design Tokens doesn't just target one platform. All Webex platforms (iOS, MacOS, Windows, Linux, Web) share all the design data to ensure consistency.",
   },
   {
-    title: "Focus on What Matters",
-    Svg: require("@momentum-ui/illustrations/svg/collaboration-anywhere-320-cobalt-lime.svg").default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
+    title: "Automated",
+    Svg: require("@momentum-ui/illustrations/svg/learning-button-cards-320.svg").default,
+    description: "Tokens are generated automatically for each platforms, and consumed by the clients.",
   },
   {
-    title: "Powered by React",
-    Svg: require("@momentum-ui/illustrations/svg/join-a-meeting-320-violet-red.svg").default,
-    description: <>Extend or customize your website layout by reusing React. Docusaurus can be extended while reusing the same header and footer.</>,
+    title: "Powered by collaboration",
+    Svg: require("@momentum-ui/illustrations/svg/join-a-meeting-320.svg").default,
+    description: "Design and Engineering work together on this system, ensuring both sides understand the requirements.",
   },
 ];
 
