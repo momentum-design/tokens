@@ -4,7 +4,9 @@
     "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=9238%3A40084",
     "#normal": {
       "background": "@theme-background-secondary-normal",
-      "border": "none"
+      "border": "none",
+      "textPrimary": "@theme-text-primary-normal",
+      "textSecondary": "@theme-text-secondary-normal"
     },
     "#hovered": {
       "background": "@theme-background-secondary-hover",
