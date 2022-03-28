@@ -17,6 +17,10 @@
       },
       "#pressed": {
         "text": "@theme-text-inverted-normal"
+      },
+      "#focused": {
+        "border": "@theme-background-primary-focus",
+        "background": "@theme-background-primary-ghost"
       }
     },
     "cancel-ghost": {
@@ -91,6 +95,14 @@
       },
       "#pressed": {
         "text": "@theme-text-inverted-normal"
+      },
+      "#focused": {
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-background-primary-focus",
+        "background": "@theme-background-primary-ghost"
+      },
+      "#disabled": {
+        "background": "@theme-background-primary-ghost"
       }
     },
     "dialpad": {
