@@ -1,0 +1,53 @@
+{
+  "checkbox": {
+    "figma": "https://www.figma.com/file/rNpQFybgpgSfTmhLa441V3/Components---Windows-OS-HighContrast?node-id=4371%3A9978",
+    "checked": {
+      "#normal": {
+        "background": "@theme-common-hc-highlight",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-common-hc-highlight",
+        "icon": "@theme-common-hc-highlightText"
+      },
+      "#hovered": {
+        "background": "@theme-common-hc-buttonFace",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-common-hc-highlight",
+        "icon": "@theme-common-hc-buttonText"
+      },
+      "#pressed": {
+        "background": "@theme-common-hc-buttonFace",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-common-hc-highlight",
+        "icon": "@theme-common-hc-buttonText"
+      },
+      "#disabled": {
+        "background": "@theme-common-hc-grayText",
+        "text": "@theme-text-primary-disabled",
+        "border": "@theme-common-hc-grayText",
+        "icon": "@theme-common-hc-highlightText"
+      }
+    },
+    "unchecked": {
+      "#normal": {
+        "background": "@theme-common-hc-buttonFace",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-common-hc-highlight"
+      },
+      "#hovered": {
+        "background": "@theme-common-hc-buttonFace",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-common-hc-highlight"
+      },
+      "#pressed": {
+        "background": "@theme-common-hc-buttonFace",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-common-hc-highlight"
+      },
+      "#disabled": {
+        "background": "@theme-common-hc-grayText",
+        "text": "@theme-text-primary-disabled",
+        "border": "@theme-common-hc-grayText"
+      }
+    }
+  }
+}
