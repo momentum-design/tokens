@@ -4,24 +4,16 @@
       "comment": "Applied to file attachments",
       "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=5415%3A0",
       "border": {
-        "#normal": {
-          "background": "@theme-common-outline-secondary-normal"
-        }
+        "#normal": "@theme-common-outline-secondary-normal"
       },
       "icon": {
-        "#normal": {
-          "background": "@theme-common-text-white"
-        }
+        "#normal": "@theme-common-text-white"
       },
       "overlay-light": {
-        "#normal": {
-          "background": "@theme-common-overlay-secondary-normal"
-        }
+        "#normal": "@theme-common-overlay-secondary-normal"
       },
       "overlay-dark": {
-        "#normal": {
-          "background": "@theme-common-overlay-primary-normal"
-        }
+        "#normal": "@theme-common-overlay-primary-normal"
       }
     }
   }
