@@ -1,0 +1,58 @@
+{
+  "sharewindow": {
+    "comment": "Applied to share window",
+    "figma": "https://www.figma.com/file/rNpQFybgpgSfTmhLa441V3/Components---Windows-OS-HighContrast?node-id=18883%3A44449",
+
+    "border": {
+      "#normal": {
+        "selected": "@theme-outline-share-selected",
+        "active": "@theme-outline-share-active",
+        "inactive": "@theme-outline-share-inactive"
+      }
+    },
+    "control": {
+      "text": {
+        "primary": "@theme-common-text-black"
+      },
+      "dragger": {
+        "primary": "@theme-common-text-black"
+      },
+      "button": {
+        "primary": {
+          "#normal": {
+            "text": "@theme-common-text-white"
+          },
+          "#disabled": {
+            "border": "@theme-common-outline-disabled-normal"
+          }
+        },
+        "secondary": {
+          "#hovered": {
+            "text": "@theme-common-text-black"
+          },
+          "#pressed": {
+            "text": "@theme-common-text-black"
+          }
+        },
+        "active": {
+          "#normal": {
+            "text": "@theme-common-text-black"
+          },
+          "#hovered": {
+            "text": "@theme-common-button-secondary-active-normal",
+            "border": "@theme-common-button-secondary-active-normal"
+          },
+          "#pressed": {
+            "text": "@theme-common-button-secondary-active-normal",
+            "border": "@theme-common-button-secondary-active-normal"
+          }
+        }
+      }
+    },
+    "viewwindow": {
+      "#normal": {
+        "hovered": "@theme-outline-theme-normal"
+      }
+    }
+  }
+}
