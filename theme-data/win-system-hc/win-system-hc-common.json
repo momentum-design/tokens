@@ -2,6 +2,16 @@
   "theme": {
     "color": "@color-hc-PlaceholderColor",
     "common": {
+      "hc": {
+        "windowText": "@color-hc-SystemColorWindowTextColor",
+        "hotlight": "@color-hc-SystemColorHotlightColor",
+        "grayText": "@color-hc-SystemColorGrayTextColor",
+        "highlightText": "@color-hc-SystemColorHighlightTextColor",
+        "highlight": "@color-hc-SystemColorHighlightColor",
+        "buttonText": "@color-hc-SystemColorButtonTextColor",
+        "buttonFace": "@color-hc-SystemColorButtonFaceColor",
+        "window": "@color-hc-SystemColorWindowColor"
+      },
       "text": {
         "white": "@color-hc-SystemColorButtonTextColor",
         "black": "@color-hc-SystemColorHighlightTextColor",
