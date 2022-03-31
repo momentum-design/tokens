@@ -1,0 +1,49 @@
+{
+  "togglemomentumstyle": {
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=4931%3A1039",
+    "toggled": {
+      "#normal": {
+        "background": "@theme-control-active-normal",
+        "thumb-tint": "@theme-text-inverted-normal",
+        "border": "none"
+      },
+      "#hovered": {
+        "background": "@theme-control-active-hover",
+        "thumb-tint": "@theme-text-inverted-normal",
+        "border": "none"
+      },
+      "#pressed": {
+        "background": "@theme-control-active-pressed",
+        "thumb-tint": "@theme-text-inverted-normal",
+        "border": "none"
+      },
+      "#disabled": {
+        "background": "@theme-control-active-disabled",
+        "thumb-tint": "@theme-text-inverted-disabled",
+        "border": "none"
+      }
+    },
+    "untoggled": {
+      "#normal": {
+        "background": "@theme-control-inactive-normal",
+        "thumb-tint": "@theme-text-primary-normal",
+        "border": "none"
+      },
+      "#hovered": {
+        "background": "@theme-control-inactive-hover",
+        "thumb-tint": "@theme-text-primary-normal",
+        "border": "none"
+      },
+      "#pressed": {
+        "background": "@theme-control-inactive-pressed",
+        "thumb-tint": "@theme-text-primary-normal",
+        "border": "none"
+      },
+      "#disabled": {
+        "background": "@theme-control-inactive-disabled",
+        "thumb-tint": "@theme-text-primary-disabled",
+        "border": "none"
+      }
+    }
+  }
+}

@@ -18,7 +18,12 @@
     },
     "control": {
       "text": {
-        "primary": "@theme-common-text-white"
+        "primary": "@theme-common-text-white",
+        "inactive": "@theme-common-text-white"
+      },
+      "dragger": {
+        "primary": "@theme-common-outline-button-normal",
+        "inactive": "@theme-common-outline-button-normal"
       },
       "button": {
         "primary": {
