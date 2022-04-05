@@ -1,0 +1,11 @@
+{
+  "attachment-file-default": {
+    "sent": {
+      "comment": "Applied to file attachments",
+      "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=5428%3A21",
+      "border": "@theme-outline-secondary-normal",
+      "icon": "@theme-common-text-white",
+      "icon-background": "@theme-background-accent-normal"
+    }
+  }
+}
