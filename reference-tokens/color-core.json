@@ -1,456 +1,458 @@
 {
   "core": {
-    "Gray": {
-      "gray-05": {
-        "value": "#f7f7f7",
-        "type": "color",
-        "description": "Hex Code: #f7f7f7"
-      },
-      "gray-10": {
-        "value": "#ededed",
-        "type": "color",
-        "description": "Hex Code: #ededed"
-      },
-      "gray-20": {
-        "value": "#dedede",
-        "type": "color",
-        "description": "Hex Code: #dedede"
-      },
-      "gray-30": {
-        "value": "#c9c9c9",
-        "type": "color",
-        "description": "Hex Code: #c9c9c9"
-      },
-      "gray-40": {
-        "value": "#adadad",
-        "type": "color",
-        "description": "Hex Code: #adadad"
-      },
-      "gray-50": {
-        "value": "#8f8f8f",
-        "type": "color",
-        "description": "Hex Code: #8f8f8f"
-      },
-      "gray-60": {
-        "value": "#707070",
-        "type": "color",
-        "description": "Hex Code: #707070"
-      },
-      "gray-70": {
-        "value": "#545454",
-        "type": "color"
-      },
-      "gray-80": {
-        "value": "#3b3b3b",
-        "type": "color",
-        "description": "Hex Code: #3b3b3b"
-      },
-      "gray-90": {
-        "value": "#262626",
-        "type": "color",
-        "description": "Hex Code: #262626"
-      },
-      "gray-95": {
-        "value": "#1a1a1a",
-        "type": "color",
-        "description": "Hex Code: #1a1a1a"
-      },
-      "gray-100": {
-        "value": "#0f0f0f",
-        "type": "color",
-        "description": "Hex Code: #0f0f0f"
-      }
-    },
-    "Blue": {
-      "blue-05": {
-        "value": "#edf8ff",
-        "type": "color",
-        "description": "Hex Code: #edf8ff"
-      },
-      "blue-10": {
-        "value": "#dbf0ff",
-        "type": "color",
-        "description": "Hex Code: #dbf0ff"
-      },
-      "blue-20": {
-        "value": "#bfe3ff",
-        "type": "color",
-        "description": "Hex Code: #dfe3ff"
-      },
-      "blue-30": {
-        "value": "#96d0ff",
-        "type": "color",
-        "description": "Hex Code: #96d0ff"
-      },
-      "blue-40": {
-        "value": "#64b4fa",
-        "type": "color",
-        "description": "Hex Code: #64b4fa"
-      },
-      "blue-50": {
-        "value": "#3492eb",
-        "type": "color",
-        "description": "Hex Code: #3492eb"
-      },
-      "blue-60": {
-        "value": "#1170cf",
-        "type": "color",
-        "description": "Hex Code: #1170cf"
-      },
-      "blue-70": {
-        "value": "#0353a8",
-        "type": "color",
-        "description": "Hex Code: #0353a8"
-      },
-      "blue-80": {
-        "value": "#063a75",
-        "type": "color",
-        "description": "Hex Code: #063a75"
-      },
-      "blue-90": {
-        "value": "#0a274a",
-        "type": "color",
-        "description": "Hex Code: #0a274a"
-      },
-      "blue-95": {
-        "value": "#091a30",
-        "type": "color",
-        "description": "Hex Code: #091a30"
-      },
-      "blue-100": {
-        "value": "#07101c",
-        "type": "color",
-        "description": "Hex Code: #07101c"
-      }
-    },
-    "Green": {
-      "green-05": {
-        "value": "#edf7f5",
-        "type": "color",
-        "description": "Hex Code: #edf7f5"
-      },
-      "green-10": {
-        "value": "#cef5eb",
-        "type": "color",
-        "description": "Hex Code: #cef5eb"
-      },
-      "green-20": {
-        "value": "#9fedd8",
-        "type": "color",
-        "description": "Hex Code: #9fedd8"
-      },
-      "green-30": {
-        "value": "#68debd",
-        "type": "color",
-        "description": "Hex Code: #68debd"
-      },
-      "green-40": {
-        "value": "#3cc29a",
-        "type": "color",
-        "description": "Hex Code: #3cc29a"
-      },
-      "green-50": {
-        "value": "#27a17a",
-        "type": "color",
-        "description": "Hex Code: #27a17a"
-      },
-      "green-60": {
-        "value": "#1d805f",
-        "type": "color",
-        "description": "Hex Code: #1d805f"
-      },
-      "green-70": {
-        "value": "#185e46",
-        "type": "color",
-        "description": "Hex Code: #185e46"
-      },
-      "green-80": {
-        "value": "#134231",
-        "type": "color",
-        "description": "Hex Code: #134231"
-      },
-      "green-90": {
-        "value": "#0e2b20",
-        "type": "color",
-        "description": "Hex Code: #0e2b20"
-      },
-      "green-95": {
-        "value": "#0a1c15",
-        "type": "color",
-        "description": "Hex Code: #0a1c15"
-      },
-      "green-100": {
-        "value": "#07120d",
-        "type": "color",
-        "description": "Hex Code: #07120d"
-      }
-    },
-    "Red": {
-      "red-05": {
-        "value": "#fff5f6",
-        "type": "color",
-        "description": "Hex Code: #fff5f6"
-      },
-      "red-10": {
-        "value": "#ffe8ea",
-        "type": "color",
-        "description": "Hex Code: #ffe8ea"
-      },
-      "red-20": {
-        "value": "#ffd4da",
-        "type": "color",
-        "description": "Hex Code: #ffd4da"
-      },
-      "red-30": {
-        "value": "#ffb8c1",
-        "type": "color",
-        "description": "Hex Code: #ffb8c1"
-      },
-      "red-40": {
-        "value": "#fc8b98",
-        "type": "color",
-        "description": "Hex Code: #fc8b98"
-      },
-      "red-50": {
-        "value": "#f55868",
-        "type": "color",
-        "description": "Hex Code: #f55868"
-      },
-      "red-60": {
-        "value": "#db1f2e",
-        "type": "color",
-        "description": "Hex Code: #db1f2e"
-      },
-      "red-70": {
-        "value": "#ab0a15",
-        "type": "color",
-        "description": "Hex Code: #ab0a15"
-      },
-      "red-80": {
-        "value": "#780d13",
-        "type": "color",
-        "description": "Hex Code: #780d13"
-      },
-      "red-90": {
-        "value": "#4f0e10",
-        "type": "color",
-        "description": "Hex Code: #4f0e10"
-      },
-      "red-95": {
-        "value": "#330d0e",
-        "type": "color",
-        "description": "Hex Code: #330d0e"
-      },
-      "red-100": {
-        "value": "#1f0a0a",
-        "type": "color",
-        "description": "Hex Code: #1f0a0a"
-      }
-    },
-    "Yellow": {
-      "yellow-05": {
-        "value": "#fff6e3",
-        "type": "color",
-        "description": "Hex Code: #fff6e3"
-      },
-      "yellow-10": {
-        "value": "#ffebc2",
-        "type": "color",
-        "description": "Hex Code: #ffebc2"
-      },
-      "yellow-20": {
-        "value": "#ffda94",
-        "type": "color",
-        "description": "Hex Code: #ffda94"
-      },
-      "yellow-30": {
-        "value": "#ffbe4f",
-        "type": "color",
-        "description": "Hex Code: #ffbe4f"
-      },
-      "yellow-40": {
-        "value": "#f2990a",
-        "type": "color",
-        "description": "Hex Code: #f2990a"
-      },
-      "yellow-50": {
-        "value": "#cf7900",
-        "type": "color",
-        "description": "Hex Code: #cf7900"
-      },
-      "yellow-60": {
-        "value": "#a65e00",
-        "type": "color",
-        "description": "Hex Code: #a65e00"
-      },
-      "yellow-70": {
-        "value": "#7d4705",
-        "type": "color",
-        "description": "Hex Code: #7d4705"
-      },
-      "yellow-80": {
-        "value": "#57330a",
-        "type": "color",
-        "description": "Hex Code: #57330a"
-      },
-      "yellow-90": {
-        "value": "#36220c",
-        "type": "color",
-        "description": "Hex Code: #36220c"
-      },
-      "yellow-95": {
-        "value": "#24180b",
-        "type": "color",
-        "description": "Hex Code: #24180b"
-      },
-      "yellow-100": {
-        "value": "#140e08",
-        "type": "color",
-        "description": "Hex Code: #140e08"
-      }
-    },
-    "White-alpha": {
-      "white-alpha-00": {
-        "value": "#ffffff00",
-        "type": "color",
-        "description": "Hex Code: #ffffff\nAlpha: 0%"
-      },
-      "white-alpha-05": {
-        "value": "#ffffff0d",
-        "type": "color",
-        "description": "Hex Code: #ffffff\nAlpha: 5%"
-      },
-      "white-alpha-07": {
-        "value": "#ffffff12",
-        "type": "color",
-        "description": "Hex Code: #ffffff\nAlpha: 7%"
-      },
-      "white-alpha-11": {
-        "value": "#ffffff1c",
-        "type": "color",
-        "description": "Hex Code: #ffffff\nAlpha: 11%"
-      },
-      "white-alpha-20": {
-        "value": "#ffffff33",
-        "type": "color",
-        "description": "Hex Code: #ffffff\nAlpha: 20%"
-      },
-      "white-alpha-30": {
-        "value": "#ffffff4d",
-        "type": "color",
-        "description": "Hex Code: #ffffff\nAlpha: 30%"
-      },
-      "white-alpha-40": {
-        "value": "#ffffff66",
-        "type": "color",
-        "description": "Hex Code: #ffffff\nAlpha: 40%"
-      },
-      "white-alpha-50": {
-        "value": "#ffffff80",
-        "type": "color",
-        "description": "Hex Code: #ffffff\nAlpha: 50%"
-      },
-      "white-alpha-60": {
-        "value": "#ffffff99",
-        "type": "color",
-        "description": "Hex Code: #ffffff\nAlpha: 60%"
-      },
-      "white-alpha-70": {
-        "value": "#ffffffb3",
-        "type": "color",
-        "description": "Hex Code: #ffffff\nAlpha: 70%"
-      },
-      "white-alpha-80": {
-        "value": "#ffffffcc",
-        "type": "color",
-        "description": "Hex Code: #ffffff\nAlpha: 80%"
-      },
-      "white-alpha-90": {
-        "value": "#ffffffe6",
-        "type": "color",
-        "description": "Hex Code: #ffffff\nAlpha: 90%"
-      },
-      "white-alpha-95": {
-        "value": "#fffffff2",
-        "type": "color",
-        "description": "Hex Code: #ffffff\nAlpha: 95%"
-      },
-      "white-alpha-100": {
-        "value": "#ffffff",
-        "type": "color",
-        "description": "Hex Code: #ffffff\nAlpha: 100%"
-      }
-    },
-    "Black-alpha": {
-      "black-alpha-00": {
-        "value": "#00000000",
-        "type": "color",
-        "description": "Hex Code: #000000\nAlpha: 0%"
-      },
-      "black-alpha-04": {
-        "value": "#0000000a",
-        "type": "color",
-        "description": "Hex Code: #000000\nAlpha: 4%"
-      },
-      "black-alpha-07": {
-        "value": "#00000012",
-        "type": "color",
-        "description": "Hex Code: #000000\nAlpha: 7%"
-      },
-      "black-alpha-11": {
-        "value": "#0000001c",
-        "type": "color",
-        "description": "Hex Code: #000000\nAlpha: 11%"
-      },
-      "black-alpha-20": {
-        "value": "#00000033",
-        "type": "color",
-        "description": "Hex Code: #000000\nAlpha: 20%"
-      },
-      "black-alpha-30": {
-        "value": "#0000004d",
-        "type": "color",
-        "description": "Hex Code: #000000\nAlpha: 30%"
-      },
-      "black-alpha-40": {
-        "value": "#00000066",
-        "type": "color",
-        "description": "Hex Code: #000000\nAlpha: 40%"
-      },
-      "black-alpha-50": {
-        "value": "#00000080",
-        "type": "color",
-        "description": "Hex Code: #000000\nAlpha: 50%"
-      },
-      "black-alpha-60": {
-        "value": "#00000099",
-        "type": "color",
-        "description": "Hex Code: #000000\nAlpha: 60%"
-      },
-      "black-alpha-70": {
-        "value": "#000000b3",
-        "type": "color",
-        "description": "Hex Code: #000000\nAlpha: 70%"
-      },
-      "black-alpha-80": {
-        "value": "#000000cc",
-        "type": "color",
-        "description": "Hex Code: #000000\nAlpha: 80%"
-      },
-      "black-alpha-90": {
-        "value": "#000000e6",
-        "type": "color",
-        "description": "Hex Code: #000000\nAlpha: 90%"
-      },
-      "black-alpha-95": {
-        "value": "#000000f2",
-        "type": "color",
-        "description": "Hex Code: #000000\nAlpha: 95%"
-      },
-      "black-alpha-100": {
-        "value": "#000000",
-        "type": "color",
-        "description": "Hex Code: #000000\nAlpha: 100%"
+    "Core Color": {
+      "Gray": {
+        "gray-05": {
+          "value": "#f7f7f7",
+          "type": "color",
+          "description": "Hex Code: #f7f7f7"
+        },
+        "gray-10": {
+          "value": "#ededed",
+          "type": "color",
+          "description": "Hex Code: #ededed"
+        },
+        "gray-20": {
+          "value": "#dedede",
+          "type": "color",
+          "description": "Hex Code: #dedede"
+        },
+        "gray-30": {
+          "value": "#c9c9c9",
+          "type": "color",
+          "description": "Hex Code: #c9c9c9"
+        },
+        "gray-40": {
+          "value": "#adadad",
+          "type": "color",
+          "description": "Hex Code: #adadad"
+        },
+        "gray-50": {
+          "value": "#8f8f8f",
+          "type": "color",
+          "description": "Hex Code: #8f8f8f"
+        },
+        "gray-60": {
+          "value": "#707070",
+          "type": "color",
+          "description": "Hex Code: #707070"
+        },
+        "gray-70": {
+          "value": "#545454",
+          "type": "color"
+        },
+        "gray-80": {
+          "value": "#3b3b3b",
+          "type": "color",
+          "description": "Hex Code: #3b3b3b"
+        },
+        "gray-90": {
+          "value": "#262626",
+          "type": "color",
+          "description": "Hex Code: #262626"
+        },
+        "gray-95": {
+          "value": "#1a1a1a",
+          "type": "color",
+          "description": "Hex Code: #1a1a1a"
+        },
+        "gray-100": {
+          "value": "#0f0f0f",
+          "type": "color",
+          "description": "Hex Code: #0f0f0f"
+        }
+      },
+      "Blue": {
+        "blue-05": {
+          "value": "#edf8ff",
+          "type": "color",
+          "description": "Hex Code: #edf8ff"
+        },
+        "blue-10": {
+          "value": "#dbf0ff",
+          "type": "color",
+          "description": "Hex Code: #dbf0ff"
+        },
+        "blue-20": {
+          "value": "#bfe3ff",
+          "type": "color",
+          "description": "Hex Code: #dfe3ff"
+        },
+        "blue-30": {
+          "value": "#96d0ff",
+          "type": "color",
+          "description": "Hex Code: #96d0ff"
+        },
+        "blue-40": {
+          "value": "#64b4fa",
+          "type": "color",
+          "description": "Hex Code: #64b4fa"
+        },
+        "blue-50": {
+          "value": "#3492eb",
+          "type": "color",
+          "description": "Hex Code: #3492eb"
+        },
+        "blue-60": {
+          "value": "#1170cf",
+          "type": "color",
+          "description": "Hex Code: #1170cf"
+        },
+        "blue-70": {
+          "value": "#0353a8",
+          "type": "color",
+          "description": "Hex Code: #0353a8"
+        },
+        "blue-80": {
+          "value": "#063a75",
+          "type": "color",
+          "description": "Hex Code: #063a75"
+        },
+        "blue-90": {
+          "value": "#0a274a",
+          "type": "color",
+          "description": "Hex Code: #0a274a"
+        },
+        "blue-95": {
+          "value": "#091a30",
+          "type": "color",
+          "description": "Hex Code: #091a30"
+        },
+        "blue-100": {
+          "value": "#07101c",
+          "type": "color",
+          "description": "Hex Code: #07101c"
+        }
+      },
+      "Green": {
+        "green-05": {
+          "value": "#edf7f5",
+          "type": "color",
+          "description": "Hex Code: #edf7f5"
+        },
+        "green-10": {
+          "value": "#cef5eb",
+          "type": "color",
+          "description": "Hex Code: #cef5eb"
+        },
+        "green-20": {
+          "value": "#9fedd8",
+          "type": "color",
+          "description": "Hex Code: #9fedd8"
+        },
+        "green-30": {
+          "value": "#68debd",
+          "type": "color",
+          "description": "Hex Code: #68debd"
+        },
+        "green-40": {
+          "value": "#3cc29a",
+          "type": "color",
+          "description": "Hex Code: #3cc29a"
+        },
+        "green-50": {
+          "value": "#27a17a",
+          "type": "color",
+          "description": "Hex Code: #27a17a"
+        },
+        "green-60": {
+          "value": "#1d805f",
+          "type": "color",
+          "description": "Hex Code: #1d805f"
+        },
+        "green-70": {
+          "value": "#185e46",
+          "type": "color",
+          "description": "Hex Code: #185e46"
+        },
+        "green-80": {
+          "value": "#134231",
+          "type": "color",
+          "description": "Hex Code: #134231"
+        },
+        "green-90": {
+          "value": "#0e2b20",
+          "type": "color",
+          "description": "Hex Code: #0e2b20"
+        },
+        "green-95": {
+          "value": "#0a1c15",
+          "type": "color",
+          "description": "Hex Code: #0a1c15"
+        },
+        "green-100": {
+          "value": "#07120d",
+          "type": "color",
+          "description": "Hex Code: #07120d"
+        }
+      },
+      "Red": {
+        "red-05": {
+          "value": "#fff5f6",
+          "type": "color",
+          "description": "Hex Code: #fff5f6"
+        },
+        "red-10": {
+          "value": "#ffe8ea",
+          "type": "color",
+          "description": "Hex Code: #ffe8ea"
+        },
+        "red-20": {
+          "value": "#ffd4da",
+          "type": "color",
+          "description": "Hex Code: #ffd4da"
+        },
+        "red-30": {
+          "value": "#ffb8c1",
+          "type": "color",
+          "description": "Hex Code: #ffb8c1"
+        },
+        "red-40": {
+          "value": "#fc8b98",
+          "type": "color",
+          "description": "Hex Code: #fc8b98"
+        },
+        "red-50": {
+          "value": "#f55868",
+          "type": "color",
+          "description": "Hex Code: #f55868"
+        },
+        "red-60": {
+          "value": "#db1f2e",
+          "type": "color",
+          "description": "Hex Code: #db1f2e"
+        },
+        "red-70": {
+          "value": "#ab0a15",
+          "type": "color",
+          "description": "Hex Code: #ab0a15"
+        },
+        "red-80": {
+          "value": "#780d13",
+          "type": "color",
+          "description": "Hex Code: #780d13"
+        },
+        "red-90": {
+          "value": "#4f0e10",
+          "type": "color",
+          "description": "Hex Code: #4f0e10"
+        },
+        "red-95": {
+          "value": "#330d0e",
+          "type": "color",
+          "description": "Hex Code: #330d0e"
+        },
+        "red-100": {
+          "value": "#1f0a0a",
+          "type": "color",
+          "description": "Hex Code: #1f0a0a"
+        }
+      },
+      "Yellow": {
+        "yellow-05": {
+          "value": "#fff6e3",
+          "type": "color",
+          "description": "Hex Code: #fff6e3"
+        },
+        "yellow-10": {
+          "value": "#ffebc2",
+          "type": "color",
+          "description": "Hex Code: #ffebc2"
+        },
+        "yellow-20": {
+          "value": "#ffda94",
+          "type": "color",
+          "description": "Hex Code: #ffda94"
+        },
+        "yellow-30": {
+          "value": "#ffbe4f",
+          "type": "color",
+          "description": "Hex Code: #ffbe4f"
+        },
+        "yellow-40": {
+          "value": "#f2990a",
+          "type": "color",
+          "description": "Hex Code: #f2990a"
+        },
+        "yellow-50": {
+          "value": "#cf7900",
+          "type": "color",
+          "description": "Hex Code: #cf7900"
+        },
+        "yellow-60": {
+          "value": "#a65e00",
+          "type": "color",
+          "description": "Hex Code: #a65e00"
+        },
+        "yellow-70": {
+          "value": "#7d4705",
+          "type": "color",
+          "description": "Hex Code: #7d4705"
+        },
+        "yellow-80": {
+          "value": "#57330a",
+          "type": "color",
+          "description": "Hex Code: #57330a"
+        },
+        "yellow-90": {
+          "value": "#36220c",
+          "type": "color",
+          "description": "Hex Code: #36220c"
+        },
+        "yellow-95": {
+          "value": "#24180b",
+          "type": "color",
+          "description": "Hex Code: #24180b"
+        },
+        "yellow-100": {
+          "value": "#140e08",
+          "type": "color",
+          "description": "Hex Code: #140e08"
+        }
+      },
+      "White-alpha": {
+        "white-alpha-00": {
+          "value": "#ffffff00",
+          "type": "color",
+          "description": "Hex Code: #ffffff\nAlpha: 0%"
+        },
+        "white-alpha-05": {
+          "value": "#ffffff0d",
+          "type": "color",
+          "description": "Hex Code: #ffffff\nAlpha: 5%"
+        },
+        "white-alpha-07": {
+          "value": "#ffffff12",
+          "type": "color",
+          "description": "Hex Code: #ffffff\nAlpha: 7%"
+        },
+        "white-alpha-11": {
+          "value": "#ffffff1c",
+          "type": "color",
+          "description": "Hex Code: #ffffff\nAlpha: 11%"
+        },
+        "white-alpha-20": {
+          "value": "#ffffff33",
+          "type": "color",
+          "description": "Hex Code: #ffffff\nAlpha: 20%"
+        },
+        "white-alpha-30": {
+          "value": "#ffffff4d",
+          "type": "color",
+          "description": "Hex Code: #ffffff\nAlpha: 30%"
+        },
+        "white-alpha-40": {
+          "value": "#ffffff66",
+          "type": "color",
+          "description": "Hex Code: #ffffff\nAlpha: 40%"
+        },
+        "white-alpha-50": {
+          "value": "#ffffff80",
+          "type": "color",
+          "description": "Hex Code: #ffffff\nAlpha: 50%"
+        },
+        "white-alpha-60": {
+          "value": "#ffffff99",
+          "type": "color",
+          "description": "Hex Code: #ffffff\nAlpha: 60%"
+        },
+        "white-alpha-70": {
+          "value": "#ffffffb3",
+          "type": "color",
+          "description": "Hex Code: #ffffff\nAlpha: 70%"
+        },
+        "white-alpha-80": {
+          "value": "#ffffffcc",
+          "type": "color",
+          "description": "Hex Code: #ffffff\nAlpha: 80%"
+        },
+        "white-alpha-90": {
+          "value": "#ffffffe6",
+          "type": "color",
+          "description": "Hex Code: #ffffff\nAlpha: 90%"
+        },
+        "white-alpha-95": {
+          "value": "#fffffff2",
+          "type": "color",
+          "description": "Hex Code: #ffffff\nAlpha: 95%"
+        },
+        "white-alpha-100": {
+          "value": "#ffffff",
+          "type": "color",
+          "description": "Hex Code: #ffffff\nAlpha: 100%"
+        }
+      },
+      "Black-alpha": {
+        "black-alpha-00": {
+          "value": "#00000000",
+          "type": "color",
+          "description": "Hex Code: #000000\nAlpha: 0%"
+        },
+        "black-alpha-04": {
+          "value": "#0000000a",
+          "type": "color",
+          "description": "Hex Code: #000000\nAlpha: 4%"
+        },
+        "black-alpha-07": {
+          "value": "#00000012",
+          "type": "color",
+          "description": "Hex Code: #000000\nAlpha: 7%"
+        },
+        "black-alpha-11": {
+          "value": "#0000001c",
+          "type": "color",
+          "description": "Hex Code: #000000\nAlpha: 11%"
+        },
+        "black-alpha-20": {
+          "value": "#00000033",
+          "type": "color",
+          "description": "Hex Code: #000000\nAlpha: 20%"
+        },
+        "black-alpha-30": {
+          "value": "#0000004d",
+          "type": "color",
+          "description": "Hex Code: #000000\nAlpha: 30%"
+        },
+        "black-alpha-40": {
+          "value": "#00000066",
+          "type": "color",
+          "description": "Hex Code: #000000\nAlpha: 40%"
+        },
+        "black-alpha-50": {
+          "value": "#00000080",
+          "type": "color",
+          "description": "Hex Code: #000000\nAlpha: 50%"
+        },
+        "black-alpha-60": {
+          "value": "#00000099",
+          "type": "color",
+          "description": "Hex Code: #000000\nAlpha: 60%"
+        },
+        "black-alpha-70": {
+          "value": "#000000b3",
+          "type": "color",
+          "description": "Hex Code: #000000\nAlpha: 70%"
+        },
+        "black-alpha-80": {
+          "value": "#000000cc",
+          "type": "color",
+          "description": "Hex Code: #000000\nAlpha: 80%"
+        },
+        "black-alpha-90": {
+          "value": "#000000e6",
+          "type": "color",
+          "description": "Hex Code: #000000\nAlpha: 90%"
+        },
+        "black-alpha-95": {
+          "value": "#000000f2",
+          "type": "color",
+          "description": "Hex Code: #000000\nAlpha: 95%"
+        },
+        "black-alpha-100": {
+          "value": "#000000",
+          "type": "color",
+          "description": "Hex Code: #000000\nAlpha: 100%"
+        }
       }
     },
     "Decorative Color": {
@@ -1157,6 +1159,140 @@
           "value": "linear-gradient(180deg, #301a4a 0%, #18082b 100%)",
           "type": "color",
           "description": "Values Top, Bottom (301A4A, 18082B)"
+        }
+      }
+    },
+    "Mobile Solid Background": {
+      "Bronze": {
+        "solid-bronze-light-primary": {
+          "value": "#f5efe4",
+          "type": "color",
+          "description": "HEX Code: #F5EFE4"
+        },
+        "solid-bronze-light-secondary": {
+          "value": "#fcfaf4",
+          "type": "color",
+          "description": "HEX Code: #FCFAF4"
+        },
+        "solid-bronze-dark-primary": {
+          "value": "#171002",
+          "type": "color",
+          "description": "HEX Code: #171002"
+        },
+        "solid-bronze-dark-secondary": {
+          "value": "#231807",
+          "type": "color",
+          "description": "HEX Code: #231807"
+        }
+      },
+      "Lavender": {
+        "solid-lavender-light-primary": {
+          "value": "#f4ebff",
+          "type": "color",
+          "description": "HEX Code: #F4EBFF"
+        },
+        "solid-lavender-light-secondary": {
+          "value": "#fbf7ff",
+          "type": "color",
+          "description": "HEX Code: #FBF7FF"
+        },
+        "solid-lavender-dark-primary": {
+          "value": "#18082b",
+          "type": "color",
+          "description": "HEX Code: #18082B"
+        },
+        "solid-lavender-dark-secondary": {
+          "value": "#27163b",
+          "type": "color",
+          "description": "HEX Code: #27163B"
+        }
+      },
+      "Rose": {
+        "solid-rose-light-primary": {
+          "value": "#fcebf5",
+          "type": "color",
+          "description": "HEX Code: #FCEBF5"
+        },
+        "solid-rose-light-secondary": {
+          "value": "#fff9fd",
+          "type": "color",
+          "description": "HEX Code: #FFF9FD"
+        },
+        "solid-rose-dark-primary": {
+          "value": "#1f0615",
+          "type": "color",
+          "description": "HEX Code: #1F0615"
+        },
+        "solid-rose-dark-secondary": {
+          "value": "#30041e",
+          "type": "color",
+          "description": "HEX Code: #30041E"
+        }
+      },
+      "Jade": {
+        "solid-jade-light-primary": {
+          "value": "#e6f2f1",
+          "type": "color",
+          "description": "HEX Code: #E6F2F1"
+        },
+        "solid-jade-light-secondary": {
+          "value": "#f7fcfc",
+          "type": "color",
+          "description": "HEX Code: #F7FCFC"
+        },
+        "solid-jade-dark-primary": {
+          "value": "#021412",
+          "type": "color",
+          "description": "HEX Code: #021412"
+        },
+        "solid-jade-dark-secondary": {
+          "value": "#05201c",
+          "type": "color",
+          "description": "HEX Code: #05201C"
+        }
+      },
+      "Indigo": {
+        "solid-indigo-light-primary": {
+          "value": "#ebeffc",
+          "type": "color",
+          "description": "HEX Code: #EBEFFC"
+        },
+        "solid-indigo-light-secondary": {
+          "value": "#f7f9ff",
+          "type": "color",
+          "description": "HEX Code: #F7F9FF"
+        },
+        "solid-indigo-dark-primary": {
+          "value": "#0e111a",
+          "type": "color",
+          "description": "HEX Code: #0E111A"
+        },
+        "solid-indigo-dark-secondary": {
+          "value": "#13182b",
+          "type": "color",
+          "description": "HEX Code: #13182B"
+        }
+      },
+      "Default": {
+        "solid-default-light-primary": {
+          "value": "#f7f7f7",
+          "type": "color",
+          "description": "HEX Code: #F7F7F7"
+        },
+        "solid-default-light-secondary": {
+          "value": "#ffffff",
+          "type": "color",
+          "description": "HEX Code: #FFFFFF"
+        },
+        "solid-default-dark-primary": {
+          "value": "#000000",
+          "type": "color",
+          "description": "HEX Code: #000000"
+        },
+        "solid-default-dark-secondary": {
+          "value": "#1a1a1a",
+          "type": "color",
+          "description": "HEX Code: #1A1A1A"
         }
       }
     }
