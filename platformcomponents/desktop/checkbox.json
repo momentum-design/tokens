@@ -31,17 +31,17 @@
       "#normal": {
         "background": "@theme-control-inactive-normal",
         "text": "@theme-text-primary-normal",
-        "border": "@theme-control-inactive-normal"
+        "border": "@theme-outline-input-normal"
       },
       "#hovered": {
         "background": "@theme-control-inactive-hover",
         "text": "@theme-text-primary-normal",
-        "border": "@theme-control-inactive-hover"
+        "border": "@theme-outline-input-normal"
       },
       "#pressed": {
         "background": "@theme-control-inactive-pressed",
         "text": "@theme-text-primary-normal",
-        "border": "@theme-control-inactive-pressed"
+        "border": "@theme-outline-input-normal"
       },
       "#disabled": {
         "background": "@theme-control-inactive-hover",
