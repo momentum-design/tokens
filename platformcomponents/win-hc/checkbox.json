@@ -4,25 +4,25 @@
     "checked": {
       "#normal": {
         "background": "@theme-common-hc-highlight",
-        "text": "@theme-text-primary-normal",
+        "text": "@theme-common-hc-windowText",
         "border": "@theme-common-hc-highlight",
         "icon": "@theme-common-hc-highlightText"
       },
       "#hovered": {
         "background": "@theme-common-hc-buttonFace",
-        "text": "@theme-text-primary-normal",
+        "text": "@theme-common-hc-windowText",
         "border": "@theme-common-hc-highlight",
         "icon": "@theme-common-hc-buttonText"
       },
       "#pressed": {
         "background": "@theme-common-hc-buttonFace",
-        "text": "@theme-text-primary-normal",
+        "text": "@theme-common-hc-windowText",
         "border": "@theme-common-hc-highlight",
         "icon": "@theme-common-hc-buttonText"
       },
       "#disabled": {
         "background": "@theme-common-hc-grayText",
-        "text": "@theme-text-primary-disabled",
+        "text": "@theme-common-hc-grayText",
         "border": "@theme-common-hc-grayText",
         "icon": "@theme-common-hc-highlightText"
       }
@@ -30,22 +30,22 @@
     "unchecked": {
       "#normal": {
         "background": "@theme-common-hc-buttonFace",
-        "text": "@theme-text-primary-normal",
-        "border": "@theme-common-hc-highlight"
+        "text": "@theme-common-hc-windowText",
+        "border": "@theme-common-hc-buttonText"
       },
       "#hovered": {
         "background": "@theme-common-hc-buttonFace",
-        "text": "@theme-text-primary-normal",
+        "text": "@theme-common-hc-windowText",
         "border": "@theme-common-hc-highlight"
       },
       "#pressed": {
         "background": "@theme-common-hc-buttonFace",
-        "text": "@theme-text-primary-normal",
+        "text": "@theme-common-hc-windowText",
         "border": "@theme-common-hc-highlight"
       },
       "#disabled": {
-        "background": "@theme-common-hc-grayText",
-        "text": "@theme-text-primary-disabled",
+        "background": "@theme-common-hc-buttonFace",
+        "text": "@theme-common-hc-grayText",
         "border": "@theme-common-hc-grayText"
       }
     }
