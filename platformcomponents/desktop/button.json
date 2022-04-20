@@ -1,8 +1,8 @@
 {
   "button": {
     "comment": "Desktop specific button styles",
-    "figma": "",
     "ghost": {
+      "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=4445%3A3906",
       "#normal": {
         "background": "@theme-button-secondary-normal",
         "text": "@theme-text-primary-normal",
@@ -24,7 +24,7 @@
     "call-control-panel": {
       "#normal": {
         "background": "@theme-button-secondary-active-normal",
-        "text": "@theme-text-primary-normal"        
+        "text": "@theme-text-primary-normal"
       },
       "#hovered": {
         "background": "@theme-button-secondary-active-hover",

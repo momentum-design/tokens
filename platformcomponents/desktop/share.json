@@ -2,7 +2,6 @@
   "sharewindow": {
     "comment": "Applied to share window",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=9532%3A17790",
-
     "preview": {
       "#normal": {
         "active": "@theme-common-control-shareContent-active",
@@ -26,50 +25,6 @@
         "inactive": "@theme-common-outline-button-normal"
       },
       "button": {
-        "primary": {
-          "#normal": {
-            "background": "@theme-common-button-primary-normal",
-            "text": "@theme-common-text-black",
-            "border": "@theme-button-border-normal"
-          },
-          "#hovered": {
-            "background": "@theme-common-button-primary-hover",
-            "text": "@theme-common-text-black",
-            "border": "@theme-button-border-normal"
-          },
-          "#pressed": {
-            "background": "@theme-common-button-primary-pressed",
-            "text": "@theme-common-text-black",
-            "border": "@theme-button-border-normal"
-          },
-          "#disabled": {
-            "background": "@theme-common-button-primary-disabled",
-            "text": "@theme-common-text-disabled",
-            "border": "none"
-          }
-        },
-        "secondary": {
-          "#normal": {
-            "background": "@theme-common-button-secondary-normal",
-            "text": "@theme-common-text-white",
-            "border": "@theme-common-outline-button-normal"
-          },
-          "#hovered": {
-            "background": "@theme-common-button-secondary-hover",
-            "text": "@theme-common-text-white",
-            "border": "@theme-common-outline-button-normal"
-          },
-          "#pressed": {
-            "background": "@theme-common-button-secondary-pressed",
-            "text": "@theme-common-text-white",
-            "border": "@theme-common-outline-button-normal"
-          },
-          "#disabled": {
-            "background": "@theme-common-button-secondary-disabled",
-            "text": "@theme-common-text-disabled",
-            "border": "@theme-common-outline-disabled-normal"
-          }
-        },
         "active": {
           "#normal": {
             "background": "@theme-common-button-secondary-active-normal",
@@ -95,10 +50,24 @@
       }
     },
     "viewwindow": {
-      "#normal": {
-        "active": "@theme-common-control-shareContent-active",
-        "hovered": "@theme-outline-secondary-normal",
-        "selected": "@theme-outline-theme-normal"
+      "background": {
+        "#normal": "@theme-background-primary-active",
+        "#disabled": "@theme-background-primary-disabled"
+      },
+      "text": {
+        "#normal": "@theme-text-primary-normal",
+        "#disabled": "@theme-text-primary-disabled"
+      },
+      "border": {
+        "notSharing": {
+          "#normal": "none",
+          "#hovered": "@theme-outline-input-normal",
+          "#active": "@theme-outline-theme-normal",
+          "#disabled": "none"
+        },
+        "sharing": {
+          "#normal": "@theme-outline-share-active"
+        }
       }
     }
   }

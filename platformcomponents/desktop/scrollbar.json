@@ -34,7 +34,8 @@
         "background": "@theme-scrollbar-arrow-background-hover"
       },
       "#pressed": {
-        "text": "@theme-scrollbar-arrow-background-pressed"
+        "text": "@theme-scrollbar-arrow-background-pressed",
+        "background": "@theme-scrollbar-arrow-background-pressed"
       },
       "#disabled": {
         "text": "@theme-text-primary-disabled",

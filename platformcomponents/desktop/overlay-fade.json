@@ -1,7 +1,7 @@
 {
   "overlayFade": {
     "comment": "Use for see through backgrounds",
-    "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=7813%3A33099",
+    "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=3714%3A13",
     "primary": {
       "#normal": {
         "background": "@theme-common-overlay-primary"

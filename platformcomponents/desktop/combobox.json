@@ -1,7 +1,7 @@
 {
   "combobox": {
     "comment": "Used for basic comboboxes",
-    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4931%3A2083",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=4969%3A10093",
     "placeholder-text": "@theme-text-secondary-normal",
     "#normal": {
       "background": "@theme-background-solid-primary-normal",

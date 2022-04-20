@@ -22,13 +22,12 @@
         "primary": {
           "normal": "@color-white-alpha-95",
           "hover": "@color-white-alpha-80",
-          "pressed": "@color-white-alpha-20",
+          "pressed": "@color-white-alpha-70",
           "disabled": "@color-white-alpha-20"
         },
         "secondary": {
           "normal": "@color-white-alpha-00",
           "hover": "@color-white-alpha-07",
-          "pressed": "@color-white-alpha-20",
           "disabled": "@color-white-alpha-00",
           "active": {
             "normal": "@color-black-alpha-20",

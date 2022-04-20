@@ -1,6 +1,6 @@
 {
   "globalHeader": {
-    "comment": "Applied to modal and menu list backgrounds",
+    "comment": "Applied to the app's global header",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=5282%3A497",
     "textfield": {
       "#normal": {

@@ -6,23 +6,36 @@
       "background": "@theme-background-secondary-normal",
       "border": "none",
       "textPrimary": "@theme-text-primary-normal",
-      "textSecondary": "@theme-text-secondary-normal"
+      "textSecondary": "@theme-text-secondary-normal",
+      "dotdivider": "@theme-outline-primary-normal"
     },
     "#hovered": {
       "background": "@theme-background-secondary-hover",
-      "border": "none"
+      "border": "none",
+      "textPrimary": "@theme-text-primary-normal",
+      "textSecondary": "@theme-text-secondary-normal",
+      "dotdivider": "@theme-outline-primary-normal"
     },
     "#pressed": {
       "background": "@theme-background-secondary-active",
-      "border": "none"
+      "border": "none",
+      "textPrimary": "@theme-text-primary-normal",
+      "textSecondary": "@theme-text-secondary-normal",
+      "dotdivider": "@theme-outline-primary-normal"
     },
     "#focused": {
       "background": "@theme-background-secondary-active",
-      "border": "@theme-control-active-normal"
+      "border": "@theme-control-active-normal",
+      "textPrimary": "@theme-text-primary-normal",
+      "textSecondary": "@theme-text-secondary-normal",
+      "dotdivider": "@theme-outline-primary-normal"
     },
     "#disabled": {
       "background": "@theme-background-primary-ghost",
-      "border": "@theme-outline-disabled-normal"
+      "border": "@theme-outline-disabled-normal",
+      "textPrimary": "@theme-text-primary-disabled",
+      "textSecondary": "@theme-text-primary-disabled",
+      "dotdivider": "@theme-outline-primary-normal"
     }
   }
 }

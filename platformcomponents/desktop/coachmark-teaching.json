@@ -3,6 +3,9 @@
     "comment": "Applied to coachmark-teaching",
     "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=8654%3A34583",
     "background": "@theme-teaching-background-normal",
+    "text": "@theme-text-inverted-normal",
+    "pagecounttext": "@theme-text-secondary-inverted-normal",
+    "icon": "@theme-text-inverted-normal",
     "button": {
       "primary": {
         "#normal": {

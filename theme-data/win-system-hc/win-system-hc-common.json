@@ -39,7 +39,6 @@
         "secondary": {
           "normal": "@color-hc-SystemColorButtonFaceColor",
           "hover": "@color-hc-SystemColorHighlightColor",
-          "pressed": "@color-hc-SystemColorHighlightColor",
           "disabled": "@color-hc-SystemColorGrayTextColor",
           "active": {
             "normal": "@color-hc-SystemColorHighlightColor",
@@ -128,6 +127,18 @@
         "normal": "@color-hc-SystemColorWindowTextColor",
         "hover": "@color-hc-SystemColorWindowTextColor",
         "active": "@color-hc-SystemColorWindowTextColor"
+      },
+      "admin": {
+        "purple": {
+          "normal": "@color-hc-SystemColorWindowTextColor",
+          "hover": "@color-hc-SystemColorWindowTextColor",
+          "active": "@color-hc-SystemColorWindowTextColor"
+        },
+        "orange": {
+          "normal": "@color-hc-SystemColorWindowTextColor",
+          "hover": "@color-hc-SystemColorWindowTextColor",
+          "active": "@color-hc-SystemColorWindowTextColor"
+        }
       },
       "team": {
         "cobalt": {

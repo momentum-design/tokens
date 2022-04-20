@@ -4,7 +4,8 @@
     "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=6262%3A29209",
     "loading": {
       "cursor": "@theme-outline-input-active",
-      "track": "@theme-control-inactive-normal"
+      "track": "@theme-control-inactive-normal",
+      "complete": "@theme-text-success-normal"
     },
     "progress": {
       "cursor": "@theme-control-active-normal",

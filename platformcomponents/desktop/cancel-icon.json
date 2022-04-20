@@ -1,18 +1,18 @@
 {
   "cancelicon": {
     "comment": "cancel icon that is used on textfields and popovers",
-    "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=6192%3A28111",
-    "default":{
-      "#normal": {        
-        "icon": "@theme-text-secondary-normal"        
+    "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=2832%3A16227",
+    "default": {
+      "#normal": {
+        "icon": "@theme-text-secondary-normal"
       },
-      "#hovered": {        
+      "#hovered": {
         "icon": "@theme-text-primary-normal"
       },
-      "#pressed": {        
+      "#pressed": {
         "icon": "@theme-text-primary-normal"
       },
-      "#disabled": {        
+      "#disabled": {
         "icon": "@theme-text-primary-disabled"
       }
     }

@@ -5,8 +5,14 @@
     "#normal": {
       "background": "@theme-background-solid-primary-normal"
     },
+    "#hovered": {
+      "background": "@theme-background-primary-active"
+    },
     "#active": {
-      "background": "@theme-background-solid-primary-normal"
+      "background": "@theme-background-primary-active"
+    },
+    "#disabled": {
+      "background": "@theme-background-primary-disabled"
     }
   }
 }

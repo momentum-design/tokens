@@ -5,6 +5,7 @@
     "background": "@theme-background-accent-normal",
     "text": "@theme-common-text-white",
     "notification-indicator": "@theme-text-accent-normal",
-    "recording-indicator": "@theme-indicator-attention"
+    "recording-indicator": "@theme-indicator-attention",
+    "warning-indicator": "@theme-indicator-caution"
   }
 }

@@ -1,7 +1,7 @@
 {
   "alertbadge": {
     "comment": "Applied to Alert Badges",
-    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4655%3A8433",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=5138%3A383",
     "default": {
       "#normal": {
         "background": "@theme-background-alert-default-normal",

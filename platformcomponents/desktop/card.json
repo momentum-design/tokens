@@ -1,25 +1,33 @@
 {
   "card": {
-    "comment": "Applied to calendar card backgrounds",
-    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=5282%3A497",
+    "comment": "Applied to calendar cards",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=14887%3A27714",
     "active": {
       "#normal": {
-        "background": "@theme-background-alert-success-normal"
+        "background": "@theme-background-alert-success-normal",
+        "title": "@theme-text-success-normal",
+        "subtitle": "@theme-text-secondary-normal"
       }
     },
     "inactive": {
       "#normal": {
-        "background": "@theme-background-secondary-normal"
+        "background": "@theme-background-secondary-normal",
+        "title": "@theme-text-primary-normal",
+        "subtitle": "@theme-text-secondary-normal"
       }
     },
     "cancelled": {
       "#normal": {
-        "background": "@theme-background-primary-ghost"
+        "background": "@theme-background-primary-ghost",
+        "title": "@theme-text-secondary-normal",
+        "subtitle": "@theme-text-secondary-normal"
       }
     },
     "disabled": {
       "#normal": {
-        "border": "@theme-outline-disabled-normal"
+        "border": "@theme-background-secondary-normal",
+        "title": "@theme-text-primary-disabled",
+        "subtitle": "@theme-text-primary-disabled"
       }
     }
   }

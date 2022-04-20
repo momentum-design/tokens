@@ -1,6 +1,6 @@
 {
   "tag": {
-    "comment": "Applied to Tags",
+    "comment": "Applied to Tags and Labels",
     "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=2925%3A17509",
     "static": {
       "background": "@theme-background-solid-primary-normal",
@@ -11,6 +11,11 @@
       "background": "@theme-background-common-normal",
       "text": "@theme-common-text-black",
       "border": "@theme-common-control-shareContent-inactive"
+    },
+    "error": {
+      "background": "@theme-background-alert-error-normal",
+      "border": "@theme-outline-cancel-normal",
+      "text": "@theme-text-primary-normal"
     },
     "primary": {
       "#normal": {

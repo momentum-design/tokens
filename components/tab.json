@@ -5,88 +5,40 @@
     "active": {
       "#normal": {
         "background": "@theme-button-secondary-active-normal",
-        "text": "@theme-text-primary-normal"
+        "text": "@theme-text-primary-normal",
+        "arrow": "@theme-text-primary-normal"
       },
       "#hovered": {
         "background": "@theme-button-secondary-active-hover",
-        "text": "@theme-text-primary-normal"
+        "text": "@theme-text-primary-normal",
+        "arrow": "@theme-text-primary-normal"
       },
       "#pressed": {
         "background": "@theme-button-secondary-pressed",
-        "text": "@theme-text-primary-normal"
+        "text": "@theme-text-primary-normal",
+        "arrow": "@theme-text-primary-normal"
       }
     },
     "inactive": {
       "#normal": {
         "background": "@theme-button-secondary-normal",
-        "text": "@theme-text-secondary-normal"
+        "text": "@theme-text-secondary-normal",
+        "arrow": "@theme-text-secondary-normal"
       },
       "#hovered": {
         "background": "@theme-button-secondary-hover",
-        "text": "@theme-text-primary-normal"
+        "text": "@theme-text-primary-normal",
+        "arrow": "@theme-text-secondary-normal"
       },
       "#pressed": {
         "background": "@theme-button-secondary-pressed",
-        "text": "@theme-text-primary-normal"
+        "text": "@theme-text-primary-normal",
+        "arrow": "@theme-text-secondary-normal"
       },
       "#disabled": {
-        "text": "@theme-text-primary-disabled"
+        "text": "@theme-text-primary-disabled",
+        "arrow": "@theme-text-primary-disabled"
       }
-    },
-    "refresh": {
-      "#normal": "@theme-text-success-normal",
-      "#hovered": "@theme-text-success-hover",
-      "#pressed": "@theme-text-success-active"
-    },
-    "orange": {
-      "#normal": "@theme-text-team-orange-normal",
-      "#hovered": "@theme-text-team-orange-hover",
-      "#pressed": "@theme-text-team-orange-active"
-    },
-    "gold": {
-      "#normal": "@theme-text-team-gold-normal",
-      "#hovered": "@theme-text-team-gold-hover",
-      "#pressed": "@theme-text-team-gold-active"
-    },
-    "lime": {
-      "#normal": "@theme-text-team-lime-normal",
-      "#hovered": "@theme-text-team-lime-hover",
-      "#pressed": "@theme-text-team-lime-active"
-    },
-    "mint": {
-      "#normal": "@theme-text-team-mint-normal",
-      "#hovered": "@theme-text-team-mint-hover",
-      "#pressed": "@theme-text-team-mint-active"
-    },
-    "cyan": {
-      "#normal": "@theme-text-team-cyan-normal",
-      "#hovered": "@theme-text-team-cyan-hover",
-      "#pressed": "@theme-text-team-cyan-active"
-    },
-    "pink": {
-      "#normal": "@theme-text-team-pink-normal",
-      "#hovered": "@theme-text-team-pink-hover",
-      "#pressed": "@theme-text-team-pink-active"
-    },
-    "slate": {
-      "#normal": "@theme-text-team-slate-normal",
-      "#hovered": "@theme-text-team-slate-hover",
-      "#pressed": "@theme-text-team-slate-active"
-    },
-    "violet": {
-      "#normal": "@theme-text-team-violet-normal",
-      "#hovered": "@theme-text-team-violet-hover",
-      "#pressed": "@theme-text-team-violet-active"
-    },
-    "cobalt": {
-      "#normal": "@theme-text-team-cobalt-normal",
-      "#hovered": "@theme-text-team-cobalt-hover",
-      "#pressed": "@theme-text-team-cobalt-active"
-    },
-    "purple": {
-      "#normal": "@theme-text-team-purple-normal",
-      "#hovered": "@theme-text-team-purple-hover",
-      "#pressed": "@theme-text-team-purple-active"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "modal": {
-    "comment": "Applied to modal and menu list backgrounds",
-    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=5282%3A497",
+    "comment": "Applied to modal backgrounds",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=4518%3A11526",
     "primary": {
       "#normal": {
         "background": "@theme-background-solid-primary-normal",
@@ -17,6 +17,12 @@
     "tertiary": {
       "#normal": {
         "background": "@theme-background-solid-tertiary-normal",
+        "border": "@theme-outline-secondary-normal"
+      }
+    },
+    "quaternary": {
+      "#normal": {
+        "background": "@theme-background-solid-quaternary-normal",
         "border": "@theme-outline-secondary-normal"
       }
     }

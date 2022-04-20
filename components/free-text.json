@@ -1,0 +1,41 @@
+{
+  "freetext": {
+    "comment": "Applied to text that does not belong to any component.",
+    "figma": "https://www.figma.com/file/yYfvFEEr3UkW1yUKkW7zEH/Tokens---Theme-Color?node-id=861%3A6638",
+    "primary": {
+      "#normal": "@theme-text-primary-normal",
+      "#disabled": "@theme-text-primary-disabled"
+    },
+    "inverted": {
+      "#normal": "@theme-text-inverted-normal",
+      "#disabled": "@theme-text-inverted-disabled"
+    },
+    "secondary": {
+      "#normal": "@theme-text-secondary-normal",
+      "inverted": {
+        "#normal": "@theme-text-secondary-inverted-normal"
+      }
+    },
+    "error": {
+      "#normal": "@theme-text-error-normal",
+      "#hovered": "@theme-text-error-hover",
+      "#active": "@theme-text-error-active"
+    },
+    "success": {
+      "#normal": "@theme-text-success-normal",
+      "#hovered": "@theme-text-success-hover",
+      "#active": "@theme-text-success-active"
+    },
+    "warning": {
+      "#normal": "@theme-text-warning-normal",
+      "#hovered": "@theme-text-warning-hover",
+      "#active": "@theme-text-warning-active"
+    },
+    "highlight": "@theme-text-highlight",
+    "accent": {
+      "#normal": "@theme-text-accent-normal",
+      "#hovered": "@theme-text-accent-hover",
+      "#active": "@theme-text-accent-active"
+    }
+  }
+}
