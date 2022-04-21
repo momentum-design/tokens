@@ -34,13 +34,13 @@
           "normal": "@color-hc-SystemColorButtonFaceColor",
           "hover": "@color-hc-SystemColorHighlightColor",
           "pressed": "@color-hc-SystemColorHighlightColor",
-          "disabled": "@color-hc-SystemColorGrayTextColor"
+          "disabled": "@color-hc-SystemColorButtonFaceColor"
         },
         "secondary": {
           "normal": "@color-hc-SystemColorButtonFaceColor",
           "hover": "@color-hc-SystemColorHighlightColor",
           "pressed": "@color-hc-SystemColorHighlightColor",
-          "disabled": "@color-hc-SystemColorGrayTextColor",
+          "disabled": "@color-hc-SystemColorButtonFaceColor",
           "active": {
             "normal": "@color-hc-SystemColorHighlightColor",
             "hover": "@color-hc-SystemColorButtonFaceColor",
@@ -51,7 +51,7 @@
           "normal": "@color-hc-SystemColorButtonFaceColor",
           "hover": "@color-hc-SystemColorHighlightColor",
           "pressed": "@color-hc-SystemColorHighlightColor",
-          "disabled": "@color-hc-SystemColorGrayTextColor"
+          "disabled": "@color-hc-SystemColorButtonFaceColor"
         },
         "join-animated-gradient": {
           "normal": ["@color-hc-SystemColorButtonFaceColor", "@color-hc-SystemColorButtonFaceColor"]
@@ -500,28 +500,28 @@
     },
     "teaching": {
       "background": {
-        "normal": "@color-hc-PlaceholderColor"
+        "normal": "@color-hc-SystemColorButtonFaceColor"
       },
       "button": {
         "primary": {
-          "normal": "@color-hc-PlaceholderColor",
-          "hover": "@color-hc-PlaceholderColor",
-          "pressed": "@color-hc-PlaceholderColor",
-          "disabled": "@color-hc-PlaceholderColor"
+          "normal": "@color-hc-SystemColorButtonFaceColor",
+          "hover": "@color-hc-SystemColorHighlightColor",
+          "pressed": "@color-hc-SystemColorHighlightColor",
+          "disabled": "@color-hc-SystemColorButtonFaceColor"
         },
         "secondary": {
-          "normal": "@color-hc-PlaceholderColor",
-          "hover": "@color-hc-PlaceholderColor",
-          "pressed": "@color-hc-PlaceholderColor"
+          "normal": "@color-hc-SystemColorButtonFaceColor",
+          "hover": "@color-hc-SystemColorHighlightColor",
+          "pressed": "@color-hc-SystemColorHighlightColor"
         }
       },
       "outline": {
         "button": {
-          "normal": "@color-hc-PlaceholderColor"
+          "normal": "@color-hc-SystemColorButtonTextColor"
         },
         "normal": "@color-hc-PlaceholderColor",
         "disabled": {
-          "normal": "@color-hc-PlaceholderColor"
+          "normal": "@color-hc-SystemColorGrayTextColor"
         },
         "theme": "@color-hc-PlaceholderColor"
       },
@@ -532,7 +532,7 @@
           "disabled": "@color-hc-PlaceholderColor"
         },
         "primary": {
-          "disabled": "@color-hc-PlaceholderColor"
+          "disabled": "@color-hc-SystemColorGrayTextColor"
         }
       }
     }
