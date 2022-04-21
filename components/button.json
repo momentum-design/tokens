@@ -121,6 +121,11 @@
         "border": "@theme-outline-disabled-normal"
       }
     },
+    "join-animated-gradient": {
+      "#normal": {
+        "background": "@theme-common-button-join-animated-gradient"
+      }
+    },
     "cancel-fill": {
       "#normal": {
         "background": "@theme-button-cancel-normal",

@@ -18,7 +18,12 @@
     },
     "control": {
       "text": {
-        "primary": "@theme-common-text-white"
+        "primary": "@theme-common-text-white",
+        "inactive": "@theme-common-text-white"
+      },
+      "dragger": {
+        "primary": "@theme-common-outline-button-normal",
+        "inactive": "@theme-common-outline-button-normal"
       },
       "button": {
         "primary": {
@@ -56,6 +61,28 @@
           },
           "#pressed": {
             "background": "@theme-common-button-secondary-pressed",
+            "text": "@theme-common-text-white",
+            "border": "@theme-common-outline-button-normal"
+          },
+          "#disabled": {
+            "background": "@theme-common-button-secondary-disabled",
+            "text": "@theme-common-text-disabled",
+            "border": "@theme-common-outline-disabled-normal"
+          }
+        },
+        "active": {
+          "#normal": {
+            "background": "@theme-common-button-secondary-active-normal",
+            "text": "@theme-common-text-white",
+            "border": "@theme-common-outline-button-normal"
+          },
+          "#hovered": {
+            "background": "@theme-common-button-secondary-active-hover",
+            "text": "@theme-common-text-white",
+            "border": "@theme-common-outline-button-normal"
+          },
+          "#pressed": {
+            "background": "@theme-common-button-secondary-active-pressed",
             "text": "@theme-common-text-white",
             "border": "@theme-common-outline-button-normal"
           },
