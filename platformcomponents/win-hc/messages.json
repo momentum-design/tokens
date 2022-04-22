@@ -22,6 +22,20 @@
       "#focused": {
         "text": "@theme-text-inverted-normal"
       }
+    },
+    "extParticipants": {
+      "#normal": {
+        "text": "@theme-background-primary-hover"
+      },
+      "#pressed": {
+        "text": "@theme-text-inverted-normal"
+      },
+      "#hovered": {
+        "text": "@theme-text-inverted-normal"
+      },
+      "#focused": {
+        "text": "@theme-text-inverted-normal"
+      }
     }
   }
 }
