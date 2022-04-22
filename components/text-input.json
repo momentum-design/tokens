@@ -9,8 +9,8 @@
       "border": "@theme-outline-input-normal"
     },
     "#pressed": {
-      "background": "@theme-background-secondary-active",
-      "text": "@theme-text-secondary-normal",
+      "background": "@theme-background-primary-active",
+      "text": "@theme-text-primary-normal",
       "border": "@theme-outline-input-normal"
     },
     "#hovered": {
@@ -19,7 +19,7 @@
       "border": "@theme-outline-input-normal"
     },
     "#focused": {
-      "background": "@theme-background-solid-primary-normal",
+      "background": "@theme-background-primary-active",
       "text": "@theme-text-primary-normal",
       "border": "@theme-outline-theme-normal"
     },
@@ -35,7 +35,7 @@
     },
     "error": {
       "#normal": {
-        "background": "@theme-background-alert-error-normal",
+        "background": "@theme-background-solid-primary-normal",
         "text": "@theme-text-primary-normal",
         "border": "@theme-outline-cancel-normal"
       },
@@ -50,7 +50,7 @@
         "border": "@theme-outline-cancel-normal"
       },
       "#focused": {
-        "background": "@theme-background-primary-hover",
+        "background": "@theme-background-primary-active",
         "text": "@theme-text-primary-normal",
         "border": "@theme-outline-cancel-normal"
       }
