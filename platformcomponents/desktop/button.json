@@ -22,6 +22,7 @@
       }
     },
     "call-control-panel": {
+      "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=9578%3A1682",
       "#normal": {
         "background": "@theme-button-secondary-active-normal",
         "text": "@theme-text-primary-normal"
