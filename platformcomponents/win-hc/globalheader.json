@@ -9,10 +9,12 @@
     },
     "buttonDevice": {
       "#hovered": {
-        "text-inactive": "@theme-text-inverted-normal"
+        "text-inactive": "@theme-text-inverted-normal",
+        "text-active": "@theme-text-inverted-normal"
       },
       "#pressed": {
-        "text-inactive": "@theme-text-inverted-normal"
+        "text-inactive": "@theme-text-inverted-normal",
+        "text-active": "@theme-text-inverted-normal"
       }
     },
     "buttonIcon": {
