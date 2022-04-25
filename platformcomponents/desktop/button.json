@@ -19,12 +19,16 @@
       "#disabled": {
         "background": "@theme-button-secondary-normal",
         "text": "@theme-text-primary-disabled"
+      },
+      "#active": {
+        "background": "@theme-button-secondary-pressed",
+        "text": "@theme-text-primary-normal"
       }
     },
     "call-control-panel": {
       "#normal": {
         "background": "@theme-button-secondary-active-normal",
-        "text": "@theme-text-primary-normal"        
+        "text": "@theme-text-primary-normal"
       },
       "#hovered": {
         "background": "@theme-button-secondary-active-hover",
