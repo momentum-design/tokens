@@ -2,21 +2,19 @@
   "interactiveicon": {
     "comment": "Applied to icons that are clickable",
     "figma": "https://www.figma.com/file/rNpQFybgpgSfTmhLa441V3/Components---Windows-OS-HighContrast?node-id=18590%3A37844",
-    "container": {
-      "primary": {
-        "filled": {
-          "#normal": {
-            "icon-inactive": "@theme-common-hc-buttonText",
-            "icon-active": "@theme-common-hc-buttonText"
-          },
-          "#hovered": {
-            "icon-inactive": "@theme-common-hc-highlightText",
-            "icon-active": "@theme-common-hc-highlightText"
-          },
-          "#pressed": {
-            "icon-inactive": "@theme-common-hc-highlightText",
-            "icon-active": "@theme-common-hc-highlightText"
-          }
+    "primary": {
+      "filled": {
+        "#normal": {
+          "icon-inactive": "@theme-common-hc-buttonText",
+          "icon-active": "@theme-common-hc-buttonText"
+        },
+        "#hovered": {
+          "icon-inactive": "@theme-common-hc-highlightText",
+          "icon-active": "@theme-common-hc-highlightText"
+        },
+        "#pressed": {
+          "icon-inactive": "@theme-common-hc-highlightText",
+          "icon-active": "@theme-common-hc-highlightText"
         }
       }
     }
