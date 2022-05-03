@@ -1,0 +1,22 @@
+{
+  "content-card-item": {
+    "comment": "Applied to file attachments from Content tab",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=49650%3A108097",
+    "border": "@theme-outline-secondary-normal",
+    "iconForeground": "@theme-common-text-white",
+    "icon": {
+      "#default": {
+        "background": "@theme-background-accent-normal"
+      }
+    },
+    "overlay": "@theme-common-overlay-primary",
+    "#normal": {
+      "textFileName": "@theme-text-primary-normal",
+      "textFileSize": "@theme-text-secondary-normal"
+    },
+    "#disabled": {
+      "textFileName": "@theme-text-primary-disabled",
+      "textFileSize": "@theme-text-primary-disabled"
+    },
+  }
+}

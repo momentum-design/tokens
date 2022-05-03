@@ -1,0 +1,19 @@
+{
+  "attachment-file-error": {
+    "sent": {
+      "comment": "Applied to sent & blocked file attachments",
+      "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=5533%3A11688",
+      "background": "@theme-background-primary-disabled",
+      "border": "@theme-outline-secondary-normal",
+      "iconForeground": "@theme-common-text-white",
+      "icon": {
+        "#default": {
+          "background": "@theme-background-accent-normal"
+        }
+      },
+      "textFileName": "@theme-text-primary-disabled",
+      "textFileSize": "@theme-text-primary-disabled"
+      }
+    }
+  }
+}

@@ -2,11 +2,11 @@
   "attachment-file-preview-thumbnail": {
     "sent": {
       "comment": "Applied to file attachments",
-      "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=29250%3A45485",
+      "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=49674%3A114116",
       "border": "@theme-outline-secondary-normal",
-      "icon": "@theme-common-text-white",
-      "icon-background": "@theme-background-accent-normal",
-      "overlay": "@theme-common-overlay-primary"
+      "overlay": "@theme-common-overlay-primary",
+      "textFileName": "@theme-common-text-white",
+      "textFileSize": "@theme-common-text-gray"
     }
   }
 }
