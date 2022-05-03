@@ -13,11 +13,11 @@
       "textFileName": "@theme-text-primary-normal",
       "textFileSize": "@theme-text-secondary-normal",
       "#normal": {
-        "background": "@theme-background-secondary-normal",
+        "background": "@theme-background-secondary-normal"
       },
       "#hovered": {
-        "background": "@theme-background-secondary-hover",
-      },
+        "background": "@theme-background-secondary-hover"
+      }
     }
   }
 }
