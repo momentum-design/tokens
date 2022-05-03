@@ -6,10 +6,8 @@
       "background": "@theme-background-primary-disabled",
       "border": "@theme-outline-secondary-normal",
       "iconForeground": "@theme-common-text-white",
-      "icon": {
-        "#default": {
-          "background": "@theme-background-accent-normal"
-        }
+      "iconBackground": {
+        "default": "@theme-background-accent-normal"
       },
       "textFileName": "@theme-text-primary-disabled",
       "textFileSize": "@theme-text-primary-disabled"

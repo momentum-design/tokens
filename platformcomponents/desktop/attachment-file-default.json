@@ -5,10 +5,8 @@
       "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=5428%3A29",
       "border": "@theme-outline-secondary-normal",
       "iconForeground": "@theme-common-text-white",
-      "icon": {
-        "#default": {
-          "background": "@theme-background-accent-normal"
-        }
+      "iconBackground": {
+        "default": "@theme-background-accent-normal"
       },
       "textFileName": "@theme-text-primary-normal",
       "textFileSize": "@theme-text-secondary-normal",

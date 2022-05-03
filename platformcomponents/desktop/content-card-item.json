@@ -4,10 +4,8 @@
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=49650%3A108097",
     "border": "@theme-outline-secondary-normal",
     "iconForeground": "@theme-common-text-white",
-    "icon": {
-      "#default": {
-        "background": "@theme-background-accent-normal"
-      }
+    "iconBackground": {
+      "default": "@theme-background-accent-normal"
     },
     "overlay": "@theme-common-overlay-primary",
     "#normal": {
