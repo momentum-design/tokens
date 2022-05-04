@@ -28,10 +28,10 @@ export const ThemeBackground = ({ gradation }) => {
           }}
         ></div>
       </div>
-      <ThemeToken token={{ name: "--theme-background-gradient-primary-0", value: gradation["primary-0"] }} />
-      <ThemeToken token={{ name: "--theme-background-gradient-primary-1", value: gradation["primary-1"] }} />
-      <ThemeToken token={{ name: "--theme-background-gradient-secondary-0", value: gradation["secondary-0"] }} />
-      <ThemeToken token={{ name: "--theme-background-gradient-secondary-1", value: gradation["secondary-1"] }} />
+      <ThemeToken token={{ name: "theme-background-gradient-primary-0", value: gradation["primary-0"] }} />
+      <ThemeToken token={{ name: "theme-background-gradient-primary-1", value: gradation["primary-1"] }} />
+      <ThemeToken token={{ name: "theme-background-gradient-secondary-0", value: gradation["secondary-0"] }} />
+      <ThemeToken token={{ name: "theme-background-gradient-secondary-1", value: gradation["secondary-1"] }} />
     </>
   );
 };

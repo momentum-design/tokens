@@ -34,7 +34,7 @@ function generateDocs(stateTokens, themeFile) {
   outputLine(":::");
   outputLine("This page has been automatically generated.");
   outputLine("");
-  outputLine(`## theme`);
+  outputLine(`## Theme`);
   outputLine("");
   outputLine(`<ThemeBackground gradation={${JSON.stringify(themeTokens[0].gradation)}} />`);
 

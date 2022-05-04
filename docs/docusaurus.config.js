@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+var pjson = require("../package.json");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -39,7 +40,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "Momentum Design Tokens",
+        title: `Momentum Design Tokens - v${pjson.version}`,
         logo: {
           alt: "Momentum Design Logo",
           srcDark: "img/logo.svg",
@@ -55,6 +56,11 @@ const config = {
           {
             href: "https://github.com/momentum-design/tokens",
             label: "GitHub",
+            position: "right",
+          },
+          {
+            href: "https://www.npmjs.com/package/@momentum-ui/design-tokens",
+            label: `npm`,
             position: "right",
           },
         ],
