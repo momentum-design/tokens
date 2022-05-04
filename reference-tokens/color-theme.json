@@ -110,6 +110,30 @@
           "value": "#fffffff2",
           "type": "color",
           "description": "Theme Token: TextTeamDefault-active\nCore Token: TextPrimary-normal [white-alpha-95]"
+        },
+        "TextAlertPurple-normal": {
+          "value": "#f294f1",
+          "type": "color"
+        },
+        "TextAlertPurple-hover": {
+          "value": "#fce1fc",
+          "type": "color"
+        },
+        "TextAlertPurple-active": {
+          "value": "#fce1fc",
+          "type": "color"
+        },
+        "TextAlertOrange-normal": {
+          "value": "#ffca99",
+          "type": "color"
+        },
+        "TextAlertOrange-hover": {
+          "value": "#faf4eb",
+          "type": "color"
+        },
+        "TextAlertOrange-active": {
+          "value": "#faf4eb",
+          "type": "color"
         }
       },
       "Backgrounds": {
@@ -261,6 +285,30 @@
           "value": "#063a75",
           "type": "color",
           "description": "Theme Token: BackgroundAlertTheme-active\nCore Token: theme-80"
+        },
+        "BackgroundAlertPurple-normal": {
+          "value": "#3b1840",
+          "type": "color"
+        },
+        "BackgroundAlertPurple-hover": {
+          "value": "#3b1840",
+          "type": "color"
+        },
+        "BackgroundAlertPurple-active": {
+          "value": "#601e66",
+          "type": "color"
+        },
+        "BackgroundAlertOrange-normal": {
+          "value": "#33221b",
+          "type": "color"
+        },
+        "BackgroundAlertOrange-hover": {
+          "value": "#33221b",
+          "type": "color"
+        },
+        "BackgroundAlertOrange-active": {
+          "value": "#59311e",
+          "type": "color"
         }
       },
       "Buttons": {
@@ -890,6 +938,31 @@
           "value": "#000000f2",
           "type": "color",
           "description": "Theme Token: TextTeamDefault-active\nCore Token: TextPrimary-normal [black-alpha-95]"
+        },
+        "TextAlertPurple-normal": {
+          "value": "#932099",
+          "type": "color"
+        },
+        "TextAlertPurple-hover": {
+          "value": "#932099",
+          "type": "color"
+        },
+        "TextAlertPurple-active": {
+          "value": "#3b1840",
+          "type": "color"
+        },
+        "TextAlertOrange-normal": {
+          "value": "#914017",
+          "type": "color",
+          "description": "Core Token: Orange-70"
+        },
+        "TextAlertOrange-hover": {
+          "value": "#33221b",
+          "type": "color"
+        },
+        "TextAlertOrange-active": {
+          "value": "#33221b",
+          "type": "color"
         }
       },
       "Backgrounds": {
@@ -1042,6 +1115,32 @@
           "value": "#bfe3ff",
           "type": "color",
           "description": "Theme Token: BackgroundAlertTheme-active\nCore Token: theme-20"
+        },
+        "BackgroundAlertPurple-normal": {
+          "value": "#fcf2fc",
+          "type": "color"
+        },
+        "BackgroundAlertPurple-hover": {
+          "value": "#fcf2fc",
+          "type": "color"
+        },
+        "BackgroundAlertPurple-active": {
+          "value": "#fce1fc",
+          "type": "color"
+        },
+        "BackgroundAlertOrange-normal": {
+          "value": "#faf4eb",
+          "type": "color",
+          "description": "Core Token: orange-10\n"
+        },
+        "BackgroundAlertOrange-hover": {
+          "value": "#faf4eb",
+          "type": "color",
+          "description": "Core Token : Orange-10"
+        },
+        "BackgroundAlertOrange-active": {
+          "value": "#fce4c7",
+          "type": "color"
         }
       },
       "Buttons": {
@@ -1649,10 +1748,20 @@
           "type": "color",
           "description": "Theme Token: Common-ButtonSecondary-hover\nCore Token: white-alpha-07"
         },
-        "Common-ButtonSecondary-pressed": {
+        "Common-ButtonSecondaryActive-normal": {
           "value": "#ffffff33",
           "type": "color",
-          "description": "Theme Token: Common-ButtonSecondary-pressed\nCore Token: white-alpha-20"
+          "description": "Theme Token: Common-ButtonActive-normal\nCore Token: white-alpha-20"
+        },
+        "Common-ButtonSecondaryActive-hover": {
+          "value": "#ffffff4d",
+          "type": "color",
+          "description": "Theme Token: Common-ButtonActive-hover\nCore Token: white-alpha-30"
+        },
+        "Common-ButtonSecondaryActive-pressed": {
+          "value": "#ffffff66",
+          "type": "color",
+          "description": "Theme Token: Common-ButtonActive-pressed\nCore Token: white-alpha-40"
         },
         "Common-ButtonSecondary-disabled": {
           "value": "#ffffff00",

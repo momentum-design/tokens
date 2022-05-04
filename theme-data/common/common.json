@@ -31,9 +31,9 @@
           "pressed": "@color-white-alpha-20",
           "disabled": "@color-white-alpha-00",
           "active": {
-            "normal": "@color-black-alpha-20",
-            "hover": "@color-black-alpha-30",
-            "pressed": "@color-black-alpha-40"
+            "normal": "@color-white-alpha-20",
+            "hover": "@color-white-alpha-30",
+            "pressed": "@color-white-alpha-40"
           }
         },
         "secondary-dark": {

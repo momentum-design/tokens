@@ -10,6 +10,11 @@
       "#normal": {
         "text": "@theme-text-secondary-normal"
       }
+    },
+    "extParticipants": {
+      "#normal": {
+        "text": "@theme-text-warning-normal"
+      }
     }
   }
 }

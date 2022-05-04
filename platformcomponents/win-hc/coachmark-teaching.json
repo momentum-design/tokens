@@ -10,11 +10,14 @@
         }
       },
       "secondary": {
-        "#hovered": {
+        "#normal": {
           "text": "@theme-text-primary-normal"
         },
+        "#hovered": {
+          "text": "@theme-text-inverted-normal"
+        },
         "#pressed": {
-          "text": "@theme-text-primary-normal"
+          "text": "@theme-text-inverted-normal"
         }
       }
     }
