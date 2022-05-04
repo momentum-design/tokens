@@ -5,6 +5,7 @@
       "text": {
         "white": "@color-hc-SystemColorButtonTextColor",
         "black": "@color-hc-SystemColorHighlightTextColor",
+        "gray": "@color-hc-SystemColorGrayTextColor",
         "disabled": "@color-hc-SystemColorGrayTextColor",
         "success": "@color-hc-PlaceholderColor",
         "error": "@color-hc-PlaceholderColor",
