@@ -1,0 +1,30 @@
+---
+sidebar_position: 2
+---
+
+# Tokens Architecture
+
+We decided to create this repo that consumes and proceses all the token data from our design team and returns it in a format that we can use in the different platforms.
+
+And to do that, and also support multiple themes like dark and light mode (and more) we created a very organised layer of tokens (mainly for colours).
+
+## 1. Core Tokens
+
+The first layer is the most basic one and it’s just naming the actual RGBA color values.
+
+## 2. Theme Tokens
+
+The design team has decided to use rgba values to enable creating a colour system that makes it easy to build new themes. We only have a few solid colours on the background, and everything on top are just different opacities of black and white. This way, the opacities of the colours on top, blend in and form a very cool UI! This way, to add a new theme, you only need to introduce 2-3 solid colours and done!. The second layer is where we define that.
+
+## 3. Component Based Tokens
+
+The third layer is the component based tokens, where each component has its own set of color tokens for all its possible variants (primary or secondary) and states (like, hover, pressed, disabled etc). So far, all these layers are shared across all platforms. Our project can have different targets for each platform and exports appropriate files that the clients can use.
+On the web, we decided to use CSS variables to theme the components.
+
+## 4. Target Tokens
+
+This layer is the one which the different platforms will consume. In this example, we illustrate the web target which exports the tokens into CSS variables.
+
+## Diagram
+
+<img src={require("@site/static/img/tokens-architecture.png").default} width="100%" alt="Architecture Diagram" />

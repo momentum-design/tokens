@@ -1,0 +1,197 @@
+---
+sidebar_position: 3
+---
+
+# Tokens Workflow
+
+## General workflow
+
+Creating component tokens is done manually by raising a PR agains the [momentum-design/tokens](https://github.com/momentum-design/tokens) repository.
+This is a public repository so anyone should be able to raise a PR with new tokens. Only internal teams can merge and publish new changes.
+Here's a [Webex Space](webexteams://im?space=f1c18690-b164-11eb-ad5a-1da905e79d40) where you can ask someone to review your PR (reviewing will be
+done regularly by the internal teams, so no need to ask for a review after making a PR every time).
+
+The process is easier explained with an example. In this guide we'll be creating tokens for the [Chips components](https://www.figma.com/file/vdL18BATeJAIq2JvGAjRPD/Components---Web?node-id=40290%3A64182)
+and we will be using the Web Library as a referece.
+
+### 1. Creating the component.json file
+
+Most of the components will be under the `/components` folder. In certain cases, there are some components that are only specific to one platform and are placed under `/platformcomponents` instead. Most components should be in the `/components` tho.
+In this case, we need to create a file called `chips.json` under the `/components` folder.
+
+### 2. General JSON structure and variants
+
+The main structure for the JSON file should be as shown below. We'll discuss about `component-variation` later.
+
+```json
+{
+  "componentname": { // all lowercase and no separation between words (no spce, no dash etc)
+    "comment": "Provide a small comment about this component",
+    "figma": "https://www.figma.com/link/to/compnent/in/figma", // Replace with correct link
+    "component-variation-1": {
+      ...
+    },
+    "component-variation-2": {
+      ...
+    }
+  }
+}
+```
+
+The above structure only works for components that have multiple variations. For example, ButtonPill has a few variations (primary - which has filled colors, secondary - which has outline, ghost - which has no bg on #normal state, etc.).
+Some components are more simple and don't have variations. For example TextField doesn't have variations, there is only one design for this component.
+
+### 3. States
+
+On the other hand, components can have multple states and these are usually states resulted from user interacting with the
+component (normal, hover, active, focus, etc). Here's an example of a component that only has one variation but that variation has multiple states, the JSON structure will look like this:
+
+```json
+{
+  "textinput": {
+    "comment": "Used for all text inputs and their states",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4429%3A871",
+    "placeholder-text": "@theme-text-secondary-normal",
+    "#normal": {
+      "background": "@theme-background-solid-primary-normal",
+      "text": "@theme-text-primary-normal",
+      "border": "@theme-outline-input-normal"
+    },
+    "#pressed": {
+      "background": "@theme-background-secondary-active",
+      "text": "@theme-text-secondary-normal",
+      "border": "@theme-outline-input-normal"
+    },
+    "#hovered": {
+      "background": "@theme-background-primary-hover",
+      "text": "@theme-text-primary-normal",
+      "border": "@theme-outline-input-normal"
+    },
+    ...
+}
+```
+
+Here's the initial example with multiple variants but with multiple states:
+
+```json
+{
+  "componentname": { // all lowercase and no separation between words (no spce, no dash etc)
+    "comment": "Provide a small comment about this component",
+    "figma": "https://www.figma.com/link/to/compnent/in/figma", // Replace with correct link
+    "component-variation-1": {
+      "#normal": {
+        "background": "@theme-background-solid-primary-normal",
+      },
+      "#pressed": {
+        "background": "@theme-background-secondary-active",
+      },
+      "#hovered": {
+        "background": "@theme-background-primary-hover",
+      },
+    },
+    "component-variation-1": {
+      "#normal": {
+        "background": "@theme-background-solid-primary-normal",
+      },
+      ...
+    }
+  }
+}
+```
+
+:::caution States Rules
+
+States have 2 rules:
+
+1. State names need to begin with the `#` character. Example #hovered.
+2. State names need to be in past tense, with the exception of `#normal` and`#active`. All valid states are `#normal`, `#pressed`, `#hovered`, `#focused`, `#active`, `#disabled`.
+
+:::
+
+### 4. Component items (sub-components)
+
+Each component is build from multiple parts. In our example, Chips are built from 4 parts.
+
+<img src={require("@site/static/img/chips-anatomy.png").default} width="100%" alt="Chips Component Anatomy Diagram" />
+
+##### 1. Container
+
+Chip containers hold all chip elements, and their size is determined by those elements. A container can also be defined by a stroke.
+
+##### 2. Thumbnail / Icon [optional]
+
+Thumbnails identify entities (like individuals) by displaying an avatar, logo, or icon.
+
+##### 3. Text
+
+Chip text can be an entity name, description, tag, action, or conversational.
+
+##### 4. Clear icon [optional]
+
+Input chips can include a Remove icon when a feature requires it.
+
+And here we can see all the variations and states (dark).
+
+<img src={require("@site/static/img/chips-dark-ui.png").default} width="100%" alt="Chips Component UI" />
+
+Therefore, we need our json file to include all variants `filled` and `outline`, and for each variant we have 5 states. Inside each state, we have 4 elements, so our JSON will look like below.
+
+```json
+{
+  "chip": {
+    "comment": "Chip Component",
+    "figma": "https://www.figma.com/file/vdL18BATeJAIq2JvGAjRPD/Components---Web?node-id=40290%3A64182",
+    "filled": {
+      "#normal": {
+        "background": "@theme-background-solid-primary-normal",
+        "text": "@theme-text-inverted-normal",
+        "thumbnail": "@theme-text-inverted-normal",
+        "clearIcon": "@theme-text-inverted-normal",
+      },
+       "#hovered": {
+        "background": "@theme-button-primary-hover",
+        "text": "@theme-text-inverted-normal",
+        "thumbnail": "@theme-text-inverted-normal",
+        "clearIcon": "@theme-text-inverted-normal",
+      },
+      "#pressed": {
+       "background": "@theme-button-primary-normal",
+        "text": "@theme-text-inverted-hover",
+        "thumbnail": "@theme-text-inverted-normal",
+        "clearIcon": "@theme-text-inverted-normal",
+      },
+      "error": {
+       "background": "@theme-background-alert-error-normal",
+        "text": "@theme-text-error-normal",
+        "thumbnail": "@theme-text-error-normal",
+        "clearIcon": "@theme-text-error-normal",
+      },
+      "#disabled": {
+        "background": "@theme-button-primary-disabled",
+        "text": "@theme-text-inverted-disabled",
+        "thumbnail": "@theme-text-inverted-disabled",
+        "clearIcon": "@theme-text-inverted-disabled",
+      },
+    },
+    "outline": {
+      ...
+    }
+  }
+}
+```
+
+### 5. Finding what color to use for each state/sub-item.
+
+We should generate docs with the figma mapping and the token format used here.
+TBD
+
+## Tokens & @momentum-ui/react-collaboration Web Libbrary
+
+:::danger Theme Tokens
+Consuming theme tokens in the web components library is not allowed! There are a few exceptions, like gradients or backgrounds for
+the ThemeProvider component.
+:::
+
+When it comes to implementing a new component in the [web library](https://github.com/momentum-design/momentum-react-v2),
+you are not allowed to use theme tokens directly (which appear on figma). You are required to create a PR with relevant tokens
+and then consume the component tokens instead.

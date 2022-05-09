@@ -45,6 +45,12 @@ jobs:
       - run:
           name: Publish package
           command: npm publish
+      - run:
+          name: Generate Web Docs
+          command: npm run build:web:docs
+      - run:
+          name: Publish Docs
+          command: cd docs && npm run deploy
 
 workflows:
   version: 2
