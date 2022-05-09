@@ -45,15 +45,15 @@ jobs:
       - run:
           name: Publish package
           command: npm publish
-      - run:
-           name: Add Github to known_hosts
-           command: ssh-keyscan -H github.com >> ~/.ssh/known_hosts
-      - run:
-          name: Generate Web Docs
-          command: npm run build:web:docs
-      - run:
-          name: Publish Docs
-          command: cd docs && npm i && npm run deploy
+      # - run:
+      #      name: Add Github to known_hosts -- this doesn't work 
+      #      command: ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+      # - run:
+      #     name: Generate Web Docs
+      #     command: npm run build:web:docs
+      # - run:
+      #     name: Publish Docs
+      #     command: cd docs && npm i && npm run deploy
 
 workflows:
   version: 2
