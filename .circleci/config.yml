@@ -46,6 +46,9 @@ jobs:
           name: Publish package
           command: npm publish
       - run:
+           name: Add Github to known_hosts
+           command: ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+      - run:
           name: Generate Web Docs
           command: npm run build:web:docs
       - run:
