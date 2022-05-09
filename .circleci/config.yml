@@ -50,7 +50,7 @@ jobs:
           command: npm run build:web:docs
       - run:
           name: Publish Docs
-          command: cd docs && npm run deploy
+          command: cd docs && npm i && npm run deploy
 
 workflows:
   version: 2
