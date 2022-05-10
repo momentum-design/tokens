@@ -1,5 +1,5 @@
 {
-  "content-card-item": {
+  "content-file-card-item": {
     "comment": "Applied to file attachments from Content tab",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=49650%3A108097",
     "border": "@theme-outline-secondary-normal",
