@@ -3,7 +3,11 @@
     "sent": {
       "comment": "Applied to sent & blocked file attachments",
       "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=5533%3A11688",
-      "background": "@theme-background-primary-disabled",
+      "background": {
+        "#normal": "@theme-background-secondary-normal",
+        "#hovered": "@theme-background-secondary-hover",
+        "#active": "@theme-background-secondary-active"
+      },
       "border": "@theme-outline-secondary-normal",
       "previewBox": {
         "icon": "@theme-common-text-white",
