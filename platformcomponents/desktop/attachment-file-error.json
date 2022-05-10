@@ -5,9 +5,9 @@
       "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=5533%3A11688",
       "background": "@theme-background-primary-disabled",
       "border": "@theme-outline-secondary-normal",
-      "iconForeground": "@theme-common-text-white",
-      "iconBackground": {
-        "default": "@theme-background-accent-normal"
+      "previewBox": {
+        "icon": "@theme-common-text-white",
+        "background": "@theme-background-accent-normal"
       },
       "label": {
         "primary": "@theme-text-primary-disabled",
