@@ -8,8 +8,10 @@
       "iconBackground": {
         "default": "@theme-background-accent-normal"
       },
-      "textFileName": "@theme-text-primary-normal",
-      "textFileSize": "@theme-text-secondary-normal",
+      "label": {
+        "primary": "@theme-text-primary-normal",
+        "secondary": "@theme-text-secondary-normal"
+      },
       "background": {
         "#normal": "@theme-background-secondary-normal",
         "#hovered": "@theme-background-secondary-hover",
