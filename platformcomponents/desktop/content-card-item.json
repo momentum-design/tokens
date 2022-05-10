@@ -7,14 +7,13 @@
     "iconBackground": {
       "default": "@theme-background-accent-normal"
     },
-    "overlay": "@theme-common-overlay-primary",
-    "#normal": {
-      "textFileName": "@theme-text-primary-normal",
-      "textFileSize": "@theme-text-secondary-normal"
-    },
-    "#disabled": {
-      "textFileName": "@theme-text-primary-disabled",
-      "textFileSize": "@theme-text-primary-disabled"
+    "overlay": {
+      "background": "@theme-common-overlay-primary",
+      "label": {
+        "primary": "@theme-text-primary-normal",
+        "secondary": "@theme-text-secondary-normal",
+        "disabled": "@theme-text-primary-disabled"
+      }
     }
   }
 }
