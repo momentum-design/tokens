@@ -9,8 +9,10 @@
       "iconBackground": {
         "default": "@theme-background-accent-normal"
       },
-      "textFileName": "@theme-text-primary-disabled",
-      "textFileSize": "@theme-text-primary-disabled"
+      "label": {
+        "primary": "@theme-text-primary-disabled",
+        "secondary": "@theme-text-primary-disabled"
+      }
     }
   }
 }
