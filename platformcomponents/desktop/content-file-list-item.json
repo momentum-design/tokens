@@ -11,14 +11,11 @@
       "secondary": "@theme-text-secondary-normal",
       "disabled": "@theme-text-primary-disabled"
     },
-    "#normal": {
-      "background": "@theme-background-secondary-normal"
-    },
-    "#hovered": {
-      "background": "@theme-background-secondary-hover"
-    },
-    "#disabled": {
-      "background": "@theme-background-primary-disabled"
+    "background": {
+      "#normal": "@theme-background-secondary-normal",
+      "#hovered": "@theme-background-secondary-hover",
+      "#disabled": "@theme-background-primary-disabled",
+      "#active": "@theme-background-secondary-active"
     }
   }
 }
