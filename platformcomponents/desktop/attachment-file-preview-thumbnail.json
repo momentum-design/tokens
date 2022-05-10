@@ -1,7 +1,7 @@
 {
   "attachment-file-preview-thumbnail": {
     "sent": {
-      "comment": "Applied to file attachments",
+      "comment": "Applied to file attachment preview thumbnail",
       "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=49674%3A114116",
       "border": "@theme-outline-secondary-normal",
       "overlay": "@theme-common-overlay-primary",
