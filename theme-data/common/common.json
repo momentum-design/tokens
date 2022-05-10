@@ -4,7 +4,7 @@
       "text": {
         "white": "@color-white-alpha-95",
         "black": "@color-black-alpha-95",
-        "gray": "@color-gray-70",
+        "gray": "@color-white-alpha-70",
         "disabled": "@color-white-alpha-40",
         "success": "@color-green-40",
         "error": "@color-red-40",
