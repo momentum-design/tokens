@@ -10,11 +10,11 @@
       },
       "textFileName": "@theme-text-primary-normal",
       "textFileSize": "@theme-text-secondary-normal",
-      "#normal": {
-        "background": "@theme-background-secondary-normal"
-      },
-      "#hovered": {
-        "background": "@theme-background-secondary-hover"
+      "background": {
+        "#normal": "@theme-background-secondary-normal",
+        "#hovered": "@theme-background-secondary-hover",
+        "#active": "@theme-background-secondary-active",
+        "#focused": "@theme-background-secondary-normal"
       }
     }
   }
