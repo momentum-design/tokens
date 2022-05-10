@@ -6,20 +6,19 @@
     "iconBackground": {
       "default": "@theme-background-accent-normal"
     },
+    "label": {
+      "primary": "@theme-text-primary-normal",
+      "secondary": "@theme-text-secondary-normal",
+      "disabled": "@theme-text-primary-disabled"
+    },
     "#normal": {
-      "background": "@theme-background-secondary-normal",
-      "textFileName": "@theme-text-primary-normal",
-      "textFileSize": "@theme-text-secondary-normal"
+      "background": "@theme-background-secondary-normal"
     },
     "#hovered": {
-      "background": "@theme-background-secondary-hover",
-      "textFileName": "@theme-text-primary-normal",
-      "textFileSize": "@theme-text-secondary-normal"
+      "background": "@theme-background-secondary-hover"
     },
     "#disabled": {
-      "background": "@theme-background-primary-disabled",
-      "textFileName": "@theme-text-primary-disabled",
-      "textFileSize": "@theme-text-primary-disabled"
+      "background": "@theme-background-primary-disabled"
     }
   }
 }
