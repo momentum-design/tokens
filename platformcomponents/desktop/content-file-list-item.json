@@ -14,7 +14,7 @@
     "background": {
       "#normal": "@theme-background-secondary-normal",
       "#hovered": "@theme-background-secondary-hover",
-      "#disabled": "@theme-background-primary-disabled",
+      "#disabled": "@theme-background-secondary-normal",
       "#active": "@theme-background-secondary-active"
     }
   }
