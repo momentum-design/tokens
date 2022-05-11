@@ -14,8 +14,9 @@
         "background": "@theme-background-accent-normal"
       },
       "label": {
-        "primary": "@theme-text-primary-disabled",
-        "secondary": "@theme-text-primary-disabled"
+        "primary": "@theme-text-primary-normal",
+        "secondary": "@theme-text-secondary-normal",
+        "disabled": "@theme-text-primary-disabled"
       }
     }
   }
