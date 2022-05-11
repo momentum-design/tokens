@@ -8,12 +8,12 @@
       "background": "@theme-background-accent-normal"
     },
     "overlay": {
-      "background": "@theme-common-overlay-primary",
-      "label": {
-        "primary": "@theme-text-primary-normal",
-        "secondary": "@theme-text-secondary-normal",
-        "disabled": "@theme-text-primary-disabled"
-      }
+      "background": "@theme-common-overlay-primary"
+    },
+    "label": {
+      "primary": "@theme-text-primary-normal",
+      "secondary": "@theme-text-secondary-normal",
+      "disabled": "@theme-text-primary-disabled"
     }
   }
 }
