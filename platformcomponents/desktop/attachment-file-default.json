@@ -1,0 +1,23 @@
+{
+  "attachment-file-default": {
+    "sent": {
+      "comment": "Applied to sent & safe file attachments",
+      "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=5428%3A29",
+      "border": "@theme-outline-secondary-normal",
+      "previewBox": {
+        "icon": "@theme-common-text-white",
+        "background": "@theme-background-accent-normal"
+      },
+      "label": {
+        "primary": "@theme-text-primary-normal",
+        "secondary": "@theme-text-secondary-normal"
+      },
+      "background": {
+        "#normal": "@theme-background-secondary-normal",
+        "#hovered": "@theme-background-secondary-hover",
+        "#active": "@theme-background-secondary-active",
+        "#focused": "@theme-background-secondary-normal"
+      }
+    }
+  }
+}
