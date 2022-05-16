@@ -11,9 +11,40 @@
         "text": "@theme-text-secondary-normal"
       }
     },
+    "bodyText-hyperlink": {
+      "#normal": {
+        "text": "@theme-text-accent-normal"
+      }
+    },
+    "bodyText-mentionSelf": {
+      "#normal": {
+        "text": "@theme-text-accent-normal"
+      }
+    },
+    "bodyText-mentionOther": {
+      "#normal": {
+        "text": "@theme-text-secondary-normal"
+      }
+    },
+    "bodyText-mentionAll": {
+      "#normal": {
+        "text": "@theme-text-accent-normal"
+      }
+    },
     "extParticipants": {
       "#normal": {
         "text": "@theme-text-warning-normal"
+      }
+    },
+    "banner": {
+      "#normal": {
+        "text": "@theme-text-accent-normal"
+      }
+    },
+    "newReplyIndicator": {
+      "#normal": {
+        "text": "@theme-text-accent-normal",
+        "background": "@theme-text-inverted-normal"
       }
     }
   }
