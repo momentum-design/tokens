@@ -41,7 +41,7 @@
         "text": "@theme-text-accent-normal"
       }
     },
-    "newReplyIndicator": {
+    "newReplyBanner": {
       "#normal": {
         "text": "@theme-text-accent-normal",
         "background": "@theme-text-inverted-normal"
