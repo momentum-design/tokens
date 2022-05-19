@@ -1,6 +1,7 @@
 {
   "message": {
-    "comment": "Color tokens for the space list",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=5712%3A57",
+    "comment": "Color tokens for a conversation space",
     "bodyText-primary": {
       "#normal": {
         "text": "@theme-text-primary-normal"
@@ -43,8 +44,8 @@
     },
     "newReplyBanner": {
       "#normal": {
-        "text": "@theme-text-accent-normal",
-        "background": "@theme-text-inverted-normal"
+        "text": "@theme-text-inverted-normal",
+        "background": "@theme-text-accent-normal"
       }
     }
   }
