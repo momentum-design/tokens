@@ -1,0 +1,17 @@
+{
+  "chat-new-message": {
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=41682%3A109556",
+    "comment": "Color tokens for chat new message banners and buttons",
+    "newMessageBanner": {
+      "#normal": {
+        "text": "@theme-text-accent-normal"
+      }
+    },
+    "newReplyBanner": {
+      "#normal": {
+        "text": "@theme-text-inverted-normal",
+        "background": "@theme-text-accent-normal"
+      }
+    }
+  }
+}
