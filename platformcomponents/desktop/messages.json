@@ -21,13 +21,13 @@
       "#normal": {
         "text": "@theme-text-accent-normal"
       },
-      "#hover": {
+      "#hovered": {
         "text": "@theme-text-accent-hover"
       },
       "#active": {
         "text": "@theme-text-accent-active"
       },
-      "#focus": {
+      "#focused": {
         "text": "@theme-text-accent-normal"
       }
     },
@@ -35,13 +35,13 @@
       "#normal": {
         "text": "@theme-text-secondary-normal"
       },
-      "#hover": {
+      "#hovered": {
         "text": "@theme-text-primary-normal"
       },
       "#active": {
         "text": "@theme-text-primary-normal"
       },
-      "#focus": {
+      "#focused": {
         "text": "@theme-text-secondary-normal"
       }
     },
@@ -49,13 +49,13 @@
       "#normal": {
         "text": "@theme-text-accent-normal"
       },
-      "#hover": {
+      "#hovered": {
         "text": "@theme-text-accent-hover"
       },
       "#active": {
         "text": "@theme-text-accent-active"
       },
-      "#focus": {
+      "#focused": {
         "text": "@theme-text-accent-normal"
       }
     },
@@ -63,13 +63,13 @@
       "#normal": {
         "text": "@theme-text-warning-normal"
       },
-      "#hover": {
+      "#hovered": {
         "text": "@theme-text-warning-hover"
       },
       "#active": {
         "text": "@theme-text-warning-active"
       },
-      "#focus": {
+      "#focused": {
         "text": "@theme-text-warning-normal"
       }
     }
