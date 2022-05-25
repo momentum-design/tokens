@@ -2,56 +2,58 @@
   "message": {
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=5712%3A57",
     "comment": "Color tokens for a conversation space",
-    "bodyText-primary": {
-      "#normal": {
-        "text": "@theme-text-primary-normal"
-      }
-    },
-    "bodyText-secondary": {
-      "#normal": {
-        "text": "@theme-text-secondary-normal"
-      }
-    },
-    "bodyText-mentionSelf": {
-      "#normal": {
-        "text": "@theme-text-accent-normal"
+    "bodyText": {
+      "primary": {
+        "#normal": {
+          "text": "@theme-text-primary-normal"
+        }
       },
-      "#hovered": {
-        "text": "@theme-text-accent-hover"
+      "secondary": {
+        "#normal": {
+          "text": "@theme-text-secondary-normal"
+        }
       },
-      "#active": {
-        "text": "@theme-text-accent-active"
+      "mentionSelf": {
+        "#normal": {
+          "text": "@theme-text-accent-normal"
+        },
+        "#hovered": {
+          "text": "@theme-text-accent-hover"
+        },
+        "#active": {
+          "text": "@theme-text-accent-active"
+        },
+        "#focused": {
+          "text": "@theme-text-accent-normal"
+        }
       },
-      "#focused": {
-        "text": "@theme-text-accent-normal"
-      }
-    },
-    "bodyText-mentionOther": {
-      "#normal": {
-        "text": "@theme-text-secondary-normal"
+      "mentionOther": {
+        "#normal": {
+          "text": "@theme-text-secondary-normal"
+        },
+        "#hovered": {
+          "text": "@theme-text-primary-normal"
+        },
+        "#active": {
+          "text": "@theme-text-primary-normal"
+        },
+        "#focused": {
+          "text": "@theme-text-secondary-normal"
+        }
       },
-      "#hovered": {
-        "text": "@theme-text-primary-normal"
-      },
-      "#active": {
-        "text": "@theme-text-primary-normal"
-      },
-      "#focused": {
-        "text": "@theme-text-secondary-normal"
-      }
-    },
-    "bodyText-mentionAll": {
-      "#normal": {
-        "text": "@theme-text-accent-normal"
-      },
-      "#hovered": {
-        "text": "@theme-text-accent-hover"
-      },
-      "#active": {
-        "text": "@theme-text-accent-active"
-      },
-      "#focused": {
-        "text": "@theme-text-accent-normal"
+      "mentionAll": {
+        "#normal": {
+          "text": "@theme-text-accent-normal"
+        },
+        "#hovered": {
+          "text": "@theme-text-accent-hover"
+        },
+        "#active": {
+          "text": "@theme-text-accent-active"
+        },
+        "#focused": {
+          "text": "@theme-text-accent-normal"
+        }
       }
     },
     "extParticipants": {
