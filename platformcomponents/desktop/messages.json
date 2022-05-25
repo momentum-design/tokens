@@ -20,20 +20,56 @@
     "bodyText-mentionSelf": {
       "#normal": {
         "text": "@theme-text-accent-normal"
+      },
+      "#hover": {
+        "text": "@theme-text-accent-hover"
+      },
+      "#active": {
+        "text": "@theme-text-accent-active"
+      },
+      "#focus": {
+        "text": "@theme-text-accent-normal"
       }
     },
     "bodyText-mentionOther": {
       "#normal": {
+        "text": "@theme-text-secondary-normal"
+      },
+      "#hover": {
+        "text": "@theme-text-primary-normal"
+      },
+      "#active": {
+        "text": "@theme-text-primary-normal"
+      },
+      "#focus": {
         "text": "@theme-text-secondary-normal"
       }
     },
     "bodyText-mentionAll": {
       "#normal": {
         "text": "@theme-text-accent-normal"
+      },
+      "#hover": {
+        "text": "@theme-text-accent-hover"
+      },
+      "#active": {
+        "text": "@theme-text-accent-active"
+      },
+      "#focus": {
+        "text": "@theme-text-accent-normal"
       }
     },
     "extParticipants": {
       "#normal": {
+        "text": "@theme-text-warning-normal"
+      },
+      "#hover": {
+        "text": "@theme-text-warning-hover"
+      },
+      "#active": {
+        "text": "@theme-text-warning-active"
+      },
+      "#focus": {
         "text": "@theme-text-warning-normal"
       }
     },
