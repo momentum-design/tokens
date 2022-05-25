@@ -72,17 +72,6 @@
       "#focus": {
         "text": "@theme-text-warning-normal"
       }
-    },
-    "banner": {
-      "#normal": {
-        "text": "@theme-text-accent-normal"
-      }
-    },
-    "newReplyBanner": {
-      "#normal": {
-        "text": "@theme-text-inverted-normal",
-        "background": "@theme-text-accent-normal"
-      }
     }
   }
 }
