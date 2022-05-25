@@ -13,61 +13,64 @@
           "text": "@theme-text-secondary-normal"
         }
       },
-      "mentionSelf": {
-        "#normal": {
-          "text": "@theme-text-accent-normal"
+      "mention": {
+        "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=51739%3A120562",
+        "self": {
+          "#normal": {
+            "text": "@theme-text-accent-normal"
+          },
+          "#hovered": {
+            "text": "@theme-text-accent-hover"
+          },
+          "#active": {
+            "text": "@theme-text-accent-active"
+          },
+          "#focused": {
+            "text": "@theme-text-accent-normal"
+          }
         },
-        "#hovered": {
-          "text": "@theme-text-accent-hover"
+        "other": {
+          "#normal": {
+            "text": "@theme-text-secondary-normal"
+          },
+          "#hovered": {
+            "text": "@theme-text-primary-normal"
+          },
+          "#active": {
+            "text": "@theme-text-primary-normal"
+          },
+          "#focused": {
+            "text": "@theme-text-secondary-normal"
+          }
         },
-        "#active": {
-          "text": "@theme-text-accent-active"
-        },
-        "#focused": {
-          "text": "@theme-text-accent-normal"
+        "all": {
+          "#normal": {
+            "text": "@theme-text-accent-normal"
+          },
+          "#hovered": {
+            "text": "@theme-text-accent-hover"
+          },
+          "#active": {
+            "text": "@theme-text-accent-active"
+          },
+          "#focused": {
+            "text": "@theme-text-accent-normal"
+          }
         }
       },
-      "mentionOther": {
+      "extParticipants": {
         "#normal": {
-          "text": "@theme-text-secondary-normal"
+          "text": "@theme-text-warning-normal"
         },
         "#hovered": {
-          "text": "@theme-text-primary-normal"
+          "text": "@theme-text-warning-hover"
         },
         "#active": {
-          "text": "@theme-text-primary-normal"
+          "text": "@theme-text-warning-active"
         },
         "#focused": {
-          "text": "@theme-text-secondary-normal"
+          "text": "@theme-text-warning-normal"
         }
-      },
-      "mentionAll": {
-        "#normal": {
-          "text": "@theme-text-accent-normal"
-        },
-        "#hovered": {
-          "text": "@theme-text-accent-hover"
-        },
-        "#active": {
-          "text": "@theme-text-accent-active"
-        },
-        "#focused": {
-          "text": "@theme-text-accent-normal"
-        }
-      }
-    },
-    "extParticipants": {
-      "#normal": {
-        "text": "@theme-text-warning-normal"
-      },
-      "#hovered": {
-        "text": "@theme-text-warning-hover"
-      },
-      "#active": {
-        "text": "@theme-text-warning-active"
-      },
-      "#focused": {
-        "text": "@theme-text-warning-normal"
       }
     }
   }
