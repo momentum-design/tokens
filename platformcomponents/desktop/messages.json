@@ -12,11 +12,6 @@
         "text": "@theme-text-secondary-normal"
       }
     },
-    "bodyText-hyperlink": {
-      "#normal": {
-        "text": "@theme-text-accent-normal"
-      }
-    },
     "bodyText-mentionSelf": {
       "#normal": {
         "text": "@theme-text-accent-normal"
