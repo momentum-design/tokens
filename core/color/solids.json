@@ -1,24 +1,14 @@
 {
   "color": {
-    "solid": {
-      "jade": {
+    "solids": {
+      "bronze": {
         "light": {
-          "primary": "#E6F2F1",
-          "secondary": "#F7FCFC"
+          "primary": "#F5EFE4",
+          "secondary": "#FCFAF4"
         },
         "dark": {
-          "primary": "#021412",
-          "secondary": "#05201C"
-        }
-      },
-      "rose": {
-        "light": {
-          "primary": "#FCEBF5",
-          "secondary": "#FFF9FD"
-        },
-        "dark": {
-          "primary": "#1F0615",
-          "secondary": "#30041E"
+          "primary": "#171002",
+          "secondary": "#231807"
         }
       },
       "lavender": {
@@ -31,6 +21,26 @@
           "secondary": "#27163B"
         }
       },
+      "rose": {
+        "light": {
+          "primary": "#FCEBF5",
+          "secondary": "#FFF9FD"
+        },
+        "dark": {
+          "primary": "#1F0615",
+          "secondary": "#30041E"
+        }
+      },
+      "jade": {
+        "light": {
+          "primary": "#E6F2F1",
+          "secondary": "#F7FCFC"
+        },
+        "dark": {
+          "primary": "#021412",
+          "secondary": "#05201C"
+        }
+      },
       "indigo": {
         "light": {
           "primary": "#EBEFFC",
@@ -41,16 +51,6 @@
           "secondary": "#13182B"
         }
       },
-      "bronze": {
-        "light": {
-          "primary": "#F5EFE4",
-          "secondary": "#FCFAF4"
-        },
-        "dark": {
-          "primary": "#171002",
-          "secondary": "#231807"
-        }
-      },
       "default": {
         "light": {
           "primary": "#F7F7F7",
@@ -58,7 +58,7 @@
         },
         "dark": {
           "primary": "#000000",
-          "secondary": "#1A1A1A"
+          "secondary": "#191919"
         }
       }
     }
