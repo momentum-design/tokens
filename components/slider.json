@@ -1,0 +1,15 @@
+{
+    "slider": {
+        "comment": "",
+        "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=3153%3A1415",
+        "track": {
+            "fill": "@theme-control-active-normal",
+            "empty": "@theme-outline-button-normal"
+        },
+        "knob": {
+            "border": "@theme-outline-primary-normal",
+            "colour": "@theme-background-solid-tertiary-normal"
+        }
+    }
+}
+      
