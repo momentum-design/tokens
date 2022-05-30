@@ -61,11 +61,6 @@
           "hover": "@color-cobalt-80",
           "active": "@color-cobalt-70"
         },
-        "gold": {
-          "normal": "@color-gold-90",
-          "hover": "@color-gold-80",
-          "active": "@color-gold-70"
-        },
         "lime": {
           "normal": "@color-lime-90",
           "hover": "@color-lime-80",
@@ -76,21 +71,6 @@
           "hover": "@color-mint-80",
           "active": "@color-mint-70"
         },
-        "orange": {
-          "normal": "@color-orange-90",
-          "hover": "@color-orange-80",
-          "active": "@color-orange-70"
-        },
-        "pink": {
-          "normal": "@color-pink-90",
-          "hover": "@color-pink-80",
-          "active": "@color-pink-70"
-        },
-        "purple": {
-          "normal": "@color-purple-90",
-          "hover": "@color-purple-80",
-          "active": "@color-purple-70"
-        },
         "slate": {
           "normal": "@color-slate-90",
           "hover": "@color-slate-80",
@@ -100,42 +80,51 @@
           "normal": "@color-violet-90",
           "hover": "@color-violet-80",
           "active": "@color-violet-70"
+        },
+        "purple": {
+          "normal": "@color-purple-90",
+          "hover": "@color-purple-80",
+          "active": "@color-purple-70"
+        },
+        "orange": {
+          "normal": "@color-orange-90",
+          "hover": "@color-orange-80",
+          "active": "@color-orange-70"
+        },
+        "gold": {
+          "normal": "@color-gold-90",
+          "hover": "@color-gold-80",
+          "active": "@color-gold-70"
+        },
+        "pink": {
+          "hover": "@color-pink-80",
+          "normal": "@color-pink-90",
+          "active": "@color-pink-70"
         }
       },
       "common": {
         "normal": "@color-white-alpha-100"
       },
+      "name": {
+        "label": {
+          "normal": "@color-black-alpha-50"
+        }
+      },
       "namelabel": {
         "normal": "@color-black-alpha-50"
-      }
-    },
-    "gradientdivider": {
-      "normal": ["@color-white-alpha-00", "@color-white-alpha-20"],
-      "hover": ["@color-white-alpha-00", "@color-white-alpha-60"],
-      "error": {
-        "normal": ["@color-red-40*0", "@color-red-40*0.6"],
-        "hover": ["@color-red-40*0", "@color-red-40*0.9"]
-      },
-      "warning": {
-        "normal": ["@color-yellow-40*0", "@color-yellow-40*0.6"],
-        "hover": ["@color-yellow-40*0", "@color-yellow-40*0.9"]
-      },
-      "announce": {
-        "normal": ["@color-blue-40*0", "@color-blue-40*0.6"],
-        "hover": ["@color-blue-40*0", "@color-blue-40*0.9"]
       }
     },
     "outline": {
       "label": {
         "cobalt": "@color-cobalt-40",
-        "gold": "@color-gold-40",
         "lime": "@color-lime-40",
         "mint": "@color-mint-40",
-        "orange": "@color-orange-40",
-        "pink": "@color-pink-40",
-        "purple": "@color-purple-40",
         "slate": "@color-slate-40",
-        "violet": "@color-violet-40"
+        "violet": "@color-violet-40",
+        "purple": "@color-purple-40",
+        "orange": "@color-orange-40",
+        "gold": "@color-gold-40",
+        "pink": "@color-pink-40"
       }
     },
     "avatar": {
@@ -150,6 +139,62 @@
       "purple": "@color-purple-70",
       "slate": "@color-slate-70",
       "violet": "@color-violet-70"
+    },
+    "gradientdivider": {
+      "normal": [
+        "@color-white-alpha-00",
+        "@color-white-alpha-20",
+        "@color-white-alpha-20",
+        "@color-white-alpha-00"
+      ],
+      "hover": [
+        "@color-white-alpha-00",
+        "@color-white-alpha-60",
+        "@color-white-alpha-60",
+        "@color-white-alpha-00"
+      ],
+      "error": {
+        "normal": [
+          "rgba(252, 139, 152, 0)",
+          "rgba(252, 139, 152, 0.6)",
+          "rgba(252, 139, 152, 0.6)",
+          "rgba(252, 139, 152, 0)"
+        ],
+        "hover": [
+          "rgba(252, 139, 152, 0)",
+          "rgba(252, 139, 152, 0.9)",
+          "rgba(252, 139, 152, 0.9)",
+          "rgba(252, 139, 152, 0)"
+        ]
+      },
+      "warning": {
+        "normal": [
+          "rgba(242, 153, 10, 0)",
+          "rgba(242, 153, 10, 0.6)",
+          "rgba(242, 153, 10, 0.6)",
+          "rgba(242, 153, 10, 0)"
+        ],
+        "hover": [
+          "rgba(242, 153, 10, 0)",
+          "rgba(242, 153, 10, 0.9)",
+          "rgba(242, 153, 10, 0.9)",
+          "rgba(242, 153, 10, 0)"
+        ]
+      },
+      "announce": {
+        "normal": [
+          "rgba(100, 180, 250, 0)",
+          "rgba(100, 180, 250, 0.6)",
+          "rgba(100, 180, 250, 0.6)",
+          "rgba(100, 180, 250, 0)"
+        ],
+        "hover": [
+          "rgba(100, 180, 250, 0)",
+          "rgba(100, 180, 250, 0.9)",
+          "rgba(100, 180, 250, 0.9)",
+          "rgba(100, 180, 250, 0)"
+        ]
+      }
     }
   }
 }
