@@ -3,13 +3,11 @@
     "common": {
       "text": {
         "white": "@color-white-alpha-95",
-        "gray": "@color-white-alpha-70",
         "black": "@color-black-alpha-95",
+        "gray": "@color-white-alpha-70",
         "disabled": "@color-white-alpha-40",
         "success": "@color-green-40",
-        "success-hover": "@color-green-20",
         "error": "@color-red-40",
-        "error-hover": "@color-red-20",
         "secondary-light": "@color-white-alpha-70",
         "secondary-dark": "@color-black-alpha-60"
       },
@@ -21,37 +19,23 @@
           "normal": "@color-black-alpha-40"
         }
       },
-      "control": {
-        "share": {
-          "content": {
-            "active": "@color-orange-60",
-            "inactive": "@color-gray-60",
-            "selected": "@color-green-40"
-          }
-        },
-        "shareContent": {
-          "active": "@color-orange-60",
-          "inactive": "@color-gray-60",
-          "selected": "@color-green-40"
-        }
-      },
       "button": {
         "primary": {
           "normal": "@color-white-alpha-95",
           "hover": "@color-white-alpha-80",
-          "pressed": "@color-white-alpha-70",
+          "pressed": "@color-white-alpha-20",
           "disabled": "@color-white-alpha-20"
         },
         "secondary": {
           "normal": "@color-white-alpha-00",
           "hover": "@color-white-alpha-07",
+          "pressed": "@color-white-alpha-20",
+          "disabled": "@color-white-alpha-00",
           "active": {
             "normal": "@color-white-alpha-20",
             "hover": "@color-white-alpha-30",
             "pressed": "@color-white-alpha-40"
-          },
-          "disabled": "@color-white-alpha-00",
-          "pressed": "@color-white-alpha-20"
+          }
         },
         "secondary-dark": {
           "normal": "@color-black-alpha-00",
@@ -60,10 +44,7 @@
           "disabled": "@color-black-alpha-00"
         },
         "join-animated-gradient": {
-          "normal": [
-            "@color-mint-40",
-            "@color-blue-40"
-          ]
+          "normal": ["@color-mint-40", "@color-blue-40"]
         }
       },
       "outline": {
@@ -76,14 +57,18 @@
         "disabled": {
           "normal": "@color-white-alpha-20"
         },
-        "primary": {
-          "normal": "@color-white-alpha-40"
-        },
         "closed-caption": {
           "secondary": {
             "light": "@color-white-alpha-20",
             "dark": "@color-black-alpha-20"
           }
+        }
+      },
+      "control": {
+        "shareContent": {
+          "active": "@color-orange-60",
+          "inactive": "@color-gray-60",
+          "selected": "@color-green-40"
         }
       },
       "background": {

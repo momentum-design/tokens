@@ -3,134 +3,62 @@
     "gradation": {
       "webex": {
         "light": {
-          "primary": [
-            "rgba(240, 240, 240, 1)",
-            "rgba(255, 255, 255, 1)"
-          ],
-          "secondary": [
-            "rgba(250, 250, 250, 1)",
-            "rgba(255, 255, 255, 1)"
-          ]
+          "primary": ["#F0F0F0", "#FFFFFF"],
+          "secondary": ["#FAFAFA", "#FFFFFF"]
         },
         "dark": {
-          "primary": [
-            "rgba(26, 26, 26, 1)",
-            "rgba(15, 15, 15, 1)"
-          ],
-          "secondary": [
-            "rgba(38, 38, 38, 1)",
-            "rgba(15, 15, 15, 1)"
-          ]
-        }
-      },
-      "indigo": {
-        "light": {
-          "primary": [
-            "rgba(235, 239, 252, 1)",
-            "rgba(255, 255, 255, 1)"
-          ],
-          "secondary": [
-            "rgba(247, 249, 255, 1)",
-            "rgba(255, 255, 255, 1)"
-          ]
-        },
-        "dark": {
-          "primary": [
-            "rgba(19, 24, 43, 1)",
-            "rgba(14, 17, 26, 1)"
-          ],
-          "secondary": [
-            "rgba(33, 37, 54, 1)",
-            "rgba(14, 17, 26, 1)"
-          ]
+          "primary": ["#1A1A1A", "#0F0F0F"],
+          "secondary": ["#262626", "#0F0F0F"]
         }
       },
       "jade": {
         "light": {
-          "primary": [
-            "rgba(230, 242, 241, 1)",
-            "rgba(255, 255, 255, 1)"
-          ],
-          "secondary": [
-            "rgba(247, 252, 252, 1)",
-            "rgba(255, 255, 255, 1)"
-          ]
+          "primary": ["#E6F2F1", "#FFFFFF"],
+          "secondary": ["#F7FCFC", "#FFFFFF"]
         },
         "dark": {
-          "primary": [
-            "rgba(0, 28, 24, 1)",
-            "rgba(2, 20, 18, 1)"
-          ],
-          "secondary": [
-            "rgba(18, 41, 37, 1)",
-            "rgba(2, 20, 18, 1)"
-          ]
-        }
-      },
-      "bronze": {
-        "light": {
-          "primary": [
-            "rgba(245, 239, 228, 1)",
-            "rgba(255, 255, 255, 1)"
-          ],
-          "secondary": [
-            "rgba(252, 250, 244, 1)",
-            "rgba(255, 255, 255, 1)"
-          ]
-        },
-        "dark": {
-          "primary": [
-            "rgba(31, 20, 2, 1)",
-            "rgba(23, 16, 2, 1)"
-          ],
-          "secondary": [
-            "rgba(46, 37, 21, 1)",
-            "rgba(23, 16, 2, 1)"
-          ]
+          "primary": ["#001C18", "#021412"],
+          "secondary": ["#122925", "#021412"]
         }
       },
       "rose": {
         "light": {
-          "primary": [
-            "rgba(252, 235, 245, 1)",
-            "rgba(255, 255, 255, 1)"
-          ],
-          "secondary": [
-            "rgba(255, 249, 253, 1)",
-            "rgba(255, 255, 255, 1)"
-          ]
+          "primary": ["#FCEBF5", "#FFFFFF"],
+          "secondary": ["#FFF9FD", "#FFFFFF"]
         },
         "dark": {
-          "primary": [
-            "rgba(48, 4, 30, 1)",
-            "rgba(31, 6, 21, 1)"
-          ],
-          "secondary": [
-            "rgba(64, 22, 46, 1)",
-            "rgba(31, 6, 21, 1)"
-          ]
+          "primary": ["#30041E", "#1F0615"],
+          "secondary": ["#40162E", "#1F0615"]
+        }
+      },
+      "indigo": {
+        "light": {
+          "primary": ["#EBEFFC", "#FFFFFF"],
+          "secondary": ["#F7F9FF", "#FFFFFF"]
+        },
+        "dark": {
+          "primary": ["#13182B", "#0E111A"],
+          "secondary": ["#212536", "#0E111A"]
+        }
+      },
+      "bronze": {
+        "light": {
+          "primary": ["#F5EFE4", "#FFFFFF"],
+          "secondary": ["#FCFAF4", "#FFFFFF"]
+        },
+        "dark": {
+          "primary": ["#1F1402", "#171002"],
+          "secondary": ["#2E2515", "#171002"]
         }
       },
       "lavender": {
         "light": {
-          "primary": [
-            "rgba(244, 235, 255, 1)",
-            "rgba(255, 255, 255, 1)"
-          ],
-          "secondary": [
-            "rgba(251, 247, 255, 1)",
-            "rgba(255, 255, 255, 1)"
-          ]
+          "primary": ["#F4EBFF", "#FFFFFF"],
+          "secondary": ["#FBF7FF", "#FFFFFF"]
         },
         "dark": {
-          "primary": [
-            "rgba(35, 18, 55, 1)",
-            "rgba(24, 8, 43, 1)"
-          ],
-          "secondary": [
-            "rgba(48, 26, 74, 1)",
-            "rgba(24, 8, 43, 1)"
-          ]
+          "primary": ["#231237", "#18082B"],
+          "secondary": ["#301A4A", "#18082B"]
         }
       }
     }
