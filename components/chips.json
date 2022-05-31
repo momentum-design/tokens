@@ -1,0 +1,58 @@
+{
+  "chips": {
+    "comment": "Applied to Chips",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=44750%3A103138",
+    "backgound":{
+      "gold":{
+        "normal": "@theme-chips-background-gold-normal",
+        "hovered": "@theme-chips-background-gold-hover",
+        "pressed": "@theme-chips-background-gold-active"
+      },
+      "orange":{
+        "normal": "@theme-chips-background-orange-normal",
+        "hovered": "@theme-chips-background-orange-hover",
+        "pressed": "@theme-chips-background-orange-active"
+      },
+      "lime":{
+        "normal": "@theme-chips-background-lime-normal",
+        "hovered": "@theme-chips-background-lime-hover",
+        "pressed": "@theme-chips-background-lime-active"
+      },
+      "mint":{
+        "normal": "@theme-chips-background-mint-normal",
+        "hovered": "@theme-chips-background-mint-hover",
+        "pressed": "@theme-chips-background-mint-active"
+      },
+      "cyan":{
+        "normal": "@theme-chips-background-cyan-normal",
+        "hovered": "@theme-chips-background-cyan-hover",
+        "pressed": "@theme-chips-background-cyan-active"
+      },
+      "cobalt":{
+        "normal": "@theme-chips-background-cobalt-normal",
+        "hovered": "@theme-chips-background-cobalt-hover",
+        "pressed": "@theme-chips-background-cobalt-active"
+      },
+      "slate":{
+        "normal": "@theme-chips-background-slate-normal",
+        "hovered": "@theme-chips-background-slate-hover",
+        "pressed": "@theme-chips-background-slate-active"
+      },
+      "violet":{
+        "normal": "@theme-chips-background-violet-normal",
+        "hovered": "@theme-chips-background-violet-hover",
+        "pressed": "@theme-chips-background-violet-active"
+      },
+      "purple":{
+        "normal": "@theme-chips-background-purple-normal",
+        "hovered": "@theme-chips-background-purple-hover",
+        "pressed": "@theme-chips-background-purple-active"
+      },
+      "pink":{
+        "normal": "@theme-chips-background-pink-normal",
+        "hovered": "@theme-chips-background-pink-hover",
+        "pressed": "@theme-chips-background-pink-active"
+      }
+    }
+  }
+}
