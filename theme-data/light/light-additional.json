@@ -159,7 +159,7 @@
           "active": "@color-cobalt"
         },
         "cyan": {
-          "normal": "@color-cyna-60",
+          "normal": "@color-cyan-60",
           "hover": "@color-cyan-70",
           "active": "@color-cyan-80"
         },
