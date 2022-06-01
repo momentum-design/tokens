@@ -154,9 +154,9 @@
     "chips": {
       "background": {
         "cobalt": {
-          "normal": "@color-black-alpha-50",
+          "normal": "@color-cobalt-69",
           "hover": "@color-cobalt-70",
-          "active": "@color-cobalt"
+          "active": "@color-cobalt-80"
         },
         "cyan": {
           "normal": "@color-cyan-60",
