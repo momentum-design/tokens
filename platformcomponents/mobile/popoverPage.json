@@ -1,0 +1,12 @@
+{
+  "popoverPage": {
+    "comment": "Applied to popover pages like the ones appearing next to sliderScrollbar",
+    "figma": "https://www.figma.com/file/L67wWWZaXcvVOLEpn77adE/Components---iOS?node-id=17907%3A154840",
+    "background": {
+      "#normal": ""
+    },
+    "border": {
+      "#normal": ""
+    }
+  }
+}
