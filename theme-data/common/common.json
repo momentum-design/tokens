@@ -76,6 +76,60 @@
           "secondary-dark": "@color-gray-95",
           "primary-light": "@color-white-alpha-100"
         }
+      },
+      "chips": {
+        "background": {
+          "cobalt": {
+            "normal": "@color-cobalt-60",
+            "hover": "@color-cobalt-70",
+            "pressed": "@color-cobalt-80"
+          },
+          "cyan": {
+            "normal": "@color-cyan-60",
+            "hover": "@color-cyan-70",
+            "pressed": "@color-cyan-80"
+          },
+          "gold": {
+            "normal": "@color-gold-60",
+            "hover": "@color-gold-70",
+            "pressed": "@color-gold-80"
+          },
+          "lime": {
+            "normal": "@color-lime-60",
+            "hover": "@color-lime-70",
+            "pressed": "@color-lime-80"
+          },
+          "mint": {
+            "normal": "@color-mint-60",
+            "hover": "@color-mint-70",
+            "pressed": "@color-mint-80"
+          },
+          "orange": {
+            "normal": "@color-orange-60",
+            "hover": "@color-orange-70",
+            "pressed": "@color-orange-80"
+          },
+          "pink": {
+            "normal": "@color-pink-60",
+            "hover": "@color-pink-70",
+            "pressed": "@color-pink-80"
+          },
+          "purple": {
+            "normal": "@color-purple-60",
+            "hover": "@color-purple-70",
+            "pressed": "@color-purple-80"
+          },
+          "slate": {
+            "normal": "@color-slate-60",
+            "hover": "@color-slate-70",
+            "pressed": "@color-slate-80"
+          },
+          "violet": {
+            "normal": "@color-violet-60",
+            "hover": "@color-violet-70",
+            "pressed": "@color-violet-80"
+          }
+        }
       }
     }
   }
