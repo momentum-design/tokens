@@ -21,6 +21,25 @@
         "text": "@theme-text-primary-disabled"
       }
     },
+    "primaryDark": {
+      "#normal": {
+        "background": "@theme-button-primary-normal",
+        "text": "@theme-text-inverted-normal",
+        "border": "@theme-button-border-normal"
+        },
+        "#hovered": {
+          "background": "@theme-button-primary-hover",
+          "text": "@theme-text-inverted-normal"
+        },
+        "#pressed": {
+          "background": "@theme-button-primary-pressed",
+          "text": "@theme-text-inverted-normal"
+        },
+        "#disabled": {
+          "background": "@theme-button-primary-disabled",
+          "text": "@theme-text-primary-disabled"
+        }
+    },
     "secondary": {
       "#normal": {
         "background": "@theme-button-secondary-normal",
