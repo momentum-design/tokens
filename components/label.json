@@ -12,6 +12,9 @@
     "secondary": {
       "#normal": {
         "text": "@theme-text-secondary-normal"
+      },
+      "#disabled": {
+        "text": "@theme-text-primary-disabled"
       }
     },
     "success": {
