@@ -87,6 +87,60 @@
           "secondary-dark": "@color-hc-SystemColorWindowTextColor",
           "primary-light": "@color-hc-SystemColorWindowTextColor"
         }
+      },
+      "chips": {
+        "background": {
+          "cobalt": {
+            "normal": "@color-hc-SystemColorHighlightColor",
+            "hover": "@color-hc-SystemColorHighlightColor",
+            "pressed": "@color-hc-SystemColorHighlightColor"
+          },
+          "cyan": {
+            "normal": "@color-hc-SystemColorHighlightColor",
+            "hover": "@color-hc-SystemColorHighlightColor",
+            "pressed": "@color-hc-SystemColorHighlightColor"
+          },
+          "gold": {
+            "normal": "@color-hc-SystemColorHighlightColor",
+            "hover": "@color-hc-SystemColorHighlightColor",
+            "pressed": "@color-hc-SystemColorHighlightColor"
+          },
+          "lime": {
+            "normal": "@color-hc-SystemColorHighlightColor",
+            "hover": "@color-hc-SystemColorHighlightColor",
+            "pressed": "@color-hc-SystemColorHighlightColor"
+          },
+          "mint": {
+            "normal": "@color-hc-SystemColorHighlightColor",
+            "hover": "@color-hc-SystemColorHighlightColor",
+            "pressed": "@color-hc-SystemColorHighlightColor"
+          },
+          "orange": {
+            "normal": "@color-hc-SystemColorHighlightColor",
+            "hover": "@color-hc-SystemColorHighlightColor",
+            "pressed": "@color-hc-SystemColorHighlightColor"
+          },
+          "pink": {
+            "normal": "@color-hc-SystemColorHighlightColor",
+            "hover": "@color-hc-SystemColorHighlightColor",
+            "pressed": "@color-hc-SystemColorHighlightColor"
+          },
+          "purple": {
+            "normal": "@color-hc-SystemColorHighlightColor",
+            "hover": "@color-hc-SystemColorHighlightColor",
+            "pressed": "@color-hc-SystemColorHighlightColor"
+          },
+          "slate": {
+            "normal": "@color-hc-SystemColorHighlightColor",
+            "hover": "@color-hc-SystemColorHighlightColor",
+            "pressed": "@color-hc-SystemColorHighlightColor"
+          },
+          "violet": {
+            "normal": "@color-hc-SystemColorHighlightColor",
+            "hover": "@color-hc-SystemColorHighlightColor",
+            "pressed": "@color-hc-SystemColorHighlightColor"
+          }
+        }
       }
     },
     "text": {
