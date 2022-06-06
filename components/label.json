@@ -2,22 +2,32 @@
   "label": {
     "comment": "Applied to non editable pieces of text.",
     "primary": {
-      "text": "@theme-text-primary-normal"
+      "#normal": {
+        "text": "@theme-text-primary-normal"
+      },
+      "#disabled": {
+        "text": "@theme-text-primary-disabled"
+      }
     },
     "secondary": {
-      "text": "@theme-text-secondary-normal"
-    },
-    "disabled": {
-      "text": "@theme-text-primary-disabled"
+      "#normal": {
+        "text": "@theme-text-secondary-normal"
+      }
     },
     "success": {
-      "text": "@theme-text-success-normal"
+      "#normal": {
+        "text": "@theme-text-success-normal"
+      }
     },
     "warning": {
-      "text": "@theme-text-warning-normal"
+      "#normal": {
+        "text": "@theme-text-warning-normal"
+      }
     },
     "error": {
-      "text": "@theme-text-error-normal"
+      "#normal": {
+        "text": "@theme-text-error-normal"
+      }
     }
   }
 }
