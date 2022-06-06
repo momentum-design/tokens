@@ -111,6 +111,28 @@
       "#pressed": {
         "background": "@theme-common-chips-background-pink-pressed"
       }
+    },
+    "multiline": {
+      "text": {
+        "green": "@theme-chips-multiline-text-green",
+        "cobalt": "@theme-chips-multiline-text-cobalt",
+        "orange": "@theme-chips-multiline-text-orange",
+        "pink": "@theme-chips-multiline-text-pink",
+        "olive": "@theme-chips-multiline-text-olive",
+        "cyan": "@theme-chips-multiline-text-cyan",
+        "purple": "@theme-chips-multiline-text-purple",
+        "violet": "@theme-chips-multiline-text-violet"
+      },
+      "outline": {
+        "green": "@theme-chips-multiline-outline-green",
+        "cobalt": "@theme-chips-multiline-outline-cobalt",
+        "orange": "@theme-chips-multiline-outline-orange",
+        "pink": "@theme-chips-multiline-outline-pink",
+        "olive": "@theme-chips-multiline-outline-olive",
+        "cyan": "@theme-chips-multiline-outline-cyan",
+        "purple": "@theme-chips-multiline-outline-purple",
+        "violet": "@theme-chips-multiline-outline-violet"
+      }
     }
   }
 }

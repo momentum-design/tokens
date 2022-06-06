@@ -308,6 +308,30 @@
           "disabled": "@color-black-alpha-40"
         }
       }
+    },
+    "chips": {
+      "multiline": {
+        "text": {
+          "green": "@theme-text-team-mint-normal",
+          "cobalt": "@theme-text-team-cobalt-normal",
+          "orange": "@theme-text-team-orange-normal",
+          "pink": "@theme-text-team-pink-normal",
+          "olive": "@theme-text-team-lime-normal",
+          "cyan": "@theme-text-team-cyan-normal",
+          "purple": "@theme-text-team-purple-normal",
+          "violet": "@theme-text-team-violet"
+        },
+        "outline": {
+          "green": "@theme-text-team-mint-normal",
+          "cobalt": "@theme-text-team-cobalt-normal",
+          "orange": "@theme-text-team-orange-normal",
+          "pink": "@theme-text-team-pink-normal",
+          "olive": "@theme-text-team-lime-normal",
+          "cyan": "@theme-text-team-cyan-normal",
+          "purple": "@theme-text-team-purple-normal",
+          "violet": "@theme-text-team-violet"
+        }
+      }
     }
   }
 }
