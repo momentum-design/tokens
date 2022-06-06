@@ -14,10 +14,6 @@
       "primary": "@theme-text-primary-normal",
       "secondary": "@theme-text-secondary-normal",
       "disabled": "@theme-text-primary-disabled"
-    },
-    "ecmBox": {
-        "label": "@theme-common-text-black",
-        "background": "@theme-background-common-normal"
     }
   }
 }
