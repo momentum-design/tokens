@@ -8,7 +8,11 @@
         },
         "knob": {
             "border": "@theme-outline-primary-normal",
-            "colour": "@theme-background-solid-tertiary-normal"
+            "background": "@theme-background-solid-tertiary-normal"
+        },
+        "container": {
+            "border": "@theme-outline-button-normal",
+            "background": "@theme-button-inverted-normal"
         }
     }
 }
