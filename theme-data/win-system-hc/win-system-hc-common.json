@@ -590,30 +590,6 @@
           "disabled": "@color-hc-SystemColorGrayTextColor"
         }
       }
-    },
-    "chips": {
-      "multiline": {
-        "text": {
-          "green": "@color-hc-SystemColorHighlightColor",
-          "cobalt": "@color-hc-SystemColorHighlightColor",
-          "orange": "@color-hc-SystemColorHighlightColor",
-          "pink": "@color-hc-SystemColorHighlightColor",
-          "olive": "@color-hc-SystemColorHighlightColor",
-          "cyan": "@color-hc-SystemColorHighlightColor",
-          "purple": "@color-hc-SystemColorHighlightColor",
-          "violet": "@color-hc-SystemColorHighlightColor"
-        },
-        "outline": {
-          "green": "@color-hc-SystemColorHighlightColor",
-          "cobalt": "@color-hc-SystemColorHighlightColor",
-          "orange": "@color-hc-SystemColorHighlightColor",
-          "pink": "@color-hc-SystemColorHighlightColor",
-          "olive": "@color-hc-SystemColorHighlightColor",
-          "cyan": "@color-hc-SystemColorHighlightColor",
-          "purple": "@color-hc-SystemColorHighlightColor",
-          "violet": "@color-hc-SystemColorHighlightColor"
-        }
-      }
     }
   }
 }
