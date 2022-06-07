@@ -35,13 +35,17 @@
         "background": "@theme-background-primary-ghost",
         "name": "@theme-text-primary-normal",
         "icon": "@theme-text-primary-normal",
-        "role": "@theme-text-secondary-normal"
+        "role": "@theme-text-secondary-normal",
+        "icon-mute": "@theme-text-error-normal",
+        "icon-unmute": "@theme-text-success-normal"
       },
       "videoOn": {
         "background": "@theme-background-namelabel-normal",
         "name": "@theme-common-text-white",
         "icon": "@theme-common-text-white",
-        "role": "@theme-text-secondary-normal"
+        "role": "@theme-text-secondary-normal",
+        "icon-mute": "@theme-text-error-normal",
+        "icon-unmute": "@theme-text-success-normal"
       }
     }
   }
