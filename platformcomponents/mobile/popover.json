@@ -1,6 +1,6 @@
 {
   "popover": {
-    "comment": "Applied to popover pages like the ones appearing next to sliderScrollbar",
+    "comment": "Applied to popovers",
     "figma": "https://www.figma.com/file/z6oi9Ku3X7rM1Wj2451B9u/Components---Android?node-id=6396%3A24990",
     "background": {
       "#normal": "@theme-background-solid-tertiary-normal"
