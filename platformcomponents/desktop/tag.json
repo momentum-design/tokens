@@ -29,23 +29,6 @@
         "border": "@theme-outline-primary-normal"
       }
     },
-    "common": {
-      "#normal": {
-        "background": "@theme-background-common-normal",
-        "text": "@theme-common-text-black",
-        "border": "@theme-outline-share-inactive"
-      },
-      "#hovered": {
-        "background": "@theme-background-common-normal",
-        "text": "@theme-common-text-black",
-        "border": "@theme-outline-share-inactive"
-      },
-      "#pressed": {
-        "background": "@theme-background-common-normal",
-        "text": "@theme-common-text-black",
-        "border": "@theme-outline-share-inactive"
-      }
-    },
     "cobalt": {
       "#normal": {
         "background": "@theme-background-label-cobalt-normal",
