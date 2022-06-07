@@ -1,0 +1,22 @@
+{
+  "sliderScrollbar": {
+    "comment": "Applied to mobile slider scrollbars",
+    "figma": "https://www.figma.com/file/L67wWWZaXcvVOLEpn77adE/Components---iOS?node-id=17906%3A154738",
+    "background": {
+      "#normal": "@theme-overlay-meetings-normal"
+    },
+    "player": {
+      "background": {
+        "#normal": "@theme-control-inactive-pressed"
+      }
+    },
+    "mover": {
+      "background": {
+        "#normal": "@theme-background-solid-primary-normal"
+      },
+      "border": {
+        "#normal": "@theme-outline-primary-normal"
+      }
+    }
+  }
+}

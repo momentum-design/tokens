@@ -1,0 +1,12 @@
+{
+  "popover": {
+    "comment": "Applied to popovers",
+    "figma": "https://www.figma.com/file/z6oi9Ku3X7rM1Wj2451B9u/Components---Android?node-id=6396%3A24990",
+    "background": {
+      "#normal": "@theme-background-solid-tertiary-normal"
+    },
+    "border": {
+      "#normal": "@theme-outline-primary-normal"
+    }
+  }
+}
