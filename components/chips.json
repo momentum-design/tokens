@@ -2,61 +2,6 @@
   "chips": {
     "comment": "Applied to Chips",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=44750%3A103138",
-    "filled": {
-      "text": "@theme-common-text-white",
-      "background": {
-        "gold": {
-          "#normal": "@theme-common-chips-background-gold-normal",
-          "#hovered": "@theme-common-chips-background-gold-hover",
-          "#pressed": "@theme-common-chips-background-gold-pressed"
-        },
-        "orange": {
-          "#normal": "@theme-common-chips-background-orange-normal",
-          "#hovered": "@theme-common-chips-background-orange-hover",
-          "#pressed": "@theme-common-chips-background-orange-pressed"
-        },
-        "lime": {
-          "#normal": "@theme-common-chips-background-lime-normal",
-          "#hovered": "@theme-common-chips-background-lime-hover",
-          "#pressed": "@theme-common-chips-background-lime-pressed"
-        },
-        "mint": {
-          "#normal": "@theme-common-chips-background-mint-normal",
-          "#hovered": "@theme-common-chips-background-mint-hover",
-          "#pressed": "@theme-common-chips-background-mint-pressed"
-        },
-        "cyan": {
-          "#normal": "@theme-common-chips-background-cyan-normal",
-          "#hovered": "@theme-common-chips-background-cyan-hover",
-          "#pressed": "@theme-common-chips-background-cyan-pressed"
-        },
-        "cobalt": {
-          "#normal": "@theme-common-chips-background-cobalt-normal",
-          "#hovered": "@theme-common-chips-background-cobalt-hover",
-          "#pressed": "@theme-common-chips-background-cobalt-pressed"
-        },
-        "slate": {
-          "#normal": "@theme-common-chips-background-slate-normal",
-          "#hovered": "@theme-common-chips-background-slate-hover",
-          "#pressed": "@theme-common-chips-background-slate-pressed"
-        },
-        "violet": {
-          "#normal": "@theme-common-chips-background-violet-normal",
-          "#hovered": "@theme-common-chips-background-violet-hover",
-          "#pressed": "@theme-common-chips-background-violet-pressed"
-        },
-        "purple": {
-          "#normal": "@theme-common-chips-background-purple-normal",
-          "#hovered": "@theme-common-chips-background-purple-hover",
-          "#pressed": "@theme-common-chips-background-purple-pressed"
-        },
-        "pink": {
-          "#normal": "@theme-common-chips-background-pink-normal",
-          "#hovered": "@theme-common-chips-background-pink-hover",
-          "#pressed": "@theme-common-chips-background-pink-pressed"
-        }
-      }
-    },
     "outline": {
       "multiline": {
         "background": "@theme-background-primary-ghost",
