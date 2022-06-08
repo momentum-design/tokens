@@ -21,7 +21,10 @@
           "normal": "@color-hc-PlaceholderColor",
           "hover": "@color-hc-PlaceholderColor"
         },
-        "error": "@color-hc-PlaceholderColor",
+        "error": {
+          "normal": "@color-hc-PlaceholderColor",
+          "hover": "@color-hc-PlaceholderColor"
+        },
         "secondary-light": "@color-hc-SystemColorButtonTextColor",
         "secondary-dark": "@color-hc-SystemColorHighlightTextColor"
       },
