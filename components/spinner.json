@@ -6,6 +6,10 @@
       "cursor": "@theme-outline-input-active",
       "track": "@theme-control-inactive-normal"
     },
+    "loading-common": {
+      "cursor": "@theme-common-text-black",
+      "track": "@theme-common-control-inactive-normal"
+    },
     "progress": {
       "cursor": "@theme-control-active-normal",
       "track": "@theme-control-inactive-normal"

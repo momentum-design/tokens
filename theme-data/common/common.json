@@ -71,6 +71,9 @@
         }
       },
       "control": {
+        "inactive": {
+          "normal": "@color-black-alpha-20"
+        },
         "shareContent": {
           "active": "@color-orange-60",
           "inactive": "@color-gray-60",
