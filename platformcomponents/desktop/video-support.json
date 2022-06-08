@@ -43,6 +43,18 @@
         "icon": "@theme-common-text-white",
         "role": "@theme-text-secondary-normal"
       }
+    },
+    "slider": {
+      "track": {
+          "fill": "@theme-control-active-normal",
+          "empty": "@theme-outline-button-normal"
+      },
+      "mover": {
+          "border": "@theme-outline-primary-normal",
+          "background": "@theme-background-solid-tertiary-normal"
+      },
+      "border": "@theme-outline-button-normal",
+      "background": "@theme-button-inverted-normal"
     }
   }
 }
