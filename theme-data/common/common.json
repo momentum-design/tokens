@@ -6,8 +6,14 @@
         "black": "@color-black-alpha-95",
         "gray": "@color-white-alpha-70",
         "disabled": "@color-white-alpha-40",
-        "success": "@color-green-40",
-        "error": "@color-red-40",
+        "success": {
+          "normal": "@color-green-40",
+          "hover": "color-green-20"
+        },
+        "error": {
+          "normal": "@color-red-40",
+          "hover": "@color-red-20"
+        },
         "secondary-light": "@color-white-alpha-70",
         "secondary-dark": "@color-black-alpha-60"
       },

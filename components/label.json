@@ -31,6 +31,44 @@
       "#normal": {
         "text": "@theme-text-error-normal"
       }
+    },
+    "common": {
+      "white": {
+        "#normal": {
+          "text": "@theme-common-text-white"
+        }
+      },
+      "gray": {
+        "#normal": {
+          "text": "@theme-common-text-gray"
+        }
+      },
+      "black": {
+        "#normal": {
+          "text": "@theme-common-text-black"
+        }
+      },
+      "disabled": {
+        "#normal": {
+          "text": "@theme-common-text-disabled"
+        }
+      },
+      "success": {
+        "#normal": {
+          "text": "@theme-common-text-success-normal"
+        },
+        "#hovered": {
+          "text": "@theme-common-text-success-hover"
+        }
+      },
+      "error": {
+        "#normal": {
+          "text": "@theme-common-text-error-normal"
+        },
+        "#hovered": {
+          "text": "@theme-common-text-error-hover"
+        }
+      }
     }
   }
 }
