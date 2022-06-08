@@ -6,14 +6,12 @@
             "fill": "@theme-control-active-normal",
             "empty": "@theme-outline-button-normal"
         },
-        "knob": {
+        "mover": {
             "border": "@theme-outline-primary-normal",
             "background": "@theme-background-solid-tertiary-normal"
         },
-        "container": {
-            "border": "@theme-outline-button-normal",
-            "background": "@theme-button-inverted-normal"
-        }
+        "border": "@theme-outline-button-normal",
+        "background": "@theme-button-inverted-normal"
     }
 }
       
