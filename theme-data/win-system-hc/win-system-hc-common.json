@@ -82,6 +82,9 @@
         }
       },
       "control": {
+        "inactive": {
+          "normal": "@color-hc-SystemColorButtonTextColor"
+        },
         "shareContent": {
           "active": "@color-hc-SystemColorHighlightColor",
           "inactive": "@color-hc-SystemColorButtonFaceColor",
