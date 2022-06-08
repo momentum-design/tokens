@@ -17,7 +17,10 @@
         "black": "@color-hc-SystemColorHighlightTextColor",
         "gray": "@color-hc-SystemColorGrayTextColor",
         "disabled": "@color-hc-SystemColorGrayTextColor",
-        "success": "@color-hc-PlaceholderColor",
+        "success": {
+          "normal": "@color-hc-PlaceholderColor",
+          "hover": "@color-hc-PlaceholderColor"
+        },
         "error": "@color-hc-PlaceholderColor",
         "secondary-light": "@color-hc-SystemColorButtonTextColor",
         "secondary-dark": "@color-hc-SystemColorHighlightTextColor"
