@@ -1,0 +1,21 @@
+{
+  "chips": {
+    "comment": "Applied to Chips",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=5028%3A270",
+    "outline": {
+      "multiline": {
+        "background": "@theme-background-primary-ghost",
+        "text": {
+          "mint": "@theme-text-team-mint-normal",
+          "cobalt": "@theme-text-team-cobalt-normal",
+          "orange": "@theme-text-team-orange-normal",
+          "pink": "@theme-text-team-pink-normal",
+          "lime": "@theme-text-team-lime-normal",
+          "cyan": "@theme-text-team-cyan-normal",
+          "purple": "@theme-text-team-purple-normal",
+          "violet": "@theme-text-team-violet-normal"
+        }
+      }
+    }
+  }
+}
