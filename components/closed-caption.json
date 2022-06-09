@@ -18,7 +18,7 @@
         "background": "@theme-common-button-secondary-hover"
       },
       "#pressed": {
-        "background": "@theme-common-button-secondary-pressed"
+        "background": "@theme-common-button-secondary-active-normal"
       }
     },
     "button-dark": {
