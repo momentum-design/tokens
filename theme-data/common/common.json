@@ -8,7 +8,7 @@
         "disabled": "@color-white-alpha-40",
         "success": {
           "normal": "@color-green-40",
-          "hover": "color-green-20"
+          "hover": "@color-green-20"
         },
         "error": {
           "normal": "@color-red-40",
