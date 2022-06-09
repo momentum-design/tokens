@@ -47,6 +47,18 @@
         "iconMute": "@theme-common-text-error",
         "iconUnmute": "@theme-common-text-success"
       }
+    },
+    "slider": {
+      "track": {
+          "fill": "@theme-control-active-normal",
+          "empty": "@theme-outline-button-normal"
+      },
+      "mover": {
+          "border": "@theme-outline-primary-normal",
+          "background": "@theme-background-solid-tertiary-normal"
+      },
+      "border": "@theme-outline-button-normal",
+      "background": "@theme-button-inverted-normal"
     }
   }
 }
