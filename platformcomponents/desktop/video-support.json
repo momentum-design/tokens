@@ -44,18 +44,18 @@
         "name": "@theme-common-text-white",
         "icon": "@theme-common-text-white",
         "role": "@theme-text-secondary-normal",
-        "iconMute": "@theme-common-text-error",
-        "iconUnmute": "@theme-common-text-success"
+        "iconMute": "@theme-common-text-error-normal",
+        "iconUnmute": "@theme-common-text-success-normal"
       }
     },
     "slider": {
       "track": {
-          "fill": "@theme-control-active-normal",
-          "empty": "@theme-outline-button-normal"
+        "fill": "@theme-control-active-normal",
+        "empty": "@theme-outline-button-normal"
       },
       "mover": {
-          "border": "@theme-outline-primary-normal",
-          "background": "@theme-background-solid-tertiary-normal"
+        "border": "@theme-outline-primary-normal",
+        "background": "@theme-background-solid-tertiary-normal"
       },
       "border": "@theme-outline-button-normal",
       "background": "@theme-button-inverted-normal"
