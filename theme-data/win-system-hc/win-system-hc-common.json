@@ -423,10 +423,10 @@
         "disabled": "@color-hc-SystemColorGrayTextColor"
       },
       "inactive": {
-        "normal": "@color-hc-PlaceholderColor",
+        "normal": "@color-hc-SystemColorButtonTextColor",
         "hover": "@color-hc-PlaceholderColor",
         "pressed": "@color-hc-PlaceholderColor",
-        "disabled": "@color-hc-PlaceholderColor"
+        "disabled": "@color-hc-SystemColorGrayTextColor"
       }
     },
     "indicator": {
