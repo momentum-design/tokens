@@ -9,6 +9,9 @@
       },
       "#pressed": {
         "text": "@theme-text-inverted-normal"
+      },
+      "#focused": {
+        "border": "@theme-background-primary-focus"
       }
     },
     "secondary": {

@@ -310,7 +310,8 @@
     },
     "button": {
       "border": {
-        "normal": "@color-hc-SystemColorButtonTextColor"
+        "normal": "@color-hc-SystemColorButtonTextColor",
+        "disabled": "@color-hc-SystemColorGrayTextColor"
       },
       "primary": {
         "normal": "@color-hc-SystemColorButtonFaceColor",

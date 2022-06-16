@@ -18,7 +18,8 @@
       },
       "#disabled": {
         "background": "@theme-button-primary-disabled",
-        "text": "@theme-text-primary-disabled"
+        "text": "@theme-text-primary-disabled",
+        "border": "@theme-button-border-disabled"
       }
     },
     "secondary": {
