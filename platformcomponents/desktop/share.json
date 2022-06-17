@@ -2,7 +2,6 @@
   "sharewindow": {
     "comment": "Applied to share window",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=9532%3A17790",
-
     "preview": {
       "#normal": {
         "active": "@theme-common-control-shareContent-active",
@@ -60,7 +59,7 @@
             "border": "@theme-common-outline-button-normal"
           },
           "#pressed": {
-            "background": "@theme-common-button-secondary-pressed",
+            "background": "@theme-common-button-secondary-active-normal",
             "text": "@theme-common-text-white",
             "border": "@theme-common-outline-button-normal"
           },

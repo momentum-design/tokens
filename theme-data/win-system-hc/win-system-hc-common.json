@@ -46,7 +46,6 @@
         "secondary": {
           "normal": "@color-hc-SystemColorButtonFaceColor",
           "hover": "@color-hc-SystemColorHighlightColor",
-          "pressed": "@color-hc-SystemColorHighlightColor",
           "disabled": "@color-hc-SystemColorButtonFaceColor",
           "active": {
             "normal": "@color-hc-SystemColorHighlightColor",
@@ -66,6 +65,9 @@
       },
       "outline": {
         "button": {
+          "normal": "@color-hc-SystemColorButtonTextColor"
+        },
+        "primary": {
           "normal": "@color-hc-SystemColorButtonTextColor"
         },
         "input": {
@@ -137,7 +139,19 @@
       "teamdefault": {
         "normal": "@color-hc-SystemColorWindowTextColor",
         "hover": "@color-hc-SystemColorWindowTextColor",
-        "active": "@color-hc-SystemColorWindowTextColor"
+        "active": "@color-hc-PlaceholderColor"
+      },
+      "alert": {
+        "purple": {
+          "normal": "@color-hc-SystemColorWindowTextColor",
+          "hover": "@color-hc-SystemColorWindowTextColor",
+          "active": "@color-hc-PlaceholderColor"
+        },
+        "orange": {
+          "normal": "@color-hc-SystemColorWindowTextColor",
+          "hover": "@color-hc-SystemColorWindowTextColor",
+          "active": "@color-hc-PlaceholderColor"
+        }
       },
       "team": {
         "cobalt": {
@@ -249,6 +263,16 @@
           "active": "@color-hc-SystemColorHighlightColor"
         },
         "theme": {
+          "normal": "@color-hc-SystemColorHighlightColor",
+          "hover": "@color-hc-SystemColorHighlightColor",
+          "active": "@color-hc-SystemColorHighlightColor"
+        },
+        "purple": {
+          "normal": "@color-hc-SystemColorHighlightColor",
+          "hover": "@color-hc-SystemColorHighlightColor",
+          "active": "@color-hc-SystemColorHighlightColor"
+        },
+        "orange": {
           "normal": "@color-hc-SystemColorHighlightColor",
           "hover": "@color-hc-SystemColorHighlightColor",
           "active": "@color-hc-SystemColorHighlightColor"

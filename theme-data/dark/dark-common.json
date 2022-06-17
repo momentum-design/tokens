@@ -41,6 +41,18 @@
         "normal": "@color-white-alpha-70",
         "hover": "@color-white-alpha-70",
         "active": "@color-white-alpha-95"
+      },
+      "alert": {
+        "purple": {
+          "normal": "@color-purple-40",
+          "hover": "@color-purple-20",
+          "active": "@color-purple-20"
+        },
+        "orange": {
+          "normal": "@color-orange-30",
+          "hover": "@color-orange-10",
+          "active": "@color-orange-10"
+        }
       }
     },
     "background": {
@@ -102,6 +114,16 @@
           "normal": "@theme-color-90",
           "hover": "@theme-color-90",
           "active": "@theme-color-80"
+        },
+        "purple": {
+          "normal": "@color-purple-90",
+          "hover": "@color-purple-90",
+          "active": "@color-purple-80"
+        },
+        "orange": {
+          "normal": "@color-orange-90",
+          "hover": "@color-orange-90",
+          "active": "@color-orange-80"
         }
       }
     },
@@ -121,7 +143,7 @@
         "pressed": "@color-white-alpha-20",
         "disabled": "@color-white-alpha-00",
         "active": {
-          "normal": "@theme-button-secondary-pressed",
+          "normal": "@color-white-alpha-20",
           "hover": "@color-white-alpha-30",
           "pressed": "@color-white-alpha-40"
         }
