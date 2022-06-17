@@ -1,0 +1,8 @@
+{
+  "meetingRecording": {
+    "indicator": {
+      "inProgress": "@theme-indicator-attention",
+      "paused": "@theme-indicator-unstable"
+    }
+  }
+}
