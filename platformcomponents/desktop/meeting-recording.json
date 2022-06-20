@@ -1,0 +1,12 @@
+{
+  "meetingRecording": {
+    "comment": "Applied to the recording indicators that appear in the header of a meeting.",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=6397%3A33",
+    "indicator": {
+      "#normal": {
+        "inProgress": "@theme-indicator-attention",
+        "paused": "@theme-indicator-unstable"
+      }
+    }
+  }
+}
