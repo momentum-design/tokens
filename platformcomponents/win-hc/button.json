@@ -2,13 +2,20 @@
   "button": {
     "primary": {
       "#normal": {
-        "text": "@theme-text-primary-normal"
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-button-border-normal"
       },
       "#hovered": {
         "text": "@theme-text-inverted-normal"
       },
       "#pressed": {
         "text": "@theme-text-inverted-normal"
+      },
+      "#focused": {
+        "border": "@theme-background-primary-focus"
+      },
+      "#disabled": {
+        "border": "@theme-button-border-disabled"
       }
     },
     "secondary": {
@@ -90,6 +97,9 @@
       }
     },
     "ghost": {
+      "#normal": {
+        "border": "@theme-button-border-normal"
+      },
       "#hovered": {
         "text": "@theme-text-inverted-normal"
       },
@@ -102,7 +112,8 @@
         "background": "@theme-background-primary-ghost"
       },
       "#disabled": {
-        "background": "@theme-background-primary-ghost"
+        "background": "@theme-background-primary-ghost",
+        "border": "@theme-button-border-disabled"
       }
     },
     "dialpad": {
