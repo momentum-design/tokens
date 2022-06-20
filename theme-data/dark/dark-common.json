@@ -107,8 +107,7 @@
     },
     "button": {
       "border": {
-        "normal": "@color-transparent",
-        "disabled": "@color-transparent"
+        "normal": "none"
       },
       "primary": {
         "normal": "@color-white-alpha-95",

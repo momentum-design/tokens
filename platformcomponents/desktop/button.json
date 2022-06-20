@@ -6,7 +6,7 @@
       "#normal": {
         "background": "@theme-button-secondary-normal",
         "text": "@theme-text-primary-normal",
-        "border": "@theme-button-border-normal"
+        "border": "none"
       },
       "#hovered": {
         "background": "@theme-button-secondary-hover",
@@ -18,8 +18,7 @@
       },
       "#disabled": {
         "background": "@theme-button-secondary-normal",
-        "text": "@theme-text-primary-disabled",
-        "border": "@theme-button-border-disabled"
+        "text": "@theme-text-primary-disabled"
       },
       "#active": {
         "background": "@theme-button-secondary-pressed",
