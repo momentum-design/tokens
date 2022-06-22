@@ -102,6 +102,7 @@
         },
         "icon": {
           "primary": "@color-white-alpha-95",
+          "secondary": "@color-blue-40",
           "error": "@color-red-40"
         }
       }

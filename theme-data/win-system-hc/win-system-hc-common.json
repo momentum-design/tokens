@@ -113,6 +113,7 @@
         },
         "icon": {
           "primary": "@color-hc-PlaceholderColor",
+          "secondary": "@color-hc-PlaceholderColor",
           "error": "@color-hc-PlaceholderColor"
         }
       }

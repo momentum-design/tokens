@@ -16,6 +16,7 @@
     },
     "icon": {
       "primary": "@theme-common-touchbar-icon-primary",
+      "secondary": "@theme-common-touchbar-icon-secondary",
       "mute": "@theme-common-touchbar-icon-error"
     }
     
