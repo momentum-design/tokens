@@ -88,6 +88,22 @@
           "primary-light": "@color-white-alpha-100"
         }
       }
+    },
+    "touchbar": {
+      "background": {
+        "blue": "@color-blue-60",
+        "pink": "@color-pink-60",
+        "orange": "@color-orange-60",
+        "mint": "@color-mint-60",
+        "purple": "@color-purple-60",
+        "violet": "@color-violet-60",
+        "red": "@color-red-60",
+        "transparent": "@color-black-alpha-00"
+      },
+      "icon": {
+        "primary": "@color-white-alpha-95",
+        "error": "@color-red-40"
+      }
     }
   }
 }
