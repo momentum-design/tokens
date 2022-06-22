@@ -98,6 +98,23 @@
           "secondary-dark": "@color-hc-SystemColorWindowTextColor",
           "primary-light": "@color-hc-SystemColorWindowTextColor"
         }
+      },    
+      "touchbar": {
+        "background": {
+          "blue": "@color-hc-PlaceholderColor",
+          "pink": "@color-hc-PlaceholderColor",
+          "orange": "@color-hc-PlaceholderColor",
+          "green": "@color-hc-PlaceholderColor",
+          "mint": "@color-hc-PlaceholderColor",
+          "purple": "@color-hc-PlaceholderColor",
+          "violet": "@color-hc-PlaceholderColor",
+          "red": "@color-hc-PlaceholderColor",
+          "transparent": "@color-hc-PlaceholderColor"
+        },
+        "icon": {
+          "primary": "@color-hc-PlaceholderColor",
+          "error": "@color-hc-PlaceholderColor"
+        }
       }
     },
     "text": {
@@ -569,7 +586,7 @@
         "primary": {
           "disabled": "@color-hc-SystemColorGrayTextColor"
         }
-      }
+      }      
     }
   }
 }
