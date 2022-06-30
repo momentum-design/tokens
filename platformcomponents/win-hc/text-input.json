@@ -1,9 +1,19 @@
 {
   "textinput": {
     "comment": "Used for all text inputs and their states",
-    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4429%3A871",
+    "figma": "https://www.figma.com/file/rNpQFybgpgSfTmhLa441V3/Components---Windows-OS-HighContrast?node-id=4347%3A919",
+    "#normal": {
+      "placeholder-text": "@theme-text-secondary-normal"
+    },
     "#hovered": {
+      "text": "@theme-text-inverted-normal",
+      "placeholder-text": "@theme-text-inverted-normal",
       "background": "@theme-background-solid-primary-normal"
+    },
+    "#disabled": {
+      "text": "@theme-text-primary-disabled",
+      "placeholder-text": "@theme-text-primary-disabled",
+      "border": "@theme-outline-disabled-normal"
     }
   }
 }

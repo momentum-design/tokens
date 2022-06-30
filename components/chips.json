@@ -3,6 +3,8 @@
     "comment": "Applied to Chips",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=5028%3A270",
     "outline": {
+      "error": "@theme-outline-cancel-normal",
+      "normal": "@theme-outline-primary-normal",
       "multiline": {
         "background": "@theme-background-primary-ghost",
         "text": {
@@ -16,6 +18,12 @@
           "violet": "@theme-text-team-violet-normal"
         }
       }
+    },
+    "background": {
+      "error": "@theme-background-alert-error-normal"
+    },
+    "text": {
+      "error": "@theme-text-error-normal"
     }
   }
 }
