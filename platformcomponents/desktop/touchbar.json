@@ -1,0 +1,24 @@
+{
+  "touchbar": {
+    "comment": "applied to items in the touch bar on mac",
+    "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=15991%3A144836",
+    "background": {
+      "messages": "@theme-common-touchbar-background-blue",
+      "contacts": "@theme-common-touchbar-background-mint",
+      "content": "@theme-common-touchbar-background-pink",
+      "call": "@theme-common-touchbar-background-green",
+      "whiteboard": "@theme-common-touchbar-background-purple",
+      "meetings": "@theme-common-touchbar-background-orange",
+      "links": "@theme-common-touchbar-background-violet",
+      "endCall": "@theme-common-touchbar-background-red",
+      "toggleMuteAudio": "@theme-common-touchbar-background-transparent",
+      "toggleMuteVideo": "@theme-common-touchbar-background-transparent"
+    },
+    "icon": {
+      "primary": "@theme-common-touchbar-icon-primary",
+      "secondary": "@theme-common-touchbar-icon-secondary",
+      "mute": "@theme-common-touchbar-icon-error"
+    }
+    
+  }
+}
