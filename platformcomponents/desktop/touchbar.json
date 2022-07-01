@@ -10,7 +10,7 @@
       "whiteboard": "@theme-common-touchbar-background-purple",
       "meetings": "@theme-common-touchbar-background-orange",
       "links": "@theme-common-touchbar-background-violet",
-      "encCall": "@theme-common-touchbar-background-red",
+      "endCall": "@theme-common-touchbar-background-red",
       "toggleMuteAudio": "@theme-common-touchbar-background-transparent",
       "toggleMuteVideo": "@theme-common-touchbar-background-transparent"
     },
