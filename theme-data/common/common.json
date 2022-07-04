@@ -90,20 +90,44 @@
       },
       "touchbar": {
         "background": {
-          "blue": "@color-blue-60",
-          "pink": "@color-pink-60",
-          "orange": "@color-orange-60",
-          "mint": "@color-mint-60",
-          "green": "@color-green-60",
-          "purple": "@color-purple-60",
-          "violet": "@color-violet-60",
-          "red": "@color-red-60",
+          "blue": {
+            "normal": "@color-blue-60",
+            "pressed": "@color-blue-80"
+          },
+          "pink": {
+            "normal": "@color-pink-60",
+            "pressed": "@color-pink-80"
+          },
+          "mint": {
+            "normal": "@color-mint-60",
+            "pressed": "@color-mint-80"
+          },
+          "purple": {
+            "normal": "@color-purple-60",
+            "pressed": "@color-purple-80"
+          },
+          "violet": {
+            "normal": "@color-violet-60",
+            "pressed": "@color-violet-80"
+          },
+          "orange": {
+            "normal": "@color-orange-60",
+            "pressed": "@color-orange-80"
+          },
+          "green": {
+            "normal": "@color-green-60",
+            "pressed": "@color-green-80"
+          },
+          "red": {
+            "normal": "@color-red-60",
+            "pressed": "@color-red-80"
+          },          
           "transparent": "@color-black-alpha-00"
         },
-        "icon": {
-          "primary": "@color-white-alpha-95",
-          "secondary": "@color-blue-40",
-          "error": "@color-red-40"
+        "icon": {          
+          "stable": "@color-green-50", 
+          "attention": "@color-red-40",
+          "secure": "@color-blue-40"
         }
       }
     }

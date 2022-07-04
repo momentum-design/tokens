@@ -2,23 +2,222 @@
   "touchbar": {
     "comment": "applied to items in the touch bar on mac",
     "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=15991%3A144836",
-    "background": {
-      "messages": "@theme-common-touchbar-background-blue",
-      "contacts": "@theme-common-touchbar-background-mint",
-      "content": "@theme-common-touchbar-background-pink",
-      "call": "@theme-common-touchbar-background-green",
-      "whiteboard": "@theme-common-touchbar-background-purple",
-      "meetings": "@theme-common-touchbar-background-orange",
-      "links": "@theme-common-touchbar-background-violet",
-      "endCall": "@theme-common-touchbar-background-red",
-      "toggleMuteAudio": "@theme-common-touchbar-background-transparent",
-      "toggleMuteVideo": "@theme-common-touchbar-background-transparent"
+    "messages": {
+      "#normal": {
+        "background": "@theme-common-touchbar-background-blue-normal",
+        "icon": "@theme-common-text-white"
+      },
+      "#hovered": {
+        "background": "@theme-common-touchbar-background-blue-normal",
+        "icon": "@theme-common-text-white"
+      },
+      "#pressed": {
+        "background": "@theme-common-touchbar-background-blue-pressed",
+        "icon": "@theme-common-text-white"
+      },
+      "#disabled": {
+        "background": "@theme-common-button-primary-disabled",
+        "icon": "@theme-common-text-disabled"
+      }
     },
-    "icon": {
-      "primary": "@theme-common-touchbar-icon-primary",
-      "secondary": "@theme-common-touchbar-icon-secondary",
-      "mute": "@theme-common-touchbar-icon-error"
+    "content": {
+      "#normal": {
+        "background": "@theme-common-touchbar-background-pink-normal",
+        "icon": "@theme-common-text-white"
+      },
+      "#hovered": {
+        "background": "@theme-common-touchbar-background-pink-normal",
+        "icon": "@theme-common-text-white"
+      },
+      "#pressed": {
+        "background": "@theme-common-touchbar-background-pink-pressed",
+        "icon": "@theme-common-text-white"
+      },
+      "#disabled": {
+        "background": "@theme-common-button-primary-disabled",
+        "icon": "@theme-common-text-disabled"
+      }
+    },
+    "contacts": {
+      "#normal": {
+        "background": "@theme-common-touchbar-background-mint-normal",
+        "icon": "@theme-common-text-white"
+      },
+      "#hovered": {
+        "background": "@theme-common-touchbar-background-mint-normal",
+        "icon": "@theme-common-text-white"
+      },
+      "#pressed": {
+        "background": "@theme-common-touchbar-background-mint-pressed",
+        "icon": "@theme-common-text-white"
+      },
+      "#disabled": {
+        "background": "@theme-common-button-primary-disabled",
+        "icon": "@theme-common-text-disabled"
+      }
+    },
+    "whiteboard": {
+      "#normal": {
+        "background": "@theme-common-touchbar-background-purple-normal",
+        "icon": "@theme-common-text-white"
+      },
+      "#hovered": {
+        "background": "@theme-common-touchbar-background-purple-normal",
+        "icon": "@theme-common-text-white"
+      },
+      "#pressed": {
+        "background": "@theme-common-touchbar-background-purple-pressed",
+        "icon": "@theme-common-text-white"
+      },
+      "#disabled": {
+        "background": "@theme-common-button-primary-disabled",
+        "icon": "@theme-common-text-disabled"
+      }
+    },
+    "whiteboard": {
+      "#normal": {
+        "background": "@theme-common-touchbar-background-violet-normal",
+        "icon": "@theme-common-text-white"
+      },
+      "#hovered": {
+        "background": "@theme-common-touchbar-background-violet-normal",
+        "icon": "@theme-common-text-white"
+      },
+      "#pressed": {
+        "background": "@theme-common-touchbar-background-violet-pressed",
+        "icon": "@theme-common-text-white"
+      },
+      "#disabled": {
+        "background": "@theme-common-button-primary-disabled",
+        "icon": "@theme-common-text-disabled"
+      }
+    },
+    "meetings": {
+      "#normal": {
+        "background": "@theme-common-touchbar-background-orange-normal",
+        "icon": "@theme-common-text-white"
+      },
+      "#hovered": {
+        "background": "@theme-common-touchbar-background-orange-normal",
+        "icon": "@theme-common-text-white"
+      },
+      "#pressed": {
+        "background": "@theme-common-touchbar-background-orange-pressed",
+        "icon": "@theme-common-text-white"
+      },
+      "#disabled": {
+        "background": "@theme-common-button-primary-disabled",
+        "icon": "@theme-common-text-disabled"
+      }
+    },
+    "call": {
+      "#normal": {
+        "background": "@theme-common-touchbar-background-green-normal",
+        "icon": "@theme-common-text-white"
+      },
+      "#hovered": {
+        "background": "@theme-common-touchbar-background-green-normal",
+        "icon": "@theme-common-text-white"
+      },
+      "#pressed": {
+        "background": "@theme-common-touchbar-background-green-pressed",
+        "icon": "@theme-common-text-white"
+      },
+      "#disabled": {
+        "background": "@theme-common-button-primary-disabled",
+        "icon": "@theme-common-text-disabled"
+      }
+    },
+    "endCall": {
+      "#normal": {
+        "background": "@theme-common-touchbar-background-red-normal",
+        "icon": "@theme-common-text-white"
+      },
+      "#hovered": {
+        "background": "@theme-common-touchbar-background-red-normal",
+        "icon": "@theme-common-text-white"
+      },
+      "#pressed": {
+        "background": "@theme-common-touchbar-background-red-pressed",
+        "icon": "@theme-common-text-white"
+      },
+      "#disabled": {
+        "background": "@theme-common-button-primary-disabled",
+        "icon": "@theme-common-text-disabled"
+      }
+    },
+    "toggleMuteAudio": {
+      "#normal": {
+        "background": "@theme-common-touchbar-background-transparent",
+        "icon": "@theme-common-touchbar-icon-attention"
+      },
+      "#hovered": {
+        "background": "@theme-common-touchbar-background-transparent",
+        "icon": "@theme-common-touchbar-icon-attention"
+      },
+      "#pressed": {
+        "background": "@theme-common-button-secondary-active-normal",
+        "icon": "@theme-common-touchbar-icon-attention"
+      },
+      "#disabled": {
+        "background": "@theme-common-touchbar-background-transparent",
+        "icon": "@theme-common-text-disabled"
+      }
+    },
+    "toggleMuteVideo": {
+      "#normal": {
+        "background": "@theme-common-touchbar-background-transparent",
+        "icon": "@theme-common-touchbar-icon-attention"
+      },
+      "#hovered": {
+        "background": "@theme-common-touchbar-background-transparent",
+        "icon": "@theme-common-touchbar-icon-attention"
+      },
+      "#pressed": {
+        "background": "@theme-common-button-secondary-active-normal",
+        "icon": "@theme-common-touchbar-icon-attention"
+      },
+      "#disabled": {
+        "background": "@theme-common-touchbar-background-transparent",
+        "icon": "@theme-common-text-disabled"
+      }
+    },
+    "standardButton": {
+      "#normal": {
+        "background": "@theme-common-touchbar-background-transparent",
+        "icon": "@theme-common-text-white"
+      },
+      "#hovered": {
+        "background": "@theme-common-touchbar-background-transparent",
+        "icon": "@theme-common-text-white"
+      },
+      "#pressed": {
+        "background": "@theme-common-button-secondary-active-normal",
+        "icon": "@theme-common-text-white"
+      },
+      "#disabled": {
+        "background": "@theme-common-touchbar-background-transparent",
+        "icon": "@theme-common-text-disabled"
+      }
+    },
+    "lockActive": {
+      "#normal": {
+        "background": "@theme-common-touchbar-background-transparent",
+        "icon": "@theme-common-touchbar-icon-secure"
+      },
+      "#hovered": {
+        "background": "@theme-common-touchbar-background-transparent",
+        "icon": "@theme-common-touchbar-icon-secure"
+      },
+      "#pressed": {
+        "background": "@theme-common-button-secondary-active-normal",
+        "icon": "@theme-common-touchbar-icon-secure"
+      },
+      "#disabled": {
+        "background": "@theme-common-touchbar-background-transparent",
+        "icon": "@theme-common-text-disabled"
+      }
     }
-    
+
   }
 }
