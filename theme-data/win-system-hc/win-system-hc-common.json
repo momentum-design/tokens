@@ -101,20 +101,44 @@
       },    
       "touchbar": {
         "background": {
-          "blue": "@color-hc-PlaceholderColor",
-          "pink": "@color-hc-PlaceholderColor",
-          "orange": "@color-hc-PlaceholderColor",
-          "green": "@color-hc-PlaceholderColor",
-          "mint": "@color-hc-PlaceholderColor",
-          "purple": "@color-hc-PlaceholderColor",
-          "violet": "@color-hc-PlaceholderColor",
-          "red": "@color-hc-PlaceholderColor",
+          "blue": {
+            "normal": "@color-hc-PlaceholderColor",
+            "pressed": "@color-hc-PlaceholderColor"
+          },
+          "pink": {
+            "normal": "@color-hc-PlaceholderColor",
+            "pressed": "@color-hc-PlaceholderColor"
+          },
+          "mint": {
+            "normal": "@color-hc-PlaceholderColor",
+            "pressed": "@color-hc-PlaceholderColor"
+          },
+          "purple": {
+            "normal": "@color-hc-PlaceholderColor",
+            "pressed": "@color-hc-PlaceholderColor"
+          },
+          "violet": {
+            "normal": "@color-hc-PlaceholderColor",
+            "pressed": "@color-hc-PlaceholderColor"
+          },
+          "orange": {
+            "normal": "@color-hc-PlaceholderColor",
+            "pressed": "@color-hc-PlaceholderColor"
+          },
+          "green": {
+            "normal": "@color-hc-PlaceholderColor",
+            "pressed": "@color-hc-PlaceholderColor"
+          },
+          "red": {
+            "normal": "@color-hc-PlaceholderColor",
+            "pressed": "@color-hc-PlaceholderColor"
+          },          
           "transparent": "@color-hc-PlaceholderColor"
         },
-        "icon": {
-          "primary": "@color-hc-PlaceholderColor",
-          "secondary": "@color-hc-PlaceholderColor",
-          "error": "@color-hc-PlaceholderColor"
+        "icon": {          
+          "stable": "@color-hc-PlaceholderColor", 
+          "attention": "@color-hc-PlaceholderColor",
+          "secure": "@color-hc-PlaceholderColor"
         }
       }
     },
