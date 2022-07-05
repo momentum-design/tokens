@@ -74,7 +74,7 @@
         "icon": "@theme-common-text-disabled"
       }
     },
-    "whiteboard": {
+    "links": {
       "#normal": {
         "background": "@theme-common-touchbar-background-violet-normal",
         "icon": "@theme-common-text-white"
