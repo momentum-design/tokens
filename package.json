@@ -11,7 +11,9 @@
     "husky": "^7.0.1",
     "lint-staged": "^11.1.2",
     "lodash.merge": "^4.6.2",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "momentum-token": "^1.0.2",
+    "write": "^2.0.0"
   },
   "scripts": {
     "build:clean": "rimraf ./dist",
@@ -22,6 +24,7 @@
     "build:macos": "npm run build:clean && node theme_generator.js --target=targets/macos.json",
     "build:ios": "npm run build:clean && node theme_generator.js --target=targets/ios.json",
     "build:android": "npm run build:clean && node theme_generator.js --target=targets/android.json",
+    "sync:raw": "node tools/convert-raw-colors",
     "publishNpm": "./publishNpm.sh",
     "test": "npm run build:web && npm run build:windows && npm run build:macos && npm run build:ios && npm run build:android",
     "prepare": "husky install"
