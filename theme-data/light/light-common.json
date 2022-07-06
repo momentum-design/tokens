@@ -13,7 +13,7 @@
       "secondary": {
         "normal": "@color-black-alpha-60",
         "inverted": {
-          "normal": "@color-black-alpha-70"
+          "normal": "@color-white-alpha-70"
         }
       },
       "error": {
