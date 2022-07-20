@@ -24,7 +24,7 @@
         "background": "@theme-control-active-disabled",
         "text": "@theme-text-primary-disabled",
         "border": "none",
-        "icon": "@theme-control-inactive-hover"
+        "icon": "@theme-text-inverted-disabled"
       }
     },
     "unchecked": {
@@ -44,7 +44,7 @@
         "border": "@theme-outline-input-normal"
       },
       "#disabled": {
-        "background": "@theme-control-inactive-hover",
+        "background": "@theme-control-inactive-disabled",
         "text": "@theme-text-primary-disabled",
         "border": "none"
       }
