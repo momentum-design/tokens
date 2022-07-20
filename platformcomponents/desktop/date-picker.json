@@ -12,14 +12,14 @@
       },
       "primary": {
         "text": {
-          "#normal": "@theme-text-primary-normal",
-          "#disabled": "@theme-text-primary-disabled",
-          "#active": "@theme-common-text-white"
+          "normal": "@theme-text-primary-normal",
+          "disabled": "@theme-text-primary-disabled",
+          "active": "@theme-common-text-white"
         }
       },
       "secondary": {
         "text": {
-          "#normal": "@theme-text-secondary-normal",
+          "normal": "@theme-text-secondary-normal",
         }
       },
       "border": {
