@@ -13,6 +13,8 @@
       "text": {
         "primary": {
             "#normal": "@theme-text-primary-normal",
+            "#hovered": "@theme-text-primary-normal",
+            "#pressed": "@theme-text-primary-normal",
             "#disabled": "@theme-text-primary-disabled",
             "#active": "@theme-common-text-white"
         },
