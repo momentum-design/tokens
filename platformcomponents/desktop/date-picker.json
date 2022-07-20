@@ -1,33 +1,49 @@
 {
-  "datePicker": {
+  "pickers": {
     "comment": "Applied to date picker.",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=51360%3A117328",
-    "date":{
-      "background":{
-        "#normal": "@theme-button-secondary-normal",
-        "#hovered": "@theme-button-secondary-hover",
-        "#pressed": "@theme-button-secondary-pressed",
-        "#disabled": "@theme-button-secondary-normal",
-        "#active": "@theme-background-accent-normal"
-      },
-      "text": {
-        "primary": {
-            "#normal": "@theme-text-primary-normal",
-            "#hovered": "@theme-text-primary-normal",
-            "#pressed": "@theme-text-primary-normal",
-            "#disabled": "@theme-text-primary-disabled",
-            "#active": "@theme-common-text-white"
-        },
-        "secondary": {
-            "#normal": "@theme-text-secondary-normal"
+    "datePicker": {
+      "month": {
+        "text": {
+          "#normal": "@theme-text-primary-normal",
+          "#hovered": "@theme-text-primary-normal",
+          "#pressed": "@theme-text-primary-normal",
+          "#disabled": "@theme-text-primary-disabled"
         }
       },
-      "border": {
-        "#normal": "@theme-outline-button-normal"
+      "weekDay": {
+        "text": {
+          "#normal": "@theme-text-secondary-normal",
+          "#hovered": "@theme-text-secondary-normal",
+          "#pressed": "@theme-text-secondary-normal",
+          "#disabled": "@theme-text-primary-disabled"
+        }
       },
-      "unreadBadge": {
-        "#normal": "@theme-background-accent-normal",
-        "#active": "@theme-common-text-white"
+      "date": {
+        "background":{
+          "#normal": "@theme-button-secondary-normal",
+          "#hovered": "@theme-button-secondary-hover",
+          "#pressed": "@theme-button-secondary-pressed",
+          "#disabled": "@theme-button-secondary-normal",
+          "#active": "@theme-background-accent-normal"
+        },
+        "text": {
+          "#normal": "@theme-text-primary-normal",
+          "#hovered": "@theme-text-primary-normal",
+          "#pressed": "@theme-text-primary-normal",
+          "#disabled": "@theme-text-primary-disabled",
+          "#active": "@theme-common-text-white"
+        },
+        "border": {
+          "#normal": "@theme-outline-button-normal",
+          "#hovered": "@theme-outline-button-normal",
+          "#pressed": "@theme-outline-button-normal",
+          "#disabled": "none"
+        },
+        "unreadBadge": {
+          "#normal": "@theme-background-accent-normal",
+          "#active": "@theme-common-text-white"
+        }
       }
     },
     "day":{
@@ -47,6 +63,8 @@
       },
       "border": {
         "#normal": "@theme-outline-button-normal",
+        "#hovered": "@theme-outline-button-normal",
+        "#pressed": "@theme-outline-button-normal",
         "#disabled":"@theme-outline-disabled-normal",
         "#active": "none"
       }
