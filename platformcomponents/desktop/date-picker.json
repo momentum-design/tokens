@@ -17,6 +17,10 @@
       },
       "border": {
         "#normal": "@theme-outline-button-normal"
+      },
+      "dot": {
+        "#normal": "@theme-background-accent-normal",
+        "#active": "@theme-common-text-white"
       }
     },
     "day":{
