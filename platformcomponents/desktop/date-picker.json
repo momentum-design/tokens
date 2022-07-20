@@ -10,16 +10,14 @@
         "#disabled": "@theme-button-secondary-normal",
         "#active": "@theme-background-accent-normal"
       },
-      "primary": {
-        "text": {
-          "normal": "@theme-text-primary-normal",
-          "disabled": "@theme-text-primary-disabled",
-          "active": "@theme-common-text-white"
-        }
-      },
-      "secondary": {
-        "text": {
-          "normal": "@theme-text-secondary-normal",
+      "text": {
+        "primary": {
+            "#normal": "@theme-text-primary-normal",
+            "#disabled": "@theme-text-primary-disabled",
+            "#active": "@theme-common-text-white"
+        },
+        "secondary": {
+            "#normal": "@theme-text-secondary-normal"
         }
       },
       "border": {
