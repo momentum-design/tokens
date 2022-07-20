@@ -38,12 +38,15 @@
       },
       "text": {
         "#normal": "@theme-text-primary-normal",
+        "#hovered": "@theme-text-primary-normal",
+        "#pressed": "@theme-text-primary-normal",
         "#disabled": "@theme-text-primary-disabled",
         "#active": "@theme-common-text-white"
       },
       "border": {
         "#normal": "@theme-outline-button-normal",
-        "#disabled":"@theme-outline-disabled-normal"
+        "#disabled":"@theme-outline-disabled-normal",
+        "#active": "none"
       }
     }
   }
