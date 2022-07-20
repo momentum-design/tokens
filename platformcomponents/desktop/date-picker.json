@@ -7,7 +7,7 @@
         "#normal": "@theme-button-secondary-normal",
         "#hovered": "@theme-button-secondary-hover",
         "#pressed": "@theme-button-secondary-pressed",
-        "#disabled": "none",
+        "#disabled": "@theme-button-secondary-normal",
         "#active": "@theme-background-accent-normal"
       },
       "text": {
