@@ -1,0 +1,62 @@
+{
+  "pickers": {
+    "comment": "Applied to date picker.",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=51360%3A117328",
+    "datePicker": {
+      "month": {
+        "text": {
+          "#normal": "@theme-text-primary-normal"
+        }
+      },
+      "weekDay": {
+        "text": {
+          "#normal": "@theme-text-secondary-normal"
+        }
+      },
+      "date": {
+        "background":{
+          "#normal": "@theme-button-secondary-normal",
+          "#hovered": "@theme-button-secondary-hover",
+          "#pressed": "@theme-button-secondary-pressed",
+          "#disabled": "@theme-button-secondary-normal",
+          "#active": "@theme-background-accent-normal"
+        },
+        "text": {
+          "#normal": "@theme-text-primary-normal",
+          "#hovered": "@theme-text-primary-normal",
+          "#pressed": "@theme-text-primary-normal",
+          "#disabled": "@theme-text-primary-disabled",
+          "#active": "@theme-common-text-white"
+        },
+        "border": {
+          "#normal": "@theme-outline-button-normal"
+        },
+        "unreadBadge": {
+          "#normal": "@theme-background-accent-normal",
+          "#active": "@theme-common-text-white"
+        }
+      }
+    },
+    "dayPicker":{
+      "day":{
+        "background":{
+          "#normal": "@theme-button-secondary-normal",
+          "#hovered": "@theme-button-secondary-hover",
+          "#pressed": "@theme-button-secondary-pressed",
+          "#disabled": "@theme-button-secondary-normal",
+          "#active": "@theme-background-accent-normal"
+        },
+        "text": {
+          "#normal": "@theme-text-primary-normal",
+          "#hovered": "@theme-text-primary-normal",
+          "#pressed": "@theme-text-primary-normal",
+          "#disabled": "@theme-text-primary-disabled",
+          "#active": "@theme-common-text-white"
+        },
+        "border": {
+          "#normal": "@theme-outline-button-normal"
+        }
+      }
+    }
+  }
+}
