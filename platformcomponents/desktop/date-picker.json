@@ -37,7 +37,7 @@
         }
       }
     },
-    "day":{
+    "dayPicker":{
       "background":{
         "#normal": "@theme-button-secondary-normal",
         "#hovered": "@theme-button-secondary-hover",
