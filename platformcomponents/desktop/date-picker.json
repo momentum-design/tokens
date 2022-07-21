@@ -38,22 +38,24 @@
       }
     },
     "dayPicker":{
-      "background":{
-        "#normal": "@theme-button-secondary-normal",
-        "#hovered": "@theme-button-secondary-hover",
-        "#pressed": "@theme-button-secondary-pressed",
-        "#disabled": "@theme-button-secondary-normal",
-        "#active": "@theme-background-accent-normal"
-      },
-      "text": {
-        "#normal": "@theme-text-primary-normal",
-        "#hovered": "@theme-text-primary-normal",
-        "#pressed": "@theme-text-primary-normal",
-        "#disabled": "@theme-text-primary-disabled",
-        "#active": "@theme-common-text-white"
-      },
-      "border": {
-        "#normal": "@theme-outline-button-normal"
+      "day":{
+        "background":{
+          "#normal": "@theme-button-secondary-normal",
+          "#hovered": "@theme-button-secondary-hover",
+          "#pressed": "@theme-button-secondary-pressed",
+          "#disabled": "@theme-button-secondary-normal",
+          "#active": "@theme-background-accent-normal"
+        },
+        "text": {
+          "#normal": "@theme-text-primary-normal",
+          "#hovered": "@theme-text-primary-normal",
+          "#pressed": "@theme-text-primary-normal",
+          "#disabled": "@theme-text-primary-disabled",
+          "#active": "@theme-common-text-white"
+        },
+        "border": {
+          "#normal": "@theme-outline-button-normal"
+        }
       }
     }
   }
