@@ -5,12 +5,12 @@
     "datePicker": {
       "month": {
         "text": {
-          "#normal": "@theme-text-primary-normal",
+          "#normal": "@theme-text-primary-normal"
         }
       },
       "weekDay": {
         "text": {
-          "#normal": "@theme-text-secondary-normal",
+          "#normal": "@theme-text-secondary-normal"
         }
       },
       "date": {
