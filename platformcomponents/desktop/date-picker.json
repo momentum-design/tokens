@@ -6,17 +6,11 @@
       "month": {
         "text": {
           "#normal": "@theme-text-primary-normal",
-          "#hovered": "@theme-text-primary-normal",
-          "#pressed": "@theme-text-primary-normal",
-          "#disabled": "@theme-text-primary-disabled"
         }
       },
       "weekDay": {
         "text": {
           "#normal": "@theme-text-secondary-normal",
-          "#hovered": "@theme-text-secondary-normal",
-          "#pressed": "@theme-text-secondary-normal",
-          "#disabled": "@theme-text-primary-disabled"
         }
       },
       "date": {
@@ -35,10 +29,7 @@
           "#active": "@theme-common-text-white"
         },
         "border": {
-          "#normal": "@theme-outline-button-normal",
-          "#hovered": "@theme-outline-button-normal",
-          "#pressed": "@theme-outline-button-normal",
-          "#disabled": "none"
+          "#normal": "@theme-outline-button-normal"
         },
         "unreadBadge": {
           "#normal": "@theme-background-accent-normal",
@@ -62,11 +53,7 @@
         "#active": "@theme-common-text-white"
       },
       "border": {
-        "#normal": "@theme-outline-button-normal",
-        "#hovered": "@theme-outline-button-normal",
-        "#pressed": "@theme-outline-button-normal",
-        "#disabled":"@theme-outline-disabled-normal",
-        "#active": "none"
+        "#normal": "@theme-outline-button-normal"
       }
     }
   }
