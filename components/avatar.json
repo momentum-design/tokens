@@ -12,6 +12,7 @@
       "quiet-hours": "@theme-indicator-locked",
       "away": "@theme-indicator-locked",
       "ooo": "@theme-indicator-locked",
+      "busy": "@theme-indicator-unstable",
       "background": "@theme-background-solid-primary-normal"
     },
     "color-avatar": {
