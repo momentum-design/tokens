@@ -48,6 +48,11 @@
         "text": "@theme-text-primary-disabled",
         "border": "none"
       }
+    },
+    "group": {
+      "description": {
+        "color": "@theme-text-secondary-normal"
+      }
     }
   }
 }
