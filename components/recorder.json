@@ -1,0 +1,12 @@
+{
+  "recorder": {
+    "comment": "Applied to Pull Out Recorder",
+    "figma": "https://www.figma.com/file/g5CWo92grxi96gRwoP56v7/T41.12---SPARK-267047---UCF%3A-Pull-out-recorder---DSK?node-id=1777%3A25143",
+    "primary": {
+      "background": "@theme-background-solid-primary-normal"
+    },
+    "secondary": {
+      "background": "@theme-button-secondary-hover"
+    }
+  }
+}
