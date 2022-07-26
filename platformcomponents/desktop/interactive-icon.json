@@ -4,16 +4,20 @@
     "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=6192%3A28111",
     "container": {
       "#normal": {
-        "background": "@theme-button-secondary-normal"        
+        "background": "@theme-button-secondary-normal",
+        "border": "none"
       },
       "#hovered": {
-        "background": "@theme-button-secondary-hover"        
+        "background": "@theme-button-secondary-hover",
+        "border": "none"
       },
       "#pressed": {
-        "background": "@theme-button-secondary-pressed"
+        "background": "@theme-button-secondary-pressed",
+        "border": "none"
       },
-      "#disabled":{
-        "background": "@theme-button-secondary-normal"
+      "#disabled": {
+        "background": "@theme-button-secondary-normal",
+        "border": "none"
       }
     },
     "primary": {
