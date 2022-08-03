@@ -58,7 +58,7 @@
           "#disabled": {
             "background": "@theme-button-secondary-normal",
             "text": "@theme-text-primary-disabled",
-            "border": "@theme-outline-button-normal"
+            "border": "@theme-outline-disabled-normal"
           }
         },
         "checked": {
