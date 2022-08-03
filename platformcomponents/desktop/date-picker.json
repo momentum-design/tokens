@@ -39,7 +39,7 @@
     },
     "dayPicker":{
       "day":{
-        "unchecked": {
+        "inactive": {
           "#normal": {
             "background": "@theme-button-secondary-normal",
             "text": "@theme-text-primary-normal",
@@ -61,7 +61,7 @@
             "border": "@theme-outline-disabled-normal"
           }
         },
-        "checked": {
+        "active": {
           "#normal": {
             "background": "@theme-button-accent-normal",
             "text": "@theme-common-text-white"
