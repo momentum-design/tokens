@@ -40,34 +40,43 @@
     "dayPicker":{
       "day":{
         "unchecked": {
-          "background":{
-            "#normal": "@theme-button-secondary-normal",
-            "#hovered": "@theme-button-secondary-hover",
-            "#pressed": "@theme-button-secondary-pressed",
-            "#disabled": "@theme-button-secondary-normal"
+          "#normal": {
+            "background": "@theme-button-secondary-normal",
+            "text": "@theme-text-primary-normal",
+            "border": "@theme-outline-button-normal"
           },
-          "text": {
-            "#normal": "@theme-text-primary-normal",
-            "#hovered": "@theme-text-primary-normal",
-            "#pressed": "@theme-text-primary-normal",
-            "#disabled": "@theme-text-primary-disabled"
+          "#hovered": {
+            "background": "@theme-button-secondary-hover",
+            "text": "@theme-text-primary-normal",
+            "border": "@theme-outline-button-normal"
           },
-          "border": {
-            "#normal": "@theme-outline-button-normal"
+          "#pressed": {
+            "background": "@theme-button-secondary-pressed",
+            "text": "@theme-text-primary-normal",
+            "border": "@theme-outline-button-normal"
+          },
+          "#disabled": {
+            "background": "@theme-button-secondary-normal",
+            "text": "@theme-text-primary-disabled",
+            "border": "@theme-outline-button-normal"
           }
         },
-        "checked":{
-          "background":{
-            "#normal": "@theme-background-accent-normal",
-            "#hovered": "@theme-background-accent-hover",
-            "#pressed": "@theme-background-accent-pressed",
-            "#disabled": "@theme-button-primary-disabled"
+        "checked": {
+          "#normal": {
+            "background": "@theme-background-accent-normal",
+            "text": "@theme-common-text-white"
           },
-          "text": {
-            "#normal": "@theme-common-text-white",
-            "#hovered": "@theme-common-text-white",
-            "#pressed": "@theme-common-text-white",
-            "#disabled": "@theme-text-primary-disabled"
+          "#hovered": {
+            "background": "@theme-background-accent-hover",
+            "text": "@theme-common-text-white"
+          },
+          "#pressed": {
+            "background": "@theme-background-accent-pressed",
+            "text": "@theme-common-text-white"
+          },
+          "#disabled": {
+            "background": "@theme-button-primary-disabled",
+            "text": "@theme-text-primary-disabled"
           }
         }
       }
