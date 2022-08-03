@@ -63,15 +63,15 @@
         },
         "checked": {
           "#normal": {
-            "background": "@theme-background-accent-normal",
+            "background": "@theme--background-accent-normal-normal",
             "text": "@theme-common-text-white"
           },
           "#hovered": {
-            "background": "@theme-background-accent-hover",
+            "background": "@theme--background-accent-normal-hover",
             "text": "@theme-common-text-white"
           },
           "#pressed": {
-            "background": "@theme-background-accent-pressed",
+            "background": "@theme--background-accent-normal-pressed",
             "text": "@theme-common-text-white"
           },
           "#disabled": {
