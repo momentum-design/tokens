@@ -55,7 +55,7 @@
       },
       "mover": {
         "border": "@theme-outline-primary-normal",
-        "background": "@theme-background-solid-tertiary-normal"
+        "background": "@theme-background-solid-primary-normal"
       },
       "border": "@theme-outline-button-normal",
       "background": "@theme-button-inverted-normal"
