@@ -18,7 +18,7 @@
         "border": "@theme-outline-button-normal",
         "text": "@theme-text-primary-normal"
       },
-      "disabled": {
+      "#disabled": {
         "background": "@theme-button-secondary-normal",
         "border": "@theme-outline-disabled-normal",
         "text": "@theme-text-primary-disabled"
@@ -40,7 +40,7 @@
         "border": "@theme-outline-button-normal",
         "text": "@theme-text-primary-normal"
       },
-      "disabled": {
+      "#disabled": {
         "background": "@theme-button-secondary-active-normal",
         "border": "@theme-outline-disabled-normal",
         "text": "@theme-text-primary-disabled"
