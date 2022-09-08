@@ -402,6 +402,11 @@
           "value": "#643abd",
           "type": "color",
           "description": "Theme Token: Avatar-violet\nCore Token: violet-70"
+        },
+        "Avatar-yellow": {
+          "value": "#7D4705",
+          "type": "color",
+          "description": "Theme Token: Avatar-yellow\nCore Token: yellow-70"
         }
       },
       "GradientDividers": {
