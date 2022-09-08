@@ -149,7 +149,8 @@
       "pink": "@color-pink-70",
       "purple": "@color-purple-70",
       "slate": "@color-slate-70",
-      "violet": "@color-violet-70"
+      "violet": "@color-violet-70",
+      "yellow": "@color-yellow-70"
     }
   }
 }
