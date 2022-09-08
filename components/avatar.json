@@ -28,7 +28,8 @@
         "slate": "@theme-avatar-slate",
         "violet": "@theme-avatar-violet",
         "purple": "@theme-avatar-purple",
-        "pink": "@theme-avatar-pink"
+        "pink": "@theme-avatar-pink",
+        "yellow": "@theme-avatar-yellow"
       }
     },
     "chat-bubble": {

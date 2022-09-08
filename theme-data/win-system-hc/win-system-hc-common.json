@@ -524,7 +524,8 @@
       "pink": "@color-hc-SystemColorWindowTextColor",
       "purple": "@color-hc-SystemColorWindowTextColor",
       "slate": "@color-hc-SystemColorWindowTextColor",
-      "violet": "@color-hc-SystemColorWindowTextColor"
+      "violet": "@color-hc-SystemColorWindowTextColor",
+      "yellow": "@color-hc-SystemColorWindowTextColor"
     },
     "scrollbar": {
       "button": {
