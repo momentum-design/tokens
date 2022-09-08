@@ -1,0 +1,9 @@
+{
+  "global": {
+    "comment": "For windows global outline for all focused components",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=5282%3A497",
+    "focus": {
+      "outline": "@theme-control-active-normal"
+    }
+  }
+}
