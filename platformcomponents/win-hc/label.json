@@ -4,6 +4,11 @@
     "primary": {
       "#pressed": {
         "text": "@theme-text-inverted-normal"
+      },
+      "warning": {
+        "#normal": {
+          "text": "@theme-background-solid-primary-normal"
+        }
       }
     }
   }
