@@ -1,0 +1,16 @@
+{
+  "participantList": {
+    "comment": "controls at participantList panel, mute/unmute, etc.",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=9332%3A2007",
+    "audioMuted": {
+      "#normal": {
+        "background": "@theme-indicator-attention"
+      }
+    },
+    "audioUnmuted": {
+      "#normal": {
+        "background": "@theme-indicator-stable"
+      }
+    }
+  }
+}
