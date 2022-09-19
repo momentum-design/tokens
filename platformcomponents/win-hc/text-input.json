@@ -8,7 +8,8 @@
     "#hovered": {
       "text": "@theme-text-inverted-normal",
       "placeholder-text": "@theme-text-inverted-normal",
-      "background": "@theme-background-solid-primary-normal"
+      "background": "@theme-common-hc-highlight",
+      "border": "@theme-common-hc-highlight"
     },
     "#disabled": {
       "text": "@theme-text-primary-disabled",
