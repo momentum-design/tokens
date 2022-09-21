@@ -13,6 +13,8 @@
       "away": "@theme-indicator-locked",
       "ooo": "@theme-indicator-locked",
       "busy": "@theme-indicator-unstable",
+      "phone": "@theme-indicator-unstable",
+      "generic-device-video": "@theme-indicator-locked",
       "background": "@theme-background-solid-primary-normal"
     },
     "color-avatar": {
