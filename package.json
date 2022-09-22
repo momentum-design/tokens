@@ -2,7 +2,7 @@
   "dependencies": {},
   "name": "@momentum-ui/design-tokens",
   "description": "See [documentation on Confluence](https://confluence-eng-gpk2.cisco.com/conf/display/~pauwitty/Token+proposal)",
-  "version": "0.0.55",
+  "version": "0.0.56",
   "main": "./dist/index.css",
   "devDependencies": {
     "args-parser": "^1.2.0",
