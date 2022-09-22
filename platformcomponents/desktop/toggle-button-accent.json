@@ -1,0 +1,42 @@
+{
+  "toggleButton": {
+    "figma": "https://www.figma.com/file/vdL18BATeJAIq2JvGAjRPD/Components---Web?node-id=48160%3A80022",
+    "comment": "Applied to toggle buttons that use the accent color when active/selected",
+    "inactive": {
+      "#normal": {
+        "background": "@theme-button-secondary-normal",
+        "text": "@theme-text-secondary-normal"
+      },
+      "#hovered": {
+        "background": "@theme-button-secondary-hover",
+        "text": "@theme-text-primary-normal"
+      },
+      "#pressed": {
+        "background": "@theme-button-secondary-pressed",
+        "text": "@theme-text-primary-normal"
+      },
+      "#disabled": {
+        "background": "@theme-button-secondary-normal",
+        "text": "@theme-text-primary-disabled"
+      }
+    },
+    "active": {
+      "#normal": {
+        "background": "@theme-button-secondary-pressed",
+        "text": "@theme-text-accent-normal"
+      },
+      "#hovered": {
+        "background": "@theme-button-secondary-pressed",
+        "text": "@theme-text-accent-normal"
+      },
+      "#pressed": {
+        "background": "@theme-button-secondary-pressed",
+        "text": "@theme-text-accent-normal"
+      },
+      "#disabled": {
+        "background": "@theme-button-primary-disabled",
+        "text": "@theme-text-primary-disabled"
+      }
+    }
+  }
+}
