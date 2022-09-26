@@ -22,19 +22,19 @@
     },
     "active": {
       "#normal": {
-        "background": "@theme-button-secondary-pressed",
+        "background": "@theme-button-secondary-active-normal",
         "text": "@theme-text-accent-normal"
       },
       "#hovered": {
-        "background": "@theme-button-secondary-pressed",
+        "background": "@theme-button-secondary-active-hover",
         "text": "@theme-text-accent-normal"
       },
       "#pressed": {
-        "background": "@theme-button-secondary-pressed",
+        "background": "@theme-button-secondary-active-pressed",
         "text": "@theme-text-accent-normal"
       },
       "#disabled": {
-        "background": "@theme-button-primary-disabled",
+        "background": "@theme-button-secondary-active-normal",
         "text": "@theme-text-primary-disabled"
       }
     }
