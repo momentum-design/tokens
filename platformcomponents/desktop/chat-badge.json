@@ -1,0 +1,34 @@
+{
+  "message-badge": {
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=5585%3A16947",
+    "comment": "Color tokens for a conversation space badges",
+    "regular": {
+      "#normal": {
+        "background": "@theme-background-secondary-normal",
+        "text": "@theme-text-secondary-normal"
+      },
+      "#hovered": {
+        "background": "@theme-background-secondary-hover",
+        "text": "@theme-text-primary-normal"
+      },
+      "#active": {
+        "background": "@theme-background-secondary-active",
+        "text": "@theme-text-primary-normal"
+      }
+    },
+    "important": {
+      "#normal": {
+        "background": "@theme-background-alert-theme-normal",
+        "text": "@theme-text-accent-normal"
+      },
+      "#hovered": {
+        "background": "@theme-background-alert-theme-hover",
+        "text": "@theme-text-accent-hover"
+      },
+      "#active": {
+        "background": "@theme-background-alert-theme-active",
+        "text": "@theme-text-accent-active"
+      }
+    }
+  }
+}
