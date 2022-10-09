@@ -14,6 +14,9 @@
           "normal": "@color-red-40",
           "hover": "@color-red-20"
         },
+        "warning": {
+          "normal": "@color-yellow-40"
+        },
         "secondary-light": "@color-white-alpha-70",
         "secondary-dark": "@color-black-alpha-60"
       },
@@ -121,11 +124,11 @@
           "red": {
             "normal": "@color-red-60",
             "pressed": "@color-red-80"
-          },          
+          },
           "transparent": "@color-black-alpha-00"
         },
-        "icon": {          
-          "stable": "@color-green-50", 
+        "icon": {
+          "stable": "@color-green-50",
           "attention": "@color-red-40",
           "secure": "@color-blue-40"
         }
