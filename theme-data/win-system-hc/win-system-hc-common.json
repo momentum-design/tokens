@@ -21,6 +21,9 @@
           "normal": "@color-hc-PlaceholderColor",
           "hover": "@color-hc-PlaceholderColor"
         },
+        "warning": {
+          "normal": "@color-hc-SystemColorWindowColor"
+        },
         "error": {
           "normal": "@color-hc-PlaceholderColor",
           "hover": "@color-hc-PlaceholderColor"

@@ -68,6 +68,11 @@
         "#hovered": {
           "text": "@theme-common-text-error-hover"
         }
+      },
+      "warning": {
+        "#normal": {
+          "text": "@theme-common-text-warning-normal"
+        }
       }
     }
   }
