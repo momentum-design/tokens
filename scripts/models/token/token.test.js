@@ -31,7 +31,7 @@ describe("models.Token", () => {
         }).toThrow();
       });
 
-      it(`should accept the "${Token.CONSTANTS.CATEGORIES.COLOR}" category`, () => {
+      it(`should accept the '${Token.CONSTANTS.CATEGORIES.COLOR}' category`, () => {
         expect(() => {
           new Token({ category: Token.CONSTANTS.CATEGORIES.COLOR, format });
         }).not.toThrow();

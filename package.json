@@ -23,8 +23,9 @@
     "build:ios": "npm run build:clean && node theme_generator.js --target=targets/ios.json",
     "build:android": "npm run build:clean && node theme_generator.js --target=targets/android.json",
     "publishNpm": "./publishNpm.sh",
-    "scripts:update": "node ./scripts/commands/update/update.js",
-    "test": "npm run build:web && npm run build:windows && npm run build:macos && npm run build:ios && npm run build:android",
+    "scripts": "node ./scripts/index.js",
+    "scripts:update": "node ./scripts/index.js --command=update",
+    "test": "npm run test:scripts && npm run build:web && npm run build:windows && npm run build:macos && npm run build:ios && npm run build:android",
     "test:scripts": "jest ./scripts",
     "prepare": "husky install"
   },

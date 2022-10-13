@@ -245,5 +245,187 @@ describe("models.ColorToken", () => {
         expect(() => ColorToken.translateGrades({ from, to, grades })).toThrow();
       });
     });
+
+    describe("translateColors()", () => {
+      let from;
+      let colors;
+      let to;
+
+      beforeEach(() => {
+        from = ColorToken.CONSTANTS.TOKEN_FORMATS.AUTOMATED;
+        colors = {
+          ["color-name"]: {
+            ["color-20"]: {
+              rgba: {
+                r: 0,
+                g: 1,
+                b: 2,
+                a: 1,
+              },
+            },
+            ["color-40"]: {
+              rgba: {
+                r: 3,
+                g: 4,
+                b: 5,
+                a: 0,
+              },
+            },
+          },
+        };
+        to = ColorToken.CONSTANTS.TOKEN_FORMATS.STANDARD;
+      });
+
+      it('should return the provided colors when from is "standard"', () => {
+        from = ColorToken.CONSTANTS.TOKEN_FORMATS.STANDARD;
+
+        const final = ColorToken.translateColors({ from, to, colors });
+
+        expect(final).toStrictEqual(colors);
+      });
+
+      it('should return a convert rgba value when from is "automated"', () => {
+        const final = ColorToken.translateColors({ from, to, colors });
+        const { r: ar, g: ag, b: ab, a: aa } = colors["color-name"]["color-20"].rgba;
+        const { r: br, g: bg, b: bb, a: ba } = colors["color-name"]["color-40"].rgba;
+        const expected20 = `rgba(${ar}, ${ag}, ${ab}, ${aa})`;
+        const expected40 = `rgba(${br}, ${bg}, ${bb}, ${ba})`;
+
+        expect(final["color-name"]["20"]).toStrictEqual(expected20);
+        expect(final["color-name"]["40"]).toStrictEqual(expected40);
+      });
+
+      it("should throw an error when the from value is not a supported value", () => {
+        from = "invalid";
+
+        expect(() => ColorToken.translateColors({ from, to, colors })).toThrow();
+      });
+
+      it('should return the formatted token when to is "standard"', () => {
+        from = ColorToken.CONSTANTS.TOKEN_FORMATS.STANDARD;
+
+        const final = ColorToken.translateColors({ from, to, colors });
+
+        expect(final).toStrictEqual(colors);
+      });
+
+      it("should throw an error when the to value is not a supported value", () => {
+        to = "invalid";
+
+        expect(() => ColorToken.translateGrades({ from, to, colors })).toThrow();
+      });
+    });
+  });
+
+  describe("scoped", () => {
+    describe("updateFormat()", () => {
+      let colorToken;
+
+      beforeEach(() => {
+        colorToken = new ColorToken({
+          data: {
+            ["color-name"]: {
+              ["color-20"]: {
+                rgba: {
+                  r: 0,
+                  g: 1,
+                  b: 2,
+                  a: 1,
+                },
+              },
+              ["color-40"]: {
+                rgba: {
+                  r: 3,
+                  g: 4,
+                  b: 5,
+                  a: 0,
+                },
+              },
+            },
+          },
+          format: ColorToken.CONSTANTS.TOKEN_FORMATS.AUTOMATED,
+        });
+      });
+
+      it("should translate this ColorToken's data to the target format", () => {
+        const { r: ar, g: ag, b: ab, a: aa } = colorToken.data["color-name"]["color-20"].rgba;
+        const { r: br, g: bg, b: bb, a: ba } = colorToken.data["color-name"]["color-40"].rgba;
+        const expected20 = `rgba(${ar}, ${ag}, ${ab}, ${aa})`;
+        const expected40 = `rgba(${br}, ${bg}, ${bb}, ${ba})`;
+
+        colorToken.updateFormat({ format: ColorToken.CONSTANTS.TOKEN_FORMATS.STANDARD });
+
+        expect(colorToken.data["color-name"]["20"]).toStrictEqual(expected20);
+        expect(colorToken.data["color-name"]["40"]).toStrictEqual(expected40);
+      });
+
+      it("should update this ColorToken's to reflect the correct format", () => {
+        const format = ColorToken.CONSTANTS.TOKEN_FORMATS.STANDARD;
+
+        colorToken.updateFormat({ format });
+
+        expect(colorToken.format).toBe(format);
+      });
+
+      it("should throw if the target format is not valid", () => {
+        const format = "invalid";
+
+        expect(() => colorToken.updateFormat({ format })).toThrow();
+      });
+
+      it("should return itself", () => {
+        const format = ColorToken.CONSTANTS.TOKEN_FORMATS.STANDARD;
+
+        colorToken.updateFormat({ format });
+
+        expect(colorToken.updateFormat({ format })).toBe(colorToken);
+      });
+    });
+
+    describe("normalize()", () => {
+      let colorToken;
+
+      beforeEach(() => {
+        colorToken = new ColorToken({
+          data: {
+            ["color-name"]: {
+              ["color-20"]: {
+                rgba: {
+                  r: 0,
+                  g: 1,
+                  b: 2,
+                  a: 1,
+                },
+              },
+              ["color-40"]: {
+                rgba: {
+                  r: 3,
+                  g: 4,
+                  b: 5,
+                  a: 0,
+                },
+              },
+            },
+          },
+          format: ColorToken.CONSTANTS.TOKEN_FORMATS.AUTOMATED,
+        });
+      });
+
+      it('should convert this ColorToken into the "standard" format', () => {
+        const { r: ar, g: ag, b: ab, a: aa } = colorToken.data["color-name"]["color-20"].rgba;
+        const { r: br, g: bg, b: bb, a: ba } = colorToken.data["color-name"]["color-40"].rgba;
+        const expected20 = `rgba(${ar}, ${ag}, ${ab}, ${aa})`;
+        const expected40 = `rgba(${br}, ${bg}, ${bb}, ${ba})`;
+
+        colorToken.normalize();
+
+        expect(colorToken.data["color-name"]["20"]).toStrictEqual(expected20);
+        expect(colorToken.data["color-name"]["40"]).toStrictEqual(expected40);
+      });
+
+      it("should return itself", () => {
+        expect(colorToken.normalize()).toBe(colorToken);
+      });
+    });
   });
 });

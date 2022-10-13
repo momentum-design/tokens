@@ -34,9 +34,7 @@ class ColorToken extends Token {
    * @returns {this} - This color token.
    */
   normalize() {
-    this.updateFormat({ format: Token.CONSTANTS.TOKEN_FORMATS.STANDARD });
-
-    return this;
+    return this.updateFormat({ format: Token.CONSTANTS.TOKEN_FORMATS.STANDARD });
   }
 
   /**
@@ -170,12 +168,13 @@ class ColorToken extends Token {
         break;
 
       case Token.CONSTANTS.TOKEN_FORMATS.AUTOMATED:
-        final = Object.entries(colors).reduce((formatted, [key, value]) => {
-          const mutable = { ...formatted };
-          mutable[key] = ColorToken.translateGrades({ from, to, grades: value });
-
-          return mutable;
-        }, {});
+        final = Object.entries(colors).reduce(
+          (formatted, [key, value]) => ({
+            ...formatted,
+            [key]: ColorToken.translateGrades({ from, to, grades: value }),
+          }),
+          {}
+        );
         break;
 
       default:
