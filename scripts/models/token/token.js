@@ -42,7 +42,7 @@ class Token {
       [this.category]: this.data,
     });
 
-    return JSON.stringify(serial, null, CONSTANTS.SERIAL_SPECIFICATIONS.INDENT).replaceAll(sortObject.CONSTANTS.SORT_LOCK_CHARACTER, "");
+    return JSON.stringify(serial, null, CONSTANTS.SERIAL_SPECIFICATIONS.INDENT_TAB_SIZE).replaceAll(sortObject.CONSTANTS.SORT_LOCK_CHARACTER, "");
   }
 
   /**

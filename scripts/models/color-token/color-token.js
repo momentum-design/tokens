@@ -80,7 +80,7 @@ class ColorToken extends Token {
    * @param {DTO} dto
    * @param {ColorToken} dto.source - ColorToken to merge into the destination ColorToken.
    * @param {ColorToken} dto.destination - ColorToken to be receiving a merge.
-   * @returns {ColorToken} - Merged ColorToken.
+   * @returns {ColorToken} - Merged ColorToken, normalized.
    */
   static merge({ source, destination }) {
     if (source.category !== Token.CONSTANTS.CATEGORIES.COLOR || destination.category !== Token.CONSTANTS.CATEGORIES.COLOR) {
@@ -125,7 +125,7 @@ class ColorToken extends Token {
       case Token.CONSTANTS.TOKEN_FORMATS.AUTOMATED:
         final = Object.entries(grades).reduce((formatted, [key, value]) => {
           const mutable = { ...formatted };
-          const grade = key.split("-").pop();
+          const grade = key.split("-").pop(); // The string after the '-' character is the grade.
           const { r, g, b, a } = value.rgba;
 
           mutable[grade] = `rgba(${r}, ${g}, ${b}, ${a})`;
