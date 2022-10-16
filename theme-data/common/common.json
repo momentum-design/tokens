@@ -60,7 +60,7 @@
           "normal": "@color-white-alpha-30"
         },
         "primary": {
-          "normal": "@color-white-alpha-20"
+          "normal": "@color-white-alpha-40"
         },
         "input": {
           "normal": "@color-white-alpha-50"
@@ -124,11 +124,11 @@
           "red": {
             "normal": "@color-red-60",
             "pressed": "@color-red-80"
-          },          
+          },
           "transparent": "@color-black-alpha-00"
         },
-        "icon": {          
-          "stable": "@color-green-50", 
+        "icon": {
+          "stable": "@color-green-50",
           "attention": "@color-red-40",
           "secure": "@color-blue-40"
         }
