@@ -164,6 +164,23 @@
         "text": "@theme-text-primary-normal",
         "border": "@theme-outline-label-gold"
       }
+    },
+    "pink": {
+      "#normal": {
+        "background": "@theme-background-label-pink-normal",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-label-pink"
+      },
+      "#hovered": {
+        "background": "@theme-background-label-pink-hover",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-label-pink"
+      },
+      "#pressed": {
+        "background": "@theme-background-label-pink-active",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-label-pink"
+      }
     }
   }
 }
