@@ -470,7 +470,8 @@
         "violet": "@color-hc-SystemColorHighlightColor",
         "purple": "@color-hc-SystemColorHighlightColor",
         "orange": "@color-hc-SystemColorHighlightColor",
-        "gold": "@color-hc-SystemColorHighlightColor"
+        "gold": "@color-hc-SystemColorHighlightColor",
+        "pink": "@color-hc-SystemColorHighlightColor"
       }
     },
     "gradientdivider": {
