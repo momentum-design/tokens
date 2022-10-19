@@ -11,7 +11,7 @@
         "disabled": "@color-white-alpha-80"
       },
       "secondary": {
-        "normal": "@color-black-alpha-60",
+        "normal": "@color-black-alpha-70",
         "inverted": {
           "normal": "@color-white-alpha-70"
         }
@@ -116,14 +116,14 @@
           "active": "@theme-color-20"
         },
         "purple": {
-          "normal": "@color-purple-70",
-          "hover": "@color-purple-90",
-          "active": "@color-purple-90"
+          "normal": "@color-purple-10",
+          "hover": "@color-purple-10",
+          "active": "@color-purple-20"
         },
         "orange": {
-          "normal": "@color-orange-70",
-          "hover": "@color-orange-90",
-          "active": "@color-orange-90"
+          "normal": "@color-orange-10",
+          "hover": "@color-orange-10",
+          "active": "@color-orange-20"
         }
       }
     },
@@ -205,6 +205,9 @@
       },
       "overlay": {
         "normal": "@color-gray-60"
+      },
+      "high-contrast": {
+        "focus": "@color-black-alpha-100"
       }
     },
     "control": {
@@ -224,7 +227,7 @@
     },
     "overlay": {
       "meetings": {
-        "normal": "@color-white-alpha-70"
+        "normal": "@color-white-alpha-80"
       }
     },
     "indicator": {
@@ -253,7 +256,7 @@
       "arrow": {
         "normal": "@color-black-alpha-60",
         "background": {
-          "normal": "@color-black-alpha-60",
+          "normal": "@color-black-alpha-00",
           "hover": "@color-black-alpha-11",
           "pressed": "@color-black-alpha-20"
         }

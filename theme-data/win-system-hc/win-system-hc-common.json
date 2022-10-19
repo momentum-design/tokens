@@ -462,6 +462,9 @@
       "overlay": {
         "normal": "@color-hc-PlaceholderColor"
       },
+      "high-contrast": {
+        "focus": "@color-hc-SystemColorHighlightColor"
+      },
       "label": {
         "cobalt": "@color-hc-SystemColorHighlightColor",
         "lime": "@color-hc-SystemColorHighlightColor",

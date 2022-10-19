@@ -205,6 +205,9 @@
       },
       "overlay": {
         "normal": "@color-gray-40"
+      },
+      "high-contrast": {
+        "focus": "@color-white-alpha-100"
       }
     },
     "control": {
