@@ -60,6 +60,12 @@ describe("utils.sortObject", () => {
       checkKeys(sortedBKeys);
       checkKeys(sortedCKeys);
     });
+
+    it("should leave arrays as arrays", () => {
+      object.d = [1, 2, 3, 4];
+      const sorted = sortObject(object);
+      expect(Array.isArray(object.d)).toBe(true);
+    });
   });
 
   describe("#sortObject.CONSTANTS", () => {

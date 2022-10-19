@@ -3,6 +3,7 @@
  */
 const CATEGORIES = {
   COLOR: "color",
+  GRADIENT: "gradient",
 };
 
 /**
