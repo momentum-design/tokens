@@ -52,6 +52,6 @@
     "**/*": "npx prettier --write --ignore-unknown"
   },
   "dependencies": {
-    "momentum-abstract": "^1.0.27"
+    "momentum-abstract": "^1.0.28"
   }
 }
