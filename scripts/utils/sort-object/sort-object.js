@@ -16,7 +16,7 @@ const sortObject = (object) =>
     .reduce(
       (final, [key, value]) => ({
         ...final,
-        [`${CONSTANTS.SORT_LOCK_CHARACTER}${key}`]: typeof value === "object" ? sortObject(value) : value,
+        [`${CONSTANTS.SORT_LOCK_CHARACTER}${key}`]: typeof value === "object" && !Array.isArray(value) ? sortObject(value) : value,
       }),
       {}
     );
