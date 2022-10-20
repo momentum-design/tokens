@@ -6,11 +6,12 @@ const prevTokens = {
   decorative: require("../../../core/color/decorative.json"),
   functional: require("../../../core/color/functional.json"),
   gradation: require("../../../core/color/gradation.json"),
+  solids: require("../../../core/color/solids.json"),
 };
 
 const utils = require("../../utils");
 const common = require("../../common");
-const { ColorToken, GradientToken } = require("../../models");
+const { ColorToken, GradientToken, SolidToken } = require("../../models");
 
 /**
  * Update all tokens within this project.
@@ -31,6 +32,10 @@ const update = () => {
       format: ColorToken.CONSTANTS.TOKEN_FORMATS.AUTOMATED,
       data: { gradation: nextTokens.core["gradation color"] }, // automated gradation token is missing the `gradation` key.
     }).normalize(),
+    solids: new SolidToken({
+      format: ColorToken.CONSTANTS.TOKEN_FORMATS.AUTOMATED,
+      data: nextTokens.core["mobile solid background"],
+    }).normalize(),
   };
 
   // Prev tokens are local tokens to be updated with the next tokens.
@@ -47,6 +52,10 @@ const update = () => {
       format: ColorToken.CONSTANTS.TOKEN_FORMATS.STANDARD,
       data: prevTokens.gradation.color,
     }),
+    solids: new SolidToken({
+      format: ColorToken.CONSTANTS.TOKEN_FORMATS.STANDARD,
+      data: prevTokens.solids.color,
+    }),
   };
 
   // Final tokens are the prev tokens [local] after updating with new values
@@ -55,12 +64,14 @@ const update = () => {
     functional: prev.functional.merge({ token: next.functional }),
     decorative: prev.decorative.merge({ token: next.decorative }),
     gradation: prev.gradation.merge({ token: next.gradation }),
+    solids: prev.solids.merge({ token: next.solids }),
   };
 
   // Write the tokens to the file system.
   utils.writeToken(common.CONSTANTS.TOKENS.STANDARD.PATHS.CORE.COLOR.DECORATIVE, final.decorative.serial);
   utils.writeToken(common.CONSTANTS.TOKENS.STANDARD.PATHS.CORE.COLOR.FUNCTIONAL, final.functional.serial);
   utils.writeToken(common.CONSTANTS.TOKENS.STANDARD.PATHS.CORE.COLOR.GRADATION, final.gradation.serial);
+  utils.writeToken(common.CONSTANTS.TOKENS.STANDARD.PATHS.CORE.COLOR.SOLIDS, final.solids.serial);
 };
 
 module.exports = update;
