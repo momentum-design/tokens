@@ -1903,10 +1903,10 @@ minimatch@^3.1.1:
   dependencies:
     brace-expansion "^1.1.7"
 
-momentum-abstract@^1.0.27:
-  version "1.0.27"
-  resolved "https://registry.yarnpkg.com/momentum-abstract/-/momentum-abstract-1.0.27.tgz#f5840f6321e0fe1f87bee0eb8b476f29f765dfbe"
-  integrity sha512-QrdrxcOiHX83EYfXrEx5pLiCv9msEecwOE8OYFXYmrZGpiNIKKOi9u3aoY3v3QuIHpkeFuH0V5EUDdC8b0K8aw==
+momentum-abstract@^1.0.28:
+  version "1.0.28"
+  resolved "https://registry.yarnpkg.com/momentum-abstract/-/momentum-abstract-1.0.28.tgz#399192c8b888ae2b0c94e158bb7a255712af383c"
+  integrity sha512-8jX/iwAb/v+fkGXm1DqKSBDgQN+I9lz+F3QjlNranfJylDWtg3hWu5OexnR0Z7WyZGey93Nu+9aptxuz/2LKGw==
 
 ms@2.1.2:
   version "2.1.2"

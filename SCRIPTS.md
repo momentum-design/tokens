@@ -56,6 +56,7 @@ Commands should contain a single, exported function that can be executed from `.
   - **Supported Tokens**
     - `./core/color/decorative`
     - `./core/color/functional`
+    - `./core/color/gradation`
 
 If the supported commands are to be modified in any way, changes to this file should be added to accurately represent the supported commands.
 
