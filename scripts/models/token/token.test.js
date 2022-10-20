@@ -104,5 +104,132 @@ describe("models.Token", () => {
         expect(typeof token.serial).toBe("string");
       });
     });
+
+    describe("canMerge()", () => {
+      const category = Token.CONSTANTS.CATEGORIES.COLOR;
+      const format = Token.CONSTANTS.TOKEN_FORMATS.STANDARD;
+
+      it("should return false with an appropriate message when the provided token does not have matching categories", () => {
+        const primary = new Token({ category, format });
+        const secondary = new Token({ category, format });
+
+        secondary.category = "different";
+
+        expect(primary.canMerge({ token: secondary })).toMatchObject({
+          can: false,
+          reason: 'token "category" properties do not match',
+        });
+      });
+
+      it('should return false with an appropriate message when the source Token is not in the "standard" format', () => {
+        const primary = new Token({ category, format: Token.CONSTANTS.TOKEN_FORMATS.AUTOMATED });
+        const secondary = new Token({ category, format });
+
+        expect(primary.canMerge({ token: secondary })).toMatchObject({
+          can: false,
+          reason: `token format "${primary.format}" for this token cannot be merged, normalize this token first`,
+        });
+      });
+
+      it('should return false with an appropriate message when the target Token is not in the "standard" format', () => {
+        const primary = new Token({ category, format });
+        const secondary = new Token({ category, format: Token.CONSTANTS.TOKEN_FORMATS.AUTOMATED });
+
+        expect(primary.canMerge({ token: secondary })).toMatchObject({
+          can: false,
+          reason: `token format "${secondary.format}" for this token cannot be merged, normalize the provided token first`,
+        });
+      });
+
+      it("should return true with no reason when the target Token can be merged", () => {
+        const primary = new Token({ category, format });
+        const secondary = new Token({ category, format });
+
+        expect(primary.canMerge({ token: secondary })).toMatchObject({
+          can: true,
+          reason: undefined,
+        });
+      });
+    });
+
+    describe("merge()", () => {
+      const category = Token.CONSTANTS.CATEGORIES.COLOR;
+      const format = Token.CONSTANTS.TOKEN_FORMATS.STANDARD;
+
+      afterEach(() => {
+        jest.restoreAllMocks();
+      });
+
+      it("should throw an error when the provided token cannot be merged", () => {
+        const primary = new Token({ category, format });
+        const secondary = new Token({ category, format: Token.CONSTANTS.TOKEN_FORMATS.AUTOMATED });
+
+        jest.spyOn(primary, "mergeData").mockImplementation(() => undefined);
+
+        expect(() => primary.merge({ token: secondary })).toThrow();
+      });
+
+      it("should attempt to merge its data with the provided token", () => {
+        const primary = new Token({ category, format });
+        const secondary = new Token({ category, format });
+
+        const spy = jest.spyOn(primary, "mergeData").mockImplementation(() => undefined);
+
+        primary.merge({ token: secondary });
+
+        expect(spy).toHaveBeenCalledWith({ data: secondary.data });
+      });
+    });
+
+    describe("normalize()", () => {
+      const category = Token.CONSTANTS.CATEGORIES.COLOR;
+      const format = Token.CONSTANTS.TOKEN_FORMATS.STANDARD;
+
+      afterEach(() => {
+        jest.restoreAllMocks();
+      });
+
+      it("should attempt to normalize the data of this Token", () => {
+        const token = new Token({ category, format });
+
+        const spy = jest.spyOn(token, "normalizeData").mockImplementation(() => undefined);
+
+        token.normalize();
+
+        expect(spy).toHaveBeenCalled();
+      });
+
+      it("should update the format of this Token", () => {
+        const token = new Token({ category, format: Token.CONSTANTS.TOKEN_FORMATS.AUTOMATED });
+
+        const spy = jest.spyOn(token, "normalizeData").mockImplementation(() => undefined);
+
+        token.normalize();
+
+        expect(token.format).toBe(Token.CONSTANTS.TOKEN_FORMATS.STANDARD);
+      });
+    });
+
+    describe("mergeData()", () => {
+      it("should throw an error", () => {
+        const token = new Token({
+          category: Token.CONSTANTS.CATEGORIES.COLOR,
+          format: Token.CONSTANTS.TOKEN_FORMATS.STANDARD,
+        });
+
+        expect(() => token.mergeData()).toThrow();
+      });
+    });
+
+    describe("normalizeData()", () => {
+      it("should throw an error", () => {
+        const token = new Token({
+          category: Token.CONSTANTS.CATEGORIES.COLOR,
+          format: Token.CONSTANTS.TOKEN_FORMATS.STANDARD,
+        });
+
+        expect(() => token.normalizeData()).toThrow();
+      });
+    });
   });
 });

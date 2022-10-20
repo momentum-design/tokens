@@ -34,32 +34,6 @@ describe("models.ColorToken", () => {
       });
     });
 
-    describe("mergeGrades()", () => {
-      const destination = {
-        "00": "#111111",
-        25: "#222222",
-        75: "#333333",
-      };
-      const source = {
-        "00": "#000000",
-        50: "#888888",
-        100: "#ffffff",
-      };
-      const merged = ColorToken.mergeGrades({ source, destination });
-
-      it("should return ColorToken Grades containing all new color grades of the destination object", () => {
-        expect(merged).toMatchObject(source);
-      });
-
-      it("should override any existing destination grades with source grades", () => {
-        expect(merged["00"]).toBe(source["00"]);
-      });
-
-      it("should not duplicate any overwritten grades", () => {
-        expect(Object.keys(merged).length).toBe(5);
-      });
-    });
-
     describe("mergeColors()", () => {
       const destination = {
         "color-a": {
@@ -97,162 +71,37 @@ describe("models.ColorToken", () => {
       });
     });
 
-    describe("merge()", () => {
-      const destinationData = {
-        "color-a": {
-          "00": "#111111",
-          25: "#555555",
-        },
-        "color-b": {
-          "00": "#000000",
-        },
+    describe("mergeGrades()", () => {
+      const destination = {
+        "00": "#111111",
+        25: "#222222",
+        75: "#333333",
       };
-      const sourceData = {
-        "color-a": {
-          "00": "#222222",
-          50: "#444444",
-        },
-        "color-c": {
-          "00": "#333333",
-        },
+      const source = {
+        "00": "#000000",
+        50: "#888888",
+        100: "#ffffff",
       };
+      const merged = ColorToken.mergeGrades({ source, destination });
 
-      const format = ColorToken.CONSTANTS.TOKEN_FORMATS.STANDARD;
-
-      let destination;
-      let source;
-
-      beforeEach(() => {
-        destination = new ColorToken({ data: destinationData, format });
-        source = new ColorToken({ data: sourceData, format });
+      it("should return ColorToken Grades containing all new color grades of the destination object", () => {
+        expect(merged).toMatchObject(source);
       });
 
-      it("should throw an error when the source token's category isn't color", () => {
-        source.category = "invalid";
-
-        expect(() => ColorToken.merge({ destination, source })).toThrow();
+      it("should override any existing destination grades with source grades", () => {
+        expect(merged["00"]).toBe(source["00"]);
       });
 
-      it("should throw an error when the destination token's category isn't color", () => {
-        destination.category = "invalid";
-
-        expect(() => ColorToken.merge({ destination, source })).toThrow();
-      });
-
-      it("should throw an error when the destination and source token do not share a format", () => {
-        source.format = ColorToken.CONSTANTS.TOKEN_FORMATS.AUTOMATED;
-
-        expect(() => ColorToken.merge({ destination, source })).toThrow();
-      });
-
-      it('should throw an error when the source token format is not "standard"', () => {
-        source.format = "other-format";
-
-        expect(() => ColorToken.merge({ destination, source })).toThrow();
-      });
-
-      it('should throw an error when the source token format is not "standard"', () => {
-        source.format = ColorToken.CONSTANTS.TOKEN_FORMATS.AUTOMATED;
-
-        expect(() => ColorToken.merge({ destination, source })).toThrow();
-      });
-
-      it('should throw an error when the destination token format is not "standard"', () => {
-        destination.format = ColorToken.CONSTANTS.TOKEN_FORMATS.AUTOMATED;
-
-        expect(() => ColorToken.merge({ destination, source })).toThrow();
-      });
-
-      it("should return a new ColorToken", () => {
-        const final = ColorToken.merge({ destination, source });
-
-        expect(final instanceof ColorToken).toBe(true);
-      });
-
-      it("should return a new ColorToken with merged data", () => {
-        const final = ColorToken.merge({ destination, source });
-
-        expect(final.data).toMatchObject(source.data);
-        expect(Object.keys(final.data["color-a"]).length).toBe(3);
-        expect(Object.keys(final.data).length).toBe(3);
+      it("should not duplicate any overwritten grades", () => {
+        expect(Object.keys(merged).length).toBe(5);
       });
     });
 
-    describe("translateGrades()", () => {
-      let from;
-      let grades;
-      let to;
-
-      beforeEach(() => {
-        from = ColorToken.CONSTANTS.TOKEN_FORMATS.AUTOMATED;
-        grades = {
-          ["color-20"]: {
-            rgba: {
-              r: 0,
-              g: 1,
-              b: 2,
-              a: 1,
-            },
-          },
-          ["color-40"]: {
-            rgba: {
-              r: 3,
-              g: 4,
-              b: 5,
-              a: 0,
-            },
-          },
-        };
-        to = ColorToken.CONSTANTS.TOKEN_FORMATS.STANDARD;
-      });
-
-      it('should return the provided grades when from is "standard"', () => {
-        from = ColorToken.CONSTANTS.TOKEN_FORMATS.STANDARD;
-
-        const final = ColorToken.translateGrades({ from, to, grades });
-
-        expect(final).toStrictEqual(grades);
-      });
-
-      it('should return a convert rgba value when from is "automated"', () => {
-        const final = ColorToken.translateGrades({ from, to, grades });
-        const { r: ar, g: ag, b: ab, a: aa } = grades["color-20"].rgba;
-        const { r: br, g: bg, b: bb, a: ba } = grades["color-40"].rgba;
-        const expected20 = `rgba(${ar}, ${ag}, ${ab}, ${aa})`;
-        const expected40 = `rgba(${br}, ${bg}, ${bb}, ${ba})`;
-
-        expect(final["20"]).toStrictEqual(expected20);
-        expect(final["40"]).toStrictEqual(expected40);
-      });
-
-      it("should throw an error when the from value is not a supported value", () => {
-        from = "invalid";
-
-        expect(() => ColorToken.translateGrades({ from, to, grades })).toThrow();
-      });
-
-      it('should return the formatted token when to is "standard"', () => {
-        from = ColorToken.CONSTANTS.TOKEN_FORMATS.STANDARD;
-
-        const final = ColorToken.translateGrades({ from, to, grades });
-
-        expect(final).toStrictEqual(grades);
-      });
-
-      it("should throw an error when the to value is not a supported value", () => {
-        to = "invalid";
-
-        expect(() => ColorToken.translateGrades({ from, to, grades })).toThrow();
-      });
-    });
-
-    describe("translateColors()", () => {
-      let from;
+    describe("normalizeColors()", () => {
       let colors;
-      let to;
+      let format;
 
       beforeEach(() => {
-        from = ColorToken.CONSTANTS.TOKEN_FORMATS.AUTOMATED;
         colors = {
           ["color-name"]: {
             ["color-20"]: {
@@ -273,158 +122,141 @@ describe("models.ColorToken", () => {
             },
           },
         };
-        to = ColorToken.CONSTANTS.TOKEN_FORMATS.STANDARD;
+        format = ColorToken.CONSTANTS.TOKEN_FORMATS.STANDARD;
       });
 
-      it('should return the provided colors when from is "standard"', () => {
-        from = ColorToken.CONSTANTS.TOKEN_FORMATS.STANDARD;
+      afterEach(() => {
+        jest.restoreAllMocks();
+      });
 
-        const final = ColorToken.translateColors({ from, to, colors });
+      it('should return the provided colors if the format is "standard"', () => {
+        expect(ColorToken.normalizeColors({ colors, format })).toMatchObject(colors);
+      });
 
-        expect(final).toStrictEqual(colors);
+      it("should attempt to normalize the grades of each color", () => {
+        format = ColorToken.CONSTANTS.TOKEN_FORMATS.AUTOMATED;
+        const spy = jest.spyOn(ColorToken, "normalizeGrades").mockImplementation(() => {});
+
+        ColorToken.normalizeColors({ colors, format });
+
+        expect(spy).toHaveBeenCalledTimes(Object.values(colors).length);
+      });
+
+      it("should throw an error if the provided format is not supported", () => {
+        expect(() => ColorToken.normalizeColors({ colors, format: "invalid" })).toThrow();
+      });
+    });
+
+    describe("normalizeGrades()", () => {
+      let format;
+      let grades;
+
+      beforeEach(() => {
+        format = ColorToken.CONSTANTS.TOKEN_FORMATS.STANDARD;
+        grades = {
+          ["color-20"]: {
+            rgba: {
+              r: 0,
+              g: 1,
+              b: 2,
+              a: 1,
+            },
+          },
+          ["color-40"]: {
+            rgba: {
+              r: 3,
+              g: 4,
+              b: 5,
+              a: 0,
+            },
+          },
+        };
+      });
+
+      it('should return the provided colors if the format is "standard"', () => {
+        expect(ColorToken.normalizeGrades({ format, grades })).toMatchObject(grades);
       });
 
       it('should return a convert rgba value when from is "automated"', () => {
-        const final = ColorToken.translateColors({ from, to, colors });
-        const { r: ar, g: ag, b: ab, a: aa } = colors["color-name"]["color-20"].rgba;
-        const { r: br, g: bg, b: bb, a: ba } = colors["color-name"]["color-40"].rgba;
+        const final = ColorToken.normalizeGrades({ format: ColorToken.CONSTANTS.TOKEN_FORMATS.AUTOMATED, grades });
+        const { r: ar, g: ag, b: ab, a: aa } = grades["color-20"].rgba;
+        const { r: br, g: bg, b: bb, a: ba } = grades["color-40"].rgba;
         const expected20 = `rgba(${ar}, ${ag}, ${ab}, ${aa})`;
         const expected40 = `rgba(${br}, ${bg}, ${bb}, ${ba})`;
 
-        expect(final["color-name"]["20"]).toStrictEqual(expected20);
-        expect(final["color-name"]["40"]).toStrictEqual(expected40);
+        expect(final["20"]).toStrictEqual(expected20);
+        expect(final["40"]).toStrictEqual(expected40);
       });
 
-      it("should throw an error when the from value is not a supported value", () => {
-        from = "invalid";
-
-        expect(() => ColorToken.translateColors({ from, to, colors })).toThrow();
-      });
-
-      it('should return the formatted token when to is "standard"', () => {
-        from = ColorToken.CONSTANTS.TOKEN_FORMATS.STANDARD;
-
-        const final = ColorToken.translateColors({ from, to, colors });
-
-        expect(final).toStrictEqual(colors);
-      });
-
-      it("should throw an error when the to value is not a supported value", () => {
-        to = "invalid";
-
-        expect(() => ColorToken.translateGrades({ from, to, colors })).toThrow();
+      it("should throw an error if the provided format is not supported", () => {
+        expect(() => ColorToken.normalizeGrades({ grades, format: "invalid" })).toThrow();
       });
     });
   });
 
   describe("scoped", () => {
-    describe("updateFormat()", () => {
-      let colorToken;
+    describe("mergeData()", () => {
+      const format = ColorToken.CONSTANTS.TOKEN_FORMATS.STANDARD;
+      const category = ColorToken.CONSTANTS.CATEGORIES.COLOR;
 
-      beforeEach(() => {
-        colorToken = new ColorToken({
-          data: {
-            ["color-name"]: {
-              ["color-20"]: {
-                rgba: {
-                  r: 0,
-                  g: 1,
-                  b: 2,
-                  a: 1,
-                },
-              },
-              ["color-40"]: {
-                rgba: {
-                  r: 3,
-                  g: 4,
-                  b: 5,
-                  a: 0,
-                },
-              },
-            },
-          },
-          format: ColorToken.CONSTANTS.TOKEN_FORMATS.AUTOMATED,
-        });
+      afterEach(() => {
+        jest.restoreAllMocks();
       });
 
-      it("should translate this ColorToken's data to the target format", () => {
-        const { r: ar, g: ag, b: ab, a: aa } = colorToken.data["color-name"]["color-20"].rgba;
-        const { r: br, g: bg, b: bb, a: ba } = colorToken.data["color-name"]["color-40"].rgba;
-        const expected20 = `rgba(${ar}, ${ag}, ${ab}, ${aa})`;
-        const expected40 = `rgba(${br}, ${bg}, ${bb}, ${ba})`;
+      it("should attempt to merge colors", () => {
+        const data = { key: "value" };
+        const primary = new ColorToken({ category, data: { ...data }, format });
+        const secondary = new ColorToken({ category, data: { ...data }, format });
+        const primaryData = { ...primary.data };
+        const secondaryData = { ...secondary.data };
 
-        colorToken.updateFormat({ format: ColorToken.CONSTANTS.TOKEN_FORMATS.STANDARD });
+        const spy = jest.spyOn(ColorToken, "mergeColors").mockImplementation(() => {});
 
-        expect(colorToken.data["color-name"]["20"]).toStrictEqual(expected20);
-        expect(colorToken.data["color-name"]["40"]).toStrictEqual(expected40);
-      });
+        primary.mergeData({ data: secondary.data });
 
-      it("should update this ColorToken's to reflect the correct format", () => {
-        const format = ColorToken.CONSTANTS.TOKEN_FORMATS.STANDARD;
-
-        colorToken.updateFormat({ format });
-
-        expect(colorToken.format).toBe(format);
-      });
-
-      it("should throw if the target format is not valid", () => {
-        const format = "invalid";
-
-        expect(() => colorToken.updateFormat({ format })).toThrow();
+        expect(spy).toHaveBeenCalledWith({ destination: primaryData, source: secondaryData });
       });
 
       it("should return itself", () => {
-        const format = ColorToken.CONSTANTS.TOKEN_FORMATS.STANDARD;
+        const primary = new ColorToken({ category, format });
+        const secondary = new ColorToken({ category, format });
 
-        colorToken.updateFormat({ format });
+        ColorToken.mergeColors = jest.fn().mockImplementation(() => {});
 
-        expect(colorToken.updateFormat({ format })).toBe(colorToken);
+        const final = primary.mergeData({ data: secondary.data });
+
+        expect(final).toBe(primary);
       });
     });
 
-    describe("normalize()", () => {
-      let colorToken;
+    describe("normalizeData()", () => {
+      const format = ColorToken.CONSTANTS.TOKEN_FORMATS.STANDARD;
+      const category = ColorToken.CONSTANTS.CATEGORIES.COLOR;
 
-      beforeEach(() => {
-        colorToken = new ColorToken({
-          data: {
-            ["color-name"]: {
-              ["color-20"]: {
-                rgba: {
-                  r: 0,
-                  g: 1,
-                  b: 2,
-                  a: 1,
-                },
-              },
-              ["color-40"]: {
-                rgba: {
-                  r: 3,
-                  g: 4,
-                  b: 5,
-                  a: 0,
-                },
-              },
-            },
-          },
-          format: ColorToken.CONSTANTS.TOKEN_FORMATS.AUTOMATED,
-        });
+      afterEach(() => {
+        jest.restoreAllMocks();
       });
 
-      it('should convert this ColorToken into the "standard" format', () => {
-        const { r: ar, g: ag, b: ab, a: aa } = colorToken.data["color-name"]["color-20"].rgba;
-        const { r: br, g: bg, b: bb, a: ba } = colorToken.data["color-name"]["color-40"].rgba;
-        const expected20 = `rgba(${ar}, ${ag}, ${ab}, ${aa})`;
-        const expected40 = `rgba(${br}, ${bg}, ${bb}, ${ba})`;
+      it("should attempt to normalize colors", () => {
+        const data = { key: "value" };
+        const primary = new ColorToken({ category, data: { ...data }, format });
+        const primaryData = { ...primary.data };
 
-        colorToken.normalize();
+        const spy = jest.spyOn(ColorToken, "normalizeColors").mockImplementation(() => {});
 
-        expect(colorToken.data["color-name"]["20"]).toStrictEqual(expected20);
-        expect(colorToken.data["color-name"]["40"]).toStrictEqual(expected40);
+        primary.normalizeData();
+
+        expect(spy).toHaveBeenCalledWith({ colors: primaryData, format: primary.format });
       });
 
       it("should return itself", () => {
-        expect(colorToken.normalize()).toBe(colorToken);
+        const primary = new ColorToken({ category, format });
+
+        ColorToken.normalizeColors = jest.fn().mockImplementation(() => {});
+
+        const final = primary.normalizeData();
+
+        expect(final).toBe(primary);
       });
     });
   });

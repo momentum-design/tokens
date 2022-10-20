@@ -20,7 +20,7 @@ describe("utils.writeToken", () => {
     });
 
     afterEach(() => {
-      jest.clearAllMocks();
+      jest.restoreAllMocks();
     });
 
     it("should attempt to write file to the target destination ammended to the project directory", () => {

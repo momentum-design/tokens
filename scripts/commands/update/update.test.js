@@ -12,7 +12,7 @@ describe("commands.update()", () => {
   });
 
   afterEach(() => {
-    jest.clearAllMocks();
+    jest.restoreAllMocks();
   });
 
   it("should attempt to write a merged core color decorative token", () => {
@@ -23,5 +23,10 @@ describe("commands.update()", () => {
   it("should attempt to write a merged core color functional token", () => {
     update();
     expect(spy).toHaveBeenCalledWith(CONSTANTS.TOKENS.STANDARD.PATHS.CORE.COLOR.DECORATIVE, expect.anything());
+  });
+
+  it("should attempt to write a merged core color gradation token", () => {
+    update();
+    expect(spy).toHaveBeenCalledWith(CONSTANTS.TOKENS.STANDARD.PATHS.CORE.COLOR.GRADATION, expect.anything());
   });
 });
