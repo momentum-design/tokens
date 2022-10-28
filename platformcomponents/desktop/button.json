@@ -64,7 +64,8 @@
     "common-secondary": {
       "#normal": {
         "background": "@theme-common-button-secondary-normal",
-        "text": "@theme-common-text-white"
+        "text": "@theme-common-text-white",
+        "border": "@theme-common-outline-button-normal"
       },
       "#hovered": {
         "background": "@theme-common-button-secondary-hover",
