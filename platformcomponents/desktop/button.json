@@ -72,12 +72,13 @@
         "text": "@theme-common-text-white"
       },
       "#pressed": {
-        "background": "@theme-common-button-secondary-pressed",
+        "background": "@theme-common-button-secondary-active-normal",
         "text": "@theme-common-text-white"
       },
       "#disabled": {
         "background": "@theme-common-button-secondary-disabled",
-        "text": "@theme-common-text-disabled"
+        "text": "@theme-common-text-disabled",
+        "border": "@theme-common-outline-disabled-normal"
       }
     }
   }

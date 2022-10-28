@@ -37,8 +37,7 @@
         },
         "secondary": {
           "normal": "@color-white-alpha-00",
-          "hover": "@color-white-alpha-07",
-          "pressed": "@color-white-alpha-20",
+          "hover": "@color-white-alpha-07",          
           "disabled": "@color-white-alpha-00",
           "active": {
             "normal": "@color-white-alpha-20",

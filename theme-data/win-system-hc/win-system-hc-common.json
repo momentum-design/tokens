@@ -48,8 +48,7 @@
         },
         "secondary": {
           "normal": "@color-hc-SystemColorButtonFaceColor",
-          "hover": "@color-hc-SystemColorHighlightColor",
-          "pressed": "@color-hc-SystemColorHighlightColor",
+          "hover": "@color-hc-SystemColorHighlightColor",          
           "disabled": "@color-hc-SystemColorButtonFaceColor",
           "active": {
             "normal": "@color-hc-SystemColorHighlightColor",
