@@ -57,6 +57,20 @@
             "text": "@theme-text-accent-normal"
           }
         }
+      },
+      "extParticipants": {
+        "#normal": {
+          "text": "@theme-text-warning-normal"
+        },
+        "#hovered": {
+          "text": "@theme-text-warning-hover"
+        },
+        "#active": {
+          "text": "@theme-text-warning-active"
+        },
+        "#focused": {
+          "text": "@theme-text-warning-normal"
+        }
       }
     },
     "headerText": {
