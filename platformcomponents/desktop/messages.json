@@ -72,6 +72,18 @@
           "text": "@theme-text-warning-normal"
         }
       }
+    },
+    "headerText": {
+      "default": {
+        "#normal": {
+          "text": "@theme-text-secondary-normal"
+        }
+      },
+      "extParticipants": {
+        "#normal": {
+          "text": "@theme-text-warning-normal"
+        }
+      }
     }
   }
 }
