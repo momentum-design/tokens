@@ -1,6 +1,6 @@
 const nextTokens = {
   core: require("@momentum-design/tokens/dist/webex/json/core.json"),
-  // core: require("momentum-abstract/color/core.json"),
+  //core: require("momentum-abstract/color/core.json"),
 };
 
 const prevTokens = {
@@ -48,14 +48,14 @@ const update = () => {
       format: ColorToken.CONSTANTS.TOKEN_FORMATS.DESIGN,
       data: nextTokens.core.color.decorative,
     }).normalize(),
+    gradation: new GradientToken({
+      format: ColorToken.CONSTANTS.TOKEN_FORMATS.DESIGN,
+      data: { gradation: nextTokens.core.color.gradient },
+    }).normalize(),
     solids: new SolidToken({
       format: ColorToken.CONSTANTS.TOKEN_FORMATS.DESIGN,
       data: nextTokens.core.color.mobile,
     }).normalize(),
-    // gradation: new GradientToken({
-    //   format: ColorToken.CONSTANTS.TOKEN_FORMATS.DESIGN,
-    //   data: { gradation: nextTokens.core.color.gradient }
-    // }).normalize(),
   };
 
   // Prev tokens are local tokens to be updated with the next tokens.
@@ -83,7 +83,7 @@ const update = () => {
   const final = {
     functional: prev.functional.merge({ token: next.functional }),
     decorative: prev.decorative.merge({ token: next.decorative }),
-    // gradation: prev.gradation.merge({ token: next.gradation }),
+    gradation: prev.gradation.merge({ token: next.gradation }),
     solids: prev.solids.merge({ token: next.solids }),
   };
 

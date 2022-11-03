@@ -137,10 +137,6 @@ class SolidToken extends Token {
           }, {});
           mutated[key] = mutated[key] || {};
           mutated[key] = { ...scheme };
-          // mutated[level] = mutated[level] || {};
-          // mutated[level][theme] = mutated[level][theme] || {};
-          // mutated[level][theme][scheme] = mutated[level][theme][scheme] || {};
-          // mutated[level][theme][scheme][value] = `rgba(${r}, ${g}, ${b}, ${a})`;
           return { ...mutated };
         }, {});
         break;

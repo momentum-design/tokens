@@ -139,6 +139,16 @@ class GradientToken extends Token {
         );
         break;
 
+      case GradientToken.CONSTANTS.TOKEN_FORMATS.DESIGN:
+        normalized = Object.entries(gradations).reduce((mutated, [key, value]) => {
+          const normalized = GradientToken.normalizeThemes({ format, themes: value });
+          return {
+            ...mutated,
+            [key]: { ...normalized },
+          };
+        }, {});
+        break;
+
       default:
         throw new Error(`models.GradientToken.normalizeGradations() :: "${from}" is not a supported format`);
     }
@@ -183,6 +193,19 @@ class GradientToken extends Token {
           target.push(`rgba(${r1}, ${g1}, ${b1}, ${a1})`);
 
           return mutable;
+        }, {});
+        break;
+
+      case GradientToken.CONSTANTS.TOKEN_FORMATS.DESIGN:
+        normalized = Object.entries(themes).reduce((mutated, [key, value]) => {
+          const scheme = Object.entries(value).reduce((level, [key, value]) => {
+            level[key] = level[key] || {};
+            level[key] = [value.value];
+            return { ...level };
+          }, {});
+          mutated[key] = mutated[key] || {};
+          mutated[key] = { ...scheme };
+          return { ...mutated };
         }, {});
         break;
 
