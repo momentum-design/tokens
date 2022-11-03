@@ -1,5 +1,6 @@
 const nextTokens = {
-  core: require("momentum-abstract/color/core.json"),
+  core: require("@momentum-design/tokens/dist/webex/json/core.json"),
+  // core: require("momentum-abstract/color/core.json"),
 };
 
 const prevTokens = {
@@ -19,23 +20,42 @@ const { ColorToken, GradientToken, SolidToken } = require("../../models");
 const update = () => {
   // Next tokens are mapped onto legacy tokens. These must be normalized to
   // match the existing local tokens.
+  // const next = {
+  //   functional: new ColorToken({
+  //     format: ColorToken.CONSTANTS.TOKEN_FORMATS.AUTOMATED,
+  //     data: nextTokens.core["core color"],
+  //   }).normalize(),
+  //   decorative: new ColorToken({
+  //     format: ColorToken.CONSTANTS.TOKEN_FORMATS.AUTOMATED,
+  //     data: nextTokens.core["decorative color"],
+  //   }).normalize(),
+  //   gradation: new GradientToken({
+  //     format: ColorToken.CONSTANTS.TOKEN_FORMATS.AUTOMATED,
+  //     data: { gradation: nextTokens.core["gradation color"] }, // automated gradation token is missing the `gradation` key.
+  //   }).normalize(),
+  //   solids: new SolidToken({
+  //     format: ColorToken.CONSTANTS.TOKEN_FORMATS.AUTOMATED,
+  //     data: nextTokens.core["mobile solid background"],
+  //   }).normalize(),
+  // };
+
   const next = {
     functional: new ColorToken({
-      format: ColorToken.CONSTANTS.TOKEN_FORMATS.AUTOMATED,
-      data: nextTokens.core["core color"],
+      format: ColorToken.CONSTANTS.TOKEN_FORMATS.DESIGN,
+      data: nextTokens.core.color.core,
     }).normalize(),
     decorative: new ColorToken({
-      format: ColorToken.CONSTANTS.TOKEN_FORMATS.AUTOMATED,
-      data: nextTokens.core["decorative color"],
-    }).normalize(),
-    gradation: new GradientToken({
-      format: ColorToken.CONSTANTS.TOKEN_FORMATS.AUTOMATED,
-      data: { gradation: nextTokens.core["gradation color"] }, // automated gradation token is missing the `gradation` key.
+      format: ColorToken.CONSTANTS.TOKEN_FORMATS.DESIGN,
+      data: nextTokens.core.color.decorative,
     }).normalize(),
     solids: new SolidToken({
-      format: ColorToken.CONSTANTS.TOKEN_FORMATS.AUTOMATED,
-      data: nextTokens.core["mobile solid background"],
+      format: ColorToken.CONSTANTS.TOKEN_FORMATS.DESIGN,
+      data: nextTokens.core.color.mobile,
     }).normalize(),
+    // gradation: new GradientToken({
+    //   format: ColorToken.CONSTANTS.TOKEN_FORMATS.DESIGN,
+    //   data: { gradation: nextTokens.core.color.gradient }
+    // }).normalize(),
   };
 
   // Prev tokens are local tokens to be updated with the next tokens.
@@ -63,7 +83,7 @@ const update = () => {
   const final = {
     functional: prev.functional.merge({ token: next.functional }),
     decorative: prev.decorative.merge({ token: next.decorative }),
-    gradation: prev.gradation.merge({ token: next.gradation }),
+    // gradation: prev.gradation.merge({ token: next.gradation }),
     solids: prev.solids.merge({ token: next.solids }),
   };
 

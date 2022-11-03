@@ -96,6 +96,16 @@ class ColorToken extends Token {
         );
         break;
 
+      case ColorToken.CONSTANTS.TOKEN_FORMATS.DESIGN:
+        normalized = Object.entries(colors).reduce(
+          (mutated, [key, value]) => ({
+            ...mutated,
+            [key]: ColorToken.normalizeGrades({ format, grades: value }),
+          }),
+          {}
+        );
+        break;
+
       default:
         throw new Error(`models.ColorToken.normalizeColors() :: "${format}" is not a supported format`);
     }
@@ -132,6 +142,16 @@ class ColorToken extends Token {
           ) => ({
             ...mutated,
             [key.split("-").pop()]: `rgba(${r}, ${g}, ${b}, ${a})`,
+          }),
+          {}
+        );
+        break;
+
+      case ColorToken.CONSTANTS.TOKEN_FORMATS.DESIGN:
+        normalized = Object.entries(grades).reduce(
+          (mutated, [key, value]) => ({
+            ...mutated,
+            [key]: value.value,
           }),
           {}
         );

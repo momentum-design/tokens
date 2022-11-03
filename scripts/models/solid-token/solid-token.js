@@ -76,6 +76,13 @@ class SolidToken extends Token {
         }, {});
         break;
 
+      case SolidToken.CONSTANTS.TOKEN_FORMATS.DESIGN:
+        normalized = Object.entries(colors).reduce((mutated, [key, value]) => {
+          const normalized = SolidToken.normalizeTokens({ format, tokens: value });
+          return { ...mutated, [key]: { ...normalized } };
+        }, {});
+        break;
+
       default:
         throw new Error(`models.SolidToken.normalizeColors() :: "${format}" is not a supported format`);
     }
@@ -119,6 +126,23 @@ class SolidToken extends Token {
           },
           {}
         );
+        break;
+
+      case SolidToken.CONSTANTS.TOKEN_FORMATS.DESIGN:
+        normalized = Object.entries(tokens).reduce((mutated, [key, value]) => {
+          const scheme = Object.entries(value).reduce((level, [key, value]) => {
+            level[key] = level[key] || {};
+            level[key] = value.value;
+            return { ...level };
+          }, {});
+          mutated[key] = mutated[key] || {};
+          mutated[key] = { ...scheme };
+          // mutated[level] = mutated[level] || {};
+          // mutated[level][theme] = mutated[level][theme] || {};
+          // mutated[level][theme][scheme] = mutated[level][theme][scheme] || {};
+          // mutated[level][theme][scheme][value] = `rgba(${r}, ${g}, ${b}, ${a})`;
+          return { ...mutated };
+        }, {});
         break;
 
       default:

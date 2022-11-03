@@ -25,6 +25,7 @@ const SERIAL_SPECIFICATIONS = {
 const TOKEN_FORMATS = {
   STANDARD: "standard",
   AUTOMATED: "automated",
+  DESIGN: "design",
 };
 
 module.exports = {
