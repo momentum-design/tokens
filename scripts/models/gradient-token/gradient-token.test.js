@@ -233,6 +233,54 @@ describe("models.GradientToken", () => {
           },
         },
       };
+      const design = {
+        default: {
+          light: {
+            secondary: {
+              value: "#000000",
+              type: "color",
+              description: "Values Top, Bottom (FAFAFA, FFFFF)",
+              filePath: "src/webex/core.json",
+              isSource: true,
+              original: {
+                value: "linear-gradient(180deg, #fafafa 0%, #ffffff 100%)",
+                type: "color",
+                description: "Values Top, Bottom (FAFAFA, FFFFF)",
+              },
+              name: "color-gradient-default-light-secondary",
+              attributes: {
+                category: "color",
+                type: "gradient",
+                item: "default",
+                subitem: "light",
+                state: "secondary",
+              },
+              path: ["color", "gradient", "default", "light", "secondary"],
+            },
+            primary: {
+              value: "#000000",
+              type: "color",
+              description: "Values Top, Bottom (F0F0F0, FFFFF)",
+              filePath: "src/webex/core.json",
+              isSource: true,
+              original: {
+                value: "linear-gradient(180deg, #f0f0f0 0%, #ffffff 100%)",
+                type: "color",
+                description: "Values Top, Bottom (F0F0F0, FFFFF)",
+              },
+              name: "color-gradient-default-light-primary",
+              attributes: {
+                category: "color",
+                type: "gradient",
+                item: "default",
+                subitem: "light",
+                state: "primary",
+              },
+              path: ["color", "gradient", "default", "light", "primary"],
+            },
+          },
+        },
+      };
 
       let format;
 
@@ -259,6 +307,16 @@ describe("models.GradientToken", () => {
         });
       });
 
+      it('should normalize the provided theme names when the format is "design"', () => {
+        format = GradientToken.CONSTANTS.TOKEN_FORMATS.DESIGN;
+        const final = GradientToken.normalizeThemes({ format, themes: design.default });
+
+        Object.keys(design.default).forEach((name) => {
+          expect(final[name].primary).toBeDefined();
+          expect(final[name].secondary).toBeDefined();
+        });
+      });
+
       it('should normalize the provided theme values when the format is "automated"', () => {
         format = GradientToken.CONSTANTS.TOKEN_FORMATS.AUTOMATED;
         const final = GradientToken.normalizeThemes({ format, themes });
@@ -273,6 +331,17 @@ describe("models.GradientToken", () => {
 
           expect(target[0]).toBe(first);
           expect(target[1]).toBe(second);
+        });
+      });
+
+      it('should normalize the provided theme values when the format is "design"', () => {
+        format = GradientToken.CONSTANTS.TOKEN_FORMATS.DESIGN;
+        const final = GradientToken.normalizeThemes({ format, themes: design.default });
+        const target = ["#000000", "#000000"];
+
+        Object.keys(design.default).forEach((name) => {
+          expect(target[0]).toBe(final[name].primary[0]);
+          expect(target[1]).toBe(final[name].secondary[0]);
         });
       });
 

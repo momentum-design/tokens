@@ -153,6 +153,7 @@ describe("models.SolidToken", () => {
     describe("normalizeTokens()", () => {
       let format;
       let tokens;
+      let design;
 
       beforeEach(() => {
         format = SolidToken.CONSTANTS.TOKEN_FORMATS.STANDARD;
@@ -176,6 +177,54 @@ describe("models.SolidToken", () => {
             },
           },
         };
+        design = {
+          default: {
+            light: {
+              primary: {
+                value: "#f7f7f7",
+                type: "color",
+                description: "HEX Code: #F7F7F7",
+                filePath: "src/webex/core.json",
+                isSource: true,
+                original: {
+                  value: "#f7f7f7",
+                  type: "color",
+                  description: "HEX Code: #F7F7F7",
+                },
+                name: "color-mobile-default-light-primary",
+                attributes: {
+                  category: "color",
+                  type: "mobile",
+                  item: "default",
+                  subitem: "light",
+                  state: "primary",
+                },
+                path: ["color", "mobile", "default", "light", "primary"],
+              },
+              secondary: {
+                value: "#ffffff",
+                type: "color",
+                description: "HEX Code: #FFFFFF",
+                filePath: "src/webex/core.json",
+                isSource: true,
+                original: {
+                  value: "#ffffff",
+                  type: "color",
+                  description: "HEX Code: #FFFFFF",
+                },
+                name: "color-mobile-default-light-secondary",
+                attributes: {
+                  category: "color",
+                  type: "mobile",
+                  item: "default",
+                  subitem: "light",
+                  state: "secondary",
+                },
+                path: ["color", "mobile", "default", "light", "secondary"],
+              },
+            },
+          },
+        };
       });
 
       it('should return the provided colors if the format is "standard"', () => {
@@ -191,6 +240,15 @@ describe("models.SolidToken", () => {
 
         expect(final["solid"]["color"]["scheme"]["primary"]).toStrictEqual(expectedPrimary);
         expect(final["solid"]["color"]["scheme"]["secondary"]).toStrictEqual(expectedSecondary);
+      });
+
+      it('should return a converted value when format is "design"', () => {
+        const final = SolidToken.normalizeTokens({ format: SolidToken.CONSTANTS.TOKEN_FORMATS.DESIGN, tokens: design.default });
+        const expectedPrimary = `#f7f7f7`;
+        const expectedSecondary = `#ffffff`;
+
+        expect(final.light.primary).toStrictEqual(expectedPrimary);
+        expect(final.light.secondary).toStrictEqual(expectedSecondary);
       });
 
       it("should throw an error if the provided format is not supported", () => {
