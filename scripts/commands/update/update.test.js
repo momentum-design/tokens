@@ -16,17 +16,17 @@ describe("commands.update()", () => {
   });
 
   it("should attempt to write a merged core color decorative token", () => {
-    update();
+    update("standard");
     expect(spy).toHaveBeenCalledWith(CONSTANTS.TOKENS.STANDARD.PATHS.CORE.COLOR.DECORATIVE, expect.anything());
   });
 
   it("should attempt to write a merged core color functional token", () => {
-    update();
+    update("standard");
     expect(spy).toHaveBeenCalledWith(CONSTANTS.TOKENS.STANDARD.PATHS.CORE.COLOR.DECORATIVE, expect.anything());
   });
 
   it("should attempt to write a merged core color gradation token", () => {
-    update();
+    update("standard");
     expect(spy).toHaveBeenCalledWith(CONSTANTS.TOKENS.STANDARD.PATHS.CORE.COLOR.GRADATION, expect.anything());
   });
 });
