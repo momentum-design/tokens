@@ -61,8 +61,6 @@ const update = (format) => {
       }).normalize(),
     };
     next = design;
-  } else {
-    throw new Error("You must specify a token format to merge with");
   }
 
   // Prev tokens are local tokens to be updated with the next tokens.
@@ -88,10 +86,10 @@ const update = (format) => {
   // Final tokens are the prev tokens [local] after updating with new values
   // from the next tokens [automated via dependency].
   const final = {
-    functional: prev.functional.merge({ token: next.functional }),
-    decorative: prev.decorative.merge({ token: next.decorative }),
-    gradation: prev.gradation.merge({ token: next.gradation }),
-    solids: prev.solids.merge({ token: next.solids }),
+    functional: prev.functional.merge({ token: next?.functional }),
+    decorative: prev.decorative.merge({ token: next?.decorative }),
+    gradation: prev.gradation.merge({ token: next?.gradation }),
+    solids: prev.solids.merge({ token: next?.solids }),
   };
 
   // Write the tokens to the file system.
