@@ -29,4 +29,20 @@ describe("commands.update()", () => {
     update("automated");
     expect(spy).toHaveBeenCalledWith(CONSTANTS.TOKENS.STANDARD.PATHS.CORE.COLOR.GRADATION, expect.anything());
   });
+
+  // uncomment these once design tokens are published
+  // it("should attempt to write a merged core color decorative token", () => {
+  //   update("design");
+  //   expect(spy).toHaveBeenCalledWith(CONSTANTS.TOKENS.STANDARD.PATHS.CORE.COLOR.DECORATIVE, expect.anything());
+  // });
+
+  // it("should attempt to write a merged core color functional token", () => {
+  //   update("design");
+  //   expect(spy).toHaveBeenCalledWith(CONSTANTS.TOKENS.STANDARD.PATHS.CORE.COLOR.DECORATIVE, expect.anything());
+  // });
+
+  // it("should attempt to write a merged core color gradation token", () => {
+  //   update("design");
+  //   expect(spy).toHaveBeenCalledWith(CONSTANTS.TOKENS.STANDARD.PATHS.CORE.COLOR.GRADATION, expect.anything());
+  // });
 });
