@@ -52,7 +52,6 @@
     "**/*": "npx prettier --write --ignore-unknown"
   },
   "dependencies": {
-    "momentum-abstract": "^1.0.28",
-    "@momentum-design/tokens": "file:/Users/chdubois/Projects/momentum-design/packages/@momentum-design/tokens"
+    "momentum-abstract": "^1.0.28"
   }
 }

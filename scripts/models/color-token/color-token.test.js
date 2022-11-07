@@ -150,6 +150,7 @@ describe("models.ColorToken", () => {
     describe("normalizeGrades()", () => {
       let format;
       let grades;
+      let design;
 
       beforeEach(() => {
         format = ColorToken.CONSTANTS.TOKEN_FORMATS.STANDARD;
@@ -171,6 +172,50 @@ describe("models.ColorToken", () => {
             },
           },
         };
+        design = {
+          "white-alpha": {
+            11: {
+              value: "rgba(255, 255, 255, 0.11)",
+              type: "color",
+              description: "Hex Code: #ffffff\nAlpha: 11%",
+              filePath: "src/webex/core.json",
+              isSource: true,
+              original: {
+                value: "#ffffff1c",
+                type: "color",
+                description: "Hex Code: #ffffff\nAlpha: 11%",
+              },
+              name: "color-core-white-alpha-11",
+              attributes: {
+                category: "color",
+                type: "core",
+                item: "white-alpha",
+                subitem: "11",
+              },
+              path: ["color", "core", "white-alpha", "11"],
+            },
+            20: {
+              value: "rgba(255, 255, 255, 0.2)",
+              type: "color",
+              description: "Hex Code: #ffffff\nAlpha: 20%",
+              filePath: "src/webex/core.json",
+              isSource: true,
+              original: {
+                value: "#ffffff33",
+                type: "color",
+                description: "Hex Code: #ffffff\nAlpha: 20%",
+              },
+              name: "color-core-white-alpha-20",
+              attributes: {
+                category: "color",
+                type: "core",
+                item: "white-alpha",
+                subitem: "20",
+              },
+              path: ["color", "core", "white-alpha", "20"],
+            },
+          },
+        };
       });
 
       it('should return the provided colors if the format is "standard"', () => {
@@ -186,6 +231,15 @@ describe("models.ColorToken", () => {
 
         expect(final["20"]).toStrictEqual(expected20);
         expect(final["40"]).toStrictEqual(expected40);
+      });
+
+      it('should return a convert rgba value when from is "design"', () => {
+        const final = ColorToken.normalizeGrades({ format: ColorToken.CONSTANTS.TOKEN_FORMATS.DESIGN, grades: design["white-alpha"] });
+        const expected11 = `rgba(255, 255, 255, 0.11)`;
+        const expected20 = `rgba(255, 255, 255, 0.2)`;
+
+        expect(final["11"]).toStrictEqual(expected11);
+        expect(final["20"]).toStrictEqual(expected20);
       });
 
       it("should throw an error if the provided format is not supported", () => {
