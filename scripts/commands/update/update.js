@@ -41,23 +41,23 @@ const update = (format) => {
     };
     next = automated;
   } else if (format === ColorToken.CONSTANTS.TOKEN_FORMATS.DESIGN) {
-    nextTokens.design = require("@momentum-design/tokens/dist/webex/json/core.json");
+    nextTokens.design = require("@cisco-momentum/tokens/dist/webex/json/core.json");
     const design = {
       functional: new ColorToken({
         format: ColorToken.CONSTANTS.TOKEN_FORMATS.DESIGN,
-        data: nextTokens.core.color.core,
+        data: nextTokens.design.color.core,
       }).normalize(),
       decorative: new ColorToken({
         format: ColorToken.CONSTANTS.TOKEN_FORMATS.DESIGN,
-        data: nextTokens.core.color.decorative,
+        data: nextTokens.design.color.decorative,
       }).normalize(),
       gradation: new GradientToken({
         format: ColorToken.CONSTANTS.TOKEN_FORMATS.DESIGN,
-        data: { gradation: nextTokens.core.color.gradient },
+        data: { gradation: nextTokens.design.color.gradient },
       }).normalize(),
       solids: new SolidToken({
         format: ColorToken.CONSTANTS.TOKEN_FORMATS.DESIGN,
-        data: nextTokens.core.color.mobile,
+        data: nextTokens.design.color.mobile,
       }).normalize(),
     };
     next = design;

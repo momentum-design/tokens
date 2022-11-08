@@ -26,7 +26,7 @@
     "build:android": "npm run build:clean && node theme_generator.js --target=targets/android.json",
     "publishNpm": "./publishNpm.sh",
     "scripts": "node ./scripts/index.js",
-    "scripts:update": "node ./scripts/index.js --command=update --format=automated",
+    "scripts:update": "node ./scripts/index.js --command=update --format=design",
     "test": "npm run test:scripts && npm run build:web && npm run build:windows && npm run build:macos && npm run build:ios && npm run build:android",
     "test:scripts": "jest ./scripts",
     "prepare": "husky install"
@@ -52,6 +52,7 @@
     "**/*": "npx prettier --write --ignore-unknown"
   },
   "dependencies": {
-    "momentum-abstract": "^1.0.28"
+    "momentum-abstract": "^1.0.28",
+    "@cisco-momentum/tokens": "^0.0.1"
   }
 }

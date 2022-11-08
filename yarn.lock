@@ -318,6 +318,11 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@cisco-momentum/tokens@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@cisco-momentum/tokens/-/tokens-0.0.1.tgz#b515402906f330f43504a7b291eb0ee47849b932"
+  integrity sha512-0tZ17Bkhrhpd1naBNx4Batxw2HeLyIlHG8pInfH2CUE1XtwHOzoVYuc/QKr40z6Fohg+uuFuxE07mE7K2j7ZKw==
+
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@istanbuljs/load-nyc-config/-/load-nyc-config-1.1.0.tgz#fd3db1d59ecf7cf121e80650bb86712f9b55eced"
