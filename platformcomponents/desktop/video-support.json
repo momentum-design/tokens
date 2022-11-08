@@ -2,6 +2,7 @@
   "videoSupport": {
     "comment": "Control buttons, video name labels, etc.",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=6361%3A14",
+    "containerBackground": "@theme-background-secondary-normal",
     "controls": {
       "button": {
         "#normal": {
