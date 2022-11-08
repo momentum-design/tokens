@@ -1,5 +1,8 @@
 {
   "textinput": {
+    "#normal": {
+      "cursor": "@theme-globaltint-normal"
+    },
     "#active": {
       "background": "@theme-background-primary-active",
       "text": "@theme-text-primary-normal",
@@ -26,6 +29,9 @@
         "text": "@theme-text-primary-normal",
         "border": "@theme-outline-cancel-normal"
       }
+    },
+    "#focused": {
+      "cursor": "@theme-text-primary-normal"
     }
   }
 }
