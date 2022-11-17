@@ -1,74 +1,64 @@
 {
   "color": {
     "gradation": {
-      "bronze": {
-        "dark": {
-          "primary": ["linear-gradient(180deg, #1f1402 0%, #171002 100%)", "#171002"],
-          "secondary": ["linear-gradient(180deg, #2e2515 0%, #171002 100%)", "#171002"]
-        },
-        "light": {
-          "primary": ["linear-gradient(180deg, #f5efe4 0%, #ffffff 100%)", "#FFFFFF"],
-          "secondary": ["linear-gradient(180deg, #fcfaf4 0%, #ffffff 100%)", "#FFFFFF"]
-        }
-      },
-      "default": {
-        "dark": {
-          "primary": ["linear-gradient(180deg, #1a1a1a 0%, #0f0f0f 100%)"],
-          "secondary": ["linear-gradient(180deg, #262626 0%, #0f0f0f 100%)"]
-        },
-        "light": {
-          "primary": ["linear-gradient(180deg, #f0f0f0 0%, #ffffff 100%)"],
-          "secondary": ["linear-gradient(180deg, #fafafa 0%, #ffffff 100%)"]
-        }
-      },
-      "indigo": {
-        "dark": {
-          "primary": ["linear-gradient(180deg, #13182b 0%, #0e111a 100%)", "#0E111A"],
-          "secondary": ["linear-gradient(180deg, #212536 0%, #0e111a 100%)", "#0E111A"]
-        },
-        "light": {
-          "primary": ["linear-gradient(180deg, #ebeffc 0%, #ffffff 100%)", "#FFFFFF"],
-          "secondary": ["linear-gradient(180deg, #f7f9ff 0%, #ffffff 100%)", "#FFFFFF"]
-        }
-      },
-      "jade": {
-        "dark": {
-          "primary": ["linear-gradient(180deg, #001c18 0%, #021412 100%)", "#021412"],
-          "secondary": ["linear-gradient(180deg, #122925 0%, #021412 100%)", "#021412"]
-        },
-        "light": {
-          "primary": ["linear-gradient(180deg, #e6f2f1 0%, #ffffff 100%)", "#FFFFFF"],
-          "secondary": ["linear-gradient(180deg, #f7fcfc 0%, #ffffff 100%)", "#FFFFFF"]
-        }
-      },
-      "lavender": {
-        "dark": {
-          "primary": ["linear-gradient(180deg, #231237 0%, #18082b 100%)", "#18082B"],
-          "secondary": ["linear-gradient(180deg, #301a4a 0%, #18082b 100%)", "#18082B"]
-        },
-        "light": {
-          "primary": ["linear-gradient(180deg, #f4ebff 0%, #ffffff 100%)", "#FFFFFF"],
-          "secondary": ["linear-gradient(180deg, #fbf7ff 0%, #ffffff 100%)", "#FFFFFF"]
-        }
-      },
-      "rose": {
-        "dark": {
-          "primary": ["linear-gradient(180deg, #30041e 0%, #1f0615 100%)", "#1F0615"],
-          "secondary": ["linear-gradient(180deg, #40162e 0%, #1f0615 100%)", "#1F0615"]
-        },
-        "light": {
-          "primary": ["linear-gradient(180deg, #fcebf5 0%, #ffffff 100%)", "#FFFFFF"],
-          "secondary": ["linear-gradient(180deg, #fff9fd 0%, #ffffff 100%)", "#FFFFFF"]
-        }
-      },
       "webex": {
-        "dark": {
-          "primary": ["#1A1A1A", "#0F0F0F"],
-          "secondary": ["#262626", "#0F0F0F"]
-        },
         "light": {
           "primary": ["#F0F0F0", "#FFFFFF"],
           "secondary": ["#FAFAFA", "#FFFFFF"]
+        },
+        "dark": {
+          "primary": ["#1A1A1A", "#0F0F0F"],
+          "secondary": ["#262626", "#0F0F0F"]
+        }
+      },
+      "jade": {
+        "light": {
+          "primary": ["#E6F2F1", "#FFFFFF"],
+          "secondary": ["#F7FCFC", "#FFFFFF"]
+        },
+        "dark": {
+          "primary": ["#001C18", "#021412"],
+          "secondary": ["#122925", "#021412"]
+        }
+      },
+      "rose": {
+        "light": {
+          "primary": ["#FCEBF5", "#FFFFFF"],
+          "secondary": ["#FFF9FD", "#FFFFFF"]
+        },
+        "dark": {
+          "primary": ["#30041E", "#1F0615"],
+          "secondary": ["#40162E", "#1F0615"]
+        }
+      },
+      "indigo": {
+        "light": {
+          "primary": ["#EBEFFC", "#FFFFFF"],
+          "secondary": ["#F7F9FF", "#FFFFFF"]
+        },
+        "dark": {
+          "primary": ["#13182B", "#0E111A"],
+          "secondary": ["#212536", "#0E111A"]
+        }
+      },
+      "bronze": {
+        "light": {
+          "primary": ["#F5EFE4", "#FFFFFF"],
+          "secondary": ["#FCFAF4", "#FFFFFF"]
+        },
+        "dark": {
+          "primary": ["#1F1402", "#171002"],
+          "secondary": ["#2E2515", "#171002"]
+        }
+      },
+      "lavender": {
+        "light": {
+          "primary": ["#F4EBFF", "#FFFFFF"],
+          "secondary": ["#FBF7FF", "#FFFFFF"]
+        },
+        "dark": {
+          "primary": ["#231237", "#18082B"],
+          "secondary": ["#301A4A", "#18082B"]
         }
       }
     }

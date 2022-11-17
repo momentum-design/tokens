@@ -1,64 +1,64 @@
 {
   "color": {
     "solid": {
-      "bronze": {
-        "dark": {
-          "primary": "#171002",
-          "secondary": "#231807"
-        },
-        "light": {
-          "primary": "#f5efe4",
-          "secondary": "#fcfaf4"
-        }
-      },
-      "default": {
-        "dark": {
-          "primary": "#000000",
-          "secondary": "#1a1a1a"
-        },
-        "light": {
-          "primary": "#f7f7f7",
-          "secondary": "#ffffff"
-        }
-      },
-      "indigo": {
-        "dark": {
-          "primary": "#0e111a",
-          "secondary": "#13182b"
-        },
-        "light": {
-          "primary": "#ebeffc",
-          "secondary": "#f7f9ff"
-        }
-      },
       "jade": {
+        "light": {
+          "primary": "#E6F2F1",
+          "secondary": "#F7FCFC"
+        },
         "dark": {
           "primary": "#021412",
-          "secondary": "#05201c"
-        },
-        "light": {
-          "primary": "#e6f2f1",
-          "secondary": "#f7fcfc"
-        }
-      },
-      "lavender": {
-        "dark": {
-          "primary": "#18082b",
-          "secondary": "#27163b"
-        },
-        "light": {
-          "primary": "#f4ebff",
-          "secondary": "#fbf7ff"
+          "secondary": "#05201C"
         }
       },
       "rose": {
-        "dark": {
-          "primary": "#1f0615",
-          "secondary": "#30041e"
-        },
         "light": {
-          "primary": "#fcebf5",
-          "secondary": "#fff9fd"
+          "primary": "#FCEBF5",
+          "secondary": "#FFF9FD"
+        },
+        "dark": {
+          "primary": "#1F0615",
+          "secondary": "#30041E"
+        }
+      },
+      "lavender": {
+        "light": {
+          "primary": "#F4EBFF",
+          "secondary": "#FBF7FF"
+        },
+        "dark": {
+          "primary": "#18082B",
+          "secondary": "#27163B"
+        }
+      },
+      "indigo": {
+        "light": {
+          "primary": "#EBEFFC",
+          "secondary": "#F7F9FF"
+        },
+        "dark": {
+          "primary": "#0E111A",
+          "secondary": "#13182B"
+        }
+      },
+      "bronze": {
+        "light": {
+          "primary": "#F5EFE4",
+          "secondary": "#FCFAF4"
+        },
+        "dark": {
+          "primary": "#171002",
+          "secondary": "#231807"
+        }
+      },
+      "default": {
+        "light": {
+          "primary": "#F7F7F7",
+          "secondary": "#FFFFFF"
+        },
+        "dark": {
+          "primary": "#000000",
+          "secondary": "#1A1A1A"
         }
       }
     }
