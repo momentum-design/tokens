@@ -53,6 +53,6 @@
   },
   "dependencies": {
     "momentum-abstract": "^1.0.28",
-    "@cisco-momentum/tokens": "^0.0.1"
+    "@momentum-design/tokens": "^0.0.1"
   }
 }
