@@ -545,10 +545,10 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
-"@momentum-design/tokens@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@momentum-design/tokens/-/tokens-0.0.1.tgz#1235f940596c53588193c97b384e3c10fc2b9e49"
-  integrity sha512-t4g5fEFQNoz0oK+06Et8XEzeHXjhg8RKvuhByCpndgqD0JW7BqozGlXYo44B+zim7HGBtm9lGDgA1qrn+2p/aA==
+"@momentum-design/tokens@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@momentum-design/tokens/-/tokens-0.0.7.tgz#6fbcb710c47f84f5ca8868bb7d4fd83e69e474ed"
+  integrity sha512-lPE0WjyYyWW2V0igPT4AqZiqy9GjQa25j5s11HfoRwFmGlXTPxwc9s3YJKWT94NynzkYiRtBzdcdb2hHA8Lhxw==
 
 "@sinclair/typebox@^0.24.1":
   version "0.24.51"
