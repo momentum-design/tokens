@@ -41,7 +41,7 @@ const update = (format) => {
     };
     next = automated;
   } else if (format === ColorToken.CONSTANTS.TOKEN_FORMATS.DESIGN) {
-    nextTokens.design = require("@momentum-design/tokens/dist/webex/json/core.json");
+    nextTokens.design = require("@momentum-design/tokens/dist/json/core/complete.json");
     const design = {
       functional: new ColorToken({
         format: ColorToken.CONSTANTS.TOKEN_FORMATS.DESIGN,
