@@ -1,0 +1,57 @@
+{
+  "hyperlink": {
+    "comment": "Applied to hyperlinks",
+    "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=19484%3A510295&t=iXlC7pR4IYbStc2i-0",
+    "accent": {
+      "#normal": {        
+        "text": "@theme-text-accent-normal"
+      },
+      "#hovered": {
+        "text": "@theme-text-accent-hover"
+      },
+      "#pressed": {
+        "text": "@theme-text-accent-active"
+      },
+      "#focused": {
+        "text": "@theme-text-accent-normal"     
+      },
+      "#disabled": {
+        "text": "@theme-text-primary-disabled"
+      }
+    },
+    "destructive": {
+      "#normal": {        
+        "text": "@theme-text-error-normal"
+      },
+      "#hovered": {
+        "text": "@theme-text-error-hover"
+      },
+      "#pressed": {
+        "text": "@theme-text-error-active"
+      },
+      "#focused": {
+        "text": "@theme-text-error-normal"
+      },
+      "#disabled": {
+        "text": "@theme-text-primary-disabled"
+      }
+    },
+    "share": {
+      "#normal": {        
+        "text": "@theme-common-text-white"
+      },
+      "#hovered": {
+        "text": "@theme-common-text-white"
+      },
+      "#pressed": {
+        "text": "@theme-common-text-white"
+      },
+      "#focused": {
+        "text": "@theme-common-text-white"
+      },
+      "#disabled": {
+        "text": "@theme-common-text-disabled"
+      }
+    }
+  }
+}
