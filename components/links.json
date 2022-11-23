@@ -10,7 +10,7 @@
         "text": "@theme-text-accent-hover"
       },
       "#pressed": {
-        "text": "@theme-text-accent-hover"
+        "text": "@theme-text-accent-active"
       },
       "#focused": {
         "text": "@theme-text-accent-normal"     
@@ -27,7 +27,7 @@
         "text": "@theme-text-error-hover"
       },
       "#pressed": {
-        "text": "@theme-text-error-hover"
+        "text": "@theme-text-error-active"
       },
       "#focused": {
         "text": "@theme-text-error-normal"
