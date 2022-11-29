@@ -161,7 +161,7 @@
         }
       },
       "error": {
-        "normal": "@color-hc-SystemColorHighlightColor",
+        "normal": "@color-hc-SystemColorHighlightTextColor",
         "hover": "@color-hc-SystemColorHighlightTextColor",
         "active": "@color-hc-PlaceholderColor"
       },
