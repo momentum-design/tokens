@@ -2,47 +2,47 @@
   "theme": {
     "common": {
       "text": {
-        "white": "@color-white-alpha-95",
+        "white": "@color-white-alpha-95 @color-theme-content-text-neutral-primary-white",
         "gray": "@color-white-alpha-70",
-        "black": "@color-black-alpha-95",
-        "disabled": "@color-white-alpha-40",
+        "black": "@color-black-alpha-95 @color-theme-content-text-neutral-primary-black",
+        "disabled": "@color-white-alpha-40 @color-theme-content-text-neutral-disabled",
         "success": {
-          "normal": "@color-green-40",
-          "hover": "@color-green-20"
+          "normal": "@color-green-40 @color-theme-content-text-positive-default",
+          "hover": "@color-green-20 @color-theme-content-text-positive-hover"
         },
         "error": {
-          "normal": "@color-red-40",
-          "hover": "@color-red-20"
+          "normal": "@color-red-40 @color-theme-content-text-negative-default",
+          "hover": "@color-red-20 @color-theme-content-text-negative-hover"
         },
         "warning": {
-          "normal": "@color-yellow-40"
+          "normal": "@color-yellow-40 @color-theme-content-text-warning-default"
         },
         "secondary-light": "@color-white-alpha-70",
         "secondary-dark": "@color-black-alpha-60"
       },
       "overlay": {
         "primary": {
-          "normal": "@color-black-alpha-90"
+          "normal": "@color-black-alpha-90 @color-theme-surface-neutral-02"
         },
         "secondary": {
-          "normal": "@color-black-alpha-40"
+          "normal": "@color-black-alpha-40 @color-theme-surface-neutral-00"
         }
       },
       "button": {
         "primary": {
-          "normal": "@color-white-alpha-95",
-          "hover": "@color-white-alpha-80",
-          "pressed": "@color-white-alpha-70",
-          "disabled": "@color-white-alpha-20"
+          "normal": "@color-white-alpha-95 @color-theme-content-btn-neutral-primary-default",
+          "hover": "@color-white-alpha-80 @color-theme-content-btn-neutral-primary-hover",
+          "pressed": "@color-white-alpha-70 @color-theme-content-btn-neutral-primary-pressed",
+          "disabled": "@color-white-alpha-20 @color-theme-content-btn-neutral-primary-disabled"
         },
         "secondary": {
-          "normal": "@color-white-alpha-00",
-          "hover": "@color-white-alpha-07",          
-          "disabled": "@color-white-alpha-00",
+          "normal": "@color-white-alpha-00 @color-theme-content-btn-neutral-secondary-default",
+          "hover": "@color-white-alpha-07 @color-theme-content-btn-neutral-secondary-hover",
+          "disabled": "@color-white-alpha-00 @color-theme-content-btn-neutral-secondary-disabled",
           "active": {
-            "normal": "@color-white-alpha-20",
+            "normal": "@color-white-alpha-20 @color-theme-content-btn-neutral-secondary-active-default",
             "hover": "@color-white-alpha-30",
-            "pressed": "@color-white-alpha-40"
+            "pressed": "@color-white-alpha-40 @color-theme-content-btn-neutral-secondary-active-pressed"
           }
         },
         "secondary-dark": {
@@ -57,20 +57,20 @@
       },
       "outline": {
         "button": {
-          "normal": "@color-white-alpha-30"
+          "normal": "@color-white-alpha-30 @color-theme-border-neutral-01"
         },
         "primary": {
-          "normal": "@color-white-alpha-40"
+          "normal": "@color-white-alpha-40 @color-theme-border-neutral-02"
         },
         "input": {
-          "normal": "@color-white-alpha-50"
+          "normal": "@color-white-alpha-50 @color-theme-border-neutral-03"
         },
         "disabled": {
-          "normal": "@color-white-alpha-20"
+          "normal": "@color-white-alpha-20 @color-theme-border-neutral-00"
         },
         "closed-caption": {
           "secondary": {
-            "light": "@color-white-alpha-20",
+            "light": "@color-white-alpha-20 @color-theme-border-neutral-00",
             "dark": "@color-black-alpha-20"
           }
         }
@@ -80,57 +80,57 @@
           "normal": "@color-black-alpha-20"
         },
         "shareContent": {
-          "active": "@color-orange-60",
-          "inactive": "@color-gray-60",
-          "selected": "@color-green-40"
+          "active": "@color-orange-60 @color-theme-border-notice-00",
+          "inactive": "@color-gray-60 @color-theme-border-neutral-06",
+          "selected": "@color-green-40 @color-theme-border-positive-00"
         }
       },
       "background": {
         "solid": {
           "secondary-dark": "@color-gray-95",
-          "primary-light": "@color-white-alpha-100"
+          "primary-light": "@color-white-alpha-100 @color-theme-content-indicator-neutral-02"
         }
       },
       "touchbar": {
         "background": {
           "blue": {
-            "normal": "@color-blue-60",
-            "pressed": "@color-blue-80"
+            "normal": "@color-blue-60 @color-theme-content-macOS-blue-default",
+            "pressed": "@color-blue-80 @color-theme-content-macOS-blue-pressed"
           },
           "pink": {
-            "normal": "@color-pink-60",
-            "pressed": "@color-pink-80"
+            "normal": "@color-pink-60 @color-theme-content-macOS-pink-default",
+            "pressed": "@color-pink-80 @color-theme-content-macOS-pink-pressed"
           },
           "mint": {
-            "normal": "@color-mint-60",
-            "pressed": "@color-mint-80"
+            "normal": "@color-mint-60 @color-theme-content-macOS-red-default",
+            "pressed": "@color-mint-80 @color-theme-content-macOS-red-pressed"
           },
           "purple": {
-            "normal": "@color-purple-60",
-            "pressed": "@color-purple-80"
+            "normal": "@color-purple-60 @color-theme-content-macOS-purple-default",
+            "pressed": "@color-purple-80 @color-theme-content-macOS-purple-pressed"
           },
           "violet": {
-            "normal": "@color-violet-60",
-            "pressed": "@color-violet-80"
+            "normal": "@color-violet-60 @color-theme-content-macOS-violet-default",
+            "pressed": "@color-violet-80 @color-theme-content-macOS-violet-pressed"
           },
           "orange": {
-            "normal": "@color-orange-60",
-            "pressed": "@color-orange-80"
+            "normal": "@color-orange-60 @color-theme-content-macOS-orange-default",
+            "pressed": "@color-orange-80 @color-theme-content-macOS-orange-pressed"
           },
           "green": {
-            "normal": "@color-green-60",
-            "pressed": "@color-green-80"
+            "normal": "@color-green-60 @color-theme-content-macOS-green-default",
+            "pressed": "@color-green-80 @color-theme-content-macOS-green-pressed"
           },
           "red": {
-            "normal": "@color-red-60",
-            "pressed": "@color-red-80"
+            "normal": "@color-red-60 @color-theme-content-macOS-red-default",
+            "pressed": "@color-red-80 @color-theme-content-macOS-red-pressed"
           },
           "transparent": "@color-black-alpha-00"
         },
         "icon": {
-          "stable": "@color-green-50",
-          "attention": "@color-red-40",
-          "secure": "@color-blue-40"
+          "stable": "@color-green-50 @color-theme-content-macOS-green-icon",
+          "attention": "@color-red-40 @color-theme-content-macOS-red-icon",
+          "secure": "@color-blue-40 @color-theme-content-macOS-blue-icon"
         }
       }
     }
