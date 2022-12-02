@@ -1,11 +1,23 @@
 {
   "textinput": {
     "#normal": {
+      "background": "@theme-background-solid-primary-normal",
+      "text": "@theme-text-secondary-normal",
       "cursor": "@theme-globaltint-normal"
     },
-    "#active": {
+    "#hovered": {
+      "background": "@theme-background-primary-hover",
+      "text": "@theme-text-secondary-normal",
+      "border": "@theme-outline-input-normal"
+    },
+    "#pressed": {
       "background": "@theme-background-primary-active",
-      "text": "@theme-text-primary-normal",
+      "text": "@theme-text-secondary-normal",
+      "border": "@theme-outline-input-normal"
+    },
+    "#active": {
+      "background": "@theme-background-solid-tertiary-normal",
+      "text": "@theme-text-secondary-normal",
       "border": "@theme-outline-input-active"
     },
     "error": {
