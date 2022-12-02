@@ -21,6 +21,9 @@
           "normal": "@color-hc-PlaceholderColor",
           "hover": "@color-hc-PlaceholderColor"
         },
+        "warning": {
+          "normal": "@color-hc-SystemColorWindowColor"
+        },
         "error": {
           "normal": "@color-hc-PlaceholderColor",
           "hover": "@color-hc-PlaceholderColor"
@@ -98,7 +101,7 @@
           "secondary-dark": "@color-hc-SystemColorWindowTextColor",
           "primary-light": "@color-hc-SystemColorWindowTextColor"
         }
-      },    
+      },
       "touchbar": {
         "background": {
           "blue": {
@@ -132,11 +135,11 @@
           "red": {
             "normal": "@color-hc-PlaceholderColor",
             "pressed": "@color-hc-PlaceholderColor"
-          },          
+          },
           "transparent": "@color-hc-PlaceholderColor"
         },
-        "icon": {          
-          "stable": "@color-hc-PlaceholderColor", 
+        "icon": {
+          "stable": "@color-hc-PlaceholderColor",
           "attention": "@color-hc-PlaceholderColor",
           "secure": "@color-hc-PlaceholderColor"
         }
@@ -158,7 +161,7 @@
         }
       },
       "error": {
-        "normal": "@color-hc-SystemColorHotlightColor",
+        "normal": "@color-hc-SystemColorHighlightTextColor",
         "hover": "@color-hc-SystemColorHighlightTextColor",
         "active": "@color-hc-PlaceholderColor"
       },
@@ -168,7 +171,7 @@
         "active": "@color-hc-PlaceholderColor"
       },
       "warning": {
-        "normal": "@color-hc-SystemColorWindowColor",
+        "normal": "@color-hc-SystemColorHighlightColor",
         "hover": "@color-hc-SystemColorHighlightTextColor",
         "active": "@color-hc-PlaceholderColor"
       },
@@ -360,6 +363,11 @@
           "normal": "@color-hc-SystemColorButtonFaceColor",
           "hover": "@color-hc-SystemColorHighlightColor",
           "active": "@color-hc-SystemColorHighlightColor"
+        },
+        "pink": {
+          "normal": "@color-hc-SystemColorButtonFaceColor",
+          "hover": "@color-hc-SystemColorHighlightColor",
+          "active": "@color-hc-SystemColorHighlightColor"
         }
       },
       "common": {
@@ -454,6 +462,9 @@
       "overlay": {
         "normal": "@color-hc-PlaceholderColor"
       },
+      "high-contrast": {
+        "focus": "@color-hc-SystemColorHighlightColor"
+      },
       "label": {
         "cobalt": "@color-hc-SystemColorHighlightColor",
         "lime": "@color-hc-SystemColorHighlightColor",
@@ -462,7 +473,8 @@
         "violet": "@color-hc-SystemColorHighlightColor",
         "purple": "@color-hc-SystemColorHighlightColor",
         "orange": "@color-hc-SystemColorHighlightColor",
-        "gold": "@color-hc-SystemColorHighlightColor"
+        "gold": "@color-hc-SystemColorHighlightColor",
+        "pink": "@color-hc-SystemColorHighlightColor"
       }
     },
     "gradientdivider": {

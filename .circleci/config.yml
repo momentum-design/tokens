@@ -7,7 +7,7 @@ version: 2
 defaults: &defaults
   working_directory: ~/repo
   docker:
-    - image: circleci/node:14.15.1
+    - image: circleci/node:16.13
 
 jobs:
   test:
@@ -22,7 +22,7 @@ jobs:
             - v1-dependencies-
       - run: npm install
       - run:
-          name: Build all the platform tokens
+          name: Test scripts and build all the platform tokens
           command: npm run test
       - save_cache:
           paths:
@@ -46,7 +46,7 @@ jobs:
           name: Publish package
           command: npm publish
       # - run:
-      #      name: Add Github to known_hosts -- this doesn't work 
+      #      name: Add Github to known_hosts -- this doesn't work
       #      command: ssh-keyscan -H github.com >> ~/.ssh/known_hosts
       # - run:
       #     name: Generate Web Docs

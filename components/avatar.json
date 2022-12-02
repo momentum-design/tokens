@@ -13,6 +13,9 @@
       "away": "@theme-indicator-locked",
       "ooo": "@theme-indicator-locked",
       "busy": "@theme-indicator-unstable",
+      "on-mobile": "@theme-indicator-locked",
+      "on-device": "@theme-indicator-locked",
+      "on-hold": "@theme-indicator-locked",
       "background": "@theme-background-solid-primary-normal"
     },
     "color-avatar": {
