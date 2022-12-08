@@ -79,7 +79,24 @@
         "text": "@theme-text-primary-disabled"
       }
     },
-    "message-ghost": "@button-accent-ghost",
+    "message-ghost": {
+      "#normal": {
+        "background": "@theme-button-secondary-normal",
+        "text": "@theme-text-accent-normal"
+      },
+      "#hovered": {
+        "background": "@theme-button-secondary-hover",
+        "text": "@theme-text-accent-normal"
+      },
+      "#pressed": {
+        "background": "@theme-button-secondary-pressed",
+        "text": "@theme-text-accent-normal"
+      },
+      "#disabled": {
+        "background": "@theme-button-primary-disabled",
+        "text": "@theme-text-primary-disabled"
+      }
+    },
     "join-fill": {
       "#normal": {
         "background": "@theme-button-join-normal",
@@ -186,7 +203,25 @@
         "text": "@theme-text-primary-disabled"
       }
     },
-    "message-fill": "@button-accent-fill",
+    "message-fill": {
+      "#normal": {
+        "background": "@theme-button-accent-normal",
+        "text": "@theme-common-text-white",
+        "border": "@theme-button-border-normal"
+      },
+      "#hovered": {
+        "background": "@theme-button-accent-hover",
+        "text": "@theme-common-text-white"
+      },
+      "#pressed": {
+        "background": "@theme-button-accent-pressed",
+        "text": "@theme-common-text-white"
+      },
+      "#disabled": {
+        "background": "@theme-button-primary-disabled",
+        "text": "@theme-text-primary-disabled"
+      }
+    },
     "counter": {
       "#normal": {
         "background": "@theme-button-primary-normal",

@@ -36,8 +36,14 @@
       }
     },
     "chat-bubble": {
-      "icon": "@theme-control-active",
-      "border": "@theme-outline-primary"
+      "icon": {
+        "normal": "@theme-control-active-normal",
+        "hover": "@theme-control-active-normal",
+        "pressed": "@theme-control-active-normal",
+        "active": "@theme-control-active-normal",
+        "disabled": "@theme-control-active-normal"
+      },
+      "border": "@theme-outline-primary-normal"
     }
   }
 }
