@@ -36,6 +36,17 @@
       "#focused": {
         "text": "@theme-text-inverted-normal"
       }
+    },
+    "headerText-default": {
+      "#pressed": {
+        "text": "@theme-text-inverted-normal"
+      },
+      "#hovered": {
+        "text": "@theme-text-inverted-normal"
+      },
+      "#focused": {
+        "text": "@theme-text-inverted-normal"
+      }
     }
   }
 }
