@@ -132,6 +132,17 @@
           "attention": "@color-red-40",
           "secure": "@color-blue-40"
         }
+      },
+      "content": {
+        "content-pdf": "@color-partner-pdf",
+        "content-word": "@color-partner-word",
+        "content-powerpoint": "@color-partner-powerpoint",
+        "content-excel": "@color-partner-excel",
+        "content-onenote": "@color-partner-onenote",
+        "content-doc": "@color-partner-doc",
+        "content-sheets": "@color-partner-sheets",
+        "content-slides": "@color-partner-slides",
+        "content-keynote": "@color-partner-keynotes"
       }
     }
   }

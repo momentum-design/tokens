@@ -1,0 +1,31 @@
+{
+  "attachment-file-branded": {
+    "sent": {
+      "comment": "Applied to sent & safe branded file attachments",
+      "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=5428%3A29",
+      "border": "@theme-outline-secondary-normal",
+      "previewBox": {
+        "icon": "@theme-common-text-white",
+        "background-pdf": "@theme-common-content-content-pdf",
+        "background-word": "@theme-common-content-content-word",
+        "background-powerpoint": "@theme-common-content-content-powerpoint",
+        "background-excel": "@theme-common-content-content-excel",
+        "background-onenote": "@theme-common-content-content-onenote",
+        "background-google-doc": "@theme-common-content-content-doc",
+        "background-google-sheets": "@theme-common-content-content-sheets",
+        "background-google-slides": "@theme-common-content-content-slides",
+        "background-keynote": "@theme-common-content-content-keynote"
+      },
+      "label": {
+        "primary": "@theme-text-primary-normal",
+        "secondary": "@theme-text-secondary-normal"
+      },
+      "background": {
+        "#normal": "@theme-background-secondary-normal",
+        "#hovered": "@theme-background-secondary-hover",
+        "#active": "@theme-background-secondary-active",
+        "#focused": "@theme-background-secondary-normal"
+      }
+    }
+  }
+}
