@@ -143,6 +143,17 @@
           "attention": "@color-hc-PlaceholderColor",
           "secure": "@color-hc-PlaceholderColor"
         }
+      },
+      "content": {
+        "pdf": "@color-hc-SystemColorHighlightColor",
+        "word": "@color-hc-SystemColorHighlightColor",
+        "powerpoint": "@color-hc-SystemColorHighlightColor",
+        "excel": "@color-hc-SystemColorHighlightColor",
+        "onenote": "@color-hc-SystemColorHighlightColor",
+        "doc": "@color-hc-SystemColorHighlightColor",
+        "sheets": "@color-hc-SystemColorHighlightColor",
+        "slides": "@color-hc-SystemColorHighlightColor",
+        "keynotes": "@color-hc-SystemColorHighlightColor"
       }
     },
     "text": {

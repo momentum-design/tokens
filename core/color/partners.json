@@ -1,0 +1,15 @@
+{
+  "color": {
+    "partner": {
+      "pdf": "#EE0507",
+      "word": "#0078D6",
+      "powerpoint": "#D93E17",
+      "excel": "#00893E",
+      "onenote": "#B839DB",
+      "doc": "#4285F4",
+      "sheets": "#F4B400",
+      "slides": "#0F9D58",
+      "keynotes": "#029CFB"
+    }
+  }
+}
