@@ -1,7 +1,7 @@
 {
   "shortcutinput": {
-    "comment": "",
-
+    "comment": "Applied to shortcut input control",
+    "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=19446%3A511338&t=KD9FGfaNUPcWk5qz-0",
     "inactive": {
       "#normal": {
         "border": "@theme-outline-input-normal",
