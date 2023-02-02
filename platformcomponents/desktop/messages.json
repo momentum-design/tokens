@@ -73,6 +73,12 @@
         }
       }
     },
+    "listItem": {
+      "#normal":  "@theme-background-solid-primary-normal",
+      "#hovered": "@theme-background-solid-tertiary-normal",
+      "#pressed": "@theme-background-highlight-normal",
+      "#checked":  "@theme-background-highlight-checked"
+    },
     "headerText": {
       "default": {
         "#normal": {
