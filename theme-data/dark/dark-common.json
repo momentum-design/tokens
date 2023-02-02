@@ -62,6 +62,10 @@
         "active": "@color-white-alpha-11",
         "disabled": "@color-white-alpha-11"
       },
+      "highlight": {
+        "normal": "@color-blue-90",
+        "checked": "@color-blue-80"
+      },
       "solid": {
         "primary": {
           "normal": "@color-black-alpha-100"
