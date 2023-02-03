@@ -24,7 +24,7 @@
       },
       "#disabled": {
         "border": "none",
-        "background": "@theme-background-primary-hover",
+        "background": "@theme-background-secondary-normal",
         "textBackground": "@theme-background-primary-ghost",
         "text": "@theme-text-primary-normal"
       }
@@ -32,31 +32,31 @@
     "active": {      
       "reassign": {
         "border": "@theme-outline-input-active",
-        "background": "@theme-background-primary-ghost",
-        "textBackground": "@theme-background-primary-ghost",
+        "background": "@theme-background-primary-active",
+        "textBackground": "@theme-background-solid-primary-normal",
         "text": "@theme-text-primary-disabled"
       },
       "available": {
         "border": "@theme-outline-join-normal",
-        "background": "@theme-background-primary-ghost",
+        "background": "@theme-background-primary-active",
         "textBackground": "@theme-background-secondary-active",
         "text": "@theme-text-primary-normal"
       },
       "unavailable": {
         "border": "@theme-outline-cancel-normal",
-        "background": "@theme-background-primary-hover",
+        "background": "@theme-background-primary-active",
         "textBackground": "@theme-background-secondary-active",
         "text": "@theme-text-primary-normal"
       },
       "checking": {
         "border": "@theme-outline-input-active",
-        "background": "@theme-background-primary-ghost",
+        "background": "@theme-background-primary-active",
         "textBackground": "@theme-background-secondary-active",
         "text": "@theme-text-primary-normal"
       },
       "populated": {
         "border": "@theme-outline-input-active",
-        "background": "@theme-background-primary-ghost",
+        "background": "@theme-background-primary-active",
         "textBackground": "@theme-background-secondary-active",
         "text": "@theme-text-primary-normal"
       }
