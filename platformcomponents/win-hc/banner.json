@@ -1,0 +1,24 @@
+{
+ "banner": {
+  "announcement": {
+   "text": "@theme-common-hc-highlightText",
+   "background": "@theme-common-hc-highlight"
+  },
+  "success": {
+   "text": "@theme-common-hc-highlightText",
+   "background": "@theme-common-hc-highlight"
+  },
+  "error": {
+   "text": "@theme-common-hc-highlightText",
+   "background": "@theme-common-hc-highlight"
+  },
+  "issue": {
+   "text": "@theme-common-hc-highlightText",
+   "background": "@theme-common-hc-highlight"
+  },
+  "transient": {
+   "text": "@theme-common-hc-highlightText",
+   "background": "@theme-common-hc-highlight"
+  }
+ }
+}

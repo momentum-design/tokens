@@ -16,6 +16,20 @@
           "icon-inactive": "@theme-common-hc-highlightText",
           "icon-active": "@theme-common-hc-highlightText"
         }
+      },
+      "outline": {
+        "#normal": {
+          "icon-inactive": "@theme-common-hc-buttonText",
+          "icon-active": "@theme-common-hc-buttonText"
+        },
+        "#hovered": {
+          "icon-inactive": "@theme-common-hc-highlightText",
+          "icon-active": "@theme-common-hc-highlightText"
+        },
+        "#pressed": {
+          "icon-inactive": "@theme-common-hc-highlightText",
+          "icon-active": "@theme-common-hc-highlightText"
+        }
       }
     },
     "tertiary": {

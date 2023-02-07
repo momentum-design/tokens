@@ -12,7 +12,7 @@
         "text": "@theme-text-inverted-normal"
       },
       "#focused": {
-        "border": "@theme-background-primary-focus"
+        "border": "@theme-button-border-normal"
       },
       "#disabled": {
         "border": "@theme-button-border-disabled"
