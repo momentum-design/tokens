@@ -1,0 +1,84 @@
+{
+  "tag": {
+    "static": {
+      "text": "@theme-common-hc-windowText",
+      "border": "@theme-common-hc-windowText"
+    },
+    "overlay": {
+      "text": "@theme-common-hc-windowText",
+      "border": "@theme-common-hc-windowText"
+    },
+    "cobalt": {
+      "#hovered": {
+        "text": "@theme-text-inverted-normal"
+      },
+      "#pressed": {
+        "text": "@theme-text-inverted-normal"
+      }
+    },
+    "lime": {
+      "#hovered": {
+        "text": "@theme-text-inverted-normal"
+      },
+      "#pressed": {
+        "text": "@theme-text-inverted-normal"
+      }
+    },
+    "mint": {
+      "#hovered": {
+        "text": "@theme-text-inverted-normal"
+      },
+      "#pressed": {
+        "text": "@theme-text-inverted-normal"
+      }
+    },
+    "slate": {
+      "#hovered": {
+        "text": "@theme-text-inverted-normal"
+      },
+      "#pressed": {
+        "text": "@theme-text-inverted-normal"
+      }
+    },
+    "violet": {
+      "#hovered": {
+        "text": "@theme-text-inverted-normal"
+      },
+      "#pressed": {
+        "text": "@theme-text-inverted-normal"
+      }
+    },
+    "purple": {
+      "#hovered": {
+        "text": "@theme-text-inverted-normal"
+      },
+      "#pressed": {
+        "text": "@theme-text-inverted-normal"
+      }
+    },
+    "orange": {
+      "#hovered": {
+        "text": "@theme-text-inverted-normal"
+      },
+      "#pressed": {
+        "text": "@theme-text-inverted-normal"
+      }
+    },
+    "gold": {
+      "#hovered": {
+        "text": "@theme-text-inverted-normal"
+      },
+      "#pressed": {
+        "text": "@theme-text-inverted-normal"
+      }
+    },
+    "pink": {
+      "#hovered": {
+        "text": "@theme-text-inverted-normal"
+      },
+      "#pressed": {
+        "text": "@theme-text-inverted-normal"
+      }
+    }
+  }
+}

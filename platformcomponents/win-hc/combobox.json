@@ -2,13 +2,15 @@
   "combobox": {
     "figma": "https://www.figma.com/file/rNpQFybgpgSfTmhLa441V3/Components---Windows-OS-HighContrast?node-id=4931%3A2083",
     "#hovered": {
-      "text": "@theme-text-inverted-normal"
+      "text": "@theme-text-inverted-normal",
+      "icon": "@theme-text-inverted-normal"
     },
     "#pressed": {
-      "text": "@theme-text-inverted-normal"
+      "text": "@theme-text-inverted-normal",
+      "icon": "@theme-text-inverted-normal"
     },
     "#focused": {
-      "border": "@theme-background-primary-focus"
+      "border": "@theme-outline-input-normal"
     },
     "#active": {
       "background": "@theme-background-solid-primary-normal",

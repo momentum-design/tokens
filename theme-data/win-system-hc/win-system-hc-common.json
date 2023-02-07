@@ -550,27 +550,6 @@
       "violet": "@color-hc-SystemColorWindowTextColor",
       "yellow": "@color-hc-SystemColorWindowTextColor"
     },
-    "scrollbar": {
-      "button": {
-        "normal": "@color-hc-SystemColorButtonTextColor",
-        "hover": "@color-hc-SystemColorHighlightColor",
-        "pressed": "@color-hc-SystemColorHighlightColor"
-      },
-      "arrow": {
-        "normal": "@color-hc-SystemColorHotlightColor",
-        "background": {
-          "normal": "@color-hc-SystemColorButtonTextColor",
-          "hover": "@color-hc-SystemColorHighlightColor",
-          "pressed": "@color-hc-SystemColorHighlightColor"
-        }
-      },
-      "background": {
-        "secondary": {
-          "ghost": "@color-hc-PlaceholderColor",
-          "normal": "@color-hc-SystemColorButtonFaceColor"
-        }
-      }
-    },
     "illustrations": {
       "empty": {
         "primary": ["@color-hc-PlaceholderColor", "@color-hc-PlaceholderColor"],

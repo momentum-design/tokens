@@ -2,7 +2,7 @@
   "scrollbar": {
     "track": {
       "#normal": {
-        "background": "@theme-scrollbar-background-secondary-normal"
+        "background": "@theme-common-hc-buttonFace"
       },
       "#disabled": {
         "background": "@theme-background-primary-disabled"
@@ -10,24 +10,34 @@
     },
     "thumb": {
       "#normal": {
-        "background": "@theme-scrollbar-button-normal"
+        "background": "@theme-common-hc-buttonText"
+      },
+      "#hovered": {
+        "background": "@theme-common-hc-highlight"
+      },
+      "#pressed": {
+        "background": "@theme-common-hc-highlight"
+      },
+      "#disabled": {
+        "background": "@theme-common-hc-grayText"
       }
     },
     "arrow-button": {
       "#normal": {
-        "text": "@theme-scrollbar-button-hover",
-        "background": "@theme-scrollbar-arrow-background-normal"
+        "text": "@theme-common-hc-highlightText",
+        "background": "@theme-common-hc-buttonText"
       },
       "#hovered": {
-        "text": "@theme-scrollbar-button-hover",
-        "background": "@theme-scrollbar-arrow-background-hover"
+        "text": "@theme-common-hc-highlightText",
+        "background": "@theme-common-hc-highlight"
       },
       "#pressed": {
-        "text": "@theme-scrollbar-arrow-background-pressed"
+        "text": "@theme-common-hc-highlightText",
+        "background": "@theme-common-hc-highlight"
       },
       "#disabled": {
-        "text": "@theme-text-primary-disabled",
-        "background": "@theme-background-primary-disabled"
+        "text": "@theme-common-hc-highlightText",
+        "background": "@theme-common-hc-grayText"
       }
     }
   }

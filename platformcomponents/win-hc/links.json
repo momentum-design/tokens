@@ -1,0 +1,55 @@
+{
+  "hyperlink": {
+    "accent": {
+      "#normal": {
+        "text": "@theme-common-hc-hotlight"
+      },
+      "#hovered": {
+        "text": "@theme-common-hc-highlight"
+      },
+      "#pressed": {
+        "text": "@theme-common-hc-highlight"
+      },
+      "#focused": {
+        "text": "@theme-common-hc-hotlight"
+      },
+      "#disabled": {
+        "text": "@theme-common-hc-grayText"
+      }
+    },
+    "destructive": {
+      "#normal": {        
+        "text": "@theme-common-hc-hotlight"
+      },
+      "#hovered": {
+        "text": "@theme-common-hc-highlight"
+      },
+      "#pressed": {
+        "text": "@theme-common-hc-highlight"
+      },
+      "#focused": {
+        "text": "@theme-common-hc-hotlight"
+      },
+      "#disabled": {
+        "text": "@theme-common-hc-grayText"
+      }
+    },
+    "share": {
+      "#normal": {        
+        "text": "@theme-common-hc-hotlight"
+      },
+      "#hovered": {
+        "text": "@theme-common-hc-highlight"
+      },
+      "#pressed": {
+        "text": "@theme-common-hc-highlight"
+      },
+      "#focused": {
+        "text": "@theme-common-hc-hotlight"
+      },
+      "#disabled": {
+        "text": "@theme-common-hc-grayText"
+      }
+    }
+  }
+}
