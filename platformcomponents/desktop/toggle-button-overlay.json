@@ -1,5 +1,5 @@
 {
-  "toggleButtonSolid": {
+  "toggleButtonOverlay": {
     "figma": "https://www.figma.com/file/vdL18BATeJAIq2JvGAjRPD/Components---Web?node-id=48160%3A80022",
     "comment": "Applied to circle and pill toggle buttons",
     "inactive": {
