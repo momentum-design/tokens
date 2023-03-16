@@ -235,7 +235,7 @@
       "attention": "@color-red-60",
       "stable": "@color-green-60",
       "locked": "@color-gray-60",
-      "caution": "@color-yellow-50",
+      "caution": "@color-yellow-60",
       "secure": "@color-blue-60"
     },
     "whiteboard": {
