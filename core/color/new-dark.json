@@ -1,0 +1,35 @@
+{
+  "color": {
+    "theme": {
+      "bg": {
+        "primary": "linear-gradient(180deg, #1a1a1a 0%, #0f0f0f 100%)",
+        "secondary": "linear-gradient(180deg, #262626 0%, #0f0f0f 100%)",
+        "mob": {
+          "primary": "#000000",
+          "secondary": "#1a1a1a"
+        }
+      },
+      "surface": {
+        "neutral": {
+          "00": {
+            "default": "#ffffff00",
+            "hover": "#ffffff12",
+            "active": "#ffffff1c",
+            "disabled": "#ffffff1c"
+          },
+          "01": {
+            "default": "#ffffff1c",
+            "hover": "#ffffff33",
+            "active": "#ffffff1c",
+            "disabled": "#ffffff1c"
+          },
+          "02": {
+            "primary": "#262626",
+            "secondary": "#1a1a1a",
+            "tertiary": "#000000"
+          }
+        }
+      }
+    }
+  }
+}
