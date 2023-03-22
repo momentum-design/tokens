@@ -6,7 +6,7 @@
       "#normal": {
         "border": "@theme-outline-input-normal",
         "background": "@theme-background-primary-ghost",
-        "textBackground": "@theme-background-solid-secondary-normal",
+        "textBackground": "@theme-background-secondary-normal",
         "text": "@theme-text-primary-normal"
 
       },
