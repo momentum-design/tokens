@@ -1,0 +1,8 @@
+{
+  "player-slider": {
+    "comment": "Applied slider used in audio file attachments",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=46518-104535&t=af50JGNYhU69Xp8i-0",
+    "track": "@theme-control-active-normal",
+    "indicator": "@theme-control-active-normal"
+  }
+}
