@@ -11,6 +11,11 @@
       "#normal": {
         "background": "@theme-common-overlay-secondary"
       }
+    },
+    "meetings": {
+      "#normal": {
+        "background": "@theme-overlay-meetings-normal"  
+      }
     }
   }
 }
