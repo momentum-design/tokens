@@ -91,9 +91,9 @@
       },
       "alert": {
         "default": {
-          "normal": "@theme-background-solid-tertiary-normal",
-          "hover": "@theme-background-solid-tertiary-normal",
-          "active": "@color-gray-20"
+          "normal": "@color-gray-20",
+          "hover": "@color-gray-20",
+          "active": "@color-gray-30"
         },
         "success": {
           "normal": "@color-green-10",
