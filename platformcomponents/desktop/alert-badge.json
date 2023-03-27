@@ -77,6 +77,20 @@
         "background": "@theme-background-alert-warning-active",
         "text": "@theme-text-warning-active"
       }
+    },
+    "success": {
+      "#normal": {
+        "background": "@theme-background-alert-success-normal",
+        "text": "@theme-text-success-normal"
+      },
+      "#hovered": {
+        "background": "@theme-background-alert-success-hover",
+        "text": "@theme-text-success-hover"
+      },
+      "#pressed": {
+        "background": "@theme-background-alert-success-active",
+        "text": "@theme-text-success-active"
+      }
     }
   }
 }
