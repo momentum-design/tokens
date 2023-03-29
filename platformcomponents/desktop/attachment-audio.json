@@ -1,0 +1,18 @@
+{
+  "attachment-audio": {
+    "comment": "Applied slider used in audio file attachments",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=46518-104535&t=af50JGNYhU69Xp8i-0",
+    "background": {
+      "#normal": "@theme-background-secondary-normal",
+      "#hovered": "@theme-background-secondary-hover",
+      "#active": "@theme-background-secondary-active",
+      "#focused": "@theme-background-secondary-normal"
+    },
+    "outline": {
+      "#normal": "@theme-outline-secondary-normal",
+      "#hovered": "@theme-outline-secondary-normal"
+    },
+    "file-detail": "@theme-text-primary-normal",
+    "time-left": "@theme-text-secondary-normal"
+  }
+}
