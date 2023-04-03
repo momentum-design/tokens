@@ -111,6 +111,9 @@
         "border": "@theme-background-primary-focus",
         "background": "@theme-background-primary-ghost"
       },
+      "#active": {
+        "text": "@theme-text-inverted-normal"
+      },
       "#disabled": {
         "background": "@theme-background-primary-ghost",
         "border": "@theme-button-border-disabled"
