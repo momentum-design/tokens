@@ -85,6 +85,9 @@
       "extParticipants": {
         "#normal": {
           "text": "@theme-text-warning-normal"
+        },
+        "#hovered": {
+          "text": "@theme-text-warning-hover"
         }
       }
     }
