@@ -1,5 +1,8 @@
 {
   "listitem": {
+    "#normal": {
+      "textmissed": "@theme-text-primary-normal"
+    },
     "#hovered": {
       "textprimary": "@theme-text-inverted-normal",
       "textsecondary": "@theme-text-inverted-normal",
