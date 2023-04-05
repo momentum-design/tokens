@@ -1,0 +1,51 @@
+{
+  "shortcutinput": {
+    "comment": "Applied to shortcut input control",
+    "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=19446%3A511338&t=KD9FGfaNUPcWk5qz-0",
+    "inactive": {
+      "#hovered": {
+        "background": "@theme-common-hc-buttonFace",
+        "textBackground": "@theme-common-hc-highlight",
+        "text": "@theme-common-hc-highlightText"
+      },
+      "#pressed": {
+        "border": "@theme-common-hc-buttonText",
+        "background": "@theme-common-hc-buttonFace",
+        "textBackground": "@theme-common-hc-highlight",
+        "text": "@theme-common-hc-highlightText"
+      },
+      "#disabled": {
+        "border": "@theme-common-hc-grayText",
+        "text": "@theme-common-hc-grayText"
+      }
+    },
+    "active": {      
+      "reassign": {
+        "border": "@theme-common-hc-buttonText",
+        "background": "@theme-common-hc-buttonFace",
+        "textBackground": "@theme-common-hc-buttonFace",
+        "text": "@theme-common-hc-buttonText"
+      },
+      "available": {
+        "border": "@theme-common-hc-highlight",
+        "background": "@theme-common-hc-buttonFace",
+        "textBackground": "@theme-common-hc-buttonFace"
+      },
+      "unavailable": {
+        "border": "@theme-common-hc-highlight",
+        "background": "@theme-common-hc-buttonFace",
+        "textBackground": "@theme-common-hc-buttonFace"
+      },
+      "checking": {
+        "border": "@theme-common-hc-buttonText",
+        "background": "@theme-common-hc-buttonFace",
+        "textBackground": "@theme-common-hc-buttonFace"
+      },
+      "populated": {
+        "border": "@theme-common-hc-buttonText",
+        "background": "@theme-common-hc-buttonFace",
+        "textBackground": "@theme-common-hc-buttonFace"
+      }
+    }   
+  }
+}
