@@ -1,6 +1,6 @@
 {
   "attachment-audio": {
-    "comment": "Applied slider used in audio file attachments",
+    "comment": "Applied tokens used in audio file attachments",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=46518-104535&t=af50JGNYhU69Xp8i-0",
     "background": {
       "#normal": "@theme-background-secondary-normal",
