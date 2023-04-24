@@ -7,6 +7,13 @@
       "text": "@theme-text-primary-normal",
       "border": "@theme-outline-primary-normal"
     },
+    "staticShare": {
+      "#normal": {
+        "background": "@theme-common-control-shareContent-active",
+        "border": "@theme-outline-share-active",
+        "text": "@theme-common-text-white"
+      }
+    },
     "overlay": {
       "background": "@theme-background-common-normal",
       "text": "@theme-common-text-black",
@@ -27,6 +34,11 @@
         "background": "@theme-background-solid-primary-normal",
         "text": "@theme-text-primary-normal",
         "border": "@theme-outline-primary-normal"
+      },
+      "#disabled": {
+        "background": "@theme-background-primary-disabled",
+        "border": "@theme-outline-disabled-normal",
+        "text": "@theme-text-primary-disabled"
       }
     },
     "cobalt": {
@@ -44,6 +56,11 @@
         "background": "@theme-background-label-cobalt-active",
         "text": "@theme-text-primary-normal",
         "border": "@theme-outline-label-cobalt"
+      },
+      "#disabled": {
+        "background": "@theme-background-primary-disabled",
+        "border": "@theme-outline-disabled-normal",
+        "text": "@theme-text-primary-disabled"
       }
     },
     "lime": {
@@ -61,6 +78,11 @@
         "background": "@theme-background-label-lime-active",
         "text": "@theme-text-primary-normal",
         "border": "@theme-outline-label-lime"
+      },
+      "#disabled": {
+        "background": "@theme-background-primary-disabled",
+        "border": "@theme-outline-disabled-normal",
+        "text": "@theme-text-primary-disabled"
       }
     },
     "mint": {
@@ -78,6 +100,11 @@
         "background": "@theme-background-label-mint-active",
         "text": "@theme-text-primary-normal",
         "border": "@theme-outline-label-mint"
+      },
+      "#disabled": {
+        "background": "@theme-background-primary-disabled",
+        "border": "@theme-outline-disabled-normal",
+        "text": "@theme-text-primary-disabled"
       }
     },
     "slate": {
@@ -95,6 +122,11 @@
         "background": "@theme-background-label-slate-active",
         "text": "@theme-text-primary-normal",
         "border": "@theme-outline-label-slate"
+      },
+      "#disabled": {
+        "background": "@theme-background-primary-disabled",
+        "border": "@theme-outline-disabled-normal",
+        "text": "@theme-text-primary-disabled"
       }
     },
     "violet": {
@@ -112,6 +144,11 @@
         "background": "@theme-background-label-violet-active",
         "text": "@theme-text-primary-normal",
         "border": "@theme-outline-label-violet"
+      },
+      "#disabled": {
+        "background": "@theme-background-primary-disabled",
+        "border": "@theme-outline-disabled-normal",
+        "text": "@theme-text-primary-disabled"
       }
     },
     "purple": {
@@ -129,6 +166,11 @@
         "background": "@theme-background-label-purple-active",
         "text": "@theme-text-primary-normal",
         "border": "@theme-outline-label-purple"
+      },
+      "#disabled": {
+        "background": "@theme-background-primary-disabled",
+        "border": "@theme-outline-disabled-normal",
+        "text": "@theme-text-primary-disabled"
       }
     },
     "orange": {
@@ -146,6 +188,11 @@
         "background": "@theme-background-label-orange-active",
         "text": "@theme-text-primary-normal",
         "border": "@theme-outline-label-orange"
+      },
+      "#disabled": {
+        "background": "@theme-background-primary-disabled",
+        "border": "@theme-outline-disabled-normal",
+        "text": "@theme-text-primary-disabled"
       }
     },
     "gold": {
@@ -163,6 +210,11 @@
         "background": "@theme-background-label-gold-active",
         "text": "@theme-text-primary-normal",
         "border": "@theme-outline-label-gold"
+      },
+      "#disabled": {
+        "background": "@theme-background-primary-disabled",
+        "border": "@theme-outline-disabled-normal",
+        "text": "@theme-text-primary-disabled"
       }
     },
     "pink": {
@@ -180,6 +232,11 @@
         "background": "@theme-background-label-pink-active",
         "text": "@theme-text-primary-normal",
         "border": "@theme-outline-label-pink"
+      },
+      "#disabled": {
+        "background": "@theme-background-primary-disabled",
+        "border": "@theme-outline-disabled-normal",
+        "text": "@theme-text-primary-disabled"
       }
     }
   }
