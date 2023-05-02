@@ -37,7 +37,7 @@
         },
         "secondary": {
           "normal": "@color-white-alpha-00",
-          "hover": "@color-white-alpha-07",          
+          "hover": "@color-white-alpha-07",
           "disabled": "@color-white-alpha-00",
           "active": {
             "normal": "@color-white-alpha-20",
@@ -89,6 +89,9 @@
         "solid": {
           "secondary-dark": "@color-gray-95",
           "primary-light": "@color-white-alpha-100"
+        },
+        "alert-share": {
+          "normal": "@color-orange-60"
         }
       },
       "touchbar": {
