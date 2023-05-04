@@ -100,6 +100,9 @@
         "solid": {
           "secondary-dark": "@color-hc-SystemColorWindowTextColor",
           "primary-light": "@color-hc-SystemColorWindowTextColor"
+        },
+        "alert-share": {
+          "normal": "@color-hc-PlaceholderColor"
         }
       },
       "touchbar": {
@@ -334,6 +337,9 @@
           "active": "@color-hc-SystemColorHighlightColor"
         }
       },
+      "reaction": {
+        "normal": ["@color-hc-PlaceholderColor", "@color-hc-PlaceholderColor"]
+      },
       "label": {
         "cobalt": {
           "normal": "@color-hc-SystemColorButtonFaceColor",
@@ -390,7 +396,10 @@
     },
     "overlay": {
       "meetings": {
-        "normal": "@color-hc-PlaceholderColor"
+        "normal": "@color-hc-PlaceholderColor",
+        "reaction": {
+          "normal": ["@color-hc-PlaceholderColor", "@color-hc-PlaceholderColor"]
+        }
       }
     },
     "button": {
@@ -475,6 +484,9 @@
       },
       "high-contrast": {
         "focus": "@color-hc-SystemColorHighlightColor"
+      },
+      "warning": {
+        "normal": "@color-hc-SystemColorHighlightColor"
       },
       "label": {
         "cobalt": "@color-hc-SystemColorHighlightColor",

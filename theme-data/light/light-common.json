@@ -125,6 +125,9 @@
           "hover": "@color-orange-10",
           "active": "@color-orange-20"
         }
+      },
+      "reaction": {
+        "normal": ["@color-white-alpha-100*0.9", "@color-white-alpha-100*0"]
       }
     },
     "button": {
@@ -208,6 +211,9 @@
       },
       "high-contrast": {
         "focus": "@color-black-alpha-100"
+      },
+      "warning": {
+        "normal": "@color-yellow-60"
       }
     },
     "control": {
@@ -216,18 +222,21 @@
         "hover": "@theme-color-70",
         "pressed": "@theme-color-80",
         "active": "@theme-color-80",
-        "disabled": "@theme-color-20"
+        "disabled": "@color-black-alpha-20"
       },
       "inactive": {
         "normal": "@color-black-alpha-20",
         "hover": "@color-black-alpha-30",
         "pressed": "@color-black-alpha-40",
-        "disabled": "@color-black-alpha-11"
+        "disabled": "@color-black-alpha-20"
       }
     },
     "overlay": {
       "meetings": {
-        "normal": "@color-white-alpha-80"
+        "normal": "@color-white-alpha-80",
+        "reaction": {
+          "normal": ["@color-gray-05*0.9", "@color-gray-05*0"]
+        }
       }
     },
     "indicator": {
