@@ -16,6 +16,10 @@
       "#normal": {
         "background": "@theme-overlay-meetings-normal"  
       }
+    },
+    "meetings-reactions": {
+      "gradient-0": "@theme-background-reaction-normal-0",
+      "gradient-1": "@theme-background-reaction-normal-1"
     }
   }
 }
