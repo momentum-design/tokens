@@ -13,7 +13,7 @@
     "#focused": {
       "textprimary": "@theme-text-inverted-normal",
       "textmissed": "@theme-text-inverted-normal",
-      "background": "@theme-background-primary-ghost"
+      "background": "@theme-background-primary-active"
     },
     "#pressed": {
       "textprimary": "@theme-text-inverted-normal",
