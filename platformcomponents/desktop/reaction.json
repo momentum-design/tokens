@@ -1,0 +1,10 @@
+{
+  "reaction": {
+    "comment": "Use for see through backgrounds",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?type=design&node-id=41670-69974&t=TYMGFz5o5fXNBURs-0",
+    "background": {
+      "gradient-0": "@theme-background-reaction-normal-0",
+      "gradient-1": "@theme-background-reaction-normal-1"
+    }
+  }
+}
