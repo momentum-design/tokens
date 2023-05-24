@@ -94,8 +94,7 @@
     "background": {
       "#normal": "@theme-background-primary-ghost",
       "#hovered": "@theme-background-primary-hover",
-      "#pressed": "@theme-background-primary-active",
-      "#active": "@theme-background-primary-active"
+      "#pressed": "@theme-background-primary-active"
     }
   }
 }
