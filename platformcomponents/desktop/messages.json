@@ -90,6 +90,11 @@
           "text": "@theme-text-warning-hover"
         }
       }
+    },
+    "background": {
+      "#normal": "@theme-background-primary-ghost",
+      "#hovered": "@theme-background-primary-hover",
+      "#pressed": "@theme-background-primary-active"
     }
   }
 }
