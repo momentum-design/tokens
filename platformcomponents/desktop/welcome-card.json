@@ -1,0 +1,11 @@
+{
+  "welcomeCard": {
+    "comment": "Applied to cards on the Welcome space",
+    "figma": "https://www.figma.com/file/HvypQqLQE3QYVk3JIaf4Ov/SPARK-418420%3A-Space-for-me-(free-users-only)--~Updates_DSK?type=design&node-id=0-1&t=DNrHc91XJ7IfUcMC-0",
+    "#normal": {
+      "background": "@theme-button-secondary-hover",
+      "titleText": "@theme-text-primary-normal",
+      "descriptionText": "@theme-text-secondary-normal"
+    }
+  }
+}
