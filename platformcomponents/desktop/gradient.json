@@ -21,6 +21,16 @@
       "#normal": {
         "background": "@theme-background-gradient-secondary-1"
       }
+    },
+    "dialog-secondary-0": {
+      "#normal": {
+        "background": "@theme-background-solid-tertiary-normal"
+      }
+    },
+    "dialog-secondary-1": {
+      "#normal": {
+        "background": "@theme-button-inverted-normal"
+      }
     }
   }
 }
