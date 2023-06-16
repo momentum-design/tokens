@@ -43,6 +43,28 @@
         "border": "@theme-outline-disabled-normal"
       }
     },
+    "secondary-active": {
+      "#normal": {
+        "background": "@theme-button-secondary-active-normal",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-button-normal"
+      },
+      "#hovered": {
+        "background": "@theme-button-secondary-active-hover",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-button-normal"
+      },
+      "#pressed": {
+        "background": "@theme-button-secondary-active-pressed",
+        "text": "@theme-text-primary-normal",
+        "border": "@theme-outline-button-normal"
+      },
+      "#disabled": {
+        "background": "@theme-button-secondary-active-normal",
+        "text": "@theme-text-primary-disabled",
+        "border": "@theme-outline-disabled-normal"
+      }
+    },
     "cancel-ghost": {
       "#normal": {
         "background": "@theme-button-secondary-normal",
