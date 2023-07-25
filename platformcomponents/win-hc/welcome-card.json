@@ -1,0 +1,7 @@
+{
+  "welcomeCard": {
+    "#normal": {
+      "background": "@theme-button-secondary-normal"
+    }
+  }
+}
