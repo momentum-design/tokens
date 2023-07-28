@@ -6,8 +6,14 @@
         "text": "@theme-common-hc-highlight"
       }
     },
+    "badgeWithBorder": {
+      "#normal": {
+        "border": "@theme-button-border-normal"
+      }
+    },
     "tag": {
       "#normal": {
+        "border": "@theme-button-border-normal",
         "background": "@theme-background-secondary-normal"
       }
     },

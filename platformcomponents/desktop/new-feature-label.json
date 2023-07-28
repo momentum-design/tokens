@@ -4,14 +4,21 @@
     "figma": "https://www.figma.com/file/lkGwiCDPuoJdkW0YEotsWR/%5BWIP%5D-%E2%9C%A8-Webex-Discoverability?type=design&node-id=428-210640&mode=design&t=MuMQi7rOkzBEXBWx-0",
     "badge": {
       "#normal": {
-        "background": "@theme-background-solid-primary-normal",
-        "border": "@theme-background-secondary-normal",
+        "background": "@theme-background-primary-ghost",
+        "border": "@theme-background-primary-ghost",
         "text": "@theme-text-accent-normal"
+      }
+    },
+    "badgeWithBorder": {
+      "#normal": {
+        "background": "@theme-background-solid-primary-normal",
+        "border": "@theme-background-secondary-normal"
       }
     },
     "tag": {
       "#normal": {
-        "background": "@theme-background-secondary-normal"
+        "background": "@theme-background-secondary-normal",
+        "border": "none"
       }
     },
     "banner": {
