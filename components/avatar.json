@@ -19,7 +19,11 @@
       "background": "@theme-background-solid-primary-normal"
     },
     "color-avatar": {
-      "text": "@theme-common-text-white",
+      "text": {
+        "default": "@theme-common-text-white",
+        "error": "@theme-text-error-normal",
+        "success": "@theme-text-success-normal"
+      },
       "background": {
         "default": "@theme-avatar-default",
         "gold": "@theme-avatar-gold",
@@ -32,7 +36,9 @@
         "violet": "@theme-avatar-violet",
         "purple": "@theme-avatar-purple",
         "pink": "@theme-avatar-pink",
-        "yellow": "@theme-avatar-yellow"
+        "yellow": "@theme-avatar-yellow",
+        "error": "@theme-background-alert-error-normal",
+        "success": "@theme-background-alert-success-normal"
       }
     },
     "chat-bubble": {
