@@ -11,8 +11,8 @@
     },
     "badgeWithBorder": {
       "#normal": {
-        "background": "@theme-background-solid-primary-normal",
-        "border": "@theme-background-secondary-normal"
+        "background": "@theme-background-solid-secondary-normal",
+        "border": "@theme-button-secondary-active-normal"
       }
     },
     "tag": {
