@@ -17,6 +17,14 @@
         "text": "@theme-text-primary-disabled"
       }
     },
+    "primaryInverted": {
+      "#normal": {
+        "text": "@theme-text-inverted-normal"
+      },
+      "#disabled": {
+        "text": "@theme-text-inverted-disabled"
+      }
+    },
     "success": {
       "#normal": {
         "text": "@theme-text-success-normal"
