@@ -67,10 +67,10 @@
           "normal": "@color-white-alpha-100"
         },
         "secondary": {
-          "normal": "@color-gray-10"
+          "normal": "@color-gray-05"
         },
         "tertiary": {
-          "normal": "@color-gray-05"
+          "normal": "@color-gray-10"
         },
         "quaternary": {
           "normal": "@color-white-alpha-100"
@@ -225,7 +225,7 @@
         "disabled": "@color-black-alpha-20"
       },
       "inactive": {
-        "normal": "@color-black-alpha-20",
+        "normal": "@color-gray-50",
         "hover": "@color-black-alpha-30",
         "pressed": "@color-black-alpha-40",
         "disabled": "@color-black-alpha-20"
