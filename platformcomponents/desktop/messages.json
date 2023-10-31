@@ -95,6 +95,20 @@
       "#normal": "@theme-background-primary-ghost",
       "#hovered": "@theme-background-primary-hover",
       "#pressed": "@theme-background-primary-active"
+    },
+    "reactions": {
+      "#normal": {
+        "background": "@theme-background-secondary-normal",
+        "outline": "@theme-outline-secondary-normal",
+        "count-default": "@theme-text-primary-normal",
+        "count-has-self-reaction": "@theme-text-accent-normal"
+      },
+      "#hovered": {
+        "background": "@theme-background-secondary-hover"
+      },
+      "#pressed": {
+        "background": "@theme-background-secondary-active"
+      }
     }
   }
 }
