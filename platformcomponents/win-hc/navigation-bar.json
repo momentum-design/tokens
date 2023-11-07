@@ -1,0 +1,6 @@
+{
+  "navigation-bar": {
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=5250%3A957",
+    "divider": ["@theme-common-hc-windowText", "@theme-common-hc-windowText"]
+  }
+}
