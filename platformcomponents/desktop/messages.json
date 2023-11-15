@@ -109,6 +109,14 @@
       "#pressed": {
         "background": "@theme-background-secondary-active"
       }
+    },
+    "reactions-details": {
+      "#normal": {
+        "description-text": "@theme-text-secondary-normal",
+        "contact-name": "@theme-text-primary-normal",
+        "time-stamp": "@theme-text-secondary-normal",
+        "presence": "@theme-text-secondary-normal"
+      }
     }
   }
 }
