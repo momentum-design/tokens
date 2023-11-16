@@ -21,6 +21,61 @@
       "#disabled": {
         "text": "@theme-text-primary-disabled"
       }
+    },
+    "orange": {
+      "#normal": "@theme-text-primary-normal",
+      "#hovered": "@theme-text-inverted-normal",
+      "#pressed": "@theme-text-inverted-normal"
+    },
+    "gold": {
+      "#normal": "@theme-text-primary-normal",
+      "#hovered": "@theme-text-inverted-normal",
+      "#pressed": "@theme-text-inverted-normal"
+    },
+    "lime": {
+      "#normal": "@theme-text-primary-normal",
+      "#hovered": "@theme-text-inverted-normal",
+      "#pressed": "@theme-text-inverted-normal"
+    },
+    "mint": {
+      "#normal": "@theme-text-primary-normal",
+      "#hovered": "@theme-text-inverted-normal",
+      "#pressed": "@theme-text-inverted-normal"
+    },
+    "cyan": {
+      "#normal": "@theme-text-primary-normal",
+      "#hovered": "@theme-text-inverted-normal",
+      "#pressed": "@theme-text-inverted-normal"
+    },
+    "pink": {
+      "#normal": "@theme-text-primary-normal",
+      "#hovered": "@theme-text-inverted-normal",
+      "#pressed": "@theme-text-inverted-normal"
+    },
+    "slate": {
+      "#normal": "@theme-text-primary-normal",
+      "#hovered": "@theme-text-inverted-normal",
+      "#pressed": "@theme-text-inverted-normal"
+    },
+    "violet": {
+      "#normal": "@theme-text-primary-normal",
+      "#hovered": "@theme-text-inverted-normal",
+      "#pressed": "@theme-text-inverted-normal"
+    },
+    "cobalt": {
+      "#normal": "@theme-text-primary-normal",
+      "#hovered": "@theme-text-inverted-normal",
+      "#pressed": "@theme-text-inverted-normal"
+    },
+    "purple": {
+      "#normal": "@theme-text-primary-normal",
+      "#hovered": "@theme-text-inverted-normal",
+      "#pressed": "@theme-text-inverted-normal"
+    },
+    "default": {
+      "#normal": "@theme-text-primary-normal",
+      "#hovered": "@theme-text-inverted-normal",
+      "#pressed": "@theme-text-inverted-normal"
     }
   }
 }
