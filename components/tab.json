@@ -87,6 +87,11 @@
       "#normal": "@theme-text-team-purple-normal",
       "#hovered": "@theme-text-team-purple-hover",
       "#pressed": "@theme-text-team-purple-active"
+    },
+    "default": {
+      "#normal": "@theme-text-primary-normal",
+      "#hovered": "@theme-text-primary-normal",
+      "#pressed": "@theme-text-primary-normal"
     }
   }
 }
