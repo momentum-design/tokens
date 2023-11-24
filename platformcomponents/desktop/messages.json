@@ -96,6 +96,16 @@
       "#hovered": "@theme-background-primary-hover",
       "#pressed": "@theme-background-primary-active"
     },
+    "scheduled": {
+      "header": {
+        "background": {
+          "#normal": "@theme-background-solid-primary-normal"
+        },
+        "text": {
+          "#normal": "@theme-text-primary-normal"
+        }
+      }
+    },
     "reactions": {
       "#normal": {
         "background": "@theme-background-secondary-normal",
