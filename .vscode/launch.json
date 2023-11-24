@@ -9,7 +9,7 @@
       "request": "launch",
       "name": "Scripts Update Debugger",
       "skipFiles": ["<node_internals>/**"],
-      "args": ["command=update"],
+      "args": ["command=update", "format=design"],
       "program": "${workspaceFolder}/scripts/index.js"
     }
   ]

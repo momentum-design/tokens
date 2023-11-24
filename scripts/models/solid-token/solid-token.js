@@ -77,10 +77,12 @@ class SolidToken extends Token {
         break;
 
       case SolidToken.CONSTANTS.TOKEN_FORMATS.DESIGN:
-        normalized = Object.entries(colors).reduce((mutated, [key, value]) => {
+        const values = Object.entries(colors).reduce((mutated, [key, value]) => {
           const normalized = SolidToken.normalizeTokens({ format, tokens: value });
           return { ...mutated, [key]: { ...normalized } };
         }, {});
+        normalized = {};
+        normalized.solid = { ...values };
         break;
 
       default:
