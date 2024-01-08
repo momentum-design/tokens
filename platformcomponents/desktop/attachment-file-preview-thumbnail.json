@@ -10,6 +10,9 @@
           "primary": "@theme-common-text-white",
           "secondary": "@theme-common-text-gray"
         }
+      },
+     "background": {
+        "#normal": "@theme-background-secondary-normal"
       }
     }
   }
