@@ -1,0 +1,29 @@
+{
+  "classifications-menu": {
+    "comment": "Applied tokens used in classification menu",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/%F0%9F%A7%A9-Webex-App---Windows?node-id=5282%3A498&mode=dev",
+    "background": {
+      "#normal": "@theme-background-primary-ghost",
+      "#hovered": "@theme-background-primary-hover",
+      "#pressed": "@theme-background-primary-active"
+    },
+    "public": {
+      "color": "@theme-text-primary-normal"
+    },
+    "lowrisk": {
+      "color": "@theme-text-success-normal"
+    },
+    "confidential": {
+      "color": "@theme-text-warning-normal"
+    },
+    "cybersec": {
+      "color": "@theme-text-accent-normal"
+    },
+    "CLevel": {
+      "color": "@theme-text-error-normal"
+    },
+    "right": {
+      "icon": "@theme-text-accent-normal"
+    }
+  }
+}
