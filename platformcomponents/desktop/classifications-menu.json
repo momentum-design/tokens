@@ -1,0 +1,29 @@
+{
+  "classifications-menu": {
+    "comment": "Applied tokens used in classification menu",
+    "figma": "https://www.figma.com/file/HTlGQluNxFhElt9dxcZrT3/Spark-421814--Create-a-space-in-the-scheduling-flow?type=design&node-id=6236-9975&mode=design&t=6WlsF3Ygq9CnM2sq-0",
+    "background": {
+      "#normal": "@theme-background-primary-ghost",
+      "#hovered": "@theme-background-primary-hover",
+      "#pressed": "@theme-background-primary-active"
+    },
+    "public": {
+      "color": "@theme-text-primary-normal"
+    },
+    "lowrisk": {
+      "color": "@theme-text-success-normal"
+    },
+    "confidential": {
+      "color": "@theme-text-warning-normal"
+    },
+    "cybersec": {
+      "color": "@theme-text-accent-normal"
+    },
+    "CLevel": {
+      "color": "@theme-text-error-normal"
+    },
+    "right": {
+      "icon": "@theme-text-accent-normal"
+    }
+  }
+}
