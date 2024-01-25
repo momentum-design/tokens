@@ -16,6 +16,10 @@
         "#pressed": {
           "background": "@theme-button-inverted-pressed",
           "text": "@theme-text-primary-normal"
+        },
+        "#disabled": {
+          "background": "@theme-button-inverted-normal",
+          "text": "@theme-text-primary-disabled"
         }
       }
     },
@@ -34,6 +38,10 @@
         "#pressed": {
           "background": "@theme-button-secondary-pressed",
           "text": "@theme-text-primary-normal"
+        },
+        "#disabled": {
+          "background": "@theme-button-secondary-normal",
+          "text": "@theme-text-primary-disabled"
         }
       }
     }
