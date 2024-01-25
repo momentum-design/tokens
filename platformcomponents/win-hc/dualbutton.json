@@ -1,10 +1,10 @@
 {
  "dualbutton": {
   "overlay": {
-  "button": {
-   "#normal": {
-    "text": "@theme-common-hc-buttonText",
-    "background": "@theme-common-hc-buttonFace"
+   "button": {
+    "#normal": {
+     "text": "@theme-common-hc-buttonText",
+     "background": "@theme-common-hc-buttonFace"
     },
     "#hovered": {
      "text": "@theme-common-hc-highlightText",
@@ -12,7 +12,7 @@
     },
     "#pressed": {
      "text": "@theme-common-hc-highlightText",
-      "background": "@theme-common-hc-highlight"
+     "background": "@theme-common-hc-highlight"
     },
     "#disabled": {
      "text": "@theme-common-hc-grayText",
