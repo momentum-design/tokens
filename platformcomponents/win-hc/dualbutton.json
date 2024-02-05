@@ -35,7 +35,8 @@
      "background": "@theme-common-hc-highlight"
     },
     "#disabled": {
-     "text": "@theme-common-hc-grayText"
+     "text": "@theme-common-hc-grayText",
+     "background": "@theme-common-hc-buttonFace"
     }
    }
   }
