@@ -3,10 +3,11 @@
     "comment": "Applied tokens used in classification menu",
     "figma": "https://www.figma.com/file/HTlGQluNxFhElt9dxcZrT3/Spark-421814--Create-a-space-in-the-scheduling-flow?type=design&node-id=6236-9975&mode=design&t=6WlsF3Ygq9CnM2sq-0",
     "background": {
-      "#normal": "@theme-background-primary-ghost",
+      "#normal": "@theme-background-solid-tertiary-normal",
       "#hovered": "@theme-background-primary-hover",
       "#pressed": "@theme-background-primary-active"
     },
+    "border": "@theme-outline-secondary-normal",
     "public": {
       "color": "@theme-text-primary-normal"
     },
