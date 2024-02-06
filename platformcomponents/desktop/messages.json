@@ -126,8 +126,7 @@
         "#disabled": "@theme-button-secondary-disabled"
       },
       "border": {
-        "#normal": "@theme-outline-secondary-normal",
-        "#disabled": "@theme-outline-secondary-disabled"
+        "#normal": "@theme-outline-secondary-normal"
       },
       "icon": {
         "#normal": "@theme-text-primary-normal",
