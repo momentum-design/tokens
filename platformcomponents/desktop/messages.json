@@ -96,16 +96,6 @@
       "#hovered": "@theme-background-primary-hover",
       "#pressed": "@theme-background-primary-active"
     },
-    "scheduled": {
-      "header": {
-        "background": {
-          "#normal": "@theme-background-solid-primary-normal"
-        },
-        "text": {
-          "#normal": "@theme-text-primary-normal"
-        }
-      }
-    },
     "reactions": {
       "#normal": {
         "background": "@theme-background-secondary-normal",
@@ -126,6 +116,71 @@
         "contact-name": "@theme-text-primary-normal",
         "time-stamp": "@theme-text-secondary-normal",
         "presence": "@theme-text-secondary-normal"
+      }
+    },
+    "toolbar": {
+      "background": {
+        "#normal": "@theme-background-solid-primary-normal",
+        "#hovered": "@theme-button-secondary-hover",
+        "#pressed": "@theme-button-secondary-pressed",
+        "#disabled": "@theme-button-secondary-disabled"
+      },
+      "border": {
+        "#normal": "@theme-outline-secondary-normal"
+      },
+      "icon": {
+        "#normal": "@theme-text-primary-normal",
+        "#disabled": "@theme-text-primary-disabled"
+      },
+      "iconAlert": {
+        "#normal": "@theme-text-error-normal"
+      }
+    },
+    "scheduled": {
+      "header": {
+        "icon": {
+          "#normal": "@theme-text-primary-normal"
+        },
+        "iconalert": {
+          "#normal": "@theme-text-error-normal"
+        },
+        "text": {
+          "#normal": "@theme-text-primary-normal"
+        },
+        "link": {
+          "#normal": "@theme-text-accent-normal"
+        },
+        "background": {
+          "#normal": "@theme-background-solid-secondary-normal"
+        },
+        "border": {
+          "#normal": "@theme-outline-secondary-normal"
+        }
+      },
+      "message": {
+        "background": {
+          "#normal": "@theme-background-solid-secondary-normal",
+          "#pressed": "@theme-background-primary-active",
+          "#hovered": "@theme-background-secondary-hover"
+        },
+        "headerText": {
+          "#normal": "@theme-text-secondary-normal"
+        },
+        "text": {
+          "#normal": "@theme-text-primary-normal"
+        },
+        "footerText": {
+          "#normal": "@theme-text-secondary-normal"
+        },
+        "alertIcon": {
+          "#normal": "@theme-text-error-normal"
+        },
+        "alertText": {
+          "#normal": "@theme-text-error-normal"
+        },
+        "alertBackground": {
+          "#normal": "@theme-background-alert-error"
+        }
       }
     }
   }
