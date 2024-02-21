@@ -159,8 +159,8 @@
       },
       "message": {
         "background": {
-          "#normal": "@theme-background-solid-secondary-normal",
-          "#pressed": "@theme-background-primary-active",
+          "#normal": "@theme-background-secondary-normal",
+          "#pressed": "@theme-background-secondary-active",
           "#hovered": "@theme-background-secondary-hover"
         },
         "headerText": {
