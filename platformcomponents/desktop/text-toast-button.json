@@ -1,0 +1,22 @@
+{
+  "textToastButton": {
+    "comment": "applied to text toast buttons",
+    "figma": "https://www.figma.com/file/RNuTPLeUifYEoT0s5Zx7yw/Incoming-call-notifications?type=design&node-id=606%3A28979&mode=design&t=bIDyJM44NlgValqB-1",
+    "incomingCall": {
+      "decline": {
+        "#normal": {
+          "text": "@theme-text-error-normal"
+        },
+        "#hovered": {
+          "text": "@theme-text-error-normal"
+        },
+        "#pressed": {
+          "text": "@theme-text-error-normal"
+        },
+        "#disabled": {
+          "text": "@theme-text-primary-disabled"
+        }
+      }
+    }
+  }
+}
