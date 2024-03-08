@@ -25,7 +25,7 @@
           "normal": "@color-hc-SystemColorWindowColor"
         },
         "error": {
-          "normal": "@color-hc-PlaceholderColor",
+          "normal": "@color-hc-SystemColorWindowTextColor",
           "hover": "@color-hc-PlaceholderColor"
         },
         "secondary-light": "@color-hc-SystemColorButtonTextColor",
