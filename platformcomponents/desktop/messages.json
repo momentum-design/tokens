@@ -136,6 +136,11 @@
         "#normal": "@theme-text-error-normal"
       }
     },
+    "forward": {
+      "text": {
+        "#normal": "@theme-text-secondary-normal"
+      }
+    },
     "scheduled": {
       "header": {
         "icon": {
