@@ -47,13 +47,13 @@
           "border": "@theme-button-border-normal"
         },
         "#hovered": {
-          "text": "@theme-text-accent-hover"
+          "text": "@theme-teaching-text-accent-hover"
         },
         "#pressed": {
-          "text": "@theme-text-accent-hover"
+          "text": "@theme-teaching-text-accent-hover"
         },
         "#focused": {
-          "text": "@theme-text-accent-normal",
+          "text": "@theme-teaching-text-accent-normal",
           "border": "@theme-text-accent-normal"
         },
         "#disabled": {
