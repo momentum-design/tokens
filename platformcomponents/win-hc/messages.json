@@ -47,6 +47,13 @@
       "#focused": {
         "text": "@theme-text-inverted-normal"
       }
+    },
+    "scheduled": {
+      "header": {
+        "iconalert": {
+          "#normal": "@theme-text-warning-normal"
+        }
+      }
     }
   }
 }
