@@ -28,6 +28,8 @@
     "scripts": "node ./scripts/index.js",
     "scripts:update": "node ./scripts/index.js --command=update --format=automated",
     "test": "npm run test:scripts && npm run build:web && npm run build:windows && npm run build:macos && npm run build:ios && npm run build:android",
+    "test:macos:dist": "jest dist-snapshots.test.js",
+    "test:macos": "npm run build:macos && npm run test:macos:dist",
     "test:scripts": "jest ./scripts",
     "prepare": "husky install"
   },
