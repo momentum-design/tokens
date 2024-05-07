@@ -10,6 +10,7 @@
     "husky": "^7.0.1",
     "jest": "^29.1.2",
     "lint-staged": "^11.1.2",
+    "lodash": "^4.17.21",
     "lodash.merge": "^4.6.2",
     "rimraf": "^3.0.2"
   },
@@ -31,6 +32,17 @@
     "test:macos:dist": "jest dist-snapshots.test.js",
     "test:macos": "npm run build:macos && npm run test:macos:dist",
     "test:scripts": "jest ./scripts",
+    "test:macos:dist:dark": "jest tests/mac/dark/**",
+    "test:macos:dist:light": "jest tests/mac/light/**",
+    "test:macos:dist": "npm run test:macos:dist:dark && npm run test:macos:dist:light",
+    "test:macos": "npm run build:macos && npm run test:macos:dist",
+    "test:windows:dist:dark": "jest tests/win/dark/**",
+    "test:windows:dist:light": "jest tests/win/light/**",
+    "test:windows:dist:hc": "jest tests/win/momentumSystemHighContrast.test.js",
+    "test:windows:dist": "npm run test:windows:dist:dark && npm run test:windows:dist:light && npm run test:windows:dist:hc",
+    "test:windows": "npm run build:windows && npm run test:windows:dist",
+    "update:macos": "node syncFromNewRepo.js && npm run test:macos",
+    "update:windows": "node syncFromNewRepo.js && npm run test:windows",
     "prepare": "husky install"
   },
   "repository": {
@@ -54,6 +66,7 @@
     "**/*": "npx prettier --write --ignore-unknown"
   },
   "dependencies": {
+    "@momentum-design/tokens": "0.0.52",
     "momentum-abstract": "^1.0.28"
   }
 }
