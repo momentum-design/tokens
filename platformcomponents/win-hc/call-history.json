@@ -1,0 +1,10 @@
+{
+  "call-history": {
+    "comment": "Color tokens for call hstory in Calling tab",
+    "item":{
+      "missed-header-text": {
+        "#normal": "@theme-text-secondary-normal"
+      }
+    }
+  }
+}

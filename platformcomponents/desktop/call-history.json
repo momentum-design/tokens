@@ -1,0 +1,76 @@
+{
+  "call-history": {
+    "figma": "https://www.figma.com/design/NlEpsgq29wZXhaOpNf5OIA/Calling-Hub-Phase-1",
+    "comment": "Color tokens for call hstory in Calling tab",
+    "text": {
+      "primary": {
+        "#normal": {
+          "text": "@theme-text-primary-normal"
+        }
+      },
+      "secondary": {
+        "#normal": {
+          "text": "@theme-text-secondary-normal"
+        }
+      }
+    },
+    "item":{
+      "background": {
+        "#normal": "@theme-background-primary-ghost",
+        "#hovered": "@theme-background-primary-hover",
+        "#pressed": "@theme-background-primary-active"
+      },
+      "header-text": {
+        "#normal": "@theme-text-primary-normal"
+      },
+      "missed-header-text": {
+        "#normal": "@theme-text-error-normal"
+      },
+      "verification-icon": {
+        "#normal": "@theme-text-primary-normal"
+      },
+      "subheader-text": {
+        "#normal": "@theme-text-secondary-normal"
+      },
+      "time-text": {
+        "#normal": "@theme-text-primary-normal"
+      },
+      "direction-icon": {
+        "#normal": "@theme-text-primary-normal"
+      },
+      "verification-text": {
+        "#normal": "@theme-text-secondary-normal"
+      },
+      "log-text": {
+        "#normal": "@theme-text-primary-normal"
+      },
+      "direction-text": {
+        "#normal": "@theme-text-primary-normal"
+      },
+      "duration-text": {
+        "#normal": "@theme-text-secondary-normal"
+      },
+      "time-text": {
+        "#normal": "@theme-text-primary-normal"
+      },
+      "direction-icon": {
+        "#normal": "@theme-text-secondary-normal"
+      },
+      "notes-icon": {
+        "#normal": "@theme-text-secondary-normal"
+      },
+      "notes-header-text": {
+        "#normal": "@theme-text-secondary-normal"
+      },
+      "ai-background": {
+        "#normal": "@theme-background-secondary-normal"
+      },
+      "ai-text": {
+        "#normal": "@theme-text-secondary-normal"
+      },
+      "notes-text": {
+        "#normal": "@theme-text-primary-normal"
+      }
+    }
+  }
+}
