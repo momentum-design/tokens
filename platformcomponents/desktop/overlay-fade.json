@@ -4,22 +4,22 @@
     "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=7813%3A33099",
     "primary": {
       "#normal": {
-        "background": "@theme-common-overlay-primary"
+        "background": "@color-theme-common-overlay-primary"
       }
     },
     "secondary": {
       "#normal": {
-        "background": "@theme-common-overlay-secondary"
+        "background": "@color-theme-common-overlay-secondary"
       }
     },
     "meetings": {
       "#normal": {
-        "background": "@theme-overlay-meetings-normal"
+        "background": "@color-theme-overlay-meetings-normal"
       }
     },
     "meetings-reactions": {
-      "gradient-0": "@theme-overlay-meetings-reaction-normal-0",
-      "gradient-1": "@theme-overlay-meetings-reaction-normal-1"
+      "gradient-0": "@color-theme-overlay-meetings-reaction-normal-0",
+      "gradient-1": "@color-theme-overlay-meetings-reaction-normal-1"
     }
   }
 }

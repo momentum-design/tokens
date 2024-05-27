@@ -3,19 +3,19 @@
     "comment": "Applied to individual items in meetings list",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=5180%3A1690",
     "#normal": {
-      "background": "@theme-background-secondary-normal"
+      "background": "@color-theme-background-secondary-normal"
     },
     "#hovered": {
-      "background": "@theme-background-secondary-hover"
+      "background": "@color-theme-background-secondary-hover"
     },
     "#focused": {
-      "background": "@theme-background-secondary-normal"
+      "background": "@color-theme-background-secondary-normal"
     },
     "#pressed": {
-      "background": "@theme-background-secondary-active"
+      "background": "@color-theme-background-secondary-active"
     },
     "#disabled": {
-      "background": "@theme-background-secondary-normal"
+      "background": "@color-theme-background-secondary-normal"
     }
   }
 }

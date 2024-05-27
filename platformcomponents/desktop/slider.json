@@ -4,36 +4,36 @@
     "track": {
       "indicator": {
         "#normal": {
-          "background": "@theme-control-active-normal"
+          "background": "@color-theme-control-active-normal"
         },
         "#disabled": {
-          "background": "@theme-control-inactive-disabled"
+          "background": "@color-theme-control-inactive-disabled"
         }
       },
       "empty": {
         "#normal": {
-          "background": "@theme-control-inactive-normal"
+          "background": "@color-theme-control-inactive-normal"
         },
         "#disabled": {
-          "background": "@theme-control-inactive-disabled"
+          "background": "@color-theme-control-inactive-disabled"
         }
       }
     },
     "handle": {
       "#normal": {
-        "background": "@theme-background-solid-primary-normal",
-        "border": "@theme-outline-primary-normal"
+        "background": "@color-theme-background-solid-primary-normal",
+        "border": "@color-theme-outline-primary-normal"
       },
       "#hovered": {
-        "background": "@theme-background-solid-secondary-normal",
-        "border": "@theme-outline-primary-normal"
+        "background": "@color-theme-background-solid-secondary-normal",
+        "border": "@color-theme-outline-primary-normal"
       },
       "#pressed": {
-        "background": "@theme-background-solid-tertiary-normal",
-        "border": "@theme-outline-primary-normal"
+        "background": "@color-theme-background-solid-tertiary-normal",
+        "border": "@color-theme-outline-primary-normal"
       },
       "#disabled": {
-        "background": "@theme-background-solid-tertiary-normal"
+        "background": "@color-theme-background-solid-tertiary-normal"
       }
     }
   }

@@ -3,16 +3,16 @@
     "sent": {
       "comment": "Applied to file attachment preview thumbnail",
       "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=49674%3A114116",
-      "border": "@theme-outline-secondary-normal",
+      "border": "@color-theme-outline-secondary-normal",
       "overlay": {
-        "background": "@theme-common-overlay-primary",
+        "background": "@color-theme-common-overlay-primary",
         "label": {
-          "primary": "@theme-common-text-white",
-          "secondary": "@theme-common-text-gray"
+          "primary": "@color-theme-common-text-white",
+          "secondary": "@color-theme-common-text-gray"
         }
       },
-     "background": {
-        "#normal": "@theme-background-secondary-normal"
+      "background": {
+        "#normal": "@color-theme-background-secondary-normal"
       }
     }
   }

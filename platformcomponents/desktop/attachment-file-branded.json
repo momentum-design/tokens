@@ -3,30 +3,30 @@
     "sent": {
       "comment": "Applied to sent & safe branded file attachments",
       "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=5428%3A29",
-      "border": "@theme-outline-secondary-normal",
+      "border": "@color-theme-outline-secondary-normal",
       "previewBox": {
-        "icon": "@theme-common-text-white",
-        "background" : {
-          "pdf": "@theme-common-content-pdf",
-          "word": "@theme-common-content-word",
-          "powerpoint": "@theme-common-content-powerpoint",
-          "excel": "@theme-common-content-excel",
-          "onenote": "@theme-common-content-onenote",
-          "doc": "@theme-common-content-doc",
-          "sheets": "@theme-common-content-sheets",
-          "slides": "@theme-common-content-slides",
-          "keynotes": "@theme-common-content-keynotes"
+        "icon": "@color-theme-common-text-white",
+        "background": {
+          "pdf": "@color-theme-common-content-pdf",
+          "word": "@color-theme-common-content-word",
+          "powerpoint": "@color-theme-common-content-powerpoint",
+          "excel": "@color-theme-common-content-excel",
+          "onenote": "@color-theme-common-content-onenote",
+          "doc": "@color-theme-common-content-doc",
+          "sheets": "@color-theme-common-content-sheets",
+          "slides": "@color-theme-common-content-slides",
+          "keynotes": "@color-theme-common-content-keynotes"
         }
       },
       "label": {
-        "primary": "@theme-text-primary-normal",
-        "secondary": "@theme-text-secondary-normal"
+        "primary": "@color-theme-text-primary-normal",
+        "secondary": "@color-theme-text-secondary-normal"
       },
       "background": {
-        "#normal": "@theme-background-secondary-normal",
-        "#hovered": "@theme-background-secondary-hover",
-        "#active": "@theme-background-secondary-active",
-        "#focused": "@theme-background-secondary-normal"
+        "#normal": "@color-theme-background-secondary-normal",
+        "#hovered": "@color-theme-background-secondary-hover",
+        "#active": "@color-theme-background-secondary-active",
+        "#focused": "@color-theme-background-secondary-normal"
       }
     }
   }

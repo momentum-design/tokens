@@ -3,55 +3,55 @@
     "figma": "https://www.figma.com/file/vdL18BATeJAIq2JvGAjRPD/Components---Web?node-id=40300%3A80660",
     "checked": {
       "#normal": {
-        "background": "@theme-control-active-normal",
-        "text": "@theme-text-primary-normal",
+        "background": "@color-theme-control-active-normal",
+        "text": "@color-theme-text-primary-normal",
         "border": "none",
-        "icon": "@theme-text-inverted-normal"
+        "icon": "@color-theme-text-inverted-normal"
       },
       "#hovered": {
-        "background": "@theme-control-active-hover",
-        "text": "@theme-text-primary-normal",
+        "background": "@color-theme-control-active-hover",
+        "text": "@color-theme-text-primary-normal",
         "border": "none",
-        "icon": "@theme-text-inverted-normal"
+        "icon": "@color-theme-text-inverted-normal"
       },
       "#pressed": {
-        "background": "@theme-control-active-pressed",
-        "text": "@theme-text-primary-normal",
+        "background": "@color-theme-control-active-pressed",
+        "text": "@color-theme-text-primary-normal",
         "border": "none",
-        "icon": "@theme-text-inverted-normal"
+        "icon": "@color-theme-text-inverted-normal"
       },
       "#disabled": {
-        "background": "@theme-control-active-disabled",
-        "text": "@theme-text-primary-disabled",
+        "background": "@color-theme-control-active-disabled",
+        "text": "@color-theme-text-primary-disabled",
         "border": "none",
-        "icon": "@theme-text-inverted-disabled"
+        "icon": "@color-theme-text-inverted-disabled"
       }
     },
     "unchecked": {
       "#normal": {
-        "background": "@theme-control-inactive-normal",
-        "text": "@theme-text-primary-normal",
-        "border": "@theme-outline-input-normal"
+        "background": "@color-theme-control-inactive-normal",
+        "text": "@color-theme-text-primary-normal",
+        "border": "@color-theme-outline-input-normal"
       },
       "#hovered": {
-        "background": "@theme-control-inactive-hover",
-        "text": "@theme-text-primary-normal",
-        "border": "@theme-outline-input-normal"
+        "background": "@color-theme-control-inactive-hover",
+        "text": "@color-theme-text-primary-normal",
+        "border": "@color-theme-outline-input-normal"
       },
       "#pressed": {
-        "background": "@theme-control-inactive-pressed",
-        "text": "@theme-text-primary-normal",
-        "border": "@theme-outline-input-normal"
+        "background": "@color-theme-control-inactive-pressed",
+        "text": "@color-theme-text-primary-normal",
+        "border": "@color-theme-outline-input-normal"
       },
       "#disabled": {
-        "background": "@theme-control-inactive-disabled",
-        "text": "@theme-text-primary-disabled",
+        "background": "@color-theme-control-inactive-disabled",
+        "text": "@color-theme-text-primary-disabled",
         "border": "none"
       }
     },
     "group": {
       "description": {
-        "color": "@theme-text-secondary-normal"
+        "color": "@color-theme-text-secondary-normal"
       }
     }
   }
