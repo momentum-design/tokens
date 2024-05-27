@@ -3,53 +3,53 @@
     "comment": "applied to avatars and all its elements",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4389%3A1647",
     "presence-icon": {
-      "active": "@theme-indicator-stable",
-      "meeting": "@theme-indicator-unstable",
-      "schedule": "@theme-indicator-unstable",
-      "call": "@theme-indicator-unstable",
-      "dnd": "@theme-indicator-attention",
-      "presenting": "@theme-indicator-attention",
-      "quiet-hours": "@theme-indicator-locked",
-      "away": "@theme-indicator-locked",
-      "ooo": "@theme-indicator-locked",
-      "busy": "@theme-indicator-unstable",
-      "on-mobile": "@theme-indicator-locked",
-      "on-device": "@theme-indicator-locked",
-      "on-hold": "@theme-indicator-locked",
-      "background": "@theme-background-solid-primary-normal"
+      "active": "@color-theme-indicator-stable",
+      "meeting": "@color-theme-indicator-unstable",
+      "schedule": "@color-theme-indicator-unstable",
+      "call": "@color-theme-indicator-unstable",
+      "dnd": "@color-theme-indicator-attention",
+      "presenting": "@color-theme-indicator-attention",
+      "quiet-hours": "@color-theme-indicator-locked",
+      "away": "@color-theme-indicator-locked",
+      "ooo": "@color-theme-indicator-locked",
+      "busy": "@color-theme-indicator-unstable",
+      "on-mobile": "@color-theme-indicator-locked",
+      "on-device": "@color-theme-indicator-locked",
+      "on-hold": "@color-theme-indicator-locked",
+      "background": "@color-theme-background-solid-primary-normal"
     },
     "color-avatar": {
       "text": {
-        "default": "@theme-common-text-white",
-        "error": "@theme-text-error-normal",
-        "success": "@theme-text-success-normal"
+        "default": "@color-theme-common-text-white",
+        "error": "@color-theme-text-error-normal",
+        "success": "@color-theme-text-success-normal"
       },
       "background": {
-        "default": "@theme-avatar-default",
-        "gold": "@theme-avatar-gold",
-        "orange": "@theme-avatar-orange",
-        "lime": "@theme-avatar-lime",
-        "mint": "@theme-avatar-mint",
-        "cyan": "@theme-avatar-cyan",
-        "cobalt": "@theme-avatar-cobalt",
-        "slate": "@theme-avatar-slate",
-        "violet": "@theme-avatar-violet",
-        "purple": "@theme-avatar-purple",
-        "pink": "@theme-avatar-pink",
-        "yellow": "@theme-avatar-yellow",
-        "error": "@theme-background-alert-error-normal",
-        "success": "@theme-background-alert-success-normal"
+        "default": "@color-theme-avatar-default",
+        "gold": "@color-theme-avatar-gold",
+        "orange": "@color-theme-avatar-orange",
+        "lime": "@color-theme-avatar-lime",
+        "mint": "@color-theme-avatar-mint",
+        "cyan": "@color-theme-avatar-cyan",
+        "cobalt": "@color-theme-avatar-cobalt",
+        "slate": "@color-theme-avatar-slate",
+        "violet": "@color-theme-avatar-violet",
+        "purple": "@color-theme-avatar-purple",
+        "pink": "@color-theme-avatar-pink",
+        "yellow": "@color-theme-avatar-yellow",
+        "error": "@color-theme-background-alert-error-normal",
+        "success": "@color-theme-background-alert-success-normal"
       }
     },
     "chat-bubble": {
       "icon": {
-        "normal": "@theme-control-active-normal",
-        "hover": "@theme-control-active-normal",
-        "pressed": "@theme-control-active-normal",
-        "active": "@theme-control-active-normal",
-        "disabled": "@theme-control-active-normal"
+        "normal": "@color-theme-control-active-normal",
+        "hover": "@color-theme-control-active-normal",
+        "pressed": "@color-theme-control-active-normal",
+        "active": "@color-theme-control-active-normal",
+        "disabled": "@color-theme-control-active-normal"
       },
-      "border": "@theme-outline-primary-normal"
+      "border": "@color-theme-outline-primary-normal"
     }
   }
 }

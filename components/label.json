@@ -3,83 +3,83 @@
     "comment": "Applied to non editable pieces of text.",
     "primary": {
       "#normal": {
-        "text": "@theme-text-primary-normal"
+        "text": "@color-theme-text-primary-normal"
       },
       "#disabled": {
-        "text": "@theme-text-primary-disabled"
+        "text": "@color-theme-text-primary-disabled"
       }
     },
     "secondary": {
       "#normal": {
-        "text": "@theme-text-secondary-normal"
+        "text": "@color-theme-text-secondary-normal"
       },
       "#disabled": {
-        "text": "@theme-text-primary-disabled"
+        "text": "@color-theme-text-primary-disabled"
       }
     },
     "primaryInverted": {
       "#normal": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-text-inverted-normal"
       },
       "#disabled": {
-        "text": "@theme-text-inverted-disabled"
+        "text": "@color-theme-text-inverted-disabled"
       }
     },
     "success": {
       "#normal": {
-        "text": "@theme-text-success-normal"
+        "text": "@color-theme-text-success-normal"
       }
     },
     "warning": {
       "#normal": {
-        "text": "@theme-text-warning-normal"
+        "text": "@color-theme-text-warning-normal"
       }
     },
     "error": {
       "#normal": {
-        "text": "@theme-text-error-normal"
+        "text": "@color-theme-text-error-normal"
       }
     },
     "common": {
       "white": {
         "#normal": {
-          "text": "@theme-common-text-white"
+          "text": "@color-theme-common-text-white"
         }
       },
       "gray": {
         "#normal": {
-          "text": "@theme-common-text-gray"
+          "text": "@color-theme-common-text-gray"
         }
       },
       "black": {
         "#normal": {
-          "text": "@theme-common-text-black"
+          "text": "@color-theme-common-text-black"
         }
       },
       "disabled": {
         "#normal": {
-          "text": "@theme-common-text-disabled"
+          "text": "@color-theme-common-text-disabled"
         }
       },
       "success": {
         "#normal": {
-          "text": "@theme-common-text-success-normal"
+          "text": "@color-theme-common-text-success-normal"
         },
         "#hovered": {
-          "text": "@theme-common-text-success-hover"
+          "text": "@color-theme-common-text-success-hover"
         }
       },
       "error": {
         "#normal": {
-          "text": "@theme-common-text-error-normal"
+          "text": "@color-theme-common-text-error-normal"
         },
         "#hovered": {
-          "text": "@theme-common-text-error-hover"
+          "text": "@color-theme-common-text-error-hover"
         }
       },
       "warning": {
         "#normal": {
-          "text": "@theme-common-text-warning-normal"
+          "text": "@color-theme-common-text-warning-normal"
         }
       }
     }

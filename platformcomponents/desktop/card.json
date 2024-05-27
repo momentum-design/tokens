@@ -4,22 +4,22 @@
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=5282%3A497",
     "active": {
       "#normal": {
-        "background": "@theme-background-alert-success-normal"
+        "background": "@color-theme-background-alert-success-normal"
       }
     },
     "inactive": {
       "#normal": {
-        "background": "@theme-background-secondary-normal"
+        "background": "@color-theme-background-secondary-normal"
       }
     },
     "cancelled": {
       "#normal": {
-        "background": "@theme-background-primary-ghost"
+        "background": "@color-theme-background-primary-ghost"
       }
     },
     "disabled": {
       "#normal": {
-        "border": "@theme-outline-disabled-normal"
+        "border": "@color-theme-outline-disabled-normal"
       }
     }
   }

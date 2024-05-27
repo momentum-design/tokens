@@ -4,17 +4,17 @@
     "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=5121%3A30676",
     "default": {
       "#normal": {
-        "background": "@theme-background-primary-ghost"
+        "background": "@color-theme-background-primary-ghost"
       }
     },
     "active": {
       "#normal": {
-        "background": "@theme-button-join-normal"
+        "background": "@color-theme-button-join-normal"
       }
     },
     "inactive": {
       "#normal": {
-        "background": "@theme-background-secondary-active"
+        "background": "@color-theme-background-secondary-active"
       }
     }
   }

@@ -3,27 +3,27 @@
     "comment": "Applied to Chips",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=5028%3A270",
     "outline": {
-      "error": "@theme-outline-cancel-normal",
-      "normal": "@theme-outline-primary-normal",
+      "error": "@color-theme-outline-cancel-normal",
+      "normal": "@color-theme-outline-primary-normal",
       "multiline": {
-        "background": "@theme-background-primary-ghost",
+        "background": "@color-theme-background-primary-ghost",
         "text": {
-          "mint": "@theme-text-team-mint-normal",
-          "cobalt": "@theme-text-team-cobalt-normal",
-          "orange": "@theme-text-team-orange-normal",
-          "pink": "@theme-text-team-pink-normal",
-          "lime": "@theme-text-team-lime-normal",
-          "cyan": "@theme-text-team-cyan-normal",
-          "purple": "@theme-text-team-purple-normal",
-          "violet": "@theme-text-team-violet-normal"
+          "mint": "@color-theme-text-team-mint-normal",
+          "cobalt": "@color-theme-text-team-cobalt-normal",
+          "orange": "@color-theme-text-team-orange-normal",
+          "pink": "@color-theme-text-team-pink-normal",
+          "lime": "@color-theme-text-team-lime-normal",
+          "cyan": "@color-theme-text-team-cyan-normal",
+          "purple": "@color-theme-text-team-purple-normal",
+          "violet": "@color-theme-text-team-violet-normal"
         }
       }
     },
     "background": {
-      "error": "@theme-background-alert-error-normal"
+      "error": "@color-theme-background-alert-error-normal"
     },
     "text": {
-      "error": "@theme-text-error-normal"
+      "error": "@color-theme-text-error-normal"
     }
   }
 }
