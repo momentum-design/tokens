@@ -3,28 +3,28 @@
     "comment": "Applied tokens used in classification menu",
     "figma": "https://www.figma.com/file/HTlGQluNxFhElt9dxcZrT3/Spark-421814--Create-a-space-in-the-scheduling-flow?type=design&node-id=6236-9975&mode=design&t=6WlsF3Ygq9CnM2sq-0",
     "background": {
-      "#normal": "@theme-background-solid-tertiary-normal",
-      "#hovered": "@theme-background-primary-hover",
-      "#pressed": "@theme-background-primary-active"
+      "#normal": "@color-theme-background-solid-tertiary-normal",
+      "#hovered": "@color-theme-background-primary-hover",
+      "#pressed": "@color-theme-background-primary-active"
     },
-    "border": "@theme-outline-secondary-normal",
+    "border": "@color-theme-outline-secondary-normal",
     "public": {
-      "color": "@theme-text-primary-normal"
+      "color": "@color-theme-text-primary-normal"
     },
     "lowrisk": {
-      "color": "@theme-text-success-normal"
+      "color": "@color-theme-text-success-normal"
     },
     "confidential": {
-      "color": "@theme-text-warning-normal"
+      "color": "@color-theme-text-warning-normal"
     },
     "cybersec": {
-      "color": "@theme-text-accent-normal"
+      "color": "@color-theme-text-accent-normal"
     },
     "CLevel": {
-      "color": "@theme-text-error-normal"
+      "color": "@color-theme-text-error-normal"
     },
     "right": {
-      "icon": "@theme-text-accent-normal"
+      "icon": "@color-theme-text-accent-normal"
     }
   }
 }

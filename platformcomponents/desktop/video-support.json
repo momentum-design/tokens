@@ -2,64 +2,64 @@
   "videoSupport": {
     "comment": "Control buttons, video name labels, etc.",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=6361%3A14",
-    "containerBackground": "@theme-background-secondary-normal",
+    "containerBackground": "@color-theme-background-secondary-normal",
     "controls": {
       "button": {
         "#normal": {
-          "background": "@theme-button-inverted-normal",
-          "text": "@theme-text-primary-normal",
-          "icon": "@theme-text-primary-normal",
-          "border": "@theme-outline-button-normal"
+          "background": "@color-theme-button-inverted-normal",
+          "text": "@color-theme-text-primary-normal",
+          "icon": "@color-theme-text-primary-normal",
+          "border": "@color-theme-outline-button-normal"
         },
         "#hovered": {
-          "background": "@theme-button-inverted-hover",
-          "text": "@theme-text-primary-normal",
-          "icon": "@theme-text-primary-normal",
-          "border": "@theme-outline-button-normal"
+          "background": "@color-theme-button-inverted-hover",
+          "text": "@color-theme-text-primary-normal",
+          "icon": "@color-theme-text-primary-normal",
+          "border": "@color-theme-outline-button-normal"
         },
         "#pressed": {
-          "background": "@theme-button-inverted-pressed",
-          "text": "@theme-text-primary-normal",
-          "icon": "@theme-text-primary-normal",
-          "border": "@theme-outline-button-normal"
+          "background": "@color-theme-button-inverted-pressed",
+          "text": "@color-theme-text-primary-normal",
+          "icon": "@color-theme-text-primary-normal",
+          "border": "@color-theme-outline-button-normal"
         },
         "#disabled": {
-          "background": "@theme-button-inverted-normal",
-          "text": "@theme-text-primary-disabled",
-          "icon": "@theme-text-primary-disabled",
-          "border": "@theme-outline-disabled-normal"
+          "background": "@color-theme-button-inverted-normal",
+          "text": "@color-theme-text-primary-disabled",
+          "icon": "@color-theme-text-primary-disabled",
+          "border": "@color-theme-outline-disabled-normal"
         }
       }
     },
     "videoNameLabels": {
       "videoOff": {
-        "background": "@theme-background-primary-ghost",
-        "name": "@theme-text-primary-normal",
-        "icon": "@theme-text-primary-normal",
-        "role": "@theme-text-secondary-normal",
-        "iconMute": "@theme-text-error-normal",
-        "iconUnmute": "@theme-text-success-normal"
+        "background": "@color-theme-background-primary-ghost",
+        "name": "@color-theme-text-primary-normal",
+        "icon": "@color-theme-text-primary-normal",
+        "role": "@color-theme-text-secondary-normal",
+        "iconMute": "@color-theme-text-error-normal",
+        "iconUnmute": "@color-theme-text-success-normal"
       },
       "videoOn": {
-        "background": "@theme-background-namelabel-normal",
-        "name": "@theme-common-text-white",
-        "icon": "@theme-common-text-white",
-        "role": "@theme-text-secondary-normal",
-        "iconMute": "@theme-common-text-error-normal",
-        "iconUnmute": "@theme-common-text-success-normal"
+        "background": "@color-theme-background-namelabel-normal",
+        "name": "@color-theme-common-text-white",
+        "icon": "@color-theme-common-text-white",
+        "role": "@color-theme-text-secondary-normal",
+        "iconMute": "@color-theme-common-text-error-normal",
+        "iconUnmute": "@color-theme-common-text-success-normal"
       }
     },
     "slider": {
       "track": {
-        "fill": "@theme-control-active-normal",
-        "empty": "@theme-outline-button-normal"
+        "fill": "@color-theme-control-active-normal",
+        "empty": "@color-theme-outline-button-normal"
       },
       "mover": {
-        "border": "@theme-outline-primary-normal",
-        "background": "@theme-background-solid-primary-normal"
+        "border": "@color-theme-outline-primary-normal",
+        "background": "@color-theme-background-solid-primary-normal"
       },
-      "border": "@theme-outline-button-normal",
-      "background": "@theme-button-inverted-normal"
+      "border": "@color-theme-outline-button-normal",
+      "background": "@color-theme-button-inverted-normal"
     }
   }
 }

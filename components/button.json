@@ -4,354 +4,354 @@
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4341%3A6826",
     "primary": {
       "#normal": {
-        "background": "@theme-button-primary-normal",
-        "text": "@theme-text-inverted-normal",
-        "border": "@theme-button-border-normal"
+        "background": "@color-theme-button-primary-normal",
+        "text": "@color-theme-text-inverted-normal",
+        "border": "@color-theme-button-border-normal"
       },
       "#hovered": {
-        "background": "@theme-button-primary-hover",
-        "text": "@theme-text-inverted-normal"
+        "background": "@color-theme-button-primary-hover",
+        "text": "@color-theme-text-inverted-normal"
       },
       "#pressed": {
-        "background": "@theme-button-primary-pressed",
-        "text": "@theme-text-inverted-normal"
+        "background": "@color-theme-button-primary-pressed",
+        "text": "@color-theme-text-inverted-normal"
       },
       "#disabled": {
-        "background": "@theme-button-primary-disabled",
-        "text": "@theme-text-primary-disabled"
+        "background": "@color-theme-button-primary-disabled",
+        "text": "@color-theme-text-primary-disabled"
       }
     },
     "secondary": {
       "#normal": {
-        "background": "@theme-button-secondary-normal",
-        "text": "@theme-text-primary-normal",
-        "border": "@theme-outline-button-normal"
+        "background": "@color-theme-button-secondary-normal",
+        "text": "@color-theme-text-primary-normal",
+        "border": "@color-theme-outline-button-normal"
       },
       "#hovered": {
-        "background": "@theme-button-secondary-hover",
-        "text": "@theme-text-primary-normal",
-        "border": "@theme-outline-button-normal"
+        "background": "@color-theme-button-secondary-hover",
+        "text": "@color-theme-text-primary-normal",
+        "border": "@color-theme-outline-button-normal"
       },
       "#pressed": {
-        "background": "@theme-button-secondary-pressed",
-        "text": "@theme-text-primary-normal",
-        "border": "@theme-outline-button-normal"
+        "background": "@color-theme-button-secondary-pressed",
+        "text": "@color-theme-text-primary-normal",
+        "border": "@color-theme-outline-button-normal"
       },
       "#disabled": {
-        "background": "@theme-button-secondary-normal",
-        "text": "@theme-text-primary-disabled",
-        "border": "@theme-outline-disabled-normal"
+        "background": "@color-theme-button-secondary-normal",
+        "text": "@color-theme-text-primary-disabled",
+        "border": "@color-theme-outline-disabled-normal"
       }
     },
     "secondary-active": {
       "#normal": {
-        "background": "@theme-button-secondary-active-normal",
-        "text": "@theme-text-primary-normal",
-        "border": "@theme-outline-button-normal"
+        "background": "@color-theme-button-secondary-active-normal",
+        "text": "@color-theme-text-primary-normal",
+        "border": "@color-theme-outline-button-normal"
       },
       "#hovered": {
-        "background": "@theme-button-secondary-active-hover",
-        "text": "@theme-text-primary-normal",
-        "border": "@theme-outline-button-normal"
+        "background": "@color-theme-button-secondary-active-hover",
+        "text": "@color-theme-text-primary-normal",
+        "border": "@color-theme-outline-button-normal"
       },
       "#pressed": {
-        "background": "@theme-button-secondary-active-pressed",
-        "text": "@theme-text-primary-normal",
-        "border": "@theme-outline-button-normal"
+        "background": "@color-theme-button-secondary-active-pressed",
+        "text": "@color-theme-text-primary-normal",
+        "border": "@color-theme-outline-button-normal"
       },
       "#disabled": {
-        "background": "@theme-button-secondary-active-normal",
-        "text": "@theme-text-primary-disabled",
-        "border": "@theme-outline-disabled-normal"
+        "background": "@color-theme-button-secondary-active-normal",
+        "text": "@color-theme-text-primary-disabled",
+        "border": "@color-theme-outline-disabled-normal"
       }
     },
     "cancel-ghost": {
       "#normal": {
-        "background": "@theme-button-secondary-normal",
-        "text": "@theme-text-error-normal"
+        "background": "@color-theme-button-secondary-normal",
+        "text": "@color-theme-text-error-normal"
       },
       "#hovered": {
-        "background": "@theme-button-secondary-hover",
-        "text": "@theme-text-error-normal"
+        "background": "@color-theme-button-secondary-hover",
+        "text": "@color-theme-text-error-normal"
       },
       "#pressed": {
-        "background": "@theme-button-secondary-pressed",
-        "text": "@theme-text-error-normal"
+        "background": "@color-theme-button-secondary-pressed",
+        "text": "@color-theme-text-error-normal"
       },
       "#disabled": {
-        "background": "@theme-button-primary-disabled",
-        "text": "@theme-text-primary-disabled"
+        "background": "@color-theme-button-primary-disabled",
+        "text": "@color-theme-text-primary-disabled"
       }
     },
     "accent-ghost": {
       "#normal": {
-        "background": "@theme-button-secondary-normal",
-        "text": "@theme-text-accent-normal"
+        "background": "@color-theme-button-secondary-normal",
+        "text": "@color-theme-text-accent-normal"
       },
       "#hovered": {
-        "background": "@theme-button-secondary-hover",
-        "text": "@theme-text-accent-normal"
+        "background": "@color-theme-button-secondary-hover",
+        "text": "@color-theme-text-accent-normal"
       },
       "#pressed": {
-        "background": "@theme-button-secondary-pressed",
-        "text": "@theme-text-accent-normal"
+        "background": "@color-theme-button-secondary-pressed",
+        "text": "@color-theme-text-accent-normal"
       },
       "#disabled": {
-        "background": "@theme-button-primary-disabled",
-        "text": "@theme-text-primary-disabled"
+        "background": "@color-theme-button-primary-disabled",
+        "text": "@color-theme-text-primary-disabled"
       }
     },
     "message-ghost": {
       "#normal": {
-        "background": "@theme-button-secondary-normal",
-        "text": "@theme-text-accent-normal"
+        "background": "@color-theme-button-secondary-normal",
+        "text": "@color-theme-text-accent-normal"
       },
       "#hovered": {
-        "background": "@theme-button-secondary-hover",
-        "text": "@theme-text-accent-normal"
+        "background": "@color-theme-button-secondary-hover",
+        "text": "@color-theme-text-accent-normal"
       },
       "#pressed": {
-        "background": "@theme-button-secondary-pressed",
-        "text": "@theme-text-accent-normal"
+        "background": "@color-theme-button-secondary-pressed",
+        "text": "@color-theme-text-accent-normal"
       },
       "#disabled": {
-        "background": "@theme-button-primary-disabled",
-        "text": "@theme-text-primary-disabled"
+        "background": "@color-theme-button-primary-disabled",
+        "text": "@color-theme-text-primary-disabled"
       }
     },
     "join-fill": {
       "#normal": {
-        "background": "@theme-button-join-normal",
-        "text": "@theme-common-text-white",
-        "border": "@theme-button-border-normal"
+        "background": "@color-theme-button-join-normal",
+        "text": "@color-theme-common-text-white",
+        "border": "@color-theme-button-border-normal"
       },
       "#hovered": {
-        "background": "@theme-button-join-hover",
-        "text": "@theme-common-text-white"
+        "background": "@color-theme-button-join-hover",
+        "text": "@color-theme-common-text-white"
       },
       "#pressed": {
-        "background": "@theme-button-join-pressed",
-        "text": "@theme-common-text-white"
+        "background": "@color-theme-button-join-pressed",
+        "text": "@color-theme-common-text-white"
       },
       "#disabled": {
-        "background": "@theme-button-primary-disabled",
-        "text": "@theme-text-primary-disabled"
+        "background": "@color-theme-button-primary-disabled",
+        "text": "@color-theme-text-primary-disabled"
       }
     },
     "join-outline": {
       "#normal": {
-        "background": "@theme-button-secondary-normal",
-        "text": "@theme-text-success-normal",
-        "border": "@theme-outline-join-normal"
+        "background": "@color-theme-button-secondary-normal",
+        "text": "@color-theme-text-success-normal",
+        "border": "@color-theme-outline-join-normal"
       },
       "#hovered": {
-        "background": "@theme-button-join-hover",
-        "text": "@theme-common-text-white",
-        "border": "@theme-button-border-normal"
+        "background": "@color-theme-button-join-hover",
+        "text": "@color-theme-common-text-white",
+        "border": "@color-theme-button-border-normal"
       },
       "#pressed": {
-        "background": "@theme-button-join-pressed",
-        "text": "@theme-common-text-white",
-        "border": "@theme-button-border-normal"
+        "background": "@color-theme-button-join-pressed",
+        "text": "@color-theme-common-text-white",
+        "border": "@color-theme-button-border-normal"
       },
       "#disabled": {
-        "background": "@theme-button-secondary-normal",
-        "text": "@theme-text-primary-disabled",
-        "border": "@theme-outline-disabled-normal"
+        "background": "@color-theme-button-secondary-normal",
+        "text": "@color-theme-text-primary-disabled",
+        "border": "@color-theme-outline-disabled-normal"
       }
     },
     "join-animated-gradient": {
       "#normal": {
-        "background": "@theme-common-button-join-animated-gradient"
+        "background": "@color-theme-common-button-join-animated-gradient"
       }
     },
     "cancel-fill": {
       "#normal": {
-        "background": "@theme-button-cancel-normal",
-        "text": "@theme-common-text-white",
-        "border": "@theme-button-border-normal"
+        "background": "@color-theme-button-cancel-normal",
+        "text": "@color-theme-common-text-white",
+        "border": "@color-theme-button-border-normal"
       },
       "#hovered": {
-        "background": "@theme-button-cancel-hover",
-        "text": "@theme-common-text-white"
+        "background": "@color-theme-button-cancel-hover",
+        "text": "@color-theme-common-text-white"
       },
       "#pressed": {
-        "background": "@theme-button-cancel-pressed",
-        "text": "@theme-common-text-white"
+        "background": "@color-theme-button-cancel-pressed",
+        "text": "@color-theme-common-text-white"
       },
       "#disabled": {
-        "background": "@theme-button-primary-disabled",
-        "text": "@theme-text-primary-disabled"
+        "background": "@color-theme-button-primary-disabled",
+        "text": "@color-theme-text-primary-disabled"
       }
     },
     "cancel-outline": {
       "#normal": {
-        "background": "@theme-button-secondary-normal",
-        "text": "@theme-text-error-normal",
-        "border": "@theme-outline-cancel-normal"
+        "background": "@color-theme-button-secondary-normal",
+        "text": "@color-theme-text-error-normal",
+        "border": "@color-theme-outline-cancel-normal"
       },
       "#hovered": {
-        "background": "@theme-button-cancel-hover",
-        "text": "@theme-common-text-white",
-        "border": "@theme-button-border-normal"
+        "background": "@color-theme-button-cancel-hover",
+        "text": "@color-theme-common-text-white",
+        "border": "@color-theme-button-border-normal"
       },
       "#pressed": {
-        "background": "@theme-button-cancel-pressed",
-        "text": "@theme-common-text-white",
-        "border": "@theme-button-border-normal"
+        "background": "@color-theme-button-cancel-pressed",
+        "text": "@color-theme-common-text-white",
+        "border": "@color-theme-button-border-normal"
       },
       "#disabled": {
-        "background": "@theme-button-secondary-normal",
-        "text": "@theme-text-primary-disabled",
-        "border": "@theme-outline-disabled-normal"
+        "background": "@color-theme-button-secondary-normal",
+        "text": "@color-theme-text-primary-disabled",
+        "border": "@color-theme-outline-disabled-normal"
       }
     },
     "accent-fill": {
       "#normal": {
-        "background": "@theme-button-accent-normal",
-        "text": "@theme-common-text-white",
-        "border": "@theme-button-border-normal"
+        "background": "@color-theme-button-accent-normal",
+        "text": "@color-theme-common-text-white",
+        "border": "@color-theme-button-border-normal"
       },
       "#hovered": {
-        "background": "@theme-button-accent-hover",
-        "text": "@theme-common-text-white"
+        "background": "@color-theme-button-accent-hover",
+        "text": "@color-theme-common-text-white"
       },
       "#pressed": {
-        "background": "@theme-button-accent-pressed",
-        "text": "@theme-common-text-white"
+        "background": "@color-theme-button-accent-pressed",
+        "text": "@color-theme-common-text-white"
       },
       "#disabled": {
-        "background": "@theme-button-primary-disabled",
-        "text": "@theme-text-primary-disabled"
+        "background": "@color-theme-button-primary-disabled",
+        "text": "@color-theme-text-primary-disabled"
       }
     },
     "message-fill": {
       "#normal": {
-        "background": "@theme-button-accent-normal",
-        "text": "@theme-common-text-white",
-        "border": "@theme-button-border-normal"
+        "background": "@color-theme-button-accent-normal",
+        "text": "@color-theme-common-text-white",
+        "border": "@color-theme-button-border-normal"
       },
       "#hovered": {
-        "background": "@theme-button-accent-hover",
-        "text": "@theme-common-text-white"
+        "background": "@color-theme-button-accent-hover",
+        "text": "@color-theme-common-text-white"
       },
       "#pressed": {
-        "background": "@theme-button-accent-pressed",
-        "text": "@theme-common-text-white"
+        "background": "@color-theme-button-accent-pressed",
+        "text": "@color-theme-common-text-white"
       },
       "#disabled": {
-        "background": "@theme-button-primary-disabled",
-        "text": "@theme-text-primary-disabled"
+        "background": "@color-theme-button-primary-disabled",
+        "text": "@color-theme-text-primary-disabled"
       }
     },
     "counter": {
       "#normal": {
-        "background": "@theme-button-primary-normal",
-        "text": "@theme-text-inverted-normal",
-        "border": "@theme-button-border-normal"
+        "background": "@color-theme-button-primary-normal",
+        "text": "@color-theme-text-inverted-normal",
+        "border": "@color-theme-button-border-normal"
       },
       "#hovered": {
-        "background": "@theme-button-primary-hover",
-        "text": "@theme-text-inverted-normal"
+        "background": "@color-theme-button-primary-hover",
+        "text": "@color-theme-text-inverted-normal"
       },
       "#pressed": {
-        "background": "@theme-button-primary-pressed",
-        "text": "@theme-text-inverted-normal"
+        "background": "@color-theme-button-primary-pressed",
+        "text": "@color-theme-text-inverted-normal"
       }
     },
     "dialpad": {
       "#normal": {
-        "background": "@theme-button-secondary-normal",
+        "background": "@color-theme-button-secondary-normal",
         "text": {
-          "number": "@theme-text-primary-normal",
-          "characters": "@theme-text-secondary-normal"
+          "number": "@color-theme-text-primary-normal",
+          "characters": "@color-theme-text-secondary-normal"
         },
-        "border": "@theme-button-border-normal"
+        "border": "@color-theme-button-border-normal"
       },
       "#hovered": {
-        "background": "@theme-button-secondary-hover",
+        "background": "@color-theme-button-secondary-hover",
         "text": {
-          "number": "@theme-text-primary-normal",
-          "characters": "@theme-text-secondary-normal"
+          "number": "@color-theme-text-primary-normal",
+          "characters": "@color-theme-text-secondary-normal"
         }
       },
       "#pressed": {
-        "background": "@theme-button-secondary-pressed",
+        "background": "@color-theme-button-secondary-pressed",
         "text": {
-          "number": "@theme-text-primary-normal",
-          "characters": "@theme-text-secondary-normal"
+          "number": "@color-theme-text-primary-normal",
+          "characters": "@color-theme-text-secondary-normal"
         }
       },
       "#disabled": {
-        "background": "@theme-button-secondary-normal",
+        "background": "@color-theme-button-secondary-normal",
         "text": {
-          "number": "@theme-text-primary-disabled",
-          "characters": "@theme-text-primary-disabled"
+          "number": "@color-theme-text-primary-disabled",
+          "characters": "@color-theme-text-primary-disabled"
         }
       },
       "special": {
-        "background": "@theme-button-secondary-normal",
+        "background": "@color-theme-button-secondary-normal",
         "text": {
-          "number": "@theme-text-primary-normal",
-          "characters": "@theme-text-secondary-normal"
+          "number": "@color-theme-text-primary-normal",
+          "characters": "@color-theme-text-secondary-normal"
         }
       }
     },
     "hyperlink": {
       "#normal": {
-        "background": "@theme-button-secondary-normal",
-        "text": "@theme-text-accent-normal",
-        "border": "@theme-button-border-normal"
+        "background": "@color-theme-button-secondary-normal",
+        "text": "@color-theme-text-accent-normal",
+        "border": "@color-theme-button-border-normal"
       },
       "#hovered": {
-        "text": "@theme-text-accent-hover"
+        "text": "@color-theme-text-accent-hover"
       },
       "#pressed": {
-        "text": "@theme-text-accent-hover"
+        "text": "@color-theme-text-accent-hover"
       },
       "#focused": {
-        "text": "@theme-text-accent-normal",
-        "border": "@theme-text-accent-normal"
+        "text": "@color-theme-text-accent-normal",
+        "border": "@color-theme-text-accent-normal"
       },
       "#disabled": {
-        "text": "@theme-text-primary-disabled"
+        "text": "@color-theme-text-primary-disabled"
       }
     },
     "layout": {
       "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=3153%3A216",
       "#normal": {
-        "background": "@theme-button-inverted-normal",
-        "text": "@theme-text-primary-normal",
-        "border": "@theme-outline-button-normal"
+        "background": "@color-theme-button-inverted-normal",
+        "text": "@color-theme-text-primary-normal",
+        "border": "@color-theme-outline-button-normal"
       },
       "#hovered": {
-        "background": "@theme-button-inverted-hover"
+        "background": "@color-theme-button-inverted-hover"
       },
       "#pressed": {
-        "background": "@theme-button-inverted-pressed"
+        "background": "@color-theme-button-inverted-pressed"
       },
       "#disabled": {
-        "background": "@theme-button-inverted-normal",
-        "text": "@theme-text-primary-disabled",
-        "border": "@theme-outline-disabled-normal"
+        "background": "@color-theme-button-inverted-normal",
+        "text": "@color-theme-text-primary-disabled",
+        "border": "@color-theme-outline-disabled-normal"
       }
     },
     "overlay": {
       "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=9878%3A35559",
       "#normal": {
-        "background": "@theme-button-inverted-normal",
-        "text": "@theme-text-primary-normal",
-        "border": "@theme-outline-button-normal"
+        "background": "@color-theme-button-inverted-normal",
+        "text": "@color-theme-text-primary-normal",
+        "border": "@color-theme-outline-button-normal"
       },
       "#hovered": {
-        "background": "@theme-button-inverted-hover",
-        "text": "@theme-text-primary-normal",
-        "border": "@theme-outline-button-normal"
+        "background": "@color-theme-button-inverted-hover",
+        "text": "@color-theme-text-primary-normal",
+        "border": "@color-theme-outline-button-normal"
       },
       "#pressed": {
-        "background": "@theme-button-inverted-pressed",
-        "text": "@theme-text-primary-normal",
-        "border": "@theme-outline-button-normal"
+        "background": "@color-theme-button-inverted-pressed",
+        "text": "@color-theme-text-primary-normal",
+        "border": "@color-theme-outline-button-normal"
       }
     }
   }

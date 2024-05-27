@@ -38,6 +38,9 @@ function removeComments(token) {
  * This also drags UI states (those starting with #) to the end of the token names
  */
 function flattenObject(objectPath, childObject, flattenedTokens, uiState) {
+  if (childObject == null) {
+    return "";
+  }
   Object.entries(childObject).forEach(([key, value]) => {
     if (key.startsWith("#") && typeof value === "object") {
       if (uiState) {
@@ -146,6 +149,10 @@ function applyAlpha(tokenGroup, alpha) {
 // Parses a value and normalises the unit if required
 function normaliseUnit(value) {
   if (typeof value === "string" && (value.startsWith("#") || value.startsWith("rgb"))) {
+    if (value.length == 8 && value.startsWith("#")) {
+      let filled = value.slice(0, 1) + "0" + value.slice(1);
+      value = filled;
+    }
     const starPosition = value.indexOf("*");
     let alpha = 1;
     if (starPosition !== -1) {
@@ -160,6 +167,7 @@ function normaliseUnit(value) {
     if (!target.ignoreAlpha) {
       c.alpha = c.alpha * alpha;
     }
+    c.alpha = Math.round(c.alpha * 100) / 100;
     if (target.colorFormat === "rgba") {
       return `rgba(${c.values[0]}, ${c.values[1]}, ${c.values[2]}, ${c.alpha})`;
     } else if (target.colorFormat === "object") {
@@ -211,6 +219,9 @@ function resolveValue(currentToken, allTokens, coreTokens, flattenedCoreTokens) 
   if (typeof currentToken === "object") {
     // If this is an object, return a version with all children resolved
     const resolvedToken = {};
+    if (currentToken == null) {
+      return currentToken;
+    }
     Object.entries(currentToken).forEach(([key, value]) => {
       resolvedToken[key] = resolveValue(value, allTokens, coreTokens, flattenedCoreTokens);
     });
@@ -246,7 +257,8 @@ function resolveValue(currentToken, allTokens, coreTokens, flattenedCoreTokens) 
           if (groupValue) {
             if (groupValue[0] != "@") {
               console.error(currentToken + " could not be found. Tried resolving via " + groupParts.join("-") + " but that was not a reference");
-              process.exit(1);
+              //process.exit(1);
+              return currentToken;
             }
             const substituteParts = groupValue.slice(1).split("-").concat(keyParts.slice(-i));
             const substituteName = substituteParts.join("-");
@@ -260,8 +272,9 @@ function resolveValue(currentToken, allTokens, coreTokens, flattenedCoreTokens) 
       }
       if (!value) {
         // If we still can't find it, it's probably broken
-        console.error("Unable to find " + currentToken + " in " + JSON.stringify(allTokens, null, 2));
-        process.exit(1);
+        console.error("Unable to find " + currentToken);
+        //console.error("Unable to find " + currentToken + " in " + JSON.stringify(allTokens, null, 2));
+        //process.exit(1);
       }
       return resolveValue(value, allTokens, coreTokens, flattenedCoreTokens);
     }
@@ -274,9 +287,15 @@ function resolveValue(currentToken, allTokens, coreTokens, flattenedCoreTokens) 
 // Changes all borders from border: "color" to border-style: "solid|none", border-color: color
 function fixBorders(tokens) {
   if (typeof tokens === "object") {
+    if (tokens == null) {
+      return "";
+    }
     Object.entries(tokens).forEach(([key, value]) => {
       if (key === "border") {
         if (target.noBorderIsBackgroundColour) {
+          if (value == null) {
+            return "";
+          }
           Object.entries(value).forEach(([borderKey, borderValue]) => {
             if (borderValue === "none") {
               tokens["border"][borderKey] = tokens["background"][borderKey];

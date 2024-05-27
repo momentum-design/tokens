@@ -1,16 +1,16 @@
 {
-    "navigationtab":{
-        "comment": "Applied to the left nav tabs. The badge is a separate component.",
-        "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4342%3A14155",
-        "background":{
-            "#normal":"@theme-button-secondary-normal",
-            "#hovered":"@theme-button-secondary-hover",
-            "#active":"@theme-button-secondary-pressed"
-        },
-        "text":{
-            "#normal":"@theme-text-secondary-normal",
-            "#hovered":"@theme-text-secondary-normal",
-            "#active":"@theme-text-primary-normal"
-        }
+  "navigationtab": {
+    "comment": "Applied to the left nav tabs. The badge is a separate component.",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4342%3A14155",
+    "background": {
+      "#normal": "@color-theme-button-secondary-normal",
+      "#hovered": "@color-theme-button-secondary-hover",
+      "#active": "@color-theme-button-secondary-pressed"
+    },
+    "text": {
+      "#normal": "@color-theme-text-secondary-normal",
+      "#hovered": "@color-theme-text-secondary-normal",
+      "#active": "@color-theme-text-primary-normal"
     }
+  }
 }

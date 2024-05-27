@@ -2,62 +2,62 @@
   "coachmarkteaching": {
     "comment": "Applied to coachmark-teaching",
     "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=8654%3A34583",
-    "background": "@theme-teaching-background-normal",
+    "background": "@color-theme-teaching-background-normal",
     "button": {
       "primary": {
         "#normal": {
-          "background": "@theme-teaching-button-primary-normal",
-          "text": "@theme-text-primary-normal",
-          "border": "@theme-teaching-outline-button-normal"
+          "background": "@color-theme-teaching-button-primary-normal",
+          "text": "@color-theme-text-primary-normal",
+          "border": "@color-theme-teaching-outline-button-normal"
         },
         "#hovered": {
-          "background": "@theme-teaching-button-primary-hover"
+          "background": "@color-theme-teaching-button-primary-hover"
         },
         "#pressed": {
-          "background": "@theme-teaching-button-primary-pressed"
+          "background": "@color-theme-teaching-button-primary-pressed"
         },
         "#disabled": {
-          "background": "@theme-teaching-button-primary-disabled",
-          "text": "@theme-teaching-text-primary-disabled",
-          "border": "@theme-teaching-outline-disabled-normal"
+          "background": "@color-theme-teaching-button-primary-disabled",
+          "text": "@color-theme-teaching-text-primary-disabled",
+          "border": "@color-theme-teaching-outline-disabled-normal"
         }
       },
       "secondary": {
         "#normal": {
-          "background": "@theme-teaching-button-secondary-normal",
-          "text": "@theme-text-inverted-normal",
-          "border": "@theme-teaching-outline-button-normal"
+          "background": "@color-theme-teaching-button-secondary-normal",
+          "text": "@color-theme-text-inverted-normal",
+          "border": "@color-theme-teaching-outline-button-normal"
         },
         "#hovered": {
-          "background": "@theme-teaching-button-secondary-hover"
+          "background": "@color-theme-teaching-button-secondary-hover"
         },
         "#pressed": {
-          "background": "@theme-teaching-button-secondary-pressed"
+          "background": "@color-theme-teaching-button-secondary-pressed"
         },
         "#disabled": {
-          "background": "@theme-teaching-button-secondary-normal",
-          "text": "@theme-teaching-text-primary-disabled",
-          "border": "@theme-teaching-outline-disabled-normal"
+          "background": "@color-theme-teaching-button-secondary-normal",
+          "text": "@color-theme-teaching-text-primary-disabled",
+          "border": "@color-theme-teaching-outline-disabled-normal"
         }
       },
       "hyperlink": {
         "#normal": {
-          "background": "@theme-teaching-button-secondary-normal",
-          "text": "@theme-teaching-text-accent-normal",
-          "border": "@theme-button-border-normal"
+          "background": "@color-theme-teaching-button-secondary-normal",
+          "text": "@color-theme-teaching-text-accent-normal",
+          "border": "@color-theme-button-border-normal"
         },
         "#hovered": {
-          "text": "@theme-teaching-text-accent-hover"
+          "text": "@color-theme-teaching-text-accent-hover"
         },
         "#pressed": {
-          "text": "@theme-teaching-text-accent-hover"
+          "text": "@color-theme-teaching-text-accent-hover"
         },
         "#focused": {
-          "text": "@theme-teaching-text-accent-normal",
-          "border": "@theme-text-accent-normal"
+          "text": "@color-theme-teaching-text-accent-normal",
+          "border": "@color-theme-text-accent-normal"
         },
         "#disabled": {
-          "text": "@theme-text-primary-disabled"
+          "text": "@color-theme-text-primary-disabled"
         }
       }
     }
