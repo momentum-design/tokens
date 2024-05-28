@@ -29,13 +29,11 @@
     "scripts": "node ./scripts/index.js",
     "scripts:update": "node ./scripts/index.js --command=update --format=automated",
     "test": "npm run test:scripts && npm run build:web && npm run build:windows && npm run build:macos && npm run build:ios && npm run build:android",
-    "test:macos:dist": "jest dist-snapshots.test.js",
+    "test:macos:dist": "npm run test:macos:dist:dark && npm run test:macos:dist:light",
     "test:macos": "npm run build:macos && npm run test:macos:dist",
     "test:scripts": "jest ./scripts",
     "test:macos:dist:dark": "jest tests/mac/dark/**",
     "test:macos:dist:light": "jest tests/mac/light/**",
-    "test:macos:dist": "npm run test:macos:dist:dark && npm run test:macos:dist:light",
-    "test:macos": "npm run build:macos && npm run test:macos:dist",
     "test:windows:dist:dark": "jest tests/win/dark/**",
     "test:windows:dist:light": "jest tests/win/light/**",
     "test:windows:dist:hc": "jest tests/win/momentumSystemHighContrast.test.js",
@@ -66,7 +64,7 @@
     "**/*": "npx prettier --write --ignore-unknown"
   },
   "dependencies": {
-    "@momentum-design/tokens": "0.0.52",
+    "@momentum-design/tokens": "^0.0.54",
     "momentum-abstract": "^1.0.28"
   }
 }

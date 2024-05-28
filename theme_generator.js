@@ -517,17 +517,17 @@ if (target.themes.length === 0) {
   process.exit(1);
 }
 
-// Start by loading all the token files
-console.log("=== Loading core files ===================");
-let coreTokens = loadFile("core", true);
-if (target.colorFormat === "names") {
-  useColourNames(coreTokens);
-}
+// // Start by loading all the token files
+// console.log("=== Loading core files ===================");
+// let coreTokens = loadFile("core", true);
+// if (target.colorFormat === "names") {
+//   useColourNames(coreTokens);
+// }
 
-// Then flatten all the tokens
-const flattenedCoreTokens = {};
-flattenObject("", coreTokens, flattenedCoreTokens);
-console.log("=== Core files loaded ====================");
+// // Then flatten all the tokens
+// const flattenedCoreTokens = {};
+// flattenObject("", coreTokens, flattenedCoreTokens);
+// console.log("=== Core files loaded ====================");
 
 // Then load the component files
 console.log("=== Loading component files ==============");
@@ -583,16 +583,24 @@ target.themes.forEach((themeFileName) => {
       merge(themeData, loadFile(fileName, false));
     }
   });
-  /*console.log('=== After load theme data =====================');
-  console.log(JSON.stringify(themeData, null, 2));*/
+  /*"color": {
+      "theme": {
+        "common": {
+          "text": {
+            "white": "#fffffff2", */
+
+  // console.log('=== After load theme data =====================');
+  // console.log(JSON.stringify(themeData, null, 2));
 
   // Resolve all the references
-  const resolvedThemeData = resolveValue(themeData, themeData, coreTokens, flattenedCoreTokens);
-  /*console.log('=== Theme after resolve references ==============');
-  console.log(JSON.stringify(resolvedThemeData, null, 2));*/
+  // const resolvedThemeData = resolveValue(themeData, themeData, coreTokens, flattenedCoreTokens);
+  // console.log('=== Theme after resolve references ==============');
+  // console.log(JSON.stringify(resolvedThemeData, null, 2));
 
   const flattenedThemeTokens = {};
-  flattenObject("", resolvedThemeData, flattenedThemeTokens);
+  flattenObject("", themeData, flattenedThemeTokens);
+  /* "color-theme-common-text-white": "#fffffff2",
+     "color-theme-common-overlay-meeting-normal": "linear-gradient(180deg, #000000cc 0%, #0000004d 50.23%, #00000000 100%)", */
 
   resolvedComponentData = resolveValue(componentData, componentData, resolvedThemeData, flattenedThemeTokens);
   /*console.log('=== Components after resolve references ==========');
