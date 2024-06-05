@@ -162,7 +162,7 @@
     },
     "join-animated-gradient": {
       "#normal": {
-        "background": "@color-theme-common-button-join-animated-gradient"
+        "background": "@color-theme-common-button-join-animated-gradient-normal"
       }
     },
     "cancel-fill": {

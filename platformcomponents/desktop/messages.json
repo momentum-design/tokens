@@ -184,7 +184,7 @@
           "#normal": "@color-theme-text-error-normal"
         },
         "alertBackground": {
-          "#normal": "@color-theme-background-alert-error"
+          "#normal": "@color-theme-background-alert-error-normal"
         }
       }
     }

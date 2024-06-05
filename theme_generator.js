@@ -79,7 +79,7 @@ function unflattenObject(flattenedTokens) {
 // Loads a JSON file or directory of files and returns an object with the contents of all the files merged together
 function loadFile(fileName, isDirectory) {
   if (isDirectory) {
-    console.log("Loading directory " + fileName);
+    // console.log("Loading directory " + fileName);
     const fileList = fs.readdirSync(fileName, { withFileTypes: true });
     const tokenData = {};
     fileList.forEach((childFile) => {
@@ -87,7 +87,7 @@ function loadFile(fileName, isDirectory) {
     });
     return tokenData;
   } else if (fileName.endsWith(".json")) {
-    console.log("Loading file " + fileName);
+    // console.log("Loading file " + fileName);
     let parsedTokenFile;
     try {
       const tokenFileData = fs.readFileSync(fileName);
@@ -211,6 +211,58 @@ function normaliseUnit(value) {
     }
   }
   return value;
+}
+
+function resolveGradient(currentToken) {
+  if (typeof currentToken === "object") {
+    // If this is an object, return a version with all children resolved
+    // If this is an object, return a version with all children resolved
+    const resolvedToken = {};
+    if (currentToken == null) {
+      return currentToken;
+    }
+    Object.entries(currentToken).forEach(([key, value]) => {
+      if (value == "none") {
+        console.log(key + " value is none");
+      }
+
+      if (value.startsWith("#") && value.length == 8) {
+        console.log(key + ": " + value + " length incorrect");
+      }
+
+      if (typeof value === "string" && value.startsWith("linear-gradient")) {
+        let gradientParts = value.split(",");
+        gradientParts.shift();
+        gradientParts = gradientParts.map((part) => {
+          return part.trim().split(" ")[0];
+        });
+        if (gradientParts.length > 2) {
+          console.log(key + ": " + gradientParts + " more parts");
+        }
+
+        gradientParts.forEach((part, index) => {
+          if (index === 0 || index === gradientParts.length - 1) {
+            resolvedToken[key + "-" + index] = resolveGradient(part);
+          } else {
+            resolvedToken[key + "-0." + index] = resolveGradient(part);
+          }
+        });
+      } else {
+        resolvedToken[key] = resolveGradient(value);
+      }
+    });
+    return resolvedToken;
+  } else {
+    // if (currentToken == "none") {
+    //   currentToken = "#00000000";
+    // }
+
+    if (currentToken.startsWith("#") && currentToken.length == 8) {
+      currentToken = currentToken.slice(0, 1) + "0" + currentToken.slice(1);
+    }
+
+    return currentToken;
+  }
 }
 
 // Finds references, and returns an object with all references resolved
@@ -397,7 +449,7 @@ let target = {
 };
 
 if (args.target) {
-  console.log("Loading target " + args.target);
+  // console.log("Loading target " + args.target);
   let targetFile;
   try {
     target = JSON.parse(fs.readFileSync(args.target));
@@ -469,11 +521,11 @@ if (target.fileFormat === "css") {
   target.uiStatesAsObject = false; // Can't have objects in CSS
 }
 
-console.log("Using platform " + target.platform);
-console.log("Using colorFormat " + target.colorFormat);
-console.log("Using sizeUnit " + target.sizeUnit);
-console.log("Using componentGroups " + target.componentGroups);
-console.log("Using fileFormat " + target.fileFormat);
+// console.log("Using platform " + target.platform);
+// console.log("Using colorFormat " + target.colorFormat);
+// console.log("Using sizeUnit " + target.sizeUnit);
+// console.log("Using componentGroups " + target.componentGroups);
+// console.log("Using fileFormat " + target.fileFormat);
 
 let toStdOut = false;
 if (args.toStdOut) {
@@ -527,10 +579,10 @@ if (target.themes.length === 0) {
 // // Then flatten all the tokens
 // const flattenedCoreTokens = {};
 // flattenObject("", coreTokens, flattenedCoreTokens);
-// console.log("=== Core files loaded ====================");
+// // console.log("=== Core files loaded ====================");
 
 // Then load the component files
-console.log("=== Loading component files ==============");
+// console.log("=== Loading component files ==============");
 let componentData = loadFile("components", true);
 if (target.includeMobileTokens) {
   try {
@@ -554,13 +606,13 @@ try {
 
 const flattenedComponentTokens = {};
 flattenObject("", componentData, flattenedComponentTokens);
-console.log("=== Component files loaded =================");
+// console.log("=== Component files loaded =================");
 //console.log(JSON.stringify(componentData, null, 2));
 
 const indexFileData = [];
 
 target.themes.forEach((themeFileName) => {
-  console.log("=== Processing theme =====================");
+  // console.log("=== Processing theme =====================");
 
   // Load all the files to build one big object
   let themeFileData = fs.readFileSync(themeFileName);
@@ -573,7 +625,7 @@ target.themes.forEach((themeFileName) => {
     parent.files = parent.files.concat(themeFile.files);
     themeFile = parent;
   }
-  console.log(`Loading theme ${themeFile.accent} ${themeFile.theme} for platform ${target.platform} using color format ${target.colorFormat}`);
+  // console.log(`Loading theme ${themeFile.accent} ${themeFile.theme} for platform ${target.platform} using color format ${target.colorFormat}`);
 
   const themeData = {};
   themeFile.files.forEach((fileName) => {
@@ -592,7 +644,7 @@ target.themes.forEach((themeFileName) => {
   // console.log('=== After load theme data =====================');
   // console.log(JSON.stringify(themeData, null, 2));
 
-  // Resolve all the references
+  // // Resolve all the references
   // const resolvedThemeData = resolveValue(themeData, themeData, coreTokens, flattenedCoreTokens);
   // console.log('=== Theme after resolve references ==============');
   // console.log(JSON.stringify(resolvedThemeData, null, 2));
@@ -601,6 +653,10 @@ target.themes.forEach((themeFileName) => {
   flattenObject("", themeData, flattenedThemeTokens);
   /* "color-theme-common-text-white": "#fffffff2",
      "color-theme-common-overlay-meeting-normal": "linear-gradient(180deg, #000000cc 0%, #0000004d 50.23%, #00000000 100%)", */
+
+  // unify structure
+  // 6 hex to 8 hex, seperate graident colors etc
+  const resolvedThemeData = resolveGradient(flattenedThemeTokens);
 
   resolvedComponentData = resolveValue(componentData, componentData, resolvedThemeData, flattenedThemeTokens);
   /*console.log('=== Components after resolve references ==========');
@@ -709,7 +765,7 @@ target.themes.forEach((themeFileName) => {
   if (!toStdOut) {
     console.log(`Written to ${outputFileName}`);
   }
-  console.log("=== Theme processed ======================");
+  // console.log("=== Theme processed ======================");
 });
 
 if (target.fileFormat === "css") {

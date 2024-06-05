@@ -8,7 +8,7 @@
       "background": "@color-theme-background-accent-normal"
     },
     "overlay": {
-      "background": "@color-theme-common-overlay-primary"
+      "background": "@color-theme-common-overlay-primary-normal"
     },
     "label": {
       "primary": "@color-theme-text-primary-normal",

@@ -5,7 +5,7 @@
       "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=49674%3A114116",
       "border": "@color-theme-outline-secondary-normal",
       "overlay": {
-        "background": "@color-theme-common-overlay-primary",
+        "background": "@color-theme-common-overlay-primary-normal",
         "label": {
           "primary": "@color-theme-common-text-white",
           "secondary": "@color-theme-common-text-gray"
