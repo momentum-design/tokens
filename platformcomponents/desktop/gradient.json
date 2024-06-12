@@ -2,34 +2,22 @@
   "theme-gradient": {
     "comment": "Used for graident backgrounds on Desktop (parsing logic requires at least 1 normal UI state)",
     "figma": "https://www.figma.com/file/6Wrt4B7fn41nqSTgFpgwpc/UI-Color-Themes?node-id=8946%3A41934",
-    "primary-0": {
+    "primary": {
       "#normal": {
-        "background": "@color-theme-background-gradient-primary"
+        "background-0": "@color-theme-background-gradient-primary-0",
+        "background-1": "@color-theme-background-gradient-primary-1"
       }
     },
-    "primary-1": {
+    "secondary": {
       "#normal": {
-        "background": "@color-theme-background-gradient-primary"
+        "background-0": "@color-theme-background-gradient-secondary-0",
+        "background-1": "@color-theme-background-gradient-secondary-1"
       }
     },
-    "secondary-0": {
+    "dialog-secondary": {
       "#normal": {
-        "background": "@color-theme-background-gradient-secondary"
-      }
-    },
-    "secondary-1": {
-      "#normal": {
-        "background": "@color-theme-background-gradient-secondary"
-      }
-    },
-    "dialog-secondary-0": {
-      "#normal": {
-        "background": "@color-theme-background-solid-tertiary-normal"
-      }
-    },
-    "dialog-secondary-1": {
-      "#normal": {
-        "background": "@color-theme-button-inverted-normal"
+        "background-0": "@color-theme-background-solid-tertiary-normal",
+        "background-1": "@color-theme-overlay-button-secondary-normal"
       }
     }
   }

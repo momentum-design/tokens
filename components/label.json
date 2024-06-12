@@ -19,10 +19,10 @@
     },
     "primaryInverted": {
       "#normal": {
-        "text": "@color-theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       },
       "#disabled": {
-        "text": "@color-theme-text-inverted-disabled"
+        "text": "@color-theme-inverted-text-primary-disabled"
       }
     },
     "success": {

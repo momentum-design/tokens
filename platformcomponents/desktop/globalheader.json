@@ -105,7 +105,7 @@
     },
     "modifierChip": {
       "background": "@color-theme-button-primary-normal",
-      "text": "@color-theme-text-inverted-normal"
+      "text": "@color-theme-inverted-text-primary-normal"
     },
     "textfieldWin": {
       "#normal": {

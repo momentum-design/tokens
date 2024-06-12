@@ -15,7 +15,7 @@
           "doc": "@color-theme-common-content-doc",
           "sheets": "@color-theme-common-content-sheets",
           "slides": "@color-theme-common-content-slides",
-          "keynotes": "@color-theme-common-content-keynotes"
+          "keynotes": "@color-theme-common-content-keynote"
         }
       },
       "label": {

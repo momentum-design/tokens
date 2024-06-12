@@ -2,23 +2,23 @@
   "dualbutton": {
     "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=3153%3A14",
     "overlay": {
-      "background": "@color-theme-button-inverted-normal",
+      "background": "@color-theme-overlay-button-secondary-normal",
       "border": "@color-theme-outline-button-normal",
       "button": {
         "#normal": {
-          "background": "@color-theme-button-inverted-normal",
+          "background": "@color-theme-overlay-button-secondary-normal",
           "text": "@color-theme-text-primary-normal"
         },
         "#hovered": {
-          "background": "@color-theme-button-inverted-hover",
+          "background": "@color-theme-overlay-button-secondary-hover",
           "text": "@color-theme-text-primary-normal"
         },
         "#pressed": {
-          "background": "@color-theme-button-inverted-pressed",
+          "background": "@color-theme-overlay-button-secondary-pressed",
           "text": "@color-theme-text-primary-normal"
         },
         "#disabled": {
-          "background": "@color-theme-button-inverted-normal",
+          "background": "@color-theme-overlay-button-secondary-normal",
           "text": "@color-theme-text-primary-disabled"
         }
       }
