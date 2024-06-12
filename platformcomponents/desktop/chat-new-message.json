@@ -9,7 +9,7 @@
     },
     "newReplyBanner": {
       "#normal": {
-        "text": "@color-theme-text-inverted-normal",
+        "text": "@color-theme-inverted-text-primary-normal",
         "background": "@color-theme-text-accent-normal"
       }
     }

@@ -6,25 +6,25 @@
         "background": "@color-theme-control-active-normal",
         "text": "@color-theme-text-primary-normal",
         "border": "none",
-        "icon": "@color-theme-text-inverted-normal"
+        "icon": "@color-theme-inverted-text-primary-normal"
       },
       "#hovered": {
         "background": "@color-theme-control-active-hover",
         "text": "@color-theme-text-primary-normal",
         "border": "none",
-        "icon": "@color-theme-text-inverted-normal"
+        "icon": "@color-theme-inverted-text-primary-normal"
       },
       "#pressed": {
         "background": "@color-theme-control-active-pressed",
         "text": "@color-theme-text-primary-normal",
         "border": "none",
-        "icon": "@color-theme-text-inverted-normal"
+        "icon": "@color-theme-inverted-text-primary-normal"
       },
       "#disabled": {
         "background": "@color-theme-control-active-disabled",
         "text": "@color-theme-text-primary-disabled",
         "border": "none",
-        "icon": "@color-theme-text-inverted-disabled"
+        "icon": "@color-theme-inverted-text-primary-disabled"
       }
     },
     "unchecked": {

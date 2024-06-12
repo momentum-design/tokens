@@ -4,44 +4,44 @@
     "comment": "Applied to circle and pill toggle buttons",
     "inactive": {
       "#normal": {
-        "background": "@color-theme-button-inverted-normal",
+        "background": "@color-theme-overlay-button-secondary-normal",
         "border": "@color-theme-outline-button-normal",
         "text": "@color-theme-text-secondary-normal"
       },
       "#hovered": {
-        "background": "@color-theme-button-inverted-hover",
+        "background": "@color-theme-overlay-button-secondary-hover",
         "border": "@color-theme-outline-button-normal",
         "text": "@color-theme-text-primary-normal"
       },
       "#pressed": {
-        "background": "@color-theme-button-inverted-pressed",
+        "background": "@color-theme-overlay-button-secondary-pressed",
         "border": "@color-theme-outline-button-normal",
         "text": "@color-theme-text-primary-normal"
       },
       "#disabled": {
-        "background": "@color-theme-button-inverted-normal",
+        "background": "@color-theme-overlay-button-secondary-normal",
         "border": "@color-theme-outline-disabled-normal",
         "text": "@color-theme-text-primary-disabled"
       }
     },
     "active": {
       "#normal": {
-        "background": "@color-theme-button-inverted-pressed",
+        "background": "@color-theme-overlay-button-secondary-pressed",
         "border": "@color-theme-outline-button-normal",
         "text": "@color-theme-text-primary-normal"
       },
       "#hovered": {
-        "background": "@color-theme-button-inverted-pressed",
+        "background": "@color-theme-overlay-button-secondary-pressed",
         "border": "@color-theme-outline-button-normal",
         "text": "@color-theme-text-primary-normal"
       },
       "#pressed": {
-        "background": "@color-theme-button-inverted-pressed",
+        "background": "@color-theme-overlay-button-secondary-pressed",
         "border": "@color-theme-outline-button-normal",
         "text": "@color-theme-text-primary-normal"
       },
       "#disabled": {
-        "background": "@color-theme-button-inverted-normal",
+        "background": "@color-theme-overlay-button-secondary-normal",
         "border": "@color-theme-outline-disabled-normal",
         "text": "@color-theme-text-primary-disabled"
       }

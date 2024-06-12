@@ -68,15 +68,15 @@
     },
     "call-control": {
       "#normal": {
-        "background": "@theme-button-inverted-normal",
+        "background": "@theme-overlay-button-secondary-normal",
         "text": "@theme-button-primary-normal"
       },
       "#hovered": {
-        "background": "@theme-button-inverted-hover",
+        "background": "@theme-overlay-button-secondary-hover",
         "text": "@theme-button-primary-normal"
       },
       "#pressed": {
-        "background": "@theme-button-inverted-pressed",
+        "background": "@theme-overlay-button-secondary-pressed",
         "text": "@theme-button-primary-normal"
       }
     },

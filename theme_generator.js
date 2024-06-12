@@ -149,10 +149,6 @@ function applyAlpha(tokenGroup, alpha) {
 // Parses a value and normalises the unit if required
 function normaliseUnit(value) {
   if (typeof value === "string" && (value.startsWith("#") || value.startsWith("rgb"))) {
-    if (value.length == 8 && value.startsWith("#")) {
-      let filled = value.slice(0, 1) + "0" + value.slice(1);
-      value = filled;
-    }
     const starPosition = value.indexOf("*");
     let alpha = 1;
     if (starPosition !== -1) {
@@ -234,15 +230,19 @@ function resolveGradient(currentToken) {
         let gradientParts = value.split(",");
         gradientParts.shift();
         gradientParts = gradientParts.map((part) => {
-          return part.trim().split(" ")[0];
+          trimmed = part
+            .trim()
+            .split(" ")[0]
+            .replace(/[^#a-zA-Z0-9]/g, "");
+          return trimmed;
         });
-        if (gradientParts.length > 2) {
-          console.log(key + ": " + gradientParts + " more parts");
-        }
+        console.log(key + ": " + gradientParts + " more parts");
 
         gradientParts.forEach((part, index) => {
-          if (index === 0 || index === gradientParts.length - 1) {
-            resolvedToken[key + "-" + index] = resolveGradient(part);
+          if (index == 0) {
+            resolvedToken[key + "-" + 0] = resolveGradient(part);
+          } else if (index == gradientParts.length - 1) {
+            resolvedToken[key + "-" + 1] = resolveGradient(part);
           } else {
             resolvedToken[key + "-0." + index] = resolveGradient(part);
           }
@@ -651,16 +651,19 @@ target.themes.forEach((themeFileName) => {
 
   const flattenedThemeTokens = {};
   flattenObject("", themeData, flattenedThemeTokens);
+  // console.log(JSON.stringify(flattenedThemeTokens, null, 2));
   /* "color-theme-common-text-white": "#fffffff2",
      "color-theme-common-overlay-meeting-normal": "linear-gradient(180deg, #000000cc 0%, #0000004d 50.23%, #00000000 100%)", */
 
   // unify structure
   // 6 hex to 8 hex, seperate graident colors etc
   const resolvedThemeData = resolveGradient(flattenedThemeTokens);
+  // console.log(JSON.stringify(resolvedThemeData, null, 2));
 
-  resolvedComponentData = resolveValue(componentData, componentData, resolvedThemeData, flattenedThemeTokens);
-  /*console.log('=== Components after resolve references ==========');
-  console.log(JSON.stringify(resolvedComponentData, null, 2));*/
+  // console.log(JSON.stringify(componentData, null, 2));
+  resolvedComponentData = resolveValue(componentData, componentData, resolvedThemeData, resolvedThemeData);
+  // console.log('=== Components after resolve references ==========');
+  // console.log(JSON.stringify(resolvedComponentData, null, 2));
 
   // Look for borders, and expand to border-style and border-color
   fixBorders(resolvedComponentData);

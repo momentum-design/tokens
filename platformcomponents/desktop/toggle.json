@@ -4,22 +4,22 @@
     "toggled": {
       "#normal": {
         "background": "@color-theme-control-active-normal",
-        "thumb-tint": "@color-theme-text-inverted-normal",
+        "thumb-tint": "@color-theme-inverted-text-primary-normal",
         "border": "@color-theme-control-active-normal"
       },
       "#hovered": {
         "background": "@color-theme-control-active-hover",
-        "thumb-tint": "@color-theme-text-inverted-normal",
+        "thumb-tint": "@color-theme-inverted-text-primary-normal",
         "border": "@color-theme-control-active-hover"
       },
       "#pressed": {
         "background": "@color-theme-control-active-pressed",
-        "thumb-tint": "@color-theme-text-inverted-normal",
+        "thumb-tint": "@color-theme-inverted-text-primary-normal",
         "border": "@color-theme-control-active-pressed"
       },
       "#disabled": {
         "background": "@color-theme-control-active-disabled",
-        "thumb-tint": "@color-theme-text-inverted-disabled",
+        "thumb-tint": "@color-theme-inverted-text-primary-disabled",
         "border": "@color-theme-control-active-disabled"
       }
     },
@@ -27,17 +27,17 @@
       "#normal": {
         "background": "@color-theme-common-button-secondary-normal",
         "thumb-tint": "@color-theme-text-secondary-normal",
-        "border": "@color-theme-common-outline-input-normal"
+        "border": "@color-theme-outline-input-normal"
       },
       "#hovered": {
         "background": "@color-theme-common-button-secondary-hover",
         "thumb-tint": "@color-theme-text-primary-normal",
-        "border": "@color-theme-common-outline-input-normal"
+        "border": "@color-theme-outline-input-normal"
       },
       "#pressed": {
         "background": "@color-theme-common-button-secondary-disabled",
         "thumb-tint": "@color-theme-text-primary-normal",
-        "border": "@color-theme-common-outline-input-normal"
+        "border": "@color-theme-outline-input-normal"
       },
       "#disabled": {
         "background": "@color-theme-control-inactive-disabled",
