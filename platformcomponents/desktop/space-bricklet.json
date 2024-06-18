@@ -1,0 +1,15 @@
+{
+  "space-bricklet": {
+    "comment": "Applied tokens used in space bricklet for the toolkit",
+    "figma": "https://www.figma.com/design/kJd99LcYaYuKWZtGDFs9Eb/SPARK-376071%3A-Teams-Relocation-MVO-for-FCC?node-id=6699-315429&t=kUH62uI7JB0hMK1g-0",
+    "title": {
+      "#normal": {
+        "unread-text": "@theme-text-primary-normal",
+        "read-text": "@theme-text-secondary-normal"
+      }
+    },
+    "background": {
+      "#normal": "@theme-background-primary-ghost"
+    }
+  }
+}
