@@ -5,6 +5,9 @@
     "app-nav": {
       "active": "@theme-globaltint-normal",
       "badge": "@theme-indicator-attention"
+    },
+    "checkmark": {
+      "normal": "@theme-globaltint-normal"
     }
   }
 }
