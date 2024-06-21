@@ -9,7 +9,11 @@
       }
     },
     "background": {
-      "#normal": "@theme-background-primary-ghost"
+      "#normal": "@theme-background-primary-ghost",
+      "#hovered": "@theme-background-primary-hover",
+      "#focused": "@theme-background-primary-ghost",
+      "#pressed": "@theme-background-primary-active",
+      "#active": "@theme-background-primary-active"
     }
   }
 }
