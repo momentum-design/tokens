@@ -8,6 +8,9 @@
         "read-text": "@theme-text-secondary-normal"
       }
     },
+    "header": {
+      "#normal": "@theme-text-primary-normal"
+    },
     "background": {
       "#normal": "@theme-background-primary-ghost",
       "#hovered": "@theme-background-primary-hover",
