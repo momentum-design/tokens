@@ -2,19 +2,19 @@
   "badge": {
     "comment": "applied to blue badges",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4486%3A786",
-    "background": "@theme-background-accent-normal",
-    "text": "@theme-common-text-white",
-    "notification-indicator": "@theme-text-accent-normal",
-    "recording-indicator": "@theme-indicator-attention",
-    "warning-indicator": "@theme-indicator-unstable",
-    "caution-indicator": "@theme-indicator-caution",
-    "warning-icon": "@theme-text-warning-normal",
-    "success-indicator": "@theme-text-success-normal",
-    "error-indicator": "@theme-text-error-normal",
-    "error-alert": "@theme-text-error-normal",
+    "background": "@color-theme-background-accent-normal",
+    "text": "@color-theme-common-text-white",
+    "notification-indicator": "@color-theme-text-accent-normal",
+    "recording-indicator": "@color-theme-indicator-attention",
+    "warning-indicator": "@color-theme-indicator-unstable",
+    "caution-indicator": "@color-theme-indicator-caution",
+    "warning-icon": "@color-theme-text-warning-normal",
+    "success-indicator": "@color-theme-text-success-normal",
+    "error-indicator": "@color-theme-text-error-normal",
+    "error-alert": "@color-theme-text-error-normal",
     "secondary": {
-      "background": "@theme-background-solid-secondary-normal",
-      "text": "@theme-text-secondary-normal"
+      "background": "@color-theme-background-solid-secondary-normal",
+      "text": "@color-theme-text-secondary-normal"
     }
   }
 }

@@ -3,10 +3,10 @@
     "comment": "All other properties in components/search.json",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4429%3A871",
     "#normal": {
-      "background": "@theme-background-solid-primary-normal"
+      "background": "@color-theme-background-solid-primary-normal"
     },
     "#active": {
-      "background": "@theme-background-solid-primary-normal"
+      "background": "@color-theme-background-solid-primary-normal"
     }
   }
 }

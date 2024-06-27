@@ -2,7 +2,7 @@
   "separator": {
     "comment": "",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/branch/WG6O99kWm33upbqMdnnIQA/Components---Windows%2BWeb?node-id=12652%3A3113",
-    "primary": "@theme-outline-primary-normal",
-    "secondary": "@theme-outline-secondary-normal"
+    "primary": "@color-theme-outline-primary-normal",
+    "secondary": "@color-theme-outline-secondary-normal"
   }
 }

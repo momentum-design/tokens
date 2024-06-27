@@ -10,16 +10,20 @@
   "uiStatesAsObject": true,
   "omitThemeTokens": true,
   "noBorderIsBackgroundColour": true,
-  "themes": ["themes/theme-dark-bronze.json",
-             "themes/theme-dark-jade.json",
-             "themes/theme-dark-rose.json",
-             "themes/theme-light-bronze.json",
-             "themes/theme-light-jade.json",
-             "themes/theme-light-rose.json",
-             "themes/theme-dark-indigo.json",
-             "themes/theme-dark-lavender.json",
-             "themes/theme-dark-webex.json",
-             "themes/theme-light-indigo.json",
-             "themes/theme-light-lavender.json",
-             "themes/theme-light-webex.json"]
+  "themes": [
+    "themes/theme-dark-bronze.json",
+    "themes/theme-dark-jade.json",
+    "themes/theme-dark-rose.json",
+    "themes/theme-light-bronze.json",
+    "themes/theme-light-jade.json",
+    "themes/theme-light-rose.json",
+    "themes/theme-dark-indigo.json",
+    "themes/theme-dark-lavender.json",
+    "themes/theme-dark-webex.json",
+    "themes/theme-light-indigo.json",
+    "themes/theme-light-lavender.json",
+    "themes/theme-light-webex-highContrast.json",
+    "themes/theme-dark-webex-highContrast.json",
+    "themes/theme-light-webex.json"
+  ]
 }

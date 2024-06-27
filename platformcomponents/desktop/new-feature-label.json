@@ -4,30 +4,30 @@
     "figma": "https://www.figma.com/file/lkGwiCDPuoJdkW0YEotsWR/%5BWIP%5D-%E2%9C%A8-Webex-Discoverability?type=design&node-id=428-210640&mode=design&t=MuMQi7rOkzBEXBWx-0",
     "badge": {
       "#normal": {
-        "background": "@theme-background-primary-ghost",
-        "border": "@theme-background-primary-ghost",
-        "text": "@theme-text-accent-normal"
+        "background": "@color-theme-background-primary-ghost",
+        "border": "@color-theme-background-primary-ghost",
+        "text": "@color-theme-text-accent-normal"
       }
     },
     "badgeWithBorder": {
       "#normal": {
-        "background": "@theme-background-solid-secondary-normal",
-        "border": "@theme-button-secondary-active-normal"
+        "background": "@color-theme-background-solid-secondary-normal",
+        "border": "@color-theme-button-secondary-active-normal"
       }
     },
     "tag": {
       "#normal": {
-        "background": "@theme-background-secondary-normal",
+        "background": "@color-theme-background-secondary-normal",
         "border": "none"
       }
     },
     "banner": {
       "#normal": {
-        "background": "@theme-background-secondary-normal",
-        "text": "@theme-text-secondary-normal",
-        "newFeatureIcon": "@theme-text-accent-normal",
-        "helpTipIcon": "@theme-text-primary-normal",
-        "shortcutTipIcon": "@theme-text-secondary-normal"
+        "background": "@color-theme-background-secondary-normal",
+        "text": "@color-theme-text-secondary-normal",
+        "newFeatureIcon": "@color-theme-text-accent-normal",
+        "helpTipIcon": "@color-theme-text-primary-normal",
+        "shortcutTipIcon": "@color-theme-text-secondary-normal"
       }
     }
   }

@@ -2,36 +2,36 @@
   "closedcaption": {
     "comment": "",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=40865%3A50204",
-    "background-light": "@theme-common-background-solid-primary-light",
-    "background-dark": "@theme-common-background-solid-secondary-dark",
-    "speaker-light": "@theme-common-text-secondary-dark",
-    "speaker-dark": "@theme-common-text-secondary-light",
-    "text-light": "@theme-common-text-black",
-    "text-dark": "@theme-common-text-white",
+    "background-light": "@color-theme-common-background-solid-primary-light",
+    "background-dark": "@color-theme-common-background-solid-secondary-dark",
+    "speaker-light": "@color-theme-common-text-secondary-dark",
+    "speaker-dark": "@color-theme-common-text-secondary-light",
+    "text-light": "@color-theme-common-text-black",
+    "text-dark": "@color-theme-common-text-white",
     "button-light": {
       "#normal": {
-        "background": "@theme-common-button-secondary-normal",
-        "text": "@theme-common-text-black",
-        "border": "@theme-common-outline-closed-caption-secondary-dark"
+        "background": "@color-theme-common-button-secondary-normal",
+        "text": "@color-theme-common-text-black",
+        "border": "@color-theme-common-outline-closed-caption-secondary-dark"
       },
       "#hovered": {
-        "background": "@theme-common-button-secondary-hover"
+        "background": "@color-theme-common-button-secondary-hover"
       },
       "#pressed": {
-        "background": "@theme-common-button-secondary-active-normal"
+        "background": "@color-theme-common-button-secondary-active-normal"
       }
     },
     "button-dark": {
       "#normal": {
-        "background": "@theme-common-button-secondary-dark-normal",
-        "text": "@theme-common-text-white",
-        "border": "@theme-common-outline-closed-caption-secondary-light"
+        "background": "@color-theme-common-button-secondary-dark-normal",
+        "text": "@color-theme-common-text-white",
+        "border": "@color-theme-common-outline-closed-caption-secondary-light"
       },
       "#hovered": {
-        "background": "@theme-common-button-secondary-dark-hover"
+        "background": "@color-theme-common-button-secondary-dark-hover"
       },
       "#pressed": {
-        "background": "@theme-common-button-secondary-dark-pressed"
+        "background": "@color-theme-common-button-secondary-dark-pressed"
       }
     }
   }

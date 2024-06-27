@@ -4,19 +4,19 @@
       "comment": "Applied to sent & blocked file attachments",
       "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=5533%3A11688",
       "background": {
-        "#normal": "@theme-background-secondary-normal",
-        "#hovered": "@theme-background-secondary-hover",
-        "#active": "@theme-background-secondary-active"
+        "#normal": "@color-theme-background-secondary-normal",
+        "#hovered": "@color-theme-background-secondary-hover",
+        "#active": "@color-theme-background-secondary-active"
       },
-      "border": "@theme-outline-secondary-normal",
+      "border": "@color-theme-outline-secondary-normal",
       "previewBox": {
-        "icon": "@theme-common-text-white",
-        "background": "@theme-background-accent-normal"
+        "icon": "@color-theme-common-text-white",
+        "background": "@color-theme-background-accent-normal"
       },
       "label": {
-        "primary": "@theme-text-primary-normal",
-        "secondary": "@theme-text-secondary-normal",
-        "disabled": "@theme-text-primary-disabled"
+        "primary": "@color-theme-text-primary-normal",
+        "secondary": "@color-theme-text-secondary-normal",
+        "disabled": "@color-theme-text-primary-disabled"
       }
     }
   }

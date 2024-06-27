@@ -4,41 +4,41 @@
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4469%3A8858",
     "track": {
       "#normal": {
-        "background": "@theme-scrollbar-background-secondary-normal"
+        "background": "@color-theme-scrollbar-background-secondary-normal"
       },
       "#disabled": {
-        "background": "@theme-background-primary-disabled"
+        "background": "@color-theme-background-primary-disabled"
       }
     },
     "thumb": {
       "#normal": {
-        "background": "@theme-scrollbar-button-normal"
+        "background": "@color-theme-scrollbar-button-normal"
       },
       "#hovered": {
-        "background": "@theme-scrollbar-button-hover"
+        "background": "@color-theme-scrollbar-button-hover"
       },
       "#pressed": {
-        "background": "@theme-scrollbar-button-pressed"
+        "background": "@color-theme-scrollbar-button-pressed"
       },
       "#disabled": {
-        "background": "@theme-background-primary-disabled"
+        "background": "@color-theme-background-primary-disabled"
       }
     },
     "arrow-button": {
       "#normal": {
-        "text": "@theme-scrollbar-arrow-normal",
-        "background": "@theme-scrollbar-background-secondary-normal"
+        "text": "@color-theme-scrollbar-arrow-normal",
+        "background": "@color-theme-scrollbar-background-secondary-normal"
       },
       "#hovered": {
-        "text": "@theme-scrollbar-button-hover",
-        "background": "@theme-scrollbar-arrow-background-hover"
+        "text": "@color-theme-scrollbar-button-hover",
+        "background": "@color-theme-scrollbar-arrow-background-hover"
       },
       "#pressed": {
-        "text": "@theme-scrollbar-arrow-background-pressed"
+        "text": "@color-theme-scrollbar-arrow-background-pressed"
       },
       "#disabled": {
-        "text": "@theme-text-primary-disabled",
-        "background": "@theme-background-primary-disabled"
+        "text": "@color-theme-text-primary-disabled",
+        "background": "@color-theme-background-primary-disabled"
       }
     }
   }

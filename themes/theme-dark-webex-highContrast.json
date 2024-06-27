@@ -1,0 +1,5 @@
+{
+  "accent": "HighContrast",
+  "theme": "Dark",
+  "files": ["node_modules/@momentum-design/tokens/dist/json-minimal/theme/webex/hc-dark-stable.json"]
+}

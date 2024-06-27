@@ -3,20 +3,20 @@
     "comment": "Applied tokens used in ecm file attachments",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=5428-29&t=fYjuJcPJ5RP4u6Be-0",
     "no-thumbail": {
-      "border": "@theme-outline-secondary-normal",
+      "border": "@color-theme-outline-secondary-normal",
       "background": {
-        "#normal": "@theme-background-secondary-normal",
-        "#hovered": "@theme-background-secondary-hover",
-        "#active": "@theme-background-secondary-active",
-        "#focused": "@theme-background-secondary-normal"
+        "#normal": "@color-theme-background-secondary-normal",
+        "#hovered": "@color-theme-background-secondary-hover",
+        "#active": "@color-theme-background-secondary-active",
+        "#focused": "@color-theme-background-secondary-normal"
       },
       "previewBox": {
-        "icon": "@theme-common-text-white",
-        "background": "@theme-background-accent-normal"
+        "icon": "@color-theme-common-text-white",
+        "background": "@color-theme-background-accent-normal"
       },
       "banner-text": {
-        "primary": "@theme-text-primary-normal",
-        "secondary": "@theme-text-secondary-normal"
+        "primary": "@color-theme-text-primary-normal",
+        "secondary": "@color-theme-text-secondary-normal"
       }
     }
   }

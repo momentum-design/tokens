@@ -2,18 +2,18 @@
   "search": {
     "comment": "Applied to search input box. Background colours are different for mobile vs web/desktop, so appear in platformcomponents directory",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4429%3A871",
-    "placeholder-text": "@theme-text-secondary-normal",
+    "placeholder-text": "@color-theme-text-secondary-normal",
     "#normal": {
-      "text": "@theme-text-primary-normal",
-      "border": "@theme-outline-input-normal"
+      "text": "@color-theme-text-primary-normal",
+      "border": "@color-theme-outline-input-normal"
     },
     "#active": {
-      "text": "@theme-text-primary-normal",
-      "border": "@theme-outline-input-active"
+      "text": "@color-theme-text-primary-normal",
+      "border": "@color-theme-outline-input-active"
     },
     "#disabled": {
-      "text": "@theme-text-primary-disabled",
-      "background": "@theme-background-primary-disabled"
+      "text": "@color-theme-text-primary-disabled",
+      "background": "@color-theme-background-primary-disabled"
     }
   }
 }

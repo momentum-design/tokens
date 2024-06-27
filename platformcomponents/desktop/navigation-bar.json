@@ -2,6 +2,6 @@
   "navigation-bar": {
     "comment": "This is applied to the first column navigation bar.",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=5250%3A957",
-    "divider": ["@theme-gradientdivider-normal-0", "@theme-gradientdivider-normal-1"]
+    "divider": ["@color-theme-gradientdivider-normal-0", "@color-theme-gradientdivider-normal-1"]
   }
 }

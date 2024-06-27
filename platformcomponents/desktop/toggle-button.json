@@ -4,46 +4,46 @@
     "comment": "Applied to circle and pill toggle buttons",
     "inactive": {
       "#normal": {
-        "background": "@theme-button-secondary-normal",
-        "border": "@theme-outline-button-normal",
-        "text": "@theme-text-primary-normal"
+        "background": "@color-theme-button-secondary-normal",
+        "border": "@color-theme-outline-button-normal",
+        "text": "@color-theme-text-primary-normal"
       },
       "#hovered": {
-        "background": "@theme-button-secondary-hover",
-        "border": "@theme-outline-button-normal",
-        "text": "@theme-text-primary-normal"
+        "background": "@color-theme-button-secondary-hover",
+        "border": "@color-theme-outline-button-normal",
+        "text": "@color-theme-text-primary-normal"
       },
       "#pressed": {
-        "background": "@theme-button-secondary-pressed",
-        "border": "@theme-outline-button-normal",
-        "text": "@theme-text-primary-normal"
+        "background": "@color-theme-button-secondary-pressed",
+        "border": "@color-theme-outline-button-normal",
+        "text": "@color-theme-text-primary-normal"
       },
       "#disabled": {
-        "background": "@theme-button-secondary-normal",
-        "border": "@theme-outline-disabled-normal",
-        "text": "@theme-text-primary-disabled"
+        "background": "@color-theme-button-secondary-normal",
+        "border": "@color-theme-outline-disabled-normal",
+        "text": "@color-theme-text-primary-disabled"
       }
     },
     "active": {
       "#normal": {
-        "background": "@theme-button-secondary-active-normal",
-        "border": "@theme-outline-button-normal",
-        "text": "@theme-text-primary-normal"
+        "background": "@color-theme-button-secondary-active-normal",
+        "border": "@color-theme-outline-button-normal",
+        "text": "@color-theme-text-primary-normal"
       },
       "#hovered": {
-        "background": "@theme-button-secondary-active-hover",
-        "border": "@theme-outline-button-normal",
-        "text": "@theme-text-primary-normal"
+        "background": "@color-theme-button-secondary-active-hover",
+        "border": "@color-theme-outline-button-normal",
+        "text": "@color-theme-text-primary-normal"
       },
       "#pressed": {
-        "background": "@theme-button-secondary-active-pressed",
-        "border": "@theme-outline-button-normal",
-        "text": "@theme-text-primary-normal"
+        "background": "@color-theme-button-secondary-active-pressed",
+        "border": "@color-theme-outline-button-normal",
+        "text": "@color-theme-text-primary-normal"
       },
       "#disabled": {
-        "background": "@theme-button-secondary-active-normal",
-        "border": "@theme-outline-disabled-normal",
-        "text": "@theme-text-primary-disabled"
+        "background": "@color-theme-button-secondary-active-normal",
+        "border": "@color-theme-outline-disabled-normal",
+        "text": "@color-theme-text-primary-disabled"
       }
     }
   }

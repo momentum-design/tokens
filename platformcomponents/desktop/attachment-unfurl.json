@@ -3,14 +3,14 @@
     "comment": "Applied tokens used in Unfurl file attachments",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=64417-534033&t=jHDcKURThTdsg1F1-0",
     "background": {
-      "#normal": "@theme-background-secondary-normal",
-      "#hovered": "@theme-background-secondary-hover",
-      "#active": "@theme-background-secondary-active",
-      "#focused": "@theme-background-secondary-normal"
+      "#normal": "@color-theme-background-secondary-normal",
+      "#hovered": "@color-theme-background-secondary-hover",
+      "#active": "@color-theme-background-secondary-active",
+      "#focused": "@color-theme-background-secondary-normal"
     },
-    "site-title": "@theme-text-primary-normal",
-    "site-description": "@theme-text-primary-normal",
-    "site-url": "@theme-text-secondary-normal",
-    "border": "@theme-outline-secondary-normal"
+    "site-title": "@color-theme-text-primary-normal",
+    "site-description": "@color-theme-text-primary-normal",
+    "site-url": "@color-theme-text-secondary-normal",
+    "border": "@color-theme-outline-secondary-normal"
   }
 }

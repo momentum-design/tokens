@@ -3,26 +3,26 @@
     "comment": "Applied to calendar cards displayed in a list",
     "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=9238%3A40084",
     "#normal": {
-      "background": "@theme-background-secondary-normal",
+      "background": "@color-theme-background-secondary-normal",
       "border": "none",
-      "textPrimary": "@theme-text-primary-normal",
-      "textSecondary": "@theme-text-secondary-normal"
+      "textPrimary": "@color-theme-text-primary-normal",
+      "textSecondary": "@color-theme-text-secondary-normal"
     },
     "#hovered": {
-      "background": "@theme-background-secondary-hover",
+      "background": "@color-theme-background-secondary-hover",
       "border": "none"
     },
     "#pressed": {
-      "background": "@theme-background-secondary-active",
+      "background": "@color-theme-background-secondary-active",
       "border": "none"
     },
     "#focused": {
-      "background": "@theme-background-secondary-active",
-      "border": "@theme-control-active-normal"
+      "background": "@color-theme-background-secondary-active",
+      "border": "@color-theme-control-active-normal"
     },
     "#disabled": {
-      "background": "@theme-background-primary-ghost",
-      "border": "@theme-outline-disabled-normal"
+      "background": "@color-theme-background-primary-ghost",
+      "border": "@color-theme-outline-disabled-normal"
     }
   }
 }

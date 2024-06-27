@@ -3,7 +3,7 @@
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4341%3A6826",
     "separator": {
       "#normal": {
-        "background": "@theme-outline-primary-normal"
+        "background": "@color-theme-outline-primary-normal"
       }
     }
   }

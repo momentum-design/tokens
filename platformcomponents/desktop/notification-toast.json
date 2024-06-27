@@ -3,9 +3,9 @@
     "comment": "Applied to notification toasts.",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=36552%3A55990",
     "#normal": {
-      "background": "@theme-background-solid-primary-normal",
-      "border": "@theme-outline-secondary-normal",
-      "text": "@theme-text-primary-normal"
+      "background": "@color-theme-background-solid-primary-normal",
+      "border": "@color-theme-outline-secondary-normal",
+      "text": "@color-theme-text-primary-normal"
     }
   }
 }

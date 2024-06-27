@@ -3,24 +3,24 @@
     "comment": "Applied to Alert Banners",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4655%3A8433",
     "announcement": {
-      "text": "@theme-text-accent-normal",
-      "background": "@theme-background-alert-theme-normal"
+      "text": "@color-theme-text-accent-normal",
+      "background": "@color-theme-background-alert-theme-normal"
     },
     "success": {
-      "text": "@theme-text-success-normal",
-      "background": "@theme-background-alert-success-normal"
+      "text": "@color-theme-text-success-normal",
+      "background": "@color-theme-background-alert-success-normal"
     },
     "error": {
-      "text": "@theme-text-error-normal",
-      "background": "@theme-background-alert-error-normal"
+      "text": "@color-theme-text-error-normal",
+      "background": "@color-theme-background-alert-error-normal"
     },
     "issue": {
-      "text": "@theme-text-warning-normal",
-      "background": "@theme-background-alert-warning-normal"
+      "text": "@color-theme-text-warning-normal",
+      "background": "@color-theme-background-alert-warning-normal"
     },
     "transient": {
-      "text": "@theme-text-primary-normal",
-      "background": "@theme-background-primary-active"
+      "text": "@color-theme-text-primary-normal",
+      "background": "@color-theme-background-primary-active"
     }
   }
 }

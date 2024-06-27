@@ -3,19 +3,19 @@
     "comment": "Applied to file attachments from Content tab",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=49651%3A114181",
     "previewBox": {
-      "icon": "@theme-common-text-white",
-      "background": "@theme-background-accent-normal"
+      "icon": "@color-theme-common-text-white",
+      "background": "@color-theme-background-accent-normal"
     },
     "label": {
-      "primary": "@theme-text-primary-normal",
-      "secondary": "@theme-text-secondary-normal",
-      "disabled": "@theme-text-primary-disabled"
+      "primary": "@color-theme-text-primary-normal",
+      "secondary": "@color-theme-text-secondary-normal",
+      "disabled": "@color-theme-text-primary-disabled"
     },
     "background": {
-      "#normal": "@theme-background-secondary-normal",
-      "#hovered": "@theme-background-secondary-hover",
-      "#disabled": "@theme-background-secondary-normal",
-      "#active": "@theme-background-secondary-active"
+      "#normal": "@color-theme-background-secondary-normal",
+      "#hovered": "@color-theme-background-secondary-hover",
+      "#disabled": "@color-theme-background-secondary-normal",
+      "#active": "@color-theme-background-secondary-active"
     }
   }
 }

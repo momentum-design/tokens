@@ -5,82 +5,82 @@
     "datePicker": {
       "month": {
         "text": {
-          "#normal": "@theme-text-primary-normal"
+          "#normal": "@color-theme-text-primary-normal"
         }
       },
       "weekDay": {
         "text": {
-          "#normal": "@theme-text-secondary-normal"
+          "#normal": "@color-theme-text-secondary-normal"
         }
       },
       "date": {
-        "background":{
-          "#normal": "@theme-button-secondary-normal",
-          "#hovered": "@theme-button-secondary-hover",
-          "#pressed": "@theme-button-secondary-pressed",
-          "#disabled": "@theme-button-secondary-normal",
-          "#active": "@theme-background-accent-normal"
+        "background": {
+          "#normal": "@color-theme-button-secondary-normal",
+          "#hovered": "@color-theme-button-secondary-hover",
+          "#pressed": "@color-theme-button-secondary-pressed",
+          "#disabled": "@color-theme-button-secondary-normal",
+          "#active": "@color-theme-background-accent-normal"
         },
         "text": {
-          "#normal": "@theme-text-primary-normal",
-          "#hovered": "@theme-text-primary-normal",
-          "#pressed": "@theme-text-primary-normal",
-          "#disabled": "@theme-text-primary-disabled",
-          "#active": "@theme-common-text-white"
+          "#normal": "@color-theme-text-primary-normal",
+          "#hovered": "@color-theme-text-primary-normal",
+          "#pressed": "@color-theme-text-primary-normal",
+          "#disabled": "@color-theme-text-primary-disabled",
+          "#active": "@color-theme-common-text-white"
         },
         "border": {
-          "#normal": "@theme-outline-button-normal"
+          "#normal": "@color-theme-outline-button-normal"
         },
         "unreadBadge": {
-          "#normal": "@theme-background-accent-normal",
-          "#active": "@theme-common-text-white"
+          "#normal": "@color-theme-background-accent-normal",
+          "#active": "@color-theme-common-text-white"
         }
       }
     },
-    "dayPicker":{
-      "day":{
+    "dayPicker": {
+      "day": {
         "inactive": {
           "#normal": {
-            "background": "@theme-button-secondary-normal",
-            "text": "@theme-text-primary-normal",
-            "border": "@theme-outline-button-normal"
+            "background": "@color-theme-button-secondary-normal",
+            "text": "@color-theme-text-primary-normal",
+            "border": "@color-theme-outline-button-normal"
           },
           "#hovered": {
-            "background": "@theme-button-secondary-hover",
-            "text": "@theme-text-primary-normal",
-            "border": "@theme-outline-button-normal"
+            "background": "@color-theme-button-secondary-hover",
+            "text": "@color-theme-text-primary-normal",
+            "border": "@color-theme-outline-button-normal"
           },
           "#pressed": {
-            "background": "@theme-button-secondary-pressed",
-            "text": "@theme-text-primary-normal",
-            "border": "@theme-outline-button-normal"
+            "background": "@color-theme-button-secondary-pressed",
+            "text": "@color-theme-text-primary-normal",
+            "border": "@color-theme-outline-button-normal"
           },
           "#disabled": {
-            "background": "@theme-button-secondary-normal",
-            "text": "@theme-text-primary-disabled",
-            "border": "@theme-outline-disabled-normal"
+            "background": "@color-theme-button-secondary-normal",
+            "text": "@color-theme-text-primary-disabled",
+            "border": "@color-theme-outline-disabled-normal"
           }
         },
         "active": {
           "#normal": {
-            "background": "@theme-button-accent-normal",
-            "text": "@theme-common-text-white",
-            "border": "@theme-button-accent-normal"
+            "background": "@color-theme-button-accent-normal",
+            "text": "@color-theme-common-text-white",
+            "border": "@color-theme-button-accent-normal"
           },
           "#hovered": {
-            "background": "@theme-button-accent-hover",
-            "text": "@theme-common-text-white",
-            "border": "@theme-button-accent-hover"
+            "background": "@color-theme-button-accent-hover",
+            "text": "@color-theme-common-text-white",
+            "border": "@color-theme-button-accent-hover"
           },
           "#pressed": {
-            "background": "@theme-button-accent-pressed",
-            "text": "@theme-common-text-white",
-            "border": "@theme-button-accent-pressed"
+            "background": "@color-theme-button-accent-pressed",
+            "text": "@color-theme-common-text-white",
+            "border": "@color-theme-button-accent-pressed"
           },
           "#disabled": {
-            "background": "@theme-button-primary-disabled",
-            "text": "@theme-text-primary-disabled",
-            "border": "@theme-button-primary-disabled"
+            "background": "@color-theme-button-primary-disabled",
+            "text": "@color-theme-text-primary-disabled",
+            "border": "@color-theme-button-primary-disabled"
           }
         }
       }

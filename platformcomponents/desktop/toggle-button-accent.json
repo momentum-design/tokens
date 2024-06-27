@@ -4,38 +4,38 @@
     "comment": "Applied to toggle buttons that use the accent color when active/selected",
     "inactive": {
       "#normal": {
-        "background": "@theme-button-secondary-normal",
-        "text": "@theme-text-secondary-normal"
+        "background": "@color-theme-button-secondary-normal",
+        "text": "@color-theme-text-secondary-normal"
       },
       "#hovered": {
-        "background": "@theme-button-secondary-hover",
-        "text": "@theme-text-primary-normal"
+        "background": "@color-theme-button-secondary-hover",
+        "text": "@color-theme-text-primary-normal"
       },
       "#pressed": {
-        "background": "@theme-button-secondary-pressed",
-        "text": "@theme-text-primary-normal"
+        "background": "@color-theme-button-secondary-pressed",
+        "text": "@color-theme-text-primary-normal"
       },
       "#disabled": {
-        "background": "@theme-button-secondary-normal",
-        "text": "@theme-text-primary-disabled"
+        "background": "@color-theme-button-secondary-normal",
+        "text": "@color-theme-text-primary-disabled"
       }
     },
     "active": {
       "#normal": {
-        "background": "@theme-button-secondary-active-normal",
-        "text": "@theme-text-accent-normal"
+        "background": "@color-theme-button-secondary-active-normal",
+        "text": "@color-theme-text-accent-normal"
       },
       "#hovered": {
-        "background": "@theme-button-secondary-active-hover",
-        "text": "@theme-text-accent-normal"
+        "background": "@color-theme-button-secondary-active-hover",
+        "text": "@color-theme-text-accent-normal"
       },
       "#pressed": {
-        "background": "@theme-button-secondary-active-pressed",
-        "text": "@theme-text-accent-normal"
+        "background": "@color-theme-button-secondary-active-pressed",
+        "text": "@color-theme-text-accent-normal"
       },
       "#disabled": {
-        "background": "@theme-button-secondary-active-normal",
-        "text": "@theme-text-primary-disabled"
+        "background": "@color-theme-button-secondary-active-normal",
+        "text": "@color-theme-text-primary-disabled"
       }
     }
   }

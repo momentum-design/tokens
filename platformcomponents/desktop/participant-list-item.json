@@ -3,10 +3,10 @@
     "comment": "Controls at participantList panel, mute/unmute, etc.",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=9332%3A2007",
     "audioMuted": {
-      "#normal": "@theme-indicator-attention"
+      "#normal": "@color-theme-indicator-attention"
     },
     "audioUnmuted": {
-      "#normal": "@theme-indicator-stable"
+      "#normal": "@color-theme-indicator-stable"
     }
   }
 }

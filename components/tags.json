@@ -4,140 +4,140 @@
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=44750%3A103151",
     "static": {
       "#normal": {
-        "background": "@theme-background-solid-primary-normal",
-        "border": "@theme-outline-primary-normal",
-        "text": "@theme-text-primary-normal"
+        "background": "@color-theme-background-solid-primary-normal",
+        "border": "@color-theme-outline-primary-normal",
+        "text": "@color-theme-text-primary-normal"
       }
     },
     "overlay": {
       "#normal": {
-        "background": "@theme-background-common-normal",
-        "border": "@theme-common-control-shareContent-inactive",
-        "text": "@theme-common-text-black"
+        "background": "@color-theme-background-common-normal",
+        "border": "@color-theme-common-control-shareContent-inactive",
+        "text": "@color-theme-common-text-black"
       }
     },
     "error": {
       "#normal": {
-        "background": "@theme-background-alert-error-normal",
-        "border": "@theme-outline-cancel-normal",
-        "text": "@theme-text-primary-normal"
+        "background": "@color-theme-background-alert-error-normal",
+        "border": "@color-theme-outline-cancel-normal",
+        "text": "@color-theme-text-primary-normal"
       }
     },
     "primary": {
       "#normal": {
-        "background": "@theme-background-solid-tertiary-normal",
-        "border": "@theme-outline-primary-normal",
-        "text": "@theme-text-primary-normal"
+        "background": "@color-theme-background-solid-tertiary-normal",
+        "border": "@color-theme-outline-primary-normal",
+        "text": "@color-theme-text-primary-normal"
       },
       "#hovered": {
-        "background": "@theme-background-solid-secondary-normal"
+        "background": "@color-theme-background-solid-secondary-normal"
       },
       "#pressed": {
-        "background": "@theme-background-solid-primary-normal"
+        "background": "@color-theme-background-solid-primary-normal"
       }
     },
     "cobalt": {
       "#normal": {
-        "background": "@theme-background-label-cobalt-normal",
-        "border": "@theme-outline-label-cobalt",
-        "text": "@theme-text-primary-normal"
+        "background": "@color-theme-background-label-cobalt-normal",
+        "border": "@color-theme-outline-label-cobalt",
+        "text": "@color-theme-text-primary-normal"
       },
       "#hovered": {
-        "background": "@theme-background-label-cobalt-hover"
+        "background": "@color-theme-background-label-cobalt-hover"
       },
       "#pressed": {
-        "background": "@theme-background-label-cobalt-active"
+        "background": "@color-theme-background-label-cobalt-active"
       }
     },
     "lime": {
       "#normal": {
-        "background": "@theme-background-label-lime-normal",
-        "border": "@theme-outline-label-lime",
-        "text": "@theme-text-primary-normal"
+        "background": "@color-theme-background-label-lime-normal",
+        "border": "@color-theme-outline-label-lime",
+        "text": "@color-theme-text-primary-normal"
       },
       "#hovered": {
-        "background": "@theme-background-label-lime-hover"
+        "background": "@color-theme-background-label-lime-hover"
       },
       "#pressed": {
-        "background": "@theme-background-label-lime-active"
+        "background": "@color-theme-background-label-lime-active"
       }
     },
     "mint": {
       "#normal": {
-        "background": "@theme-background-label-mint-normal",
-        "border": "@theme-outline-label-mint",
-        "text": "@theme-text-primary-normal"
+        "background": "@color-theme-background-label-mint-normal",
+        "border": "@color-theme-outline-label-mint",
+        "text": "@color-theme-text-primary-normal"
       },
       "#hovered": {
-        "background": "@theme-background-label-mint-hover"
+        "background": "@color-theme-background-label-mint-hover"
       },
       "#pressed": {
-        "background": "@theme-background-label-mint-active"
+        "background": "@color-theme-background-label-mint-active"
       }
     },
     "slate": {
       "#normal": {
-        "background": "@theme-background-label-slate-normal",
-        "border": "@theme-outline-label-slate",
-        "text": "@theme-text-primary-normal"
+        "background": "@color-theme-background-label-slate-normal",
+        "border": "@color-theme-outline-label-slate",
+        "text": "@color-theme-text-primary-normal"
       },
       "#hovered": {
-        "background": "@theme-background-label-slate-hover"
+        "background": "@color-theme-background-label-slate-hover"
       },
       "#pressed": {
-        "background": "@theme-background-label-slate-active"
+        "background": "@color-theme-background-label-slate-active"
       }
     },
     "violet": {
       "#normal": {
-        "background": "@theme-background-label-violet-normal",
-        "border": "@theme-outline-label-violet",
-        "text": "@theme-text-primary-normal"
+        "background": "@color-theme-background-label-violet-normal",
+        "border": "@color-theme-outline-label-violet",
+        "text": "@color-theme-text-primary-normal"
       },
       "#hovered": {
-        "background": "@theme-background-label-violet-hover"
+        "background": "@color-theme-background-label-violet-hover"
       },
       "#pressed": {
-        "background": "@theme-background-label-violet-active"
+        "background": "@color-theme-background-label-violet-active"
       }
     },
     "purple": {
       "#normal": {
-        "background": "@theme-background-label-purple-normal",
-        "border": "@theme-outline-label-purple",
-        "text": "@theme-text-primary-normal"
+        "background": "@color-theme-background-label-purple-normal",
+        "border": "@color-theme-outline-label-purple",
+        "text": "@color-theme-text-primary-normal"
       },
       "#hovered": {
-        "background": "@theme-background-label-purple-hover"
+        "background": "@color-theme-background-label-purple-hover"
       },
       "#pressed": {
-        "background": "@theme-background-label-purple-active"
+        "background": "@color-theme-background-label-purple-active"
       }
     },
     "orange": {
       "#normal": {
-        "background": "@theme-background-label-orange-normal",
-        "border": "@theme-outline-label-orange",
-        "text": "@theme-text-primary-normal"
+        "background": "@color-theme-background-label-orange-normal",
+        "border": "@color-theme-outline-label-orange",
+        "text": "@color-theme-text-primary-normal"
       },
       "#hovered": {
-        "background": "@theme-background-label-orange-hover"
+        "background": "@color-theme-background-label-orange-hover"
       },
       "#pressed": {
-        "background": "@theme-background-label-orange-active"
+        "background": "@color-theme-background-label-orange-active"
       }
     },
     "gold": {
       "#normal": {
-        "background": "@theme-background-label-gold-normal",
-        "border": "@theme-outline-label-gold",
-        "text": "@theme-text-primary-normal"
+        "background": "@color-theme-background-label-gold-normal",
+        "border": "@color-theme-outline-label-gold",
+        "text": "@color-theme-text-primary-normal"
       },
       "#hovered": {
-        "background": "@theme-background-label-gold-hover"
+        "background": "@color-theme-background-label-gold-hover"
       },
       "#pressed": {
-        "background": "@theme-background-label-gold-active"
+        "background": "@color-theme-background-label-gold-active"
       }
     }
   }

@@ -1,5 +1,5 @@
 {
   "accent": "Bronze",
   "theme": "Dark",
-  "files": ["theme-data/common/common.json", "theme-data/dark/dark-common.json", "theme-data/dark/dark-additional.json", "theme-data/dark/dark-bronze.json"]
+  "files": ["node_modules/@momentum-design/tokens/dist/json-minimal/theme/webex/common-stable.json", "node_modules/@momentum-design/tokens/dist/json-minimal/theme/webex/dark-stable.json", "theme-data/dark/dark-bronze.json"]
 }

@@ -3,7 +3,7 @@
     "comment": "Applied to mobile slider scrollbars",
     "figma": "https://www.figma.com/file/L67wWWZaXcvVOLEpn77adE/Components---iOS?node-id=17906%3A154738",
     "background": {
-      "#normal": "@theme-overlay-meetings-normal"
+      "#normal": "@theme-background-normal"
     },
     "player": {
       "background": {

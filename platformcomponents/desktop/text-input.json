@@ -2,7 +2,7 @@
   "textinput": {
     "comment": "Override the pressed state on desktop as it's not needed",
     "#pressed": {
-      "text": "@theme-text-primary-normal"
+      "text": "@color-theme-text-primary-normal"
     }
   }
 }

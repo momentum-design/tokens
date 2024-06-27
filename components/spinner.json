@@ -3,16 +3,16 @@
     "comment": "Applied to loading and progress spinners",
     "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=6262%3A29209",
     "loading": {
-      "cursor": "@theme-outline-input-active",
-      "track": "@theme-control-inactive-normal"
+      "cursor": "@color-theme-outline-input-active",
+      "track": "@color-theme-control-inactive-normal"
     },
     "loading-common": {
-      "cursor": "@theme-common-text-black",
-      "track": "@theme-common-control-inactive-normal"
+      "cursor": "@color-theme-common-text-black",
+      "track": "@color-theme-common-control-inactive-normal"
     },
     "progress": {
-      "cursor": "@theme-control-active-normal",
-      "track": "@theme-control-inactive-normal"
+      "cursor": "@color-theme-control-active-normal",
+      "track": "@color-theme-control-inactive-normal"
     }
   }
 }

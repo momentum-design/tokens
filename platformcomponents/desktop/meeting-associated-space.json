@@ -2,17 +2,17 @@
   "meeting-associated-space": {
     "comment": "Applied tokens used in meeting associated space ui",
     "figma": "https://www.figma.com/file/HTlGQluNxFhElt9dxcZrT3/Spark-421814--Create-a-space-in-the-scheduling-flow?node-id=4980%3A54986&mode=dev",
-    "background": "@theme-background-secondary-normal",
+    "background": "@color-theme-background-secondary-normal",
     "primary": {
       "#normal": {
-        "text": "@theme-text-primary-normal"
+        "text": "@color-theme-text-primary-normal"
       }
     },
     "secondary": {
       "#normal": {
-        "text": "@theme-text-secondary-normal"
+        "text": "@color-theme-text-secondary-normal"
       }
     },
-    "separator": "@theme-background-secondary-hover"
+    "separator": "@color-theme-background-secondary-hover"
   }
 }

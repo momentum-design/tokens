@@ -3,16 +3,16 @@
     "comment": "Applied tokens used in Group call pickup notification",
     "figma": "https://www.figma.com/file/WfZA1wEOw0d33jeUl2DoWV/Group-call-pickup-notification?type=design&node-id=20-345&mode=design&t=yj7T64aHTOmMkHWY-0",
     "header-title-text": {
-      "color": "@theme-text-secondary-normal"
+      "color": "@color-theme-text-secondary-normal"
     },
     "title-text": {
-      "color": "@theme-text-primary-normal"
+      "color": "@color-theme-text-primary-normal"
     },
     "from-text": {
-      "color": "@theme-text-secondary-normal"
+      "color": "@color-theme-text-secondary-normal"
     },
     "caller-name-text": {
-      "color": "@theme-text-secondary-normal"
+      "color": "@color-theme-text-secondary-normal"
     }
   }
 }

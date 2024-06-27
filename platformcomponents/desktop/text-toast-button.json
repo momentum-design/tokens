@@ -5,16 +5,16 @@
     "incomingCall": {
       "decline": {
         "#normal": {
-          "text": "@theme-text-error-normal"
+          "text": "@color-theme-text-error-normal"
         },
         "#hovered": {
-          "text": "@theme-text-error-normal"
+          "text": "@color-theme-text-error-normal"
         },
         "#pressed": {
-          "text": "@theme-text-error-normal"
+          "text": "@color-theme-text-error-normal"
         },
         "#disabled": {
-          "text": "@theme-text-primary-disabled"
+          "text": "@color-theme-text-primary-disabled"
         }
       }
     }
