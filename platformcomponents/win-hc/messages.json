@@ -3,55 +3,55 @@
     "comment": "Color tokens for the space list",
     "bodyText-primary": {
       "#pressed": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       },
       "#hovered": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       },
       "#focused": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       }
     },
     "bodyText-secondary": {
       "#pressed": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       },
       "#hovered": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       },
       "#focused": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       }
     },
     "extParticipants": {
       "#normal": {
-        "text": "@theme-background-primary-hover"
+        "text": "@color-theme-background-primary-hover"
       },
       "#pressed": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       },
       "#hovered": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       },
       "#focused": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       }
     },
     "headerText-default": {
       "#pressed": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       },
       "#hovered": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       },
       "#focused": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       }
     },
     "scheduled": {
       "header": {
         "iconalert": {
-          "#normal": "@theme-text-warning-normal"
+          "#normal": "@color-theme-text-warning-normal"
         }
       }
     }

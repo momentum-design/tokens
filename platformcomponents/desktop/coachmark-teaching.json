@@ -19,7 +19,7 @@
         "#disabled": {
           "background": "@color-theme-inverted-button-primary-disabled",
           "text": "@color-theme-inverted-text-primary-disabled",
-          "border": "@color-theme-inverted-outline-primary-disabled"
+          "border": "@color-theme-inverted-outline-disabled-normal"
         }
       },
       "secondary": {
@@ -37,14 +37,14 @@
         "#disabled": {
           "background": "@color-theme-inverted-button-secondary-normal",
           "text": "@color-theme-inverted-text-primary-disabled",
-          "border": "@color-theme-inverted-outline-primary-disabled"
+          "border": "@color-theme-inverted-outline-disabled-normal"
         }
       },
       "hyperlink": {
         "#normal": {
           "background": "@color-theme-inverted-button-secondary-normal",
           "text": "@color-theme-inverted-text-accent-normal",
-          "border": "@color-theme-button-border-normal"
+          "border": "none"
         },
         "#hovered": {
           "text": "@color-theme-inverted-text-accent-hover"

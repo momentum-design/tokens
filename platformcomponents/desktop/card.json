@@ -19,7 +19,7 @@
     },
     "disabled": {
       "#normal": {
-        "border": "@color-theme-outline-disabled-normal"
+        "border": "@color-theme-outline-primary-disabled"
       }
     }
   }

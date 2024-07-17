@@ -38,19 +38,19 @@
     },
     "share": {
       "#normal": {
-        "text": "@color-theme-common-text-white"
+        "text": "@color-theme-common-text-primary-normal"
       },
       "#hovered": {
-        "text": "@color-theme-common-text-white"
+        "text": "@color-theme-common-text-primary-normal"
       },
       "#pressed": {
-        "text": "@color-theme-common-text-white"
+        "text": "@color-theme-common-text-primary-normal"
       },
       "#focused": {
-        "text": "@color-theme-common-text-white"
+        "text": "@color-theme-common-text-primary-normal"
       },
       "#disabled": {
-        "text": "@color-theme-common-text-disabled"
+        "text": "@color-theme-common-text-primary-disabled"
       }
     }
   }

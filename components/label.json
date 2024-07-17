@@ -43,22 +43,22 @@
     "common": {
       "white": {
         "#normal": {
-          "text": "@color-theme-common-text-white"
+          "text": "@color-theme-common-text-primary-normal"
         }
       },
       "gray": {
         "#normal": {
-          "text": "@color-theme-common-text-gray"
+          "text": "@color-theme-common-text-secondary-normal"
         }
       },
       "black": {
         "#normal": {
-          "text": "@color-theme-common-text-black"
+          "text": "@color-theme-common-inverted-text-primary-normal"
         }
       },
       "disabled": {
         "#normal": {
-          "text": "@color-theme-common-text-disabled"
+          "text": "@color-theme-common-text-primary-disabled"
         }
       },
       "success": {

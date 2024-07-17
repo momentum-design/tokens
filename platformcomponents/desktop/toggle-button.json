@@ -20,7 +20,7 @@
       },
       "#disabled": {
         "background": "@color-theme-button-secondary-normal",
-        "border": "@color-theme-outline-disabled-normal",
+        "border": "@color-theme-outline-primary-disabled",
         "text": "@color-theme-text-primary-disabled"
       }
     },
@@ -42,7 +42,7 @@
       },
       "#disabled": {
         "background": "@color-theme-button-secondary-active-normal",
-        "border": "@color-theme-outline-disabled-normal",
+        "border": "@color-theme-outline-primary-disabled",
         "text": "@color-theme-text-primary-disabled"
       }
     }

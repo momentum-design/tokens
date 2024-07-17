@@ -9,15 +9,15 @@
     },
     "staticShare": {
       "#normal": {
-        "background": "@color-theme-common-control-shareContent-active",
+        "background": "@color-theme-common-control-share-content-active",
         "border": "@color-theme-outline-share-active",
-        "text": "@color-theme-common-text-white"
+        "text": "@color-theme-common-text-primary-normal"
       }
     },
     "overlay": {
       "background": "@color-theme-background-common-normal",
-      "text": "@color-theme-common-text-black",
-      "border": "@color-theme-common-control-shareContent-inactive"
+      "text": "@color-theme-common-inverted-text-primary-normal",
+      "border": "@color-theme-common-control-share-content-inactive"
     },
     "primary": {
       "#normal": {
@@ -37,7 +37,7 @@
       },
       "#disabled": {
         "background": "@color-theme-background-primary-disabled",
-        "border": "@color-theme-outline-disabled-normal",
+        "border": "@color-theme-outline-primary-disabled",
         "text": "@color-theme-text-primary-disabled"
       }
     },
@@ -59,7 +59,7 @@
       },
       "#disabled": {
         "background": "@color-theme-background-primary-disabled",
-        "border": "@color-theme-outline-disabled-normal",
+        "border": "@color-theme-outline-primary-disabled",
         "text": "@color-theme-text-primary-disabled"
       }
     },
@@ -81,7 +81,7 @@
       },
       "#disabled": {
         "background": "@color-theme-background-primary-disabled",
-        "border": "@color-theme-outline-disabled-normal",
+        "border": "@color-theme-outline-primary-disabled",
         "text": "@color-theme-text-primary-disabled"
       }
     },
@@ -103,7 +103,7 @@
       },
       "#disabled": {
         "background": "@color-theme-background-primary-disabled",
-        "border": "@color-theme-outline-disabled-normal",
+        "border": "@color-theme-outline-primary-disabled",
         "text": "@color-theme-text-primary-disabled"
       }
     },
@@ -125,7 +125,7 @@
       },
       "#disabled": {
         "background": "@color-theme-background-primary-disabled",
-        "border": "@color-theme-outline-disabled-normal",
+        "border": "@color-theme-outline-primary-disabled",
         "text": "@color-theme-text-primary-disabled"
       }
     },
@@ -147,7 +147,7 @@
       },
       "#disabled": {
         "background": "@color-theme-background-primary-disabled",
-        "border": "@color-theme-outline-disabled-normal",
+        "border": "@color-theme-outline-primary-disabled",
         "text": "@color-theme-text-primary-disabled"
       }
     },
@@ -169,7 +169,7 @@
       },
       "#disabled": {
         "background": "@color-theme-background-primary-disabled",
-        "border": "@color-theme-outline-disabled-normal",
+        "border": "@color-theme-outline-primary-disabled",
         "text": "@color-theme-text-primary-disabled"
       }
     },
@@ -191,7 +191,7 @@
       },
       "#disabled": {
         "background": "@color-theme-background-primary-disabled",
-        "border": "@color-theme-outline-disabled-normal",
+        "border": "@color-theme-outline-primary-disabled",
         "text": "@color-theme-text-primary-disabled"
       }
     },
@@ -213,7 +213,7 @@
       },
       "#disabled": {
         "background": "@color-theme-background-primary-disabled",
-        "border": "@color-theme-outline-disabled-normal",
+        "border": "@color-theme-outline-primary-disabled",
         "text": "@color-theme-text-primary-disabled"
       }
     },
@@ -235,7 +235,7 @@
       },
       "#disabled": {
         "background": "@color-theme-background-primary-disabled",
-        "border": "@color-theme-outline-disabled-normal",
+        "border": "@color-theme-outline-primary-disabled",
         "text": "@color-theme-text-primary-disabled"
       }
     }

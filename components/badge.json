@@ -3,7 +3,7 @@
     "comment": "applied to blue badges",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4486%3A786",
     "background": "@color-theme-background-accent-normal",
-    "text": "@color-theme-common-text-white",
+    "text": "@color-theme-common-text-primary-normal",
     "notification-indicator": "@color-theme-text-accent-normal",
     "recording-indicator": "@color-theme-indicator-attention",
     "warning-indicator": "@color-theme-indicator-unstable",

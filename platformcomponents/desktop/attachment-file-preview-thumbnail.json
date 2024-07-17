@@ -5,10 +5,12 @@
       "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=49674%3A114116",
       "border": "@color-theme-outline-secondary-normal",
       "overlay": {
-        "background": "@color-theme-common-overlay-primary-normal",
+        "background": {
+          "normal": "@color-theme-common-overlays-primary-normal"
+        },
         "label": {
-          "primary": "@color-theme-common-text-white",
-          "secondary": "@color-theme-common-text-gray"
+          "primary": "@color-theme-common-text-primary-normal",
+          "secondary": "@color-theme-common-text-secondary-normal"
         }
       },
       "background": {

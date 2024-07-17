@@ -4,11 +4,13 @@
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=49650%3A108097",
     "border": "@color-theme-outline-secondary-normal",
     "previewBox": {
-      "icon": "@color-theme-common-text-white",
+      "icon": "@color-theme-common-text-primary-normal",
       "background": "@color-theme-background-accent-normal"
     },
     "overlay": {
-      "background": "@color-theme-common-overlay-primary-normal"
+      "background": {
+        "normal": "@color-theme-common-overlays-primary-normal"
+      }
     },
     "label": {
       "primary": "@color-theme-text-primary-normal",

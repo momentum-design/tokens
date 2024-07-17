@@ -6,7 +6,7 @@
     "controls": {
       "button": {
         "#normal": {
-          "background": "@color-theme-overlay-button-secondary-normal",
+          "background": "@color-theme-inverted-button-primary-normal",
           "text": "@color-theme-text-primary-normal",
           "icon": "@color-theme-text-primary-normal",
           "border": "@color-theme-outline-button-normal"
@@ -18,16 +18,16 @@
           "border": "@color-theme-outline-button-normal"
         },
         "#pressed": {
-          "background": "@color-theme-overlay-button-secondary-pressed",
+          "background": "@color-theme-inverted-button-primary-pressed",
           "text": "@color-theme-text-primary-normal",
           "icon": "@color-theme-text-primary-normal",
           "border": "@color-theme-outline-button-normal"
         },
         "#disabled": {
-          "background": "@color-theme-overlay-button-secondary-normal",
+          "background": "@color-theme-inverted-button-primary-normal",
           "text": "@color-theme-text-primary-disabled",
           "icon": "@color-theme-text-primary-disabled",
-          "border": "@color-theme-outline-disabled-normal"
+          "border": "@color-theme-outline-primary-disabled"
         }
       }
     },
@@ -42,8 +42,8 @@
       },
       "videoOn": {
         "background": "@color-theme-background-namelabel-normal",
-        "name": "@color-theme-common-text-white",
-        "icon": "@color-theme-common-text-white",
+        "name": "@color-theme-common-text-primary-normal",
+        "icon": "@color-theme-common-text-primary-normal",
         "role": "@color-theme-text-secondary-normal",
         "iconMute": "@color-theme-common-text-error-normal",
         "iconUnmute": "@color-theme-common-text-success-normal"
@@ -59,7 +59,7 @@
         "background": "@color-theme-background-solid-primary-normal"
       },
       "border": "@color-theme-outline-button-normal",
-      "background": "@color-theme-overlay-button-secondary-normal"
+      "background": "@color-theme-inverted-button-primary-normal"
     }
   }
 }

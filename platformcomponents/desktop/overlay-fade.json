@@ -3,13 +3,13 @@
     "comment": "Use for see through backgrounds",
     "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=7813%3A33099",
     "primary": {
-      "#normal": {
-        "background": "@color-theme-common-overlay-primary-normal"
+      "background": {
+        "normal": "@color-theme-common-overlays-primary-normal"
       }
     },
     "secondary": {
-      "#normal": {
-        "background": "@color-theme-common-overlay-secondary-normal"
+      "background": {
+        "normal": "@color-theme-common-overlays-secondary-normal"
       }
     },
     "meetings": {

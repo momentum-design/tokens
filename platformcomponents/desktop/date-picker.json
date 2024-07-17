@@ -26,14 +26,14 @@
           "#hovered": "@color-theme-text-primary-normal",
           "#pressed": "@color-theme-text-primary-normal",
           "#disabled": "@color-theme-text-primary-disabled",
-          "#active": "@color-theme-common-text-white"
+          "#active": "@color-theme-common-text-primary-normal"
         },
         "border": {
           "#normal": "@color-theme-outline-button-normal"
         },
         "unreadBadge": {
           "#normal": "@color-theme-background-accent-normal",
-          "#active": "@color-theme-common-text-white"
+          "#active": "@color-theme-common-text-primary-normal"
         }
       }
     },
@@ -58,23 +58,23 @@
           "#disabled": {
             "background": "@color-theme-button-secondary-normal",
             "text": "@color-theme-text-primary-disabled",
-            "border": "@color-theme-outline-disabled-normal"
+            "border": "@color-theme-outline-primary-disabled"
           }
         },
         "active": {
           "#normal": {
             "background": "@color-theme-button-accent-normal",
-            "text": "@color-theme-common-text-white",
+            "text": "@color-theme-common-text-primary-normal",
             "border": "@color-theme-button-accent-normal"
           },
           "#hovered": {
             "background": "@color-theme-button-accent-hover",
-            "text": "@color-theme-common-text-white",
+            "text": "@color-theme-common-text-primary-normal",
             "border": "@color-theme-button-accent-hover"
           },
           "#pressed": {
             "background": "@color-theme-button-accent-pressed",
-            "text": "@color-theme-common-text-white",
+            "text": "@color-theme-common-text-primary-normal",
             "border": "@color-theme-button-accent-pressed"
           },
           "#disabled": {

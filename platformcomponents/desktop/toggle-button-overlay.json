@@ -4,7 +4,7 @@
     "comment": "Applied to circle and pill toggle buttons",
     "inactive": {
       "#normal": {
-        "background": "@color-theme-overlay-button-secondary-normal",
+        "background": "@color-theme-inverted-button-primary-normal",
         "border": "@color-theme-outline-button-normal",
         "text": "@color-theme-text-secondary-normal"
       },
@@ -14,35 +14,35 @@
         "text": "@color-theme-text-primary-normal"
       },
       "#pressed": {
-        "background": "@color-theme-overlay-button-secondary-pressed",
+        "background": "@color-theme-inverted-button-primary-pressed",
         "border": "@color-theme-outline-button-normal",
         "text": "@color-theme-text-primary-normal"
       },
       "#disabled": {
-        "background": "@color-theme-overlay-button-secondary-normal",
-        "border": "@color-theme-outline-disabled-normal",
+        "background": "@color-theme-inverted-button-primary-normal",
+        "border": "@color-theme-outline-primary-disabled",
         "text": "@color-theme-text-primary-disabled"
       }
     },
     "active": {
       "#normal": {
-        "background": "@color-theme-overlay-button-secondary-pressed",
+        "background": "@color-theme-inverted-button-primary-pressed",
         "border": "@color-theme-outline-button-normal",
         "text": "@color-theme-text-primary-normal"
       },
       "#hovered": {
-        "background": "@color-theme-overlay-button-secondary-pressed",
+        "background": "@color-theme-inverted-button-primary-pressed",
         "border": "@color-theme-outline-button-normal",
         "text": "@color-theme-text-primary-normal"
       },
       "#pressed": {
-        "background": "@color-theme-overlay-button-secondary-pressed",
+        "background": "@color-theme-inverted-button-primary-pressed",
         "border": "@color-theme-outline-button-normal",
         "text": "@color-theme-text-primary-normal"
       },
       "#disabled": {
-        "background": "@color-theme-overlay-button-secondary-normal",
-        "border": "@color-theme-outline-disabled-normal",
+        "background": "@color-theme-inverted-button-primary-normal",
+        "border": "@color-theme-outline-primary-disabled",
         "text": "@color-theme-text-primary-disabled"
       }
     }

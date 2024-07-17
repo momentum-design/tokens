@@ -1,5 +1,5 @@
 {
   "accent": "Jade",
   "theme": "Light",
-  "files": ["node_modules/@momentum-design/tokens/dist/json-minimal/theme/webex/common-stable.json", "node_modules/@momentum-design/tokens/dist/json-minimal/theme/webex/light-stable.json", "theme-data/light/light-jade.json"]
+  "files": ["node_modules/@momentum-design/tokens/dist/json-minimal/theme/webex/light-stable.json", "theme-data/light/light-jade.json"]
 }

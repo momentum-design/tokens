@@ -20,7 +20,7 @@
     },
     "color-avatar": {
       "text": {
-        "default": "@color-theme-common-text-white",
+        "default": "@color-theme-common-text-primary-normal",
         "error": "@color-theme-text-error-normal",
         "success": "@color-theme-text-success-normal"
       },

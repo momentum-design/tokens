@@ -10,7 +10,7 @@
       },
       "border": "@color-theme-outline-secondary-normal",
       "previewBox": {
-        "icon": "@color-theme-common-text-white",
+        "icon": "@color-theme-common-text-primary-normal",
         "background": "@color-theme-background-accent-normal"
       },
       "label": {

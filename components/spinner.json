@@ -7,7 +7,7 @@
       "track": "@color-theme-control-inactive-normal"
     },
     "loading-common": {
-      "cursor": "@color-theme-common-text-black",
+      "cursor": "@color-theme-common-inverted-text-primary-normal",
       "track": "@color-theme-common-control-inactive-normal"
     },
     "progress": {

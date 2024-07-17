@@ -46,7 +46,7 @@
     },
     "group": {
       "description": {
-        "color": "@theme-text-secondary-normal"
+        "color": "@color-theme-text-secondary-normal"
       }
     }
   }

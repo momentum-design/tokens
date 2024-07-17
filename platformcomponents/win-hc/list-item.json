@@ -1,26 +1,26 @@
 {
   "listitem": {
     "#normal": {
-      "textmissed": "@theme-text-primary-normal"
+      "textmissed": "@color-theme-text-primary-normal"
     },
     "#hovered": {
-      "textprimary": "@theme-text-inverted-normal",
-      "textsecondary": "@theme-text-inverted-normal",
-      "textmissed": "@theme-text-inverted-normal",
-      "tick": "@theme-control-active-hover",
-      "icon": "@theme-text-inverted-normal"
+      "textprimary": "@color-theme-inverted-text-primary-normal",
+      "textsecondary": "@color-theme--inverted-text-primary-normal",
+      "textmissed": "@color-theme-inverted-text-primary-normal",
+      "tick": "@color-theme-control-active-hover",
+      "icon": "@color-theme-inverted-text-primary-normal"
     },
     "#focused": {
-      "textprimary": "@theme-text-inverted-normal",
-      "textmissed": "@theme-text-inverted-normal",
-      "background": "@theme-background-primary-active"
+      "textprimary": "@color-theme-inverted-text-primary-normal",
+      "textmissed": "@color-theme-inverted-text-primary-normal",
+      "background": "@color-theme-background-primary-active"
     },
     "#pressed": {
-      "textprimary": "@theme-text-inverted-normal",
-      "textsecondary": "@theme-text-inverted-normal",
-      "textmissed": "@theme-text-inverted-normal",
-      "tick": "@theme-control-active-hover",
-      "icon": "@theme-text-inverted-normal"
+      "textprimary": "@color-theme-inverted-text-primary-normal",
+      "textsecondary": "@color-theme-inverted-text-primary-normal",
+      "textmissed": "@color-theme-inverted-text-primary-normal",
+      "tick": "@color-theme-control-active-hover",
+      "icon": "@color-theme-inverted-text-primary-normal"
     }
   }
 }

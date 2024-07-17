@@ -5,145 +5,145 @@
     "messages": {
       "#normal": {
         "background": "@color-theme-common-touchbar-background-blue-normal",
-        "icon": "@color-theme-common-text-white"
+        "icon": "@color-theme-common-text-primary-normal"
       },
       "#hovered": {
         "background": "@color-theme-common-touchbar-background-blue-normal",
-        "icon": "@color-theme-common-text-white"
+        "icon": "@color-theme-common-text-primary-normal"
       },
       "#pressed": {
         "background": "@color-theme-common-touchbar-background-blue-pressed",
-        "icon": "@color-theme-common-text-white"
+        "icon": "@color-theme-common-text-primary-normal"
       },
       "#disabled": {
         "background": "@color-theme-common-button-primary-disabled",
-        "icon": "@color-theme-common-text-disabled"
+        "icon": "@color-theme-common-text-primary-disabled"
       }
     },
     "content": {
       "#normal": {
         "background": "@color-theme-common-touchbar-background-pink-normal",
-        "icon": "@color-theme-common-text-white"
+        "icon": "@color-theme-common-text-primary-normal"
       },
       "#hovered": {
         "background": "@color-theme-common-touchbar-background-pink-normal",
-        "icon": "@color-theme-common-text-white"
+        "icon": "@color-theme-common-text-primary-normal"
       },
       "#pressed": {
         "background": "@color-theme-common-touchbar-background-pink-pressed",
-        "icon": "@color-theme-common-text-white"
+        "icon": "@color-theme-common-text-primary-normal"
       },
       "#disabled": {
         "background": "@color-theme-common-button-primary-disabled",
-        "icon": "@color-theme-common-text-disabled"
+        "icon": "@color-theme-common-text-primary-disabled"
       }
     },
     "contacts": {
       "#normal": {
         "background": "@color-theme-common-touchbar-background-mint-normal",
-        "icon": "@color-theme-common-text-white"
+        "icon": "@color-theme-common-text-primary-normal"
       },
       "#hovered": {
         "background": "@color-theme-common-touchbar-background-mint-normal",
-        "icon": "@color-theme-common-text-white"
+        "icon": "@color-theme-common-text-primary-normal"
       },
       "#pressed": {
         "background": "@color-theme-common-touchbar-background-mint-pressed",
-        "icon": "@color-theme-common-text-white"
+        "icon": "@color-theme-common-text-primary-normal"
       },
       "#disabled": {
         "background": "@color-theme-common-button-primary-disabled",
-        "icon": "@color-theme-common-text-disabled"
+        "icon": "@color-theme-common-text-primary-disabled"
       }
     },
     "whiteboard": {
       "#normal": {
         "background": "@color-theme-common-touchbar-background-purple-normal",
-        "icon": "@color-theme-common-text-white"
+        "icon": "@color-theme-common-text-primary-normal"
       },
       "#hovered": {
         "background": "@color-theme-common-touchbar-background-purple-normal",
-        "icon": "@color-theme-common-text-white"
+        "icon": "@color-theme-common-text-primary-normal"
       },
       "#pressed": {
         "background": "@color-theme-common-touchbar-background-purple-pressed",
-        "icon": "@color-theme-common-text-white"
+        "icon": "@color-theme-common-text-primary-normal"
       },
       "#disabled": {
         "background": "@color-theme-common-button-primary-disabled",
-        "icon": "@color-theme-common-text-disabled"
+        "icon": "@color-theme-common-text-primary-disabled"
       }
     },
     "links": {
       "#normal": {
         "background": "@color-theme-common-touchbar-background-violet-normal",
-        "icon": "@color-theme-common-text-white"
+        "icon": "@color-theme-common-text-primary-normal"
       },
       "#hovered": {
         "background": "@color-theme-common-touchbar-background-violet-normal",
-        "icon": "@color-theme-common-text-white"
+        "icon": "@color-theme-common-text-primary-normal"
       },
       "#pressed": {
         "background": "@color-theme-common-touchbar-background-violet-pressed",
-        "icon": "@color-theme-common-text-white"
+        "icon": "@color-theme-common-text-primary-normal"
       },
       "#disabled": {
         "background": "@color-theme-common-button-primary-disabled",
-        "icon": "@color-theme-common-text-disabled"
+        "icon": "@color-theme-common-text-primary-disabled"
       }
     },
     "meetings": {
       "#normal": {
         "background": "@color-theme-common-touchbar-background-orange-normal",
-        "icon": "@color-theme-common-text-white"
+        "icon": "@color-theme-common-text-primary-normal"
       },
       "#hovered": {
         "background": "@color-theme-common-touchbar-background-orange-normal",
-        "icon": "@color-theme-common-text-white"
+        "icon": "@color-theme-common-text-primary-normal"
       },
       "#pressed": {
         "background": "@color-theme-common-touchbar-background-orange-pressed",
-        "icon": "@color-theme-common-text-white"
+        "icon": "@color-theme-common-text-primary-normal"
       },
       "#disabled": {
         "background": "@color-theme-common-button-primary-disabled",
-        "icon": "@color-theme-common-text-disabled"
+        "icon": "@color-theme-common-text-primary-disabled"
       }
     },
     "call": {
       "#normal": {
         "background": "@color-theme-common-touchbar-background-green-normal",
-        "icon": "@color-theme-common-text-white"
+        "icon": "@color-theme-common-text-primary-normal"
       },
       "#hovered": {
         "background": "@color-theme-common-touchbar-background-green-normal",
-        "icon": "@color-theme-common-text-white"
+        "icon": "@color-theme-common-text-primary-normal"
       },
       "#pressed": {
         "background": "@color-theme-common-touchbar-background-green-pressed",
-        "icon": "@color-theme-common-text-white"
+        "icon": "@color-theme-common-text-primary-normal"
       },
       "#disabled": {
         "background": "@color-theme-common-button-primary-disabled",
-        "icon": "@color-theme-common-text-disabled"
+        "icon": "@color-theme-common-text-primary-disabled"
       }
     },
     "endCall": {
       "#normal": {
         "background": "@color-theme-common-touchbar-background-red-normal",
-        "icon": "@color-theme-common-text-white"
+        "icon": "@color-theme-common-text-primary-normal"
       },
       "#hovered": {
         "background": "@color-theme-common-touchbar-background-red-normal",
-        "icon": "@color-theme-common-text-white"
+        "icon": "@color-theme-common-text-primary-normal"
       },
       "#pressed": {
         "background": "@color-theme-common-touchbar-background-red-pressed",
-        "icon": "@color-theme-common-text-white"
+        "icon": "@color-theme-common-text-primary-normal"
       },
       "#disabled": {
         "background": "@color-theme-common-button-primary-disabled",
-        "icon": "@color-theme-common-text-disabled"
+        "icon": "@color-theme-common-text-primary-disabled"
       }
     },
     "toggleMuteAudio": {
@@ -161,7 +161,7 @@
       },
       "#disabled": {
         "background": "@color-theme-common-touchbar-background-transparent",
-        "icon": "@color-theme-common-text-disabled"
+        "icon": "@color-theme-common-text-primary-disabled"
       }
     },
     "toggleMuteVideo": {
@@ -179,25 +179,25 @@
       },
       "#disabled": {
         "background": "@color-theme-common-touchbar-background-transparent",
-        "icon": "@color-theme-common-text-disabled"
+        "icon": "@color-theme-common-text-primary-disabled"
       }
     },
     "standardButton": {
       "#normal": {
         "background": "@color-theme-common-touchbar-background-transparent",
-        "icon": "@color-theme-common-text-white"
+        "icon": "@color-theme-common-text-primary-normal"
       },
       "#hovered": {
         "background": "@color-theme-common-touchbar-background-transparent",
-        "icon": "@color-theme-common-text-white"
+        "icon": "@color-theme-common-text-primary-normal"
       },
       "#pressed": {
         "background": "@color-theme-common-button-secondary-active-normal",
-        "icon": "@color-theme-common-text-white"
+        "icon": "@color-theme-common-text-primary-normal"
       },
       "#disabled": {
         "background": "@color-theme-common-touchbar-background-transparent",
-        "icon": "@color-theme-common-text-disabled"
+        "icon": "@color-theme-common-text-primary-disabled"
       }
     },
     "lockActive": {
@@ -215,7 +215,7 @@
       },
       "#disabled": {
         "background": "@color-theme-common-touchbar-background-transparent",
-        "icon": "@color-theme-common-text-disabled"
+        "icon": "@color-theme-common-text-primary-disabled"
       }
     }
   }

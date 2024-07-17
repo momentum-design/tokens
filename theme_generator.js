@@ -38,9 +38,6 @@ function removeComments(token) {
  * This also drags UI states (those starting with #) to the end of the token names
  */
 function flattenObject(objectPath, childObject, flattenedTokens, uiState) {
-  if (childObject == null) {
-    return "";
-  }
   Object.entries(childObject).forEach(([key, value]) => {
     if (key.startsWith("#") && typeof value === "object") {
       if (uiState) {
@@ -55,6 +52,33 @@ function flattenObject(objectPath, childObject, flattenedTokens, uiState) {
         flattenObject(childPath, value, flattenedTokens, uiState);
       } else {
         flattenedTokens[uiState ? childPath + "-" + uiState : childPath] = value;
+      }
+    }
+  });
+}
+
+function flattenHCObject(objectPath, childObject, flattenedTokens, uiState) {
+  if (childObject == null) {
+    return "";
+  }
+  Object.entries(childObject).forEach(([key, value]) => {
+    if (key.startsWith("#") && typeof value === "object") {
+      if (uiState) {
+        console.error("Picked up uiState " + key + " at " + objectPath + " while already carrying " + uiState);
+        process.exit(1);
+      } else {
+        flattenHCObject(objectPath, value, flattenedTokens, key);
+      }
+    } else {
+      const childPath = objectPath ? objectPath + "-" + key : key;
+      if (typeof value === "object") {
+        flattenHCObject(childPath, value, flattenedTokens, uiState);
+      } else {
+        if (typeof value === "string" && (value.includes("color.highcontrast") || value.includes("color-hc-"))) {
+          var tokenName = childPath.replace("-original-value", "");
+          var tokenValue = value.replace("{color.highcontrast.black.", "").replace("}", "").replace("SystemColor", "").replace("@color-hc-", "");
+          flattenedTokens[tokenName] = tokenValue;
+        }
       }
     }
   });
@@ -149,6 +173,10 @@ function applyAlpha(tokenGroup, alpha) {
 // Parses a value and normalises the unit if required
 function normaliseUnit(value) {
   if (typeof value === "string" && (value.startsWith("#") || value.startsWith("rgb"))) {
+    if (value.length == 8 && value.startsWith("#")) {
+      let filled = value.slice(0, 1) + "0" + value.slice(1);
+      value = filled;
+    }
     const starPosition = value.indexOf("*");
     let alpha = 1;
     if (starPosition !== -1) {
@@ -163,10 +191,11 @@ function normaliseUnit(value) {
     if (!target.ignoreAlpha) {
       c.alpha = c.alpha * alpha;
     }
-    c.alpha = Math.round(c.alpha * 100) / 100;
+
     if (target.colorFormat === "rgba") {
       return `rgba(${c.values[0]}, ${c.values[1]}, ${c.values[2]}, ${c.alpha})`;
     } else if (target.colorFormat === "object") {
+      c.alpha = Math.round(c.alpha * 100) / 100;
       return { r: c.values[0], g: c.values[1], b: c.values[2], a: c.alpha };
     } else if (target.colorFormat === "hex") {
       r = c.values[0].toString(16).padStart(2, "0");
@@ -214,9 +243,6 @@ function resolveGradient(currentToken) {
     // If this is an object, return a version with all children resolved
     // If this is an object, return a version with all children resolved
     const resolvedToken = {};
-    if (currentToken == null) {
-      return currentToken;
-    }
     Object.entries(currentToken).forEach(([key, value]) => {
       if (value == "none") {
         console.log(key + " value is none");
@@ -226,6 +252,8 @@ function resolveGradient(currentToken) {
         console.log(key + ": " + value + " length incorrect");
       }
 
+      resolvedToken[key] = resolveGradient(value);
+      /*
       if (typeof value === "string" && value.startsWith("linear-gradient")) {
         let gradientParts = value.split(",");
         gradientParts.shift();
@@ -250,7 +278,9 @@ function resolveGradient(currentToken) {
       } else {
         resolvedToken[key] = resolveGradient(value);
       }
+          */
     });
+
     return resolvedToken;
   } else {
     // if (currentToken == "none") {
@@ -310,7 +340,6 @@ function resolveValue(currentToken, allTokens, coreTokens, flattenedCoreTokens) 
             if (groupValue[0] != "@") {
               console.error(currentToken + " could not be found. Tried resolving via " + groupParts.join("-") + " but that was not a reference");
               //process.exit(1);
-              return currentToken;
             }
             const substituteParts = groupValue.slice(1).split("-").concat(keyParts.slice(-i));
             const substituteName = substituteParts.join("-");
@@ -326,7 +355,7 @@ function resolveValue(currentToken, allTokens, coreTokens, flattenedCoreTokens) 
         // If we still can't find it, it's probably broken
         console.error("Unable to find " + currentToken);
         //console.error("Unable to find " + currentToken + " in " + JSON.stringify(allTokens, null, 2));
-        //process.exit(1);
+        process.exit(1);
       }
       return resolveValue(value, allTokens, coreTokens, flattenedCoreTokens);
     }
@@ -569,19 +598,7 @@ if (target.themes.length === 0) {
   process.exit(1);
 }
 
-// // Start by loading all the token files
-// console.log("=== Loading core files ===================");
-// let coreTokens = loadFile("core", true);
-// if (target.colorFormat === "names") {
-//   useColourNames(coreTokens);
-// }
-
-// // Then flatten all the tokens
-// const flattenedCoreTokens = {};
-// flattenObject("", coreTokens, flattenedCoreTokens);
-// // console.log("=== Core files loaded ====================");
-
-// Then load the component files
+// load the component files
 // console.log("=== Loading component files ==============");
 let componentData = loadFile("components", true);
 if (target.includeMobileTokens) {
@@ -635,25 +652,13 @@ target.themes.forEach((themeFileName) => {
       merge(themeData, loadFile(fileName, false));
     }
   });
-  /*"color": {
-      "theme": {
-        "common": {
-          "text": {
-            "white": "#fffffff2", */
-
-  // console.log('=== After load theme data =====================');
-  // console.log(JSON.stringify(themeData, null, 2));
-
-  // // Resolve all the references
-  // const resolvedThemeData = resolveValue(themeData, themeData, coreTokens, flattenedCoreTokens);
-  // console.log('=== Theme after resolve references ==============');
-  // console.log(JSON.stringify(resolvedThemeData, null, 2));
 
   const flattenedThemeTokens = {};
-  flattenObject("", themeData, flattenedThemeTokens);
-  // console.log(JSON.stringify(flattenedThemeTokens, null, 2));
-  /* "color-theme-common-text-white": "#fffffff2",
-     "color-theme-common-overlay-meeting-normal": "linear-gradient(180deg, #000000cc 0%, #0000004d 50.23%, #00000000 100%)", */
+  if (target.platform === "win-hc") {
+    flattenHCObject("", themeData, flattenedThemeTokens);
+  } else {
+    flattenObject("", themeData, flattenedThemeTokens);
+  }
 
   // unify structure
   // 6 hex to 8 hex, seperate graident colors etc

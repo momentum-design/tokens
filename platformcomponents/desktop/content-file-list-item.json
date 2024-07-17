@@ -3,7 +3,7 @@
     "comment": "Applied to file attachments from Content tab",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=49651%3A114181",
     "previewBox": {
-      "icon": "@color-theme-common-text-white",
+      "icon": "@color-theme-common-text-primary-normal",
       "background": "@color-theme-background-accent-normal"
     },
     "label": {

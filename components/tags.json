@@ -12,8 +12,8 @@
     "overlay": {
       "#normal": {
         "background": "@color-theme-background-common-normal",
-        "border": "@color-theme-common-control-shareContent-inactive",
-        "text": "@color-theme-common-text-black"
+        "border": "@color-theme-common-control-share-content-inactive",
+        "text": "@color-theme-common-inverted-text-primary-normal"
       }
     },
     "error": {
