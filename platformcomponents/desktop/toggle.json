@@ -25,17 +25,17 @@
     },
     "untoggled": {
       "#normal": {
-        "background": "@color-theme-common-button-secondary-normal",
+        "background": "@color-theme-button-secondary-normal",
         "thumb-tint": "@color-theme-text-secondary-normal",
         "border": "@color-theme-outline-input-normal"
       },
       "#hovered": {
-        "background": "@color-theme-common-button-secondary-hover",
+        "background": "@color-theme-button-secondary-hover",
         "thumb-tint": "@color-theme-text-primary-normal",
         "border": "@color-theme-outline-input-normal"
       },
       "#pressed": {
-        "background": "@color-theme-common-button-secondary-disabled",
+        "background": "@color-theme-button-secondary-pressed",
         "thumb-tint": "@color-theme-text-primary-normal",
         "border": "@color-theme-outline-input-normal"
       },

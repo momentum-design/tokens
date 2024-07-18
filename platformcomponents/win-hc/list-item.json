@@ -5,7 +5,7 @@
     },
     "#hovered": {
       "textprimary": "@color-theme-inverted-text-primary-normal",
-      "textsecondary": "@color-theme--inverted-text-primary-normal",
+      "textsecondary": "@color-theme-inverted-text-primary-normal",
       "textmissed": "@color-theme-inverted-text-primary-normal",
       "tick": "@color-theme-control-active-hover",
       "icon": "@color-theme-inverted-text-primary-normal"
