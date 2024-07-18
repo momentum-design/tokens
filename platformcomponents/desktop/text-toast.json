@@ -3,13 +3,13 @@
     "comment": "applied to text toast components",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=4775%3A361",
     "background": {
-      "#normal": "@theme-background-solid-secondary-normal"
+      "#normal": "@color-theme-background-solid-secondary-normal"
     },
     "border": {
-      "#normal": "@theme-outline-secondary-normal"
+      "#normal": "@color-theme-outline-secondary-normal"
     },
     "text": {
-      "#normal": "@theme-text-primary-normal"
+      "#normal": "@color-theme-text-primary-normal"
     }
   }
 }

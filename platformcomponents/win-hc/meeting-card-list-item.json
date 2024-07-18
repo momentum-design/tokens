@@ -2,9 +2,9 @@
   "meetingCardListItem": {
     "comment": "Applied to calendar cards displayed in a list",
     "#normal": {
-      "border": "@theme-outline-button-normal",
-      "textPrimary": "@theme-text-inverted-normal",
-      "textSecondary": "@theme-text-inverted-normal"
+      "border": "@color-theme-outline-button-normal",
+      "textPrimary": "@color-theme-inverted-text-primary-normal",
+      "textSecondary": "@color-theme-inverted-text-primary-normal"
     }
   }
 }

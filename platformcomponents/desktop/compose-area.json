@@ -4,20 +4,20 @@
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=41139%3A50175",
     "divider": {
       "default": {
-        "#normal": ["@theme-gradientdivider-normal-0", "@theme-gradientdivider-normal-1"],
-        "#hovered": ["@theme-gradientdivider-hover-0", "@theme-gradientdivider-hover-1"]
+        "#normal": ["@color-theme-gradientdivider-normal-0", "@color-theme-gradientdivider-normal-1"],
+        "#hovered": ["@color-theme-gradientdivider-hover-0", "@color-theme-gradientdivider-hover-1"]
       },
       "announce": {
-        "#normal": ["@theme-gradientdivider-announce-normal-0", "@theme-gradientdivider-announce-normal-1"],
-        "#hovered": ["@theme-gradientdivider-announce-hover-0", "@theme-gradientdivider-announce-hover-1"]
+        "#normal": ["@color-theme-gradientdivider-announce-normal-0", "@color-theme-gradientdivider-announce-normal-1"],
+        "#hovered": ["@color-theme-gradientdivider-announce-hover-0", "@color-theme-gradientdivider-announce-hover-1"]
       },
       "warn": {
-        "#normal": ["@theme-gradientdivider-warning-normal-0", "@theme-gradientdivider-warning-normal-1"],
-        "#hovered": ["@theme-gradientdivider-warning-hover-0", "@theme-gradientdivider-warning-hover-1"]
+        "#normal": ["@color-theme-gradientdivider-warning-normal-0", "@color-theme-gradientdivider-warning-normal-1"],
+        "#hovered": ["@color-theme-gradientdivider-warning-hover-0", "@color-theme-gradientdivider-warning-hover-1"]
       },
       "error": {
-        "#normal": ["@theme-gradientdivider-error-normal-0", "@theme-gradientdivider-error-normal-1"],
-        "#hovered": ["@theme-gradientdivider-error-hover-0", "@theme-gradientdivider-error-hover-1"]
+        "#normal": ["@color-theme-gradientdivider-error-normal-0", "@color-theme-gradientdivider-error-normal-1"],
+        "#hovered": ["@color-theme-gradientdivider-error-hover-0", "@color-theme-gradientdivider-error-hover-1"]
       }
     }
   }

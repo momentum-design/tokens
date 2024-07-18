@@ -3,11 +3,11 @@
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=5712%3A57",
     "comment": "Color tokens for indentation bar",
     "#normal": {
-      "default": "@theme-text-secondary-normal",
-      "info": "@theme-text-accent-normal",
-      "success": "@theme-text-success-normal",
-      "warning": "@theme-text-warning-normal",
-      "danger": "@theme-text-error-normal"
+      "default": "@color-theme-text-secondary-normal",
+      "info": "@color-theme-text-accent-normal",
+      "success": "@color-theme-text-success-normal",
+      "warning": "@color-theme-text-warning-normal",
+      "danger": "@color-theme-text-error-normal"
     }
   }
 }

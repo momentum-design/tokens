@@ -3,23 +3,23 @@
     "comment": "Use for see through backgrounds",
     "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=7813%3A33099",
     "primary": {
-      "#normal": {
-        "background": "@theme-common-overlay-primary"
+      "background": {
+        "normal": "@color-theme-common-overlays-primary-normal"
       }
     },
     "secondary": {
-      "#normal": {
-        "background": "@theme-common-overlay-secondary"
+      "background": {
+        "normal": "@color-theme-common-overlays-secondary-normal"
       }
     },
     "meetings": {
       "#normal": {
-        "background": "@theme-overlay-meetings-normal"
+        "background": "@color-theme-overlay-meetings-normal"
       }
     },
     "meetings-reactions": {
-      "gradient-0": "@theme-overlay-meetings-reaction-normal-0",
-      "gradient-1": "@theme-overlay-meetings-reaction-normal-1"
+      "gradient-0": "@color-theme-background-reaction-normal-0",
+      "gradient-1": "@color-theme-background-reaction-normal-1"
     }
   }
 }

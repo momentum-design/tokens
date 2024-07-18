@@ -3,18 +3,18 @@
     "comment": "Used for all text inputs and their states",
     "figma": "https://www.figma.com/file/rNpQFybgpgSfTmhLa441V3/Components---Windows-OS-HighContrast?node-id=4347%3A919",
     "#normal": {
-      "placeholder-text": "@theme-text-secondary-normal"
+      "placeholder-text": "@color-theme-text-secondary-normal"
     },
     "#hovered": {
-      "text": "@theme-text-inverted-normal",
-      "placeholder-text": "@theme-text-inverted-normal",
+      "text": "@color-theme-inverted-text-primary-normal",
+      "placeholder-text": "@color-theme-inverted-text-primary-normal",
       "background": "@theme-common-hc-highlight",
       "border": "@theme-common-hc-highlight"
     },
     "#disabled": {
-      "text": "@theme-text-primary-disabled",
-      "placeholder-text": "@theme-text-primary-disabled",
-      "border": "@theme-outline-disabled-normal"
+      "text": "@color-theme-text-primary-disabled",
+      "placeholder-text": "@color-theme-text-primary-disabled",
+      "border": "@color-theme-outline-primary-disabled"
     }
   }
 }

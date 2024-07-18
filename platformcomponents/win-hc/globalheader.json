@@ -4,61 +4,61 @@
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=5282%3A497",
     "textfield": {
       "#hovered": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       }
     },
     "buttonDevice": {
       "#hovered": {
-        "text-inactive": "@theme-text-inverted-normal",
-        "text-active": "@theme-text-inverted-normal"
+        "text-inactive": "@color-theme-inverted-text-primary-normal",
+        "text-active": "@color-theme-inverted-text-primary-normal"
       },
       "#pressed": {
-        "text-inactive": "@theme-text-inverted-normal",
-        "text-active": "@theme-text-inverted-normal"
+        "text-inactive": "@color-theme-inverted-text-primary-normal",
+        "text-active": "@color-theme-inverted-text-primary-normal"
       }
     },
     "buttonIcon": {
       "#hovered": {
-        "icon": "@theme-text-inverted-normal"
+        "icon": "@color-theme-inverted-text-primary-normal"
       },
       "#pressed": {
-        "icon": "@theme-text-inverted-normal"
+        "icon": "@color-theme-inverted-text-primary-normal"
       }
     },
     "buttonStatus": {
       "#hovered": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       },
       "#pressed": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       }
     },
     "modifierChip": {
-      "background": "@theme-background-primary-active",
-      "text": "@theme-text-inverted-normal"
+      "background": "@color-theme-background-primary-active",
+      "text": "@color-theme-inverted-text-primary-normal"
     },
     "maxMinButton": {
       "#hovered": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       },
       "#pressed": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       }
     },
     "closeButton": {
       "#hovered": {
-        "text": "@theme-text-primary-normal"
+        "text": "@color-theme-text-primary-normal"
       },
       "#pressed": {
-        "text": "@theme-text-primary-normal"
+        "text": "@color-theme-text-primary-normal"
       }
     },
     "searchCancelButton": {
       "#hovered": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       },
       "#pressed": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       }
     }
   }

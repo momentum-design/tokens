@@ -1,7 +1,7 @@
 {
   "pickers": {
-    "dayPicker":{
-      "day":{
+    "dayPicker": {
+      "day": {
         "inactive": {
           "#normal": {
             "background": "@theme-common-hc-buttonFace",
@@ -20,7 +20,7 @@
           },
           "#disabled": {
             "background": "@theme-common-hc-buttonFace",
-            "text": "@theme-text-primary-disabled",
+            "text": "@color-theme-text-primary-disabled",
             "border": "@theme-common-hc-buttonText"
           }
         },
@@ -42,7 +42,7 @@
           },
           "#disabled": {
             "background": "@theme-common-hc-buttonFace",
-            "text": "@theme-text-primary-disabled",
+            "text": "@color-theme-text-primary-disabled",
             "border": "@theme-common-hc-buttonText"
           }
         }
