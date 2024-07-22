@@ -2,8 +2,85 @@
   "call-history": {
     "comment": "Color tokens for call hstory in Calling tab",
     "item":{
+      "success-indicator": {
+        "#normal": "@theme-text-secondary-normal",
+        "#hovered": "@theme-text-inverted-normal",
+        "#pressed": "@theme-text-inverted-normal"
+      },
+      "warning-indicator": {
+        "#normal": "@theme-text-secondary-normal",
+        "#hovered": "@theme-text-inverted-normal",
+        "#pressed": "@theme-text-inverted-normal"
+      },
+      "error-indicator": {
+        "#normal": "@theme-text-secondary-normal",
+        "#hovered": "@theme-text-inverted-normal",
+        "#pressed": "@theme-text-inverted-normal"
+      },
+      "header-text": {
+        "#hovered": "@theme-text-inverted-normal",
+        "#pressed": "@theme-text-inverted-normal"
+      },
       "missed-header-text": {
-        "#normal": "@theme-text-secondary-normal"
+        "#normal": "@theme-text-secondary-normal",
+        "#hovered": "@theme-text-inverted-normal",
+        "#pressed": "@theme-text-inverted-normal"
+      },
+      "verification-icon": {
+        "#hovered": "@theme-text-inverted-normal",
+        "#pressed": "@theme-text-inverted-normal"
+      },
+      "subheader-text": {
+        "#hovered": "@theme-text-inverted-normal",
+        "#pressed": "@theme-text-inverted-normal"
+      },
+      "time-text": {
+        "#hovered": "@theme-text-inverted-normal",
+        "#pressed": "@theme-text-inverted-normal"
+      },
+      "direction-icon": {
+        "#hovered": "@theme-text-inverted-normal",
+        "#pressed": "@theme-text-inverted-normal"
+      },
+      "verification-text": {
+        "#hovered": "@theme-text-inverted-normal",
+        "#pressed": "@theme-text-inverted-normal"
+      },
+      "log-text": {
+        "#hovered": "@theme-text-inverted-normal",
+        "#pressed": "@theme-text-inverted-normal"
+      },
+      "direction-text": {
+        "#hovered": "@theme-text-inverted-normal",
+        "#pressed": "@theme-text-inverted-normal"
+      },
+      "duration-text": {
+        "#hovered": "@theme-text-inverted-normal",
+        "#pressed": "@theme-text-inverted-normal"
+      },
+      "time-text": {
+        "#hovered": "@theme-text-inverted-normal",
+        "#pressed": "@theme-text-inverted-normal"
+      },
+      "direction-icon": {
+        "#hovered": "@theme-text-inverted-normal",
+        "#pressed": "@theme-text-inverted-normal"
+      },
+      "notes-icon": {
+        "#hovered": "@theme-text-inverted-normal",
+        "#pressed": "@theme-text-inverted-normal"
+      },
+      "notes-header-text": {
+        "#hovered": "@theme-text-inverted-normal",
+        "#pressed": "@theme-text-inverted-normal"
+      },
+      "ai-text": {
+        "#hovered": "@theme-text-inverted-normal",
+        "#pressed": "@theme-text-inverted-normal"
+      },
+      "notes-text": {
+        "#hovered": "@theme-text-inverted-normal",
+        "#pressed": "@theme-text-inverted-normal"
       }
     }
   }
