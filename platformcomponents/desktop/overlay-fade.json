@@ -18,8 +18,8 @@
       }
     },
     "meetings-reactions": {
-      "gradient-0": "@color-theme-background-reaction-normal-0",
-      "gradient-1": "@color-theme-background-reaction-normal-1"
+      "gradient-0": "@color-theme-background-overlay-reaction-normal-0",
+      "gradient-1": "@color-theme-background-overlay-reaction-normal-1"
     }
   }
 }

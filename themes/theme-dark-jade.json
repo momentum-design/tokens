@@ -1,5 +1,5 @@
 {
   "accent": "Jade",
   "theme": "Dark",
-  "files": ["node_modules/@momentum-design/tokens/dist/json-minimal/theme/webex/dark-stable.json", "theme-data/dark/dark-jade.json"]
+  "files": ["node_modules/@momentum-design/tokens/dist/json-minimal/theme/webex/dark-stable.json", "theme-data/dark/dark-jade.json", "theme-data/dark/dark-override.json"]
 }

@@ -1,15 +1,29 @@
 {
-  "theme": {
-    "gradation": {
-      "primary": "@color-gradation-jade-dark-primary",
-      "secondary": "@color-gradation-jade-dark-secondary"
-    },
-    "groupedbackground": {
-      "primary": {
-        "normal": "@color-solid-jade-dark-primary"
+  "color": {
+    "theme": {
+      "background": {
+        "gradient": {
+          "primary": {
+            "normal": {
+              "0": "#001C18",
+              "1": "#021412"
+            }
+          },
+          "secondary": {
+            "normal": {
+              "0": "#122925",
+              "1": "#021412"
+            }
+          }
+        }
       },
-      "secondary": {
-        "normal": "@color-solid-jade-dark-secondary"
+      "groupedbackground": {
+        "primary": {
+          "normal": "#021412"
+        },
+        "secondary": {
+          "normal": "#05201C"
+        }
       }
     }
   }

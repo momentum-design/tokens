@@ -1,5 +1,5 @@
 {
   "accent": "Bronze",
   "theme": "Light",
-  "files": ["node_modules/@momentum-design/tokens/dist/json-minimal/theme/webex/light-stable.json", "theme-data/light/light-bronze.json"]
+  "files": ["node_modules/@momentum-design/tokens/dist/json-minimal/theme/webex/light-stable.json", "theme-data/light/light-bronze.json", "theme-data/light/light-override.json"]
 }
