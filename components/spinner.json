@@ -4,7 +4,7 @@
     "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=6262%3A29209",
     "loading": {
       "cursor": "@color-theme-outline-input-active",
-      "track": "@color-theme-control-spinner-inactive-normal"
+      "track": "@color-theme-control-indicator-inactive-normal"
     },
     "loading-common": {
       "cursor": "@color-theme-common-inverted-text-primary-normal",
@@ -12,7 +12,7 @@
     },
     "progress": {
       "cursor": "@color-theme-control-active-normal",
-      "track": "@color-theme-control-spinner-inactive-normal"
+      "track": "@color-theme-control-indicator-inactive-normal"
     }
   }
 }
