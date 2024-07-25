@@ -598,6 +598,11 @@ if (target.themes.length === 0) {
   process.exit(1);
 }
 
+let coreTokens = loadFile("node_modules/@momentum-design/tokens/dist/json-minimal/core/complete.json", false);
+// Then flatten all the tokens
+const flattenedCoreTokens = {};
+flattenObject("", coreTokens, flattenedCoreTokens);
+
 // load the component files
 // console.log("=== Loading component files ==============");
 let componentData = loadFile("components", true);
@@ -653,11 +658,13 @@ target.themes.forEach((themeFileName) => {
     }
   });
 
+  const resolvedCoreColorThemeData = resolveValue(themeData, themeData, coreTokens, flattenedCoreTokens);
+
   const flattenedThemeTokens = {};
   if (target.platform === "win-hc") {
-    flattenHCObject("", themeData, flattenedThemeTokens);
+    flattenHCObject("", resolvedCoreColorThemeData, flattenedThemeTokens);
   } else {
-    flattenObject("", themeData, flattenedThemeTokens);
+    flattenObject("", resolvedCoreColorThemeData, flattenedThemeTokens);
   }
 
   // unify structure

@@ -57,13 +57,6 @@
             "1": "#0353A8e6"
           }
         }
-      },
-      "control": {
-        "spinner": {
-          "inactive": {
-            "normal": "#8F8F8F"
-          }
-        }
       }
     }
   }

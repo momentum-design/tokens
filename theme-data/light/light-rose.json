@@ -5,24 +5,24 @@
         "gradient": {
           "primary": {
             "normal": {
-              "0": "#FCEBF5",
-              "1": "#FFFFFF"
+              "0": "@color-gradient-rose-light-primary-0",
+              "1": "@color-gradient-rose-light-primary-1"
             }
           },
           "secondary": {
             "normal": {
-              "0": "#FFF9FD",
-              "1": "#FFFFFF"
+              "0": "@color-gradient-rose-light-secondary-0",
+              "1": "@color-gradient-rose-light-secondary-1"
             }
           }
         }
       },
       "groupedbackground": {
         "primary": {
-          "normal": "#FCEBF5"
+          "normal": "@color-mobile-rose-light-primary"
         },
         "secondary": {
-          "normal": "#FFF9FD"
+          "normal": "@color-mobile-rose-light-primary"
         }
       }
     }
