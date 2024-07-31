@@ -29,7 +29,7 @@
           "hover": "@color-hc-PlaceholderColor"
         },
         "secondary-light": "@color-hc-SystemColorButtonTextColor",
-        "secondary-dark": "@color-hc-SystemColorHighlightTextColor"
+        "secondary-dark": "@color-hc-SystemColorButtonTextColor"
       },
       "overlay": {
         "primary": {
@@ -98,8 +98,8 @@
       },
       "background": {
         "solid": {
-          "secondary-dark": "@color-hc-SystemColorWindowTextColor",
-          "primary-light": "@color-hc-SystemColorWindowTextColor"
+          "secondary-dark": "@color-hc-SystemColorWindowColor",
+          "primary-light": "@color-hc-SystemColorWindowColor"
         },
         "alert-share": {
           "normal": "@color-hc-PlaceholderColor"
