@@ -51,7 +51,12 @@ function flattenObject(objectPath, childObject, flattenedTokens, uiState) {
       if (typeof value === "object") {
         flattenObject(childPath, value, flattenedTokens, uiState);
       } else {
-        flattenedTokens[uiState ? childPath + "-" + uiState : childPath] = value;
+        if (target.platform == "win-hc" && typeof value === "string" && (value.includes("-0") || value.includes("-1"))) {
+          var tokenValue = value.replace("-0", "").replace("-1", "");
+          flattenedTokens[childPath] = tokenValue;
+        } else {
+          flattenedTokens[uiState ? childPath + "-" + uiState : childPath] = value;
+        }
       }
     }
   });
@@ -253,7 +258,6 @@ function resolveGradient(currentToken) {
       }
 
       resolvedToken[key] = resolveGradient(value);
-      /*
       if (typeof value === "string" && value.startsWith("linear-gradient")) {
         let gradientParts = value.split(",");
         gradientParts.shift();
@@ -267,18 +271,11 @@ function resolveGradient(currentToken) {
         console.log(key + ": " + gradientParts + " more parts");
 
         gradientParts.forEach((part, index) => {
-          if (index == 0) {
-            resolvedToken[key + "-" + 0] = resolveGradient(part);
-          } else if (index == gradientParts.length - 1) {
-            resolvedToken[key + "-" + 1] = resolveGradient(part);
-          } else {
-            resolvedToken[key + "-0." + index] = resolveGradient(part);
-          }
+          resolvedToken[key + "-" + index] = resolveGradient(part);
         });
       } else {
         resolvedToken[key] = resolveGradient(value);
       }
-          */
     });
 
     return resolvedToken;

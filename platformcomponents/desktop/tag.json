@@ -15,7 +15,7 @@
       }
     },
     "overlay": {
-      "background": "@color-theme-background-common-normal",
+      "background": "@color-theme-common-background-solid-light",
       "text": "@color-theme-common-inverted-text-primary-normal",
       "border": "@color-theme-common-control-share-content-inactive"
     },
