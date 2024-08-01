@@ -2,12 +2,6 @@
   "color": {
     "theme": {
       "background": {
-        "reaction": {
-          "normal": {
-            "0": "#1A1A1Ae6",
-            "1": "#8F8F8F00"
-          }
-        },
         "overlay": {
           "reaction": {
             "normal": {
@@ -23,38 +17,6 @@
             "active": {
               "normal": "#FFFFFF33"
             }
-          }
-        }
-      },
-      "gradientdivider": {
-        "error": {
-          "normal": {
-            "0": "#FC8B9800",
-            "1": "#FC8B9899"
-          },
-          "hover": {
-            "0": "#FC8B9800",
-            "1": "#FC8B98e6"
-          }
-        },
-        "warning": {
-          "normal": {
-            "0": "#F2990A00",
-            "1": "#F2990A99"
-          },
-          "hover": {
-            "0": "#F2990A00",
-            "1": "#F2990Ae6"
-          }
-        },
-        "announce": {
-          "normal": {
-            "0": "#64B4FA00",
-            "1": "#3492EB99"
-          },
-          "hover": {
-            "0": "#64B4FA00",
-            "1": "#3492EBe6"
           }
         }
       }

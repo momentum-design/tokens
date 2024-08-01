@@ -28,17 +28,11 @@
     "theme": {
       "background": {
         "reaction": {
-          "normal": {
-            "0": "@color-hc-PlaceholderColor",
-            "1": "@color-hc-PlaceholderColor"
-          }
+          "normal": "@color-hc-PlaceholderColor"
         },
         "overlay": {
           "reaction": {
-            "normal": {
-              "0": "@color-hc-PlaceholderColor",
-              "1": "@color-hc-PlaceholderColor"
-            }
+            "normal": "@color-hc-PlaceholderColor"
           }
         }
       }

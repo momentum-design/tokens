@@ -4,8 +4,8 @@
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=41139%3A50175",
     "divider": {
       "default": {
-        "#normal": ["@color-theme-gradientdivider-normal-0", "@color-theme-gradientdivider-normal-1"],
-        "#hovered": ["@color-theme-gradientdivider-hover-0", "@color-theme-gradientdivider-hover-1"]
+        "#normal": ["@color-theme-gradientdivider-default-normal-0", "@color-theme-gradientdivider-default-normal-1"],
+        "#hovered": ["@color-theme-gradientdivider-default-hover-0", "@color-theme-gradientdivider-default-hover-1"]
       },
       "announce": {
         "#normal": ["@color-theme-gradientdivider-announce-normal-0", "@color-theme-gradientdivider-announce-normal-1"],
