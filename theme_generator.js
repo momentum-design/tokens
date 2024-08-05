@@ -336,7 +336,7 @@ function resolveValue(currentToken, allTokens, coreTokens, flattenedCoreTokens) 
           if (groupValue) {
             if (groupValue[0] != "@") {
               console.error(currentToken + " could not be found. Tried resolving via " + groupParts.join("-") + " but that was not a reference");
-              //process.exit(1);
+              process.exit(1);
             }
             const substituteParts = groupValue.slice(1).split("-").concat(keyParts.slice(-i));
             const substituteName = substituteParts.join("-");
@@ -655,12 +655,11 @@ target.themes.forEach((themeFileName) => {
     }
   });
 
-  const resolvedCoreColorThemeData = resolveValue(themeData, themeData, coreTokens, flattenedCoreTokens);
-
   const flattenedThemeTokens = {};
   if (target.platform === "win-hc") {
-    flattenHCObject("", resolvedCoreColorThemeData, flattenedThemeTokens);
+    flattenHCObject("", themeData, flattenedThemeTokens);
   } else {
+    const resolvedCoreColorThemeData = resolveValue(themeData, themeData, coreTokens, flattenedCoreTokens);
     flattenObject("", resolvedCoreColorThemeData, flattenedThemeTokens);
   }
 
