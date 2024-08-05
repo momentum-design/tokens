@@ -15,6 +15,15 @@
       }
     },
     "item": {
+      "success-indicator": {
+        "#normal": "@theme-text-success-normal"
+      },
+      "warning-indicator": {
+        "#normal": "@theme-text-warning-normal"
+      },
+      "error-indicator": {
+        "#normal": "@theme-text-error-normal"
+      },
       "background": {
         "#normal": "@color-theme-background-primary-ghost",
         "#hovered": "@color-theme-background-primary-hover",
