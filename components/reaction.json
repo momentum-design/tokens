@@ -5,16 +5,16 @@
     "badge": {
       "primary": {
         "#normal": {
-          "background": "@theme-background-secondary-normal",
-          "unreacted-text": "@theme-text-primary-normal",
-          "reacted-text": "@theme-text-accent-normal",
-          "border": "@theme-outline-secondary-normal"
+          "background": "@color-theme-background-secondary-normal",
+          "unreacted-text": "@color-theme-text-primary-normal",
+          "reacted-text": "@color-theme-text-accent-normal",
+          "border": "@color-theme-outline-secondary-normal"
         },
         "#hovered": {
-          "background": "@theme-background-secondary-hover"
+          "background": "@color-theme-background-secondary-hover"
         },
         "#pressed": {
-          "background": "@theme-background-secondary-active"
+          "background": "@color-theme-background-secondary-active"
         }
       }
     }

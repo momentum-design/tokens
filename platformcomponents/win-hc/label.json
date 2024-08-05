@@ -3,11 +3,11 @@
     "comment": "Applied to non editable pieces of text.",
     "primary": {
       "#pressed": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       },
       "warning": {
         "#normal": {
-          "text": "@theme-background-solid-primary-normal"
+          "text": "@color-theme-background-solid-primary-normal"
         }
       }
     }

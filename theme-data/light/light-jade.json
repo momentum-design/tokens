@@ -1,15 +1,29 @@
 {
-  "theme": {
-    "gradation": {
-      "primary": "@color-gradation-jade-light-primary",
-      "secondary": "@color-gradation-jade-light-secondary"
-    },
-    "groupedbackground": {
-      "primary": {
-        "normal": "@color-solid-jade-light-primary"
+  "color": {
+    "theme": {
+      "background": {
+        "gradient": {
+          "primary": {
+            "normal": {
+              "0": "@color-gradient-jade-light-primary-0",
+              "1": "@color-gradient-jade-light-primary-1"
+            }
+          },
+          "secondary": {
+            "normal": {
+              "0": "@color-gradient-jade-light-secondary-0",
+              "1": "@color-gradient-jade-light-secondary-1"
+            }
+          }
+        }
       },
-      "secondary": {
-        "normal": "@color-solid-jade-light-secondary"
+      "groupedbackground": {
+        "primary": {
+          "normal": "@color-mobile-jade-light-primary"
+        },
+        "secondary": {
+          "normal": "@color-mobile-jade-light-primary"
+        }
       }
     }
   }

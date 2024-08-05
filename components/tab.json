@@ -4,94 +4,94 @@
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4459%3A13574",
     "active": {
       "#normal": {
-        "background": "@theme-button-secondary-active-normal",
-        "text": "@theme-text-primary-normal"
+        "background": "@color-theme-button-secondary-active-normal",
+        "text": "@color-theme-text-primary-normal"
       },
       "#hovered": {
-        "background": "@theme-button-secondary-active-hover",
-        "text": "@theme-text-primary-normal"
+        "background": "@color-theme-button-secondary-active-hover",
+        "text": "@color-theme-text-primary-normal"
       },
       "#pressed": {
-        "background": "@theme-button-secondary-pressed",
-        "text": "@theme-text-primary-normal"
+        "background": "@color-theme-button-secondary-pressed",
+        "text": "@color-theme-text-primary-normal"
       }
     },
     "inactive": {
       "#normal": {
-        "background": "@theme-button-secondary-normal",
-        "text": "@theme-text-secondary-normal"
+        "background": "@color-theme-button-secondary-normal",
+        "text": "@color-theme-text-secondary-normal"
       },
       "#hovered": {
-        "background": "@theme-button-secondary-hover",
-        "text": "@theme-text-primary-normal"
+        "background": "@color-theme-button-secondary-hover",
+        "text": "@color-theme-text-primary-normal"
       },
       "#pressed": {
-        "background": "@theme-button-secondary-pressed",
-        "text": "@theme-text-primary-normal"
+        "background": "@color-theme-button-secondary-pressed",
+        "text": "@color-theme-text-primary-normal"
       },
       "#disabled": {
-        "text": "@theme-text-primary-disabled"
+        "text": "@color-theme-text-primary-disabled"
       }
     },
     "refresh": {
-      "#normal": "@theme-text-success-normal",
-      "#hovered": "@theme-text-success-hover",
-      "#pressed": "@theme-text-success-active"
+      "#normal": "@color-theme-text-success-normal",
+      "#hovered": "@color-theme-text-success-hover",
+      "#pressed": "@color-theme-text-success-active"
     },
     "orange": {
-      "#normal": "@theme-text-team-orange-normal",
-      "#hovered": "@theme-text-team-orange-hover",
-      "#pressed": "@theme-text-team-orange-active"
+      "#normal": "@color-theme-text-team-orange-normal",
+      "#hovered": "@color-theme-text-team-orange-hover",
+      "#pressed": "@color-theme-text-team-orange-active"
     },
     "gold": {
-      "#normal": "@theme-text-team-gold-normal",
-      "#hovered": "@theme-text-team-gold-hover",
-      "#pressed": "@theme-text-team-gold-active"
+      "#normal": "@color-theme-text-team-gold-normal",
+      "#hovered": "@color-theme-text-team-gold-hover",
+      "#pressed": "@color-theme-text-team-gold-active"
     },
     "lime": {
-      "#normal": "@theme-text-team-lime-normal",
-      "#hovered": "@theme-text-team-lime-hover",
-      "#pressed": "@theme-text-team-lime-active"
+      "#normal": "@color-theme-text-team-lime-normal",
+      "#hovered": "@color-theme-text-team-lime-hover",
+      "#pressed": "@color-theme-text-team-lime-active"
     },
     "mint": {
-      "#normal": "@theme-text-team-mint-normal",
-      "#hovered": "@theme-text-team-mint-hover",
-      "#pressed": "@theme-text-team-mint-active"
+      "#normal": "@color-theme-text-team-mint-normal",
+      "#hovered": "@color-theme-text-team-mint-hover",
+      "#pressed": "@color-theme-text-team-mint-active"
     },
     "cyan": {
-      "#normal": "@theme-text-team-cyan-normal",
-      "#hovered": "@theme-text-team-cyan-hover",
-      "#pressed": "@theme-text-team-cyan-active"
+      "#normal": "@color-theme-text-team-cyan-normal",
+      "#hovered": "@color-theme-text-team-cyan-hover",
+      "#pressed": "@color-theme-text-team-cyan-active"
     },
     "pink": {
-      "#normal": "@theme-text-team-pink-normal",
-      "#hovered": "@theme-text-team-pink-hover",
-      "#pressed": "@theme-text-team-pink-active"
+      "#normal": "@color-theme-text-team-pink-normal",
+      "#hovered": "@color-theme-text-team-pink-hover",
+      "#pressed": "@color-theme-text-team-pink-active"
     },
     "slate": {
-      "#normal": "@theme-text-team-slate-normal",
-      "#hovered": "@theme-text-team-slate-hover",
-      "#pressed": "@theme-text-team-slate-active"
+      "#normal": "@color-theme-text-team-slate-normal",
+      "#hovered": "@color-theme-text-team-slate-hover",
+      "#pressed": "@color-theme-text-team-slate-active"
     },
     "violet": {
-      "#normal": "@theme-text-team-violet-normal",
-      "#hovered": "@theme-text-team-violet-hover",
-      "#pressed": "@theme-text-team-violet-active"
+      "#normal": "@color-theme-text-team-violet-normal",
+      "#hovered": "@color-theme-text-team-violet-hover",
+      "#pressed": "@color-theme-text-team-violet-active"
     },
     "cobalt": {
-      "#normal": "@theme-text-team-cobalt-normal",
-      "#hovered": "@theme-text-team-cobalt-hover",
-      "#pressed": "@theme-text-team-cobalt-active"
+      "#normal": "@color-theme-text-team-cobalt-normal",
+      "#hovered": "@color-theme-text-team-cobalt-hover",
+      "#pressed": "@color-theme-text-team-cobalt-active"
     },
     "purple": {
-      "#normal": "@theme-text-team-purple-normal",
-      "#hovered": "@theme-text-team-purple-hover",
-      "#pressed": "@theme-text-team-purple-active"
+      "#normal": "@color-theme-text-team-purple-normal",
+      "#hovered": "@color-theme-text-team-purple-hover",
+      "#pressed": "@color-theme-text-team-purple-active"
     },
     "default": {
-      "#normal": "@theme-text-primary-normal",
-      "#hovered": "@theme-text-primary-normal",
-      "#pressed": "@theme-text-primary-normal"
+      "#normal": "@color-theme-text-primary-normal",
+      "#hovered": "@color-theme-text-primary-normal",
+      "#pressed": "@color-theme-text-primary-normal"
     }
   }
 }

@@ -3,53 +3,53 @@
     "comment": "Applied to individual items in Lists (one line), Lists (two line), Search result lists, Lists (three+ lines), Avatar Lists, Menu lists",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4441%3A1011",
     "#normal": {
-      "background": "@theme-background-primary-ghost",
-      "textprimary": "@theme-text-primary-normal",
-      "textsecondary": "@theme-text-secondary-normal",
-      "textsecondarycompany": "@theme-text-warning-normal",
-      "textmissed": "@theme-text-error-normal",
-      "tick": "@theme-control-active-normal",
-      "icon": "@theme-text-primary-normal",
-      "dotdivider": "@theme-outline-primary-normal"
+      "background": "@color-theme-background-primary-ghost",
+      "textprimary": "@color-theme-text-primary-normal",
+      "textsecondary": "@color-theme-text-secondary-normal",
+      "textsecondarycompany": "@color-theme-text-warning-normal",
+      "textmissed": "@color-theme-text-error-normal",
+      "tick": "@color-theme-control-active-normal",
+      "icon": "@color-theme-text-primary-normal",
+      "dotdivider": "@color-theme-outline-primary-normal"
     },
     "#hovered": {
-      "background": "@theme-background-primary-hover",
-      "textprimary": "@theme-text-primary-normal",
-      "textsecondary": "@theme-text-secondary-normal",
-      "textsecondarycompany": "@theme-text-warning-normal",
-      "textmissed": "@theme-text-error-normal",
-      "tick": "@theme-control-active-normal",
-      "icon": "@theme-text-primary-normal",
-      "dotdivider": "@theme-outline-primary-normal"
+      "background": "@color-theme-background-primary-hover",
+      "textprimary": "@color-theme-text-primary-normal",
+      "textsecondary": "@color-theme-text-secondary-normal",
+      "textsecondarycompany": "@color-theme-text-warning-normal",
+      "textmissed": "@color-theme-text-error-normal",
+      "tick": "@color-theme-control-active-normal",
+      "icon": "@color-theme-text-primary-normal",
+      "dotdivider": "@color-theme-outline-primary-normal"
     },
     "#focused": {
-      "background": "@theme-background-primary-hover",
-      "textprimary": "@theme-text-primary-normal",
-      "textsecondary": "@theme-text-secondary-normal",
-      "textsecondarycompany": "@theme-text-warning-normal",
-      "tick": "@theme-control-active-normal",
-      "icon": "@theme-text-primary-normal",
-      "dotdivider": "@theme-outline-primary-normal"
+      "background": "@color-theme-background-primary-hover",
+      "textprimary": "@color-theme-text-primary-normal",
+      "textsecondary": "@color-theme-text-secondary-normal",
+      "textsecondarycompany": "@color-theme-text-warning-normal",
+      "tick": "@color-theme-control-active-normal",
+      "icon": "@color-theme-text-primary-normal",
+      "dotdivider": "@color-theme-outline-primary-normal"
     },
     "#pressed": {
-      "background": "@theme-background-primary-active",
-      "textprimary": "@theme-text-primary-normal",
-      "textsecondary": "@theme-text-secondary-normal",
-      "textsecondarycompany": "@theme-text-warning-normal",
-      "textmissed": "@theme-text-error-normal",
-      "tick": "@theme-control-active-normal",
-      "icon": "@theme-text-primary-normal",
-      "dotdivider": "@theme-outline-primary-normal"
+      "background": "@color-theme-background-primary-active",
+      "textprimary": "@color-theme-text-primary-normal",
+      "textsecondary": "@color-theme-text-secondary-normal",
+      "textsecondarycompany": "@color-theme-text-warning-normal",
+      "textmissed": "@color-theme-text-error-normal",
+      "tick": "@color-theme-control-active-normal",
+      "icon": "@color-theme-text-primary-normal",
+      "dotdivider": "@color-theme-outline-primary-normal"
     },
     "#disabled": {
-      "background": "@theme-background-primary-ghost",
-      "textprimary": "@theme-text-primary-disabled",
-      "textsecondary": "@theme-text-primary-disabled",
-      "textsecondarycompany": "@theme-text-primary-disabled",
-      "textmissed": "@theme-text-primary-disabled",
-      "tick": "@theme-text-primary-disabled",
-      "icon": "@theme-text-primary-disabled",
-      "dotdivider": "@theme-outline-primary-normal"
+      "background": "@color-theme-background-primary-ghost",
+      "textprimary": "@color-theme-text-primary-disabled",
+      "textsecondary": "@color-theme-text-primary-disabled",
+      "textsecondarycompany": "@color-theme-text-primary-disabled",
+      "textmissed": "@color-theme-text-primary-disabled",
+      "tick": "@color-theme-text-primary-disabled",
+      "icon": "@color-theme-text-primary-disabled",
+      "dotdivider": "@color-theme-outline-primary-normal"
     }
   }
 }

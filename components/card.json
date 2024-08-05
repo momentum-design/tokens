@@ -4,35 +4,35 @@
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=5173%3A12345",
     "inactive": {
       "#normal": {
-        "background": "@theme-background-secondary-normal"
+        "background": "@color-theme-background-secondary-normal"
       },
       "#hovered": {
-        "background": "@theme-background-secondary-hover"
+        "background": "@color-theme-background-secondary-hover"
       },
       "#active": {
-        "background": "@theme-background-secondary-active"
+        "background": "@color-theme-background-secondary-active"
       }
     },
     "success": {
       "#normal": {
-        "background": "@theme-background-alert-success-normal"
+        "background": "@color-theme-background-alert-success-normal"
       },
       "#hovered": {
-        "background": "@theme-background-alert-success-hover"
+        "background": "@color-theme-background-alert-success-hover"
       },
       "#active": {
-        "background": "@theme-background-alert-success-active"
+        "background": "@color-theme-background-alert-success-active"
       }
     },
     "transparent": {
       "#normal": {
-        "background": "@theme-background-primary-ghost"
+        "background": "@color-theme-background-primary-ghost"
       },
       "#hovered": {
-        "background": "@theme-background-primary-hover"
+        "background": "@color-theme-background-primary-hover"
       },
       "#active": {
-        "background": "@theme-background-primary-active"
+        "background": "@color-theme-background-primary-active"
       }
     }
   }

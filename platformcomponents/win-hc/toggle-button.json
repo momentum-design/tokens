@@ -1,40 +1,40 @@
 {
- "toggleButton": {
-  "inactive": {
-   "#normal": {
-    "text": "@theme-common-hc-buttonText",
-    "background": "@theme-common-hc-buttonFace"
-   },
-   "#hovered": {
-    "text": "@theme-common-hc-highlightText",
-    "background": "@theme-common-hc-highlight"
-   },
-   "#pressed": {
-    "text": "@theme-common-hc-highlightText",
-    "background": "@theme-common-hc-highlight"
-   },
-   "#disabled": {
-    "text": "@theme-text-primary-disabled",
-    "background": "@theme-common-hc-buttonFace"
-   }
-  },
-  "active": {
-   "#normal": {
-    "text": "@theme-common-hc-highlightText",
-    "background": "@theme-common-hc-highlight"
-   },
-   "#hovered": {
-    "text": "@theme-common-hc-highlightText",
-    "background": "@theme-common-hc-highlight"
-   },
-   "#pressed": {
-    "text": "@theme-common-hc-highlightText",
-    "background": "@theme-common-hc-highlight"
-   },
-   "#disabled": {
-    "text": "@theme-text-primary-disabled",
-    "background": "@theme-common-hc-buttonFace"
-   }
+  "toggleButton": {
+    "inactive": {
+      "#normal": {
+        "text": "@theme-common-hc-buttonText",
+        "background": "@theme-common-hc-buttonFace"
+      },
+      "#hovered": {
+        "text": "@theme-common-hc-highlightText",
+        "background": "@theme-common-hc-highlight"
+      },
+      "#pressed": {
+        "text": "@theme-common-hc-highlightText",
+        "background": "@theme-common-hc-highlight"
+      },
+      "#disabled": {
+        "text": "@color-theme-text-primary-disabled",
+        "background": "@theme-common-hc-buttonFace"
+      }
+    },
+    "active": {
+      "#normal": {
+        "text": "@theme-common-hc-highlightText",
+        "background": "@theme-common-hc-highlight"
+      },
+      "#hovered": {
+        "text": "@theme-common-hc-highlightText",
+        "background": "@theme-common-hc-highlight"
+      },
+      "#pressed": {
+        "text": "@theme-common-hc-highlightText",
+        "background": "@theme-common-hc-highlight"
+      },
+      "#disabled": {
+        "text": "@color-theme-text-primary-disabled",
+        "background": "@theme-common-hc-buttonFace"
+      }
+    }
   }
- }
 }

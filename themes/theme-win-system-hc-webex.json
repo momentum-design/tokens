@@ -1,5 +1,5 @@
 {
   "accent": "Webex",
   "theme": "SystemHighContrast",
-  "files": ["theme-data/win-system-hc/win-system-hc-common.json"]
+  "files": ["node_modules/@momentum-design/tokens/dist/json/theme/webex/hc-dark-stable.json", "theme-data/win-system-hc/win-system-hc-common.json"]
 }

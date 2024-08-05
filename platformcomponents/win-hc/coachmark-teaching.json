@@ -3,21 +3,21 @@
     "button": {
       "primary": {
         "#hovered": {
-          "text": "@theme-text-inverted-normal"
+          "text": "@color-theme-inverted-text-primary-normal"
         },
         "#pressed": {
-          "text": "@theme-text-inverted-normal"
+          "text": "@color-theme-inverted-text-primary-normal"
         }
       },
       "secondary": {
         "#normal": {
-          "text": "@theme-text-primary-normal"
+          "text": "@color-theme-text-primary-normal"
         },
         "#hovered": {
-          "text": "@theme-text-inverted-normal"
+          "text": "@color-theme-inverted-text-primary-normal"
         },
         "#pressed": {
-          "text": "@theme-text-inverted-normal"
+          "text": "@color-theme-inverted-text-primary-normal"
         }
       }
     }

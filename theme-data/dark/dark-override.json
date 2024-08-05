@@ -1,0 +1,25 @@
+{
+  "color": {
+    "theme": {
+      "background": {
+        "overlay": {
+          "reaction": {
+            "normal": {
+              "0": "#000000e6",
+              "1": "#00000000"
+            }
+          }
+        }
+      },
+      "common": {
+        "button": {
+          "secondary": {
+            "active": {
+              "normal": "#FFFFFF33"
+            }
+          }
+        }
+      }
+    }
+  }
+}

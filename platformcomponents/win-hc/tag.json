@@ -10,74 +10,74 @@
     },
     "cobalt": {
       "#hovered": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       },
       "#pressed": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       }
     },
     "lime": {
       "#hovered": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       },
       "#pressed": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       }
     },
     "mint": {
       "#hovered": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       },
       "#pressed": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       }
     },
     "slate": {
       "#hovered": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       },
       "#pressed": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       }
     },
     "violet": {
       "#hovered": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       },
       "#pressed": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       }
     },
     "purple": {
       "#hovered": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       },
       "#pressed": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       }
     },
     "orange": {
       "#hovered": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       },
       "#pressed": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       }
     },
     "gold": {
       "#hovered": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       },
       "#pressed": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       }
     },
     "pink": {
       "#hovered": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       },
       "#pressed": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       }
     }
   }
