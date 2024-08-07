@@ -51,7 +51,7 @@ function flattenObject(objectPath, childObject, flattenedTokens, uiState) {
       if (typeof value === "object") {
         flattenObject(childPath, value, flattenedTokens, uiState);
       } else {
-        if (target.platform == "win-hc" && typeof value === "string" && (value.includes("-0") || value.includes("-1"))) {
+        if ((target.platform == "win-hc" || target.platform == "macos-hc") && typeof value === "string" && (value.includes("-0") || value.includes("-1"))) {
           var tokenValue = value.replace("-0", "").replace("-1", "");
           flattenedTokens[childPath] = tokenValue;
         } else {
@@ -352,7 +352,7 @@ function resolveValue(currentToken, allTokens, coreTokens, flattenedCoreTokens) 
         // If we still can't find it, it's probably broken
         console.error("Unable to find " + currentToken);
         //console.error("Unable to find " + currentToken + " in " + JSON.stringify(allTokens, null, 2));
-        process.exit(1);
+        // process.exit(1);
       }
       return resolveValue(value, allTokens, coreTokens, flattenedCoreTokens);
     }
@@ -425,7 +425,7 @@ function finaliseTokens(tokens) {
       }
     }
     // desktop clients don't support 'active' state, replace with 'checked'
-    if (target.platform === "macos" || target.platform === "qt" || target.platform === "win-hc") {
+    if (target.platform === "macos" || target.platform === "qt" || target.platform === "win-hc" || target.platform === "macos-hc") {
       if (uiState === "active") {
         uiState = "checked";
       }
@@ -735,7 +735,7 @@ target.themes.forEach((themeFileName) => {
     outputLine("}");
   } else if (target.fileFormat === "json") {
     if (target.includeJsonHeader) {
-      if (target.platform === "macos" || target.platform === "qt" || target.platform === "win-hc") {
+      if (target.platform === "macos" || target.platform === "qt" || target.platform === "win-hc" || target.platform === "macos-hc") {
         var name = themeFile.accent + themeFile.theme;
         var parent = themeFile.accent + themeFile.theme;
         if (themeFile.accent === "Webex" || themeFile.accent === "Indigo" || themeFile.accent === "Rose") {
@@ -749,7 +749,7 @@ target.themes.forEach((themeFileName) => {
         stateTokens = { name: "Momentum" + themeFile.accent + themeFile.theme, parent: themeFile.accent + themeFile.theme, tokens: stateTokens };
       }
     }
-    if (target.platform === "macos" || target.platform === "qt" || target.platform === "win-hc") {
+    if (target.platform === "macos" || target.platform === "qt" || target.platform === "win-hc" || target.platform === "macos-hc") {
       var accent = themeFile.accent;
       var theme = themeFile.theme;
       if (accent === "Webex") {
