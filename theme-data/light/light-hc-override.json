@@ -1,0 +1,13 @@
+{
+  "color": {
+    "theme": {
+      "background": {
+        "overlay": {
+          "reaction": {
+            "normal": "#ffffff"
+          }
+        }
+      }
+    }
+  }
+}

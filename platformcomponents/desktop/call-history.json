@@ -16,13 +16,13 @@
     },
     "item": {
       "success-indicator": {
-        "#normal": "@theme-text-success-normal"
+        "#normal": "@color-theme-text-success-normal"
       },
       "warning-indicator": {
-        "#normal": "@theme-text-warning-normal"
+        "#normal": "@color-theme-text-warning-normal"
       },
       "error-indicator": {
-        "#normal": "@theme-text-error-normal"
+        "#normal": "@color-theme-text-error-normal"
       },
       "background": {
         "#normal": "@color-theme-background-primary-ghost",
