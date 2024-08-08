@@ -96,7 +96,7 @@
     "viewwindow": {
       "#normal": {
         "active": "@color-theme-common-control-share-content-active",
-        "hovered": "@color-theme-outline-secondary-normal",
+        "hovered": "@color-theme-outline-input-normal",
         "selected": "@color-theme-outline-theme-normal"
       }
     }
