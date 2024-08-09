@@ -4,92 +4,92 @@
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4655%3A8433",
     "defaultStatic": {
       "#normal": {
-        "background": "@theme-background-alert-default-normal",
-        "text": "@theme-text-primary-normal"
+        "background": "@color-theme-background-alert-default-normal",
+        "text": "@color-theme-text-primary-normal"
       }
     },
     "default": {
       "#normal": {
-        "background": "@theme-background-alert-default-normal",
-        "text": "@theme-text-secondary-normal"
+        "background": "@color-theme-background-alert-default-normal",
+        "text": "@color-theme-text-secondary-normal"
       },
       "#hovered": {
-        "background": "@theme-background-alert-default-hover",
-        "text": "@theme-text-primary-normal"
+        "background": "@color-theme-background-alert-default-hover",
+        "text": "@color-theme-text-primary-normal"
       },
       "#pressed": {
-        "background": "@theme-background-alert-default-active",
-        "text": "@theme-text-primary-normal"
+        "background": "@color-theme-background-alert-default-active",
+        "text": "@color-theme-text-primary-normal"
       }
     },
     "announcement": {
       "#normal": {
-        "background": "@theme-background-alert-theme-normal",
-        "text": "@theme-text-accent-normal"
+        "background": "@color-theme-background-alert-theme-normal",
+        "text": "@color-theme-text-accent-normal"
       },
       "#hovered": {
-        "background": "@theme-background-alert-theme-hover",
-        "text": "@theme-text-accent-hover"
+        "background": "@color-theme-background-alert-theme-hover",
+        "text": "@color-theme-text-accent-hover"
       },
       "#pressed": {
-        "background": "@theme-background-alert-theme-active",
-        "text": "@theme-text-accent-active"
+        "background": "@color-theme-background-alert-theme-active",
+        "text": "@color-theme-text-accent-active"
       }
     },
     "warning": {
       "#normal": {
-        "background": "@theme-background-alert-warning-normal",
-        "text": "@theme-text-warning-normal"
+        "background": "@color-theme-background-alert-warning-normal",
+        "text": "@color-theme-text-warning-normal"
       },
       "#hovered": {
-        "background": "@theme-background-alert-warning-hover",
-        "text": "@theme-text-warning-hover"
+        "background": "@color-theme-background-alert-warning-hover",
+        "text": "@color-theme-text-warning-hover"
       },
       "#pressed": {
-        "background": "@theme-background-alert-warning-active",
-        "text": "@theme-text-warning-active"
+        "background": "@color-theme-background-alert-warning-active",
+        "text": "@color-theme-text-warning-active"
       }
     },
     "important": {
       "#normal": {
-        "background": "@theme-background-alert-error-normal",
-        "text": "@theme-text-error-normal"
+        "background": "@color-theme-background-alert-error-normal",
+        "text": "@color-theme-text-error-normal"
       },
       "#hovered": {
-        "background": "@theme-background-alert-error-hover",
-        "text": "@theme-text-error-hover"
+        "background": "@color-theme-background-alert-error-hover",
+        "text": "@color-theme-text-error-hover"
       },
       "#pressed": {
-        "background": "@theme-background-alert-error-active",
-        "text": "@theme-text-error-active"
+        "background": "@color-theme-background-alert-error-active",
+        "text": "@color-theme-text-error-active"
       }
     },
     "blocked": {
       "#normal": {
-        "background": "@theme-background-alert-warning-normal",
-        "text": "@theme-text-warning-normal"
+        "background": "@color-theme-background-alert-warning-normal",
+        "text": "@color-theme-text-warning-normal"
       },
       "#hovered": {
-        "background": "@theme-background-alert-warning-hover",
-        "text": "@theme-text-warning-hover"
+        "background": "@color-theme-background-alert-warning-hover",
+        "text": "@color-theme-text-warning-hover"
       },
       "#pressed": {
-        "background": "@theme-background-alert-warning-active",
-        "text": "@theme-text-warning-active"
+        "background": "@color-theme-background-alert-warning-active",
+        "text": "@color-theme-text-warning-active"
       }
     },
     "success": {
       "#normal": {
-        "background": "@theme-background-alert-success-normal",
-        "text": "@theme-text-success-normal"
+        "background": "@color-theme-background-alert-success-normal",
+        "text": "@color-theme-text-success-normal"
       },
       "#hovered": {
-        "background": "@theme-background-alert-success-hover",
-        "text": "@theme-text-success-hover"
+        "background": "@color-theme-background-alert-success-hover",
+        "text": "@color-theme-text-success-hover"
       },
       "#pressed": {
-        "background": "@theme-background-alert-success-active",
-        "text": "@theme-text-success-active"
+        "background": "@color-theme-background-alert-success-active",
+        "text": "@color-theme-text-success-active"
       }
     }
   }

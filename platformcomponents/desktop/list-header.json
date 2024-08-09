@@ -3,8 +3,8 @@
     "comment": "Used for list headers",
     "figma": "https://www.figma.com/file/vdL18BATeJAIq2JvGAjRPD/Components---Web?node-id=12652%3A3070",
     "outline": {
-      "primary": "@theme-outline-primary-normal",
-      "secondary": "@theme-outline-secondary-normal"
+      "primary": "@color-theme-outline-primary-normal",
+      "secondary": "@color-theme-outline-secondary-normal"
     }
   }
 }

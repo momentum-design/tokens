@@ -4,17 +4,17 @@
     "figma": "https://www.figma.com/file/H19CutixoN8SJGO5EXwcc8/Components---MacOS?node-id=7813%3A33099",
     "primary": {
       "#normal": {
-        "background": "@theme-background-solid-primary-normal"
+        "background": "@color-theme-background-solid-primary-normal"
       }
     },
     "secondary": {
       "#normal": {
-        "background": "@theme-background-solid-secondary-normal"
+        "background": "@color-theme-background-solid-secondary-normal"
       }
     },
     "tertiary": {
       "#normal": {
-        "background": "@theme-background-solid-tertiary-normal"
+        "background": "@color-theme-background-solid-tertiary-normal"
       }
     }
   }

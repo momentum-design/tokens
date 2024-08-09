@@ -5,7 +5,7 @@
         "background": "@theme-common-hc-buttonFace"
       },
       "#disabled": {
-        "background": "@theme-background-primary-disabled"
+        "background": "@color-theme-background-primary-disabled"
       }
     },
     "thumb": {

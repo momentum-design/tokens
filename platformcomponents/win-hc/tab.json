@@ -2,80 +2,80 @@
   "tab": {
     "active": {
       "#normal": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       },
       "#hovered": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       },
       "#pressed": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       }
     },
     "inactive": {
       "#hovered": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       },
       "#pressed": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       },
       "#disabled": {
-        "text": "@theme-text-primary-disabled"
+        "text": "@color-theme-text-primary-disabled"
       }
     },
     "orange": {
-      "#normal": "@theme-text-primary-normal",
-      "#hovered": "@theme-text-inverted-normal",
-      "#pressed": "@theme-text-inverted-normal"
+      "#normal": "@color-theme-text-primary-normal",
+      "#hovered": "@color-theme-inverted-text-primary-normal",
+      "#pressed": "@color-theme-inverted-text-primary-normal"
     },
     "gold": {
-      "#normal": "@theme-text-primary-normal",
-      "#hovered": "@theme-text-inverted-normal",
-      "#pressed": "@theme-text-inverted-normal"
+      "#normal": "@color-theme-text-primary-normal",
+      "#hovered": "@color-theme-inverted-text-primary-normal",
+      "#pressed": "@color-theme-inverted-text-primary-normal"
     },
     "lime": {
-      "#normal": "@theme-text-primary-normal",
-      "#hovered": "@theme-text-inverted-normal",
-      "#pressed": "@theme-text-inverted-normal"
+      "#normal": "@color-theme-text-primary-normal",
+      "#hovered": "@color-theme-inverted-text-primary-normal",
+      "#pressed": "@color-theme-inverted-text-primary-normal"
     },
     "mint": {
-      "#normal": "@theme-text-primary-normal",
-      "#hovered": "@theme-text-inverted-normal",
-      "#pressed": "@theme-text-inverted-normal"
+      "#normal": "@color-theme-text-primary-normal",
+      "#hovered": "@color-theme-inverted-text-primary-normal",
+      "#pressed": "@color-theme-inverted-text-primary-normal"
     },
     "cyan": {
-      "#normal": "@theme-text-primary-normal",
-      "#hovered": "@theme-text-inverted-normal",
-      "#pressed": "@theme-text-inverted-normal"
+      "#normal": "@color-theme-text-primary-normal",
+      "#hovered": "@color-theme-inverted-text-primary-normal",
+      "#pressed": "@color-theme-inverted-text-primary-normal"
     },
     "pink": {
-      "#normal": "@theme-text-primary-normal",
-      "#hovered": "@theme-text-inverted-normal",
-      "#pressed": "@theme-text-inverted-normal"
+      "#normal": "@color-theme-text-primary-normal",
+      "#hovered": "@color-theme-inverted-text-primary-normal",
+      "#pressed": "@color-theme-inverted-text-primary-normal"
     },
     "slate": {
-      "#normal": "@theme-text-primary-normal",
-      "#hovered": "@theme-text-inverted-normal",
-      "#pressed": "@theme-text-inverted-normal"
+      "#normal": "@color-theme-text-primary-normal",
+      "#hovered": "@color-theme-inverted-text-primary-normal",
+      "#pressed": "@color-theme-inverted-text-primary-normal"
     },
     "violet": {
-      "#normal": "@theme-text-primary-normal",
-      "#hovered": "@theme-text-inverted-normal",
-      "#pressed": "@theme-text-inverted-normal"
+      "#normal": "@color-theme-text-primary-normal",
+      "#hovered": "@color-theme-inverted-text-primary-normal",
+      "#pressed": "@color-theme-inverted-text-primary-normal"
     },
     "cobalt": {
-      "#normal": "@theme-text-primary-normal",
-      "#hovered": "@theme-text-inverted-normal",
-      "#pressed": "@theme-text-inverted-normal"
+      "#normal": "@color-theme-text-primary-normal",
+      "#hovered": "@color-theme-inverted-text-primary-normal",
+      "#pressed": "@color-theme-inverted-text-primary-normal"
     },
     "purple": {
-      "#normal": "@theme-text-primary-normal",
-      "#hovered": "@theme-text-inverted-normal",
-      "#pressed": "@theme-text-inverted-normal"
+      "#normal": "@color-theme-text-primary-normal",
+      "#hovered": "@color-theme-inverted-text-primary-normal",
+      "#pressed": "@color-theme-inverted-text-primary-normal"
     },
     "default": {
-      "#normal": "@theme-text-primary-normal",
-      "#hovered": "@theme-text-inverted-normal",
-      "#pressed": "@theme-text-inverted-normal"
+      "#normal": "@color-theme-text-primary-normal",
+      "#hovered": "@color-theme-inverted-text-primary-normal",
+      "#pressed": "@color-theme-inverted-text-primary-normal"
     }
   }
 }

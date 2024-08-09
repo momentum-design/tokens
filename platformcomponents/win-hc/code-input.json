@@ -1,23 +1,23 @@
 {
   "codeinput": {
     "#hovered": {
-      "text": "@theme-text-inverted-normal"
+      "text": "@color-theme-inverted-text-primary-normal"
     },
     "#active": {
-      "text": "@theme-text-inverted-normal"
+      "text": "@color-theme-inverted-text-primary-normal"
     },
     "#focused": {
-      "text": "@theme-text-inverted-normal"
+      "text": "@color-theme-inverted-text-primary-normal"
     },
     "#disabled": {
-      "text": "@theme-text-primary-disabled"
+      "text": "@color-theme-text-primary-disabled"
     },
     "error": {
       "#hovered": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       },
       "#active": {
-        "text": "@theme-text-inverted-normal"
+        "text": "@color-theme-inverted-text-primary-normal"
       }
     }
   }

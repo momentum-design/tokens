@@ -2,8 +2,8 @@
   "badge": {
     "comment": "applied to blue badges",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4486%3A786",
-    "background": "@theme-background-accent-normal",
-    "text": "@theme-text-inverted-normal",
+    "background": "@color-theme-background-accent-normal",
+    "text": "@color-theme-inverted-text-primary-normal",
     "notification-indicator": "@theme-common-hc-buttonText",
     "success-indicator": "@theme-common-hc-highlight",
     "error-indicator": "@theme-common-hc-highlight",

@@ -5,53 +5,53 @@
 
     "border": {
       "#normal": {
-        "selected": "@theme-outline-share-selected",
-        "active": "@theme-outline-share-active",
-        "inactive": "@theme-outline-share-inactive"
+        "selected": "@color-theme-outline-share-selected",
+        "active": "@color-theme-outline-share-active",
+        "inactive": "@color-theme-outline-share-inactive"
       }
     },
     "control": {
       "text": {
-        "primary": "@theme-common-text-black"
+        "primary": "@color-theme-common-inverted-text-primary-normal"
       },
       "dragger": {
-        "primary": "@theme-common-text-black"
+        "primary": "@color-theme-common-inverted-text-primary-normal"
       },
       "button": {
         "primary": {
           "#normal": {
-            "text": "@theme-common-text-white"
+            "text": "@color-theme-common-text-primary-normal"
           },
           "#disabled": {
-            "border": "@theme-common-outline-disabled-normal"
+            "border": "@color-theme-common-outline-primary-disabled"
           }
         },
         "secondary": {
           "#hovered": {
-            "text": "@theme-common-text-black"
+            "text": "@color-theme-common-inverted-text-primary-normal"
           },
           "#pressed": {
-            "text": "@theme-common-text-black"
+            "text": "@color-theme-common-inverted-text-primary-normal"
           }
         },
         "active": {
           "#normal": {
-            "text": "@theme-common-text-black"
+            "text": "@color-theme-common-inverted-text-primary-normal"
           },
           "#hovered": {
-            "text": "@theme-common-button-secondary-active-normal",
-            "border": "@theme-common-button-secondary-active-normal"
+            "text": "@color-theme-common-button-secondary-active-normal",
+            "border": "@color-theme-common-button-secondary-active-normal"
           },
           "#pressed": {
-            "text": "@theme-common-button-secondary-active-normal",
-            "border": "@theme-common-button-secondary-active-normal"
+            "text": "@color-theme-common-button-secondary-active-normal",
+            "border": "@color-theme-common-button-secondary-active-normal"
           }
         }
       }
     },
     "viewwindow": {
       "#normal": {
-        "hovered": "@theme-outline-theme-normal"
+        "hovered": "@color-theme-outline-theme-normal"
       }
     }
   }

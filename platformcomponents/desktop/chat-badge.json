@@ -4,30 +4,30 @@
     "comment": "Color tokens for a conversation space badges",
     "regular": {
       "#normal": {
-        "background": "@theme-background-secondary-normal",
-        "text": "@theme-text-secondary-normal"
+        "background": "@color-theme-background-secondary-normal",
+        "text": "@color-theme-text-secondary-normal"
       },
       "#hovered": {
-        "background": "@theme-background-secondary-hover",
-        "text": "@theme-text-primary-normal"
+        "background": "@color-theme-background-secondary-hover",
+        "text": "@color-theme-text-primary-normal"
       },
       "#active": {
-        "background": "@theme-background-secondary-active",
-        "text": "@theme-text-primary-normal"
+        "background": "@color-theme-background-secondary-active",
+        "text": "@color-theme-text-primary-normal"
       }
     },
     "important": {
       "#normal": {
-        "background": "@theme-background-alert-theme-normal",
-        "text": "@theme-text-accent-normal"
+        "background": "@color-theme-background-alert-theme-normal",
+        "text": "@color-theme-text-accent-normal"
       },
       "#hovered": {
-        "background": "@theme-background-alert-theme-hover",
-        "text": "@theme-text-accent-hover"
+        "background": "@color-theme-background-alert-theme-hover",
+        "text": "@color-theme-text-accent-hover"
       },
       "#active": {
-        "background": "@theme-background-alert-theme-active",
-        "text": "@theme-text-accent-active"
+        "background": "@color-theme-background-alert-theme-active",
+        "text": "@color-theme-text-accent-active"
       }
     }
   }

@@ -51,7 +51,39 @@ function flattenObject(objectPath, childObject, flattenedTokens, uiState) {
       if (typeof value === "object") {
         flattenObject(childPath, value, flattenedTokens, uiState);
       } else {
-        flattenedTokens[uiState ? childPath + "-" + uiState : childPath] = value;
+        if (target.platform == "win-hc" && typeof value === "string" && (value.includes("-0") || value.includes("-1"))) {
+          var tokenValue = value.replace("-0", "").replace("-1", "");
+          flattenedTokens[childPath] = tokenValue;
+        } else {
+          flattenedTokens[uiState ? childPath + "-" + uiState : childPath] = value;
+        }
+      }
+    }
+  });
+}
+
+function flattenHCObject(objectPath, childObject, flattenedTokens, uiState) {
+  if (childObject == null) {
+    return "";
+  }
+  Object.entries(childObject).forEach(([key, value]) => {
+    if (key.startsWith("#") && typeof value === "object") {
+      if (uiState) {
+        console.error("Picked up uiState " + key + " at " + objectPath + " while already carrying " + uiState);
+        process.exit(1);
+      } else {
+        flattenHCObject(objectPath, value, flattenedTokens, key);
+      }
+    } else {
+      const childPath = objectPath ? objectPath + "-" + key : key;
+      if (typeof value === "object") {
+        flattenHCObject(childPath, value, flattenedTokens, uiState);
+      } else {
+        if (typeof value === "string" && (value.includes("color.highcontrast") || value.includes("color-hc-"))) {
+          var tokenName = childPath.replace("-original-value", "");
+          var tokenValue = value.replace("{color.highcontrast.black.", "").replace("}", "").replace("SystemColor", "").replace("@color-hc-", "");
+          flattenedTokens[tokenName] = tokenValue;
+        }
       }
     }
   });
@@ -76,7 +108,7 @@ function unflattenObject(flattenedTokens) {
 // Loads a JSON file or directory of files and returns an object with the contents of all the files merged together
 function loadFile(fileName, isDirectory) {
   if (isDirectory) {
-    console.log("Loading directory " + fileName);
+    // console.log("Loading directory " + fileName);
     const fileList = fs.readdirSync(fileName, { withFileTypes: true });
     const tokenData = {};
     fileList.forEach((childFile) => {
@@ -84,7 +116,7 @@ function loadFile(fileName, isDirectory) {
     });
     return tokenData;
   } else if (fileName.endsWith(".json")) {
-    console.log("Loading file " + fileName);
+    // console.log("Loading file " + fileName);
     let parsedTokenFile;
     try {
       const tokenFileData = fs.readFileSync(fileName);
@@ -146,6 +178,10 @@ function applyAlpha(tokenGroup, alpha) {
 // Parses a value and normalises the unit if required
 function normaliseUnit(value) {
   if (typeof value === "string" && (value.startsWith("#") || value.startsWith("rgb"))) {
+    if (value.length == 8 && value.startsWith("#")) {
+      let filled = value.slice(0, 1) + "0" + value.slice(1);
+      value = filled;
+    }
     const starPosition = value.indexOf("*");
     let alpha = 1;
     if (starPosition !== -1) {
@@ -160,9 +196,11 @@ function normaliseUnit(value) {
     if (!target.ignoreAlpha) {
       c.alpha = c.alpha * alpha;
     }
+
     if (target.colorFormat === "rgba") {
       return `rgba(${c.values[0]}, ${c.values[1]}, ${c.values[2]}, ${c.alpha})`;
     } else if (target.colorFormat === "object") {
+      c.alpha = Math.round(c.alpha * 100) / 100;
       return { r: c.values[0], g: c.values[1], b: c.values[2], a: c.alpha };
     } else if (target.colorFormat === "hex") {
       r = c.values[0].toString(16).padStart(2, "0");
@@ -205,12 +243,64 @@ function normaliseUnit(value) {
   return value;
 }
 
+function resolveGradient(currentToken) {
+  if (typeof currentToken === "object") {
+    // If this is an object, return a version with all children resolved
+    // If this is an object, return a version with all children resolved
+    const resolvedToken = {};
+    Object.entries(currentToken).forEach(([key, value]) => {
+      if (value == "none") {
+        console.log(key + " value is none");
+      }
+
+      if (value.startsWith("#") && value.length == 8) {
+        console.log(key + ": " + value + " length incorrect");
+      }
+
+      resolvedToken[key] = resolveGradient(value);
+      if (typeof value === "string" && value.startsWith("linear-gradient")) {
+        let gradientParts = value.split(",");
+        gradientParts.shift();
+        gradientParts = gradientParts.map((part) => {
+          trimmed = part
+            .trim()
+            .split(" ")[0]
+            .replace(/[^#a-zA-Z0-9]/g, "");
+          return trimmed;
+        });
+        console.log(key + ": " + gradientParts + " more parts");
+
+        gradientParts.forEach((part, index) => {
+          resolvedToken[key + "-" + index] = resolveGradient(part);
+        });
+      } else {
+        resolvedToken[key] = resolveGradient(value);
+      }
+    });
+
+    return resolvedToken;
+  } else {
+    // if (currentToken == "none") {
+    //   currentToken = "#00000000";
+    // }
+
+    if (currentToken.startsWith("#") && currentToken.length == 8) {
+      currentToken = currentToken.slice(0, 1) + "0" + currentToken.slice(1);
+    }
+
+    return currentToken;
+  }
+}
+
 // Finds references, and returns an object with all references resolved
 // You can probably break this with recursive references, can't be bothered to check
 function resolveValue(currentToken, allTokens, coreTokens, flattenedCoreTokens) {
   if (typeof currentToken === "object") {
     // If this is an object, return a version with all children resolved
     const resolvedToken = {};
+    if (currentToken == null) {
+      return currentToken;
+    }
     Object.entries(currentToken).forEach(([key, value]) => {
       resolvedToken[key] = resolveValue(value, allTokens, coreTokens, flattenedCoreTokens);
     });
@@ -260,7 +350,8 @@ function resolveValue(currentToken, allTokens, coreTokens, flattenedCoreTokens) 
       }
       if (!value) {
         // If we still can't find it, it's probably broken
-        console.error("Unable to find " + currentToken + " in " + JSON.stringify(allTokens, null, 2));
+        console.error("Unable to find " + currentToken);
+        //console.error("Unable to find " + currentToken + " in " + JSON.stringify(allTokens, null, 2));
         process.exit(1);
       }
       return resolveValue(value, allTokens, coreTokens, flattenedCoreTokens);
@@ -274,9 +365,15 @@ function resolveValue(currentToken, allTokens, coreTokens, flattenedCoreTokens) 
 // Changes all borders from border: "color" to border-style: "solid|none", border-color: color
 function fixBorders(tokens) {
   if (typeof tokens === "object") {
+    if (tokens == null) {
+      return "";
+    }
     Object.entries(tokens).forEach(([key, value]) => {
       if (key === "border") {
         if (target.noBorderIsBackgroundColour) {
+          if (value == null) {
+            return "";
+          }
           Object.entries(value).forEach(([borderKey, borderValue]) => {
             if (borderValue === "none") {
               tokens["border"][borderKey] = tokens["background"][borderKey];
@@ -378,7 +475,7 @@ let target = {
 };
 
 if (args.target) {
-  console.log("Loading target " + args.target);
+  // console.log("Loading target " + args.target);
   let targetFile;
   try {
     target = JSON.parse(fs.readFileSync(args.target));
@@ -450,11 +547,11 @@ if (target.fileFormat === "css") {
   target.uiStatesAsObject = false; // Can't have objects in CSS
 }
 
-console.log("Using platform " + target.platform);
-console.log("Using colorFormat " + target.colorFormat);
-console.log("Using sizeUnit " + target.sizeUnit);
-console.log("Using componentGroups " + target.componentGroups);
-console.log("Using fileFormat " + target.fileFormat);
+// console.log("Using platform " + target.platform);
+// console.log("Using colorFormat " + target.colorFormat);
+// console.log("Using sizeUnit " + target.sizeUnit);
+// console.log("Using componentGroups " + target.componentGroups);
+// console.log("Using fileFormat " + target.fileFormat);
 
 let toStdOut = false;
 if (args.toStdOut) {
@@ -498,20 +595,13 @@ if (target.themes.length === 0) {
   process.exit(1);
 }
 
-// Start by loading all the token files
-console.log("=== Loading core files ===================");
-let coreTokens = loadFile("core", true);
-if (target.colorFormat === "names") {
-  useColourNames(coreTokens);
-}
-
+let coreTokens = loadFile("node_modules/@momentum-design/tokens/dist/json-minimal/core/complete.json", false);
 // Then flatten all the tokens
 const flattenedCoreTokens = {};
 flattenObject("", coreTokens, flattenedCoreTokens);
-console.log("=== Core files loaded ====================");
 
-// Then load the component files
-console.log("=== Loading component files ==============");
+// load the component files
+// console.log("=== Loading component files ==============");
 let componentData = loadFile("components", true);
 if (target.includeMobileTokens) {
   try {
@@ -535,13 +625,13 @@ try {
 
 const flattenedComponentTokens = {};
 flattenObject("", componentData, flattenedComponentTokens);
-console.log("=== Component files loaded =================");
+// console.log("=== Component files loaded =================");
 //console.log(JSON.stringify(componentData, null, 2));
 
 const indexFileData = [];
 
 target.themes.forEach((themeFileName) => {
-  console.log("=== Processing theme =====================");
+  // console.log("=== Processing theme =====================");
 
   // Load all the files to build one big object
   let themeFileData = fs.readFileSync(themeFileName);
@@ -554,7 +644,7 @@ target.themes.forEach((themeFileName) => {
     parent.files = parent.files.concat(themeFile.files);
     themeFile = parent;
   }
-  console.log(`Loading theme ${themeFile.accent} ${themeFile.theme} for platform ${target.platform} using color format ${target.colorFormat}`);
+  // console.log(`Loading theme ${themeFile.accent} ${themeFile.theme} for platform ${target.platform} using color format ${target.colorFormat}`);
 
   const themeData = {};
   themeFile.files.forEach((fileName) => {
@@ -564,20 +654,24 @@ target.themes.forEach((themeFileName) => {
       merge(themeData, loadFile(fileName, false));
     }
   });
-  /*console.log('=== After load theme data =====================');
-  console.log(JSON.stringify(themeData, null, 2));*/
-
-  // Resolve all the references
-  const resolvedThemeData = resolveValue(themeData, themeData, coreTokens, flattenedCoreTokens);
-  /*console.log('=== Theme after resolve references ==============');
-  console.log(JSON.stringify(resolvedThemeData, null, 2));*/
 
   const flattenedThemeTokens = {};
-  flattenObject("", resolvedThemeData, flattenedThemeTokens);
+  if (target.platform === "win-hc") {
+    flattenHCObject("", themeData, flattenedThemeTokens);
+  } else {
+    const resolvedCoreColorThemeData = resolveValue(themeData, themeData, coreTokens, flattenedCoreTokens);
+    flattenObject("", resolvedCoreColorThemeData, flattenedThemeTokens);
+  }
 
-  resolvedComponentData = resolveValue(componentData, componentData, resolvedThemeData, flattenedThemeTokens);
-  /*console.log('=== Components after resolve references ==========');
-  console.log(JSON.stringify(resolvedComponentData, null, 2));*/
+  // unify structure
+  // 6 hex to 8 hex, seperate graident colors etc
+  const resolvedThemeData = resolveGradient(flattenedThemeTokens);
+  // console.log(JSON.stringify(resolvedThemeData, null, 2));
+
+  // console.log(JSON.stringify(componentData, null, 2));
+  resolvedComponentData = resolveValue(componentData, componentData, resolvedThemeData, resolvedThemeData);
+  // console.log('=== Components after resolve references ==========');
+  // console.log(JSON.stringify(resolvedComponentData, null, 2));
 
   // Look for borders, and expand to border-style and border-color
   fixBorders(resolvedComponentData);
@@ -682,7 +776,7 @@ target.themes.forEach((themeFileName) => {
   if (!toStdOut) {
     console.log(`Written to ${outputFileName}`);
   }
-  console.log("=== Theme processed ======================");
+  // console.log("=== Theme processed ======================");
 });
 
 if (target.fileFormat === "css") {
