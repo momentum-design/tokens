@@ -1,0 +1,30 @@
+{
+  "themethumbnail": {
+    "comment": "Used for theme thumbnail in setting dialog",
+    "figma": "https://www.figma.com/design/n65Dfj3dnXIrQr8hQFyYuJ/%E2%99%BF%EF%B8%8F-A11y%3A-FCC%C2%A0Accessibility-Issues?node-id=9229-4597&t=BeO3OsyzbJuno6mm-0",
+    "#normal": {
+      "text": "@color-theme-text-primary-normal",
+      "border": "@color-theme-background-primary-ghost"
+    },
+    "#pressed": {
+      "text": "@color-theme-text-secondary-normal",
+      "border": "@color-theme-outline-input-normal"
+    },
+    "#hovered": {
+      "text": "@color-theme-text-primary-normal",
+      "border": "@color-theme-outline-input-normal"
+    },
+    "#focused": {
+      "text": "@color-theme-text-primary-normal",
+      "border": "@color-theme-outline-input-active"
+    },
+    "#checked": {
+      "text": "@color-theme-text-primary-normal",
+      "border": "@color-theme-outline-input-active"
+    },
+    "#disabled": {
+      "text": "@color-theme-text-primary-disabled",
+      "border": "@color-theme-background-primary-ghost"
+    }
+  }
+}
