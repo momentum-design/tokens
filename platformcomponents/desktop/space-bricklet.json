@@ -4,19 +4,19 @@
     "figma": "https://www.figma.com/design/kJd99LcYaYuKWZtGDFs9Eb/SPARK-376071%3A-Teams-Relocation-MVO-for-FCC?node-id=6699-315429&t=kUH62uI7JB0hMK1g-0",
     "title": {
       "#normal": {
-        "unread-text": "@theme-text-primary-normal",
-        "read-text": "@theme-text-secondary-normal"
+        "unread-text": "@color-theme-text-primary-normal",
+        "read-text": "@color-theme-text-secondary-normal"
       }
     },
     "header": {
-      "#normal": "@theme-text-primary-normal"
+      "#normal": "@color-theme-text-primary-normal"
     },
     "background": {
-      "#normal": "@theme-background-primary-ghost",
-      "#hovered": "@theme-background-primary-hover",
-      "#focused": "@theme-background-primary-ghost",
-      "#pressed": "@theme-background-primary-active",
-      "#active": "@theme-background-primary-active"
+      "#normal": "@color-theme-background-primary-ghost",
+      "#hovered": "@color-theme-background-primary-hover",
+      "#focused": "@color-theme-background-primary-ghost",
+      "#pressed": "@color-theme-background-primary-active",
+      "#active": "@color-theme-background-primary-active"
     }
   }
 }

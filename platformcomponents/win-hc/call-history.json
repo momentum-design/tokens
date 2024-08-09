@@ -1,86 +1,86 @@
 {
   "call-history": {
     "comment": "Color tokens for call hstory in Calling tab",
-    "item":{
+    "item": {
       "success-indicator": {
-        "#normal": "@theme-text-secondary-normal",
-        "#hovered": "@theme-text-inverted-normal",
-        "#pressed": "@theme-text-inverted-normal"
+        "#normal": "@color-theme-text-secondary-normal",
+        "#hovered": "@color-theme-inverted-text-primary-normal",
+        "#pressed": "@color-theme-inverted-text-primary-normal"
       },
       "warning-indicator": {
-        "#normal": "@theme-text-secondary-normal",
-        "#hovered": "@theme-text-inverted-normal",
-        "#pressed": "@theme-text-inverted-normal"
+        "#normal": "@color-theme-text-secondary-normal",
+        "#hovered": "@color-theme-inverted-text-primary-normal",
+        "#pressed": "@color-theme-inverted-text-primary-normal"
       },
       "error-indicator": {
-        "#normal": "@theme-text-secondary-normal",
-        "#hovered": "@theme-text-inverted-normal",
-        "#pressed": "@theme-text-inverted-normal"
+        "#normal": "@color-theme-text-secondary-normal",
+        "#hovered": "@color-theme-inverted-text-primary-normal",
+        "#pressed": "@color-theme-inverted-text-primary-normal"
       },
       "header-text": {
-        "#hovered": "@theme-text-inverted-normal",
-        "#pressed": "@theme-text-inverted-normal"
+        "#hovered": "@color-theme-inverted-text-primary-normal",
+        "#pressed": "@color-theme-inverted-text-primary-normal"
       },
       "missed-header-text": {
-        "#normal": "@theme-text-secondary-normal",
-        "#hovered": "@theme-text-inverted-normal",
-        "#pressed": "@theme-text-inverted-normal"
+        "#normal": "@color-theme-text-secondary-normal",
+        "#hovered": "@color-theme-inverted-text-primary-normal",
+        "#pressed": "@color-theme-inverted-text-primary-normal"
       },
       "verification-icon": {
-        "#hovered": "@theme-text-inverted-normal",
-        "#pressed": "@theme-text-inverted-normal"
+        "#hovered": "@color-theme-inverted-text-primary-normal",
+        "#pressed": "@color-theme-inverted-text-primary-normal"
       },
       "subheader-text": {
-        "#hovered": "@theme-text-inverted-normal",
-        "#pressed": "@theme-text-inverted-normal"
+        "#hovered": "@color-theme-inverted-text-primary-normal",
+        "#pressed": "@color-theme-inverted-text-primary-normal"
       },
       "time-text": {
-        "#hovered": "@theme-text-inverted-normal",
-        "#pressed": "@theme-text-inverted-normal"
+        "#hovered": "@color-theme-inverted-text-primary-normal",
+        "#pressed": "@color-theme-inverted-text-primary-normal"
       },
       "direction-icon": {
-        "#hovered": "@theme-text-inverted-normal",
-        "#pressed": "@theme-text-inverted-normal"
+        "#hovered": "@color-theme-inverted-text-primary-normal",
+        "#pressed": "@color-theme-inverted-text-primary-normal"
       },
       "verification-text": {
-        "#hovered": "@theme-text-inverted-normal",
-        "#pressed": "@theme-text-inverted-normal"
+        "#hovered": "@color-theme-inverted-text-primary-normal",
+        "#pressed": "@color-theme-inverted-text-primary-normal"
       },
       "log-text": {
-        "#hovered": "@theme-text-inverted-normal",
-        "#pressed": "@theme-text-inverted-normal"
+        "#hovered": "@color-theme-inverted-text-primary-normal",
+        "#pressed": "@color-theme-inverted-text-primary-normal"
       },
       "direction-text": {
-        "#hovered": "@theme-text-inverted-normal",
-        "#pressed": "@theme-text-inverted-normal"
+        "#hovered": "@color-theme-inverted-text-primary-normal",
+        "#pressed": "@color-theme-inverted-text-primary-normal"
       },
       "duration-text": {
-        "#hovered": "@theme-text-inverted-normal",
-        "#pressed": "@theme-text-inverted-normal"
+        "#hovered": "@color-theme-inverted-text-primary-normal",
+        "#pressed": "@color-theme-inverted-text-primary-normal"
       },
       "time-text": {
-        "#hovered": "@theme-text-inverted-normal",
-        "#pressed": "@theme-text-inverted-normal"
+        "#hovered": "@color-theme-inverted-text-primary-normal",
+        "#pressed": "@color-theme-inverted-text-primary-normal"
       },
       "direction-icon": {
-        "#hovered": "@theme-text-inverted-normal",
-        "#pressed": "@theme-text-inverted-normal"
+        "#hovered": "@color-theme-inverted-text-primary-normal",
+        "#pressed": "@color-theme-inverted-text-primary-normal"
       },
       "notes-icon": {
-        "#hovered": "@theme-text-inverted-normal",
-        "#pressed": "@theme-text-inverted-normal"
+        "#hovered": "@color-theme-inverted-text-primary-normal",
+        "#pressed": "@color-theme-inverted-text-primary-normal"
       },
       "notes-header-text": {
-        "#hovered": "@theme-text-inverted-normal",
-        "#pressed": "@theme-text-inverted-normal"
+        "#hovered": "@color-theme-inverted-text-primary-normal",
+        "#pressed": "@color-theme-inverted-text-primary-normal"
       },
       "ai-text": {
-        "#hovered": "@theme-text-inverted-normal",
-        "#pressed": "@theme-text-inverted-normal"
+        "#hovered": "@color-theme-inverted-text-primary-normal",
+        "#pressed": "@color-theme-inverted-text-primary-normal"
       },
       "notes-text": {
-        "#hovered": "@theme-text-inverted-normal",
-        "#pressed": "@theme-text-inverted-normal"
+        "#hovered": "@color-theme-inverted-text-primary-normal",
+        "#pressed": "@color-theme-inverted-text-primary-normal"
       }
     }
   }

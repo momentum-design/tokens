@@ -5,80 +5,80 @@
     "text": {
       "primary": {
         "#normal": {
-          "text": "@theme-text-primary-normal"
+          "text": "@color-theme-text-primary-normal"
         }
       },
       "secondary": {
         "#normal": {
-          "text": "@theme-text-secondary-normal"
+          "text": "@color-theme-text-secondary-normal"
         }
       }
     },
     "item": {
       "success-indicator": {
-        "#normal": "@theme-text-success-normal"
+        "#normal": "@color-theme-text-success-normal"
       },
       "warning-indicator": {
-        "#normal": "@theme-text-warning-normal"
+        "#normal": "@color-theme-text-warning-normal"
       },
       "error-indicator": {
-        "#normal": "@theme-text-error-normal"
+        "#normal": "@color-theme-text-error-normal"
       },
       "background": {
-        "#normal": "@theme-background-primary-ghost",
-        "#hovered": "@theme-background-primary-hover",
-        "#pressed": "@theme-background-primary-active"
+        "#normal": "@color-theme-background-primary-ghost",
+        "#hovered": "@color-theme-background-primary-hover",
+        "#pressed": "@color-theme-background-primary-active"
       },
       "header-text": {
-        "#normal": "@theme-text-primary-normal"
+        "#normal": "@color-theme-text-primary-normal"
       },
       "missed-header-text": {
-        "#normal": "@theme-text-error-normal"
+        "#normal": "@color-theme-text-error-normal"
       },
       "verification-icon": {
-        "#normal": "@theme-text-primary-normal"
+        "#normal": "@color-theme-text-primary-normal"
       },
       "subheader-text": {
-        "#normal": "@theme-text-secondary-normal"
+        "#normal": "@color-theme-text-secondary-normal"
       },
       "time-text": {
-        "#normal": "@theme-text-primary-normal"
+        "#normal": "@color-theme-text-primary-normal"
       },
       "direction-icon": {
-        "#normal": "@theme-text-primary-normal"
+        "#normal": "@color-theme-text-primary-normal"
       },
       "verification-text": {
-        "#normal": "@theme-text-secondary-normal"
+        "#normal": "@color-theme-text-secondary-normal"
       },
       "log-text": {
-        "#normal": "@theme-text-primary-normal"
+        "#normal": "@color-theme-text-primary-normal"
       },
       "direction-text": {
-        "#normal": "@theme-text-primary-normal"
+        "#normal": "@color-theme-text-primary-normal"
       },
       "duration-text": {
-        "#normal": "@theme-text-secondary-normal"
+        "#normal": "@color-theme-text-secondary-normal"
       },
       "time-text": {
-        "#normal": "@theme-text-primary-normal"
+        "#normal": "@color-theme-text-primary-normal"
       },
       "direction-icon": {
-        "#normal": "@theme-text-secondary-normal"
+        "#normal": "@color-theme-text-secondary-normal"
       },
       "notes-icon": {
-        "#normal": "@theme-text-secondary-normal"
+        "#normal": "@color-theme-text-secondary-normal"
       },
       "notes-header-text": {
-        "#normal": "@theme-text-secondary-normal"
+        "#normal": "@color-theme-text-secondary-normal"
       },
       "ai-background": {
-        "#normal": "@theme-background-secondary-normal"
+        "#normal": "@color-theme-background-secondary-normal"
       },
       "ai-text": {
-        "#normal": "@theme-text-secondary-normal"
+        "#normal": "@color-theme-text-secondary-normal"
       },
       "notes-text": {
-        "#normal": "@theme-text-primary-normal"
+        "#normal": "@color-theme-text-primary-normal"
       }
     }
   }

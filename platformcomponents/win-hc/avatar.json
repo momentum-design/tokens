@@ -1,7 +1,7 @@
 {
   "avatar": {
     "color-avatar": {
-      "text": "@theme-text-inverted-normal"
+      "text": "@color-theme-inverted-text-primary-normal"
     }
   }
 }

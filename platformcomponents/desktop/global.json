@@ -3,7 +3,7 @@
     "comment": "For windows global outline for all focused components",
     "figma": "https://www.figma.com/file/mZjOAoZIKLYFbOoG0h0r1A/Focus-States?node-id=812%3A53922",
     "focus": {
-      "outline": "@theme-outline-theme-normal"
+      "outline": "@color-theme-outline-theme-normal"
     }
   }
 }
