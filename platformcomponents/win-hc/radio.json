@@ -40,7 +40,7 @@
         "icon": "@theme-common-hc-buttonFace"
       },
       "#disabled": {
-        "text": "@theme-common-hc-grayText",
+        "text": "@theme-common-hc-buttonFace",
         "border": "@theme-common-hc-grayText"
       }
     },
