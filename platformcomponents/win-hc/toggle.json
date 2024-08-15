@@ -1,0 +1,49 @@
+{
+  "toggle": {
+    "figma": "hhttps://www.figma.com/design/rNpQFybgpgSfTmhLa441V3/%F0%9F%A7%A9-Webex-App---Windows-HighContrast?node-id=21889-186354&t=roO03MXd2QfCh9AF-0",
+    "toggled": {
+      "#normal": {
+        "background": "@theme-common-hc-highlight",
+        "thumb-tint": "@theme-common-hc-buttonFace",
+        "border": "@theme-common-hc-buttonText"
+      },
+      "#hovered": {
+        "background": "@theme-common-hc-buttonFace",
+        "thumb-tint": "@theme-common-hc-highlight",
+        "border": "@theme-common-hc-highlight"
+      },
+      "#pressed": {
+        "background": "@theme-common-hc-buttonFace",
+        "thumb-tint": "@theme-common-hc-highlight",
+        "border": "@theme-common-hc-highlight"
+      },
+      "#disabled": {
+        "background": "@theme-common-hc-grayText",
+        "thumb-tint": "@theme-common-hc-buttonFace",
+        "border": "@theme-common-hc-grayText"
+      }
+    },
+    "untoggled": {
+      "#normal": {
+        "background": "@theme-common-hc-buttonFace",
+        "thumb-tint": "@theme-common-hc-buttonText",
+        "border": "@theme-common-hc-buttonText"
+      },
+      "#hovered": {
+        "background": "@theme-common-hc-highlight",
+        "thumb-tint": "@theme-common-hc-buttonFace",
+        "border": "@theme-common-hc-buttonText"
+      },
+      "#pressed": {
+        "background": "@theme-common-hc-highlight",
+        "thumb-tint": "@theme-common-hc-buttonFace",
+        "border": "@theme-common-hc-buttonText"
+      },
+      "#disabled": {
+        "background": "@theme-common-hc-buttonFace",
+        "thumb-tint": "@theme-common-hc-grayText",
+        "border": "@theme-common-hc-grayText"
+      }
+    }
+  }
+}
