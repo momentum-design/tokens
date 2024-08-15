@@ -1,0 +1,14 @@
+{
+  "platform": "macos-hc",
+  "colorFormat": "object",
+  "sizeUnit": "px",
+  "componentGroups": false,
+  "fileFormat": "json",
+  "includeJsonHeader": true,
+  "includeMobileTokens": false,
+  "includeDesktopTokens": true,
+  "uiStatesAsObject": true,
+  "omitThemeTokens": true,
+  "noBorderIsBackgroundColour": true,
+  "themes": ["themes/theme-dark-webex-highContrast.json", "themes/theme-light-webex-highContrast.json"]
+}

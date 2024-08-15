@@ -22,7 +22,7 @@
     "build:web:docs": "npm run build:clean && node theme_generator.js --target=targets/web-json.json --writeDocs",
     "build:windows": "npm run build:clean && node theme_generator.js --target=targets/qt.json && node theme_generator.js --target=targets/windows-high-contrast.json",
     "build:linux": "npm run build:clean && node theme_generator.js --target=targets/qt.json",
-    "build:macos": "npm run build:clean && node theme_generator.js --target=targets/macos.json",
+    "build:macos": "npm run build:clean && node theme_generator.js --target=targets/macos.json && node theme_generator.js --target=targets/macos-hc.json",
     "build:ios": "npm run build:clean && node theme_generator.js --target=targets/ios.json",
     "build:android": "npm run build:clean && node theme_generator.js --target=targets/android.json",
     "publishNpm": "./publishNpm.sh",
