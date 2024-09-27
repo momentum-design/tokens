@@ -33,6 +33,18 @@
     "eight": {
       "text": "@theme-text-team-violet-normal",
       "outline": "@theme-text-team-violet-normal"
+    },
+    "nine": {
+      "text": "@theme-text-team-gold-normal",
+      "outline": "@theme-text-team-gold-normal"
+    },
+    "ten": {
+      "text": "@theme-text-team-slate-normal",
+      "outline": "@theme-text-team-slate-normal"
+    },
+    "unknown": {
+      "text": "@theme-text-teamdefault-normal",
+      "outline": "@theme-text-teamdefault-normal"
     }
   }
 }
