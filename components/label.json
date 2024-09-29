@@ -25,6 +25,11 @@
         "text": "@color-theme-inverted-text-primary-disabled"
       }
     },
+    "secondaryInverted": {
+      "#normal": {
+        "text": "@color-theme-inverted-text-secondary-normal"
+      }
+    },
     "success": {
       "#normal": {
         "text": "@color-theme-text-success-normal"
