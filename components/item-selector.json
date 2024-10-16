@@ -1,7 +1,21 @@
 {
-  "background": {
+  "item-selector": {
     "comment": "",
     "figma": "https://www.figma.com/design/NaNrfXjygZtRgMfHAFHjsp/🧩-Webex-App---Windows?node-id=102220-188680&node-type=frame&t=WEE9Bw8j4gc98asF-0",
-    "background": "@color-theme-background-secondary-normal"
+    "#normal": {
+      "background": "@color-theme-background-secondary-normal"
+    },
+    "#hovered": {
+      "background": "@color-theme-background-secondary-normal"
+    },
+    "#focused": {
+      "background": "@color-theme-background-secondary-normal"
+    },
+    "#pressed": {
+      "background": "@color-theme-background-secondary-normal"
+    },
+    "#disabled": {
+      "background": "@color-theme-background-secondary-normal"
+    }
   }
 }
