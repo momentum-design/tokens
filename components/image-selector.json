@@ -2,20 +2,28 @@
   "image-selector": {
     "comment": "",
     "figma": "https://www.figma.com/design/NaNrfXjygZtRgMfHAFHjsp/🧩-Webex-App---Windows?node-id=102220-188680&node-type=frame&t=WEE9Bw8j4gc98asF-0",
-    "#normal": {
-      "background": "@color-theme-background-secondary-normal"
+    "background": {
+      "#normal": "@color-theme-background-secondary-normal",
+      "#hovered": "@color-theme-background-secondary-normal",
+      "#focused": "@color-theme-background-secondary-normal",
+      "#pressed": "@color-theme-background-secondary-normal",
+      "#disabled": "@color-theme-background-secondary-normal"
     },
-    "#hovered": {
-      "background": "@color-theme-background-secondary-normal"
+    "border": {
+      "#normal": "@color-theme-button-secondary-normal",
+      "#hovered": "@color-theme-outline-input-normal",
+      "#pressed": "@color-theme-outline-input-active",
+      "#active": "@color-theme-background-primary-active",
+      "#disabled": "@color-theme-button-secondary-normal"
     },
-    "#focused": {
-      "background": "@color-theme-background-secondary-normal"
+    "checkboard-background-0": {
+      "#normal": "@color-theme-background-primary-active"
     },
-    "#pressed": {
-      "background": "@color-theme-background-secondary-normal"
+    "checkboard-background-1": {
+      "#normal": "@color-theme-background-primary-ghost"
     },
-    "#disabled": {
-      "background": "@color-theme-background-secondary-normal"
+    "text": {
+      "#normal": "@color-theme-text-primary-normal"
     }
   }
 }
