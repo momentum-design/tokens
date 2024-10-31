@@ -47,6 +47,28 @@
         "role": "@color-theme-text-secondary-normal",
         "iconMute": "@color-theme-common-text-error-normal",
         "iconUnmute": "@color-theme-common-text-success-normal"
+      },
+      "advanced": {
+        "primary": {
+          "background": "@color-theme-common-background-solid-light",
+          "border": "@color-theme-common-background-solid-light",
+          "titleText": "@color-theme-common-inverted-text-primary-normal",
+          "subTitleText": "@color-theme-common-inverted-text-secondary-normal"
+        },
+        "primaryInverted": {
+          "titleText": "@color-theme-common-text-primary-normal",
+          "subTitleText": "@color-theme-common-text-secondary-normal",
+          "thumbnail": "@color-theme-common-text-primary-normal"
+        },
+        "secondary": {
+          "background": "@color-theme-common-background-solid-light",
+          "titleText": "@color-theme-common-inverted-text-primary-normal",
+          "subTitleText": "@color-theme-common-inverted-text-secondary-normal"
+        },
+        "secondaryInverted": {
+          "titleText": "@color-theme-common-text-primary-normal",
+          "subTitleText": "@color-theme-common-text-secondary-normal"
+        }
       }
     },
     "slider": {
