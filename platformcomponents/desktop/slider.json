@@ -12,7 +12,7 @@
       },
       "empty": {
         "#normal": {
-          "background": "@color-theme-control-indicator-inactive-normal"
+          "background": "@color-theme-outline-secondary-normal"
         },
         "#disabled": {
           "background": "@color-theme-control-inactive-disabled"
