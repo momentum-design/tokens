@@ -9,7 +9,7 @@
       "border": "@color-theme-outline-input-normal"
     },
     "#pressed": {
-      "background": "@color-theme-background-secondary-active",
+      "background": "@color-theme-background-primary-active",
       "text": "@color-theme-text-secondary-normal",
       "border": "@color-theme-outline-input-normal"
     },
@@ -31,7 +31,7 @@
     "#disabled": {
       "background": "@color-theme-background-primary-disabled",
       "text": "@color-theme-text-primary-disabled",
-      "border": "@color-theme-background-primary-ghost"
+      "border": "@color-theme-outline-primary-disabled"
     },
     "error": {
       "#normal": {
