@@ -9,12 +9,17 @@
       "#pressed": "@color-theme-background-secondary-normal",
       "#disabled": "@color-theme-background-secondary-normal"
     },
-    "border": {
+    "border-inactive": {
       "#normal": "@color-theme-button-secondary-normal",
       "#hovered": "@color-theme-outline-input-normal",
       "#pressed": "@color-theme-outline-input-active",
-      "#active": "@color-theme-background-primary-active",
       "#disabled": "@color-theme-button-secondary-normal"
+    },
+    "border-active": {
+      "#normal": "@color-theme-outline-input-active",
+      "#hovered": "@color-theme-outline-input-active",
+      "#pressed": "@color-theme-outline-input-active",
+      "#disabled": "@color-theme-outline-primary-disabled"
     },
     "checkboard-background-0": {
       "#normal": "@color-theme-background-primary-active"
