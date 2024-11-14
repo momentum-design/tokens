@@ -2,25 +2,33 @@
   "banner": {
     "comment": "Applied to Alert Banners",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows%2BWeb?node-id=4655%3A8433",
-    "announcement": {
-      "text": "@color-theme-text-accent-normal",
-      "background": "@color-theme-background-alert-theme-normal"
+    "style": {
+      "announcement": {
+        "text": "@color-theme-text-accent-normal",
+        "background": "@color-theme-background-alert-theme-normal"
+      },
+      "success": {
+        "text": "@color-theme-text-success-normal",
+        "background": "@color-theme-background-alert-success-normal"
+      },
+      "error": {
+        "text": "@color-theme-text-error-normal",
+        "background": "@color-theme-background-alert-error-normal"
+      },
+      "issue": {
+        "text": "@color-theme-text-warning-normal",
+        "background": "@color-theme-background-alert-warning-normal"
+      },
+      "transient": {
+        "text": "@color-theme-text-primary-normal",
+        "background": "@color-theme-background-primary-active"
+      }
     },
-    "success": {
-      "text": "@color-theme-text-success-normal",
-      "background": "@color-theme-background-alert-success-normal"
-    },
-    "error": {
-      "text": "@color-theme-text-error-normal",
-      "background": "@color-theme-background-alert-error-normal"
-    },
-    "issue": {
-      "text": "@color-theme-text-warning-normal",
-      "background": "@color-theme-background-alert-warning-normal"
-    },
-    "transient": {
-      "text": "@color-theme-text-primary-normal",
-      "background": "@color-theme-background-primary-active"
+    "icon": {
+      "live": {
+        "active": "@color-theme-indicator-attention",
+        "inactive": "@color-theme-text-secondary-normal"
+      }
     }
   }
 }
