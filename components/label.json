@@ -46,6 +46,18 @@
       }
     },
     "common": {
+      "inverted": {
+        "primary": {
+          "#normal": {
+            "text": "@color-theme-common-inverted-text-primary-normal"
+          }
+        },
+        "secondary": {
+          "#normal": {
+            "text": "@color-theme-common-inverted-text-secondary-normal"
+          }
+        }
+      },
       "white": {
         "#normal": {
           "text": "@color-theme-common-text-primary-normal"
