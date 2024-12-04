@@ -44,6 +44,25 @@
         "text": "@color-theme-text-primary-disabled"
       }
     },
+    "ghost-inverted": {
+      "#normal": {
+        "background": "@color-theme-inverted-button-secondary-normal",
+        "text": "@color-theme-inverted-text-primary-normal",
+        "border": "none"
+      },
+      "#hovered": {
+        "background": "@color-theme-inverted-button-secondary-hover",
+        "text": "@color-theme-inverted-text-primary-normal"
+      },
+      "#pressed": {
+        "background": "@color-theme-inverted-button-secondary-pressed",
+        "text": "@color-theme-text-primary-normal"
+      },
+      "#disabled": {
+        "background": "@color-theme-inverted-button-secondary-normal",
+        "text": "@color-theme-text-primary-disabled"
+      }
+    },
     "call-control-panel": {
       "#normal": {
         "background": "@color-theme-button-secondary-active-normal",
