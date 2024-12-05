@@ -101,6 +101,24 @@
         "text": "@color-theme-text-primary-disabled"
       }
     },
+    "message-ghost": {
+      "#normal": {
+        "background": "@color-theme-button-secondary-normal",
+        "text": "@color-theme-text-accent-normal"
+      },
+      "#hovered": {
+        "background": "@color-theme-button-secondary-hover",
+        "text": "@color-theme-text-accent-normal"
+      },
+      "#pressed": {
+        "background": "@color-theme-button-secondary-pressed",
+        "text": "@color-theme-text-accent-normal"
+      },
+      "#disabled": {
+        "background": "@color-theme-button-secondary-disabled",
+        "text": "@color-theme-text-primary-disabled"
+      }
+    },
     "join-fill": {
       "#normal": {
         "background": "@color-theme-button-join-normal",
@@ -192,6 +210,25 @@
       }
     },
     "accent-fill": {
+      "#normal": {
+        "background": "@color-theme-button-accent-normal",
+        "text": "@color-theme-common-text-primary-normal",
+        "border": "none"
+      },
+      "#hovered": {
+        "background": "@color-theme-button-accent-hover",
+        "text": "@color-theme-common-text-primary-normal"
+      },
+      "#pressed": {
+        "background": "@color-theme-button-accent-pressed",
+        "text": "@color-theme-common-text-primary-normal"
+      },
+      "#disabled": {
+        "background": "@color-theme-button-primary-disabled",
+        "text": "@color-theme-text-primary-disabled"
+      }
+    },
+    "message-fill": {
       "#normal": {
         "background": "@color-theme-button-accent-normal",
         "text": "@color-theme-common-text-primary-normal",
