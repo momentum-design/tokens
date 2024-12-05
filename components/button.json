@@ -38,7 +38,7 @@
         "border": "@color-theme-outline-button-normal"
       },
       "#disabled": {
-        "background": "@color-theme-button-secondary-normal",
+        "background": "@color-theme-button-secondary-disabled",
         "text": "@color-theme-text-primary-disabled",
         "border": "@color-theme-outline-primary-disabled"
       }
@@ -60,7 +60,7 @@
         "border": "@color-theme-outline-button-normal"
       },
       "#disabled": {
-        "background": "@color-theme-button-secondary-active-normal",
+        "background": "@color-theme-button-secondary-active-disabled",
         "text": "@color-theme-text-primary-disabled",
         "border": "@color-theme-outline-primary-disabled"
       }
@@ -79,7 +79,7 @@
         "text": "@color-theme-text-error-normal"
       },
       "#disabled": {
-        "background": "@color-theme-button-primary-disabled",
+        "background": "@color-theme-button-secondary-disabled",
         "text": "@color-theme-text-primary-disabled"
       }
     },
@@ -97,25 +97,7 @@
         "text": "@color-theme-text-accent-normal"
       },
       "#disabled": {
-        "background": "@color-theme-button-primary-disabled",
-        "text": "@color-theme-text-primary-disabled"
-      }
-    },
-    "message-ghost": {
-      "#normal": {
-        "background": "@color-theme-button-secondary-normal",
-        "text": "@color-theme-text-accent-normal"
-      },
-      "#hovered": {
-        "background": "@color-theme-button-secondary-hover",
-        "text": "@color-theme-text-accent-normal"
-      },
-      "#pressed": {
-        "background": "@color-theme-button-secondary-pressed",
-        "text": "@color-theme-text-accent-normal"
-      },
-      "#disabled": {
-        "background": "@color-theme-button-primary-disabled",
+        "background": "@color-theme-button-secondary-disabled",
         "text": "@color-theme-text-primary-disabled"
       }
     },
@@ -155,7 +137,7 @@
         "border": "none"
       },
       "#disabled": {
-        "background": "@color-theme-button-secondary-normal",
+        "background": "@color-theme-button-secondary-disabled",
         "text": "@color-theme-text-primary-disabled",
         "border": "@color-theme-outline-primary-disabled"
       }
@@ -204,31 +186,12 @@
         "border": "none"
       },
       "#disabled": {
-        "background": "@color-theme-button-secondary-normal",
+        "background": "@color-theme-button-secondary-disabled",
         "text": "@color-theme-text-primary-disabled",
         "border": "@color-theme-outline-primary-disabled"
       }
     },
     "accent-fill": {
-      "#normal": {
-        "background": "@color-theme-button-accent-normal",
-        "text": "@color-theme-common-text-primary-normal",
-        "border": "none"
-      },
-      "#hovered": {
-        "background": "@color-theme-button-accent-hover",
-        "text": "@color-theme-common-text-primary-normal"
-      },
-      "#pressed": {
-        "background": "@color-theme-button-accent-pressed",
-        "text": "@color-theme-common-text-primary-normal"
-      },
-      "#disabled": {
-        "background": "@color-theme-button-primary-disabled",
-        "text": "@color-theme-text-primary-disabled"
-      }
-    },
-    "message-fill": {
       "#normal": {
         "background": "@color-theme-button-accent-normal",
         "text": "@color-theme-common-text-primary-normal",
