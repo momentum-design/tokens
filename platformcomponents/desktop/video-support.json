@@ -3,6 +3,7 @@
     "comment": "Control buttons, video name labels, etc.",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/Components---Windows?node-id=6361%3A14",
     "containerBackground": "@color-theme-background-secondary-normal",
+    "containerSolidBackground": "@color-theme-background-solid-tertiary-normal",
     "controls": {
       "button": {
         "#normal": {
