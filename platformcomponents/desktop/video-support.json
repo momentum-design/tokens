@@ -71,18 +71,6 @@
           "subTitleText": "@color-theme-common-text-secondary-normal"
         }
       }
-    },
-    "slider": {
-      "track": {
-        "fill": "@color-theme-control-active-normal",
-        "empty": "@color-theme-outline-button-normal"
-      },
-      "mover": {
-        "border": "@color-theme-outline-primary-normal",
-        "background": "@color-theme-background-solid-primary-normal"
-      },
-      "border": "@color-theme-outline-button-normal",
-      "background": "@color-theme-inverted-button-primary-normal"
     }
   }
 }
