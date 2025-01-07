@@ -7,7 +7,7 @@
           "background": "@color-theme-control-active-normal"
         },
         "#disabled": {
-          "background": "@color-theme-control-inactive-disabled"
+          "background": "@color-theme-control-active-disabled"
         }
       },
       "empty": {
@@ -16,6 +16,11 @@
         },
         "#disabled": {
           "background": "@color-theme-control-inactive-disabled"
+        }
+      },
+      "buffer": {
+        "#normal": {
+          "background": "@color-theme-outline-input-active"
         }
       }
     },
@@ -33,7 +38,8 @@
         "border": "@color-theme-outline-primary-normal"
       },
       "#disabled": {
-        "background": "@color-theme-background-solid-tertiary-normal"
+        "background": "@color-theme-background-solid-primary-normal",
+        "border": "@color-theme-outline-primary-disabled"
       }
     }
   }

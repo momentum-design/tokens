@@ -8,6 +8,9 @@ npm-debug.log*
 .npmrc
 .env
 
+package-lock.json
+yarn.lock
+
 # Ignore Yarn
 ###################
 yarn-*
