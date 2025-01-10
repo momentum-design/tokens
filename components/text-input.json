@@ -31,7 +31,7 @@
     "#disabled": {
       "background": "@color-theme-background-primary-disabled",
       "text": "@color-theme-text-primary-disabled",
-      "border": "@color-theme-background-primary-ghost"
+      "border": "@color-theme-outline-primary-disabled"
     },
     "error": {
       "#normal": {
