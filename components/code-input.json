@@ -25,7 +25,7 @@
     "#disabled": {
       "background": "@color-theme-background-primary-disabled",
       "text": "@color-theme-text-primary-normal",
-      "border": "@color-theme-background-primary-ghost"
+      "border": "@color-theme-outline-primary-disabled"
     },
     "error": {
       "#normal": {
