@@ -13,7 +13,7 @@
     },
     "#disabled": {
       "text": "@color-theme-text-primary-disabled",
-      "background": "@color-theme-background-primary-disabled"
+      "background": "@color-theme-outline-primary-disabled"
     }
   }
 }
