@@ -29,24 +29,24 @@
     },
     "unchecked": {
       "#normal": {
-        "background": "@color-theme-control-inactive-normal",
+        "background": "@color-theme-button-secondary-normal",
         "text": "@color-theme-text-primary-normal",
         "border": "@color-theme-outline-input-normal"
       },
       "#hovered": {
-        "background": "@color-theme-control-inactive-hover",
+        "background": "@color-theme-button-secondary-hover",
         "text": "@color-theme-text-primary-normal",
         "border": "@color-theme-outline-input-normal"
       },
       "#pressed": {
-        "background": "@color-theme-control-inactive-pressed",
+        "background": "@color-theme-button-secondary-pressed",
         "text": "@color-theme-text-primary-normal",
         "border": "@color-theme-outline-input-normal"
       },
       "#disabled": {
-        "background": "@color-theme-control-inactive-hover",
+        "background": "@color-theme-button-secondary-disabled",
         "text": "@color-theme-text-primary-disabled",
-        "border": "none"
+        "border": "@color-theme-outline-primary-disabled"
       }
     }
   }
