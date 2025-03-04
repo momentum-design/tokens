@@ -538,10 +538,10 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@momentum-design/tokens@0.3.2":
-  version "0.3.2"
-  resolved "https://registry.npmjs.org/@momentum-design/tokens/-/tokens-0.3.2.tgz"
-  integrity sha512-Y2cJfRNoh+SP7wOEmz5ONBXp7oUvHWcTgTVXQeT/S/k/TqfpyliXOfj1EI3Bff/aOXqiz8FV+4LxUFa43YCTQw==
+"@momentum-design/tokens@0.5.1":
+  version "0.5.1"
+  resolved "https://registry.npmjs.org/@momentum-design/tokens/-/tokens-0.5.1.tgz"
+  integrity sha512-7zJIhn7aokwOy5+hBhCx9KRpThtAI/PDVAHyZ+TmJ5MFPacWixyBOb7BFtBQKb36o49kqBPqDfm6RovXkOC8wA==
 
 "@sinclair/typebox@^0.27.8":
   version "0.27.8"
