@@ -1,0 +1,132 @@
+{
+  "message-badge": {
+    "comment": "Applied tokens used in message badges",
+    "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/🧩-Webex-App---Windows?type=design&node-id=5585-16947&mode=design&t=8O7BREqJKEY7Xz5W-0",
+    "pinned": {
+      "#normal": {
+        "background": "@theme-background-alert-theme-normal",
+        "text": "@theme-text-accent-normal"
+      },
+      "#hovered": {
+        "background": "@theme-background-alert-theme-hover",
+        "text": "@theme-text-accent-hover"
+      },
+      "#pressed": {
+        "background": "@theme-background-alert-theme-active",
+        "text": "@theme-text-accent-active"
+      },
+      "#focused": {
+        "background": "@theme-background-alert-theme-normal",
+        "text": "@theme-text-accent-normal"
+      }
+    },
+    "flagged": {
+      "#normal": {
+        "background": "@theme-background-secondary-normal",
+        "text": "@theme-text-secondary-normal"
+      },
+      "#hovered": {
+        "background": "@theme-background-secondary-hover",
+        "text": "@theme-text-primary-normal"
+      },
+      "#pressed": {
+        "background": "@theme-background-secondary-active",
+        "text": "@theme-text-primary-normal"
+      }
+    },
+    "reminder": {
+      "success": {
+        "#normal": {
+          "background": "@theme-background-alert-success-normal",
+          "text": "@theme-text-success-normal"
+        },
+        "#hovered": {
+          "background": "@theme-background-alert-success-hover",
+          "text": "@theme-text-success-hover"
+        },
+        "#pressed": {
+          "background": "@theme-background-alert-success-active",
+          "text": "@theme-text-success-active"
+        },
+        "#focused": {
+          "background": "@theme-background-alert-success-active",
+          "text": "@theme-text-success-active"
+        }
+      },
+      "overdue": {
+        "#normal": {
+          "background": "@theme-background-alert-error-normal",
+          "text": "@theme-text-error-normal"
+        },
+        "#hovered": {
+          "background": "@theme-background-alert-error-hover",
+          "text": "@theme-text-error-hover"
+        },
+        "#pressed": {
+          "background": "@theme-background-alert-error-active",
+          "text": "@theme-text-error-active"
+        },
+        "#focused": {
+          "background": "@theme-background-alert-error-active",
+          "text": "@theme-text-error-active"
+        }
+      }
+    },
+    "translate": {
+      "success": {
+        "#normal": {
+          "background": "@theme-background-alert-success-normal",
+          "text": "@theme-text-success-normal"
+        },
+        "#hovered": {
+          "background": "@theme-background-alert-success-hover",
+          "text": "@theme-text-success-hover"
+        },
+        "#pressed": {
+          "background": "@theme-background-alert-success-active",
+          "text": "@theme-text-success-active"
+        },
+        "#focused": {
+          "background": "@theme-background-alert-success-active",
+          "text": "@theme-text-success-active"
+        }
+      },
+      "fail": {
+        "#normal": {
+          "background": "@theme-background-alert-error-normal",
+          "text": "@theme-text-error-normal"
+        },
+        "#hovered": {
+          "background": "@theme-background-alert-error-hover",
+          "text": "@theme-text-error-hover"
+        },
+        "#pressed": {
+          "background": "@theme-background-alert-error-active",
+          "text": "@theme-text-error-active"
+        },
+        "#focused": {
+          "background": "@theme-background-alert-error-active",
+          "text": "@theme-text-error-active"
+        }
+      },
+      "in-progress": {
+        "#normal": {
+          "background": "@theme-background-alert-default-normal",
+          "text": "@theme-text-primary-normal"
+        },
+        "#hovered": {
+          "background": "@theme-background-alert-default-hover",
+          "text": "@theme-text-primary-normal"
+        },
+        "#pressed": {
+          "background": "@theme-background-alert-default-active",
+          "text": "@theme-text-primary-normal"
+        },
+        "#focused": {
+          "background": "@theme-background-alert-success-active",
+          "text": "@theme-text-primary-normal"
+        }
+      }
+    }
+  }
+}
