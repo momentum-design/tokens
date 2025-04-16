@@ -27,13 +27,13 @@ def update_version_value(package_json_path, new_version):
         print(f"error when write {package_json_path} error: {e}")
         sys.exit(1)
 
-def run_command(command_list, description):
-    print(f"running: {' '.join(command_list)}")
+def run_command(command):
+    print(f"running: {command}")
     try:
-        subprocess.run(command_list, check=True, shell=True)
-        print(f"successfully run {description}")
+        subprocess.run(command, check=True, shell=True)
+        print(f"successfully run `{command}`")
     except subprocess.CalledProcessError as err:
-        print(f"failed to run {description} error: {err}")
+        print(f"failed to run {command} error: {err}")
         sys.exit(err.returncode)
 
 def refresh_tokens(source_folder, target_folder):
@@ -43,7 +43,7 @@ def refresh_tokens(source_folder, target_folder):
         # in case of the src and dst are the same file
         dst_file = os.path.join(target_folder, old_token)
         if os.path.exists(dst_file):
-            os.remove(dst_file)     
+            os.remove(dst_file)
         shutil.move(os.path.join(source_folder, old_token), target_folder)
 
 def main():
@@ -60,10 +60,10 @@ def main():
     update_version_value(package_json_path, version)
 
     # run npm install
-    run_command(["npm", "install"], "npm install")
+    run_command("npm install")
 
     # npm run build:<platform>
-    run_command(["npm", "run", f"build:{platform}"], f"npm run build:{platform}")
+    run_command(f"npm run build:{platform}")
 
     refresh_tokens("dist", args.target_folder)
 
