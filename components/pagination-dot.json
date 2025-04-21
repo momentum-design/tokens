@@ -1,0 +1,65 @@
+{
+  "paginationdot": {
+    "figma": "https://www.figma.com/design/H19CutixoN8SJGO5EXwcc8/%F0%9F%A7%A9-Webex-App---MacOS?node-id=16529-150536&t=Mf08qK7FnGCjpV5l-0",
+    "active": {
+      "default": {
+        "#normal": {
+          "background": "@color-theme-control-active-normal"
+        },
+        "#hovered": {
+          "background": "@color-theme-control-active-hover"
+        },
+        "#pressed": {
+          "background": "@color-theme-control-active-pressed"
+        },
+        "#disabled": {
+          "background": "@color-theme-control-active-disabled"
+        }
+      },
+      "inverted": {
+        "#normal": {
+          "background": "@color-theme-inverted-control-active-normal"
+        },
+        "#hovered": {
+          "background": "@color-theme-inverted-control-active-hover"
+        },
+        "#pressed": {
+          "background": "@color-theme-inverted-control-active-pressed"
+        },
+        "#disabled": {
+          "background": "@color-theme-inverted-control-inactive-disabled"
+        }
+      }
+    },
+    "inactive": {
+      "default": {
+        "#normal": {
+          "background": "@color-theme-control-indicator-inactive-normal"
+        },
+        "#hovered": {
+          "background": "@color-theme-control-inactive-hover"
+        },
+        "#pressed": {
+          "background": "@color-theme-control-inactive-pressed"
+        },
+        "#disabled": {
+          "background": "@color-theme-control-inactive-disabled"
+        }
+      },
+      "inverted": {
+        "#normal": {
+          "background": "@color-theme-inverted-control-inactive-normal"
+        },
+        "#hovered": {
+          "background": "@color-theme-inverted-control-inactive-hover"
+        },
+        "#pressed": {
+          "background": "@color-theme-inverted-control-inactive-pressed"
+        },
+        "#disabled": {
+          "background": "@color-theme-inverted-control-inactive-disabled"
+        }
+      }
+    }
+  }
+}
