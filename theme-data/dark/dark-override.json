@@ -9,6 +9,9 @@
               "1": "#00000000"
             }
           }
+        },
+        "video-container-solid": {
+          "normal": "@color-theme-background-solid-quaternary-normal"
         }
       },
       "common": {

@@ -9,6 +9,9 @@
               "1": "#F7F7F700"
             }
           }
+        },
+        "video-container-solid": {
+          "normal": "@color-theme-background-solid-tertiary-normal"
         }
       },
       "common": {
