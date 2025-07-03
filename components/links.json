@@ -52,6 +52,23 @@
       "#disabled": {
         "text": "@theme-common-text-disabled"
       }
+    },
+    "warning": {
+      "#normal": {
+        "text": "@color-theme-text-warning-normal"
+      },
+      "#hovered": {
+        "text": "@color-theme-text-warning-hover"
+      },
+      "#pressed": {
+        "text": "@color-theme-text-warning-active"
+      },
+      "#focused": {
+        "text": "@color-theme-text-warning-normal"
+      },
+      "#disabled": {
+        "text": "@color-theme-text-primary-disabled"
+      }
     }
   }
 }
