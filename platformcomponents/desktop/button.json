@@ -156,6 +156,28 @@
         "background": "@color-theme-common-inverted-button-secondary-disabled",
         "text": "@color-theme-common-inverted-text-primary-disabled"
       }
+    },
+    "skinTone": {
+      "figma": "https://www.figma.com/design/gf0EWe0XP1qPaMHZT3e9P8/%F0%9F%A7%A9-Webex-App---Windows?node-id=116585-745528&t=I2rmALt3LRjeMS7N-0",
+      "background": {
+        "#normal": "@color-theme-button-secondary-normal",
+        "#hovered": "@color-theme-button-secondary-normal",
+        "#focused": "@color-theme-button-secondary-normal",
+        "#pressed": "@color-theme-button-secondary-normal",
+        "#disabled": "@color-theme-button-secondary-normal"
+      },
+      "border-inactive": {
+        "#normal": "@color-theme-button-secondary-normal",
+        "#hovered": "@color-theme-outline-input-normal",
+        "#pressed": "@color-theme-outline-input-active",
+        "#disabled": "@color-theme-button-secondary-normal"
+      },
+      "border-active": {
+        "#normal": "@color-theme-outline-input-active",
+        "#hovered": "@color-theme-outline-input-active",
+        "#pressed": "@color-theme-outline-input-active",
+        "#disabled": "@color-theme-outline-primary-disabled"
+      }
     }
   }
 }

@@ -3,6 +3,7 @@
     "comment": "",
     "figma": "https://www.figma.com/file/NaNrfXjygZtRgMfHAFHjsp/branch/WG6O99kWm33upbqMdnnIQA/Components---Windows%2BWeb?node-id=12652%3A3113",
     "primary": "@color-theme-outline-primary-normal",
-    "secondary": "@color-theme-outline-secondary-normal"
+    "secondary": "@color-theme-outline-secondary-normal",
+    "common": "@color-theme-common-outline-primary-normal"
   }
 }
