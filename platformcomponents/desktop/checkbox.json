@@ -24,7 +24,7 @@
         "background": "@color-theme-control-active-disabled",
         "text": "@color-theme-text-primary-disabled",
         "border": "none",
-        "icon": "@color-theme-control-inactive-hover"
+        "icon": "@color-theme-text-primary-disabled"
       }
     },
     "unchecked": {
