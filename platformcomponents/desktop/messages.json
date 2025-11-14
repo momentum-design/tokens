@@ -91,10 +91,23 @@
         }
       }
     },
-    "background": {
-      "#normal": "@color-theme-background-primary-ghost",
-      "#hovered": "@color-theme-background-primary-hover",
-      "#pressed": "@color-theme-background-primary-active"
+    "#normal": {
+      "background": "@color-theme-background-primary-ghost",
+      "border": "none"
+    },
+    "#focused": {
+      "background": "@color-theme-background-primary-ghost",
+      "border": "@color-theme-outline-primary-normal"
+    },
+    "#hovered": {
+      "background": "@color-theme-background-primary-hover"
+    },
+    "#pressed": {
+      "background": "@color-theme-background-primary-active"
+    },
+    "#active": {
+      "background": "@color-theme-background-primary-active",
+      "border": "@color-theme-outline-primary-normal"
     },
     "reactions": {
       "#normal": {
