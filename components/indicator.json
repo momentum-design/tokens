@@ -1,0 +1,22 @@
+{
+  "indicator": {
+    "attention":{
+       "background": "@color-theme-indicator-attention"
+    },
+    "locked": {
+      "background": "@color-theme-indicator-locked"
+    },
+    "stable": {
+      "background": "@color-theme-indicator-stable"
+    },
+    "unstable": {
+      "background": "@color-theme-indicator-unstable"
+    },
+    "secure": {
+      "background": "@color-theme-indicator-secure"
+    },
+    "caution": {
+      "background": "@color-theme-indicator-caution"
+    }
+  }
+}

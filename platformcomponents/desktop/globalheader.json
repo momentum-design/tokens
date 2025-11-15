@@ -124,6 +124,23 @@
         "background": "@color-theme-background-secondary-normal"
       }
     },
+    "SearchEditField": {
+      "#normal": {
+        "background": "@color-theme-background-alert-default-normal"
+      },
+      "#hovered": {
+        "background": "@color-theme-background-alert-default-active"
+      },
+      "#active": {
+        "background": "@color-theme-background-alert-default-normal"
+      },
+      "#focused": {
+        "background": "@color-theme-background-alert-default-normal"
+      },
+      "#disabled": {
+        "background": "@color-theme-background-alert-default-normal"
+      }
+    },
     "maxMinButton": {
       "#normal": {
         "background": "@color-theme-button-secondary-normal",
