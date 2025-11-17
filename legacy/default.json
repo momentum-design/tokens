@@ -863,7 +863,7 @@
       "#normal": "@color-blue-50"
     },
     "wx-textInputBoxMessage-text": {
-      "#normal": "@color-gray-60"
+      "#normal": "@color-gray-70"
     },
     "wx-brickletAvatarErrorIcon-background": {
       "#normal": "@color-white-alpha-100"
