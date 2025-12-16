@@ -372,7 +372,7 @@
         "text": "@color-theme-text-primary-normal"
       },
       "#disabled": {
-        "background": "@color-theme-background-secondary-disabled",
+        "background": "@color-theme-background-secondary-normal",
         "text": "@color-theme-text-primary-disabled"
       }
     }
