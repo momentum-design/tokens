@@ -15,11 +15,6 @@
       "text": "@color-theme-text-primary-normal",
       "border": "@color-theme-outline-input-normal"
     },
-    "#pressed": {
-      "background": "@color-theme-background-secondary-active",
-      "text": "@color-theme-text-secondary-normal",
-      "border": "@color-theme-outline-input-normal"
-    },
     "#hovered": {
       "background": "@color-theme-background-primary-hover",
       "text": "@color-theme-text-primary-normal",
@@ -36,7 +31,7 @@
       "border": "@color-theme-outline-input-active"
     },
     "#disabled": {
-      "background": "@color-theme-background-primary-disabled",
+      "background": "@color-theme-background-input-disabled",
       "text": "@color-theme-text-primary-disabled",
       "border": "@color-theme-outline-primary-disabled"
     },
