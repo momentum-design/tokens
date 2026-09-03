@@ -22,8 +22,8 @@ jobs:
             - v1-dependencies-
       - run: npm install
       - run:
-          name: Test scripts and build desktop tokens
-          command: npm run test:scripts && npm run build:windowsWithHC && npm run build:macos
+          name: Test scripts and build all the platform tokens
+          command: npm run test
       - save_cache:
           paths:
             - node_modules
