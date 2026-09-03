@@ -292,6 +292,16 @@ function resolveGradient(currentToken) {
   }
 }
 
+const legacyThemeAliases = {
+  "theme-button-inverted-hover": "color-theme-inverted-button-primary-hover",
+  "theme-button-inverted-normal": "color-theme-inverted-button-primary-normal",
+  "theme-button-inverted-pressed": "color-theme-inverted-button-primary-pressed",
+  "theme-common-text-white": "color-theme-common-text-primary-normal",
+  "theme-common-control-shareContent-inactive": "color-theme-common-control-share-content-inactive",
+  "theme-outline-disabled-normal": "color-theme-outline-primary-disabled",
+  "theme-text-inverted-normal": "color-theme-inverted-text-primary-normal",
+};
+
 // Finds references, and returns an object with all references resolved
 // You can probably break this with recursive references, can't be bothered to check
 function resolveValue(currentToken, allTokens, coreTokens, flattenedCoreTokens) {
@@ -321,6 +331,14 @@ function resolveValue(currentToken, allTokens, coreTokens, flattenedCoreTokens) 
       // Otherwise we've got to find the token
       const keyParts = tokenName.split("-");
       let value = findKey(keyParts, allTokens); // First of all try to find it as a reference to another token which actually exists
+      if (!value && tokenName.startsWith("theme-")) {
+        // Mobile component files still contain legacy @theme-* references. Current Momentum
+        // packages namespace those same tokens under @color-theme-*.
+        const colorThemeName = legacyThemeAliases[tokenName] || "color-" + tokenName;
+        if (colorThemeName in flattenedCoreTokens) {
+          return applyAlpha(flattenedCoreTokens[colorThemeName], alpha);
+        }
+      }
       if (!value) {
         // Maybe it's a reference to a complete core token group, in which case we should substitute in the whole group
         (value = findKey(keyParts, coreTokens)), alpha;
@@ -696,7 +714,26 @@ target.themes.forEach((themeFileName) => {
   if (!target.omitThemeTokens) {
     if (target.componentGroups) {
       stateTokens["theme"] = {};
-      Object.entries(resolvedThemeData["theme"]).forEach(([key, value]) => {
+      const groupedThemeData = {};
+      Object.entries(resolvedThemeData).forEach(([key, value]) => {
+        const prefix = key.startsWith("color-theme-") ? "color-theme-" : key.startsWith("theme-") ? "theme-" : null;
+        if (!prefix) {
+          return;
+        }
+
+        const keyParts = key.slice(prefix.length).split("-");
+        const category = keyParts.shift();
+        if (!category || keyParts.length === 0) {
+          return;
+        }
+
+        if (!(category in groupedThemeData)) {
+          groupedThemeData[category] = {};
+        }
+        groupedThemeData[category][keyParts.join("-")] = value;
+      });
+
+      Object.entries(groupedThemeData).forEach(([key, value]) => {
         const categoryFlattenedTokens = {};
         flattenObject("", value, categoryFlattenedTokens);
         stateTokens["theme"][key] = finaliseTokens(normaliseUnits(categoryFlattenedTokens));
