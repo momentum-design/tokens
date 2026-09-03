@@ -1,0 +1,24 @@
+{
+  "closedcaption": {
+    "background-black": "@theme-common-hc-window",
+    "background-dark-green": "@theme-common-hc-window",
+    "background-dark-blue": "@theme-common-hc-window",
+    "background-dark-purple": "@theme-common-hc-window",
+    "background-dark-yellow": "@theme-common-hc-window",
+    "background-white": "@theme-common-hc-window",
+    "background-light-green": "@theme-common-hc-window",
+    "background-light-blue": "@theme-common-hc-window",
+    "background-light-purple": "@theme-common-hc-window",
+    "background-light-yellow": "@theme-common-hc-window",
+    "text-white": "@theme-common-hc-buttonText",
+    "text-light-green": "@theme-common-hc-buttonText",
+    "text-light-blue": "@theme-common-hc-buttonText",
+    "text-light-purple": "@theme-common-hc-buttonText",
+    "text-yellow": "@theme-common-hc-buttonText",
+    "text-black": "@theme-common-hc-highlightText",
+    "text-dark-green": "@theme-common-hc-highlightText",
+    "text-dark-blue": "@theme-common-hc-highlightText",
+    "text-dark-purple": "@theme-common-hc-highlightText",
+    "text-dark-yellow": "@theme-common-hc-highlightText"
+  }
+}
