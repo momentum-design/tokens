@@ -13,7 +13,7 @@
     "error-indicator": "@color-theme-text-error-normal",
     "error-alert": "@color-theme-text-error-normal",
     "secondary": {
-      "background": "@color-theme-background-solid-secondary-normal",
+      "background": "@color-theme-background-secondary-normal",
       "text": "@color-theme-text-secondary-normal"
     }
   }
