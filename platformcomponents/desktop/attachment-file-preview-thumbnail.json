@@ -14,7 +14,7 @@
         }
       },
       "background": {
-        "#normal": "@color-theme-background-secondary-normal"
+        "#normal": "@color-theme-background-primary-hover"
       }
     }
   }
