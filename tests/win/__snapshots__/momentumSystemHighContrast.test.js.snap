@@ -447,7 +447,10 @@ exports[`momentumSystemHighContrast should match snapshot of momentumSystemHighC
       "pressed": "HighlightColor",
     },
     "button-cancel-fill-border": {
+      "disabled": "ButtonFaceColor",
+      "hovered": "HighlightColor",
       "normal": "ButtonTextColor",
+      "pressed": "HighlightColor",
     },
     "button-cancel-fill-text": {
       "disabled": "GrayTextColor",
@@ -622,7 +625,10 @@ exports[`momentumSystemHighContrast should match snapshot of momentumSystemHighC
       "pressed": "HighlightColor",
     },
     "button-join-fill-border": {
+      "disabled": "ButtonFaceColor",
+      "hovered": "HighlightColor",
       "normal": "ButtonTextColor",
+      "pressed": "HighlightColor",
     },
     "button-join-fill-text": {
       "disabled": "GrayTextColor",

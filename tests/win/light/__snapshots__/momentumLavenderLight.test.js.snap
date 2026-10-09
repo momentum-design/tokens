@@ -1408,11 +1408,29 @@ exports[`momentumLavenderLight should match snapshot of momentumLavenderLight 1`
       },
     },
     "button-cancel-fill-border": {
+      "disabled": {
+        "a": 0.2,
+        "b": 0,
+        "g": 0,
+        "r": 0,
+      },
+      "hovered": {
+        "a": 1,
+        "b": 21,
+        "g": 10,
+        "r": 171,
+      },
       "normal": {
         "a": 1,
         "b": 46,
         "g": 31,
         "r": 219,
+      },
+      "pressed": {
+        "a": 1,
+        "b": 19,
+        "g": 13,
+        "r": 120,
       },
     },
     "button-cancel-fill-text": {
@@ -2084,11 +2102,29 @@ exports[`momentumLavenderLight should match snapshot of momentumLavenderLight 1`
       },
     },
     "button-join-fill-border": {
+      "disabled": {
+        "a": 0.2,
+        "b": 0,
+        "g": 0,
+        "r": 0,
+      },
+      "hovered": {
+        "a": 1,
+        "b": 70,
+        "g": 94,
+        "r": 24,
+      },
       "normal": {
         "a": 1,
         "b": 95,
         "g": 128,
         "r": 29,
+      },
+      "pressed": {
+        "a": 1,
+        "b": 49,
+        "g": 66,
+        "r": 19,
       },
     },
     "button-join-fill-text": {
