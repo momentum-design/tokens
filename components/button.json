@@ -127,15 +127,18 @@
       },
       "#hovered": {
         "background": "@theme-button-join-hover",
-        "text": "@theme-common-text-white"
+        "text": "@theme-common-text-white",
+        "border": "@theme-button-join-hover"
       },
       "#pressed": {
         "background": "@theme-button-join-pressed",
-        "text": "@theme-common-text-white"
+        "text": "@theme-common-text-white",
+        "border": "@theme-button-join-pressed"
       },
       "#disabled": {
         "background": "@theme-button-primary-disabled",
-        "text": "@theme-text-primary-disabled"
+        "text": "@theme-text-primary-disabled",
+        "border": "@theme-button-primary-disabled"
       }
     },
     "join-outline": {
@@ -173,15 +176,18 @@
       },
       "#hovered": {
         "background": "@theme-button-cancel-hover",
-        "text": "@theme-common-text-white"
+        "text": "@theme-common-text-white",
+        "border": "@theme-button-cancel-hover"
       },
       "#pressed": {
         "background": "@theme-button-cancel-pressed",
-        "text": "@theme-common-text-white"
+        "text": "@theme-common-text-white",
+        "border": "@theme-button-cancel-pressed"
       },
       "#disabled": {
         "background": "@theme-button-primary-disabled",
-        "text": "@theme-text-primary-disabled"
+        "text": "@theme-text-primary-disabled",
+        "border": "@theme-button-primary-disabled"
       }
     },
     "cancel-outline": {
