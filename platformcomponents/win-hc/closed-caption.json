@@ -1,0 +1,16 @@
+{
+  "closedcaption": {
+    "tile-border-dark": "@theme-common-hc-buttonText",
+    "tile-border-light": "@theme-common-hc-buttonText",
+    "button-light": {
+      "#normal": {
+        "border": "@theme-common-hc-buttonText"
+      }
+    },
+    "button-dark": {
+      "#normal": {
+        "border": "@theme-common-hc-buttonText"
+      }
+    }
+  }
+}
