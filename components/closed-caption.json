@@ -28,13 +28,15 @@
     "text-dark-blue": "@color-theme-common-caption-text-light-blue",
     "text-dark-purple": "@color-theme-common-caption-text-light-purple",
     "text-dark-yellow": "@color-theme-common-caption-text-light-yellow",
+    "tile-border-dark": "@color-theme-common-outline-primary-normal",
+    "tile-border-light": "@color-theme-common-outline-secondary-normal",
     "speaker-light": "@color-theme-common-inverted-text-secondary-normal",
     "speaker-dark": "@color-theme-common-text-secondary-normal",
     "button-light": {
       "#normal": {
         "background": "@color-theme-common-button-secondary-normal",
         "text": "@color-theme-common-inverted-text-primary-normal",
-        "border": "@color-theme-common-outline-secondary-disabled"
+        "border": "@color-theme-common-outline-secondary-normal"
       },
       "#hovered": {
         "background": "@color-theme-common-button-secondary-hover"
@@ -47,7 +49,7 @@
       "#normal": {
         "background": "@color-theme-common-inverted-button-secondary-normal",
         "text": "@color-theme-common-text-primary-normal",
-        "border": "@color-theme-common-outline-primary-disabled"
+        "border": "@color-theme-common-outline-primary-normal"
       },
       "#hovered": {
         "background": "@color-theme-common-inverted-button-secondary-hover"
